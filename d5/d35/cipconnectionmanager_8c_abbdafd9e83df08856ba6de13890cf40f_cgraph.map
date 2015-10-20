@@ -1,0 +1,51 @@
+<map id="Connection_Manager_Init" name="Connection_Manager_Init">
+<area shape="rect" id="node2" href="$d2/dc9/group__CIP__API.html#ga6f127c6d2860c45e793702072aaa5d2d" title="register open functions for an specific object. " alt="" coords="253,183,408,209"/>
+<area shape="rect" id="node3" href="$d2/dc9/group__CIP__API.html#ga5f372afe536285966f0d07cda8eceda2" title="Allocate memory for new CIP Class and attributes. " alt="" coords="273,233,388,260"/>
+<area shape="rect" id="node10" href="$d2/dc9/group__CIP__API.html#ga2da7a0d6cc8e11fbbca76ca159fdcf97" title="Insert a service in an instance of a CIP object. " alt="" coords="553,360,651,387"/>
+<area shape="rect" id="node16" href="$dc/d93/cipclass3connection_8c.html#a459e8982744d10e7c6cc3f2da6fb8acb" title="Check if Class3 connection is available and if yes setup all data. " alt="" coords="240,537,421,564"/>
+<area shape="rect" id="node23" href="$df/d03/cipioconnection_8c.html#ae83037a608b08d325fc34869395f37a3" title="Setup all data in order to establish an IO connection. " alt="" coords="257,867,404,893"/>
+<area shape="rect" id="node40" href="$d5/d35/cipconnectionmanager_8c.html#a2e18af4479b912caed461ab90a35a59e" title="ForwardClose" alt="" coords="551,1323,653,1349"/>
+<area shape="rect" id="node42" href="$d5/d35/cipconnectionmanager_8c.html#afb92bf1fefbe3377e4e2acb3ba89817f" title="ForwardOpen" alt="" coords="281,1323,381,1349"/>
+<area shape="rect" id="node47" href="$d5/d35/cipconnectionmanager_8c.html#a7ae0f0c35e5933a17ec0342ceddc6bd3" title="GetConnectionOwner" alt="" coords="257,1373,404,1400"/>
+<area shape="rect" id="node48" href="$d5/d35/cipconnectionmanager_8c.html#a1e4d9df3061d893076423b8a0d45014a" title="initializeConnectionManagerData" alt="" coords="224,1576,437,1603"/>
+<area shape="rect" id="node4" href="$d2/dc9/group__CIP__API.html#ga1db1e5dc1fc04ac40a02f4f4ca550aa1" title="Get a pointer to a CIP object with given class code. " alt="" coords="823,656,921,683"/>
+<area shape="rect" id="node6" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga17e4fa1e0e37455d4f3a9599fb323c0d" title="Allocate memory for the cip stack. " alt="" coords="815,56,929,83"/>
+<area shape="rect" id="node7" href="$d2/dc9/group__CIP__API.html#ga3b456f395f03608f51c592e2415e30b3" title="Add a number of CIP instances to a given CIP class. " alt="" coords="541,5,663,32"/>
+<area shape="rect" id="node8" href="$d9/d7d/cipmessagerouter_8c.html#ac2a31f91abe28c7ddd75192df2d250da" title="registerClass" alt="" coords="553,56,651,83"/>
+<area shape="rect" id="node9" href="$d2/dc9/group__CIP__API.html#gaaf0d193e855cb7716c1fb32658e81b9a" title="Insert an attribute in an instance of a CIP class. " alt="" coords="551,208,653,235"/>
+<area shape="rect" id="node11" href="$d2/d3d/cipcommon_8c.html#a8160c94398cfbb8129e92374d8f782aa" title="Generic implementation of the GetAttributeAll CIP service. " alt="" coords="550,259,654,285"/>
+<area shape="rect" id="node12" href="$d2/d3d/cipcommon_8c.html#aa0b39dfa2863eebb4fcdba0c4dcc2e9c" title="Generic implementation of the GetAttributeSingle CIP service. " alt="" coords="539,157,665,184"/>
+<area shape="rect" id="node5" href="$d9/d7d/cipmessagerouter_8c.html#a64741101a3f7edd3d30c645d7d80374b" title="getRegisteredObject" alt="" coords="1040,656,1181,683"/>
+<area shape="rect" id="node13" href="$d2/dc9/group__CIP__API.html#ga47c242c4c952714d8c76a2af1da76702" title="Produce the data according to CIP encoding onto the message buffer. " alt="" coords="826,157,918,184"/>
+<area shape="rect" id="node14" href="$d2/dc9/group__CIP__API.html#ga33fda1920669c922471cb6218c8b22b8" title="Get a pointer to an instance&#39;s attribute. " alt="" coords="827,555,917,581"/>
+<area shape="rect" id="node15" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga88bb762476768e89925e4d8b3e27fdc4" title="Inform the application that the data of an assembly object will be sent. " alt="" coords="767,331,977,357"/>
+<area shape="rect" id="node17" href="$d5/d35/cipconnectionmanager_8c.html#a37726ad0c33ff6afe7339fb0986fc3b7" title="Insert the given connection object to the list of currently active and managed connections. " alt="" coords="515,563,689,589"/>
+<area shape="rect" id="node18" href="$d5/d35/cipconnectionmanager_8c.html#aa1ce6f00ad088aafb722e2f289a4817a" title="copyConnectionData" alt="" coords="800,605,944,632"/>
+<area shape="rect" id="node19" href="$d5/d35/cipconnectionmanager_8c.html#a74fd2281ed30366f9cab9bec24ce30fd" title="Generate the ConnectionIDs and set the general configuration parameter in the given connection object..." alt="" coords="499,664,705,691"/>
+<area shape="rect" id="node21" href="$dc/d93/cipclass3connection_8c.html#afac935fc983b7ec1f76e1c29a3164676" title="getFreeExplicitConnection" alt="" coords="515,411,689,437"/>
+<area shape="rect" id="node22" href="$d5/d35/cipconnectionmanager_8c.html#a138378e54c06c512366f0c619ae58005" title="removeFromActiveConnections" alt="" coords="499,461,705,488"/>
+<area shape="rect" id="node20" href="$d5/d35/cipconnectionmanager_8c.html#afde2474a29b16651ef97e83d8ff16e72" title="Generate a new connection Id utilizing the Incarnation Id as descibed in the EIP specs. " alt="" coords="813,504,931,531"/>
+<area shape="rect" id="node24" href="$d1/dbc/appcontype_8c.html#a0022a3503684e42baf0820a85d2d67e4" title="check if for the given connection data received in a forward_open request a suitable connection is av..." alt="" coords="485,816,719,843"/>
+<area shape="rect" id="node28" href="$df/d03/cipioconnection_8c.html#a2b592280d464553c451f653c1a45a052" title="closeIOConnection" alt="" coords="535,968,669,995"/>
+<area shape="rect" id="node29" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga69b8c5aa40b203bd08a0545402142216" title="Inform the application on changes occurred for a connection. " alt="" coords="1025,997,1196,1024"/>
+<area shape="rect" id="node32" href="$df/d03/cipioconnection_8c.html#aca969065c50443a0e464dbe318de06d4" title="handleIOConnectionTimeOut" alt="" coords="507,867,697,893"/>
+<area shape="rect" id="node33" href="$df/d03/cipioconnection_8c.html#a93b2d7ce5fd9c7bf5583f738e09bd914" title="sendConnectedData" alt="" coords="531,613,673,640"/>
+<area shape="rect" id="node34" href="$df/d03/cipioconnection_8c.html#a0a63c015bc216d71e9cb1781472ce8df" title="handleReceivedIOConnData" alt="" coords="508,1221,696,1248"/>
+<area shape="rect" id="node37" href="$d2/dc9/group__CIP__API.html#ga9919da1c597955301da602a23a470801" title="Get a pointer to an instance. " alt="" coords="815,1128,929,1155"/>
+<area shape="rect" id="node38" href="$df/d03/cipioconnection_8c.html#a9243c246dc6021572d661b9b923a6b7a" title="handleConfigData" alt="" coords="539,917,665,944"/>
+<area shape="rect" id="node39" href="$df/d03/cipioconnection_8c.html#a667690c04e476a38fa3b8e555a812e44" title="Take the data given in the connection object structure and open the necessary communication channels..." alt="" coords="504,1120,700,1147"/>
+<area shape="rect" id="node25" href="$d1/dbc/appcontype_8c.html#a2068755755a2b7016bcd70aed78d3cb4" title="getExclusiveOwnerConnection" alt="" coords="771,707,973,733"/>
+<area shape="rect" id="node26" href="$d1/dbc/appcontype_8c.html#a4048c433cef43681173b681e2acd7ab0" title="getInputOnlyConnection" alt="" coords="791,757,953,784"/>
+<area shape="rect" id="node27" href="$d1/dbc/appcontype_8c.html#a9c7f24ba84cf1de62aaac336cd42ebc2" title="getListenOnlyConnection" alt="" coords="788,808,956,835"/>
+<area shape="rect" id="node30" href="$d1/dbc/appcontype_8c.html#aeeda244766a510093c5c31e49710edb2" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr..." alt="" coords="783,909,961,936"/>
+<area shape="rect" id="node31" href="$d1/dbc/appcontype_8c.html#a55477541835f20888759b441419c1ea4" title="Close all connection producing the same input and have the same type (i.e., listen only or input only..." alt="" coords="781,961,963,1002"/>
+<area shape="rect" id="node35" href="$d4/d91/group__ENCAP.html#ga6ce01de4023c01608d2bdfdb584d59d3" title="Reads EIP_UINT16 from *pa_buf and converts little endian to host. " alt="" coords="847,1235,897,1261"/>
+<area shape="rect" id="node36" href="$d4/d91/group__ENCAP.html#ga4ac7387e49002d26462d7cdd094d238a" title="Reads EIP_UINT32 from *pa_buf and converts little endian to host. " alt="" coords="849,1361,895,1388"/>
+<area shape="rect" id="node41" href="$d5/d35/cipconnectionmanager_8c.html#a10e9819497edca23a30be213c7a6bf0d" title="assembleFWDCloseResponse" alt="" coords="771,1311,973,1337"/>
+<area shape="rect" id="node43" href="$d5/d35/cipconnectionmanager_8c.html#a6b35a8ba7805a27e6b2efc8ecdf96755" title="check if the data given in the connection object match with an already established connection ..." alt="" coords="507,1373,697,1400"/>
+<area shape="rect" id="node44" href="$d5/d35/cipconnectionmanager_8c.html#ac23d6db0adcc0114475436f3cbedfb9c" title="assembleFWDOpenResponse" alt="" coords="503,1475,701,1501"/>
+<area shape="rect" id="node45" href="$d5/d35/cipconnectionmanager_8c.html#ad102db055caf5ca72e33972d3cc2aa8b" title="Parse the connection path of a forward open request. " alt="" coords="529,1171,675,1197"/>
+<area shape="rect" id="node46" href="$d5/d35/cipconnectionmanager_8c.html#afe566be6074127d075c48c4667c12bd2" title="getConnMgmEntry" alt="" coords="537,1525,667,1552"/>
+<area shape="rect" id="node49" href="$dc/d93/cipclass3connection_8c.html#a9d2f4512129d9d38b1849f862a7ddbe0" title="initializeClass3ConnectionData" alt="" coords="500,1627,704,1653"/>
+<area shape="rect" id="node50" href="$d1/dbc/appcontype_8c.html#a33c79fb728487e4d7df4c438a2fab903" title="initializeIOConnectionData" alt="" coords="513,1576,691,1603"/>
+</map>

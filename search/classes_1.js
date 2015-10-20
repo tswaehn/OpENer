@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networkstatus',['NetworkStatus',['../structNetworkStatus.html',1,'']]]
+  ['networkstatus',['NetworkStatus',['../df/d80/structNetworkStatus.html',1,'']]]
 ];

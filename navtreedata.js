@@ -9,17 +9,18 @@ var NAVTREE =
       ] ],
       [ "Further Topics", "index.html#further_reading_sec", null ]
     ] ],
-    [ "Porting OpENer", "porting.html", [
-      [ "General Stack Configuration", "porting.html#gen_config_section", null ],
-      [ "Startup Sequence", "porting.html#startup_sec", null ],
-      [ "Normal Operation", "porting.html#normal_op_sec", null ],
-      [ "Callback Functions", "porting.html#callback_funcs_sec", null ]
+    [ "Porting OpENer", "dc/dcb/porting.html", [
+      [ "General Stack Configuration", "dc/dcb/porting.html#gen_config_section", null ],
+      [ "Startup Sequence", "dc/dcb/porting.html#startup_sec", null ],
+      [ "Normal Operation", "dc/dcb/porting.html#normal_op_sec", null ],
+      [ "Callback Functions", "dc/dcb/porting.html#callback_funcs_sec", null ]
     ] ],
-    [ "Extending OpENer", "extending.html", null ],
-    [ "OpENer Open Source License", "license.html", null ],
+    [ "Extending OpENer", "d4/d1b/extending.html", null ],
+    [ "OpENer Open Source License", "de/d7e/license.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
+      [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
@@ -42,12 +43,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"LM3S8962_2networkhandler_8c.html",
-"basiccip_8c.html#a16759bfd230364a6b10c36621c847644",
-"cipioconnection_8c.html#a8160f1516e9aa813509d35f4e9ba8971",
-"flashmgr_8h.html#a33a36d8b9c305d76c577664ae96270bc",
-"group__CIP__CALLBACK__API.html#ga9d7f3bd3280b10ad3cc4ed2f5dc9c339",
-"structS__CIP__MR__Response.html#a8eb89b22deaf92bcaa9a2a168dee5067"
+"annotated.html",
+"d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aece4ef1905dbbdb99598b8be76db9198",
+"d5/d35/cipconnectionmanager_8c.html#a39e9e92bf22bcf3708518f4aeac70132",
+"d8/d52/structTConnMgmHandling.html#ada8c0a874a077c9b87d5d1c43d75d6e8",
+"dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac",
+"dir_c8aa5bc61294183651790930a0cf96a3.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

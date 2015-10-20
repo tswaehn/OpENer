@@ -1,0 +1,28 @@
+var WIN32_2networkhandler_8c =
+[
+    [ "NetworkStatus", "df/d80/structNetworkStatus.html", "df/d80/structNetworkStatus" ],
+    [ "MAX_NO_OF_TCP_SOCKETS", "d8/d6c/WIN32_2networkhandler_8c.html#aef8c9066c39b53d472f7d235bb3d0001", null ],
+    [ "MICROSECONDS", "d8/d6c/WIN32_2networkhandler_8c.html#a2c73432af9ea48ef0c0cf43d1889b1b6", null ],
+    [ "MILLISECONDS", "d8/d6c/WIN32_2networkhandler_8c.html#a9f5f9162853bd453da8d8e0d0c3e7751", null ],
+    [ "checkAndHandleConsumingUDPSockets", "d8/d6c/WIN32_2networkhandler_8c.html#a8061914e74dabc046eecc09d874cb46c", null ],
+    [ "checkAndHandleTCPListenerSocket", "d8/d6c/WIN32_2networkhandler_8c.html#aa4effcdd9fae99e110934e09e534f3e1", null ],
+    [ "checkAndHandleUDPBroadCastSocket", "d8/d6c/WIN32_2networkhandler_8c.html#aa0c6c1f6e124a54daa5ac8e8d92cf4a8", null ],
+    [ "checkSocketSet", "d8/d6c/WIN32_2networkhandler_8c.html#a6d4d8b21ab5f67119966fa27ddae13f5", null ],
+    [ "handleDataOnTCPSocket", "d8/d6c/WIN32_2networkhandler_8c.html#ae76d1b4d390537588350d7179c4c2f3a", null ],
+    [ "IApp_CloseSocket", "d5/dc5/group__CIP__CALLBACK__API.html#ga26bdb2c504bbf917225a56b6b1c31af0", null ],
+    [ "IApp_CloseSocket_tcp", "d8/d6c/WIN32_2networkhandler_8c.html#a1bde14827bd22b7aac3d53108696b02b", null ],
+    [ "IApp_CloseSocket_udp", "d8/d6c/WIN32_2networkhandler_8c.html#a8417ed17e6d8b5986009cbf565dda179", null ],
+    [ "IApp_CreateUDPSocket", "d5/dc5/group__CIP__CALLBACK__API.html#ga9d7f3bd3280b10ad3cc4ed2f5dc9c339", null ],
+    [ "IApp_SendUDPData", "d5/dc5/group__CIP__CALLBACK__API.html#gabe8a4c7e971381f2ee46db5148aecf47", null ],
+    [ "NetworkHandler_Finish", "d8/d6c/WIN32_2networkhandler_8c.html#a1dda7242f3d428dc351d9d3fa5f290bc", null ],
+    [ "NetworkHandler_Init", "d8/d6c/WIN32_2networkhandler_8c.html#af88cad36eb28ec89dc9c8cab7cea438a", null ],
+    [ "NetworkHandler_ProcessOnce", "d8/d6c/WIN32_2networkhandler_8c.html#a2d6337ec345efd952006c7bf3a158f0c", null ],
+    [ "fdmax", "d8/d6c/WIN32_2networkhandler_8c.html#a582ad83322acbc5ec4bad57b78cb6d8d", null ],
+    [ "g_acPCEthernetCommBuffer", "d8/d6c/WIN32_2networkhandler_8c.html#ab9e712a2688c5ae31478e92ca4151e03", null ],
+    [ "g_nCurrentActiveTCPSocket", "d8/d6c/WIN32_2networkhandler_8c.html#a498507257c32224efafc2aacfb1fad1a", null ],
+    [ "g_pstActiveConnectionList", "d8/d6c/WIN32_2networkhandler_8c.html#af70b50f84d64f0c7f472d81a3fdd23d7", null ],
+    [ "master", "d8/d6c/WIN32_2networkhandler_8c.html#ae688ce221de0de53500e130618d12b75", null ],
+    [ "PACKED", "d8/d6c/WIN32_2networkhandler_8c.html#af62256055ebf5205379def442dccb98c", null ],
+    [ "read_fds", "d8/d6c/WIN32_2networkhandler_8c.html#a19238a6905e03f2baf05c0d43f6b4188", null ],
+    [ "TheNetworkStatus", "d8/d6c/WIN32_2networkhandler_8c.html#aca5e0ebdc12fa9f7f8d44163a3aef16b", null ]
+];

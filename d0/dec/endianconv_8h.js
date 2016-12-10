@@ -1,13 +1,16 @@
 var endianconv_8h =
 [
-    [ "OPENER_BIG_ENDIAN_PLATFORM", "d0/dec/endianconv_8h.html#a3ef2c63e3ed63b81e820738c5cf154fa", null ],
-    [ "OPENER_LITTLE_ENDIAN_PLATFORM", "d0/dec/endianconv_8h.html#ab7ee21bea87b9d924d43840755049771", null ],
-    [ "determineEndianess", "d0/dec/endianconv_8h.html#a225c23a7ed872cd5a5d52c2e90870a83", null ],
-    [ "encapsulateIPAdress", "d0/dec/endianconv_8h.html#a684d251f2990c861c5ef813d6d1f205b", null ],
-    [ "encapsulateIPAdressCPF", "d0/dec/endianconv_8h.html#af8d7300f72b364ff347e8ed1895f989e", null ],
-    [ "getEndianess", "d0/dec/endianconv_8h.html#a5f1fd74e954caf9688979432dcf8f996", null ],
-    [ "htoll", "d4/d91/group__ENCAP.html#gaa00e394da5cd80135cdab7d4f3d88819", null ],
-    [ "htols", "d4/d91/group__ENCAP.html#ga738d386bb3919d75bb14dcb40ca5389f", null ],
-    [ "ltohl", "d4/d91/group__ENCAP.html#ga4ac7387e49002d26462d7cdd094d238a", null ],
-    [ "ltohs", "d4/d91/group__ENCAP.html#ga6ce01de4023c01608d2bdfdb584d59d3", null ]
+    [ "OpenerEndianess", "d0/dec/endianconv_8h.html#aa618e5df0cf6fdf77ad6f82263688f42", null ],
+    [ "AddDintToMessage", "d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822", null ],
+    [ "AddIntToMessage", "d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799", null ],
+    [ "AddSintToMessage", "d4/d91/group__ENCAP.html#gae267a8684cc6ee1b3bd83df03260b7aa", null ],
+    [ "DetermineEndianess", "d0/dec/endianconv_8h.html#a152e25c2175146b609fff86bde4dd914", null ],
+    [ "EncapsulateIpAddress", "d0/dec/endianconv_8h.html#a2e8bf172dd5ecba3cc0871278ab06538", null ],
+    [ "FillNextNMessageOctetsWith", "d0/dec/endianconv_8h.html#a28f4ae33e12061fe72f4de50a73b87af", null ],
+    [ "FillNextNMessageOctetsWithValueAndMoveToNextPosition", "d0/dec/endianconv_8h.html#a0ca9c3a411ccc35e03050e869aafd2bf", null ],
+    [ "GetDintFromMessage", "d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8", null ],
+    [ "GetEndianess", "d0/dec/endianconv_8h.html#afea76ccae451599cd11bf166142b3960", null ],
+    [ "GetIntFromMessage", "d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302", null ],
+    [ "GetSintFromMessage", "d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c", null ],
+    [ "MoveMessageNOctets", "d0/dec/endianconv_8h.html#a21d3780305569399be95e50531127591", null ]
 ];

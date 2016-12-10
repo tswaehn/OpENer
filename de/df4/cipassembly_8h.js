@@ -1,7 +1,7 @@
 var cipassembly_8h =
 [
-    [ "CIP_ASSEMBLY_CLASS_CODE", "de/df4/cipassembly_8h.html#aee29cb8987fb0ce48a7b616c796cec1e", null ],
-    [ "CIP_Assembly_Init", "de/df4/cipassembly_8h.html#a8bda91239ead4adcd1082d0c3b911b2c", null ],
-    [ "notifyAssemblyConnectedDataReceived", "de/df4/cipassembly_8h.html#a979849a73c7981ca782f286d8a6c3edb", null ],
-    [ "shutdownAssemblies", "de/df4/cipassembly_8h.html#affe7b3caeccec4db7914566d678b6476", null ]
+    [ "CipAssemblyInitialize", "de/df4/cipassembly_8h.html#a4dfbc2c7a8e9e77f05a0a7236210f5b4", null ],
+    [ "NotifyAssemblyConnectedDataReceived", "de/df4/cipassembly_8h.html#a5dc25129faf75858c0aeaa88ea8d9490", null ],
+    [ "ShutdownAssemblies", "de/df4/cipassembly_8h.html#adcacd62b6a866c5c74c3cdda19598b98", null ],
+    [ "kCipAssemblyClassCode", "de/df4/cipassembly_8h.html#a377d7f734c99e1eb3ae3a7673b16aa78", null ]
 ];

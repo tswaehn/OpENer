@@ -1,9 +1,9 @@
 var cipassembly_8c =
 [
-    [ "CIP_Assembly_Init", "df/d2e/cipassembly_8c.html#abfb7c10de50d4996b8200e03d469adad", null ],
-    [ "createAssemblyClass", "df/d2e/cipassembly_8c.html#a3c4ec5deffa8a629431f2d4f7587def6", null ],
-    [ "createAssemblyObject", "d2/dc9/group__CIP__API.html#ga1b4ab5ecfa81f356a751555a067c5f71", null ],
-    [ "notifyAssemblyConnectedDataReceived", "df/d2e/cipassembly_8c.html#aa7b96f3548d06cc3e293f8fb26a9cb0a", null ],
-    [ "setAssemblyAttributeSingle", "df/d2e/cipassembly_8c.html#a87f93f668612846b0bdef1a95ce92726", null ],
-    [ "shutdownAssemblies", "df/d2e/cipassembly_8c.html#affe7b3caeccec4db7914566d678b6476", null ]
+    [ "CipAssemblyInitialize", "df/d2e/cipassembly_8c.html#a4dfbc2c7a8e9e77f05a0a7236210f5b4", null ],
+    [ "CreateAssemblyClass", "df/d2e/cipassembly_8c.html#a5973ef42110a1bdf6c7699e35e04b7d4", null ],
+    [ "CreateAssemblyObject", "d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593", null ],
+    [ "NotifyAssemblyConnectedDataReceived", "df/d2e/cipassembly_8c.html#a5dc25129faf75858c0aeaa88ea8d9490", null ],
+    [ "SetAssemblyAttributeSingle", "df/d2e/cipassembly_8c.html#a24f895e586ce144d560489723960ba80", null ],
+    [ "ShutdownAssemblies", "df/d2e/cipassembly_8c.html#adcacd62b6a866c5c74c3cdda19598b98", null ]
 ];

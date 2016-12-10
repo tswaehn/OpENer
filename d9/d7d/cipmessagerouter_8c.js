@@ -1,16 +1,15 @@
 var cipmessagerouter_8c =
 [
-    [ "CIP_MR_Object", "d1/dc6/structCIP__MR__Object.html", "d1/dc6/structCIP__MR__Object" ],
-    [ "S_CIP_MR_Object", "d9/d7d/cipmessagerouter_8c.html#a2084ac1d0c4c68131b32241d2e994052", null ],
-    [ "CIP_MessageRouter_Init", "d9/d7d/cipmessagerouter_8c.html#a4dc0c6e22ed8fac3d8bfccec8198a8c7", null ],
-    [ "createMRRequeststructure", "d9/d7d/cipmessagerouter_8c.html#a217a77be97cf56896966180e8241065a", null ],
-    [ "deleteAllClasses", "d9/d7d/cipmessagerouter_8c.html#a65b7f7ac593ab8697db642512ecc9f25", null ],
-    [ "getCIPClass", "d2/dc9/group__CIP__API.html#ga1db1e5dc1fc04ac40a02f4f4ca550aa1", null ],
-    [ "getCIPInstance", "d2/dc9/group__CIP__API.html#ga9919da1c597955301da602a23a470801", null ],
-    [ "getRegisteredObject", "d9/d7d/cipmessagerouter_8c.html#a64741101a3f7edd3d30c645d7d80374b", null ],
-    [ "notifyMR", "d9/d7d/cipmessagerouter_8c.html#aff500b367ee1118d79affe0920b0cca3", null ],
-    [ "registerClass", "d9/d7d/cipmessagerouter_8c.html#ac2a31f91abe28c7ddd75192df2d250da", null ],
-    [ "g_pt2firstObject", "d9/d7d/cipmessagerouter_8c.html#ad5b80bff1a5da27c9b8428703e597341", null ],
-    [ "gMRRequest", "d9/d7d/cipmessagerouter_8c.html#a0e7031892fd90aca852803afda24ed54", null ],
-    [ "gMRResponse", "d9/d7d/cipmessagerouter_8c.html#af1837f741b252d6783b5b78fbea86c36", null ]
+    [ "CipMessageRouterObject", "d9/d7d/cipmessagerouter_8c.html#a49cfe39dc90bbf8300e7d3f174f599cf", null ],
+    [ "CipMessageRouterInit", "d9/d7d/cipmessagerouter_8c.html#acbd84034d84f697031ad9de10c8d1388", null ],
+    [ "CreateMessageRouterRequestStructure", "d9/d7d/cipmessagerouter_8c.html#acce609c2d88a22c290a00cd03991f78f", null ],
+    [ "DeleteAllClasses", "d9/d7d/cipmessagerouter_8c.html#a16364f408990e2a5725f2fd5375ef3df", null ],
+    [ "GetCipClass", "d2/dc9/group__CIP__API.html#ga98bd609c80ece316406363575b4a89ea", null ],
+    [ "GetCipInstance", "d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e", null ],
+    [ "GetRegisteredObject", "d9/d7d/cipmessagerouter_8c.html#a7a9f44f2d6f010b6f6ee922d378d9bb1", null ],
+    [ "NotifyMessageRouter", "d9/d7d/cipmessagerouter_8c.html#a0e29ef6a602d17052584c167d9b86084", null ],
+    [ "RegisterCipClass", "d9/d7d/cipmessagerouter_8c.html#ae00f521e394d00fd5fd99271a6983116", null ],
+    [ "g_first_object", "d9/d7d/cipmessagerouter_8c.html#a1135eaf46749c1da94f03444f74690ac", null ],
+    [ "g_message_router_request", "d9/d7d/cipmessagerouter_8c.html#ac41a8799d5a505cb5a23fe7ea87ce0ba", null ],
+    [ "g_message_router_response", "d9/d7d/cipmessagerouter_8c.html#a763af44f52a3df0fd61f63c54cc0dc4c", null ]
 ];

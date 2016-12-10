@@ -1,5 +1,5 @@
 var xorshiftrandom_8h =
 [
-    [ "nextXorShiftUInt32", "d1/d61/xorshiftrandom_8h.html#a3be03a83e90286d7fd347dd2d0de0c31", null ],
-    [ "setXorShiftSeed", "d1/d61/xorshiftrandom_8h.html#a42dc90657fac9c03e709202fde48b76b", null ]
+    [ "NextXorShiftUint32", "d1/d61/xorshiftrandom_8h.html#a1fed45698fc382c8eac0d4384ab3eaff", null ],
+    [ "SetXorShiftSeed", "d1/d61/xorshiftrandom_8h.html#aba2875aae8a8e22bc903edeebe63138b", null ]
 ];

@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7" title="copy data from pa_buf in little endian to host in structure." alt="" coords="995,1811,1189,1840"/>
+<area shape="rect" id="node9" href="$d2/dbd/encap_8c.html#a268183211c79c21c5b3ad550f27078e0" title="EncapsulateData" alt="" coords="1399,1341,1521,1371"/>
+<area shape="rect" id="node17" href="$d2/dbd/encap_8c.html#aa7708824f85c4eb678ab822220ae4991" title="HandleReceivedListIdentityCommandTcp" alt="" coords="301,1493,565,1523"/>
+<area shape="rect" id="node27" href="$d2/dbd/encap_8c.html#a62cfa8662c033418bb7db76a82bbf6e2" title="HandleReceivedListInterfacesCommand" alt="" coords="655,75,911,104"/>
+<area shape="rect" id="node30" href="$d2/dbd/encap_8c.html#a4001dc96f8704175a093ff1358e0dd2b" title="generate reply with &quot;Communications Services&quot; + compatibility Flags." alt="" coords="308,707,559,736"/>
+<area shape="rect" id="node33" href="$d2/dbd/encap_8c.html#a1374db97cd12ac4307731a112a869c22" title="HandleReceivedRegisterSessionCommand" alt="" coords="1323,1915,1597,1944"/>
+<area shape="rect" id="node39" href="$d2/dbd/encap_8c.html#a8f504a25dc1b6319392fa18a81d5d923" title="Call UCMM or Message Router if UCMM not implemented." alt="" coords="261,1663,605,1692"/>
+<area shape="rect" id="node117" href="$d2/dbd/encap_8c.html#a10ebe924ba34755ccdf5fde6f1c2340b" title="Call Connection Manager." alt="" coords="304,1553,563,1583"/>
+<area shape="rect" id="node130" href="$d2/dbd/encap_8c.html#ace57d7ca02ba16c620014fdd4f842949" title="HandleReceivedUnregisterSessionCommand" alt="" coords="291,1967,576,1996"/>
+<area shape="rect" id="node5" href="$d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host." alt="" coords="1385,1760,1535,1789"/>
+<area shape="rect" id="node7" href="$d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302" title="Reads EIP_UINT16 from *buffer and converts little endian to host." alt="" coords="1901,1708,2043,1737"/>
+<area shape="rect" id="node11" href="$d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer." alt="" coords="1707,1393,1843,1423"/>
+<area shape="rect" id="node13" href="$d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer." alt="" coords="1711,599,1839,628"/>
+<area shape="rect" id="node15" href="$da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d" title="MoveMessageNOctets" alt="" coords="1697,1235,1852,1264"/>
+<area shape="rect" id="node19" href="$d2/dbd/encap_8c.html#ac1c99303fff8efa3b4c5c580d00d11b5" title="EncapsulateListIdentyResponseMessage" alt="" coords="961,1484,1223,1513"/>
+<area shape="rect" id="node23" href="$da/d73/endianconv_8c.html#a2e8bf172dd5ecba3cc0871278ab06538" title="Encapsulate the sockaddr information as necessary for the Common Packet Format data items..." alt="" coords="1384,1445,1536,1475"/>
+<area shape="rect" id="node36" href="$d2/dbd/encap_8c.html#ad674cdd0452f59d824a0bebbf678cb6d" title="search for available sessions an return index." alt="" coords="1701,1965,1848,1995"/>
+<area shape="rect" id="node41" href="$d2/dbd/encap_8c.html#a611d3a708d6ccf3dbbee4edc743cffb3" title="Check if received package belongs to registered session." alt="" coords="695,1609,871,1639"/>
+<area shape="rect" id="node45" href="$d4/d91/group__ENCAP.html#ga401f152f47e54b0a6dddcfe723c086f9" title="NotifyCommonPacketFormat" alt="" coords="687,1663,879,1692"/>
+<area shape="rect" id="node47" href="$d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606" title="Creates Common Packet Format structure out of data." alt="" coords="968,1617,1216,1647"/>
+<area shape="rect" id="node51" href="$d9/d7d/cipmessagerouter_8c.html#a0e29ef6a602d17052584c167d9b86084" title="Notify the MessageRouter that an explicit message (connected or unconnected) has been received..." alt="" coords="1017,1564,1167,1593"/>
+<area shape="rect" id="node62" href="$d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392" title="Copy data from message_router_response struct and common_packet_format_data_item into linear memory i..." alt="" coords="1008,891,1176,920"/>
+<area shape="rect" id="node53" href="$d9/d7d/cipmessagerouter_8c.html#acce609c2d88a22c290a00cd03991f78f" title="Create Message Router Request structure out of the received data." alt="" coords="1333,1656,1587,1685"/>
+<area shape="rect" id="node58" href="$d9/d7d/cipmessagerouter_8c.html#a7a9f44f2d6f010b6f6ee922d378d9bb1" title="Get the registered MessageRouter object corresponding to ClassID. given a class ID, return a pointer to the registration node for that object." alt="" coords="1388,1549,1532,1579"/>
+<area shape="rect" id="node60" href="$d2/d3d/cipcommon_8c.html#a9735d2a8c69d731b352381ff1d03d8a2" title="Check if requested service present in class/instance and call appropriate service." alt="" coords="1415,1603,1505,1632"/>
+<area shape="rect" id="node55" href="$d2/d3d/cipcommon_8c.html#ae7acee656656a60bf4e33f33369ac3a5" title="Decodes padded EPath." alt="" coords="1701,1656,1848,1685"/>
+<area shape="rect" id="node66" href="$d3/d98/cpf_8c.html#a4f113fab63952dbb60b61704f9fc219b" title="Adds the item count to the message frame." alt="" coords="1397,651,1523,680"/>
+<area shape="rect" id="node69" href="$d3/d98/cpf_8c.html#afef2fcf37b114a51eb2da2f4688659c8" title="Encodes a Null Address Item into the message frame." alt="" coords="1379,1024,1541,1053"/>
+<area shape="rect" id="node72" href="$d3/d98/cpf_8c.html#a53303213aba7d1f7b5cbd3183570b11a" title="EncodeConnectedAddressItem" alt="" coords="1359,1184,1561,1213"/>
+<area shape="rect" id="node76" href="$d3/d98/cpf_8c.html#a150b3b92a956a84c39b678834ea4d499" title="Encodes a sequenced address item into the message." alt="" coords="1357,1288,1563,1317"/>
+<area shape="rect" id="node80" href="$d3/d98/cpf_8c.html#aed97aa02e8801b5ea0310a133ae46a84" title="EncodeDataItemType" alt="" coords="1385,1077,1535,1107"/>
+<area shape="rect" id="node83" href="$d3/d98/cpf_8c.html#a689a9410bc228cecdbf75e7360f643dd" title="Encodes the Connected Data item length." alt="" coords="1349,280,1571,309"/>
+<area shape="rect" id="node86" href="$d3/d98/cpf_8c.html#a3b4c3d977b3fc23db65146cbefe4a495" title="Encodes a sequence number into the message." alt="" coords="1375,333,1545,363"/>
+<area shape="rect" id="node89" href="$d3/d98/cpf_8c.html#ad3aa7ce7e650ffeeba19cdad4c145f9c" title="Encode the data item length of the unconnected data segment." alt="" coords="1343,387,1577,416"/>
+<area shape="rect" id="node92" href="$d3/d98/cpf_8c.html#ad1bcc1bd973e6733b3d479927738124b" title="Encodes the reply service code for the requested service." alt="" coords="1388,704,1532,733"/>
+<area shape="rect" id="node94" href="$d3/d98/cpf_8c.html#a2fb3a4864353ff7263416c9b87e6338a" title="Encodes the reserved byte in the message router response." alt="" coords="1345,757,1575,787"/>
+<area shape="rect" id="node96" href="$d3/d98/cpf_8c.html#ab01dcb44f173a12fdd09ee7b83eb2e85" title="Encodes the general status of a Router Response." alt="" coords="1385,811,1535,840"/>
+<area shape="rect" id="node98" href="$d3/d98/cpf_8c.html#aa7a9b00cc1095849a4c29fe303178a25" title="Encodes the extended status (length and data) into the message." alt="" coords="1381,864,1539,893"/>
+<area shape="rect" id="node100" href="$d3/d98/cpf_8c.html#aff58b2be77eedd55448923de7cb4da9f" title="Encodes the Message Router Response data." alt="" coords="1337,917,1583,947"/>
+<area shape="rect" id="node102" href="$d3/d98/cpf_8c.html#a2693eb487841495e4a69aeac60ea227d" title="EncodeDataItemLength" alt="" coords="1381,440,1539,469"/>
+<area shape="rect" id="node105" href="$d3/d98/cpf_8c.html#a0abf0f8ed39e52fbd224c555dd23a0ac" title="EncodeDataItemData" alt="" coords="1387,971,1533,1000"/>
+<area shape="rect" id="node107" href="$d3/d98/cpf_8c.html#a9bf4ba9605c8a7be284d1c9fef4f4ea9" title="Encodes the sockaddr info type id into the message." alt="" coords="1356,493,1564,523"/>
+<area shape="rect" id="node110" href="$d3/d98/cpf_8c.html#a889305fba8f00ea5abce3860b1cba376" title="Encodes the sockaddr info length into the message." alt="" coords="1369,547,1551,576"/>
+<area shape="rect" id="node114" href="$da/d73/endianconv_8c.html#af9669c6d673d3d653b5f0569fee71822" title="FillNextNMessageOctetsWithValueAndMoveToNextPosition" alt="" coords="1273,1131,1647,1160"/>
+<area shape="rect" id="node122" href="$d4/d91/group__ENCAP.html#ga045feac9b8747e049e2420df1ec0844b" title="NotifyConnectedCommonPacketFormat" alt="" coords="656,1411,909,1440"/>
+<area shape="rect" id="node125" href="$d5/d35/cipconnectionmanager_8c.html#a2c52d1bd0f41c535d953eb17b223fa03" title="GetConnectedObject" alt="" coords="1020,837,1164,867"/>
+<area shape="rect" id="node132" href="$db/d4f/generic__networkhandler_8c.html#aac0abfde6f2872cae33998b90683cf78" title="IApp_CloseSocket_tcp" alt="" coords="705,1967,860,1996"/>
+<area shape="rect" id="node134" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f" title="Close the given socket and clean up the stack." alt="" coords="1044,1967,1140,1996"/>
+<area shape="rect" id="node136" href="$d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" title="CloseSocketPlatform" alt="" coords="1387,1968,1533,1997"/>
+</map>

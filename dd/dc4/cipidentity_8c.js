@@ -1,13 +1,14 @@
 var cipidentity_8c =
 [
-    [ "CIP_Identity_Init", "dd/dc4/cipidentity_8c.html#a12b7bd62ac461ce0b8517b5e16bf1234", null ],
-    [ "setDeviceSerialNumber", "d2/dc9/group__CIP__API.html#ga4fc150ff5c679a78c16ce6d963c355c4", null ],
-    [ "setDeviceStatus", "d2/dc9/group__CIP__API.html#ga15fbdb0463d73ef2cbfc79bbfdf7aded", null ],
-    [ "DeviceType", "dd/dc4/cipidentity_8c.html#a04f64e9b1e0897958cc336cbf3366d18", null ],
-    [ "ID_Status", "dd/dc4/cipidentity_8c.html#aaa8bf1bf94c599bc4db8c2bb2f0531b3", null ],
-    [ "ProductCode", "dd/dc4/cipidentity_8c.html#a298bf8dd05ad3a16cf15f5b96d8499c7", null ],
-    [ "ProductName", "dd/dc4/cipidentity_8c.html#abfbc79b89f57d02418c75dbe0961b9cd", null ],
-    [ "Revison", "dd/dc4/cipidentity_8c.html#a39e9e92bf22bcf3708518f4aeac70132", null ],
-    [ "SerialNumber", "dd/dc4/cipidentity_8c.html#ad57df5dc2f859a02fc2dab3773c5ceab", null ],
-    [ "VendorID", "dd/dc4/cipidentity_8c.html#ab6e6f153f2d21968b71362a7b0af6240", null ]
+    [ "CipIdentityInit", "dd/dc4/cipidentity_8c.html#a374cdadb1e6f8d07acb7044a176eb6b2", null ],
+    [ "Reset", "dd/dc4/cipidentity_8c.html#a5dc9e62bffa95ad93a382e558122c41c", null ],
+    [ "SetDeviceSerialNumber", "d2/dc9/group__CIP__API.html#ga696952d9dbc1b6fdedf517aa55f94323", null ],
+    [ "SetDeviceStatus", "d2/dc9/group__CIP__API.html#ga2113be94f1eab4f25770d975abe6015c", null ],
+    [ "device_type_", "dd/dc4/cipidentity_8c.html#a4a26b0364996689eb8704fcde6090cbe", null ],
+    [ "product_code_", "dd/dc4/cipidentity_8c.html#a952aaef238eb5c4b73eae1692f7e8112", null ],
+    [ "product_name_", "dd/dc4/cipidentity_8c.html#a31a04dc4760074cc3ab21b16fe5323fe", null ],
+    [ "revision_", "dd/dc4/cipidentity_8c.html#aef2b62657ef56842d595877f2af6c64b", null ],
+    [ "serial_number_", "dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9", null ],
+    [ "status_", "dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0", null ],
+    [ "vendor_id_", "dd/dc4/cipidentity_8c.html#a4bc7452f53881ccfd18ac9724f811903", null ]
 ];

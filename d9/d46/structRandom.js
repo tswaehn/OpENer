@@ -1,6 +1,6 @@
 var structRandom =
 [
-    [ "getNextUInt32", "d9/d46/structRandom.html#a5a12d528a7cc346f721cd31e720a3211", null ],
-    [ "nXorShiftSeed", "d9/d46/structRandom.html#a12d896c1a4465393a0f3fcb9553d5053", null ],
-    [ "setSeed", "d9/d46/structRandom.html#a77a4d1d5e06e841e690e731bdd76d0b3", null ]
+    [ "current_seed_value", "d9/d46/structRandom.html#ae213ba247901459f5aa0bdafc76b2765", null ],
+    [ "get_next_uint32", "d9/d46/structRandom.html#af78a2d30ec06d4a719834ff02e9bc212", null ],
+    [ "set_seed", "d9/d46/structRandom.html#a2c49b2f73e05709704aa1da53e968ff5", null ]
 ];

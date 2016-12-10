@@ -1,5 +1,5 @@
 var cipclass3connection_8h =
 [
-    [ "establishClass3Connection", "d2/d11/cipclass3connection_8h.html#a459e8982744d10e7c6cc3f2da6fb8acb", null ],
-    [ "initializeClass3ConnectionData", "d2/d11/cipclass3connection_8h.html#a9d2f4512129d9d38b1849f862a7ddbe0", null ]
+    [ "EstablishClass3Connection", "d2/d11/cipclass3connection_8h.html#a520d2812de0a09b517b1275d88fde150", null ],
+    [ "InitializeClass3ConnectionData", "d2/d11/cipclass3connection_8h.html#a2afaf72caf177920d6b99c503d7fc133", null ]
 ];

@@ -1,7 +1,7 @@
 var cipclass3connection_8c =
 [
-    [ "establishClass3Connection", "dc/d93/cipclass3connection_8c.html#a459e8982744d10e7c6cc3f2da6fb8acb", null ],
-    [ "getFreeExplicitConnection", "dc/d93/cipclass3connection_8c.html#afac935fc983b7ec1f76e1c29a3164676", null ],
-    [ "initializeClass3ConnectionData", "dc/d93/cipclass3connection_8c.html#a9d2f4512129d9d38b1849f862a7ddbe0", null ],
-    [ "g_astExplicitConnections", "dc/d93/cipclass3connection_8c.html#aa6b15c1ebd423ebf079d9f878b17962b", null ]
+    [ "EstablishClass3Connection", "dc/d93/cipclass3connection_8c.html#a520d2812de0a09b517b1275d88fde150", null ],
+    [ "GetFreeExplicitConnection", "dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44", null ],
+    [ "InitializeClass3ConnectionData", "dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133", null ],
+    [ "g_explicit_connections", "dc/d93/cipclass3connection_8c.html#a7fc971e201c74115c897ee6732587ec8", null ]
 ];

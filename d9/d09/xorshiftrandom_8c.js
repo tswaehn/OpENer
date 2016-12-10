@@ -1,6 +1,7 @@
 var xorshiftrandom_8c =
 [
-    [ "calculateNextSeed", "d9/d09/xorshiftrandom_8c.html#a3067722715a0057d2c62d20827943d6e", null ],
-    [ "nextXorShiftUInt32", "d9/d09/xorshiftrandom_8c.html#a3be03a83e90286d7fd347dd2d0de0c31", null ],
-    [ "setXorShiftSeed", "d9/d09/xorshiftrandom_8c.html#a42dc90657fac9c03e709202fde48b76b", null ]
+    [ "CalculateNextSeed", "d9/d09/xorshiftrandom_8c.html#acdff513b98a575880a852ab652f42684", null ],
+    [ "NextXorShiftUint32", "d9/d09/xorshiftrandom_8c.html#a1fed45698fc382c8eac0d4384ab3eaff", null ],
+    [ "SetXorShiftSeed", "d9/d09/xorshiftrandom_8c.html#aba2875aae8a8e22bc903edeebe63138b", null ],
+    [ "xor_shift_seed", "d9/d09/xorshiftrandom_8c.html#aa22080bd3a3f1c7bf2d48b4f95bec6f6", null ]
 ];

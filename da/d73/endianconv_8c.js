@@ -1,12 +1,16 @@
 var endianconv_8c =
 [
-    [ "determineEndianess", "da/d73/endianconv_8c.html#a225c23a7ed872cd5a5d52c2e90870a83", null ],
-    [ "encapsulateIPAdress", "da/d73/endianconv_8c.html#a684d251f2990c861c5ef813d6d1f205b", null ],
-    [ "encapsulateIPAdressCPF", "da/d73/endianconv_8c.html#af8d7300f72b364ff347e8ed1895f989e", null ],
-    [ "getEndianess", "da/d73/endianconv_8c.html#a5f1fd74e954caf9688979432dcf8f996", null ],
-    [ "htoll", "d4/d91/group__ENCAP.html#gaa00e394da5cd80135cdab7d4f3d88819", null ],
-    [ "htols", "d4/d91/group__ENCAP.html#ga738d386bb3919d75bb14dcb40ca5389f", null ],
-    [ "ltohl", "d4/d91/group__ENCAP.html#ga4ac7387e49002d26462d7cdd094d238a", null ],
-    [ "ltohs", "d4/d91/group__ENCAP.html#ga6ce01de4023c01608d2bdfdb584d59d3", null ],
-    [ "g_nOpENerPlatformEndianess", "da/d73/endianconv_8c.html#a71b8ddb2c45b664055ec3022c9849ba3", null ]
+    [ "AddDintToMessage", "d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822", null ],
+    [ "AddIntToMessage", "d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799", null ],
+    [ "AddSintToMessage", "d4/d91/group__ENCAP.html#gae267a8684cc6ee1b3bd83df03260b7aa", null ],
+    [ "DetermineEndianess", "da/d73/endianconv_8c.html#a7389bb58f3547b10d7ad15fbfc26411b", null ],
+    [ "EncapsulateIpAddress", "da/d73/endianconv_8c.html#a2e8bf172dd5ecba3cc0871278ab06538", null ],
+    [ "FillNextNMessageOctetsWith", "da/d73/endianconv_8c.html#ae391d0308d5eebd8221d3fde59872b7c", null ],
+    [ "FillNextNMessageOctetsWithValueAndMoveToNextPosition", "da/d73/endianconv_8c.html#af9669c6d673d3d653b5f0569fee71822", null ],
+    [ "GetDintFromMessage", "d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8", null ],
+    [ "GetEndianess", "da/d73/endianconv_8c.html#a3de93b9acffbb19d75ceaf93caa6617c", null ],
+    [ "GetIntFromMessage", "d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302", null ],
+    [ "GetSintFromMessage", "d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c", null ],
+    [ "MoveMessageNOctets", "da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d", null ],
+    [ "g_opener_platform_endianess", "da/d73/endianconv_8c.html#a474ff19cc3d26eef2448d77f787e0df7", null ]
 ];

@@ -4,6 +4,7 @@ var generic__networkhandler_8c =
     [ "CheckAndHandleTcpListenerSocket", "db/d4f/generic__networkhandler_8c.html#a8c1688da4bc37416162f4ba5ac436294", null ],
     [ "CheckAndHandleUdpGlobalBroadcastSocket", "db/d4f/generic__networkhandler_8c.html#a5cae623dd720f3072dabdb78aa134262", null ],
     [ "CheckAndHandleUdpUnicastSocket", "db/d4f/generic__networkhandler_8c.html#ace1d8f3907ead0c43c1b5853132d5eb1", null ],
+    [ "CheckEncapsulationInactivity", "db/d4f/generic__networkhandler_8c.html#ab561fc66fe48a0cf95be3d152b297dd9", null ],
     [ "CheckSocketSet", "db/d4f/generic__networkhandler_8c.html#acebcfe03d5528a69d288c446ff3048b1", null ],
     [ "CloseSocket", "d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f", null ],
     [ "CreateUdpSocket", "d5/dc5/group__CIP__CALLBACK__API.html#gadae462526ab01253d39e4a54346f56ca", null ],

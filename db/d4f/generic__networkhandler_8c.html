@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for generic_networkhandler.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dd/d6b/generic__networkhandler_8c__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dd/d6b/generic__networkhandler_8c__incl.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -130,6 +130,7 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks and handles incoming messages via UDP broadcast.  <a href="#a5cae623dd720f3072dabdb78aa134262"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html#ace1d8f3907ead0c43c1b5853132d5eb1">CheckAndHandleUdpUnicastSocket</a> (void)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks and processes request received via the UDP unicast socket, currently the implementation is port-specific.  <a href="#ace1d8f3907ead0c43c1b5853132d5eb1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html#ab561fc66fe48a0cf95be3d152b297dd9">CheckEncapsulationInactivity</a> (int socket_handle)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html#acebcfe03d5528a69d288c446ff3048b1">CheckSocketSet</a> (int socket)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the given socket is set in the read set  <a href="#acebcfe03d5528a69d288c446ff3048b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f">CloseSocket</a> (int socket_handle)</td></tr>
@@ -175,16 +176,16 @@ Martin Melik Merkumians </dd></dl>
 
 <p>check if on one of the UDP consuming sockets data has been received and if yes handle it correctly </p>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00673">673</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00739">739</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">CheckSocketSet()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00210">connection_object::connection_close_function</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00033">g_ethernet_communication_buffer</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00199">HandleReceivedConnectedData()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00104">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00207">connection_object::socket</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">CheckSocketSet()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00210">connection_object::connection_close_function</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">g_ethernet_communication_buffer</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00199">HandleReceivedConnectedData()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00104">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00207">connection_object::socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_af0c95ade149818d252c292b489cfe190_cgraph.svg" width="100%" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_af0c95ade149818d252c292b489cfe190_cgraph.svg" width="100%" height="210"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -216,16 +217,16 @@ Here is the caller graph for this function:</div>
 
 <p>handle any connection request coming in the TCP server socket. </p>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00225">225</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00253">253</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">CheckSocketSet()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00038">highest_socket_handle</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00035">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00054">NetworkStatus::tcp_listener</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">CheckSocketSet()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_actual_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00051">g_timestamps</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::tcp_listener</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_a8c1688da4bc37416162f4ba5ac436294_cgraph.svg" width="454" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_a8c1688da4bc37416162f4ba5ac436294_cgraph.svg" width="454" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -257,11 +258,11 @@ Here is the caller graph for this function:</div>
 
 <p>Checks and handles incoming messages via UDP broadcast. </p>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00319">319</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00352">352</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">CheckSocketSet()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00033">g_ethernet_communication_buffer</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00226">HandleReceivedExplictUdpData()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::udp_global_broadcast_listener</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">CheckSocketSet()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">g_ethernet_communication_buffer</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00226">HandleReceivedExplictUdpData()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00058">NetworkStatus::udp_global_broadcast_listener</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -298,11 +299,11 @@ Here is the caller graph for this function:</div>
 
 <p>Checks and processes request received via the UDP unicast socket, currently the implementation is port-specific. </p>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00376">376</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00412">412</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">CheckSocketSet()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00033">g_ethernet_communication_buffer</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00226">HandleReceivedExplictUdpData()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00055">NetworkStatus::udp_unicast_listener</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">CheckSocketSet()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">g_ethernet_communication_buffer</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00226">HandleReceivedExplictUdpData()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_STATE</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00057">NetworkStatus::udp_unicast_listener</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -316,6 +317,45 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_ace1d8f3907ead0c43c1b5853132d5eb1_icgraph.svg" width="587" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab561fc66fe48a0cf95be3d152b297dd9"></a><!-- doxytag: member="generic_networkhandler.c::CheckEncapsulationInactivity" ref="ab561fc66fe48a0cf95be3d152b297dd9" args="(int socket_handle)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/d4f/generic__networkhandler_8c.html#ab561fc66fe48a0cf95be3d152b297dd9">CheckEncapsulationInactivity</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00816">816</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00621">CloseSession()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">CloseSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_actual_time</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00062">g_encapsulation_inactivity_timeout</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00051">g_timestamps</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_ab561fc66fe48a0cf95be3d152b297dd9_cgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_ab561fc66fe48a0cf95be3d152b297dd9_icgraph.svg" width="547" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -346,11 +386,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if socket is set </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">211</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">239</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00035">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">read_socket</a>.</p>
+<p>References <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">read_socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00673">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00225">CheckAndHandleTcpListenerSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00319">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00376">CheckAndHandleUdpUnicastSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00739">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00253">CheckAndHandleTcpListenerSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00352">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00412">CheckAndHandleUdpUnicastSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -411,9 +451,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Highest socket id from the provided sockets </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00730">730</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00800">800</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00055">NetworkHandlerInitialize()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00057">NetworkHandlerInitialize()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -449,11 +489,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>kEipStatusOk on success, or kEipStatusError on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00457">457</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00501">501</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00021">ENCAPSULATION_HEADER_LENGTH</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00044">g_current_active_tcp_socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00033">g_ethernet_communication_buffer</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00043">GetIntFromMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00152">HandleReceivedExplictTcpData()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_WARN</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00021">ENCAPSULATION_HEADER_LENGTH</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_actual_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00045">g_current_active_tcp_socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">g_ethernet_communication_buffer</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00051">g_timestamps</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00043">GetIntFromMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00152">HandleReceivedExplictTcpData()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_WARN</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">PC_OPENER_ETHERNET_BUFFER_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -488,9 +528,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00207">207</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00235">235</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00721">CloseSocket()</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">CloseSocket()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00621">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00632">EncapsulationShutDown()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00476">HandleReceivedUnregisterSessionCommand()</a>.</p>
 
@@ -505,7 +545,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_aac0abfde6f2872cae33998b90683cf78_icgraph.svg" width="100%" height="149"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_aac0abfde6f2872cae33998b90683cf78_icgraph.svg" width="100%" height="178"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -527,9 +567,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00203">203</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00231">231</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00721">CloseSocket()</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">CloseSocket()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00764">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01143">CloseConnection()</a>.</p>
 
@@ -566,9 +606,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00312">312</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00345">345</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00721">CloseSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00054">NetworkStatus::tcp_listener</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::udp_global_broadcast_listener</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00055">NetworkStatus::udp_unicast_listener</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">CloseSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::tcp_listener</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00058">NetworkStatus::udp_global_broadcast_listener</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00057">NetworkStatus::udp_unicast_listener</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00028">main()</a>.</p>
 
@@ -609,16 +649,16 @@ Here is the caller graph for this function:</div>
 <p>The platform independent part of network handler initialization routine.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>EipStatus, if initialization failed EipError is returned </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00055">55</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00057">57</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00057">NetworkStatus::elapsed_time</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_last_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00730">GetMaxSocket()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00022">GetMilliSeconds()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00038">highest_socket_handle</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00028">interface_configuration_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00346">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00035">master_socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00028">MAX_NO_OF_TCP_SOCKETS</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00026">NetworkHandlerInitializePlatform()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">read_socket</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00207">connection_object::socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00054">NetworkStatus::tcp_listener</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::udp_global_broadcast_listener</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00055">NetworkStatus::udp_unicast_listener</a>.</p>
+<p>References <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00059">NetworkStatus::elapsed_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_actual_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00049">g_last_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00051">g_timestamps</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00800">GetMaxSocket()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00022">GetMilliSeconds()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00029">interface_configuration_</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00029">MAX_NO_OF_TCP_SOCKETS</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00026">NetworkHandlerInitializePlatform()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">read_socket</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00207">connection_object::socket</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00056">NetworkStatus::tcp_listener</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00058">NetworkStatus::udp_global_broadcast_listener</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00057">NetworkStatus::udp_unicast_listener</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00028">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_aa49065f73f4d0f0ab04fb0b35d791e5d_cgraph.svg" width="438" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4f/generic__networkhandler_8c_aa49065f73f4d0f0ab04fb0b35d791e5d_cgraph.svg" width="438" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -648,9 +688,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00252">252</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">281</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00673">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00225">CheckAndHandleTcpListenerSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00319">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00376">CheckAndHandleUdpUnicastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00211">CheckSocketSet()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00621">CloseSession()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00721">CloseSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00057">NetworkStatus::elapsed_time</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00047">g_actual_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_last_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00060">g_network_status</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00046">g_time_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00022">GetMilliSeconds()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00457">HandleDataOnTcpSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00038">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00526">ManageConnections()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00035">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">read_socket</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00739">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00253">CheckAndHandleTcpListenerSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00352">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00412">CheckAndHandleUdpUnicastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00816">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">CheckSocketSet()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00621">CloseSession()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">CloseSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00059">NetworkStatus::elapsed_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00048">g_actual_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00049">g_last_time</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00062">g_network_status</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00047">g_time_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00022">GetMilliSeconds()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00501">HandleDataOnTcpSocket()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00526">ManageConnections()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, and <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">read_socket</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00028">main()</a>.</p>
 
@@ -692,7 +732,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html">generic_networkhandler.c</a>      </li>
 
-    <li class="footer">Generated on Sat Dec 10 2016 19:57:08 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

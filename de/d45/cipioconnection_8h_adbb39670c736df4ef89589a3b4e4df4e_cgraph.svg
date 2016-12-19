@@ -57,39 +57,39 @@ var sectionId = 'dynsection-6';
 <path fill="none" stroke="midnightblue" d="M121.002,-80.5067C140.911,-84.8006 164.528,-89.5566 186,-93 257.767,-104.509 339.037,-113.78 402.23,-120.163"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="401.913,-123.649 412.212,-121.163 402.611,-116.684 401.913,-123.649"/>
 </g>
-<!-- Node7 -->
-<g id="node13" class="node"><title>Node7</title>
+<!-- Node6 -->
+<g id="node11" class="node"><title>Node6</title>
 <a xlink:href="../../df/d03/cipioconnection_8c.html#a9937b2aeb5fd393c7861e25f04c9f1c1" target="_top" xlink:title="OpenMulticastConnection">
 <polygon fill="none" stroke="black" points="445.5,-79.5 445.5,-100.5 574.5,-100.5 574.5,-79.5 445.5,-79.5"/>
 <text text-anchor="middle" x="510" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">OpenMulticastConnection</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M149.779,-73.4381C229.519,-77.1043 355.082,-82.8773 434.932,-86.5486"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="435.252,-90.0669 445.403,-87.03 435.574,-83.0743 435.252,-90.0669"/>
 </g>
-<!-- Node8 -->
-<g id="node16" class="node"><title>Node8</title>
+<!-- Node7 -->
+<g id="node14" class="node"><title>Node7</title>
 <a xlink:href="../../df/d03/cipioconnection_8c.html#a281f0a261db50e297593dd3383093fb0" target="_top" xlink:title="OpenProducingMulticastConnection">
 <polygon fill="none" stroke="black" points="194.5,-40.5 194.5,-61.5 367.5,-61.5 367.5,-40.5 194.5,-40.5"/>
 <text text-anchor="middle" x="281" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">OpenProducingMulticastConnection</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge16" class="edge"><title>Node1&#45;&gt;Node8</title>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge14" class="edge"><title>Node1&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M149.662,-63.1137C160.883,-62.0787 172.591,-60.9989 184.193,-59.9288"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="184.711,-63.3959 194.348,-58.9922 184.068,-56.4255 184.711,-63.3959"/>
 </g>
-<!-- Node10 -->
-<g id="node21" class="node"><title>Node10</title>
+<!-- Node9 -->
+<g id="node19" class="node"><title>Node9</title>
 <a xlink:href="../../df/d03/cipioconnection_8c.html#ab5ba6f9cb3103c1db76c2bf7ae3cce8d" target="_top" xlink:title="OpenProducingPointToPointConnection">
 <polygon fill="none" stroke="black" points="186.5,-0.5 186.5,-21.5 375.5,-21.5 375.5,-0.5 186.5,-0.5"/>
 <text text-anchor="middle" x="281" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">OpenProducingPointToPointConnection</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node10 -->
-<g id="edge22" class="edge"><title>Node1&#45;&gt;Node10</title>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge20" class="edge"><title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M102.054,-59.3802C124.336,-50.9044 156.887,-39.1416 186,-31 195.276,-28.4059 205.145,-25.9733 214.88,-23.7593"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="215.937,-27.1102 224.945,-21.5337 214.426,-20.2753 215.937,-27.1102"/>
 </g>
@@ -108,63 +108,51 @@ var sectionId = 'dynsection-6';
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
 <a xlink:href="../../df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24" target="_top" xlink:title="Gets the error number or equivalent.">
-<polygon fill="none" stroke="black" points="776.5,-119.5 776.5,-140.5 895.5,-140.5 895.5,-119.5 776.5,-119.5"/>
-<text text-anchor="middle" x="836" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetSocketErrorNumber</text>
+<polygon fill="none" stroke="black" points="776.5,-99.5 776.5,-120.5 895.5,-120.5 895.5,-99.5 776.5,-99.5"/>
+<text text-anchor="middle" x="836" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetSocketErrorNumber</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M729.834,-100.51C747.716,-105.477 769.259,-111.461 788.252,-116.737"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="787.346,-120.118 797.918,-119.422 789.22,-113.373 787.346,-120.118"/>
+<path fill="none" stroke="midnightblue" d="M739.55,-96.6042C748.121,-97.7946 757.217,-99.0579 766.265,-100.315"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="766.043,-103.817 776.429,-101.726 767.006,-96.8838 766.043,-103.817"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
 <a xlink:href="../../df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae" target="_top" xlink:title="Returns a human readable message for the given error number.">
-<polygon fill="none" stroke="black" points="789.5,-79.5 789.5,-100.5 882.5,-100.5 882.5,-79.5 789.5,-79.5"/>
-<text text-anchor="middle" x="836" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetErrorMessage</text>
+<polygon fill="none" stroke="black" points="789.5,-59.5 789.5,-80.5 882.5,-80.5 882.5,-59.5 789.5,-59.5"/>
+<text text-anchor="middle" x="836" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetErrorMessage</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M739.55,-90C752.22,-90 766.036,-90 779.149,-90"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="779.48,-93.5001 789.48,-90 779.48,-86.5001 779.48,-93.5001"/>
+<path fill="none" stroke="midnightblue" d="M739.55,-83.3958C752.345,-81.6187 766.309,-79.6792 779.539,-77.8419"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="780.057,-81.3036 789.48,-76.4611 779.094,-74.3701 780.057,-81.3036"/>
 </g>
-<!-- Node6 -->
-<g id="node11" class="node"><title>Node6</title>
-<a xlink:href="../../df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20" target="_top" xlink:title="Frees the space of the error message generated by GetErrorMessage(int)">
-<polygon fill="none" stroke="black" points="787.5,-39.5 787.5,-60.5 884.5,-60.5 884.5,-39.5 787.5,-39.5"/>
-<text text-anchor="middle" x="836" y="-47.5" font-family="Helvetica,sans-Serif" font-size="10.00">FreeErrorMessage</text>
-</a>
-</g>
-<!-- Node3&#45;&gt;Node6 -->
-<g id="edge10" class="edge"><title>Node3&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M729.834,-79.4905C747.716,-74.5232 769.259,-68.5393 788.252,-63.2635"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="789.22,-66.627 797.918,-60.5782 787.346,-59.8824 789.22,-66.627"/>
-</g>
-<!-- Node7&#45;&gt;Node3 -->
-<g id="edge14" class="edge"><title>Node7&#45;&gt;Node3</title>
+<!-- Node6&#45;&gt;Node3 -->
+<g id="edge12" class="edge"><title>Node6&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M574.679,-90C594.076,-90 615.218,-90 634.145,-90"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="634.406,-93.5001 644.406,-90 634.406,-86.5001 634.406,-93.5001"/>
 </g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge20" class="edge"><title>Node8&#45;&gt;Node7</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge18" class="edge"><title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M342.669,-61.5026C372.067,-66.5092 407.415,-72.5293 438.034,-77.7438"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="437.775,-81.25 448.221,-79.4787 438.95,-74.3494 437.775,-81.25"/>
 </g>
-<!-- Node9 -->
-<g id="node18" class="node"><title>Node9</title>
+<!-- Node8 -->
+<g id="node16" class="node"><title>Node8</title>
 <a xlink:href="../../d1/dbc/appcontype_8c.html#a7b838b128170044eb0d81371c9f0bb49" target="_top" xlink:title="Check if there exists already an exclusive owner or listen only connection which produces the input a...">
 <polygon fill="none" stroke="black" points="412,-39.5 412,-60.5 608,-60.5 608,-39.5 412,-39.5"/>
 <text text-anchor="middle" x="510" y="-47.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetExistingProducerMulticastConnection</text>
 </a>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge18" class="edge"><title>Node8&#45;&gt;Node9</title>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge16" class="edge"><title>Node7&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M367.575,-50.6219C378.743,-50.5732 390.288,-50.5228 401.749,-50.4727"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="401.804,-53.9726 411.788,-50.4289 401.773,-46.9727 401.804,-53.9726"/>
 </g>
-<!-- Node10&#45;&gt;Node3 -->
-<g id="edge24" class="edge"><title>Node10&#45;&gt;Node3</title>
+<!-- Node9&#45;&gt;Node3 -->
+<g id="edge22" class="edge"><title>Node9&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M375.688,-2.8401C442.488,-0.326434 533.056,-3.56157 608,-30 633.33,-38.9357 657.792,-57.9737 673.721,-72.2224"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="671.511,-74.9456 681.232,-79.1582 676.26,-69.8027 671.511,-74.9456"/>
 </g>

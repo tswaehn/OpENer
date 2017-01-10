@@ -26,6 +26,7 @@ var annotated =
     [ "ConnectionManagementHandling", "d1/d46/structConnectionManagementHandling.html", "d1/d46/structConnectionManagementHandling" ],
     [ "DataItem", "de/d71/structDataItem.html", "de/d71/structDataItem" ],
     [ "DelayedEncapsulationMessage", "d4/da1/structDelayedEncapsulationMessage.html", "d4/da1/structDelayedEncapsulationMessage" ],
+    [ "electronic_key_format_4", "d9/d3a/structelectronic__key__format__4.html", "d9/d3a/structelectronic__key__format__4" ],
     [ "encapsulation_data", "d9/d42/structencapsulation__data.html", "d9/d42/structencapsulation__data" ],
     [ "encapsulation_interface_information", "d0/d6e/structencapsulation__interface__information.html", "d0/d6e/structencapsulation__interface__information" ],
     [ "ExclusiveOwnerConnection", "d7/d95/structExclusiveOwnerConnection.html", "d7/d95/structExclusiveOwnerConnection" ],
@@ -37,5 +38,6 @@ var annotated =
     [ "multicast_address_configuration", "db/dd7/structmulticast__address__configuration.html", "db/dd7/structmulticast__address__configuration" ],
     [ "NetworkStatus", "df/d80/structNetworkStatus.html", "df/d80/structNetworkStatus" ],
     [ "Random", "d9/d46/structRandom.html", "d9/d46/structRandom" ],
+    [ "socket_timer", "de/d22/structsocket__timer.html", "de/d22/structsocket__timer" ],
     [ "SocketAddressInfoItem", "dc/d3c/structSocketAddressInfoItem.html", "dc/d3c/structSocketAddressInfoItem" ]
 ];

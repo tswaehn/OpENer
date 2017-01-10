@@ -122,49 +122,50 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00031"></a>00031 <span class="preprocessor">#ifndef OPENER_TRACE_LEVEL</span>
 <a name="l00032"></a>00032 <span class="preprocessor"></span><span class="preprocessor">#ifdef WIN32</span>
 <a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#pragma message( \</span>
-<a name="l00034"></a>00034 <span class="preprocessor">    &quot;OPENER_TRACE_LEVEL was not defined setting it to OPENER_TRACE_LEVEL_ERROR&quot;)</span>
+<a name="l00034"></a>00034 <span class="preprocessor">  &quot;OPENER_TRACE_LEVEL was not defined setting it to OPENER_TRACE_LEVEL_ERROR&quot;)</span>
 <a name="l00035"></a>00035 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">#warning OPENER_TRACE_LEVEL was not defined setting it to OPENER_TRACE_LEVEL_ERROR</span>
-<a name="l00037"></a>00037 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00038"></a>00038 <span class="preprocessor"></span>
-<a name="l00039"></a>00039 <span class="preprocessor">#define OPENER_TRACE_LEVEL OPENER_TRACE_LEVEL_ERROR</span>
-<a name="l00040"></a>00040 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00041"></a>00041 <span class="preprocessor"></span>
-<a name="l00042"></a>00042 <span class="comment">/* @def OPENER_TRACE_ENABLED Can be used for conditional code compilation */</span>
-<a name="l00043"></a>00043 <span class="preprocessor">#define OPENER_TRACE_ENABLED</span>
-<a name="l00044"></a>00044 <span class="preprocessor"></span>
-<a name="l00049"></a>00049 <span class="preprocessor">#define OPENER_TRACE_ERR(...)                                                  \</span>
-<a name="l00050"></a>00050 <span class="preprocessor">  do {                                                                         \</span>
-<a name="l00051"></a>00051 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_ERROR &amp; OPENER_TRACE_LEVEL) LOG_TRACE(__VA_ARGS__); \</span>
-<a name="l00052"></a>00052 <span class="preprocessor">  } while (0)</span>
-<a name="l00053"></a>00053 <span class="preprocessor"></span>
-<a name="l00058"></a>00058 <span class="preprocessor">#define OPENER_TRACE_WARN(...)                           \</span>
-<a name="l00059"></a>00059 <span class="preprocessor">  do {                                                   \</span>
-<a name="l00060"></a>00060 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_WARNING &amp; OPENER_TRACE_LEVEL) \</span>
-<a name="l00061"></a>00061 <span class="preprocessor">      LOG_TRACE(__VA_ARGS__);                            \</span>
-<a name="l00062"></a>00062 <span class="preprocessor">  } while (0)</span>
-<a name="l00063"></a>00063 <span class="preprocessor"></span>
-<a name="l00068"></a>00068 <span class="preprocessor">#define OPENER_TRACE_STATE(...)                                                \</span>
-<a name="l00069"></a>00069 <span class="preprocessor">  do {                                                                         \</span>
-<a name="l00070"></a>00070 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_STATE &amp; OPENER_TRACE_LEVEL) LOG_TRACE(__VA_ARGS__); \</span>
-<a name="l00071"></a>00071 <span class="preprocessor">  } while (0)</span>
-<a name="l00072"></a>00072 <span class="preprocessor"></span>
-<a name="l00077"></a>00077 <span class="preprocessor">#define OPENER_TRACE_INFO(...)                                                \</span>
-<a name="l00078"></a>00078 <span class="preprocessor">  do {                                                                        \</span>
-<a name="l00079"></a>00079 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_INFO &amp; OPENER_TRACE_LEVEL) LOG_TRACE(__VA_ARGS__); \</span>
-<a name="l00080"></a>00080 <span class="preprocessor">  } while (0)</span>
-<a name="l00081"></a>00081 <span class="preprocessor"></span>
-<a name="l00082"></a>00082 <span class="preprocessor">#else</span>
-<a name="l00083"></a>00083 <span class="preprocessor"></span><span class="comment">/* define the tracing macros empty in order to save space */</span>
-<a name="l00084"></a>00084 
-<a name="l00085"></a><a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">00085</a> <span class="preprocessor">#define OPENER_TRACE_ERR(...)</span>
-<a name="l00086"></a><a class="code" href="../../d1/d1b/trace_8h.html#aa1b39db9477c48695273170aff3c3a7a">00086</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_WARN(...)</span>
-<a name="l00087"></a><a class="code" href="../../d1/d1b/trace_8h.html#a246b536bd8beacb0816ae2fd06c194ba">00087</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_STATE(...)</span>
-<a name="l00088"></a><a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">00088</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_INFO(...)</span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="comment">/* TRACING *******************************************************************/</span>
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092 <span class="preprocessor">#endif </span><span class="comment">/*OPENER_TRACE_H_*/</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">#warning \</span>
+<a name="l00037"></a>00037 <span class="preprocessor">  OPENER_TRACE_LEVEL was not defined setting it to OPENER_TRACE_LEVEL_ERROR</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>
+<a name="l00040"></a>00040 <span class="preprocessor">#define OPENER_TRACE_LEVEL OPENER_TRACE_LEVEL_ERROR</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 <span class="comment">/* @def OPENER_TRACE_ENABLED Can be used for conditional code compilation */</span>
+<a name="l00044"></a>00044 <span class="preprocessor">#define OPENER_TRACE_ENABLED</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00050"></a>00050 <span class="preprocessor">#define OPENER_TRACE_ERR(...)                                                  \</span>
+<a name="l00051"></a>00051 <span class="preprocessor">  do {                                                                         \</span>
+<a name="l00052"></a>00052 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_ERROR &amp; OPENER_TRACE_LEVEL) {LOG_TRACE(__VA_ARGS__);} \</span>
+<a name="l00053"></a>00053 <span class="preprocessor">  } while (0)</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span>
+<a name="l00059"></a>00059 <span class="preprocessor">#define OPENER_TRACE_WARN(...)                           \</span>
+<a name="l00060"></a>00060 <span class="preprocessor">  do {                                                   \</span>
+<a name="l00061"></a>00061 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_WARNING &amp; OPENER_TRACE_LEVEL) { \</span>
+<a name="l00062"></a>00062 <span class="preprocessor">      LOG_TRACE(__VA_ARGS__);}                            \</span>
+<a name="l00063"></a>00063 <span class="preprocessor">  } while (0)</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00069"></a>00069 <span class="preprocessor">#define OPENER_TRACE_STATE(...)                                                \</span>
+<a name="l00070"></a>00070 <span class="preprocessor">  do {                                                                         \</span>
+<a name="l00071"></a>00071 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_STATE &amp; OPENER_TRACE_LEVEL) {LOG_TRACE(__VA_ARGS__);} \</span>
+<a name="l00072"></a>00072 <span class="preprocessor">  } while (0)</span>
+<a name="l00073"></a>00073 <span class="preprocessor"></span>
+<a name="l00078"></a>00078 <span class="preprocessor">#define OPENER_TRACE_INFO(...)                                                \</span>
+<a name="l00079"></a>00079 <span class="preprocessor">  do {                                                                        \</span>
+<a name="l00080"></a>00080 <span class="preprocessor">    if (OPENER_TRACE_LEVEL_INFO &amp; OPENER_TRACE_LEVEL) {LOG_TRACE(__VA_ARGS__);} \</span>
+<a name="l00081"></a>00081 <span class="preprocessor">  } while (0)</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span>
+<a name="l00083"></a>00083 <span class="preprocessor">#else</span>
+<a name="l00084"></a>00084 <span class="preprocessor"></span><span class="comment">/* define the tracing macros empty in order to save space */</span>
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">00086</a> <span class="preprocessor">#define OPENER_TRACE_ERR(...)</span>
+<a name="l00087"></a><a class="code" href="../../d1/d1b/trace_8h.html#aa1b39db9477c48695273170aff3c3a7a">00087</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_WARN(...)</span>
+<a name="l00088"></a><a class="code" href="../../d1/d1b/trace_8h.html#a246b536bd8beacb0816ae2fd06c194ba">00088</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_STATE(...)</span>
+<a name="l00089"></a><a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">00089</a> <span class="preprocessor"></span><span class="preprocessor">#define OPENER_TRACE_INFO(...)</span>
+<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="comment">/* TRACING *******************************************************************/</span>
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="preprocessor">#endif </span><span class="comment">/*OPENER_TRACE_H_*/</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -185,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d1/d1b/trace_8h.html">trace.h</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

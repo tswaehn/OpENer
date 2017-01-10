@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../d0/dff/cpf_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*******************************************************************************</span>
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2009, Rockwell Automation, Inc.</span>
-<a name="l00003"></a>00003 <span class="comment"> * All rights reserved. </span>
+<a name="l00003"></a>00003 <span class="comment"> * All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
 <a name="l00005"></a>00005 <span class="comment"> ******************************************************************************/</span>
 <a name="l00006"></a>00006 <span class="preprocessor">#ifndef OPENER_CPF_H_</span>
@@ -140,47 +140,48 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00050"></a><a class="code" href="../../de/d71/structDataItem.html#a41b6c57403987dc9eb760942e3383f89">00050</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *<a class="code" href="../../de/d71/structDataItem.html#a41b6c57403987dc9eb760942e3383f89">data</a>;
 <a name="l00051"></a>00051 } <a class="code" href="../../de/d71/structDataItem.html">DataItem</a>;
 <a name="l00052"></a>00052 
-<a name="l00053"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html">00053</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00054"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">00054</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a>;
-<a name="l00055"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa">00055</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa">length</a>;
-<a name="l00056"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a">00056</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a1be1b4a809b73131a8674fcf96d17968">CipInt</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a">sin_family</a>;
-<a name="l00057"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146">00057</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146">sin_port</a>;
-<a name="l00058"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163">00058</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163">sin_addr</a>;
-<a name="l00059"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#abaf556494b9fea3137c6c45522ab9bda">00059</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> nasin_zero[8];
-<a name="l00060"></a>00060 } <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html">SocketAddressInfoItem</a>;
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="comment">/* this one case of a CPF packet is supported:*/</span>
-<a name="l00063"></a>00063 
-<a name="l00064"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">00064</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00065"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">00065</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">item_count</a>;
-<a name="l00066"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">00066</a>   <a class="code" href="../../d3/d56/structAddressItem.html">AddressItem</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>;
-<a name="l00067"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">00067</a>   <a class="code" href="../../de/d71/structDataItem.html">DataItem</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>;
-<a name="l00068"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">00068</a>   <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html">SocketAddressInfoItem</a> address_info_item[2];
-<a name="l00069"></a>00069 } <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a>;
-<a name="l00070"></a>00070 
-<a name="l00079"></a>00079 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#ga401f152f47e54b0a6dddcfe723c086f9">NotifyCommonPacketFormat</a>(<a class="code" href="../../d9/d42/structencapsulation__data.html">EncapsulationData</a> *<span class="keyword">const</span> received_data,
-<a name="l00080"></a>00080                              <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *<span class="keyword">const</span> reply_buffer);
-<a name="l00081"></a>00081 
-<a name="l00091"></a>00091 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#ga045feac9b8747e049e2420df1ec0844b">NotifyConnectedCommonPacketFormat</a>(<a class="code" href="../../d9/d42/structencapsulation__data.html">EncapsulationData</a> *received_data,
-<a name="l00092"></a>00092                                       <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer);
-<a name="l00093"></a>00093 
-<a name="l00103"></a>00103 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606" title="Creates Common Packet Format structure out of data.">CreateCommonPacketFormatStructure</a>(
-<a name="l00104"></a>00104     <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, <span class="keywordtype">int</span> data_length,
-<a name="l00105"></a>00105     <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *common_packet_format_data);
-<a name="l00106"></a>00106 
-<a name="l00115"></a>00115 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4">AssembleIOMessage</a>(
-<a name="l00116"></a>00116     <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *common_packet_format_data_item,
-<a name="l00117"></a>00117     <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message);
-<a name="l00118"></a>00118 
-<a name="l00119"></a>00119 
-<a name="l00128"></a>00128 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392" title="Copy data from message_router_response struct and common_packet_format_data_item into linear memory i...">AssembleLinearMessage</a>(
-<a name="l00129"></a>00129     <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response,
-<a name="l00130"></a>00130     <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *common_packet_format_data_item,
-<a name="l00131"></a>00131     <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message);
-<a name="l00132"></a>00132 
-<a name="l00138"></a>00138 <span class="keyword">extern</span> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> <a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;
-<a name="l00139"></a>00139 
-<a name="l00140"></a>00140 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_CPF_H_ */</span>
+<a name="l00056"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html">00056</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00057"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">00057</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a>; 
+<a name="l00058"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa">00058</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa">length</a>; 
+<a name="l00059"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a">00059</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a1be1b4a809b73131a8674fcf96d17968">CipInt</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a">sin_family</a>; 
+<a name="l00060"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146">00060</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146">sin_port</a>; 
+<a name="l00061"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163">00061</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163">sin_addr</a>; 
+<a name="l00062"></a><a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#abaf556494b9fea3137c6c45522ab9bda">00062</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> nasin_zero[8]; 
+<a name="l00063"></a>00063 } <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html" title="CPF Sockaddr Item.">SocketAddressInfoItem</a>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="comment">/* this one case of a CPF packet is supported:*/</span>
+<a name="l00067"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html">00067</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00068"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">00068</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">item_count</a>; 
+<a name="l00069"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">00069</a>   <a class="code" href="../../d3/d56/structAddressItem.html">AddressItem</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>;
+<a name="l00070"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">00070</a>   <a class="code" href="../../de/d71/structDataItem.html">DataItem</a> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>;
+<a name="l00071"></a><a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">00071</a>   <a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html" title="CPF Sockaddr Item.">SocketAddressInfoItem</a> address_info_item[2];
+<a name="l00072"></a>00072 } <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a>;
+<a name="l00073"></a>00073 
+<a name="l00082"></a>00082 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03">NotifyCommonPacketFormat</a>(<a class="code" href="../../d9/d42/structencapsulation__data.html">EncapsulationData</a> *<span class="keyword">const</span> received_data,
+<a name="l00083"></a>00083                              <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *<span class="keyword">const</span> reply_buffer,
+<a name="l00084"></a>00084                              <span class="keyword">struct</span> sockaddr *originator_address);
+<a name="l00085"></a>00085 
+<a name="l00095"></a>00095 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#ga94ca28af85239d7dd63b3b044201fe51">NotifyConnectedCommonPacketFormat</a>(<a class="code" href="../../d9/d42/structencapsulation__data.html">EncapsulationData</a> *received_data,
+<a name="l00096"></a>00096                                       <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer,
+<a name="l00097"></a>00097                                       <span class="keyword">struct</span> sockaddr *originator_address);
+<a name="l00098"></a>00098 
+<a name="l00108"></a>00108 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606" title="Creates Common Packet Format structure out of data.">CreateCommonPacketFormatStructure</a>(
+<a name="l00109"></a>00109   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data,
+<a name="l00110"></a>00110   <span class="keywordtype">int</span> data_length,
+<a name="l00111"></a>00111   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data);
+<a name="l00112"></a>00112 
+<a name="l00121"></a>00121 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4">AssembleIOMessage</a>(
+<a name="l00122"></a>00122   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data_item,<a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message);
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124 
+<a name="l00133"></a>00133 <span class="keywordtype">int</span> <a class="code" href="../../d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392" title="Copy data from message_router_response struct and common_packet_format_data_item into linear memory i...">AssembleLinearMessage</a>(
+<a name="l00134"></a>00134   <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response,
+<a name="l00135"></a>00135   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data_item,
+<a name="l00136"></a>00136   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message);
+<a name="l00137"></a>00137 
+<a name="l00143"></a>00143 <span class="keyword">extern</span> <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> <a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_CPF_H_ */</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -201,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d0/dff/cpf_8h.html">cpf.h</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

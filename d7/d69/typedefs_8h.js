@@ -25,7 +25,6 @@ var typedefs_8h =
     [ "EipUint8", "d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e", null ],
     [ "MicroSeconds", "d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497", null ],
     [ "MilliSeconds", "d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a", null ],
-    [ "BoolKeywords", "d7/d69/typedefs_8h.html#ab061d530f912bb131b2dd979946c02f0", null ],
     [ "EipStatus", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709", null ],
     [ "UdpCommuncationDirection", "d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42", null ],
     [ "kEipInvalidSocket", "d7/d69/typedefs_8h.html#a1c09a45013e38e2cc7785c92d92ed9c5", null ]

@@ -1,7 +1,7 @@
 var cipidentity_8c =
 [
     [ "CipIdentityInit", "dd/dc4/cipidentity_8c.html#a374cdadb1e6f8d07acb7044a176eb6b2", null ],
-    [ "Reset", "dd/dc4/cipidentity_8c.html#a5dc9e62bffa95ad93a382e558122c41c", null ],
+    [ "Reset", "dd/dc4/cipidentity_8c.html#a4c8714b83c60c80420d63ff3e44ff00a", null ],
     [ "SetDeviceSerialNumber", "d2/dc9/group__CIP__API.html#ga696952d9dbc1b6fdedf517aa55f94323", null ],
     [ "SetDeviceStatus", "d2/dc9/group__CIP__API.html#ga2113be94f1eab4f25770d975abe6015c", null ],
     [ "device_type_", "dd/dc4/cipidentity_8c.html#a4a26b0364996689eb8704fcde6090cbe", null ],

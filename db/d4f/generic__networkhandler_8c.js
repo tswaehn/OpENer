@@ -15,5 +15,6 @@ var generic__networkhandler_8c =
     [ "NetworkHandlerFinish", "db/d4f/generic__networkhandler_8c.html#aace33c0e7aa348969492ede822183bd5", null ],
     [ "NetworkHandlerInitialize", "db/d4f/generic__networkhandler_8c.html#aa49065f73f4d0f0ab04fb0b35d791e5d", null ],
     [ "NetworkHandlerProcessOnce", "db/d4f/generic__networkhandler_8c.html#a2f01af81d3e5018d9980e2bc28c9078a", null ],
-    [ "SendUdpData", "d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518", null ]
+    [ "SendUdpData", "d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518", null ],
+    [ "g_timestamps", "db/d4f/generic__networkhandler_8c.html#a7f3ac4341cdbdd181861991b99bc2d47", null ]
 ];

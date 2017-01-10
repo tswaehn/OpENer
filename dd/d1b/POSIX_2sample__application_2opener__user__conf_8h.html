@@ -105,11 +105,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;sys/socket.h&gt;</code><br/>
 <code>#include &lt;arpa/inet.h&gt;</code><br/>
 <code>#include &lt;sys/select.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/d69/typedefs_8h_source.html">typedefs.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for opener_user_conf.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d0e/POSIX_2sample__application_2opener__user__conf_8h__incl.svg" width="588" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d0e/POSIX_2sample__application_2opener__user__conf_8h__incl.svg" width="100%" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -117,7 +118,7 @@ Include dependency graph for opener_user_conf.h:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">OPENER_ASSERT</a>(assertion)&#160;&#160;&#160;(assertion)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">OPENER_ASSERT</a>(assertion)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a79a5739ac401f5bbe9d34286c216f50f">OPENER_CIP_NUM_APPLICATION_SPECIFIC_CONNECTABLE_OBJECTS</a>&#160;&#160;&#160;1</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the number of objects that may be used in connections.  <a href="#a79a5739ac401f5bbe9d34286c216f50f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#adc6d3a58031ec407b84b09ec5643294a">OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS</a>&#160;&#160;&#160;1</td></tr>
@@ -156,15 +157,15 @@ Defines</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">assertion</td><td>)</td>
-          <td>&#160;&#160;&#160;(assertion)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00134">134</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">142</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00117">AddCipInstances()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00033">CipStackInit()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00171">CreateCipClass()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00525">EncodeSockaddrInfoItemTypeId()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00080">EstablishIoConnction()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00461">ForwardClose()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00079">GetRegisteredObject()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00556">HandleIoConnectionTimeOut()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00285">InsertAttribute()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00315">InsertService()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00526">ManageConnections()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00070">NotifyClass()</a>, and <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00133">NotifyMessageRouter()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00122">AddCipInstances()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00034">CipStackInit()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00178">CreateCipClass()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00548">EncodeSockaddrInfoItemTypeId()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00717">ForwardClose()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00514">GetPathDataSegmentSimpleDataWordLength()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00321">GetPathLogicalSegmentElectronicKeyFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00273">GetPathLogicalSegmentExtendedLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">GetPathLogicalSegmentLogicalFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00301">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00412">GetPathNetworkSegmentProductionInhibitTimeInMicroseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00395">GetPathNetworkSegmentProductionInhibitTimeInMilliseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00364">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00184">GetPathPortSegmentExtendedPortNumber()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00175">GetPathPortSegmentLinkAddressSize()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">GetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00442">GetPathSymbolicSegmentASCIIFormatLength()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00468">GetPathSymbolicSegmentExtendedFormat()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00081">GetRegisteredObject()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00684">HandleIoConnectionTimeOut()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00297">InsertAttribute()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00330">InsertService()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00791">ManageConnections()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00071">NotifyClass()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00144">NotifyMessageRouter()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00166">SetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00112">SetPathSegmentType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00143">SetupIoConnectionOriginatorToTargetConnectionPoint()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00196">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
 </div>
 </div>
@@ -182,7 +183,7 @@ Defines</h2></td></tr>
 <p>Define the number of objects that may be used in connections. </p>
 <p>This number needs only to consider additional objects. Connections to the connection manager object as well as to the assembly object are supported in any case. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00046">46</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00047">47</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -199,9 +200,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported exclusive owner connections. Each of these connections has to be configured with the function void configureExclusiveOwnerConnectionPoint(unsigned int pa_unConnNum, unsigned int pa_unOutputAssembly, unsigned int pa_unInputAssembly, unsigned int pa_unConfigAssembly) </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00058">58</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00059">59</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00057">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00138">GetExclusiveOwnerConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00355">InitializeIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00085">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00169">GetExclusiveOwnerConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00397">InitializeIoConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -218,9 +219,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported explicit connections. According to ODVA's PUB 70 this number should be greater than 6. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00051">51</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00052">52</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00057">GetFreeExplicitConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00065">InitializeClass3ConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00060">GetFreeExplicitConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00069">InitializeClass3ConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -237,9 +238,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported input only connections. Each of these connections has to be configured with the function void configureInputOnlyConnectionPoint(unsigned int pa_unConnNum, unsigned int pa_unOutputAssembly, unsigned int pa_unInputAssembly, unsigned int pa_unConfigAssembly) </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00065">65</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00066">66</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00071">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00165">GetInputOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00355">InitializeIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00100">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00199">GetInputOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00397">InitializeIoConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +257,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported input only connections per connection path. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00069">69</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00165">GetInputOnlyConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00199">GetInputOnlyConnection()</a>.</p>
 
 </div>
 </div>
@@ -275,9 +276,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported listen only connections. Each of these connections has to be configured with the function void configureListenOnlyConnectionPoint(unsigned int pa_unConnNum, unsigned int pa_unOutputAssembly, unsigned int pa_unInputAssembly, unsigned int pa_unConfigAssembly) </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00076">76</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00077">77</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00084">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00199">GetListenOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00355">InitializeIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00113">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00397">InitializeIoConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -294,9 +295,9 @@ Defines</h2></td></tr>
 
 <p>Define the number of supported Listen only connections per connection path. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00080">80</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00081">81</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00199">GetListenOnlyConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +312,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00036">36</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00037">37</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +327,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00037">37</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00038">38</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +342,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00038">38</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00039">39</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +357,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00035">35</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00036">36</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +372,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00034">34</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00035">35</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +389,7 @@ Defines</h2></td></tr>
 
 <p>Identity configuration of the device. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00033">33</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00034">34</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +406,7 @@ Defines</h2></td></tr>
 
 <p>The number of bytes used for the buffer that will be used for generating any reply data of messages. There are two uses in OpENer: 1. Explicit messages will use this buffer to store the data generated by the request 2. I/O Connections will use this buffer for the produced data. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00087">87</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00088">88</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
 </div>
 </div>
@@ -422,9 +423,9 @@ Defines</h2></td></tr>
 
 <p>Number of sessions that can be handled at the same time. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00091">91</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">92</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00610">CheckRegisteredSessions()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00621">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00125">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00632">EncapsulationShutDown()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00571">GetFreeSessionIndex()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00425">HandleReceivedRegisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00476">HandleReceivedUnregisterSessionCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00635">CheckRegisteredSessions()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00647">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00130">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00658">EncapsulationShutDown()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00594">GetFreeSessionIndex()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00434">HandleReceivedRegisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00489">HandleReceivedUnregisterSessionCommand()</a>.</p>
 
 </div>
 </div>
@@ -442,9 +443,9 @@ Defines</h2></td></tr>
 <p>The number of bytes used for the Ethernet message buffer on the PC port. For different platforms it may makes sense to have more than one buffer. </p>
 <p>This buffer size will be used for any received message. The same buffer is used for the replied explicit message. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00157">157</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00164">164</a> of file <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html">opener_user_conf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00739">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00352">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00412">CheckAndHandleUdpUnicastSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00501">HandleDataOnTcpSocket()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00794">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00370">CheckAndHandleUdpGlobalBroadcastSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00430">CheckAndHandleUdpUnicastSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00519">HandleDataOnTcpSocket()</a>.</p>
 
 </div>
 </div>
@@ -468,7 +469,7 @@ Defines</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html">opener_user_conf.h</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

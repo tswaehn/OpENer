@@ -116,8 +116,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the application that the data of an assembly object will be sent.  <a href="#ga098272a8ae10facf3086c5c82a0080db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0">CheckIoConnectionEvent</a> (unsigned int output_assembly_id, unsigned int input_assembly_id, <a class="el" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2">IoConnectionEvent</a> io_connection_event)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the application on changes occurred for a connection.  <a href="#gac9c9ad2c2254b783e7b447bd84eba8c0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga438b4350c32d6181990b1f0c83f2e343">CipCalloc</a> (unsigned int number_of_elements, unsigned int size_of_element)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for the CIP stack.  <a href="#ga438b4350c32d6181990b1f0c83f2e343"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c">CipCalloc</a> (size_t number_of_elements, size_t size_of_element)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for the CIP stack.  <a href="#ga70ee7034f390fd3759d42a50e60e1b1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">CipFree</a> (void *data)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated by the OpENer.  <a href="#ga729165f94320800eb9537def5a0e6af8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f">CloseSocket</a> (int socket)</td></tr>
@@ -168,16 +168,16 @@ Functions</h2></td></tr>
 </dd></dl>
 <p>Assembly Objects for Configuration Data: The CIP-stack uses this function to inform on received configuration data. The length of the data is already checked within the stack. Therefore the user only has to check if the data is valid. </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">78</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">81</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00013">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00012">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00021">g_assembly_data096</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00288">cip_instance::instance_number</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00023">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00024">g_assembly_data096</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00241">cip_instance::instance_number</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00098">NotifyAssemblyConnectedDataReceived()</a>, and <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00115">SetAssemblyAttributeSingle()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00104">NotifyAssemblyConnectedDataReceived()</a>, and <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00122">SetAssemblyAttributeSingle()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga5307d18b1bd79f151588391cb4ebf30a_icgraph.svg" width="100%" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga5307d18b1bd79f151588391cb4ebf30a_icgraph.svg" width="100%" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -203,11 +203,11 @@ Here is the caller graph for this function:</div>
 <p>This function will be called by the CIP stack after it has finished its initialization. In this function the user can setup all CIP objects she likes to have.</p>
 <p>This function is provided for convenience reasons. After the void CipStackInit(void) function has finished it is okay to also generate your CIP objects. return status EIP_ERROR .. error EIP_OK ... successful finish </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">25</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">28</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00057">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00071">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00084">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00071">CreateAssemblyObject()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00013">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00014">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00011">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00012">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00021">g_assembly_data096</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00022">g_assembly_data097</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00023">g_assembly_data09A</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00085">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00100">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00113">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00074">CreateAssemblyObject()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00017">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00018">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00014">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00023">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00024">g_assembly_data096</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">g_assembly_data097</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">g_assembly_data09A</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00033">CipStackInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00034">CipStackInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -256,16 +256,16 @@ Here is the caller graph for this function:</div>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00105">105</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00108">108</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00288">cip_instance::instance_number</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00241">cip_instance::instance_number</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00353">GetAttributeSingle()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00603">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00373">GetAttributeSingle()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00732">SendConnectedData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga098272a8ae10facf3086c5c82a0080db_icgraph.svg" width="100%" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga098272a8ae10facf3086c5c82a0080db_icgraph.svg" width="100%" height="345"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -313,34 +313,34 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00068">68</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00071">71</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00308">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00515">CloseIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00080">EstablishIoConnction()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00556">HandleIoConnectionTimeOut()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00349">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00635">CloseIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00684">HandleIoConnectionTimeOut()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gac9c9ad2c2254b783e7b447bd84eba8c0_icgraph.svg" width="100%" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gac9c9ad2c2254b783e7b447bd84eba8c0_icgraph.svg" width="100%" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ga438b4350c32d6181990b1f0c83f2e343"></a><!-- doxytag: member="opener_api.h::CipCalloc" ref="ga438b4350c32d6181990b1f0c83f2e343" args="(unsigned int number_of_elements, unsigned int size_of_element)" -->
+<a class="anchor" id="ga70ee7034f390fd3759d42a50e60e1b1c"></a><!-- doxytag: member="opener_api.h::CipCalloc" ref="ga70ee7034f390fd3759d42a50e60e1b1c" args="(size_t number_of_elements, size_t size_of_element)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void* <a class="el" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#aedee0ac70fa425c38d82f8a427ee6bf1">CipCalloc</a> </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>number_of_elements</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size_of_element</em>&#160;</td>
         </tr>
         <tr>
@@ -363,12 +363,14 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>pointer to the allocated memory, 0 on error </dd></dl>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00117">AddCipInstances()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00095">ConfigureDomainName()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00112">ConfigureHostName()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00071">CreateAssemblyObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00171">CreateCipClass()</a>, and <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00116">RegisterCipClass()</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00137">137</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00122">AddCipInstances()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00097">ConfigureDomainName()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00114">ConfigureHostName()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00074">CreateAssemblyObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00178">CreateCipClass()</a>, and <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00125">RegisterCipClass()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga438b4350c32d6181990b1f0c83f2e343_icgraph.svg" width="100%" height="393"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga70ee7034f390fd3759d42a50e60e1b1c_icgraph.svg" width="100%" height="393"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -394,14 +396,14 @@ Here is the caller graph for this function:</div>
 <p>emulate the common c-library function free </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">pa_poData</td><td>pointer to the allocated memory </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to the allocated memory </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00137">137</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00141">141</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00095">ConfigureDomainName()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00112">ConfigureHostName()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00219">DeleteAllClasses()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00056">ShutdownAssemblies()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00252">ShutdownTcpIpInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00097">ConfigureDomainName()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00114">ConfigureHostName()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00241">DeleteAllClasses()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00059">ShutdownAssemblies()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00255">ShutdownTcpIpInterface()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -436,11 +438,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00791">791</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00849">849</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00032">CloseSocketPlatform()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>.</p>
+<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00033">CloseSocketPlatform()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00816">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00235">IApp_CloseSocket_tcp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00231">IApp_CloseSocket_udp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00345">NetworkHandlerFinish()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00281">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00875">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00240">IApp_CloseSocket_tcp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00236">IApp_CloseSocket_udp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00363">NetworkHandlerFinish()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00297">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -453,7 +455,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga89293c1274a9092dec6be806b8d0779f_icgraph.svg" width="100%" height="335"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga89293c1274a9092dec6be806b8d0779f_icgraph.svg" width="100%" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -504,16 +506,16 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the socket handle if successful, else -1 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00649">649</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00701">701</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00045">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00052">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00045">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00104">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00088">OPENER_TRACE_INFO</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::starting_multicast_address</a>.</p>
+<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00045">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00052">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00045">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00038">SetSocketToNonBlocking()</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::starting_multicast_address</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00313">OpenProducingPointToPointConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00390">OpenProducingPointToPointConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gadae462526ab01253d39e4a54346f56ca_cgraph.svg" width="347" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gadae462526ab01253d39e4a54346f56ca_cgraph.svg" width="360" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -546,9 +548,9 @@ Here is the caller graph for this function:</div>
 <p>Allow the device specific application to perform its execution. </p>
 <p>This function will be executed by the stack at the beginning of each execution of EIP_STATUS ManageConnections(void). It allows to implement device specific application functions. Execution within this function should be short. </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00064">64</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00067">67</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00526">ManageConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00791">ManageConnections()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -578,11 +580,19 @@ Here is the caller graph for this function:</div>
 <p>Emulate as close a possible a power cycle of the device. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>if the service is supported the function will not return. EIP_ERROR if this service is not supported </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00119">119</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00122">122</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00372">CloseAllConnections()</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00124">ResetDeviceToInitialConfiguration()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00128">ResetDeviceToInitialConfiguration()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gacfb8706d76bc6fe1816546e122fdcac2_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -612,14 +622,14 @@ Here is the caller graph for this function:</div>
 <p>Reset the device to the initial configuration and emulate as close as possible a power cycle of the device. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>if the service is supported the function will not return. EIP_ERROR if this service is not supported </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00124">124</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00128">128</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00119">ResetDevice()</a>.</p>
+<p>References <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00122">ResetDevice()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gabec9a29cf19789a6534814680c21f6e7_cgraph.svg" width="379" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gabec9a29cf19789a6534814680c21f6e7_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -649,9 +659,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00141">141</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00145">145</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00678">HandleReceivedIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00811">HandleReceivedIoConnectionData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -712,16 +722,16 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>EIP_SUCCESS on success </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00471">471</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00489">489</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00085">OPENER_TRACE_ERR</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_WARN</a>.</p>
+<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_WARN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00641">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00603">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00668">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00732">SendConnectedData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad1d5f56b277bf8b4ffc431e5b0523518_cgraph.svg" width="323" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad1d5f56b277bf8b4ffc431e5b0523518_cgraph.svg" width="323" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -755,7 +765,7 @@ Here is the caller graph for this function:</div>
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

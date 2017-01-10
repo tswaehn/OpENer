@@ -12,7 +12,7 @@ var searchData=
   ['cipmessagerouterobject',['CipMessageRouterObject',['../d9/d7d/cipmessagerouter_8c.html#a49cfe39dc90bbf8300e7d3f174f599cf',1,'cipmessagerouter.c']]],
   ['cipoctet',['CipOctet',['../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1',1,'typedefs.h']]],
   ['cipreal',['CipReal',['../d7/d69/typedefs_8h.html#a73d94f1cd7e186b06d50a068d17ba942',1,'typedefs.h']]],
-  ['cipservicefunction',['CipServiceFunction',['../df/d28/ciptypes_8h.html#af7606d2a9b86977aa0ac4ec9ccec3701',1,'ciptypes.h']]],
+  ['cipservicefunction',['CipServiceFunction',['../df/d28/ciptypes_8h.html#a892f3ed64fb830a02a3ac141f51535b0',1,'ciptypes.h']]],
   ['cipservicestruct',['CipServiceStruct',['../df/d28/ciptypes_8h.html#a8dcc43f5bab0798fbe107dc2cb757b09',1,'ciptypes.h']]],
   ['cipsint',['CipSint',['../d7/d69/typedefs_8h.html#afa63ebce9378d77bc7fcdccb5edae53b',1,'typedefs.h']]],
   ['cipudint',['CipUdint',['../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1',1,'typedefs.h']]],
@@ -21,6 +21,7 @@ var searchData=
   ['cipword',['CipWord',['../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704',1,'typedefs.h']]],
   ['connectionclosefunction',['ConnectionCloseFunction',['../d2/dc9/group__CIP__API.html#ga754f77d4872724e212cf1d9d7d84d406',1,'opener_api.h']]],
   ['connectionobject',['ConnectionObject',['../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700',1,'ConnectionObject():&#160;cipconnectionmanager.h'],['../d4/d38/opener__api_8h.html#a6df28653152020381371102e1993a3e1',1,'ConnectionObject():&#160;opener_api.h']]],
+  ['connectionpointtype',['ConnectionPointType',['../df/d28/ciptypes_8h.html#aae064ca86d6d2ef9b60e4234e25197bd',1,'ciptypes.h']]],
   ['connectionreceivedatafunction',['ConnectionReceiveDataFunction',['../d2/dc9/group__CIP__API.html#gaac5ac35ed35317f29e3455e92f450623',1,'opener_api.h']]],
   ['connectionsenddatafunction',['ConnectionSendDataFunction',['../d2/dc9/group__CIP__API.html#gaa870412e93039a338e73edc08e9cd68a',1,'opener_api.h']]],
   ['connectiontimeoutfunction',['ConnectionTimeoutFunction',['../d2/dc9/group__CIP__API.html#gaffa28b7ae343af7c7d1c7c52d83bbbee',1,'opener_api.h']]]

@@ -18,7 +18,7 @@ var searchData=
   ['sin_5ffamily',['sin_family',['../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a',1,'SocketAddressInfoItem']]],
   ['sin_5fport',['sin_port',['../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146',1,'SocketAddressInfoItem']]],
   ['size_5fof_5fadditional_5fstatus',['size_of_additional_status',['../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a',1,'CipMessageRouterResponse']]],
-  ['socket',['socket',['../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4',1,'connection_object::socket()'],['../d4/da1/structDelayedEncapsulationMessage.html#af616a8ae48b9bc51c1117985acc8c37f',1,'DelayedEncapsulationMessage::socket()']]],
+  ['socket',['socket',['../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4',1,'connection_object::socket()'],['../d4/da1/structDelayedEncapsulationMessage.html#af616a8ae48b9bc51c1117985acc8c37f',1,'DelayedEncapsulationMessage::socket()'],['../de/d22/structsocket__timer.html#ab5046e867e49b1431dbf175de9ca778f',1,'socket_timer::socket()']]],
   ['starting_5fmulticast_5faddress',['starting_multicast_address',['../db/dd7/structmulticast__address__configuration.html#a983b98b7087072214bc4fc803b938df3',1,'multicast_address_configuration']]],
   ['state',['state',['../dd/dd5/structLinkConsumer.html#af52c503fb4992d7057fc4280ff638392',1,'LinkConsumer::state()'],['../de/deb/structLinkProducer.html#a9d403e823d0d94b5134f65e114df5412',1,'LinkProducer::state()'],['../d1/d48/structconnection__object.html#a07b0290442443753728fe18cc6a756a4',1,'connection_object::state()']]],
   ['status',['status',['../d9/d42/structencapsulation__data.html#ae9d36e698eb09d2248f8856da0281f5c',1,'encapsulation_data']]],

@@ -103,13 +103,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">src/ports/POSIX/sample_application/sampleapplication.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d38/opener__api_8h_source.html">opener_api.h</a>&quot;</code><br/>
-<code>#include &lt;string.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d38/opener__api_8h_source.html">opener_api.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/dc0/appcontype_8h_source.html">appcontype.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sampleapplication.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d95/POSIX_2sample__application_2sampleapplication_8c__incl.svg" width="496" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d95/POSIX_2sample__application_2sampleapplication_8c__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -133,7 +135,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the application that the data of an assembly object will be sent.  <a href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0">CheckIoConnectionEvent</a> (unsigned int output_assembly_id, unsigned int input_assembly_id, <a class="el" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2">IoConnectionEvent</a> io_connection_event)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the application on changes occurred for a connection.  <a href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a84a2cc5c3b27d65c8ea3b90a27a4a094">CipCalloc</a> (unsigned int number_of_elements, unsigned size_of_element)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c">CipCalloc</a> (size_t number_of_elements, size_t size_of_element)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for the CIP stack.  <a href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">CipFree</a> (void *data)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated by the OpENer.  <a href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga6d2ccae9a19ce418c77941dbe22b008d">HandleApplication</a> (void)</td></tr>
@@ -163,9 +166,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00013">13</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">16</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -180,9 +183,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">16</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">19</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">AfterAssemblyDataReceived()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00105">BeforeAssemblyDataSend()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">AfterAssemblyDataReceived()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00108">BeforeAssemblyDataSend()</a>.</p>
 
 </div>
 </div>
@@ -197,9 +200,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00014">14</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00017">17</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -214,9 +217,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">15</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00018">18</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +234,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00011">11</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00014">14</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -248,39 +251,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00012">12</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">15</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a84a2cc5c3b27d65c8ea3b90a27a4a094"></a><!-- doxytag: member="sampleapplication.c::CipCalloc" ref="a84a2cc5c3b27d65c8ea3b90a27a4a094" args="(unsigned int number_of_elements, unsigned size_of_element)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* <a class="el" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#aedee0ac70fa425c38d82f8a427ee6bf1">CipCalloc</a> </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>number_of_elements</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>size_of_element</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00133">133</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +269,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">20</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00023">23</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -313,9 +286,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00021">21</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00024">24</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00078">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00081">AfterAssemblyDataReceived()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +303,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00022">22</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">25</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -347,9 +320,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00023">23</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">26</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">ApplicationInitialization()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">ApplicationInitialization()</a>.</p>
 
 </div>
 </div>
@@ -373,7 +346,7 @@ Variables</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html">sampleapplication.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

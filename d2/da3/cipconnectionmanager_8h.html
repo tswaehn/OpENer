@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cipconnectionmanager.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d56/cipconnectionmanager_8h__incl.svg" width="539" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d56/cipconnectionmanager_8h__incl.svg" width="563" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -132,48 +132,123 @@ Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/deb/structLinkProducer.html">LinkProducer</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7f3f2e74e4e7686acc09cbd38acdb3d8">SEQ_GEQ16</a>(a, b)&#160;&#160;&#160;((short)((a) - (b)) &gt;= 0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adb0806a9e513fd203c29dab7e850efcf">SEQ_GEQ32</a>(a, b)&#160;&#160;&#160;((int)((a) - (b)) &gt;= 0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c">SEQ_GT32</a>(a, b)&#160;&#160;&#160;((int)((a) - (b)) &gt; 0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69">SEQ_LEQ16</a>(a, b)&#160;&#160;&#160;((short)((a) - (b)) &lt;= 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7f3f2e74e4e7686acc09cbd38acdb3d8">SEQ_GEQ16</a>(a, b)&#160;&#160;&#160;( (short)( (a) - (b) ) &gt;= 0 )</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adb0806a9e513fd203c29dab7e850efcf">SEQ_GEQ32</a>(a, b)&#160;&#160;&#160;( (int)( (a) - (b) ) &gt;= 0 )</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c">SEQ_GT32</a>(a, b)&#160;&#160;&#160;( (int)( (a) - (b) ) &gt; 0 )</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69">SEQ_LEQ16</a>(a, b)&#160;&#160;&#160;( (short)( (a) - (b) ) &lt;= 0 )</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">similar macros for comparing 16 bit sequence numbers  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69" title="similar macros for comparing 16 bit sequence numbers  SEQ_LEQ16(a, b) Checks if sequence number a is ...">SEQ_LEQ16(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7f3f2e74e4e7686acc09cbd38acdb3d8">SEQ_GEQ16(a, b)</a> Checks if sequence number a is greater or equal than b  <a href="#aa90301ce80009301ef74637f50a79e69"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681">SEQ_LEQ32</a>(a, b)&#160;&#160;&#160;((int)((a) - (b)) &lt;= 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681">SEQ_LEQ32</a>(a, b)&#160;&#160;&#160;( (int)( (a) - (b) ) &lt;= 0 )</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681" title="macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  SEQ_L...">SEQ_LEQ32(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adb0806a9e513fd203c29dab7e850efcf">SEQ_GEQ32(a, b)</a> Checks if sequence number a is greater or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c">SEQ_GT32(a, b)</a> Checks if sequence number a is greater than b  <a href="#ad640aadbc83eb8494f1752cbf1572681"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a56e74944d6e2e5fddd54b431af9e42bf">ProductionTrigger</a></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021">ConnectionManagerStatusCode</a> { <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a360bca3eccb3a008cedfc7a4bd820f7e">kConnectionManagerStatusCodeSuccess</a> =  0x00, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021aef39bc708013673041aea80e66ef3392">kConnectionManagerStatusCodeErrorConnectionInUse</a> =  0x0100, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a1e564b47820f1779096cb18015e82b8d">kConnectionManagerStatusCodeErrorTransportTriggerNotSupported</a> =  0x0103, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a54c5b1ae141df32143094a99940b642a">kConnectionManagerStatusCodeErrorOwnershipConflict</a> =  0x0106, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759">ConnectionManagerExtendedStatusCode</a> { <br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a299259d157a6ac077f1c5c8904ceaef8">kConnectionManagerExtendedStatusCodeSuccess</a> =  0x00, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a4d3041e68abdeaaaea9729442e421b03">kConnectionManagerExtendedStatusCodeErrorConnectionInUseOrDuplicateForwardOpen</a> =  0x0100, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759aaa62ef2e8c037e6f48b8f830a6981eb5">kConnectionManagerExtendedStatusCodeErrorTransportClassAndTriggerCombinationNotSupported</a> =  0x0103, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a81369fa2ff6c7f2165f3876c6eac1a03">kConnectionManagerExtendedStatusCodeErrorOwnershipConflict</a> =  0x0106, 
 <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021ad111838e501e5081dc263c46a601c766">kConnectionManagerStatusCodeErrorConnectionNotFoundAtTargetApplication</a> =  0x0107, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021ac65f366c4f57b356cd31c2ad50bd6071">kConnectionManagerStatusCodeErrorInvalidOToTConnectionType</a> =  0x123, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a0d486cc42701fbce09c3c56c1f470efd">kConnectionManagerStatusCodeErrorInvalidTToOConnectionType</a> =  0x124, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a8d4a78c93c66235da54adae315872f57">kConnectionManagerStatusCodeErrorInvalidOToTConnectionSize</a> =  0x127, 
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759afce2d85160c59c4080b31d491e66fc1e">kConnectionManagerExtendedStatusCodeErrorConnectionTargetConnectionNotFound</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a76c591076781d4100b469a26aad7d8f9">kConnectionManagerExtendedStatusCodeErrorTargetForConnectionNotConfigured</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a6291dd8e01f32f0193aac33ebf902ec3">kConnectionManagerExtendedStatusCodeErrorRpiValuesNotAcceptable</a> =  0x0112, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ae5ce9e5e8cbbcd580f9bcbc1e3ad8750">kConnectionManagerExtendedStatusCodeErrorNoMoreConnectionsAvailable</a> =  0x0113, 
 <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021ae1f6a08715d0ef773db1eabd32d7e7fb">kConnectionManagerStatusCodeErrorInvalidTToOConnectionSize</a> =  0x128, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021aadd8d1e7280d2a6465c5f5c1bb27dba9">kConnectionManagerStatusCodeErrorNoMoreConnectionsAvailable</a> =  0x0113, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a5419515c887589d22f2c6bb2ff32492f">kConnectionManagerStatusCodeErrorVendorIdOrProductcodeError</a> =  0x0114, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021ab1f0a62ee532d1495d71832e79b63a76">kConnectionManagerStatusCodeErrorDeviceTypeError</a> =  0x0115, 
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ac06977b2ad30e5d129043d5784b36b05">kConnectionManagerExtendedStatusCodeErrorVendorIdOrProductcodeError</a> =  0x0114, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a392538a425d20a8666d8717b287f7c0e">kConnectionManagerExtendedStatusCodeErrorDeviceTypeError</a> =  0x0115, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759addcb464c102171c528282e566ce126bf">kConnectionManagerExtendedStatusCodeErrorRevisionMismatch</a> =  0x0116, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a62cfd1f5a9792ba10291a6cb09a36ab3">kConnectionManagerExtendedStatusCodeNonListenOnlyConnectionNotOpened</a> =  0x0119, 
 <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021aa0049ec25b8c8b62644b18f03639c651">kConnectionManagerStatusCodeErrorRevisionMismatch</a> =  0x0116, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021aa68a2676ee1bb16abf8dd72a2a5cd824">kConnectionManagerStatusCodeInvalidConfigurationApplicationPath</a> =  0x0129, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a04aaa69af344dfeb2c721f2587b24d0f">kConnectionManagerStatusCodeInvalidConsumingApllicationPath</a> =  0x012A, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a25b6037b89ef78644f4873d48025d049">kConnectionManagerStatusCodeInvalidProducingApplicationPath</a> =  0x012B, 
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ace7adb139efb9d143ff75f9e6d692327">kConnectionManagerExtendedStatusCodeTargetObjectOutOfConnections</a> =  0x011A, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a32180a921391f0c73f3d5e3f347612e9">kConnectionManagerExtendedStatusCodeProductionInhibitTimerGreaterThanRpi</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a217820d486b0897b6cae2b3e5498d6cb">kConnectionManagerExtendedStatusCodeTransportClassNotSupported</a> =  0x011C, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a90e13a5332eca8c73bc766a68746e89e">kConnectionManagerExtendedStatusCodeProductionTriggerNotSuppoerted</a> =  0x011D, 
 <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a8aab77730577c72f4962a64937e7324f">kConnectionManagerStatusCodeInconsistentApplicationPathCombo</a> =  0x012F, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a857e420b4c1119a83700364334863baf">kConnectionManagerStatusCodeNonListenOnlyConnectionNotOpened</a> =  0x0119, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a22b925ba0e166f1b63cd5181ff21f0d0">kConnectionManagerStatusCodeErrorParameterErrorInUnconnectedSendService</a> =  0x0205, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a46585ad8cbcee5378deca1c17a8fac68">kConnectionManagerStatusCodeErrorInvalidSegmentTypeInPath</a> =  0x0315, 
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a5fc737f7ba770d54013fb630bcdd6774">kConnectionManagerExtendedStatusCodeDirectionNotSupported</a> =  0x011E, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a8d7435c1cb0ebb4d15e25e6bd46f2295">kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionFixVar</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a12061cad1c4d6a7a1cdd00c88b74fe64">kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionFixVar</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a811446b1146198e85753e26c3cac14eb">kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionPriority</a>, 
 <br/>
-&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021a801fec532fb6cce1c06fbdba16feb465">kConnectionManagerStatusCodeTargetObjectOutOfConnections</a> =  0x011A
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a985d9bd6ac240d560b04a8092bc0408e">kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionPriority</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759aed332a68129a2a68dcd98f20d057f07c">kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionType</a> =  0x0123, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a9addeb28617822771df1771d0e2ad10d">kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionType</a> =  0x0124, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a812cbec0958f35dc76285e442f9edca6">kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionRedundantOwner</a> =  0x0125, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adf9e9a94c541d59cd84d1c8ff4254325">kConnectionManagerExtendedStatusCodeInvalidConfigurationSize</a> =  0x0126, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d">kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize</a> =  0x0127, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067">kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize</a> =  0x0128, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90">kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath</a>, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a40a08a853d51ce12008d4c935dbef985">kConnectionManagerExtendedStatusCodeInvalidConsumingApplicationPath</a> =  0x012A, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ab31ee32e147e66520a313f02c5875510">kConnectionManagerExtendedStatusCodeInvalidProducingApplicationPath</a> =  0x012B, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a6d22616638e8208a0d5c2c0b7e4b04b1">kConnectionManagerExtendedStatusCodeConfigurationSymbolDoesNotExist</a> =  0x012C, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a4869d3c41b9746557213ee2b2e73ced7">kConnectionManagerExtendedStatusCodeConsumingSymbolDoesNotExist</a> =  0x012D, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a0d669ed4dbd5f30d88cb3f5ffe1842fb">kConnectionManagerExtendedStatusCodeProducingSymbolDoesNotExist</a> =  0x012E, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a560c51aa82582842ee82228b20a0b2b6">kConnectionManagerExtendedStatusCodeInconsistentApplicationPathCombo</a> =  0x012F, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759af56b0a3ff40fbdd3868f93dc04f09c6d">kConnectionManagerExtendedStatusCodeInconsistentConsumeDataFormat</a> =  0x0130, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a2ab771101315080fcf71e6d8ce3e408b">kConnectionManagerExtendedStatusCodeInconsistentProduceDataFormat</a> =  0x0131, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adc2e101cd60b42304630421d61738b79">kConnectionManagerExtendedStatusCodeNullForwardOpenNotSupported</a> =  0x0132, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adfdb7e5563df63d2d88d399abf34adfc">kConnectionManagerExtendedStatusCodeConnectionTimeoutMultiplierNotAcceptable</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ab0f5f3288fc1c9e53dffbba659145171">kConnectionManagerExtendedStatusCodeConnectionTimedOut</a> =  0x0203, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759acb2c9c8f1fe144eda621a8b12d921330">kConnectionManagerExtendedStatusCodeUnconnectedRequestTimedOut</a> =  0x0204, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a85f144dd790d75ec49c6ab5d2aa857b3">kConnectionManagerExtendedStatusCodeErrorParameterErrorInUnconnectedSendService</a> =  0x0205, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759acb0a04c473ee263f32c6477b6be1d4b3">kConnectionManagerExtendedStatusCodeMessageToLargeForUnconnectedSendService</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a15883103867add903346cf43d3003a28">kConnectionManagerExtendedStatusCodeUnconnectedAcknowledgeWithoutReply</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ae77f68fee1b4b6128551bb352fd25b5d">kConnectionManagerExtendedStatusCodeNoBufferMemoryAvailable</a> =  0x0301, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a1e68d76f56e4e18f64756604a662827c">kConnectionManagerExtendedStatusCodeNetworkBandwithNotAvailableForData</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a58a2e96ed340cabe79dddbd083b2346c">kConnectionManagerExtendedStatusCodeNoConsumedConnectionIdFilterAvailable</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a49c15e62b7dac51a7ed9cbba16e14743">kConnectionManagerExtendedStatusCodeNotConfiguredToSendScheduledPriorityData</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a1b8322a6941f3d01de658ade7edd2e56">kConnectionManagerExtendedStatusCodeScheduleSignatureMismatch</a> =  0x0305, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a8b5f17f09fd6f7d4304dc2553aaafb57">kConnectionManagerExtendedStatusCodeScheduleSignatureValidationNotPossible</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a5bdb8105f9b738cbcd1dd6329e17cbc6">kConnectionManagerExtendedStatusCodePortNotAvailable</a> =  0x0311, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a136b2b380c0e23adff9918ddacf573f0">kConnectionManagerExtendedStatusCodeLinkAddressNotValid</a> =  0x0312, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759af8a93c3c0ccfdc01c9e49078b0ea9728">kConnectionManagerExtendedStatusCodeErrorInvalidSegmentTypeInPath</a> =  0x0315, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759add1995fd66653af5c4e14176d8eaeaa2">kConnectionManagerExtendedStatusCodeForwardCloseServiceConnectionPathMismatch</a> =  0x0316, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ac55bc1ccfca71e3faf8b3dc0aab15f47">kConnectionManagerExtendedStatusCodeSchedulingNotSpecified</a> =  0x0317, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ad8b441eac35db02aaf1d86666bae3e20">kConnectionManagerExtendedStatusCodeLinkAddressToSelfInvalid</a> =  0x0318, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a7698108e51235f0b216662eea507a5ff">kConnectionManagerExtendedStatusCodeSecondaryResourcesUnavailable</a> =  0x0319, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a927d096ef30baee1db581f4a7cd50cef">kConnectionManagerExtendedStatusCodeRackConnectionAlreadyEstablished</a> =  0x031A, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759abaa5824a2dd72e99ad57cc248a71dcdb">kConnectionManagerExtendedStatusCodeModuleConnectionAlreadyEstablished</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a7f931d99759ad19d770c415a0766a633">kConnectionManagerExtendedStatusCodeMiscellaneous</a> =  0x031C, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ad688aef6ca5f076d6a2148fddd0e168e">kConnectionManagerExtendedStatusCodeRedundantConnectionMismatch</a> =  0x031D, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a928746bf1172d44a3d1ae4e1c4aad52d">kConnectionManagerExtendedStatusCodeNoMoreUserConfigurableLinkConsumerResourcesAvailableInTheProducingModule</a> =  0x031E, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a9f2edf708cb4060e38aba0132153ded6">kConnectionManagerExtendedStatusCodeNoUserConfigurableLinkConsumerResourcesConfiguredInTheProducingModule</a> =  0x031F, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759abebfaa8dc9f65e8c00731f2581069974">kConnectionManagerExtendedStatusCodeNetworkLinkOffline</a> =  0x0800, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759abcc987013028716c8b953b48182064e2">kConnectionManagerExtendedStatusCodeNoTargetApplicationDataAvailable</a> =  0x0810, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a54276c6206affe323059455b38f6e4f9">kConnectionManagerExtendedStatusCodeNoOriginatorApplicationDataAvailable</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a2cec711dc213100f963120ef02ce6224">kConnectionManagerExtendedStatusCodeNodeAddressHasChangedSinceTheNetworkWasScheduled</a> =  0x0812, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759abbae7a3f61a59167799237547b4856fd">kConnectionManagerExtendedStatusCodeNotConfiguredForOffSubnetMulticast</a>, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a6199809c4ee2a14657e825517ae315b2">kConnectionManagerExtendedStatusCodeInvalidProduceConsumeDataFormat</a> =  0x0814, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a15d7033086b9a6a6af1054691df29998">kConnectionManagerExtendedStatusWrongCloser</a>
 <br/>
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Manager Error codes.  <a href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Manager Error codes.  <a href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6">ConnectionManagerGeneralStatus</a> { <br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6af88c0d542320f8cbeca94a3dd94f5995">kConnectionManagerGeneralStatusSuccess</a> =  0x00, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6ad88d9023953f148ab3a31ab1f3a50a92">kConnectionManagerGeneralStatusExtendedStatus</a> =  0x01, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6a7cf51aa7c0ec376d87064f1c3e39865b">kConnectionManagerGeneralStatusResourceUnavailableForUnconnectedSend</a> =  0x02, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6a3b7be8630fa2c46d4d9ec02d057a326d">kConnectionManagerGeneralStatusPathSegmentErrorInUnconnectedSend</a> =  0x04, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6a7e0cb4402b561fa2c12779f2b7a6e0c6">kConnectionManagerGeneralStatusErrorInDataSegment</a> =  0x09, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6a863de8fb363aa329c64de442bcd4457d">kConnectionManagerGeneralStatusObjectStateError</a> =  0x0C, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6a0045dffbd59f8b974627225164f94eec">kConnectionManagerGeneralStatusDeviceStateError</a> =  0x10, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6afbf3cae46b57ea086620a99ce2277086">kConnectionManagerGeneralStatusNotEnoughData</a> =  0x13, 
+<br/>
+&#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6ad3aeff45b22a5ebb88c3cd18a7334146">kConnectionManagerGeneralStatusTooMuchData</a> =  0x15
+<br/>
+ }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9b">ConnectionState</a> { <br/>
 &#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9baba24869a3517f7ec2a180d65e5fbe7bc">kConnectionStateNonExistent</a> =  0, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9ba3ca94e3fcd72fb66382c2e01eb3c1756">kConnectionStateConfiguring</a> =  1, 
@@ -197,10 +272,17 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fae26e447506c01160477cb3de20a1e438">kConnectionTypeIoListenOnly</a> =  0x21
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">instance_type attributes  <a href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81f">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a5bbe67ba1134d38bbb89c7c242ba6551">RoutingType</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a5bbe67ba1134d38bbb89c7c242ba6551aa1d976c28edaeca226b8034663363e8a">kRoutingTypePointToPointConnection</a> =  0x4000, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a5bbe67ba1134d38bbb89c7c242ba6551adbfd343b6fde071643ca6dbdef0493da">kRoutingTypeMulticastConnection</a> =  0x2000
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">ForwardOpenConnectionType</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cadc9c105290d2a0dbf2284cf23c1592a1">kForwardOpenConnectionTypeNull</a> =  0x0000, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3">kForwardOpenConnectionTypePointToPointConnection</a> =  0x4000, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a> =  0x2000, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca4dd1fc1164de47a7d6cae3ba803e37e0">kForwardOpenConnectionTypeReserved</a> =  0x6000
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the routing type of a connection, either.  <a href="../../d2/da3/cipconnectionmanager_8h.html#a5bbe67ba1134d38bbb89c7c242ba6551">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Type constants of the Forward Open service request Indicates either a.  <a href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6ac3bd2307f5b01b33acdffd48bdfb8c01">kProductionTriggerInvalid</a> =  -1, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a2716ecbc6f36e1f7f6634d6a7c66767f">kProductionTriggerCyclic</a> =  0, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a7a3346a90193d191711379b9920eed32">kProductionTriggerChangeOfState</a> =  1, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a17044810d9cfa04c844f9877220a75f9">kProductionTriggerApplicationObjectTriggered</a> =  2
+ }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adff469c95ce72ecc88c037dd76d39fe2">WatchdogTimeoutAction</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adff469c95ce72ecc88c037dd76d39fe2a5391d4f986191c050ba37760b39aff38">kWatchdogTimeoutActionTransitionToTimedOut</a> =  0, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adff469c95ce72ecc88c037dd76d39fe2aff257cb58f77cdc75ef7a0a96e085f7d">kWatchdogTimeoutActionAutoDelete</a> =  1, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adff469c95ce72ecc88c037dd76d39fe2a3d92d05ecbfd4c540870ad4da6e8099e">kWatchdogTimeoutActionAutoReset</a> =  2, 
@@ -221,9 +303,16 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the ConnectionIDs and set the general configuration parameter in the given connection object.  <a href="#a58ea5ad416416102edd225bc918bd6bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c52d1bd0f41c535d953eb17b223fa03">GetConnectedObject</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> connection_id)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a431e253a508cf136edbba337b91e0060">GetConnectedOutputAssembly</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> output_assembly_id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">ForwardOpenConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#abe98e638bb3ac01dc06d7d944a1f30bf">GetConnectionType</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> network_connection_parameter)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the connection type of the supplied network connection parameter  <a href="#abe98e638bb3ac01dc06d7d944a1f30bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a4c86940d53534debe30f549f567d376f">GetProductionInhibitTime</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a97f3309dd23f2f6ed053d8ba13f57507">GetProductionTrigger</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7ff02a8bd0d20f1086b14d179d762aae">GetTargetToOriginatorRequestedPackedInterval</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2ca3eb3dc7fe805b410d849612720b4c">IsConnectedOutputAssembly</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> instance_number)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aef50a0eee3ff5df3320b49f872a7f3c4">RemoveFromActiveConnections</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes connection from the list of active connections.  <a href="#aef50a0eee3ff5df3320b49f872a7f3c4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa07c30f7dfcecb7317728972a4ee1185">SetProductionInhibitTime</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> production_inhibit_time, <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a525b0edaeaf2aad5c195a43c650af2c8">SetProductionTrigger</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a> production_trigger, <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a7f3f2e74e4e7686acc09cbd38acdb3d8"></a><!-- doxytag: member="cipconnectionmanager.h::SEQ_GEQ16" ref="a7f3f2e74e4e7686acc09cbd38acdb3d8" args="(a, b)" -->
@@ -245,13 +334,13 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((short)((a) - (b)) &gt;= 0)</td>
+          <td></td><td>&#160;&#160;&#160;( (short)( (a) - (b) ) &gt;= 0 )</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00073">73</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00183">183</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -274,13 +363,13 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((int)((a) - (b)) &gt;= 0)</td>
+          <td></td><td>&#160;&#160;&#160;( (int)( (a) - (b) ) &gt;= 0 )</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00064">64</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00174">174</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -303,15 +392,15 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((int)((a) - (b)) &gt; 0)</td>
+          <td></td><td>&#160;&#160;&#160;( (int)( (a) - (b) ) &gt; 0 )</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00065">65</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00175">175</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00199">HandleReceivedConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00265">HandleReceivedConnectedData()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +423,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((short)((a) - (b)) &lt;= 0)</td>
+          <td></td><td>&#160;&#160;&#160;( (short)( (a) - (b) ) &lt;= 0 )</td>
         </tr>
       </table>
 </div>
@@ -342,9 +431,9 @@ Functions</h2></td></tr>
 
 <p>similar macros for comparing 16 bit sequence numbers  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69" title="similar macros for comparing 16 bit sequence numbers  SEQ_LEQ16(a, b) Checks if sequence number a is ...">SEQ_LEQ16(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7f3f2e74e4e7686acc09cbd38acdb3d8">SEQ_GEQ16(a, b)</a> Checks if sequence number a is greater or equal than b </p>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00072">72</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00182">182</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00678">HandleReceivedIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00811">HandleReceivedIoConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +456,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((int)((a) - (b)) &lt;= 0)</td>
+          <td></td><td>&#160;&#160;&#160;( (int)( (a) - (b) ) &lt;= 0 )</td>
         </tr>
       </table>
 </div>
@@ -375,7 +464,7 @@ Functions</h2></td></tr>
 
 <p>macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681" title="macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  SEQ_L...">SEQ_LEQ32(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adb0806a9e513fd203c29dab7e850efcf">SEQ_GEQ32(a, b)</a> Checks if sequence number a is greater or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c">SEQ_GT32(a, b)</a> Checks if sequence number a is greater than b </p>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00063">63</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00173">173</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -394,13 +483,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Enumeration Type Documentation</h2>
-<a class="anchor" id="af7249e248108913b85a50b2edaaf6021"></a><!-- doxytag: member="cipconnectionmanager.h::ConnectionManagerStatusCode" ref="af7249e248108913b85a50b2edaaf6021" args="" -->
+<a class="anchor" id="a56e74944d6e2e5fddd54b431af9e42bf"></a><!-- doxytag: member="cipconnectionmanager.h::ProductionTrigger" ref="a56e74944d6e2e5fddd54b431af9e42bf" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#af7249e248108913b85a50b2edaaf6021">ConnectionManagerStatusCode</a></td>
+          <td class="memname">typedef enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a>  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Enumeration Type Documentation</h2>
+<a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759"></a><!-- doxytag: member="cipconnectionmanager.h::ConnectionManagerExtendedStatusCode" ref="a2c7b6cc102450d2b993391113bd2b759" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759">ConnectionManagerExtendedStatusCode</a></td>
         </tr>
       </table>
 </div>
@@ -408,53 +510,218 @@ Functions</h2></td></tr>
 
 <p>Connection Manager Error codes. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a360bca3eccb3a008cedfc7a4bd820f7e"></a><!-- doxytag: member="kConnectionManagerStatusCodeSuccess" ref="af7249e248108913b85a50b2edaaf6021a360bca3eccb3a008cedfc7a4bd820f7e" args="" -->kConnectionManagerStatusCodeSuccess</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a299259d157a6ac077f1c5c8904ceaef8"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeSuccess" ref="a2c7b6cc102450d2b993391113bd2b759a299259d157a6ac077f1c5c8904ceaef8" args="" -->kConnectionManagerExtendedStatusCodeSuccess</em>&nbsp;</td><td>
+<p>Obsolete code, should be General Status - Everything is ok </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021aef39bc708013673041aea80e66ef3392"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorConnectionInUse" ref="af7249e248108913b85a50b2edaaf6021aef39bc708013673041aea80e66ef3392" args="" -->kConnectionManagerStatusCodeErrorConnectionInUse</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a4d3041e68abdeaaaea9729442e421b03"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorConnectionInUseOrDuplicateForwardOpen" ref="a2c7b6cc102450d2b993391113bd2b759a4d3041e68abdeaaaea9729442e421b03" args="" -->kConnectionManagerExtendedStatusCodeErrorConnectionInUseOrDuplicateForwardOpen</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Connection is already in use, or a duplicate Forward Open was received </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a1e564b47820f1779096cb18015e82b8d"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorTransportTriggerNotSupported" ref="af7249e248108913b85a50b2edaaf6021a1e564b47820f1779096cb18015e82b8d" args="" -->kConnectionManagerStatusCodeErrorTransportTriggerNotSupported</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759aaa62ef2e8c037e6f48b8f830a6981eb5"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorTransportClassAndTriggerCombinationNotSupported" ref="a2c7b6cc102450d2b993391113bd2b759aaa62ef2e8c037e6f48b8f830a6981eb5" args="" -->kConnectionManagerExtendedStatusCodeErrorTransportClassAndTriggerCombinationNotSupported</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, A Transport class and trigger combination has been specified, which is not supported by the target application </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a54c5b1ae141df32143094a99940b642a"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorOwnershipConflict" ref="af7249e248108913b85a50b2edaaf6021a54c5b1ae141df32143094a99940b642a" args="" -->kConnectionManagerStatusCodeErrorOwnershipConflict</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a81369fa2ff6c7f2165f3876c6eac1a03"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorOwnershipConflict" ref="a2c7b6cc102450d2b993391113bd2b759a81369fa2ff6c7f2165f3876c6eac1a03" args="" -->kConnectionManagerExtendedStatusCodeErrorOwnershipConflict</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Another connection has already reserved some needed resources </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021ad111838e501e5081dc263c46a601c766"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorConnectionNotFoundAtTargetApplication" ref="af7249e248108913b85a50b2edaaf6021ad111838e501e5081dc263c46a601c766" args="" -->kConnectionManagerStatusCodeErrorConnectionNotFoundAtTargetApplication</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759afce2d85160c59c4080b31d491e66fc1e"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorConnectionTargetConnectionNotFound" ref="a2c7b6cc102450d2b993391113bd2b759afce2d85160c59c4080b31d491e66fc1e" args="" -->kConnectionManagerExtendedStatusCodeErrorConnectionTargetConnectionNotFound</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Forward Close error message, if connection to be closed is not found at the target </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021ac65f366c4f57b356cd31c2ad50bd6071"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorInvalidOToTConnectionType" ref="af7249e248108913b85a50b2edaaf6021ac65f366c4f57b356cd31c2ad50bd6071" args="" -->kConnectionManagerStatusCodeErrorInvalidOToTConnectionType</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a76c591076781d4100b469a26aad7d8f9"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorTargetForConnectionNotConfigured" ref="a2c7b6cc102450d2b993391113bd2b759a76c591076781d4100b469a26aad7d8f9" args="" -->kConnectionManagerExtendedStatusCodeErrorTargetForConnectionNotConfigured</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Target application not configured and connection request does not contain data segment for configuration </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a0d486cc42701fbce09c3c56c1f470efd"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorInvalidTToOConnectionType" ref="af7249e248108913b85a50b2edaaf6021a0d486cc42701fbce09c3c56c1f470efd" args="" -->kConnectionManagerStatusCodeErrorInvalidTToOConnectionType</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a6291dd8e01f32f0193aac33ebf902ec3"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorRpiValuesNotAcceptable" ref="a2c7b6cc102450d2b993391113bd2b759a6291dd8e01f32f0193aac33ebf902ec3" args="" -->kConnectionManagerExtendedStatusCodeErrorRpiValuesNotAcceptable</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Requested RPI parameters outside of range, needs 6 16-bit extended status words, see Vol.1 Table 3-5.33 </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a8d4a78c93c66235da54adae315872f57"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorInvalidOToTConnectionSize" ref="af7249e248108913b85a50b2edaaf6021a8d4a78c93c66235da54adae315872f57" args="" -->kConnectionManagerStatusCodeErrorInvalidOToTConnectionSize</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ae5ce9e5e8cbbcd580f9bcbc1e3ad8750"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorNoMoreConnectionsAvailable" ref="a2c7b6cc102450d2b993391113bd2b759ae5ce9e5e8cbbcd580f9bcbc1e3ad8750" args="" -->kConnectionManagerExtendedStatusCodeErrorNoMoreConnectionsAvailable</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, No free connection slots available </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021ae1f6a08715d0ef773db1eabd32d7e7fb"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorInvalidTToOConnectionSize" ref="af7249e248108913b85a50b2edaaf6021ae1f6a08715d0ef773db1eabd32d7e7fb" args="" -->kConnectionManagerStatusCodeErrorInvalidTToOConnectionSize</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ac06977b2ad30e5d129043d5784b36b05"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorVendorIdOrProductcodeError" ref="a2c7b6cc102450d2b993391113bd2b759ac06977b2ad30e5d129043d5784b36b05" args="" -->kConnectionManagerExtendedStatusCodeErrorVendorIdOrProductcodeError</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, The Product Code or Vendor ID in the electronic key logical segment does not match the Product Code or Vendor ID of the device, or if the compatibility bit is set and one or both are zero, or cannot be emulated. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021aadd8d1e7280d2a6465c5f5c1bb27dba9"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorNoMoreConnectionsAvailable" ref="af7249e248108913b85a50b2edaaf6021aadd8d1e7280d2a6465c5f5c1bb27dba9" args="" -->kConnectionManagerStatusCodeErrorNoMoreConnectionsAvailable</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a392538a425d20a8666d8717b287f7c0e"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorDeviceTypeError" ref="a2c7b6cc102450d2b993391113bd2b759a392538a425d20a8666d8717b287f7c0e" args="" -->kConnectionManagerExtendedStatusCodeErrorDeviceTypeError</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Device Type specified in the electronic key logical segment does not match the Device Type, or if the compatibility bit is set and Device Type is zero, or cannot be emulated. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a5419515c887589d22f2c6bb2ff32492f"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorVendorIdOrProductcodeError" ref="af7249e248108913b85a50b2edaaf6021a5419515c887589d22f2c6bb2ff32492f" args="" -->kConnectionManagerStatusCodeErrorVendorIdOrProductcodeError</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759addcb464c102171c528282e566ce126bf"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorRevisionMismatch" ref="a2c7b6cc102450d2b993391113bd2b759addcb464c102171c528282e566ce126bf" args="" -->kConnectionManagerExtendedStatusCodeErrorRevisionMismatch</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, Major and minor revision specified in the electronic key logical segment is not a valid revision of the device, or if the compatibility bit is set and the requested Major Revision and/or Minor Revision is 0 or the device cannot emulate the specified revision. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021ab1f0a62ee532d1495d71832e79b63a76"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorDeviceTypeError" ref="af7249e248108913b85a50b2edaaf6021ab1f0a62ee532d1495d71832e79b63a76" args="" -->kConnectionManagerStatusCodeErrorDeviceTypeError</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a62cfd1f5a9792ba10291a6cb09a36ab3"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNonListenOnlyConnectionNotOpened" ref="a2c7b6cc102450d2b993391113bd2b759a62cfd1f5a9792ba10291a6cb09a36ab3" args="" -->kConnectionManagerExtendedStatusCodeNonListenOnlyConnectionNotOpened</em>&nbsp;</td><td>
+<p>General Status has to be 0x01, listen-only connection cannot be established, if no non-listen only connections are established </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021aa0049ec25b8c8b62644b18f03639c651"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorRevisionMismatch" ref="af7249e248108913b85a50b2edaaf6021aa0049ec25b8c8b62644b18f03639c651" args="" -->kConnectionManagerStatusCodeErrorRevisionMismatch</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ace7adb139efb9d143ff75f9e6d692327"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeTargetObjectOutOfConnections" ref="a2c7b6cc102450d2b993391113bd2b759ace7adb139efb9d143ff75f9e6d692327" args="" -->kConnectionManagerExtendedStatusCodeTargetObjectOutOfConnections</em>&nbsp;</td><td>
+<p>Maximum number of connections supported by the instance of the target object exceeded </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021aa68a2676ee1bb16abf8dd72a2a5cd824"></a><!-- doxytag: member="kConnectionManagerStatusCodeInvalidConfigurationApplicationPath" ref="af7249e248108913b85a50b2edaaf6021aa68a2676ee1bb16abf8dd72a2a5cd824" args="" -->kConnectionManagerStatusCodeInvalidConfigurationApplicationPath</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a32180a921391f0c73f3d5e3f347612e9"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeProductionInhibitTimerGreaterThanRpi" ref="a2c7b6cc102450d2b993391113bd2b759a32180a921391f0c73f3d5e3f347612e9" args="" -->kConnectionManagerExtendedStatusCodeProductionInhibitTimerGreaterThanRpi</em>&nbsp;</td><td>
+<p>The Production Inhibit Time is greater than the Target to Originator RPI </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a04aaa69af344dfeb2c721f2587b24d0f"></a><!-- doxytag: member="kConnectionManagerStatusCodeInvalidConsumingApllicationPath" ref="af7249e248108913b85a50b2edaaf6021a04aaa69af344dfeb2c721f2587b24d0f" args="" -->kConnectionManagerStatusCodeInvalidConsumingApllicationPath</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a217820d486b0897b6cae2b3e5498d6cb"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeTransportClassNotSupported" ref="a2c7b6cc102450d2b993391113bd2b759a217820d486b0897b6cae2b3e5498d6cb" args="" -->kConnectionManagerExtendedStatusCodeTransportClassNotSupported</em>&nbsp;</td><td>
+<p>The transport class requested in the Transport Type/Trigger parameter is not supported. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a25b6037b89ef78644f4873d48025d049"></a><!-- doxytag: member="kConnectionManagerStatusCodeInvalidProducingApplicationPath" ref="af7249e248108913b85a50b2edaaf6021a25b6037b89ef78644f4873d48025d049" args="" -->kConnectionManagerStatusCodeInvalidProducingApplicationPath</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a90e13a5332eca8c73bc766a68746e89e"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeProductionTriggerNotSuppoerted" ref="a2c7b6cc102450d2b993391113bd2b759a90e13a5332eca8c73bc766a68746e89e" args="" -->kConnectionManagerExtendedStatusCodeProductionTriggerNotSuppoerted</em>&nbsp;</td><td>
+<p>The production trigger requested in the Transport Type/Trigger parameter is not supported. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a8aab77730577c72f4962a64937e7324f"></a><!-- doxytag: member="kConnectionManagerStatusCodeInconsistentApplicationPathCombo" ref="af7249e248108913b85a50b2edaaf6021a8aab77730577c72f4962a64937e7324f" args="" -->kConnectionManagerStatusCodeInconsistentApplicationPathCombo</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a5fc737f7ba770d54013fb630bcdd6774"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeDirectionNotSupported" ref="a2c7b6cc102450d2b993391113bd2b759a5fc737f7ba770d54013fb630bcdd6774" args="" -->kConnectionManagerExtendedStatusCodeDirectionNotSupported</em>&nbsp;</td><td>
+<p>The direction requested in the Transport Type/Trigger parameter is not supported </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a857e420b4c1119a83700364334863baf"></a><!-- doxytag: member="kConnectionManagerStatusCodeNonListenOnlyConnectionNotOpened" ref="af7249e248108913b85a50b2edaaf6021a857e420b4c1119a83700364334863baf" args="" -->kConnectionManagerStatusCodeNonListenOnlyConnectionNotOpened</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a8d7435c1cb0ebb4d15e25e6bd46f2295"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionFixVar" ref="a2c7b6cc102450d2b993391113bd2b759a8d7435c1cb0ebb4d15e25e6bd46f2295" args="" -->kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionFixVar</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an O-&gt;T fixed / variable flag that is not supported. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a22b925ba0e166f1b63cd5181ff21f0d0"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorParameterErrorInUnconnectedSendService" ref="af7249e248108913b85a50b2edaaf6021a22b925ba0e166f1b63cd5181ff21f0d0" args="" -->kConnectionManagerStatusCodeErrorParameterErrorInUnconnectedSendService</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a12061cad1c4d6a7a1cdd00c88b74fe64"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionFixVar" ref="a2c7b6cc102450d2b993391113bd2b759a12061cad1c4d6a7a1cdd00c88b74fe64" args="" -->kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionFixVar</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an T-&gt;O fixed / variable flag that is not supported. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a46585ad8cbcee5378deca1c17a8fac68"></a><!-- doxytag: member="kConnectionManagerStatusCodeErrorInvalidSegmentTypeInPath" ref="af7249e248108913b85a50b2edaaf6021a46585ad8cbcee5378deca1c17a8fac68" args="" -->kConnectionManagerStatusCodeErrorInvalidSegmentTypeInPath</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a811446b1146198e85753e26c3cac14eb"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionPriority" ref="a2c7b6cc102450d2b993391113bd2b759a811446b1146198e85753e26c3cac14eb" args="" -->kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionPriority</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an O-&gt;T priority code that is not supported. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="af7249e248108913b85a50b2edaaf6021a801fec532fb6cce1c06fbdba16feb465"></a><!-- doxytag: member="kConnectionManagerStatusCodeTargetObjectOutOfConnections" ref="af7249e248108913b85a50b2edaaf6021a801fec532fb6cce1c06fbdba16feb465" args="" -->kConnectionManagerStatusCodeTargetObjectOutOfConnections</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a985d9bd6ac240d560b04a8092bc0408e"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionPriority" ref="a2c7b6cc102450d2b993391113bd2b759a985d9bd6ac240d560b04a8092bc0408e" args="" -->kConnectionManagerExtendedStatusCodeInvalidTToONetworkConnectionPriority</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an T-&gt;O priority code that is not supported. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759aed332a68129a2a68dcd98f20d057f07c"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionType" ref="a2c7b6cc102450d2b993391113bd2b759aed332a68129a2a68dcd98f20d057f07c" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionType</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an O-&gt;T connection type that is not supported </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a9addeb28617822771df1771d0e2ad10d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionType" ref="a2c7b6cc102450d2b993391113bd2b759a9addeb28617822771df1771d0e2ad10d" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionType</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying a T-&gt;O connection type that is not supported </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a812cbec0958f35dc76285e442f9edca6"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionRedundantOwner" ref="a2c7b6cc102450d2b993391113bd2b759a812cbec0958f35dc76285e442f9edca6" args="" -->kConnectionManagerExtendedStatusCodeInvalidOToTNetworkConnectionRedundantOwner</em>&nbsp;</td><td>
+<p>Shall be returned as the result of specifying an O-&gt;T Redundant Owner flag that is not supported. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759adf9e9a94c541d59cd84d1c8ff4254325"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidConfigurationSize" ref="a2c7b6cc102450d2b993391113bd2b759adf9e9a94c541d59cd84d1c8ff4254325" args="" -->kConnectionManagerExtendedStatusCodeInvalidConfigurationSize</em>&nbsp;</td><td>
+<p>The data segment provided in the Connection_Path parameter did not contain an acceptable number of 16-bit words for the the configuration application path requested. Two additional status words shall follow, the error code plus the max size in words </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize" ref="a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize</em>&nbsp;</td><td>
+<p>The size of the consuming object declared in the Forward_Open request and available on the target does not match the size declared in the O-&gt;T Network Connection Parameter. Two additional status words shall follow, the error code plus the max size in words </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize" ref="a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize</em>&nbsp;</td><td>
+<p>The size of the consuming object declared in the Forward_Open request and available on the target does not match the size declared in the T-&gt;O Network Connection Parameter. Two additional status words shall follow, the error code plus the max size in words </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath" ref="a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90" args="" -->kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath</em>&nbsp;</td><td>
+<p>Configuration application path specified does not correspond to a valid configuration application path within the target application. This error could also be returned if a configuration application path was required, but not provided by a connection request. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a40a08a853d51ce12008d4c935dbef985"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidConsumingApplicationPath" ref="a2c7b6cc102450d2b993391113bd2b759a40a08a853d51ce12008d4c935dbef985" args="" -->kConnectionManagerExtendedStatusCodeInvalidConsumingApplicationPath</em>&nbsp;</td><td>
+<p>Consumed application path specified does not correspond to a valid consumed application path within the target application. This error could also be returned if a consumed application path was required, but not provided by a connection request. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ab31ee32e147e66520a313f02c5875510"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidProducingApplicationPath" ref="a2c7b6cc102450d2b993391113bd2b759ab31ee32e147e66520a313f02c5875510" args="" -->kConnectionManagerExtendedStatusCodeInvalidProducingApplicationPath</em>&nbsp;</td><td>
+<p>Produced application path specified does not correspond to a valid produced application path within the target application. This error could also be returned if a produced application path was required, but not provided by a connection request. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a6d22616638e8208a0d5c2c0b7e4b04b1"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeConfigurationSymbolDoesNotExist" ref="a2c7b6cc102450d2b993391113bd2b759a6d22616638e8208a0d5c2c0b7e4b04b1" args="" -->kConnectionManagerExtendedStatusCodeConfigurationSymbolDoesNotExist</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a4869d3c41b9746557213ee2b2e73ced7"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeConsumingSymbolDoesNotExist" ref="a2c7b6cc102450d2b993391113bd2b759a4869d3c41b9746557213ee2b2e73ced7" args="" -->kConnectionManagerExtendedStatusCodeConsumingSymbolDoesNotExist</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a0d669ed4dbd5f30d88cb3f5ffe1842fb"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeProducingSymbolDoesNotExist" ref="a2c7b6cc102450d2b993391113bd2b759a0d669ed4dbd5f30d88cb3f5ffe1842fb" args="" -->kConnectionManagerExtendedStatusCodeProducingSymbolDoesNotExist</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a560c51aa82582842ee82228b20a0b2b6"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInconsistentApplicationPathCombo" ref="a2c7b6cc102450d2b993391113bd2b759a560c51aa82582842ee82228b20a0b2b6" args="" -->kConnectionManagerExtendedStatusCodeInconsistentApplicationPathCombo</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759af56b0a3ff40fbdd3868f93dc04f09c6d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInconsistentConsumeDataFormat" ref="a2c7b6cc102450d2b993391113bd2b759af56b0a3ff40fbdd3868f93dc04f09c6d" args="" -->kConnectionManagerExtendedStatusCodeInconsistentConsumeDataFormat</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a2ab771101315080fcf71e6d8ce3e408b"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInconsistentProduceDataFormat" ref="a2c7b6cc102450d2b993391113bd2b759a2ab771101315080fcf71e6d8ce3e408b" args="" -->kConnectionManagerExtendedStatusCodeInconsistentProduceDataFormat</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759adc2e101cd60b42304630421d61738b79"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNullForwardOpenNotSupported" ref="a2c7b6cc102450d2b993391113bd2b759adc2e101cd60b42304630421d61738b79" args="" -->kConnectionManagerExtendedStatusCodeNullForwardOpenNotSupported</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759adfdb7e5563df63d2d88d399abf34adfc"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeConnectionTimeoutMultiplierNotAcceptable" ref="a2c7b6cc102450d2b993391113bd2b759adfdb7e5563df63d2d88d399abf34adfc" args="" -->kConnectionManagerExtendedStatusCodeConnectionTimeoutMultiplierNotAcceptable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ab0f5f3288fc1c9e53dffbba659145171"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeConnectionTimedOut" ref="a2c7b6cc102450d2b993391113bd2b759ab0f5f3288fc1c9e53dffbba659145171" args="" -->kConnectionManagerExtendedStatusCodeConnectionTimedOut</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759acb2c9c8f1fe144eda621a8b12d921330"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeUnconnectedRequestTimedOut" ref="a2c7b6cc102450d2b993391113bd2b759acb2c9c8f1fe144eda621a8b12d921330" args="" -->kConnectionManagerExtendedStatusCodeUnconnectedRequestTimedOut</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a85f144dd790d75ec49c6ab5d2aa857b3"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorParameterErrorInUnconnectedSendService" ref="a2c7b6cc102450d2b993391113bd2b759a85f144dd790d75ec49c6ab5d2aa857b3" args="" -->kConnectionManagerExtendedStatusCodeErrorParameterErrorInUnconnectedSendService</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759acb0a04c473ee263f32c6477b6be1d4b3"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeMessageToLargeForUnconnectedSendService" ref="a2c7b6cc102450d2b993391113bd2b759acb0a04c473ee263f32c6477b6be1d4b3" args="" -->kConnectionManagerExtendedStatusCodeMessageToLargeForUnconnectedSendService</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a15883103867add903346cf43d3003a28"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeUnconnectedAcknowledgeWithoutReply" ref="a2c7b6cc102450d2b993391113bd2b759a15883103867add903346cf43d3003a28" args="" -->kConnectionManagerExtendedStatusCodeUnconnectedAcknowledgeWithoutReply</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ae77f68fee1b4b6128551bb352fd25b5d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoBufferMemoryAvailable" ref="a2c7b6cc102450d2b993391113bd2b759ae77f68fee1b4b6128551bb352fd25b5d" args="" -->kConnectionManagerExtendedStatusCodeNoBufferMemoryAvailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a1e68d76f56e4e18f64756604a662827c"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNetworkBandwithNotAvailableForData" ref="a2c7b6cc102450d2b993391113bd2b759a1e68d76f56e4e18f64756604a662827c" args="" -->kConnectionManagerExtendedStatusCodeNetworkBandwithNotAvailableForData</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a58a2e96ed340cabe79dddbd083b2346c"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoConsumedConnectionIdFilterAvailable" ref="a2c7b6cc102450d2b993391113bd2b759a58a2e96ed340cabe79dddbd083b2346c" args="" -->kConnectionManagerExtendedStatusCodeNoConsumedConnectionIdFilterAvailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a49c15e62b7dac51a7ed9cbba16e14743"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNotConfiguredToSendScheduledPriorityData" ref="a2c7b6cc102450d2b993391113bd2b759a49c15e62b7dac51a7ed9cbba16e14743" args="" -->kConnectionManagerExtendedStatusCodeNotConfiguredToSendScheduledPriorityData</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a1b8322a6941f3d01de658ade7edd2e56"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeScheduleSignatureMismatch" ref="a2c7b6cc102450d2b993391113bd2b759a1b8322a6941f3d01de658ade7edd2e56" args="" -->kConnectionManagerExtendedStatusCodeScheduleSignatureMismatch</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a8b5f17f09fd6f7d4304dc2553aaafb57"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeScheduleSignatureValidationNotPossible" ref="a2c7b6cc102450d2b993391113bd2b759a8b5f17f09fd6f7d4304dc2553aaafb57" args="" -->kConnectionManagerExtendedStatusCodeScheduleSignatureValidationNotPossible</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a5bdb8105f9b738cbcd1dd6329e17cbc6"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodePortNotAvailable" ref="a2c7b6cc102450d2b993391113bd2b759a5bdb8105f9b738cbcd1dd6329e17cbc6" args="" -->kConnectionManagerExtendedStatusCodePortNotAvailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a136b2b380c0e23adff9918ddacf573f0"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeLinkAddressNotValid" ref="a2c7b6cc102450d2b993391113bd2b759a136b2b380c0e23adff9918ddacf573f0" args="" -->kConnectionManagerExtendedStatusCodeLinkAddressNotValid</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759af8a93c3c0ccfdc01c9e49078b0ea9728"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidSegmentTypeInPath" ref="a2c7b6cc102450d2b993391113bd2b759af8a93c3c0ccfdc01c9e49078b0ea9728" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidSegmentTypeInPath</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759add1995fd66653af5c4e14176d8eaeaa2"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeForwardCloseServiceConnectionPathMismatch" ref="a2c7b6cc102450d2b993391113bd2b759add1995fd66653af5c4e14176d8eaeaa2" args="" -->kConnectionManagerExtendedStatusCodeForwardCloseServiceConnectionPathMismatch</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ac55bc1ccfca71e3faf8b3dc0aab15f47"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeSchedulingNotSpecified" ref="a2c7b6cc102450d2b993391113bd2b759ac55bc1ccfca71e3faf8b3dc0aab15f47" args="" -->kConnectionManagerExtendedStatusCodeSchedulingNotSpecified</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ad8b441eac35db02aaf1d86666bae3e20"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeLinkAddressToSelfInvalid" ref="a2c7b6cc102450d2b993391113bd2b759ad8b441eac35db02aaf1d86666bae3e20" args="" -->kConnectionManagerExtendedStatusCodeLinkAddressToSelfInvalid</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a7698108e51235f0b216662eea507a5ff"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeSecondaryResourcesUnavailable" ref="a2c7b6cc102450d2b993391113bd2b759a7698108e51235f0b216662eea507a5ff" args="" -->kConnectionManagerExtendedStatusCodeSecondaryResourcesUnavailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a927d096ef30baee1db581f4a7cd50cef"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeRackConnectionAlreadyEstablished" ref="a2c7b6cc102450d2b993391113bd2b759a927d096ef30baee1db581f4a7cd50cef" args="" -->kConnectionManagerExtendedStatusCodeRackConnectionAlreadyEstablished</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759abaa5824a2dd72e99ad57cc248a71dcdb"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeModuleConnectionAlreadyEstablished" ref="a2c7b6cc102450d2b993391113bd2b759abaa5824a2dd72e99ad57cc248a71dcdb" args="" -->kConnectionManagerExtendedStatusCodeModuleConnectionAlreadyEstablished</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a7f931d99759ad19d770c415a0766a633"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeMiscellaneous" ref="a2c7b6cc102450d2b993391113bd2b759a7f931d99759ad19d770c415a0766a633" args="" -->kConnectionManagerExtendedStatusCodeMiscellaneous</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759ad688aef6ca5f076d6a2148fddd0e168e"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeRedundantConnectionMismatch" ref="a2c7b6cc102450d2b993391113bd2b759ad688aef6ca5f076d6a2148fddd0e168e" args="" -->kConnectionManagerExtendedStatusCodeRedundantConnectionMismatch</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a928746bf1172d44a3d1ae4e1c4aad52d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoMoreUserConfigurableLinkConsumerResourcesAvailableInTheProducingModule" ref="a2c7b6cc102450d2b993391113bd2b759a928746bf1172d44a3d1ae4e1c4aad52d" args="" -->kConnectionManagerExtendedStatusCodeNoMoreUserConfigurableLinkConsumerResourcesAvailableInTheProducingModule</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a9f2edf708cb4060e38aba0132153ded6"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoUserConfigurableLinkConsumerResourcesConfiguredInTheProducingModule" ref="a2c7b6cc102450d2b993391113bd2b759a9f2edf708cb4060e38aba0132153ded6" args="" -->kConnectionManagerExtendedStatusCodeNoUserConfigurableLinkConsumerResourcesConfiguredInTheProducingModule</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759abebfaa8dc9f65e8c00731f2581069974"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNetworkLinkOffline" ref="a2c7b6cc102450d2b993391113bd2b759abebfaa8dc9f65e8c00731f2581069974" args="" -->kConnectionManagerExtendedStatusCodeNetworkLinkOffline</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759abcc987013028716c8b953b48182064e2"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoTargetApplicationDataAvailable" ref="a2c7b6cc102450d2b993391113bd2b759abcc987013028716c8b953b48182064e2" args="" -->kConnectionManagerExtendedStatusCodeNoTargetApplicationDataAvailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a54276c6206affe323059455b38f6e4f9"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNoOriginatorApplicationDataAvailable" ref="a2c7b6cc102450d2b993391113bd2b759a54276c6206affe323059455b38f6e4f9" args="" -->kConnectionManagerExtendedStatusCodeNoOriginatorApplicationDataAvailable</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a2cec711dc213100f963120ef02ce6224"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNodeAddressHasChangedSinceTheNetworkWasScheduled" ref="a2c7b6cc102450d2b993391113bd2b759a2cec711dc213100f963120ef02ce6224" args="" -->kConnectionManagerExtendedStatusCodeNodeAddressHasChangedSinceTheNetworkWasScheduled</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759abbae7a3f61a59167799237547b4856fd"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeNotConfiguredForOffSubnetMulticast" ref="a2c7b6cc102450d2b993391113bd2b759abbae7a3f61a59167799237547b4856fd" args="" -->kConnectionManagerExtendedStatusCodeNotConfiguredForOffSubnetMulticast</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a6199809c4ee2a14657e825517ae315b2"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidProduceConsumeDataFormat" ref="a2c7b6cc102450d2b993391113bd2b759a6199809c4ee2a14657e825517ae315b2" args="" -->kConnectionManagerExtendedStatusCodeInvalidProduceConsumeDataFormat</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a15d7033086b9a6a6af1054691df29998"></a><!-- doxytag: member="kConnectionManagerExtendedStatusWrongCloser" ref="a2c7b6cc102450d2b993391113bd2b759a15d7033086b9a6a6af1054691df29998" args="" -->kConnectionManagerExtendedStatusWrongCloser</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00025">25</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00040">40</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83673de16e338e17cac4bde729de7fe6"></a><!-- doxytag: member="cipconnectionmanager.h::ConnectionManagerGeneralStatus" ref="a83673de16e338e17cac4bde729de7fe6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6">ConnectionManagerGeneralStatus</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6af88c0d542320f8cbeca94a3dd94f5995"></a><!-- doxytag: member="kConnectionManagerGeneralStatusSuccess" ref="a83673de16e338e17cac4bde729de7fe6af88c0d542320f8cbeca94a3dd94f5995" args="" -->kConnectionManagerGeneralStatusSuccess</em>&nbsp;</td><td>
+<p>General Status - Everything is ok </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6ad88d9023953f148ab3a31ab1f3a50a92"></a><!-- doxytag: member="kConnectionManagerGeneralStatusExtendedStatus" ref="a83673de16e338e17cac4bde729de7fe6ad88d9023953f148ab3a31ab1f3a50a92" args="" -->kConnectionManagerGeneralStatusExtendedStatus</em>&nbsp;</td><td>
+<p>Indicates that extended status is set </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6a7cf51aa7c0ec376d87064f1c3e39865b"></a><!-- doxytag: member="kConnectionManagerGeneralStatusResourceUnavailableForUnconnectedSend" ref="a83673de16e338e17cac4bde729de7fe6a7cf51aa7c0ec376d87064f1c3e39865b" args="" -->kConnectionManagerGeneralStatusResourceUnavailableForUnconnectedSend</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6a3b7be8630fa2c46d4d9ec02d057a326d"></a><!-- doxytag: member="kConnectionManagerGeneralStatusPathSegmentErrorInUnconnectedSend" ref="a83673de16e338e17cac4bde729de7fe6a3b7be8630fa2c46d4d9ec02d057a326d" args="" -->kConnectionManagerGeneralStatusPathSegmentErrorInUnconnectedSend</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6a7e0cb4402b561fa2c12779f2b7a6e0c6"></a><!-- doxytag: member="kConnectionManagerGeneralStatusErrorInDataSegment" ref="a83673de16e338e17cac4bde729de7fe6a7e0cb4402b561fa2c12779f2b7a6e0c6" args="" -->kConnectionManagerGeneralStatusErrorInDataSegment</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6a863de8fb363aa329c64de442bcd4457d"></a><!-- doxytag: member="kConnectionManagerGeneralStatusObjectStateError" ref="a83673de16e338e17cac4bde729de7fe6a863de8fb363aa329c64de442bcd4457d" args="" -->kConnectionManagerGeneralStatusObjectStateError</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6a0045dffbd59f8b974627225164f94eec"></a><!-- doxytag: member="kConnectionManagerGeneralStatusDeviceStateError" ref="a83673de16e338e17cac4bde729de7fe6a0045dffbd59f8b974627225164f94eec" args="" -->kConnectionManagerGeneralStatusDeviceStateError</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6afbf3cae46b57ea086620a99ce2277086"></a><!-- doxytag: member="kConnectionManagerGeneralStatusNotEnoughData" ref="a83673de16e338e17cac4bde729de7fe6afbf3cae46b57ea086620a99ce2277086" args="" -->kConnectionManagerGeneralStatusNotEnoughData</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a83673de16e338e17cac4bde729de7fe6ad3aeff45b22a5ebb88c3cd18a7334146"></a><!-- doxytag: member="kConnectionManagerGeneralStatusTooMuchData" ref="a83673de16e338e17cac4bde729de7fe6ad3aeff45b22a5ebb88c3cd18a7334146" args="" -->kConnectionManagerGeneralStatusTooMuchData</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00028">28</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +758,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00076">76</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00186">186</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +785,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00049">49</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00138">138</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -547,36 +814,69 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00087">87</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00197">197</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5bbe67ba1134d38bbb89c7c242ba6551"></a><!-- doxytag: member="cipconnectionmanager.h::RoutingType" ref="a5bbe67ba1134d38bbb89c7c242ba6551" args="" -->
+<a class="anchor" id="ab22bbae42458677f47f6024cfb96ac4c"></a><!-- doxytag: member="cipconnectionmanager.h::ForwardOpenConnectionType" ref="ab22bbae42458677f47f6024cfb96ac4c" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a5bbe67ba1134d38bbb89c7c242ba6551">RoutingType</a></td>
+          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">ForwardOpenConnectionType</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Sets the routing type of a connection, either. </p>
+<p>Connection Type constants of the Forward Open service request Indicates either a. </p>
 <ul>
-<li>Point-to-point connections (unicast)</li>
-<li>Multicast connection </li>
+<li>Null Request</li>
+<li>Point-to-point connection request (unicast)</li>
+<li>Multicast connection request </li>
 </ul>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a5bbe67ba1134d38bbb89c7c242ba6551aa1d976c28edaeca226b8034663363e8a"></a><!-- doxytag: member="kRoutingTypePointToPointConnection" ref="a5bbe67ba1134d38bbb89c7c242ba6551aa1d976c28edaeca226b8034663363e8a" args="" -->kRoutingTypePointToPointConnection</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="ab22bbae42458677f47f6024cfb96ac4cadc9c105290d2a0dbf2284cf23c1592a1"></a><!-- doxytag: member="kForwardOpenConnectionTypeNull" ref="ab22bbae42458677f47f6024cfb96ac4cadc9c105290d2a0dbf2284cf23c1592a1" args="" -->kForwardOpenConnectionTypeNull</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a5bbe67ba1134d38bbb89c7c242ba6551adbfd343b6fde071643ca6dbdef0493da"></a><!-- doxytag: member="kRoutingTypeMulticastConnection" ref="a5bbe67ba1134d38bbb89c7c242ba6551adbfd343b6fde071643ca6dbdef0493da" args="" -->kRoutingTypeMulticastConnection</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3"></a><!-- doxytag: member="kForwardOpenConnectionTypePointToPointConnection" ref="ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3" args="" -->kForwardOpenConnectionTypePointToPointConnection</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7"></a><!-- doxytag: member="kForwardOpenConnectionTypeMulticastConnection" ref="ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7" args="" -->kForwardOpenConnectionTypeMulticastConnection</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab22bbae42458677f47f6024cfb96ac4ca4dd1fc1164de47a7d6cae3ba803e37e0"></a><!-- doxytag: member="kForwardOpenConnectionTypeReserved" ref="ab22bbae42458677f47f6024cfb96ac4ca4dd1fc1164de47a7d6cae3ba803e37e0" args="" -->kForwardOpenConnectionTypeReserved</em>&nbsp;</td><td>
+<p>Reserved and therefore invalid type </p>
 </td></tr>
 </table>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00019">19</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00021">21</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affddff21539d9aca8230015a12ebd6e6"></a><!-- doxytag: member="cipconnectionmanager.h::ProductionTrigger" ref="affddff21539d9aca8230015a12ebd6e6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="affddff21539d9aca8230015a12ebd6e6ac3bd2307f5b01b33acdffd48bdfb8c01"></a><!-- doxytag: member="kProductionTriggerInvalid" ref="affddff21539d9aca8230015a12ebd6e6ac3bd2307f5b01b33acdffd48bdfb8c01" args="" -->kProductionTriggerInvalid</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="affddff21539d9aca8230015a12ebd6e6a2716ecbc6f36e1f7f6634d6a7c66767f"></a><!-- doxytag: member="kProductionTriggerCyclic" ref="affddff21539d9aca8230015a12ebd6e6a2716ecbc6f36e1f7f6634d6a7c66767f" args="" -->kProductionTriggerCyclic</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="affddff21539d9aca8230015a12ebd6e6a7a3346a90193d191711379b9920eed32"></a><!-- doxytag: member="kProductionTriggerChangeOfState" ref="affddff21539d9aca8230015a12ebd6e6a7a3346a90193d191711379b9920eed32" args="" -->kProductionTriggerChangeOfState</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="affddff21539d9aca8230015a12ebd6e6a17044810d9cfa04c844f9877220a75f9"></a><!-- doxytag: member="kProductionTriggerApplicationObjectTriggered" ref="affddff21539d9aca8230015a12ebd6e6a17044810d9cfa04c844f9877220a75f9" args="" -->kProductionTriggerApplicationObjectTriggered</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00145">145</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +909,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00095">95</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00205">205</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -638,11 +938,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01164">1164</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01516">1516</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00217">connection_object::first_connection_object</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00080">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00126">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00330">connection_object::first_connection_object</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00114">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00190">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00329">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00236">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00080">EstablishIoConnction()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -678,11 +978,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01143">1143</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01495">1495</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00231">IApp_CloseSocket_udp()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00077">kConnectionStateNonExistent</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00104">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionProducing</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01174">RemoveFromActiveConnections()</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00236">IApp_CloseSocket_udp()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00187">kConnectionStateNonExistent</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01526">RemoveFromActiveConnections()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00330">CloseAllConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00372">CloseAllConnections()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -695,7 +995,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a0e955e3b8a41b27cf79520a6bd04d21c_icgraph.svg" width="608" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a0e955e3b8a41b27cf79520a6bd04d21c_icgraph.svg" width="608" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -726,11 +1026,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>kEipStatusOk if successful, otherwise kEipStatusError </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00168">168</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00232">232</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01205">AddConnectableObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00171">CreateCipClass()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00080">EstablishIoConnction()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00461">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00262">ForwardOpen()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00062">g_incarnation_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00515">GetConnectionOwner()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01259">InitializeConnectionManagerData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00315">InsertService()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00093">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00143">kForwardClose</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00142">kForwardOpen</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00145">kGetConnectionOwner</a>.</p>
+<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01557">AddConnectableObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00178">CreateCipClass()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00717">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00587">ForwardOpen()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00120">g_incarnation_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00779">GetConnectionOwner()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01614">InitializeConnectionManagerData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00330">InsertService()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00093">kForwardClose</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00092">kForwardOpen</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00095">kGetConnectionOwner</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00033">CipStackInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00034">CipStackInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -784,9 +1084,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01159">1159</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01511">1511</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00098">GetIoConnectionForConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00127">GetIoConnectionForConnectionData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -821,11 +1121,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00402">402</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00652">652</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00156">connection_object::connection_timeout_multiplier</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00140">connection_object::consumed_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00135">connection_object::consumed_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00178">connection_object::eip_level_sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00173">connection_object::eip_level_sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00136">connection_object::expected_packet_rate</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00162">GetConnectionId()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00190">connection_object::inactivity_watchdog_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00021">kRoutingTypeMulticastConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00020">kRoutingTypePointToPointConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00097">kWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00158">connection_object::o_to_t_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00157">connection_object::o_to_t_requested_packet_interval</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00139">connection_object::produced_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00134">connection_object::produced_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00195">connection_object::production_inhibit_time</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00200">connection_object::production_inhibit_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00186">connection_object::sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00184">connection_object::sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00160">connection_object::t_to_o_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00189">connection_object::transmission_trigger_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00161">connection_object::transport_type_class_trigger</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00142">connection_object::watchdog_timeout_action</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00251">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00250">connection_object::cip_produced_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00262">connection_object::connection_timeout_multiplier</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00246">connection_object::consumed_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00294">connection_object::eip_level_sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00289">connection_object::eip_level_sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00247">connection_object::expected_packet_rate</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00226">GetConnectionId()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::inactivity_watchdog_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00023">kForwardOpenConnectionTypePointToPointConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00207">kWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00274">connection_object::o_to_t_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00273">connection_object::o_to_t_requested_packet_interval</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00245">connection_object::produced_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00261">connection_object::production_inhibit_time</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00313">connection_object::production_inhibit_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00302">connection_object::sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00300">connection_object::sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00276">connection_object::t_to_o_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00275">connection_object::t_to_o_requested_packet_interval</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00305">connection_object::transmission_trigger_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00238">connection_object::transport_type_class_trigger</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00253">connection_object::watchdog_timeout_action</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00080">EstablishIoConnction()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -860,11 +1160,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00771">771</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01054">1054</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00140">connection_object::consumed_connection_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00080">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00126">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00251">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00114">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00190">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00329">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00236">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00199">HandleReceivedConnectedData()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00064">NotifyConnectedCommonPacketFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00265">HandleReceivedConnectedData()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00066">NotifyConnectedCommonPacketFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -899,16 +1199,142 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>pointer to connected Object 0 .. connection not present in device </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00787">787</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01071">1071</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00164">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00080">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00126">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00280">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00114">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00190">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00329">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00236">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00138">GetExclusiveOwnerConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00169">GetExclusiveOwnerConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a431e253a508cf136edbba337b91e0060_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe98e638bb3ac01dc06d7d944a1f30bf"></a><!-- doxytag: member="cipconnectionmanager.h::GetConnectionType" ref="abe98e638bb3ac01dc06d7d944a1f30bf" args="(EipUint16 network_connection_parameter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">ForwardOpenConnectionType</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#abe98e638bb3ac01dc06d7d944a1f30bf">GetConnectionType</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a>&#160;</td>
+          <td class="paramname"><em>network_connection_parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns the connection type of the supplied network connection parameter </p>
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00392">392</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00587">ForwardOpen()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00846">OpenCommunicationChannels()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01187">ParseConnectionPath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_abe98e638bb3ac01dc06d7d944a1f30bf_icgraph.svg" width="100%" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c86940d53534debe30f549f567d376f"></a><!-- doxytag: member="cipconnectionmanager.h::GetProductionInhibitTime" ref="a4c86940d53534debe30f549f567d376f" args="(const ConnectionObject const *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a4c86940d53534debe30f549f567d376f">GetProductionInhibitTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00088">88</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00261">connection_object::production_inhibit_time</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00096">ProcessProductionInhibitTime()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a4c86940d53534debe30f549f567d376f_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a97f3309dd23f2f6ed053d8ba13f57507"></a><!-- doxytag: member="cipconnectionmanager.h::GetProductionTrigger" ref="a97f3309dd23f2f6ed053d8ba13f57507" args="(const ConnectionObject const *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a97f3309dd23f2f6ed053d8ba13f57507">GetProductionTrigger</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00052">52</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00149">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00148">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00147">kProductionTriggerCyclic</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00146">kProductionTriggerInvalid</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00238">connection_object::transport_type_class_trigger</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00096">ProcessProductionInhibitTime()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a97f3309dd23f2f6ed053d8ba13f57507_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ff02a8bd0d20f1086b14d179d762aae"></a><!-- doxytag: member="cipconnectionmanager.h::GetTargetToOriginatorRequestedPackedInterval" ref="a7ff02a8bd0d20f1086b14d179d762aae" args="(const ConnectionObject const *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7ff02a8bd0d20f1086b14d179d762aae">GetTargetToOriginatorRequestedPackedInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> const *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00098">98</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00275">connection_object::t_to_o_requested_packet_interval</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00096">ProcessProductionInhibitTime()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a7ff02a8bd0d20f1086b14d179d762aae_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -930,11 +1356,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01190">1190</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01542">1542</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00164">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00056">g_active_connection_list</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00280">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00114">g_active_connection_list</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00329">connection_object::next_connection_object</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00115">SetAssemblyAttributeSingle()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00122">SetAssemblyAttributeSingle()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -969,19 +1395,92 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01174">1174</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01526">1526</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00217">connection_object::first_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00077">kConnectionStateNonExistent</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00126">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00330">connection_object::first_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00187">kConnectionStateNonExistent</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00329">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00236">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00764">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01143">CloseConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00907">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01495">CloseConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_aef50a0eee3ff5df3320b49f872a7f3c4_icgraph.svg" width="100%" height="149"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_aef50a0eee3ff5df3320b49f872a7f3c4_icgraph.svg" width="100%" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa07c30f7dfcecb7317728972a4ee1185"></a><!-- doxytag: member="cipconnectionmanager.h::SetProductionInhibitTime" ref="aa07c30f7dfcecb7317728972a4ee1185" args="(const EipUint16 production_inhibit_time, ConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa07c30f7dfcecb7317728972a4ee1185">SetProductionInhibitTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a>&#160;</td>
+          <td class="paramname"><em>production_inhibit_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00093">93</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00261">connection_object::production_inhibit_time</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00096">ProcessProductionInhibitTime()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_aa07c30f7dfcecb7317728972a4ee1185_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a525b0edaeaf2aad5c195a43c650af2c8"></a><!-- doxytag: member="cipconnectionmanager.h::SetProductionTrigger" ref="a525b0edaeaf2aad5c195a43c650af2c8" args="(const ProductionTrigger production_trigger, ConnectionObject *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a525b0edaeaf2aad5c195a43c650af2c8">SetProductionTrigger</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a>&#160;</td>
+          <td class="paramname"><em>production_trigger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>&lt; Invalid value </p>
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00069">69</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00149">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00148">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00147">kProductionTriggerCyclic</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00238">connection_object::transport_type_class_trigger</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1504,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html">cipconnectionmanager.h</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

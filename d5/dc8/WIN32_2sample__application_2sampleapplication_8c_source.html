@@ -126,16 +126,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00025"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gae93106eb1647bff3ad56a7752799d878">00025</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gae93106eb1647bff3ad56a7752799d878" title="Callback for the application initialization.">ApplicationInitialization</a>(<span class="keywordtype">void</span>) {
 <a name="l00026"></a>00026   <span class="comment">/* create 3 assembly object instances*/</span>
 <a name="l00027"></a>00027   <span class="comment">/*INPUT*/</span>
-<a name="l00028"></a>00028   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>[0],
-<a name="l00029"></a>00029                        <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>));
+<a name="l00028"></a>00028   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>( <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>[0],
+<a name="l00029"></a>00029                         <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>) );
 <a name="l00030"></a>00030 
 <a name="l00031"></a>00031   <span class="comment">/*OUTPUT*/</span>
-<a name="l00032"></a>00032   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae32b7b9fe74ddb8e945de872ac310655">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>[0],
-<a name="l00033"></a>00033                        <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>));
+<a name="l00032"></a>00032   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>( <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae32b7b9fe74ddb8e945de872ac310655">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>[0],
+<a name="l00033"></a>00033                         <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>) );
 <a name="l00034"></a>00034 
 <a name="l00035"></a>00035   <span class="comment">/*CONFIG*/</span>
-<a name="l00036"></a>00036   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a751fd09537dd79b39480224833d0f27c">g_assembly_data097</a>[0],
-<a name="l00037"></a>00037                        <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a751fd09537dd79b39480224833d0f27c">g_assembly_data097</a>));
+<a name="l00036"></a>00036   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>( <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a751fd09537dd79b39480224833d0f27c">g_assembly_data097</a>[0],
+<a name="l00037"></a>00037                         <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a751fd09537dd79b39480224833d0f27c">g_assembly_data097</a>) );
 <a name="l00038"></a>00038 
 <a name="l00039"></a>00039   <span class="comment">/*Heart-beat output assembly for Input only connections */</span>
 <a name="l00040"></a>00040   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae5d86843c10b446300f618963d66d17d">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>, 0, 0);
@@ -144,18 +144,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00043"></a>00043   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#a40b14d004a37da853a18083a670377d2">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>, 0, 0);
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045   <span class="comment">/* assembly for explicit messaging */</span>
-<a name="l00046"></a>00046   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>(<a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#afecdd244ae3d1eb90440cf19905d9fb7">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7">g_assembly_data09A</a>[0],
-<a name="l00047"></a>00047                        <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7">g_assembly_data09A</a>));
+<a name="l00046"></a>00046   <a class="code" href="../../d2/dc9/group__CIP__API.html#gae61b613fed863d30428e78b2311bf593" title="Create an instance of an assembly object.">CreateAssemblyObject</a>( <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#afecdd244ae3d1eb90440cf19905d9fb7">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7">g_assembly_data09A</a>[0],
+<a name="l00047"></a>00047                         <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7">g_assembly_data09A</a>) );
 <a name="l00048"></a>00048 
 <a name="l00049"></a>00049   <a class="code" href="../../d2/dc9/group__CIP__API.html#gad1826555a5a2c522bfd98496f31c7ab2" title="Configures the connection point for an exclusive owner connection.">ConfigureExclusiveOwnerConnectionPoint</a>(0, <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae32b7b9fe74ddb8e945de872ac310655">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>,
-<a name="l00050"></a>00050   <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>,
+<a name="l00050"></a>00050                                          <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>,
 <a name="l00051"></a>00051                                          <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>);
 <a name="l00052"></a>00052   <a class="code" href="../../d2/dc9/group__CIP__API.html#ga1f81ca8040f02503c8374288a1453f52" title="Configures the connection point for an input only connection.">ConfigureInputOnlyConnectionPoint</a>(0,
-<a name="l00053"></a>00053   <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae5d86843c10b446300f618963d66d17d">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>,
+<a name="l00053"></a>00053                                     <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae5d86843c10b446300f618963d66d17d">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>,
 <a name="l00054"></a>00054                                     <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>,
 <a name="l00055"></a>00055                                     <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>);
 <a name="l00056"></a>00056   <a class="code" href="../../d2/dc9/group__CIP__API.html#ga0ffe2fb2fa68e86bd2c0b3a94d7ad9bb" title="Configures the connection point for a listen only connection.">ConfigureListenOnlyConnectionPoint</a>(0,
-<a name="l00057"></a>00057   <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#a40b14d004a37da853a18083a670377d2">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>,
+<a name="l00057"></a>00057                                      <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#a40b14d004a37da853a18083a670377d2">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>,
 <a name="l00058"></a>00058                                      <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae4b5db1d41bdc2e6366ffad5a1a155ad">DEMO_APP_INPUT_ASSEMBLY_NUM</a>,
 <a name="l00059"></a>00059                                      <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>);
 <a name="l00060"></a>00060 
@@ -167,8 +167,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00066"></a>00066 }
 <a name="l00067"></a>00067 
 <a name="l00068"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0">00068</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection.">CheckIoConnectionEvent</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pa_unOutputAssembly,
-<a name="l00069"></a>00069                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pa_unInputAssembly,
-<a name="l00070"></a>00070                        <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2">IoConnectionEvent</a> pa_eIOConnectionEvent) {
+<a name="l00069"></a>00069                             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pa_unInputAssembly,
+<a name="l00070"></a>00070                             <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2">IoConnectionEvent</a> pa_eIOConnectionEvent) {
 <a name="l00071"></a>00071   <span class="comment">/* maintain a correct output state according to the connection state*/</span>
 <a name="l00072"></a>00072 
 <a name="l00073"></a>00073   (void) pa_unOutputAssembly; <span class="comment">/* suppress compiler warning */</span>
@@ -184,8 +184,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00083"></a>00083     <span class="keywordflow">case</span> <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ae32b7b9fe74ddb8e945de872ac310655">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>:
 <a name="l00084"></a>00084       <span class="comment">/* Data for the output assembly has been received.</span>
 <a name="l00085"></a>00085 <span class="comment">       * Mirror it to the inputs */</span>
-<a name="l00086"></a>00086       memcpy(&amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>[0], &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>[0],
-<a name="l00087"></a>00087              <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>));
+<a name="l00086"></a>00086       memcpy( &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>[0], &amp;<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131">g_assembly_data096</a>[0],
+<a name="l00087"></a>00087               <span class="keyword">sizeof</span>(<a class="code" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1">g_assembly_data064</a>) );
 <a name="l00088"></a>00088       <span class="keywordflow">break</span>;
 <a name="l00089"></a>00089     <span class="keywordflow">case</span> <a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#afecdd244ae3d1eb90440cf19905d9fb7">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>:
 <a name="l00090"></a>00090       <span class="comment">/* do something interesting with the new data from</span>
@@ -219,30 +219,31 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00118"></a>00118 
 <a name="l00119"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2">00119</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>(<span class="keywordtype">void</span>) {
 <a name="l00120"></a>00120   <span class="comment">/* add reset code here*/</span>
-<a name="l00121"></a>00121   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00122"></a>00122 }
-<a name="l00123"></a>00123 
-<a name="l00124"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7">00124</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7" title="Reset the device to the initial configuration and emulate as close as possible a power cycle of the d...">ResetDeviceToInitialConfiguration</a>(<span class="keywordtype">void</span>) {
-<a name="l00125"></a>00125   <span class="comment">/*rest the parameters */</span>
-<a name="l00126"></a>00126 
-<a name="l00127"></a>00127   <span class="comment">/*than perform device reset*/</span>
-<a name="l00128"></a>00128   <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>();
-<a name="l00129"></a>00129   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00130"></a>00130 }
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="keywordtype">void</span> *
-<a name="l00133"></a><a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#aedee0ac70fa425c38d82f8a427ee6bf1">00133</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga438b4350c32d6181990b1f0c83f2e343" title="Allocate memory for the CIP stack.">CipCalloc</a>(<span class="keywordtype">unsigned</span> pa_nNumberOfElements, <span class="keywordtype">unsigned</span> pa_nSizeOfElement) {
-<a name="l00134"></a>00134   <span class="keywordflow">return</span> calloc(pa_nNumberOfElements, pa_nSizeOfElement);
-<a name="l00135"></a>00135 }
-<a name="l00136"></a>00136 
-<a name="l00137"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">00137</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8" title="Free memory allocated by the OpENer.">CipFree</a>(<span class="keywordtype">void</span> *pa_poData) {
-<a name="l00138"></a>00138   free(pa_poData);
-<a name="l00139"></a>00139 }
-<a name="l00140"></a>00140 
-<a name="l00141"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569">00141</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator.">RunIdleChanged</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> pa_nRunIdleValue) {
-<a name="l00142"></a>00142   (void) pa_nRunIdleValue;
-<a name="l00143"></a>00143 }
-<a name="l00144"></a>00144 
+<a name="l00121"></a>00121   <a class="code" href="../../d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a>();
+<a name="l00122"></a>00122   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00123"></a>00123 }
+<a name="l00124"></a>00124 
+<a name="l00125"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7">00125</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7" title="Reset the device to the initial configuration and emulate as close as possible a power cycle of the d...">ResetDeviceToInitialConfiguration</a>(<span class="keywordtype">void</span>) {
+<a name="l00126"></a>00126   <span class="comment">/*rest the parameters */</span>
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128   <span class="comment">/*than perform device reset*/</span>
+<a name="l00129"></a>00129   <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>();
+<a name="l00130"></a>00130   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00131"></a>00131 }
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 <span class="keywordtype">void</span> *
+<a name="l00134"></a><a class="code" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#aedee0ac70fa425c38d82f8a427ee6bf1">00134</a> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c" title="Allocate memory for the CIP stack.">CipCalloc</a>(<span class="keywordtype">unsigned</span> pa_nNumberOfElements, <span class="keywordtype">unsigned</span> pa_nSizeOfElement) {
+<a name="l00135"></a>00135   <span class="keywordflow">return</span> calloc(pa_nNumberOfElements, pa_nSizeOfElement);
+<a name="l00136"></a>00136 }
+<a name="l00137"></a>00137 
+<a name="l00138"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">00138</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8" title="Free memory allocated by the OpENer.">CipFree</a>(<span class="keywordtype">void</span> *pa_poData) {
+<a name="l00139"></a>00139   free(pa_poData);
+<a name="l00140"></a>00140 }
+<a name="l00141"></a>00141 
+<a name="l00142"></a><a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569">00142</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator.">RunIdleChanged</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> pa_nRunIdleValue) {
+<a name="l00143"></a>00143   (void) pa_nRunIdleValue;
+<a name="l00144"></a>00144 }
+<a name="l00145"></a>00145 
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -263,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html">sampleapplication.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

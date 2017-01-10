@@ -12,16 +12,12 @@ var ciptypes_8h =
     [ "CipClass", "df/d28/ciptypes_8h.html#a175191808b8fac50b47d9bbc9edc6051", null ],
     [ "CipDataType", "df/d28/ciptypes_8h.html#a22530082e67e6b7c97b74ebaecde3f61", null ],
     [ "CipInstance", "df/d28/ciptypes_8h.html#aea7976be629e5ece275c993982186188", null ],
-    [ "CipServiceFunction", "df/d28/ciptypes_8h.html#af7606d2a9b86977aa0ac4ec9ccec3701", null ],
+    [ "CipServiceFunction", "df/d28/ciptypes_8h.html#a892f3ed64fb830a02a3ac141f51535b0", null ],
     [ "CipServiceStruct", "df/d28/ciptypes_8h.html#a8dcc43f5bab0798fbe107dc2cb757b09", null ],
+    [ "ConnectionPointType", "df/d28/ciptypes_8h.html#aae064ca86d6d2ef9b60e4234e25197bd", null ],
     [ "cip_data_types", "df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985", null ],
     [ "CIPAttributeFlag", "df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779", null ],
     [ "CIPServiceCode", "df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26ef", null ],
-    [ "DataSegmentType", "df/d28/ciptypes_8h.html#ae38442d795652cf3bc478fd181404d02", null ],
-    [ "IoConnectionEvent", "df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2", null ],
-    [ "LogicalSegmentLogicalFormat", "df/d28/ciptypes_8h.html#a4fce5d16c12c27f55daf553e20a3f6a0", null ],
-    [ "LogicalSegmentLogicalType", "df/d28/ciptypes_8h.html#a952173cc2fb61f8cba93966eba5a2e0a", null ],
-    [ "NetworkSegmentSubType", "df/d28/ciptypes_8h.html#aa639f8b0637e492951a8b722389e0868", null ],
-    [ "PortSegmentFlag", "df/d28/ciptypes_8h.html#a88dadddae51f173dc61922ed5932f17a", null ],
-    [ "SegmentType", "df/d28/ciptypes_8h.html#a45f8c604b4008a278fe9bde5156489ee", null ]
+    [ "connection_point_type", "df/d28/ciptypes_8h.html#ab97ef8cc5f7c9e2ab831d9d99e506725", null ],
+    [ "IoConnectionEvent", "df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2", null ]
 ];

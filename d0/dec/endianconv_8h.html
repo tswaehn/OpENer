@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for endianconv.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d71/endianconv_8h__incl.svg" width="203" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d71/endianconv_8h__incl.svg" width="280" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -141,6 +141,7 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulate the sockaddr information as necessary for the Common Packet Format data items.  <a href="#a2e8bf172dd5ecba3cc0871278ab06538"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a28f4ae33e12061fe72f4de50a73b87af">FillNextNMessageOctetsWith</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> value, unsigned int n, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a0ca9c3a411ccc35e03050e869aafd2bf">FillNextNMessageOctetsWithValueAndMoveToNextPosition</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> value, unsigned int n, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#ab988fb4015b4c2af699c8e5d8c251f2a">GetByteFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8">GetDintFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **const buffer)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an 32Bit integer from the network buffer.  <a href="../../d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#afea76ccae451599cd11bf166142b3960">GetEndianess</a> (void)</td></tr>
@@ -149,6 +150,10 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an 16Bit integer from the network buffer, and moves pointer beyond the 16 bit value.  <a href="../../d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c">GetSintFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **const buffer)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads EIP_UINT8 from *buffer and converts little endian to host.  <a href="../../d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a316dcbf2ce0d79b50ab0a73d12f30908">GetUdintFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a1d937f96283fddd879b150db5bf19040">GetUintFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a3bb3ceb94a80c58ec4eef82e86ca25af">GetUsintFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#ad8cac292493ad6985ad6c68b362b4658">GetWordFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dec/endianconv_8h.html#a21d3780305569399be95e50531127591">MoveMessageNOctets</a> (int n, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message_runner)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -201,11 +206,11 @@ Functions</h2></td></tr>
 <p>Identify if we are running on a big or little endian system and set variable.</p>
 <p>Detects Endianess of the platform and sets global variable g_nOpENerPlatformEndianess accordingly, whereas 0 equals little endian and 1 equals big endian </p>
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00191">191</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00235">235</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>, <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00018">kOpENerEndianessBig</a>, and <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00017">kOpENerEndianessLittle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00125">EncapsulationInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00130">EncapsulationInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -259,11 +264,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00151">151</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00193">193</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00094">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>, <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00018">kOpENerEndianessBig</a>, and <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00017">kOpENerEndianessLittle</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00130">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>, <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00018">kOpENerEndianessBig</a>, and <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00017">kOpENerEndianessLittle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00370">EncapsulateListIdentyResponseMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00378">EncapsulateListIdentyResponseMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -314,9 +319,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00214">214</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">258</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d73/endianconv_8c_source.html#l00219">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d73/endianconv_8c_source.html#l00265">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -359,11 +364,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00219">219</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00265">265</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00214">FillNextNMessageOctetsWith()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00210">MoveMessageNOctets()</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">FillNextNMessageOctetsWith()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -380,6 +385,25 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab988fb4015b4c2af699c8e5d8c251f2a"></a><!-- doxytag: member="endianconv.h::GetByteFromMessage" ref="ab988fb4015b4c2af699c8e5d8c251f2a" args="(const CipOctet **const buffer_address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> <a class="el" href="../../d0/dec/endianconv_8h.html#ab988fb4015b4c2af699c8e5d8c251f2a">GetByteFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>buffer_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00036">36</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
 </div>
 </div>
@@ -408,9 +432,85 @@ Here is the caller graph for this function:</div>
 <p>Return the endianess identified on system startup.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>0 equals little endian and 1 equals big endian </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00206">206</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00250">250</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a316dcbf2ce0d79b50ab0a73d12f30908"></a><!-- doxytag: member="endianconv.h::GetUdintFromMessage" ref="a316dcbf2ce0d79b50ab0a73d12f30908" args="(const CipOctet **const buffer_address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d0/dec/endianconv_8h.html#a316dcbf2ce0d79b50ab0a73d12f30908">GetUdintFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>buffer_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00090">90</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d937f96283fddd879b150db5bf19040"></a><!-- doxytag: member="endianconv.h::GetUintFromMessage" ref="a1d937f96283fddd879b150db5bf19040" args="(const CipOctet **const buffer_address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d0/dec/endianconv_8h.html#a1d937f96283fddd879b150db5bf19040">GetUintFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>buffer_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00064">64</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bb3ceb94a80c58ec4eef82e86ca25af"></a><!-- doxytag: member="endianconv.h::GetUsintFromMessage" ref="a3bb3ceb94a80c58ec4eef82e86ca25af" args="(const CipOctet **const buffer_address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="el" href="../../d0/dec/endianconv_8h.html#a3bb3ceb94a80c58ec4eef82e86ca25af">GetUsintFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>buffer_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00043">43</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8cac292493ad6985ad6c68b362b4658"></a><!-- doxytag: member="endianconv.h::GetWordFromMessage" ref="ad8cac292493ad6985ad6c68b362b4658" args="(const CipOctet **const buffer_address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a> <a class="el" href="../../d0/dec/endianconv_8h.html#ad8cac292493ad6985ad6c68b362b4658">GetWordFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>buffer_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00071">71</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
 </div>
 </div>
@@ -439,9 +539,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00210">210</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">254</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00290">EncapsulateData()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00219">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00297">EncapsulateData()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00265">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -473,7 +573,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d0/dec/endianconv_8h.html">endianconv.h</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

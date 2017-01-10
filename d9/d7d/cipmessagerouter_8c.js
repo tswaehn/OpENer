@@ -7,7 +7,7 @@ var cipmessagerouter_8c =
     [ "GetCipClass", "d2/dc9/group__CIP__API.html#ga98bd609c80ece316406363575b4a89ea", null ],
     [ "GetCipInstance", "d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e", null ],
     [ "GetRegisteredObject", "d9/d7d/cipmessagerouter_8c.html#a7a9f44f2d6f010b6f6ee922d378d9bb1", null ],
-    [ "NotifyMessageRouter", "d9/d7d/cipmessagerouter_8c.html#a0e29ef6a602d17052584c167d9b86084", null ],
+    [ "NotifyMessageRouter", "d9/d7d/cipmessagerouter_8c.html#aa7cf9dbb40843c4c9f7b379fb3570111", null ],
     [ "RegisterCipClass", "d9/d7d/cipmessagerouter_8c.html#ae00f521e394d00fd5fd99271a6983116", null ],
     [ "g_first_object", "d9/d7d/cipmessagerouter_8c.html#a1135eaf46749c1da94f03444f74690ac", null ],
     [ "g_message_router_request", "d9/d7d/cipmessagerouter_8c.html#ac41a8799d5a505cb5a23fe7ea87ce0ba", null ],

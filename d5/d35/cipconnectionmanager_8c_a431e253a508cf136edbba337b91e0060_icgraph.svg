@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1044;
+var viewWidth = 1050;
 var viewHeight = 30;
 var sectionId = 'dynsection-21';
 </script>
@@ -47,7 +47,7 @@ var sectionId = 'dynsection-21';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="../../d1/dbc/appcontype_8c.html#a09043b60a3c5bd705e4779c41557aa0a" target="_top" xlink:title="GetExclusiveOwnerConnection">
+<a xlink:href="../../d1/dbc/appcontype_8c.html#a09043b60a3c5bd705e4779c41557aa0a" target="_top" xlink:title="Takes an ConnectionObject and searches and returns an Exclusive Owner Connection based on the Connect...">
 <polygon fill="none" stroke="black" points="188.5,-0.5 188.5,-21.5 341.5,-21.5 341.5,-0.5 188.5,-0.5"/>
 <text text-anchor="middle" x="265" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetExclusiveOwnerConnection</text>
 </a>
@@ -71,51 +71,51 @@ var sectionId = 'dynsection-21';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="../../de/d45/cipioconnection_8h.html#aacd202b378a3fa8d5770536b698a0f51" target="_top" xlink:title="Setup all data in order to establish an IO connection.">
-<polygon fill="none" stroke="black" points="590,-0.5 590,-21.5 700,-21.5 700,-0.5 590,-0.5"/>
-<text text-anchor="middle" x="645" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">EstablishIoConnction</text>
+<a xlink:href="../../de/d45/cipioconnection_8h.html#a699fccd3dabdfec1b77560f22268c1e8" target="_top" xlink:title="Setup all data in order to establish an IO connection.">
+<polygon fill="none" stroke="black" points="590.5,-0.5 590.5,-21.5 705.5,-21.5 705.5,-0.5 590.5,-0.5"/>
+<text text-anchor="middle" x="648" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">EstablishIoConnection</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M563.684,-11C572.534,-11 581.277,-11 589.561,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="563.665,-7.5001 553.665,-11 563.665,-14.5001 563.665,-7.5001"/>
+<path fill="none" stroke="midnightblue" d="M563.769,-11C572.817,-11 581.776,-11 590.284,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="563.535,-7.5001 553.535,-11 563.535,-14.5001 563.535,-7.5001"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
 <a xlink:href="../../d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212" target="_top" xlink:title="Initialize the data of the connection manager object.">
-<polygon fill="none" stroke="black" points="736.5,-0.5 736.5,-21.5 853.5,-21.5 853.5,-0.5 736.5,-0.5"/>
-<text text-anchor="middle" x="795" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionManagerInit</text>
+<polygon fill="none" stroke="black" points="742.5,-0.5 742.5,-21.5 859.5,-21.5 859.5,-0.5 742.5,-0.5"/>
+<text text-anchor="middle" x="801" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionManagerInit</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M710.163,-11C718.913,-11 727.846,-11 736.472,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="710.003,-7.5001 700.003,-11 710.003,-14.5001 710.003,-7.5001"/>
+<path fill="none" stroke="midnightblue" d="M716.035,-11C724.8,-11 733.715,-11 742.313,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="715.843,-7.5001 705.843,-11 715.843,-14.5001 715.843,-7.5001"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
 <a xlink:href="../../d2/dc9/group__CIP__API.html#ga5d4979945d124e28668b264c3823db1c" target="_top" xlink:title="Initialize and setup the CIP&#45;stack.">
-<polygon fill="none" stroke="black" points="890.5,-0.5 890.5,-21.5 961.5,-21.5 961.5,-0.5 890.5,-0.5"/>
-<text text-anchor="middle" x="926" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipStackInit</text>
+<polygon fill="none" stroke="black" points="896.5,-0.5 896.5,-21.5 967.5,-21.5 967.5,-0.5 896.5,-0.5"/>
+<text text-anchor="middle" x="932" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipStackInit</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M863.629,-11C872.871,-11 882.029,-11 890.366,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="863.603,-7.5001 853.603,-11 863.603,-14.5001 863.603,-7.5001"/>
+<path fill="none" stroke="midnightblue" d="M869.629,-11C878.871,-11 888.029,-11 896.366,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="869.603,-7.5001 859.603,-11 869.603,-14.5001 869.603,-7.5001"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
 <a xlink:href="../../d9/dfb/POSIX_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207" target="_top" xlink:title="main">
-<polygon fill="none" stroke="black" points="998,-0.5 998,-21.5 1036,-21.5 1036,-0.5 998,-0.5"/>
-<text text-anchor="middle" x="1017" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
+<polygon fill="none" stroke="black" points="1004,-0.5 1004,-21.5 1042,-21.5 1042,-0.5 1004,-0.5"/>
+<text text-anchor="middle" x="1023" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M971.982,-11C981.145,-11 990.282,-11 997.906,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="971.704,-7.5001 961.704,-11 971.704,-14.5001 971.704,-7.5001"/>
+<path fill="none" stroke="midnightblue" d="M977.982,-11C987.145,-11 996.282,-11 1003.91,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="977.704,-7.5001 967.704,-11 977.704,-14.5001 977.704,-7.5001"/>
 </g>
 </g>
 </svg>

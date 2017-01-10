@@ -4,6 +4,7 @@ var searchData=
   ['main_2ec',['main.c',['../d9/dfb/POSIX_2main_8c.html',1,'']]],
   ['main_2ec',['main.c',['../dc/db2/WIN32_2main_8c.html',1,'']]],
   ['major_5frevision',['major_revision',['../df/d55/structCipKeyData.html#a5a27977908b8620e0415af0df2b04b0f',1,'CipKeyData::major_revision()'],['../d0/d46/structCipRevision.html#af45bfc89ef4be631a0cf0a975bc596cc',1,'CipRevision::major_revision()']]],
+  ['major_5frevision_5fcompatibility',['major_revision_compatibility',['../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb',1,'electronic_key_format_4']]],
   ['manageconnections',['ManageConnections',['../d2/dc9/group__CIP__API.html#ga9f57b09260efb5bfb188b9d0ca0c6091',1,'ManageConnections(MilliSeconds elapsed_time):&#160;cipconnectionmanager.c'],['../d2/dc9/group__CIP__API.html#ga9f57b09260efb5bfb188b9d0ca0c6091',1,'ManageConnections(MilliSeconds elapsed_time):&#160;cipconnectionmanager.c']]],
   ['manageencapsulationmessages',['ManageEncapsulationMessages',['../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac',1,'ManageEncapsulationMessages(const MilliSeconds elapsed_time):&#160;encap.c'],['../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac',1,'ManageEncapsulationMessages(const MilliSeconds elapsed_time):&#160;encap.c']]],
   ['mask1',['MASK1',['../df/d28/ciptypes_8h.html#ad9fac43b4ca1f5de07c809c6252948ee',1,'ciptypes.h']]],
@@ -24,7 +25,7 @@ var searchData=
   ['message_5fsize',['message_size',['../d4/da1/structDelayedEncapsulationMessage.html#ac0dba200faf880b91e7adc59d2c2cbbe',1,'DelayedEncapsulationMessage']]],
   ['microseconds',['MicroSeconds',['../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497',1,'typedefs.h']]],
   ['milliseconds',['MilliSeconds',['../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a',1,'typedefs.h']]],
-  ['minor_5frevision',['minor_revision',['../df/d55/structCipKeyData.html#a68f494d5f2eb613aa99c1bbd6fd1900b',1,'CipKeyData::minor_revision()'],['../d0/d46/structCipRevision.html#a5be82fd0db42cdb2c1d91127173b075f',1,'CipRevision::minor_revision()']]],
+  ['minor_5frevision',['minor_revision',['../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5',1,'electronic_key_format_4::minor_revision()'],['../df/d55/structCipKeyData.html#a68f494d5f2eb613aa99c1bbd6fd1900b',1,'CipKeyData::minor_revision()'],['../d0/d46/structCipRevision.html#a5be82fd0db42cdb2c1d91127173b075f',1,'CipRevision::minor_revision()']]],
   ['movemessagenoctets',['MoveMessageNOctets',['../da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d',1,'MoveMessageNOctets(int amount_of_bytes_moved, CipOctet **message_runner):&#160;endianconv.c'],['../d0/dec/endianconv_8h.html#a21d3780305569399be95e50531127591',1,'MoveMessageNOctets(int n, CipOctet **message_runner):&#160;endianconv.c']]],
   ['multicast_5faddress_5fconfiguration',['multicast_address_configuration',['../db/dd7/structmulticast__address__configuration.html',1,'']]],
   ['multicastaddressconfiguration',['MulticastAddressConfiguration',['../d1/dad/ciptcpipinterface_8h.html#a588cf7cf0999441f3bb99fefbadf98dc',1,'ciptcpipinterface.h']]]

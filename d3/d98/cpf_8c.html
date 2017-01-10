@@ -161,8 +161,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes the sockaddr info length into the message.  <a href="#a889305fba8f00ea5abce3860b1cba376"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#ad3aa7ce7e650ffeeba19cdad4c145f9c">EncodeUnconnectedDataItemLength</a> (int size, <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *message_router_response, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **message)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the data item length of the unconnected data segment.  <a href="#ad3aa7ce7e650ffeeba19cdad4c145f9c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga401f152f47e54b0a6dddcfe723c086f9">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const receive_data, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga045feac9b8747e049e2420df1ec0844b">NotifyConnectedCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *received_data, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const receive_data, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer, struct sockaddr *originator_address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga94ca28af85239d7dd63b3b044201fe51">NotifyConnectedCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *received_data, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *reply_buffer, struct sockaddr *originator_address)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0">g_common_packet_format_data_item</a></td></tr>
@@ -213,11 +213,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00232">232</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00244">244</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00094">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00066">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00027">kCipItemIdConnectionAddress</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00130">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00027">kCipItemIdConnectionAddress</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -279,11 +279,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00346">346</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00364">364</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00270">CipMessageRouterResponse::data_length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00265">CipMessageRouterResponse::size_of_additional_status</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00223">CipMessageRouterResponse::data_length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -344,11 +344,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00326">326</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00343">343</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00050">DataItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00067">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00050">DataItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -409,11 +409,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00309">309</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00325">325</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00067">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -474,11 +474,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00292">292</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00307">307</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00067">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00048">DataItem::type_id</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00048">DataItem::type_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -541,11 +541,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00472">472</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00494">494</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/d98/cpf_8c_source.html#l00449">EncodeExtendedStatusDataItems()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00432">EncodeExtendedStatusLength()</a>.</p>
+<p>References <a class="el" href="../../d3/d98/cpf_8c_source.html#l00470">EncodeExtendedStatusDataItems()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00453">EncodeExtendedStatusLength()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -607,11 +607,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00449">449</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00470">470</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00267">CipMessageRouterResponse::additional_status</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00265">CipMessageRouterResponse::size_of_additional_status</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00220">CipMessageRouterResponse::additional_status</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00472">EncodeExtendedStatus()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00494">EncodeExtendedStatus()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -673,11 +673,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00432">432</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00453">453</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00265">CipMessageRouterResponse::size_of_additional_status</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00472">EncodeExtendedStatus()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00494">EncodeExtendedStatus()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -739,11 +739,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00416">416</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00436">436</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00263">CipMessageRouterResponse::general_status</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00216">CipMessageRouterResponse::general_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -805,11 +805,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00277">277</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00291">291</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00065">CipCommonPacketFormatData::item_count</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00068">CipCommonPacketFormatData::item_count</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -870,11 +870,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00506">506</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00529">529</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00271">CipMessageRouterResponse::data</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00270">CipMessageRouterResponse::data_length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00224">CipMessageRouterResponse::data</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00223">CipMessageRouterResponse::data_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -929,11 +929,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00217">217</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00229">229</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00025">kCipItemIdNullAddress</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00025">kCipItemIdNullAddress</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -995,11 +995,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00385">385</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00404">404</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00260">CipMessageRouterResponse::reply_service</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00213">CipMessageRouterResponse::reply_service</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1061,11 +1061,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00400">400</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00420">420</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00067">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00262">CipMessageRouterResponse::reserved</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00215">CipMessageRouterResponse::reserved</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1127,11 +1127,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New message size after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00253">253</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00266">266</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00094">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00066">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00033">kCipItemIdSequencedAddressItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00021">sequenced_address_item_length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00130">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00033">kCipItemIdSequencedAddressItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00021">sequenced_address_item_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1193,11 +1193,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00366">366</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00384">384</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00066">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1266,11 +1266,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00525">525</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00548">548</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00068">CipCommonPacketFormatData::address_info_item</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00134">OPENER_ASSERT</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00054">SocketAddressInfoItem::type_id</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00071">CipCommonPacketFormatData::address_info_item</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00057">SocketAddressInfoItem::type_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1339,11 +1339,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00547">547</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00571">571</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00068">CipCommonPacketFormatData::address_info_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00055">SocketAddressInfoItem::length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00071">CipCommonPacketFormatData::address_info_item</a>, and <a class="el" href="../../d0/dff/cpf_8h_source.html#l00058">SocketAddressInfoItem::length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1405,11 +1405,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00489">489</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00512">512</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00080">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00270">CipMessageRouterResponse::data_length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00265">CipMessageRouterResponse::size_of_additional_status</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00223">CipMessageRouterResponse::data_length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1475,7 +1475,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00021">21</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00253">EncodeSequencedAddressItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00266">EncodeSequencedAddressItem()</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1499,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d3/d98/cpf_8c.html">cpf.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../dd/dc4/cipidentity_8c.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*******************************************************************************</span>
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2009, Rockwell Automation, Inc.</span>
-<a name="l00003"></a>00003 <span class="comment"> * All rights reserved. </span>
+<a name="l00003"></a>00003 <span class="comment"> * All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
 <a name="l00005"></a>00005 <span class="comment"> ******************************************************************************/</span>
 <a name="l00006"></a>00006 
@@ -122,11 +122,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00041"></a><a class="code" href="../../d2/dbd/encap_8c.html#a4a26b0364996689eb8704fcde6090cbe">00041</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4a26b0364996689eb8704fcde6090cbe">device_type_</a> = <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa760b71a038b6ba21238a9be1165c96b">OPENER_DEVICE_TYPE</a>; 
 <a name="l00042"></a><a class="code" href="../../d2/dbd/encap_8c.html#a952aaef238eb5c4b73eae1692f7e8112">00042</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a952aaef238eb5c4b73eae1692f7e8112">product_code_</a> = <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a0202c58db20678a7d2532643de074f39">OPENER_DEVICE_PRODUCT_CODE</a>; 
 <a name="l00043"></a><a class="code" href="../../d2/dbd/encap_8c.html#aef2b62657ef56842d595877f2af6c64b">00043</a> <a class="code" href="../../d0/d46/structCipRevision.html" title="Struct storing the CIP revision.">CipRevision</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef2b62657ef56842d595877f2af6c64b">revision_</a> = { <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8fadd41cbb435656743873e49ca89576">OPENER_DEVICE_MAJOR_REVISION</a>,
-<a name="l00044"></a>00044     <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7f6ea0b15c8995ecaad60f608abf672c">OPENER_DEVICE_MINOR_REVISION</a> }; 
+<a name="l00044"></a>00044                           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7f6ea0b15c8995ecaad60f608abf672c">OPENER_DEVICE_MINOR_REVISION</a> }; 
 <a name="l00045"></a><a class="code" href="../../d2/dbd/encap_8c.html#a2a0af8d10d864070ee666c64f1be3fa0">00045</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0">status_</a> = 0; 
 <a name="l00046"></a><a class="code" href="../../d2/dbd/encap_8c.html#a02dada89b9eeffaab163c70d99ade6a9">00046</a> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> <a class="code" href="../../dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9">serial_number_</a> = 0; 
 <a name="l00047"></a><a class="code" href="../../d2/dbd/encap_8c.html#a31a04dc4760074cc3ab21b16fe5323fe">00047</a> <a class="code" href="../../d4/def/structCipShortString.html" title="CIP Short String.">CipShortString</a> <a class="code" href="../../dd/dc4/cipidentity_8c.html#a31a04dc4760074cc3ab21b16fe5323fe">product_name_</a> = { <span class="keyword">sizeof</span>(<a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac">OPENER_DEVICE_NAME</a>) - 1,
-<a name="l00048"></a>00048     <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac">OPENER_DEVICE_NAME</a> }; 
+<a name="l00048"></a>00048                                  <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac">OPENER_DEVICE_NAME</a> }; 
 <a name="l00053"></a><a class="code" href="../../d2/dc9/group__CIP__API.html#ga696952d9dbc1b6fdedf517aa55f94323">00053</a> <span class="keywordtype">void</span> <a class="code" href="../../d2/dc9/group__CIP__API.html#ga696952d9dbc1b6fdedf517aa55f94323" title="Set the serial number of the device&#39;s identity object.">SetDeviceSerialNumber</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> serial_number) {
 <a name="l00054"></a>00054   <a class="code" href="../../dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9">serial_number_</a> = serial_number;
 <a name="l00055"></a>00055 }
@@ -135,86 +135,89 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00061"></a>00061   <a class="code" href="../../dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0">status_</a> = status;
 <a name="l00062"></a>00062 }
 <a name="l00063"></a>00063 
-<a name="l00071"></a>00071 <span class="keyword">static</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> Reset(<a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance, <span class="comment">/* pointer to instance*/</span>
-<a name="l00072"></a>00072                        <a class="code" href="../../dc/d16/structCipMessageRouterRequest.html" title="CIP Message Router Request.">CipMessageRouterRequest</a> *message_router_request, <span class="comment">/* pointer to message router request*/</span>
-<a name="l00073"></a>00073                        <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response) <span class="comment">/* pointer to message router response*/</span>
-<a name="l00074"></a>00074 {
-<a name="l00075"></a>00075   (void) instance;
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00071"></a>00071 <span class="keyword">static</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> Reset(<a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance,
+<a name="l00072"></a>00072                        <span class="comment">/* pointer to instance*/</span>
+<a name="l00073"></a>00073                        <a class="code" href="../../dc/d16/structCipMessageRouterRequest.html" title="CIP Message Router Request.">CipMessageRouterRequest</a> *message_router_request,
+<a name="l00074"></a>00074                        <span class="comment">/* pointer to message router request*/</span>
+<a name="l00075"></a>00075                        <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response,
+<a name="l00076"></a>00076                        <span class="keyword">struct</span> sockaddr *originator_address) {                      <span class="comment">/* pointer to message router response*/</span>
+<a name="l00077"></a>00077   (void) instance;
 <a name="l00078"></a>00078 
-<a name="l00079"></a>00079   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a9bedd472cae3ed195d6fa894133bec6b">reply_service</a> = (0x80
-<a name="l00080"></a>00080       | message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#a73850f4495f33d0b2a9957a830b8b40f">service</a>);
-<a name="l00081"></a>00081   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a">size_of_additional_status</a> = 0;
-<a name="l00082"></a>00082   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   <span class="keywordflow">if</span> (message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#a6dfa9c012859e0b0fe18e1501cfce9b6">data_length</a> == 1) {
-<a name="l00085"></a>00085     <span class="keywordflow">switch</span> (message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#ab54e41e4534613f0b0e8b2eb0de96102">data</a>[0]) {
-<a name="l00086"></a>00086       <span class="keywordflow">case</span> 0: <span class="comment">/* Reset type 0 -&gt; emulate device reset / Power cycle */</span>
-<a name="l00087"></a>00087         <span class="keywordflow">if</span> (<a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>()) {
-<a name="l00088"></a>00088           message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
-<a name="l00089"></a>00089         }
-<a name="l00090"></a>00090         <span class="keywordflow">break</span>;
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092       <span class="keywordflow">case</span> 1: <span class="comment">/* Reset type 1 -&gt; reset to device settings */</span>
-<a name="l00093"></a>00093         <span class="keywordflow">if</span> (<a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7" title="Reset the device to the initial configuration and emulate as close as possible a power cycle of the d...">ResetDeviceToInitialConfiguration</a>()) {
-<a name="l00094"></a>00094           message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
-<a name="l00095"></a>00095         }
-<a name="l00096"></a>00096         <span class="keywordflow">break</span>;
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098         <span class="comment">/* case 2: Not supported Reset type 2 -&gt; Return to factory defaults except communications parameters */</span>
+<a name="l00079"></a>00079   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a9bedd472cae3ed195d6fa894133bec6b">reply_service</a> = (0x80
+<a name="l00082"></a>00082                                             | message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#a73850f4495f33d0b2a9957a830b8b40f">service</a>);
+<a name="l00083"></a>00083   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a">size_of_additional_status</a> = 0;
+<a name="l00084"></a>00084   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086   <span class="keywordflow">if</span> (message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#aead40fc28b95e91c14eab1c226f30f09">request_path_size</a> == 1) {
+<a name="l00087"></a>00087     <span class="keywordflow">switch</span> (message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#ab54e41e4534613f0b0e8b2eb0de96102">data</a>[0]) {
+<a name="l00088"></a>00088       <span class="keywordflow">case</span> 0: <span class="comment">/* Reset type 0 -&gt; emulate device reset / Power cycle */</span>
+<a name="l00089"></a>00089         <span class="keywordflow">if</span> ( <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>() ) {
+<a name="l00090"></a>00090           message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
+<a name="l00091"></a>00091         }
+<a name="l00092"></a>00092         <span class="keywordflow">break</span>;
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094       <span class="keywordflow">case</span> 1: <span class="comment">/* Reset type 1 -&gt; reset to device settings */</span>
+<a name="l00095"></a>00095         <span class="keywordflow">if</span> ( <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gabec9a29cf19789a6534814680c21f6e7" title="Reset the device to the initial configuration and emulate as close as possible a power cycle of the d...">ResetDeviceToInitialConfiguration</a>() ) {
+<a name="l00096"></a>00096           message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
+<a name="l00097"></a>00097         }
+<a name="l00098"></a>00098         <span class="keywordflow">break</span>;
 <a name="l00099"></a>00099 
-<a name="l00100"></a>00100       <span class="keywordflow">default</span>:
-<a name="l00101"></a>00101         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
-<a name="l00102"></a>00102         <span class="keywordflow">break</span>;
-<a name="l00103"></a>00103     }
-<a name="l00104"></a>00104   } <span class="keywordflow">else</span>  <span class="comment">/*TODO: Should be if (pa_stMRRequest-&gt;DataLength == 0)*/</span>
-<a name="l00105"></a>00105   {
-<a name="l00106"></a>00106     <span class="comment">/* The same behavior as if the data value given would be 0</span>
-<a name="l00107"></a>00107 <span class="comment">     emulate device reset */</span>
-<a name="l00108"></a>00108 
-<a name="l00109"></a>00109     <span class="keywordflow">if</span> (<a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>()) {
-<a name="l00110"></a>00110       message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
-<a name="l00111"></a>00111     } <span class="keywordflow">else</span> {
-<a name="l00112"></a>00112       <span class="comment">/* eip_status = EIP_OK; */</span>
-<a name="l00113"></a>00113     }
-<a name="l00114"></a>00114   }
-<a name="l00115"></a>00115   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a> = 0;
-<a name="l00116"></a>00116   <span class="keywordflow">return</span> eip_status;
-<a name="l00117"></a>00117 }
-<a name="l00118"></a>00118 
-<a name="l00119"></a><a class="code" href="../../dc/d72/cipidentity_8h.html#a5d5136e167300543aa046057b56ae813">00119</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dd/dc4/cipidentity_8c.html#a374cdadb1e6f8d07acb7044a176eb6b2" title="CIP Identity object constructor.">CipIdentityInit</a>() {
+<a name="l00100"></a>00100       <span class="comment">/* case 2: Not supported Reset type 2 -&gt; Return to factory defaults except communications parameters */</span>
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102       <span class="keywordflow">default</span>:
+<a name="l00103"></a>00103         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
+<a name="l00104"></a>00104         <span class="keywordflow">break</span>;
+<a name="l00105"></a>00105     }
+<a name="l00106"></a>00106   } <span class="keywordflow">else</span>  <span class="comment">/*TODO: Should be if (pa_stMRRequest-&gt;DataLength == 0)*/</span>
+<a name="l00107"></a>00107   {
+<a name="l00108"></a>00108     <span class="comment">/* The same behavior as if the data value given would be 0</span>
+<a name="l00109"></a>00109 <span class="comment">       emulate device reset */</span>
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111     <span class="keywordflow">if</span> ( <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a> == <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gacfb8706d76bc6fe1816546e122fdcac2" title="Emulate as close a possible a power cycle of the device.">ResetDevice</a>() ) {
+<a name="l00112"></a>00112       message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414">general_status</a> = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218abd605077970cb972917c21c2561676af">kCipErrorInvalidParameter</a>;
+<a name="l00113"></a>00113     } <span class="keywordflow">else</span> {
+<a name="l00114"></a>00114       <span class="comment">/* eip_status = EIP_OK; */</span>
+<a name="l00115"></a>00115     }
+<a name="l00116"></a>00116   }
+<a name="l00117"></a>00117   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a> = 0;
+<a name="l00118"></a>00118   <span class="keywordflow">return</span> eip_status;
+<a name="l00119"></a>00119 }
 <a name="l00120"></a>00120 
-<a name="l00121"></a>00121   <a class="code" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance.">CipClass</a> *<span class="keyword">class </span>= <a class="code" href="../../d2/dc9/group__CIP__API.html#ga446b7f612fe7baaf40d7f87274832922" title="Allocate memory for new CIP Class and attributes.">CreateCipClass</a>(kIdentityClassCode, 0, <span class="comment">/* # of non-default class attributes */</span>
-<a name="l00122"></a>00122                          MASK4(1, 2, 6, 7), <span class="comment">/* class getAttributeAll mask               CIP spec 5-2.3.2 */</span>
-<a name="l00123"></a>00123                          0, <span class="comment">/* # of class services*/</span>
-<a name="l00124"></a>00124                          7, <span class="comment">/* # of instance attributes*/</span>
-<a name="l00125"></a>00125                          MASK7(1, 2, 3, 4, 5, 6, 7), <span class="comment">/* instance getAttributeAll mask   CIP spec 5-2.3.2 */</span>
-<a name="l00126"></a>00126                          1, <span class="comment">/* # of instance services*/</span>
-<a name="l00127"></a>00127                          1, <span class="comment">/* # of instances*/</span>
-<a name="l00128"></a>00128                          &quot;identity&quot;, <span class="comment">/* class name (for debug)*/</span>
-<a name="l00129"></a>00129                          1); <span class="comment">/* class revision*/</span>
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131   <span class="keywordflow">if</span> (<span class="keyword">class</span> == 0)
-<a name="l00132"></a>00132     <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l00133"></a>00133 
-<a name="l00134"></a>00134   <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance = <a class="code" href="../../d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance.">GetCipInstance</a>(<span class="keyword">class</span>, 1);
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 1, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4bc7452f53881ccfd18ac9724f811903">vendor_id_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00137"></a>00137   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 2, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4a26b0364996689eb8704fcde6090cbe">device_type_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00138"></a>00138   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 3, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a952aaef238eb5c4b73eae1692f7e8112">product_code_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00139"></a>00139   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 4, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a3df80ad0d2a0e4b5490d47f67e540b2a">kCipUsintUsint</a>, &amp;revision_,
-<a name="l00140"></a>00140                   <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00141"></a>00141   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 5, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985ac8023521e67b842db29553ac45284603">kCipWord</a>, &amp;<a class="code" href="../../dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0">status_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00142"></a>00142   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 6, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>, &amp;<a class="code" href="../../dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9">serial_number_</a>,
+<a name="l00121"></a><a class="code" href="../../dc/d72/cipidentity_8h.html#a5d5136e167300543aa046057b56ae813">00121</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dd/dc4/cipidentity_8c.html#a374cdadb1e6f8d07acb7044a176eb6b2" title="CIP Identity object constructor.">CipIdentityInit</a>() {
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123   <a class="code" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance.">CipClass</a> *<span class="keyword">class </span>= <a class="code" href="../../d2/dc9/group__CIP__API.html#ga446b7f612fe7baaf40d7f87274832922" title="Allocate memory for new CIP Class and attributes.">CreateCipClass</a>(kIdentityClassCode, 0, <span class="comment">/* # of non-default class attributes */</span>
+<a name="l00124"></a>00124                                    MASK4(1, 2, 6, 7), <span class="comment">/* class getAttributeAll mask             CIP spec 5-2.3.2 */</span>
+<a name="l00125"></a>00125                                    0, <span class="comment">/* # of class services*/</span>
+<a name="l00126"></a>00126                                    7, <span class="comment">/* # of instance attributes*/</span>
+<a name="l00127"></a>00127                                    MASK7(1, 2, 3, 4, 5, 6, 7), <span class="comment">/* instance getAttributeAll mask CIP spec 5-2.3.2 */</span>
+<a name="l00128"></a>00128                                    1, <span class="comment">/* # of instance services*/</span>
+<a name="l00129"></a>00129                                    1, <span class="comment">/* # of instances*/</span>
+<a name="l00130"></a>00130                                    &quot;identity&quot;, <span class="comment">/* class name (for debug)*/</span>
+<a name="l00131"></a>00131                                    1); <span class="comment">/* class revision*/</span>
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133   <span class="keywordflow">if</span> (<span class="keyword">class</span> == 0) {
+<a name="l00134"></a>00134     <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00135"></a>00135   }
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137   <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance = <a class="code" href="../../d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance.">GetCipInstance</a>(<span class="keyword">class</span>, 1);
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 1, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4bc7452f53881ccfd18ac9724f811903">vendor_id_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00140"></a>00140   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 2, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4a26b0364996689eb8704fcde6090cbe">device_type_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00141"></a>00141   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 3, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>, &amp;<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a952aaef238eb5c4b73eae1692f7e8112">product_code_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00142"></a>00142   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 4, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a3df80ad0d2a0e4b5490d47f67e540b2a">kCipUsintUsint</a>, &amp;revision_,
 <a name="l00143"></a>00143                   <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00144"></a>00144   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 7, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985af2f8c1ad60e4b7e9137a99b761bfa25e">kCipShortString</a>, &amp;product_name_,
-<a name="l00145"></a>00145                   <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00146"></a>00146 
-<a name="l00147"></a>00147   <a class="code" href="../../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object.">InsertService</a>(<span class="keyword">class</span>, <a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efaa71731e14e5f7db3d11a1b92d685324a">kReset</a>, &amp;Reset, <span class="stringliteral">&quot;Reset&quot;</span>);
-<a name="l00148"></a>00148 
-<a name="l00149"></a>00149   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00150"></a>00150 }
+<a name="l00144"></a>00144   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 5, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985ac8023521e67b842db29553ac45284603">kCipWord</a>, &amp;<a class="code" href="../../dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0">status_</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00145"></a>00145   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 6, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>, &amp;<a class="code" href="../../dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9">serial_number_</a>,
+<a name="l00146"></a>00146                   <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00147"></a>00147   <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(instance, 7, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985af2f8c1ad60e4b7e9137a99b761bfa25e">kCipShortString</a>, &amp;product_name_,
+<a name="l00148"></a>00148                   <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00149"></a>00149 
+<a name="l00150"></a>00150   <a class="code" href="../../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object.">InsertService</a>(<span class="keyword">class</span>, <a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efaa71731e14e5f7db3d11a1b92d685324a">kReset</a>, &amp;Reset, <span class="stringliteral">&quot;Reset&quot;</span>);
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00153"></a>00153 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -235,7 +238,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../dd/dc4/cipidentity_8c.html">cipidentity.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

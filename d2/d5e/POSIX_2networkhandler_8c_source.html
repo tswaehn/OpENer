@@ -107,33 +107,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;unistd.h&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;sys/time.h&gt;</span>
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;time.h&gt;</span>
-<a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d33/POSIX_2networkhandler_8h.html">networkhandler.h</a>&quot;</span>
-<a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df9/encap_8h.html" title="This file contains the public interface of the encapsulation layer.">encap.h</a>&quot;</span>
-<a name="l00013"></a>00013 
-<a name="l00014"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#af4f11a1fa3e652845dc5164d097e9e13">00014</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#af4f11a1fa3e652845dc5164d097e9e13" title="This function shall return the current time in microseconds relative to epoch, and shall be implement...">GetMicroSeconds</a>(<span class="keywordtype">void</span>) {
-<a name="l00015"></a>00015   <span class="keyword">struct </span>timespec now;
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017   clock_gettime( CLOCK_MONOTONIC, &amp;now );
-<a name="l00018"></a>00018   <a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a> micro_seconds =  (<a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a>)now.tv_nsec / 1000ULL + now.tv_sec * 1000000ULL;
-<a name="l00019"></a>00019   <span class="keywordflow">return</span> micro_seconds;
-<a name="l00020"></a>00020 }
-<a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a2d91de751b888e7b5a5c2e2692fd4492">00022</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2d91de751b888e7b5a5c2e2692fd4492" title="This function shall return the current time in milliseconds relative to epoch, and shall be implement...">GetMilliSeconds</a>(<span class="keywordtype">void</span>) {
-<a name="l00023"></a>00023   <span class="keywordflow">return</span> (<a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a>) (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#af4f11a1fa3e652845dc5164d097e9e13" title="This function shall return the current time in microseconds relative to epoch, and shall be implement...">GetMicroSeconds</a>() / 1000ULL);
-<a name="l00024"></a>00024 }
-<a name="l00025"></a>00025 
-<a name="l00026"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a443a5019c1bb91b2490f96b0d0158e04">00026</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a443a5019c1bb91b2490f96b0d0158e04">NetworkHandlerInitializePlatform</a>(<span class="keywordtype">void</span>) {
-<a name="l00027"></a>00027   <span class="comment">/* Add platform dependent code here if necessary */</span>
-<a name="l00028"></a>00028   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00029"></a>00029 }
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a2812ba0ecd1fd9a5549fbca397d76e3e">00032</a> <span class="keywordtype">void</span> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e">CloseSocketPlatform</a>(<span class="keywordtype">int</span> socket_handle) {
-<a name="l00033"></a>00033     shutdown(socket_handle, SHUT_RDWR);
-<a name="l00034"></a>00034     close(socket_handle);
-<a name="l00035"></a>00035 }
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;fcntl.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d33/POSIX_2networkhandler_8h.html">networkhandler.h</a>&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df9/encap_8h.html" title="This file contains the public interface of the encapsulation layer.">encap.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#af4f11a1fa3e652845dc5164d097e9e13">00015</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#af4f11a1fa3e652845dc5164d097e9e13" title="This function shall return the current time in microseconds relative to epoch, and shall be implement...">GetMicroSeconds</a>(<span class="keywordtype">void</span>) {
+<a name="l00016"></a>00016   <span class="keyword">struct </span>timespec now;
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018   clock_gettime( CLOCK_MONOTONIC, &amp;now );
+<a name="l00019"></a>00019   <a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a> micro_seconds =  (<a class="code" href="../../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497">MicroSeconds</a>)now.tv_nsec / 1000ULL +
+<a name="l00020"></a>00020                                now.tv_sec * 1000000ULL;
+<a name="l00021"></a>00021   <span class="keywordflow">return</span> micro_seconds;
+<a name="l00022"></a>00022 }
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a2d91de751b888e7b5a5c2e2692fd4492">00024</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2d91de751b888e7b5a5c2e2692fd4492" title="This function shall return the current time in milliseconds relative to epoch, and shall be implement...">GetMilliSeconds</a>(<span class="keywordtype">void</span>) {
+<a name="l00025"></a>00025   <span class="keywordflow">return</span> (<a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a>) (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#af4f11a1fa3e652845dc5164d097e9e13" title="This function shall return the current time in microseconds relative to epoch, and shall be implement...">GetMicroSeconds</a>() / 1000ULL);
+<a name="l00026"></a>00026 }
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a443a5019c1bb91b2490f96b0d0158e04">00028</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a443a5019c1bb91b2490f96b0d0158e04" title="Executes platform dependent network handler initialization code.">NetworkHandlerInitializePlatform</a>(<span class="keywordtype">void</span>) {
+<a name="l00029"></a>00029   <span class="comment">/* Add platform dependent code here if necessary */</span>
+<a name="l00030"></a>00030   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00031"></a>00031 }
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a2812ba0ecd1fd9a5549fbca397d76e3e">00033</a> <span class="keywordtype">void</span> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" title="Platform dependent code to close a socket.">CloseSocketPlatform</a>(<span class="keywordtype">int</span> socket_handle) {
+<a name="l00034"></a>00034   shutdown(socket_handle, SHUT_RDWR);
+<a name="l00035"></a>00035   close(socket_handle);
+<a name="l00036"></a>00036 }
+<a name="l00037"></a>00037 
+<a name="l00038"></a><a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a4af2b184144f7d807e8157ee8b474ecf">00038</a> <span class="keywordtype">int</span> <a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a4af2b184144f7d807e8157ee8b474ecf">SetSocketToNonBlocking</a>(<span class="keywordtype">int</span> socket_handle) {
+<a name="l00039"></a>00039   <span class="keywordflow">return</span> fcntl(socket_handle, F_SETFL, fcntl(socket_handle,
+<a name="l00040"></a>00040                                              F_GETFL,
+<a name="l00041"></a>00041                                              0) | O_NONBLOCK);
+<a name="l00042"></a>00042 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -154,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c.html">networkhandler.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

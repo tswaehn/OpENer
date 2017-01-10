@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datasegmenttype',['DataSegmentType',['../df/d28/ciptypes_8h.html#ae38442d795652cf3bc478fd181404d02',1,'ciptypes.h']]]
+  ['data_5fsegment_5fsubtype',['data_segment_subtype',['../d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585',1,'cipepath.h']]]
 ];

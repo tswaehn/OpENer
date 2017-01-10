@@ -7,10 +7,15 @@ var endianconv_8c =
     [ "EncapsulateIpAddress", "da/d73/endianconv_8c.html#a2e8bf172dd5ecba3cc0871278ab06538", null ],
     [ "FillNextNMessageOctetsWith", "da/d73/endianconv_8c.html#ae391d0308d5eebd8221d3fde59872b7c", null ],
     [ "FillNextNMessageOctetsWithValueAndMoveToNextPosition", "da/d73/endianconv_8c.html#af9669c6d673d3d653b5f0569fee71822", null ],
+    [ "GetByteFromMessage", "da/d73/endianconv_8c.html#ab988fb4015b4c2af699c8e5d8c251f2a", null ],
     [ "GetDintFromMessage", "d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8", null ],
     [ "GetEndianess", "da/d73/endianconv_8c.html#a3de93b9acffbb19d75ceaf93caa6617c", null ],
     [ "GetIntFromMessage", "d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302", null ],
     [ "GetSintFromMessage", "d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c", null ],
+    [ "GetUdintFromMessage", "da/d73/endianconv_8c.html#a316dcbf2ce0d79b50ab0a73d12f30908", null ],
+    [ "GetUintFromMessage", "da/d73/endianconv_8c.html#a1d937f96283fddd879b150db5bf19040", null ],
+    [ "GetUsintFromMessage", "da/d73/endianconv_8c.html#a3bb3ceb94a80c58ec4eef82e86ca25af", null ],
+    [ "GetWordFromMessage", "da/d73/endianconv_8c.html#ad8cac292493ad6985ad6c68b362b4658", null ],
     [ "MoveMessageNOctets", "da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d", null ],
     [ "g_opener_platform_endianess", "da/d73/endianconv_8c.html#a474ff19cc3d26eef2448d77f787e0df7", null ]
 ];

@@ -103,6 +103,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="SocketAddressInfoItem" -->
+<p>CPF Sockaddr Item.  
+ <a href="../../dc/d3c/structSocketAddressInfoItem.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -115,8 +118,9 @@ Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00053">53</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<div class="textblock"><p>CPF Sockaddr Item. </p>
+
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00056">56</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 </div><hr/><h2>Field Documentation</h2>
 <a class="anchor" id="a8933e644c7191ea8f5a22401b2e6a6fa"></a><!-- doxytag: member="SocketAddressInfoItem::length" ref="a8933e644c7191ea8f5a22401b2e6a6fa" args="" -->
 <div class="memitem">
@@ -128,10 +132,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Length shall be 16 bytes </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00055">55</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00058">58</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00547">EncodeSockaddrInfoLength()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00571">EncodeSockaddrInfoLength()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00422">OpenProducingMulticastConnection()</a>.</p>
 
 </div>
 </div>
@@ -145,10 +150,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Length of 8, Recommended value zero </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00059">59</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00062">62</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00422">OpenProducingMulticastConnection()</a>.</p>
 
 </div>
 </div>
@@ -162,10 +168,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>For multicast connections shall be set to the multicast address. For point-to-point shall be treated as don't care, recommended value 0. Big endian order. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00058">58</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00061">61</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>.</p>
 
 </div>
 </div>
@@ -179,10 +186,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Shall be AF_INET = 2 in big endian order </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00056">56</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00059">59</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00422">OpenProducingMulticastConnection()</a>.</p>
 
 </div>
 </div>
@@ -196,10 +204,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>For point-to-point connection this shall be set to the used UDP port (recommended port = 0x08AE). For multicast this shall be set to 0x08AE and treated by the receiver as don't care. Big endian order </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00057">57</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00060">60</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00313">OpenProducingPointToPointConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00422">OpenProducingMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00390">OpenProducingPointToPointConnection()</a>.</p>
 
 </div>
 </div>
@@ -213,10 +222,11 @@ Data Fields</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Either 0x8000 for O-&gt;T or 0x8001 for T-&gt;O </p>
 
-<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00054">54</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dff/cpf_8h_source.html#l00057">57</a> of file <a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00608">AssembleForwardOpenResponse()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00564">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00130">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00525">EncodeSockaddrInfoItemTypeId()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00461">ForwardClose()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00274">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00406">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00345">OpenProducingMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00313">OpenProducingPointToPointConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00603">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00874">AssembleForwardOpenResponse()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00591">AssembleLinearMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00139">CreateCommonPacketFormatStructure()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00548">EncodeSockaddrInfoItemTypeId()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00717">ForwardClose()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00489">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00422">OpenProducingMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00390">OpenProducingPointToPointConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00732">SendConnectedData()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +253,7 @@ Data Fields</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../dc/d3c/structSocketAddressInfoItem.html">SocketAddressInfoItem</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:05 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

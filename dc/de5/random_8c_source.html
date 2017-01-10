@@ -111,10 +111,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00010"></a>00010 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
 <a name="l00011"></a>00011 
 <a name="l00012"></a><a class="code" href="../../d1/d79/random_8h.html#a5f4c48bcbabeae2077747b52baec2fe4">00012</a> <a class="code" href="../../d9/d46/structRandom.html">Random</a> *<a class="code" href="../../dc/de5/random_8c.html#adad5aade615daea8e13889f264967b31">RandomNew</a>(<a class="code" href="../../d1/d79/random_8h.html#a19933d7845672b918d5c8e3ec5cdfaec">SetSeed</a> set_seed, <a class="code" href="../../d1/d79/random_8h.html#a08bec948d164426d71a6522e81d54f1d">GetNextUInt32</a> get_next_uint32) {
-<a name="l00013"></a>00013   <a class="code" href="../../d9/d46/structRandom.html">Random</a> *out = malloc(<span class="keyword">sizeof</span>(<a class="code" href="../../d9/d46/structRandom.html">Random</a>));
-<a name="l00014"></a>00014   *out = (<a class="code" href="../../d9/d46/structRandom.html">Random</a> ) { .<a class="code" href="../../d9/d46/structRandom.html#a2c49b2f73e05709704aa1da53e968ff5">set_seed</a> = set_seed, .get_next_uint32 = get_next_uint32 };
-<a name="l00015"></a>00015   <span class="keywordflow">return</span> out;
-<a name="l00016"></a>00016 }
+<a name="l00013"></a>00013   <a class="code" href="../../d9/d46/structRandom.html">Random</a> *random = malloc( <span class="keyword">sizeof</span>(<a class="code" href="../../d9/d46/structRandom.html">Random</a>) );
+<a name="l00014"></a>00014   *random =
+<a name="l00015"></a>00015     (<a class="code" href="../../d9/d46/structRandom.html">Random</a> ) { .<a class="code" href="../../d9/d46/structRandom.html#a2c49b2f73e05709704aa1da53e968ff5">set_seed</a> = set_seed, .get_next_uint32 = get_next_uint32 };
+<a name="l00016"></a>00016   <span class="keywordflow">return</span> random;
+<a name="l00017"></a>00017 }
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../d1/d79/random_8h.html#a6c2d95ee09e2fd59ee2f602f7871aab7">00019</a> <span class="keywordtype">void</span> <a class="code" href="../../dc/de5/random_8c.html#a6c2d95ee09e2fd59ee2f602f7871aab7">RandomDelete</a>(<a class="code" href="../../d9/d46/structRandom.html">Random</a> **random) {
+<a name="l00020"></a>00020   free(*random);
+<a name="l00021"></a>00021   *random = NULL;
+<a name="l00022"></a>00022 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -135,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../dc/de5/random_8c.html">random.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 19 2016 20:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

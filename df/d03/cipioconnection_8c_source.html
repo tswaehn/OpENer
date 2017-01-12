@@ -183,17 +183,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00094"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">00094</a> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a>; 
 <a name="l00096"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#a8397d54b331a95a673f773cd39c1e484">00096</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#a8397d54b331a95a673f773cd39c1e484">ProcessProductionInhibitTime</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *io_connection_object) {
 <a name="l00097"></a>00097   <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a2716ecbc6f36e1f7f6634d6a7c66767f">kProductionTriggerCyclic</a>
-<a name="l00098"></a>00098        == <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a97f3309dd23f2f6ed053d8ba13f57507">GetProductionTrigger</a>(io_connection_object) ) {
-<a name="l00099"></a>00099     <span class="keywordflow">if</span> ( 256 == <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4c86940d53534debe30f549f567d376f">GetProductionInhibitTime</a>(io_connection_object) ) {
+<a name="l00098"></a>00098        == <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#ac0268f2d6ccda7e8cad9c2c37715510e">GetProductionTrigger</a>(io_connection_object) ) {
+<a name="l00099"></a>00099     <span class="keywordflow">if</span> ( 256 == <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a7a07ae8e40025b1ed31cb09e84d172c0">GetProductionInhibitTime</a>(io_connection_object) ) {
 <a name="l00100"></a>00100       <span class="comment">/* there was no PIT segment in the connection path; set PIT to one fourth of RPI */</span>
 <a name="l00101"></a>00101       <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aa07c30f7dfcecb7317728972a4ee1185">SetProductionInhibitTime</a>(
-<a name="l00102"></a>00102         <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a7ff02a8bd0d20f1086b14d179d762aae">GetTargetToOriginatorRequestedPackedInterval</a>(io_connection_object)
+<a name="l00102"></a>00102         <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a0943ab7d9dfedcfda9b11513080d47b5">GetTargetToOriginatorRequestedPackedInterval</a>(io_connection_object)
 <a name="l00103"></a>00103         / 4000,
 <a name="l00104"></a>00104         io_connection_object);
 <a name="l00105"></a>00105     } <span class="keywordflow">else</span> {
 <a name="l00106"></a>00106       <span class="comment">/* If a production inhibit time is provided, it needs to be smaller than the Requested Packet Interval */</span>
-<a name="l00107"></a>00107       <span class="keywordflow">if</span> ( <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a4c86940d53534debe30f549f567d376f">GetProductionInhibitTime</a>(io_connection_object)
-<a name="l00108"></a>00108            &gt; (<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a7ff02a8bd0d20f1086b14d179d762aae">GetTargetToOriginatorRequestedPackedInterval</a>(io_connection_object)
+<a name="l00107"></a>00107       <span class="keywordflow">if</span> ( <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a7a07ae8e40025b1ed31cb09e84d172c0">GetProductionInhibitTime</a>(io_connection_object)
+<a name="l00108"></a>00108            &gt; (<a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a0943ab7d9dfedcfda9b11513080d47b5">GetTargetToOriginatorRequestedPackedInterval</a>(io_connection_object)
 <a name="l00109"></a>00109               / 1000) ) {
 <a name="l00110"></a>00110         <span class="comment">/* see section C-1.4.3.3 */</span>
 <a name="l00111"></a>00111         <span class="keywordflow">return</span> 0x111; 
@@ -1000,7 +1000,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../df/d03/cipioconnection_8c.html">cipioconnection.c</a>      </li>
 
-    <li class="footer">Generated on Tue Jan 10 2017 16:25:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Thu Jan 12 2017 19:08:40 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

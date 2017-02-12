@@ -1427,7 +1427,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l01440"></a>01440               <span class="keywordflow">case</span> <a class="code" href="../../d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585a68bad9c142ca2a207607529633f0702f">kDataSegmentSubtypeSimpleData</a>:
 <a name="l01441"></a>01441                 <a class="code" href="../../df/d03/cipioconnection_8c.html#ad20328302a359540d55f48ae36f7237d">g_config_data_length</a> = message[1] * 2;                                 <span class="comment">/*data segments store length 16-bit word wise */</span>
 <a name="l01442"></a>01442                 <a class="code" href="../../df/d03/cipioconnection_8c.html#a534c0a24266039f7ced0d36b7c5496bc">g_config_data_buffer</a> = (<a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *) message + 2;
-<a name="l01443"></a>01443                 remaining_path_size -= (<a class="code" href="../../df/d03/cipioconnection_8c.html#ad20328302a359540d55f48ae36f7237d">g_config_data_length</a> + 2);
+<a name="l01443"></a>01443                 remaining_path_size -= (<a class="code" href="../../df/d03/cipioconnection_8c.html#ad20328302a359540d55f48ae36f7237d">g_config_data_length</a> + 2) / 2;
 <a name="l01444"></a>01444                 message += (<a class="code" href="../../df/d03/cipioconnection_8c.html#ad20328302a359540d55f48ae36f7237d">g_config_data_length</a> + 2);
 <a name="l01445"></a>01445                 <span class="keywordflow">break</span>;
 <a name="l01446"></a>01446               <span class="keywordflow">default</span>:
@@ -1625,7 +1625,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d5/d35/cipconnectionmanager_8c.html">cipconnectionmanager.c</a>      </li>
 
-    <li class="footer">Generated on Fri Jan 20 2017 14:24:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Sun Feb 12 2017 08:58:59 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

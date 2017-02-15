@@ -120,8 +120,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for the CIP stack.  <a href="#ga70ee7034f390fd3759d42a50e60e1b1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">CipFree</a> (void *data)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated by the OpENer.  <a href="#ga729165f94320800eb9537def5a0e6af8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f">CloseSocket</a> (int socket)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the given socket and clean up the stack.  <a href="#ga89293c1274a9092dec6be806b8d0779f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36">CloseSocket</a> (const int socket)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the given socket and clean up the stack.  <a href="#gaf4d26c1bca26c2e6e73481d57762df36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gadae462526ab01253d39e4a54346f56ca">CreateUdpSocket</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42">UdpCommuncationDirection</a> communication_direction, struct sockaddr_in *socket_data)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">create a producing or consuming UDP socket  <a href="#gadae462526ab01253d39e4a54346f56ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga6d2ccae9a19ce418c77941dbe22b008d">HandleApplication</a> (void)</td></tr>
@@ -415,14 +415,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ga89293c1274a9092dec6be806b8d0779f"></a><!-- doxytag: member="opener_api.h::CloseSocket" ref="ga89293c1274a9092dec6be806b8d0779f" args="(int socket)" -->
+<a class="anchor" id="gaf4d26c1bca26c2e6e73481d57762df36"></a><!-- doxytag: member="opener_api.h::CloseSocket" ref="gaf4d26c1bca26c2e6e73481d57762df36" args="(const int socket)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f">CloseSocket</a> </td>
+          <td class="memname">void <a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36">CloseSocket</a> </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>socket</em></td><td>)</td>
           <td></td>
         </tr>
@@ -438,16 +438,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00849">849</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00856">856</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00033">CloseSocketPlatform()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00035">CloseSocketPlatform()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">master_socket</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00875">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00240">IApp_CloseSocket_tcp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00236">IApp_CloseSocket_udp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00363">NetworkHandlerFinish()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00297">NetworkHandlerProcessOnce()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00882">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00240">IApp_CloseSocket_tcp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00236">IApp_CloseSocket_udp()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00375">NetworkHandlerFinish()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00310">NetworkHandlerProcessOnce()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga89293c1274a9092dec6be806b8d0779f_cgraph.svg" width="304" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gaf4d26c1bca26c2e6e73481d57762df36_cgraph.svg" width="304" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -455,7 +455,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_ga89293c1274a9092dec6be806b8d0779f_icgraph.svg" width="100%" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gaf4d26c1bca26c2e6e73481d57762df36_icgraph.svg" width="100%" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -506,9 +506,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the socket handle if successful, else -1 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00701">701</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00709">709</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00045">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00052">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00045">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00039">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00036">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00038">SetSocketToNonBlocking()</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::starting_multicast_address</a>.</p>
+<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00046">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00052">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00045">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00040">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">master_socket</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00040">SetSocketToNonBlocking()</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::starting_multicast_address</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00349">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00491">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00390">OpenProducingPointToPointConnection()</a>.</p>
 
@@ -722,11 +722,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>EIP_SUCCESS on success </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00489">489</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00501">501</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
 <p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_WARN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00668">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00734">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00687">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00734">SendConnectedData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -765,7 +765,7 @@ Here is the caller graph for this function:</div>
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Wed Feb 15 2017 11:18:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Feb 15 2017 11:19:01 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

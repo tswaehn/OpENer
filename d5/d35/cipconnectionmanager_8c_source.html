@@ -1511,100 +1511,102 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l01524"></a>01524 }
 <a name="l01525"></a>01525 
 <a name="l01526"></a><a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aef50a0eee3ff5df3320b49f872a7f3c4">01526</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef50a0eee3ff5df3320b49f872a7f3c4" title="Removes connection from the list of active connections.">RemoveFromActiveConnections</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l01527"></a>01527   <span class="keywordflow">if</span> (NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>) {
-<a name="l01528"></a>01528     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a> =
-<a name="l01529"></a>01529       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
-<a name="l01530"></a>01530   } <span class="keywordflow">else</span> {
-<a name="l01531"></a>01531     g_active_connection_list = connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
-<a name="l01532"></a>01532   }
-<a name="l01533"></a>01533   <span class="keywordflow">if</span> (NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>) {
-<a name="l01534"></a>01534     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a> =
-<a name="l01535"></a>01535       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>;
-<a name="l01536"></a>01536   }
-<a name="l01537"></a>01537   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a> = NULL;
-<a name="l01538"></a>01538   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a> = NULL;
-<a name="l01539"></a>01539   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a07b0290442443753728fe18cc6a756a4">state</a> = <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9baba24869a3517f7ec2a180d65e5fbe7bc">kConnectionStateNonExistent</a>;
-<a name="l01540"></a>01540 }
-<a name="l01541"></a>01541 
-<a name="l01542"></a><a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a2ca3eb3dc7fe805b410d849612720b4c">01542</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a2ca3eb3dc7fe805b410d849612720b4c">IsConnectedOutputAssembly</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> instance_number) {
-<a name="l01543"></a>01543   <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a> is_connected = <span class="keyword">false</span>;
-<a name="l01544"></a>01544 
-<a name="l01545"></a>01545   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *iterator = <a class="code" href="../../d1/dbc/appcontype_8c.html#a1fb6f4a00ea5c96694050b5be4e2501c" title="External globals needed from connectionmanager.c.">g_active_connection_list</a>;
+<a name="l01527"></a>01527 
+<a name="l01528"></a>01528   <span class="keywordflow">if</span> (NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>) {
+<a name="l01529"></a>01529     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a> =
+<a name="l01530"></a>01530       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
+<a name="l01531"></a>01531   } <span class="keywordflow">else</span> {
+<a name="l01532"></a>01532     g_active_connection_list = connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
+<a name="l01533"></a>01533   }
+<a name="l01534"></a>01534   <span class="keywordflow">if</span> (NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>) {
+<a name="l01535"></a>01535     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a> =
+<a name="l01536"></a>01536       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a>;
+<a name="l01537"></a>01537   }
+<a name="l01538"></a>01538 
+<a name="l01539"></a>01539   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ac9ff98e4743a376aadb9de2ef521ca83">first_connection_object</a> = NULL;
+<a name="l01540"></a>01540   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a> = NULL;
+<a name="l01541"></a>01541   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a07b0290442443753728fe18cc6a756a4">state</a> = <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9baba24869a3517f7ec2a180d65e5fbe7bc">kConnectionStateNonExistent</a>;
+<a name="l01542"></a>01542 }
+<a name="l01543"></a>01543 
+<a name="l01544"></a><a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a2ca3eb3dc7fe805b410d849612720b4c">01544</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a2ca3eb3dc7fe805b410d849612720b4c">IsConnectedOutputAssembly</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> instance_number) {
+<a name="l01545"></a>01545   <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a> is_connected = <span class="keyword">false</span>;
 <a name="l01546"></a>01546 
-<a name="l01547"></a>01547   <span class="keywordflow">while</span> (NULL != iterator) {
-<a name="l01548"></a>01548     <span class="keywordflow">if</span> (instance_number == iterator-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0]) {
-<a name="l01549"></a>01549       is_connected = <span class="keyword">true</span>;
-<a name="l01550"></a>01550       <span class="keywordflow">break</span>;
-<a name="l01551"></a>01551     }
-<a name="l01552"></a>01552     iterator = iterator-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
-<a name="l01553"></a>01553   }
-<a name="l01554"></a>01554   <span class="keywordflow">return</span> is_connected;
-<a name="l01555"></a>01555 }
-<a name="l01556"></a>01556 
-<a name="l01557"></a><a class="code" href="../../d2/dc9/group__CIP__API.html#gac7db4d2927e83b6b3110f5dc66589b1e">01557</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/dc9/group__CIP__API.html#gac7db4d2927e83b6b3110f5dc66589b1e" title="register open functions for an specific object.">AddConnectableObject</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> class_id,
-<a name="l01558"></a>01558                                <a class="code" href="../../d2/dc9/group__CIP__API.html#gaba609aaaca108b8d1b24da1ccbd7b375" title="Function prototype for handling the opening of connections.">OpenConnectionFunction</a> open_connection_function)
-<a name="l01559"></a>01559 {
-<a name="l01560"></a>01560   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l01561"></a>01561 
-<a name="l01562"></a>01562   <span class="comment">/*parsing is now finished all data is available and check now establish the connection */</span>
-<a name="l01563"></a>01563   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; g_kNumberOfConnectableObjects; ++i) {
-<a name="l01564"></a>01564     <span class="keywordflow">if</span> ( (0 == g_connection_management_list[i].class_id)
-<a name="l01565"></a>01565          || (class_id == g_connection_management_list[i].class_id) ) {
-<a name="l01566"></a>01566       g_connection_management_list[i].<a class="code" href="../../d1/d46/structConnectionManagementHandling.html#ab1e9a99cb9ba1e520632e4429d9a290a">class_id</a> = class_id;
-<a name="l01567"></a>01567       g_connection_management_list[i].<a class="code" href="../../d1/d46/structConnectionManagementHandling.html#a40ee7659db82868693852b3c569e8d41">open_connection_function</a> =
-<a name="l01568"></a>01568         open_connection_function;
-<a name="l01569"></a>01569       status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l01570"></a>01570       <span class="keywordflow">break</span>;
-<a name="l01571"></a>01571     }
-<a name="l01572"></a>01572   }
-<a name="l01573"></a>01573 
-<a name="l01574"></a>01574   <span class="keywordflow">return</span> status;
-<a name="l01575"></a>01575 }
-<a name="l01576"></a>01576 
-<a name="l01577"></a>01577 <a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a> *
-<a name="l01578"></a><a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abd5ec846f4be69da9c0f566dbc38dea3">01578</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abd5ec846f4be69da9c0f566dbc38dea3">GetConnectionManagementEntry</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> class_id) {
-<a name="l01579"></a>01579 
-<a name="l01580"></a>01580   <a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a> *connection_management_entry = NULL;
+<a name="l01547"></a>01547   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *iterator = <a class="code" href="../../d1/dbc/appcontype_8c.html#a1fb6f4a00ea5c96694050b5be4e2501c" title="External globals needed from connectionmanager.c.">g_active_connection_list</a>;
+<a name="l01548"></a>01548 
+<a name="l01549"></a>01549   <span class="keywordflow">while</span> (NULL != iterator) {
+<a name="l01550"></a>01550     <span class="keywordflow">if</span> (instance_number == iterator-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0]) {
+<a name="l01551"></a>01551       is_connected = <span class="keyword">true</span>;
+<a name="l01552"></a>01552       <span class="keywordflow">break</span>;
+<a name="l01553"></a>01553     }
+<a name="l01554"></a>01554     iterator = iterator-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a490adc7536680841cb7542a7ed6cd829">next_connection_object</a>;
+<a name="l01555"></a>01555   }
+<a name="l01556"></a>01556   <span class="keywordflow">return</span> is_connected;
+<a name="l01557"></a>01557 }
+<a name="l01558"></a>01558 
+<a name="l01559"></a><a class="code" href="../../d2/dc9/group__CIP__API.html#gac7db4d2927e83b6b3110f5dc66589b1e">01559</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/dc9/group__CIP__API.html#gac7db4d2927e83b6b3110f5dc66589b1e" title="register open functions for an specific object.">AddConnectableObject</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> class_id,
+<a name="l01560"></a>01560                                <a class="code" href="../../d2/dc9/group__CIP__API.html#gaba609aaaca108b8d1b24da1ccbd7b375" title="Function prototype for handling the opening of connections.">OpenConnectionFunction</a> open_connection_function)
+<a name="l01561"></a>01561 {
+<a name="l01562"></a>01562   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l01563"></a>01563 
+<a name="l01564"></a>01564   <span class="comment">/*parsing is now finished all data is available and check now establish the connection */</span>
+<a name="l01565"></a>01565   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; g_kNumberOfConnectableObjects; ++i) {
+<a name="l01566"></a>01566     <span class="keywordflow">if</span> ( (0 == g_connection_management_list[i].class_id)
+<a name="l01567"></a>01567          || (class_id == g_connection_management_list[i].class_id) ) {
+<a name="l01568"></a>01568       g_connection_management_list[i].<a class="code" href="../../d1/d46/structConnectionManagementHandling.html#ab1e9a99cb9ba1e520632e4429d9a290a">class_id</a> = class_id;
+<a name="l01569"></a>01569       g_connection_management_list[i].<a class="code" href="../../d1/d46/structConnectionManagementHandling.html#a40ee7659db82868693852b3c569e8d41">open_connection_function</a> =
+<a name="l01570"></a>01570         open_connection_function;
+<a name="l01571"></a>01571       status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l01572"></a>01572       <span class="keywordflow">break</span>;
+<a name="l01573"></a>01573     }
+<a name="l01574"></a>01574   }
+<a name="l01575"></a>01575 
+<a name="l01576"></a>01576   <span class="keywordflow">return</span> status;
+<a name="l01577"></a>01577 }
+<a name="l01578"></a>01578 
+<a name="l01579"></a>01579 <a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a> *
+<a name="l01580"></a><a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abd5ec846f4be69da9c0f566dbc38dea3">01580</a> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abd5ec846f4be69da9c0f566dbc38dea3">GetConnectionManagementEntry</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> class_id) {
 <a name="l01581"></a>01581 
-<a name="l01582"></a>01582   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; g_kNumberOfConnectableObjects; ++i) {
-<a name="l01583"></a>01583     <span class="keywordflow">if</span> (class_id == g_connection_management_list[i].class_id) {
-<a name="l01584"></a>01584       connection_management_entry = &amp;(g_connection_management_list[i]);
-<a name="l01585"></a>01585       <span class="keywordflow">break</span>;
-<a name="l01586"></a>01586     }
-<a name="l01587"></a>01587   }
-<a name="l01588"></a>01588   <span class="keywordflow">return</span> connection_management_entry;
-<a name="l01589"></a>01589 }
-<a name="l01590"></a>01590 
-<a name="l01591"></a><a class="code" href="../../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf">01591</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf" title="Trigger the production of an application triggered connection.">TriggerConnections</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> output_assembly,
-<a name="l01592"></a>01592                              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> input_assembly) {
-<a name="l01593"></a>01593   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l01594"></a>01594 
-<a name="l01595"></a>01595   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *pstRunner = <a class="code" href="../../d1/dbc/appcontype_8c.html#a1fb6f4a00ea5c96694050b5be4e2501c" title="External globals needed from connectionmanager.c.">g_active_connection_list</a>;
-<a name="l01596"></a>01596   <span class="keywordflow">while</span> (NULL != pstRunner) {
-<a name="l01597"></a>01597     <span class="keywordflow">if</span> ( (output_assembly == pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0])
-<a name="l01598"></a>01598          &amp;&amp; (input_assembly
-<a name="l01599"></a>01599              == pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1]) ) {
-<a name="l01600"></a>01600       <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a096f9657e36899584e7ee27915734b33aa0cf80c539711f2bd466dd9de86b6d1c">kConnectionTriggerTypeApplicationTriggeredConnection</a>
-<a name="l01601"></a>01601            == (pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a>
-<a name="l01602"></a>01602                &amp; <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a096f9657e36899584e7ee27915734b33aa509cbffa54b97c646ac418d3cde1a15">kConnectionTriggerTypeProductionTriggerMask</a>) ) {
-<a name="l01603"></a>01603         <span class="comment">/* produce at the next allowed occurrence */</span>
-<a name="l01604"></a>01604         pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a> =
-<a name="l01605"></a>01605           pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a778d093e5752c80e5b7c043541054641" title="Timer for the production inhibition of application triggered or change-of-state I/O connections...">production_inhibit_timer</a>;
-<a name="l01606"></a>01606         status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l01607"></a>01607       }
-<a name="l01608"></a>01608       <span class="keywordflow">break</span>;
-<a name="l01609"></a>01609     }
-<a name="l01610"></a>01610   }
-<a name="l01611"></a>01611   <span class="keywordflow">return</span> status;
-<a name="l01612"></a>01612 }
-<a name="l01613"></a>01613 
-<a name="l01614"></a><a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5">01614</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5">InitializeConnectionManagerData</a>() {
-<a name="l01615"></a>01615   memset( g_connection_management_list, 0,
-<a name="l01616"></a>01616           g_kNumberOfConnectableObjects
-<a name="l01617"></a>01617           * <span class="keyword">sizeof</span>(<a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a>) );
-<a name="l01618"></a>01618   <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>();
-<a name="l01619"></a>01619   <a class="code" href="../../d1/dbc/appcontype_8c.html#a89ebedc457f26c4e845f60f3e6fb8155">InitializeIoConnectionData</a>();
-<a name="l01620"></a>01620 }
+<a name="l01582"></a>01582   <a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a> *connection_management_entry = NULL;
+<a name="l01583"></a>01583 
+<a name="l01584"></a>01584   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; g_kNumberOfConnectableObjects; ++i) {
+<a name="l01585"></a>01585     <span class="keywordflow">if</span> (class_id == g_connection_management_list[i].class_id) {
+<a name="l01586"></a>01586       connection_management_entry = &amp;(g_connection_management_list[i]);
+<a name="l01587"></a>01587       <span class="keywordflow">break</span>;
+<a name="l01588"></a>01588     }
+<a name="l01589"></a>01589   }
+<a name="l01590"></a>01590   <span class="keywordflow">return</span> connection_management_entry;
+<a name="l01591"></a>01591 }
+<a name="l01592"></a>01592 
+<a name="l01593"></a><a class="code" href="../../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf">01593</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf" title="Trigger the production of an application triggered connection.">TriggerConnections</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> output_assembly,
+<a name="l01594"></a>01594                              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> input_assembly) {
+<a name="l01595"></a>01595   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l01596"></a>01596 
+<a name="l01597"></a>01597   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *pstRunner = <a class="code" href="../../d1/dbc/appcontype_8c.html#a1fb6f4a00ea5c96694050b5be4e2501c" title="External globals needed from connectionmanager.c.">g_active_connection_list</a>;
+<a name="l01598"></a>01598   <span class="keywordflow">while</span> (NULL != pstRunner) {
+<a name="l01599"></a>01599     <span class="keywordflow">if</span> ( (output_assembly == pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0])
+<a name="l01600"></a>01600          &amp;&amp; (input_assembly
+<a name="l01601"></a>01601              == pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1]) ) {
+<a name="l01602"></a>01602       <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a096f9657e36899584e7ee27915734b33aa0cf80c539711f2bd466dd9de86b6d1c">kConnectionTriggerTypeApplicationTriggeredConnection</a>
+<a name="l01603"></a>01603            == (pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a>
+<a name="l01604"></a>01604                &amp; <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a096f9657e36899584e7ee27915734b33aa509cbffa54b97c646ac418d3cde1a15">kConnectionTriggerTypeProductionTriggerMask</a>) ) {
+<a name="l01605"></a>01605         <span class="comment">/* produce at the next allowed occurrence */</span>
+<a name="l01606"></a>01606         pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a> =
+<a name="l01607"></a>01607           pstRunner-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a778d093e5752c80e5b7c043541054641" title="Timer for the production inhibition of application triggered or change-of-state I/O connections...">production_inhibit_timer</a>;
+<a name="l01608"></a>01608         status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l01609"></a>01609       }
+<a name="l01610"></a>01610       <span class="keywordflow">break</span>;
+<a name="l01611"></a>01611     }
+<a name="l01612"></a>01612   }
+<a name="l01613"></a>01613   <span class="keywordflow">return</span> status;
+<a name="l01614"></a>01614 }
+<a name="l01615"></a>01615 
+<a name="l01616"></a><a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5">01616</a> <span class="keywordtype">void</span> <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5">InitializeConnectionManagerData</a>() {
+<a name="l01617"></a>01617   memset( g_connection_management_list, 0,
+<a name="l01618"></a>01618           g_kNumberOfConnectableObjects
+<a name="l01619"></a>01619           * <span class="keyword">sizeof</span>(<a class="code" href="../../d1/d46/structConnectionManagementHandling.html">ConnectionManagementHandling</a>) );
+<a name="l01620"></a>01620   <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>();
+<a name="l01621"></a>01621   <a class="code" href="../../d1/dbc/appcontype_8c.html#a89ebedc457f26c4e845f60f3e6fb8155">InitializeIoConnectionData</a>();
+<a name="l01622"></a>01622 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -1625,7 +1627,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d5/d35/cipconnectionmanager_8c.html">cipconnectionmanager.c</a>      </li>
 
-    <li class="footer">Generated on Wed Feb 15 2017 11:18:08 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Feb 15 2017 11:19:00 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

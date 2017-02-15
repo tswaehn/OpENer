@@ -1,6 +1,5 @@
 var generic__networkhandler_8h =
 [
-    [ "MAX_NO_OF_TCP_SOCKETS", "da/dc2/generic__networkhandler_8h.html#aef8c9066c39b53d472f7d235bb3d0001", null ],
     [ "CheckSocketSet", "da/dc2/generic__networkhandler_8h.html#acebcfe03d5528a69d288c446ff3048b1", null ],
     [ "GetMaxSocket", "da/dc2/generic__networkhandler_8h.html#afd95c5a901db3aca5977f359ccd95aa2", null ],
     [ "IApp_CloseSocket_tcp", "da/dc2/generic__networkhandler_8h.html#aac0abfde6f2872cae33998b90683cf78", null ],
@@ -15,6 +14,7 @@ var generic__networkhandler_8h =
     [ "g_last_time", "da/dc2/generic__networkhandler_8h.html#a96b6ee6e08689b2ca75621329c0ccfc0", null ],
     [ "g_network_status", "da/dc2/generic__networkhandler_8h.html#a33bfd20313f45b557b92fa21e17146af", null ],
     [ "g_time_value", "da/dc2/generic__networkhandler_8h.html#a9d5af295c10123a5eeddada9f9c397cb", null ],
+    [ "g_timestamps", "da/dc2/generic__networkhandler_8h.html#ae034c02af6a2380fb828523f9978b9e1", null ],
     [ "highest_socket_handle", "da/dc2/generic__networkhandler_8h.html#a336832344e06f1dce7904f0cf46eab74", null ],
     [ "master_socket", "da/dc2/generic__networkhandler_8h.html#a956dd8b348500bc6f305b327c21926ed", null ],
     [ "read_socket", "da/dc2/generic__networkhandler_8h.html#a741d0ae5ae0f3e294da9d4b89d86db38", null ]

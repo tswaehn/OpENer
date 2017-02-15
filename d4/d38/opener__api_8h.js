@@ -17,7 +17,7 @@ var opener__api_8h =
     [ "CipFree", "d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8", null ],
     [ "CipStackInit", "d2/dc9/group__CIP__API.html#ga5d4979945d124e28668b264c3823db1c", null ],
     [ "CloseSession", "d2/dc9/group__CIP__API.html#gab9ff230d61fc6dedd90f8b95e9a27707", null ],
-    [ "CloseSocket", "d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36", null ],
+    [ "CloseSocket", "d5/dc5/group__CIP__CALLBACK__API.html#ga89293c1274a9092dec6be806b8d0779f", null ],
     [ "ConfigureDomainName", "d2/dc9/group__CIP__API.html#ga388b872aa3290d7248bfbf4b61fc4f1e", null ],
     [ "ConfigureExclusiveOwnerConnectionPoint", "d2/dc9/group__CIP__API.html#gad1826555a5a2c522bfd98496f31c7ab2", null ],
     [ "ConfigureHostName", "d2/dc9/group__CIP__API.html#gab4a2d826ebe9be1b60c0206414a8f8ce", null ],

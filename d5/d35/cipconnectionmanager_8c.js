@@ -31,6 +31,7 @@ var cipconnectionmanager_8c =
     [ "HandleNullMatchingForwardOpenRequest", "d5/d35/cipconnectionmanager_8c.html#af55f168db46c8ab4c8dfab00deda6b87", null ],
     [ "HandleNullNonMatchingForwardOpenRequest", "d5/d35/cipconnectionmanager_8c.html#ac7df9eb5403638fd632e3eb9e7d7abfb", null ],
     [ "HandleReceivedConnectedData", "d2/dc9/group__CIP__API.html#ga34f1582ed424a2c875b8a317d828e181", null ],
+    [ "InitializeConnectionManager", "d5/d35/cipconnectionmanager_8c.html#adfbeb6c3cf13ac50049d5063e54a71fd", null ],
     [ "InitializeConnectionManagerData", "d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5", null ],
     [ "IsConnectedOutputAssembly", "d5/d35/cipconnectionmanager_8c.html#a2ca3eb3dc7fe805b410d849612720b4c", null ],
     [ "ManageConnections", "d2/dc9/group__CIP__API.html#ga9f57b09260efb5bfb188b9d0ca0c6091", null ],

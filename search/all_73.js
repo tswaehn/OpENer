@@ -32,6 +32,7 @@ var searchData=
   ['services',['services',['../da/d8e/structcip__class.html#a9871ebce8163c584f95d1a0c7f00e1f1',1,'cip_class']]],
   ['session_5fhandle',['session_handle',['../d9/d42/structencapsulation__data.html#ab67e9ddf3cb33c0e5246e82b3c1a6fa9',1,'encapsulation_data']]],
   ['sessionstatus',['SessionStatus',['../d2/dbd/encap_8c.html#aa68bfc8983f200bfbae62a07dd04ebf0',1,'encap.c']]],
+  ['set_5fbit_5fmask',['set_bit_mask',['../da/d8e/structcip__class.html#a47a03a36f4097f5a0f107f83e0154573',1,'cip_class']]],
   ['set_5fseed',['set_seed',['../d9/d46/structRandom.html#a2c49b2f73e05709704aa1da53e968ff5',1,'Random']]],
   ['setassemblyattributesingle',['SetAssemblyAttributeSingle',['../df/d2e/cipassembly_8c.html#a92838d437910f316c6fd7b57cfda9e56',1,'cipassembly.c']]],
   ['setattributesingletcp',['SetAttributeSingleTcp',['../dd/d20/ciptcpipinterface_8c.html#a811091b5f21066159f7a168504106f80',1,'ciptcpipinterface.c']]],

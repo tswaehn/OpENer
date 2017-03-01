@@ -130,35 +130,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00034"></a>00034 }
 <a name="l00035"></a>00035 
 <a name="l00036"></a><a class="code" href="../../dd/d4d/cipethernetlink_8h.html#ad6d2028b90ec96ad148d092a30acb7d6">00036</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../d7/d65/cipethernetlink_8c.html#ab1c2d006a08c187c70ab66bb0a777bd0" title="Initialize the Ethernet Link Objects data.">CipEthernetLinkInit</a>() {
-<a name="l00037"></a>00037   <a class="code" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance.">CipClass</a> *ethernet_link_class = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga446b7f612fe7baaf40d7f87274832922" title="Allocate memory for new CIP Class and attributes.">CreateCipClass</a>(<a class="code" href="../../dd/d4d/cipethernetlink_8h.html#a5e127ce81b8e9b960b8831b27e7c9fa1">CIP_ETHERNETLINK_CLASS_CODE</a>, 0, <span class="comment">/* # class attributes*/</span>
-<a name="l00038"></a>00038                                                  0xffffffff, <span class="comment">/* class getAttributeAll mask*/</span>
-<a name="l00039"></a>00039                                                  0, <span class="comment">/* # class services*/</span>
+<a name="l00037"></a>00037   <a class="code" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance.">CipClass</a> *ethernet_link_class = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga3dfa07bc40e59ba348d713272d1cbfdb" title="Allocate memory for new CIP Class and attributes.">CreateCipClass</a>(<a class="code" href="../../dd/d4d/cipethernetlink_8h.html#a5e127ce81b8e9b960b8831b27e7c9fa1">CIP_ETHERNETLINK_CLASS_CODE</a>, 0, <span class="comment">/* # class attributes*/</span>
+<a name="l00038"></a>00038                                                  7, <span class="comment">/* # highest class attribute number*/</span>
+<a name="l00039"></a>00039                                                  2, <span class="comment">/* # class services*/</span>
 <a name="l00040"></a>00040                                                  3, <span class="comment">/* # instance attributes*/</span>
-<a name="l00041"></a>00041                                                  0xffffffff, <span class="comment">/* instance getAttributeAll mask*/</span>
-<a name="l00042"></a>00042                                                  0, <span class="comment">/* # instance services*/</span>
+<a name="l00041"></a>00041                                                  13, <span class="comment">/* # highest instance attribute number*/</span>
+<a name="l00042"></a>00042                                                  2, <span class="comment">/* # instance services*/</span>
 <a name="l00043"></a>00043                                                  1, <span class="comment">/* # instances*/</span>
-<a name="l00044"></a>00044                                                  <span class="stringliteral">&quot;Ethernet Link&quot;</span>, 1);
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <span class="comment">/* set attributes to initial values */</span>
-<a name="l00047"></a>00047   g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a">interface_speed</a> = 100;
-<a name="l00048"></a>00048   g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a">interface_flags</a> = 0xF; <span class="comment">/* successful speed and duplex neg, full duplex active link, TODO in future it should be checked if link is active */</span>
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050   <span class="keywordflow">if</span> (ethernet_link_class != NULL) {
+<a name="l00044"></a>00044                                                  <span class="stringliteral">&quot;Ethernet Link&quot;</span>,
+<a name="l00045"></a>00045                                                  1, <span class="comment">/* # class revision*/</span>
+<a name="l00046"></a>00046                                                  NULL); <span class="comment">/* # function pointer for initialization*/</span>
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048   <span class="comment">/* set attributes to initial values */</span>
+<a name="l00049"></a>00049   g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a">interface_speed</a> = 100;
+<a name="l00050"></a>00050   g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a">interface_flags</a> = 0xF; <span class="comment">/* successful speed and duplex neg, full duplex active link, TODO in future it should be checked if link is active */</span>
 <a name="l00051"></a>00051 
-<a name="l00052"></a>00052     <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *ethernet_link_instance =
-<a name="l00053"></a>00053       <a class="code" href="../../d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance.">GetCipInstance</a>(ethernet_link_class, 1);
-<a name="l00054"></a>00054     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 1, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>,
-<a name="l00055"></a>00055                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a">interface_speed</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>); <span class="comment">/* bind attributes to the instance*/</span>
-<a name="l00056"></a>00056     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 2, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a159dcd0c3d2cbd4d8020db67c9f6d423">kCipDword</a>,
-<a name="l00057"></a>00057                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a">interface_flags</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00058"></a>00058     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 3, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0e0654c72dd5461571fcdaac933f21ed">kCip6Usint</a>,
-<a name="l00059"></a>00059                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a4a91c0cca43031b628001583f6ce3f63">physical_address</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
-<a name="l00060"></a>00060   } <span class="keywordflow">else</span> {
-<a name="l00061"></a>00061     <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l00062"></a>00062   }
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00065"></a>00065 }
+<a name="l00052"></a>00052   <span class="keywordflow">if</span> (ethernet_link_class != NULL) {
+<a name="l00053"></a>00053     <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *ethernet_link_instance = <a class="code" href="../../d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance.">GetCipInstance</a>(ethernet_link_class,
+<a name="l00054"></a>00054                                                          1);
+<a name="l00055"></a>00055     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 1, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>,
+<a name="l00056"></a>00056                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a">interface_speed</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>); <span class="comment">/* bind attributes to the instance*/</span>
+<a name="l00057"></a>00057     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 2, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a159dcd0c3d2cbd4d8020db67c9f6d423">kCipDword</a>,
+<a name="l00058"></a>00058                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a">interface_flags</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00059"></a>00059     <a class="code" href="../../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class.">InsertAttribute</a>(ethernet_link_instance, 3, <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0e0654c72dd5461571fcdaac933f21ed">kCip6Usint</a>,
+<a name="l00060"></a>00060                     &amp;g_ethernet_link.<a class="code" href="../../d8/d13/structCipEthernetLinkObject.html#a4a91c0cca43031b628001583f6ce3f63">physical_address</a>, <a class="code" href="../../df/d28/ciptypes_8h.html#a1e2feaa6e54b6217fe7d8ef02575d779ac652f51f2ab659c8f6dead436d940822">kGetableSingleAndAll</a>);
+<a name="l00061"></a>00061     <a class="code" href="../../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object.">InsertService</a>(ethernet_link_class, <a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efa581133006a50889c877f74eaf5cd539e">kGetAttributeSingle</a>, &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#ab0ed210dcfa6219a238c5a9f7a72aad1" title="Generic implementation of the GetAttributeSingle CIP service.">GetAttributeSingle</a>,
+<a name="l00062"></a>00062                   <span class="stringliteral">&quot;GetAttributeSingle&quot;</span>);
+<a name="l00063"></a>00063     <a class="code" href="../../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object.">InsertService</a>(ethernet_link_class, <a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efa8519fb21fc3211b33419f4a305ce3a96">kGetAttributeAll</a>, &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#ad1ca841f8ea512a497ce36acbc96a441" title="Generic implementation of the GetAttributeAll CIP service.">GetAttributeAll</a>,
+<a name="l00064"></a>00064                   <span class="stringliteral">&quot;GetAttributeAll&quot;</span>);
+<a name="l00065"></a>00065   } <span class="keywordflow">else</span> {
+<a name="l00066"></a>00066     <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00067"></a>00067   }
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00070"></a>00070 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -179,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d7/d65/cipethernetlink_8c.html">cipethernetlink.c</a>      </li>
 
-    <li class="footer">Generated on Wed Feb 15 2017 14:07:36 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Mar 1 2017 13:10:35 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

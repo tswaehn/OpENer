@@ -13,6 +13,7 @@ var searchData=
   ['service_5fnumber',['service_number',['../d8/de2/structcip__service__struct.html#a5dee19825bde9eba9ae121d7cd0cfbcd',1,'cip_service_struct']]],
   ['services',['services',['../da/d8e/structcip__class.html#a9871ebce8163c584f95d1a0c7f00e1f1',1,'cip_class']]],
   ['session_5fhandle',['session_handle',['../d9/d42/structencapsulation__data.html#ab67e9ddf3cb33c0e5246e82b3c1a6fa9',1,'encapsulation_data']]],
+  ['set_5fbit_5fmask',['set_bit_mask',['../da/d8e/structcip__class.html#a47a03a36f4097f5a0f107f83e0154573',1,'cip_class']]],
   ['set_5fseed',['set_seed',['../d9/d46/structRandom.html#a2c49b2f73e05709704aa1da53e968ff5',1,'Random']]],
   ['sin_5faddr',['sin_addr',['../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163',1,'SocketAddressInfoItem']]],
   ['sin_5ffamily',['sin_family',['../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a',1,'SocketAddressInfoItem']]],

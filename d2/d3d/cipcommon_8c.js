@@ -2,8 +2,10 @@ var cipcommon_8c =
 [
     [ "AddCIPInstance", "d2/dc9/group__CIP__API.html#ga180023c8528628f7d83023e4db81287a", null ],
     [ "AddCipInstances", "d2/dc9/group__CIP__API.html#ga39dafca98f844a12511af11b1273d0a8", null ],
+    [ "AllocateAttributeMasks", "d2/dc9/group__CIP__API.html#ga5ec1d2c432792c39f93c170943964302", null ],
+    [ "CalculateIndex", "d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677", null ],
     [ "CipStackInit", "d2/dc9/group__CIP__API.html#ga5d4979945d124e28668b264c3823db1c", null ],
-    [ "CreateCipClass", "d2/dc9/group__CIP__API.html#ga446b7f612fe7baaf40d7f87274832922", null ],
+    [ "CreateCipClass", "d2/dc9/group__CIP__API.html#ga3dfa07bc40e59ba348d713272d1cbfdb", null ],
     [ "DecodeData", "d2/dc9/group__CIP__API.html#ga23ef471671180123d441d30895159a3c", null ],
     [ "DecodePaddedEPath", "d2/d3d/cipcommon_8c.html#ae7acee656656a60bf4e33f33369ac3a5", null ],
     [ "EncodeData", "d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980", null ],

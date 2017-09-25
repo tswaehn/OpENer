@@ -964,7 +964,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00893"></a>00893       <a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> diffms = <a class="code" href="../../da/dc2/generic__networkhandler_8h.html#adeb5e45d46d5a71c4080a2a7c624143c">g_actual_time</a> - <a class="code" href="../../d4/df6/socket__timer_8c.html#a15b60d5a77b1ac9acd61704afc206bcc" title="Gets time stamp of the last update.">SocketTimerGetLastUpdate</a>(
 <a name="l00894"></a>00894         socket_timer);
 <a name="l00895"></a>00895 
-<a name="l00896"></a>00896       <span class="keywordflow">if</span> (diffms &gt;= <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#adbc3fe96fed170c67eee28658a2f3b02" title="#13 Number of seconds of inactivity before TCP connection is closed">g_encapsulation_inactivity_timeout</a>) {
+<a name="l00896"></a>00896     <span class="keywordflow">if</span> (diffms &gt;= (1000UL * (<a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a>)<a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#adbc3fe96fed170c67eee28658a2f3b02" title="#13 Number of seconds of inactivity before TCP connection is closed">g_encapsulation_inactivity_timeout</a>)) {
 <a name="l00897"></a>00897         <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" title="Close the given socket and clean up the stack.">CloseSocket</a>(socket_handle);
 <a name="l00898"></a>00898         <a class="code" href="../../d2/dc9/group__CIP__API.html#gab9ff230d61fc6dedd90f8b95e9a27707" title="Inform the encapsulation layer that the remote host has closed the connection.">CloseSession</a>(socket_handle);
 <a name="l00899"></a>00899       }
@@ -991,7 +991,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html">generic_networkhandler.c</a>      </li>
 
-    <li class="footer">Generated on Wed Mar 1 2017 13:10:35 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Sep 25 2017 15:40:32 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

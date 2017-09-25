@@ -227,11 +227,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00139"></a>00139   (void) instance; <span class="comment">/*Suppress compiler warning */</span>
 <a name="l00140"></a>00140   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> attribute_number = message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#ad77c58ca6a008b6dc0fdef151ebb7a8e">request_path</a>
 <a name="l00141"></a>00141                                .<a class="code" href="../../d5/dd2/structCipEpath.html#a4c9dee9e353080f53bcc041745849bbe">attribute_number</a>;
-<a name="l00142"></a>00142   uint8_t set_bit_mask = (instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#a47a03a36f4097f5a0f107f83e0154573">set_bit_mask</a>[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
-<a name="l00143"></a>00143                                                               attribute_number)]);
-<a name="l00144"></a>00144 
-<a name="l00145"></a>00145   <span class="keywordflow">if</span> (NULL != attribute) {
-<a name="l00146"></a>00146     <span class="keywordflow">if</span> ( set_bit_mask &amp; ( 1 &lt;&lt; ( (attribute_number - 1) % 8 ) ) ) {
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143   <span class="keywordflow">if</span> (NULL != attribute) {
+<a name="l00144"></a>00144   uint8_t set_bit_mask = (instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#a47a03a36f4097f5a0f107f83e0154573">set_bit_mask</a>[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
+<a name="l00145"></a>00145                                                               attribute_number)]);
+<a name="l00146"></a>00146     <span class="keywordflow">if</span> ( set_bit_mask &amp; ( 1 &lt;&lt; ( (attribute_number) % 8 ) ) ) {
 <a name="l00147"></a>00147       <span class="keywordflow">switch</span> (attribute_number) {
 <a name="l00148"></a>00148         <span class="keywordflow">case</span> 3: {
 <a name="l00149"></a>00149           <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> configuration_control_recieved = <a class="code" href="../../d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host.">GetDintFromMessage</a>(
@@ -380,157 +380,143 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00292"></a>00292 
 <a name="l00293"></a>00293   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> attribute_number = message_router_request-&gt;request_path
 <a name="l00294"></a>00294                                .attribute_number;
-<a name="l00295"></a>00295   uint8_t get_bit_mask;
+<a name="l00295"></a>00295   uint8_t get_bit_mask = 0;
 <a name="l00296"></a>00296 
-<a name="l00297"></a>00297   <span class="keywordflow">if</span> (<a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efa8519fb21fc3211b33419f4a305ce3a96">kGetAttributeAll</a> == message_router_request-&gt;service) {
-<a name="l00298"></a>00298     get_bit_mask = (instance-&gt;cip_class-&gt;get_all_bit_mask[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
-<a name="l00299"></a>00299                                                             attribute_number)]);
-<a name="l00300"></a>00300     message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
-<a name="l00301"></a>00301   } <span class="keywordflow">else</span> {
-<a name="l00302"></a>00302     get_bit_mask = (instance-&gt;cip_class-&gt;get_single_bit_mask[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
-<a name="l00303"></a>00303                                                                attribute_number)
-<a name="l00304"></a>00304                     ]);
-<a name="l00305"></a>00305   }
-<a name="l00306"></a>00306 
-<a name="l00307"></a>00307   <span class="keywordflow">if</span> ( get_bit_mask &amp; ( 1 &lt;&lt; ( (attribute_number - 1) % 8 ) ) ) {
-<a name="l00308"></a>00308     <span class="keywordflow">if</span> (9 == message_router_request-&gt;request_path.attribute_number) { <span class="comment">/* attribute 9 can not be easily handled with the default mechanism therefore we will do it by hand */</span>
-<a name="l00309"></a>00309 
-<a name="l00310"></a>00310       message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
-<a name="l00311"></a>00311 
-<a name="l00312"></a>00312       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
-<a name="l00313"></a>00313         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa88d0d60450eee947f20647a8c977bd3">kCipUsint</a>, &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a3951d5c3e578a8aa1774ce6016ffb056">alloc_control</a>), &amp;message);
-<a name="l00314"></a>00314       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
-<a name="l00315"></a>00315         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa88d0d60450eee947f20647a8c977bd3">kCipUsint</a>, &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a5cec3a9e7c718c0b875ce9d0dde82f56">reserved_shall_be_zero</a>),
-<a name="l00316"></a>00316         &amp;message);
-<a name="l00317"></a>00317       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
-<a name="l00318"></a>00318         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>,
-<a name="l00319"></a>00319         &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a5cb7bf407b6ef9b27e2b033ec7ed1d5c">number_of_allocated_multicast_addresses</a>),
-<a name="l00320"></a>00320         &amp;message);
-<a name="l00321"></a>00321 
-<a name="l00322"></a>00322       <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> multicast_address = ntohl(
-<a name="l00323"></a>00323         g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a983b98b7087072214bc4fc803b938df3">starting_multicast_address</a>);
-<a name="l00324"></a>00324 
-<a name="l00325"></a>00325       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(<a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>,
-<a name="l00326"></a>00326                                                          &amp;multicast_address,
-<a name="l00327"></a>00327                                                          &amp;message);
-<a name="l00328"></a>00328     } <span class="keywordflow">else</span> {
-<a name="l00329"></a>00329       <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute.">GetCipAttribute</a>(instance,
-<a name="l00330"></a>00330                                                       attribute_number);
+<a name="l00297"></a>00297   message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218ad1d48de3cbe52d7b04c0b5428c28e068">kCipErrorAttributeNotSupported</a>;
+<a name="l00298"></a>00298 
+<a name="l00299"></a>00299     <span class="keywordflow">if</span> (9 == message_router_request-&gt;request_path.attribute_number ) { <span class="comment">/* attribute 9 can not be easily handled with the default mechanism therefore we will do it by hand */</span>
+<a name="l00300"></a>00300 
+<a name="l00301"></a>00301         <span class="keywordflow">if</span> (0 == (get_bit_mask &amp; ( 1 &lt;&lt; ( attribute_number  % 8 ) )) ) {
+<a name="l00302"></a>00302                 <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00303"></a>00303         }
+<a name="l00304"></a>00304       message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
+<a name="l00305"></a>00305 
+<a name="l00306"></a>00306       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
+<a name="l00307"></a>00307         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa88d0d60450eee947f20647a8c977bd3">kCipUsint</a>, &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a3951d5c3e578a8aa1774ce6016ffb056">alloc_control</a>), &amp;message);
+<a name="l00308"></a>00308       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
+<a name="l00309"></a>00309         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa88d0d60450eee947f20647a8c977bd3">kCipUsint</a>, &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a5cec3a9e7c718c0b875ce9d0dde82f56">reserved_shall_be_zero</a>),
+<a name="l00310"></a>00310         &amp;message);
+<a name="l00311"></a>00311       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(
+<a name="l00312"></a>00312         <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1">kCipUint</a>,
+<a name="l00313"></a>00313         &amp;(g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a5cb7bf407b6ef9b27e2b033ec7ed1d5c">number_of_allocated_multicast_addresses</a>),
+<a name="l00314"></a>00314         &amp;message);
+<a name="l00315"></a>00315 
+<a name="l00316"></a>00316       <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> multicast_address = ntohl(
+<a name="l00317"></a>00317         g_multicast_configuration.<a class="code" href="../../db/dd7/structmulticast__address__configuration.html#a983b98b7087072214bc4fc803b938df3">starting_multicast_address</a>);
+<a name="l00318"></a>00318 
+<a name="l00319"></a>00319       message_router_response-&gt;data_length += <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(<a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a">kCipUdint</a>,
+<a name="l00320"></a>00320                                                          &amp;multicast_address,
+<a name="l00321"></a>00321                                                          &amp;message);
+<a name="l00322"></a>00322     } <span class="keywordflow">else</span> {
+<a name="l00323"></a>00323       <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute.">GetCipAttribute</a>(instance,
+<a name="l00324"></a>00324                                                       attribute_number);
+<a name="l00325"></a>00325 
+<a name="l00326"></a>00326       <span class="keywordflow">if</span> ( (NULL != attribute) &amp;&amp; ( NULL != attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>)) {
+<a name="l00327"></a>00327 
+<a name="l00328"></a>00328         <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(
+<a name="l00329"></a>00329           <span class="stringliteral">&quot;getAttribute %d\n&quot;</span>,
+<a name="l00330"></a>00330           message_router_request-&gt;request_path.attribute_number);   <span class="comment">/* create a reply message containing the data*/</span>
 <a name="l00331"></a>00331 
-<a name="l00332"></a>00332       <span class="keywordflow">if</span> ( (attribute != 0) &amp;&amp; (attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a> != 0) ) {
-<a name="l00333"></a>00333 
-<a name="l00334"></a>00334         <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(
-<a name="l00335"></a>00335           <span class="stringliteral">&quot;getAttribute %d\n&quot;</span>,
-<a name="l00336"></a>00336           message_router_request-&gt;request_path.attribute_number);   <span class="comment">/* create a reply message containing the data*/</span>
-<a name="l00337"></a>00337 
-<a name="l00338"></a>00338         <span class="comment">/*TODO think if it is better to put this code in an own</span>
-<a name="l00339"></a>00339 <span class="comment">         * getAssemblyAttributeSingle functions which will call get attribute</span>
-<a name="l00340"></a>00340 <span class="comment">         * single.</span>
-<a name="l00341"></a>00341 <span class="comment">         */</span>
-<a name="l00342"></a>00342 
-<a name="l00343"></a>00343         <span class="keywordflow">if</span> (attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a5882627a9fc1b118b1c34bf4da8a66cd">type</a> == <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa449daa71d0cde48a1b8d99ba2d210cd">kCipByteArray</a>
-<a name="l00344"></a>00344             &amp;&amp; instance-&gt;cip_class-&gt;class_id == kCipAssemblyClassCode) {
-<a name="l00345"></a>00345           <span class="comment">/* we are getting a byte array of a assembly object, kick out to the app callback */</span>
-<a name="l00346"></a>00346           <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot; -&gt; getAttributeSingle CIP_BYTE_ARRAY\r\n&quot;</span>);
-<a name="l00347"></a>00347           <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent.">BeforeAssemblyDataSend</a>(instance);
-<a name="l00348"></a>00348         }
-<a name="l00349"></a>00349 
-<a name="l00350"></a>00350         message_router_response-&gt;data_length = <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a5882627a9fc1b118b1c34bf4da8a66cd">type</a>,
-<a name="l00351"></a>00351                                                           attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>,
-<a name="l00352"></a>00352                                                           &amp;message);
-<a name="l00353"></a>00353         message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
-<a name="l00354"></a>00354       }
-<a name="l00355"></a>00355     }
-<a name="l00356"></a>00356   } <span class="keywordflow">else</span> {
-<a name="l00357"></a>00357     message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218ad1d48de3cbe52d7b04c0b5428c28e068">kCipErrorAttributeNotSupported</a>;
-<a name="l00358"></a>00358   }
-<a name="l00359"></a>00359 
-<a name="l00360"></a>00360   <span class="comment">//TEST</span>
-<a name="l00361"></a>00361   <a class="code" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance.">CipClass</a> *<span class="keyword">class </span>= instance-&gt;cip_class;
-<a name="l00362"></a>00362   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= <span class="keyword">class</span>-&gt;highest_attribute_number; i++) {
-<a name="l00363"></a>00363     <span class="keywordtype">size_t</span> index = (i + 8 - 1) / 8;
-<a name="l00364"></a>00364     <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(
-<a name="l00365"></a>00365       <span class="stringliteral">&quot;Attribute %d: %d / %d / %d\n&quot;</span>,
-<a name="l00366"></a>00366       i,
-<a name="l00367"></a>00367       ( ( (class-&gt;get_all_bit_mask)[index] ) &amp; ( 1 &lt;&lt; ( (i - 1) % 8 ) ) ) ? 1 : 0,
-<a name="l00368"></a>00368       ( ( (class-&gt;get_single_bit_mask)[index] ) &amp; ( 1 &lt;&lt; ( (i - 1) % 8 ) ) ) ? 1 : 0,
-<a name="l00369"></a>00369       ( ( (class-&gt;set_bit_mask)[index] ) &amp; ( 1 &lt;&lt; ( (i - 1) % 8 ) ) ) ? 1 : 0);
-<a name="l00370"></a>00370   }
-<a name="l00371"></a>00371   <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot;GetAll, byte1: %d, byte2: %d\n&quot;</span>,
-<a name="l00372"></a>00372                     (class-&gt;get_all_bit_mask)[1], (class-&gt;get_all_bit_mask)[2]);
-<a name="l00373"></a>00373   <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot;GetSingle, byte1: %d, byte2: %d\n&quot;</span>,
-<a name="l00374"></a>00374                     (class-&gt;get_single_bit_mask)[1],
-<a name="l00375"></a>00375                     (class-&gt;get_single_bit_mask)[2]);
-<a name="l00376"></a>00376   <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot;Set, byte1: %d, byte2: %d\n&quot;</span>, (class-&gt;set_bit_mask)[1],
-<a name="l00377"></a>00377                     (class-&gt;set_bit_mask)[2]);
-<a name="l00378"></a>00378 
-<a name="l00379"></a>00379   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
-<a name="l00380"></a>00380 }
-<a name="l00381"></a>00381 
-<a name="l00382"></a><a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e">00382</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e">GetAttributeAllTcpIpInterface</a>(
-<a name="l00383"></a>00383   <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance,
-<a name="l00384"></a>00384   <a class="code" href="../../dc/d16/structCipMessageRouterRequest.html" title="CIP Message Router Request.">CipMessageRouterRequest</a> *message_router_request,
-<a name="l00385"></a>00385   <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response,
-<a name="l00386"></a>00386   <span class="keyword">struct</span> sockaddr *originator_address) {
-<a name="l00387"></a>00387 
-<a name="l00388"></a>00388   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *response = message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>; <span class="comment">/* pointer into the reply */</span>
-<a name="l00389"></a>00389   <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#ada5c4109b95cb6635f4aa32a2e6d74bf">attributes</a>;
-<a name="l00390"></a>00390 
-<a name="l00391"></a>00391   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#aa4893264d371cf20b178deda0e616c58">number_of_attributes</a>; j++) <span class="comment">/* for each instance attribute of this class */</span>
-<a name="l00392"></a>00392   {
-<a name="l00393"></a>00393     <span class="keywordtype">int</span> attribute_number = attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a8ef9e76a42d35217da662d4e583ecde7">attribute_number</a>;
-<a name="l00394"></a>00394     <span class="keywordflow">if</span> (attribute_number &lt; 32) <span class="comment">/* only return attributes that are flagged as being part of GetAttributeALl */</span>
-<a name="l00395"></a>00395     {
-<a name="l00396"></a>00396       message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#ad77c58ca6a008b6dc0fdef151ebb7a8e">request_path</a>.<a class="code" href="../../d5/dd2/structCipEpath.html#a4c9dee9e353080f53bcc041745849bbe">attribute_number</a> = attribute_number;
+<a name="l00332"></a>00332         <span class="keywordflow">if</span> (<a class="code" href="../../df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efa8519fb21fc3211b33419f4a305ce3a96">kGetAttributeAll</a> == message_router_request-&gt;service) {
+<a name="l00333"></a>00333             get_bit_mask = (instance-&gt;cip_class-&gt;get_all_bit_mask[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
+<a name="l00334"></a>00334                                                                     attribute_number)]);
+<a name="l00335"></a>00335             message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
+<a name="l00336"></a>00336           } <span class="keywordflow">else</span> {
+<a name="l00337"></a>00337             get_bit_mask = (instance-&gt;cip_class-&gt;get_single_bit_mask[<a class="code" href="../../d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte-Index of Attribute.">CalculateIndex</a>(
+<a name="l00338"></a>00338                                                                        attribute_number)
+<a name="l00339"></a>00339                             ]);
+<a name="l00340"></a>00340           }
+<a name="l00341"></a>00341 
+<a name="l00342"></a>00342         <span class="keywordflow">if</span>(0 == (get_bit_mask &amp;  (1 &lt;&lt; ( (attribute_number ) % 8 ) ) ) ) {
+<a name="l00343"></a>00343                 <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00344"></a>00344         }
+<a name="l00345"></a>00345 
+<a name="l00346"></a>00346         <span class="comment">/*TODO think if it is better to put this code in an own</span>
+<a name="l00347"></a>00347 <span class="comment">         * getAssemblyAttributeSingle functions which will call get attribute</span>
+<a name="l00348"></a>00348 <span class="comment">         * single.</span>
+<a name="l00349"></a>00349 <span class="comment">         */</span>
+<a name="l00350"></a>00350 
+<a name="l00351"></a>00351         <span class="keywordflow">if</span> (attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a5882627a9fc1b118b1c34bf4da8a66cd">type</a> == <a class="code" href="../../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa449daa71d0cde48a1b8d99ba2d210cd">kCipByteArray</a>
+<a name="l00352"></a>00352             &amp;&amp; instance-&gt;cip_class-&gt;class_id == kCipAssemblyClassCode) {
+<a name="l00353"></a>00353           <span class="comment">/* we are getting a byte array of a assembly object, kick out to the app callback */</span>
+<a name="l00354"></a>00354           <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot; -&gt; getAttributeSingle CIP_BYTE_ARRAY\r\n&quot;</span>);
+<a name="l00355"></a>00355           <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent.">BeforeAssemblyDataSend</a>(instance);
+<a name="l00356"></a>00356         }
+<a name="l00357"></a>00357 
+<a name="l00358"></a>00358         message_router_response-&gt;data_length = <a class="code" href="../../d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer.">EncodeData</a>(attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a5882627a9fc1b118b1c34bf4da8a66cd">type</a>,
+<a name="l00359"></a>00359                                                           attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>,
+<a name="l00360"></a>00360                                                           &amp;message);
+<a name="l00361"></a>00361         message_router_response-&gt;general_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a131dea3eabc52d5f3b24c292577048f3">kCipErrorSuccess</a>;
+<a name="l00362"></a>00362       }
+<a name="l00363"></a>00363     }
+<a name="l00364"></a>00364 
+<a name="l00365"></a>00365   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00366"></a>00366 }
+<a name="l00367"></a>00367 
+<a name="l00368"></a><a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e">00368</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e">GetAttributeAllTcpIpInterface</a>(
+<a name="l00369"></a>00369   <a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance,
+<a name="l00370"></a>00370   <a class="code" href="../../dc/d16/structCipMessageRouterRequest.html" title="CIP Message Router Request.">CipMessageRouterRequest</a> *message_router_request,
+<a name="l00371"></a>00371   <a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html" title="CIP Message Router Response.">CipMessageRouterResponse</a> *message_router_response,
+<a name="l00372"></a>00372   <span class="keyword">struct</span> sockaddr *originator_address) {
+<a name="l00373"></a>00373 
+<a name="l00374"></a>00374   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *response = message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>; <span class="comment">/* pointer into the reply */</span>
+<a name="l00375"></a>00375   <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#ada5c4109b95cb6635f4aa32a2e6d74bf">attributes</a>;
+<a name="l00376"></a>00376 
+<a name="l00377"></a>00377   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#aa4893264d371cf20b178deda0e616c58">number_of_attributes</a>; j++) <span class="comment">/* for each instance attribute of this class */</span>
+<a name="l00378"></a>00378   {
+<a name="l00379"></a>00379     <span class="keywordtype">int</span> attribute_number = attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a8ef9e76a42d35217da662d4e583ecde7">attribute_number</a>;
+<a name="l00380"></a>00380     <span class="keywordflow">if</span> (attribute_number &lt; 32) <span class="comment">/* only return attributes that are flagged as being part of GetAttributeALl */</span>
+<a name="l00381"></a>00381     {
+<a name="l00382"></a>00382       message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#ad77c58ca6a008b6dc0fdef151ebb7a8e">request_path</a>.<a class="code" href="../../d5/dd2/structCipEpath.html#a4c9dee9e353080f53bcc041745849bbe">attribute_number</a> = attribute_number;
+<a name="l00383"></a>00383 
+<a name="l00384"></a>00384       <span class="keywordflow">if</span> (8 == attribute_number) { <span class="comment">/* insert 6 zeros for the required empty safety network number according to Table 5-3.10 */</span>
+<a name="l00385"></a>00385         memset(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>, 0, 6);
+<a name="l00386"></a>00386         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 6;
+<a name="l00387"></a>00387       }
+<a name="l00388"></a>00388 
+<a name="l00389"></a>00389       <span class="keywordflow">if</span> ( <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>
+<a name="l00390"></a>00390            != <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface</a>(instance, message_router_request,
+<a name="l00391"></a>00391                                                message_router_response,
+<a name="l00392"></a>00392                                                originator_address) ) {
+<a name="l00393"></a>00393         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> = response;
+<a name="l00394"></a>00394         <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00395"></a>00395       }
+<a name="l00396"></a>00396       message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a>;
 <a name="l00397"></a>00397 
-<a name="l00398"></a>00398       <span class="keywordflow">if</span> (8 == attribute_number) { <span class="comment">/* insert 6 zeros for the required empty safety network number according to Table 5-3.10 */</span>
-<a name="l00399"></a>00399         memset(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>, 0, 6);
-<a name="l00400"></a>00400         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 6;
-<a name="l00401"></a>00401       }
-<a name="l00402"></a>00402 
-<a name="l00403"></a>00403       <span class="keywordflow">if</span> ( <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>
-<a name="l00404"></a>00404            != <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface</a>(instance, message_router_request,
-<a name="l00405"></a>00405                                                message_router_response,
-<a name="l00406"></a>00406                                                originator_address) ) {
-<a name="l00407"></a>00407         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> = response;
-<a name="l00408"></a>00408         <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l00409"></a>00409       }
-<a name="l00410"></a>00410       message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a>;
-<a name="l00411"></a>00411 
-<a name="l00412"></a>00412       <span class="keywordflow">if</span> (9 == attribute_number) {
-<a name="l00413"></a>00413         <span class="comment">/* returning default value for unimplemented attributes 10,11 and 12 */</span>
+<a name="l00398"></a>00398       <span class="keywordflow">if</span> (9 == attribute_number) {
+<a name="l00399"></a>00399         <span class="comment">/* returning default value for unimplemented attributes 10,11 and 12 */</span>
+<a name="l00400"></a>00400 
+<a name="l00401"></a>00401         <span class="comment">/* attribute 10, type: BOOL, default value: 0 */</span>
+<a name="l00402"></a>00402         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 6;
+<a name="l00403"></a>00403         *(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>) = 0;
+<a name="l00404"></a>00404         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 1;
+<a name="l00405"></a>00405 
+<a name="l00406"></a>00406         <span class="comment">/* attribute 11, type: STRUCT OF USINT, ARRAY of 6 USINTs, ARRAY of 28 USINTs default value: 0 */</span>
+<a name="l00407"></a>00407         memset(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>, 0, 29);
+<a name="l00408"></a>00408         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 29;
+<a name="l00409"></a>00409 
+<a name="l00410"></a>00410         <span class="comment">/* attribute 12, type: BOOL default value: 0 */</span>
+<a name="l00411"></a>00411         *(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>) = 0;
+<a name="l00412"></a>00412         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 1;
+<a name="l00413"></a>00413       }
 <a name="l00414"></a>00414 
-<a name="l00415"></a>00415         <span class="comment">/* attribute 10, type: BOOL, default value: 0 */</span>
-<a name="l00416"></a>00416         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 6;
-<a name="l00417"></a>00417         *(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>) = 0;
-<a name="l00418"></a>00418         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 1;
-<a name="l00419"></a>00419 
-<a name="l00420"></a>00420         <span class="comment">/* attribute 11, type: STRUCT OF USINT, ARRAY of 6 USINTs, ARRAY of 28 USINTs default value: 0 */</span>
-<a name="l00421"></a>00421         memset(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>, 0, 29);
-<a name="l00422"></a>00422         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 29;
-<a name="l00423"></a>00423 
-<a name="l00424"></a>00424         <span class="comment">/* attribute 12, type: BOOL default value: 0 */</span>
-<a name="l00425"></a>00425         *(message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>) = 0;
-<a name="l00426"></a>00426         message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> += 1;
-<a name="l00427"></a>00427       }
-<a name="l00428"></a>00428 
-<a name="l00429"></a>00429     }
-<a name="l00430"></a>00430     attribute++;
-<a name="l00431"></a>00431   }
-<a name="l00432"></a>00432   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a> = message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>
-<a name="l00433"></a>00433                                          - response;
-<a name="l00434"></a>00434   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> = response;
-<a name="l00435"></a>00435 
-<a name="l00436"></a>00436   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
-<a name="l00437"></a>00437 }
-<a name="l00438"></a>00438 
-<a name="l00439"></a><a class="code" href="../../d1/dad/ciptcpipinterface_8h.html#ab17a8c773efeaebc86149f9a4dade5e2">00439</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ab17a8c773efeaebc86149f9a4dade5e2" title="Public Method to get Encapsulation Inactivity Timeout Value.">GetEncapsulationInactivityTimeout</a>(<a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance) {
-<a name="l00440"></a>00440   <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute.">GetCipAttribute</a>(instance, 13);
-<a name="l00441"></a>00441   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> *data = (<a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> *) attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>;
-<a name="l00442"></a>00442   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> encapsulation_inactivity_timeout = *data;
-<a name="l00443"></a>00443   <span class="keywordflow">return</span> encapsulation_inactivity_timeout;
-<a name="l00444"></a>00444 }
-<a name="l00445"></a>00445 
+<a name="l00415"></a>00415     }
+<a name="l00416"></a>00416     attribute++;
+<a name="l00417"></a>00417   }
+<a name="l00418"></a>00418   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a1b6548497e7629c815b6f71b8dbaecbb">data_length</a> = message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a>
+<a name="l00419"></a>00419                                          - response;
+<a name="l00420"></a>00420   message_router_response-&gt;<a class="code" href="../../d0/d1f/structCipMessageRouterResponse.html#a20feba97168b4551ba1e483e9cf568ec">data</a> = response;
+<a name="l00421"></a>00421 
+<a name="l00422"></a>00422   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6">kEipStatusOkSend</a>;
+<a name="l00423"></a>00423 }
+<a name="l00424"></a>00424 
+<a name="l00425"></a><a class="code" href="../../d1/dad/ciptcpipinterface_8h.html#ab17a8c773efeaebc86149f9a4dade5e2">00425</a> <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#ab17a8c773efeaebc86149f9a4dade5e2" title="Public Method to get Encapsulation Inactivity Timeout Value.">GetEncapsulationInactivityTimeout</a>(<a class="code" href="../../d5/dc5/structcip__instance.html">CipInstance</a> *instance) {
+<a name="l00426"></a>00426   <a class="code" href="../../d4/d62/structCipAttributeStruct.html">CipAttributeStruct</a> *attribute = <a class="code" href="../../d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute.">GetCipAttribute</a>(instance, 13);
+<a name="l00427"></a>00427   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> *data = (<a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> *) attribute-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>;
+<a name="l00428"></a>00428   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> encapsulation_inactivity_timeout = *data;
+<a name="l00429"></a>00429   <span class="keywordflow">return</span> encapsulation_inactivity_timeout;
+<a name="l00430"></a>00430 }
+<a name="l00431"></a>00431 
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -551,7 +537,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html">ciptcpipinterface.c</a>      </li>
 
-    <li class="footer">Generated on Mon Sep 25 2017 15:40:32 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Sep 25 2017 15:56:23 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

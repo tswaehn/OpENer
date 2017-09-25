@@ -94,7 +94,6 @@ var searchData=
   ['kcipudint',['kCipUdint',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a27bf79ffe35ed7d8a9ba21eff19bee1a',1,'ciptypes.h']]],
   ['kcipudintudintudintudintudintstring',['kCipUdintUdintUdintUdintUdintString',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a5149b2857cd16b6a1e2e704d91abcc21',1,'ciptypes.h']]],
   ['kcipuint',['kCipUint',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a0a27ee2736846092c289413a945524b1',1,'ciptypes.h']]],
-  ['kcipuintzero',['kCipUintZero',['../d2/d3d/cipcommon_8c.html#a9af891490aec616cdbf62412d6bdee2f',1,'cipcommon.c']]],
   ['kcipulint',['kCipUlint',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a2401cacdcc7d4422ef1a76c29589a9d9',1,'ciptypes.h']]],
   ['kcipusint',['kCipUsint',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985aa88d0d60450eee947f20647a8c977bd3',1,'ciptypes.h']]],
   ['kcipusintusint',['kCipUsintUsint',['../df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985a3df80ad0d2a0e4b5490d47f67e540b2a',1,'ciptypes.h']]],

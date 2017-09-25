@@ -17,6 +17,5 @@ var cipcommon_8c =
     [ "InsertService", "d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307", null ],
     [ "NotifyClass", "d2/d3d/cipcommon_8c.html#a1e62d2d38aa21b09d3e98c3e820ce4da", null ],
     [ "ShutdownCipStack", "d2/dc9/group__CIP__API.html#gaa57b527530adc2acda6febc500fd6831", null ],
-    [ "g_message_data_reply_buffer", "d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48", null ],
-    [ "kCipUintZero", "d2/d3d/cipcommon_8c.html#a9af891490aec616cdbf62412d6bdee2f", null ]
+    [ "g_message_data_reply_buffer", "d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48", null ]
 ];

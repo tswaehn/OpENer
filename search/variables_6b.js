@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['kcipuintzero',['kCipUintZero',['../d2/d3d/cipcommon_8c.html#a9af891490aec616cdbf62412d6bdee2f',1,'cipcommon.c']]],
   ['kconnectionpointconfig',['kConnectionPointConfig',['../df/d03/cipioconnection_8c.html#a40ed6631834d2bde61a033499870a0af',1,'cipioconnection.c']]],
   ['kconnectionpointconsumer',['kConnectionPointConsumer',['../df/d03/cipioconnection_8c.html#aabcddf69bfc448fff15044d61dbf9b65',1,'cipioconnection.c']]],
   ['kconnectionpointproducer',['kConnectionPointProducer',['../df/d03/cipioconnection_8c.html#ac91e927d82030bc35f3f54cb3cf21452',1,'cipioconnection.c']]],

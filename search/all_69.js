@@ -5,6 +5,7 @@ var searchData=
   ['in_5fport_5ft',['in_port_t',['../db/d9c/WIN32_2sample__application_2opener__user__conf_8h.html#adc5174418a78989eb51ef56f622db6e3',1,'opener_user_conf.h']]],
   ['inactivity_5fwatchdog_5ftimer',['inactivity_watchdog_timer',['../d1/d48/structconnection__object.html#a64859c26af1c754ea88feee0a7e77325',1,'connection_object']]],
   ['initializecipidentiy',['InitializeCipIdentiy',['../dd/dc4/cipidentity_8c.html#a5fc7e7b16b1a6f9c8c02a2700e77feb5',1,'cipidentity.c']]],
+  ['initializecipmessagerouterclass',['InitializeCipMessageRouterClass',['../d9/d7d/cipmessagerouter_8c.html#aa48077419a6045debf033e81946ee40c',1,'cipmessagerouter.c']]],
   ['initializeclass3connectiondata',['InitializeClass3ConnectionData',['../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133',1,'InitializeClass3ConnectionData(void):&#160;cipclass3connection.c'],['../d2/d11/cipclass3connection_8h.html#a2afaf72caf177920d6b99c503d7fc133',1,'InitializeClass3ConnectionData(void):&#160;cipclass3connection.c']]],
   ['initializeconnectionmanager',['InitializeConnectionManager',['../d5/d35/cipconnectionmanager_8c.html#adfbeb6c3cf13ac50049d5063e54a71fd',1,'cipconnectionmanager.c']]],
   ['initializeconnectionmanagerdata',['InitializeConnectionManagerData',['../d5/d35/cipconnectionmanager_8c.html#afd7a513de61e9d83b59c3505733448b5',1,'cipconnectionmanager.c']]],

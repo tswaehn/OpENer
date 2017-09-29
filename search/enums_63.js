@@ -13,6 +13,7 @@ var searchData=
   ['connection_5fpoint_5ftype',['connection_point_type',['../df/d28/ciptypes_8h.html#ab97ef8cc5f7c9e2ab831d9d99e506725',1,'ciptypes.h']]],
   ['connectionmanagerextendedstatuscode',['ConnectionManagerExtendedStatusCode',['../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759',1,'cipconnectionmanager.h']]],
   ['connectionmanagergeneralstatus',['ConnectionManagerGeneralStatus',['../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6',1,'cipconnectionmanager.h']]],
+  ['connectionobjectfixedvariable',['ConnectionObjectFixedVariable',['../d2/da3/cipconnectionmanager_8h.html#a4cb5e90be0ff984114725ab4a7027716',1,'cipconnectionmanager.h']]],
   ['connectionstate',['ConnectionState',['../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9b',1,'cipconnectionmanager.h']]],
   ['connectiontriggertype',['ConnectionTriggerType',['../d2/da3/cipconnectionmanager_8h.html#a096f9657e36899584e7ee27915734b33',1,'cipconnectionmanager.h']]],
   ['connectiontype',['ConnectionType',['../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81f',1,'cipconnectionmanager.h']]]

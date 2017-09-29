@@ -141,6 +141,7 @@ var searchData=
   ['connectionmanagergeneralstatus',['ConnectionManagerGeneralStatus',['../d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6',1,'cipconnectionmanager.h']]],
   ['connectionmanagerinit',['ConnectionManagerInit',['../d5/d35/cipconnectionmanager_8c.html#a5ab0de6894d23e8fe84a6b46797c2212',1,'ConnectionManagerInit(EipUint16 unique_connection_id):&#160;cipconnectionmanager.c'],['../d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212',1,'ConnectionManagerInit(EipUint16 unique_connection_id):&#160;cipconnectionmanager.c']]],
   ['connectionobject',['ConnectionObject',['../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700',1,'ConnectionObject():&#160;cipconnectionmanager.h'],['../d4/d38/opener__api_8h.html#a6df28653152020381371102e1993a3e1',1,'ConnectionObject():&#160;opener_api.h']]],
+  ['connectionobjectfixedvariable',['ConnectionObjectFixedVariable',['../d2/da3/cipconnectionmanager_8h.html#a4cb5e90be0ff984114725ab4a7027716',1,'cipconnectionmanager.h']]],
   ['connectionpointtype',['ConnectionPointType',['../df/d28/ciptypes_8h.html#aae064ca86d6d2ef9b60e4234e25197bd',1,'ciptypes.h']]],
   ['connectionreceivedatafunction',['ConnectionReceiveDataFunction',['../d2/dc9/group__CIP__API.html#gaac5ac35ed35317f29e3455e92f450623',1,'opener_api.h']]],
   ['connectionsenddatafunction',['ConnectionSendDataFunction',['../d2/dc9/group__CIP__API.html#gaa870412e93039a338e73edc08e9cd68a',1,'opener_api.h']]],

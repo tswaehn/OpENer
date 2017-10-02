@@ -6,5 +6,12 @@ var searchData=
   ['data_5fsegment',['data_segment',['../dd/d06/structCipConnectionPath.html#ad67cf3370c00161393ded7f91a0b690f',1,'CipConnectionPath']]],
   ['device_5ftype',['device_type',['../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7',1,'electronic_key_format_4::device_type()'],['../df/d55/structCipKeyData.html#a593b15c9ce4bb6b4441ee0635c1f9796',1,'CipKeyData::device_type()']]],
   ['device_5ftype_5f',['device_type_',['../d5/d35/cipconnectionmanager_8c.html#a4a26b0364996689eb8704fcde6090cbe',1,'device_type_():&#160;cipidentity.c'],['../dd/dc4/cipidentity_8c.html#a4a26b0364996689eb8704fcde6090cbe',1,'device_type_():&#160;cipidentity.c'],['../d2/dbd/encap_8c.html#a4a26b0364996689eb8704fcde6090cbe',1,'device_type_():&#160;cipidentity.c']]],
-  ['domain_5fname',['domain_name',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a873c0c29956214d7fc4b73f57ba19181',1,'CipTcpIpNetworkInterfaceConfiguration']]]
+  ['domain_5fname',['domain_name',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a873c0c29956214d7fc4b73f57ba19181',1,'CipTcpIpNetworkInterfaceConfiguration']]],
+  ['dscp_5fevent',['dscp_event',['../dd/d34/cipqos_8c.html#a54e6e0e989ff121222cb0591ff09b5cc',1,'cipqos.c']]],
+  ['dscp_5fexplicit',['dscp_explicit',['../dd/d34/cipqos_8c.html#a5e6d82599f861d28794dbbc9061d28f0',1,'cipqos.c']]],
+  ['dscp_5fgeneral',['dscp_general',['../dd/d34/cipqos_8c.html#af8e26cc30fcf9710c86f2f3c68e9614a',1,'cipqos.c']]],
+  ['dscp_5fhigh',['dscp_high',['../dd/d34/cipqos_8c.html#a3aa9f412627eda91c717d157d9296255',1,'cipqos.c']]],
+  ['dscp_5flow',['dscp_low',['../dd/d34/cipqos_8c.html#adf046b5c6d97d71951bd0deadc2146b5',1,'cipqos.c']]],
+  ['dscp_5fscheduled',['dscp_scheduled',['../dd/d34/cipqos_8c.html#a3c8a66648032f2dc4fdbb220e647c145',1,'cipqos.c']]],
+  ['dscp_5furgent',['dscp_urgent',['../dd/d34/cipqos_8c.html#ae829b863c3f26fb6f8818bf968528089',1,'cipqos.c']]]
 ];

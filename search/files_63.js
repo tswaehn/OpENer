@@ -21,6 +21,8 @@ var searchData=
   ['cipioconnection_2eh',['cipioconnection.h',['../de/d45/cipioconnection_8h.html',1,'']]],
   ['cipmessagerouter_2ec',['cipmessagerouter.c',['../d9/d7d/cipmessagerouter_8c.html',1,'']]],
   ['cipmessagerouter_2eh',['cipmessagerouter.h',['../d2/d75/cipmessagerouter_8h.html',1,'']]],
+  ['cipqos_2ec',['cipqos.c',['../dd/d34/cipqos_8c.html',1,'']]],
+  ['cipqos_2eh',['cipqos.h',['../d0/d3c/cipqos_8h.html',1,'']]],
   ['ciptcpipinterface_2ec',['ciptcpipinterface.c',['../dd/d20/ciptcpipinterface_8c.html',1,'']]],
   ['ciptcpipinterface_2eh',['ciptcpipinterface.h',['../d1/dad/ciptcpipinterface_8h.html',1,'']]],
   ['ciptypes_2eh',['ciptypes.h',['../df/d28/ciptypes_8h.html',1,'']]],

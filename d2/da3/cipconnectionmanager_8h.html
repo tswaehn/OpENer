@@ -178,7 +178,7 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adf9e9a94c541d59cd84d1c8ff4254325">kConnectionManagerExtendedStatusCodeInvalidConfigurationSize</a> =  0x0126, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d">kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize</a> =  0x0127, 
-<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759aefc42a340a39ea5b87a1131c4f98f69d">kConnectionManagerExtendedStatusCodeErrorInvalidToOConnectionSize</a> =  0x0128, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067">kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize</a> =  0x0128, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90">kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath</a>, 
 <br/>
 &#160;&#160;<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a40a08a853d51ce12008d4c935dbef985">kConnectionManagerExtendedStatusCodeInvalidConsumingApplicationPath</a> =  0x012A, 
@@ -282,6 +282,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca4dd1fc1164de47a7d6cae3ba803e37e0">kForwardOpenConnectionTypeReserved</a> =  0x6000
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection Type constants of the Forward Open service request Indicates either a.  <a href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685">ForwardOpenPriority</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685a7f22f4108bd972e238a08b64280c0d37">kForwardOpenPriorityLow</a> =  0x000, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685a0cfa4d2eb98785498035101dfc9b4550">kForwardOpenPriorityHigh</a> =  0x400, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685af0a302f72a66651c9fb1363d1b8a3c64">kForwardOpenPriorityScheduled</a> =  0x800, 
+<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685a01ba2bec7fabaf958e7a5380b7b9d44b">kForwardOpenPriorityUrgent</a> =  0xC00
+ }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a> { <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6ac3bd2307f5b01b33acdffd48bdfb8c01">kProductionTriggerInvalid</a> =  -1, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a2716ecbc6f36e1f7f6634d6a7c66767f">kProductionTriggerCyclic</a> =  0, 
 <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6a7a3346a90193d191711379b9920eed32">kProductionTriggerChangeOfState</a> =  1, 
@@ -310,8 +315,10 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a4cb5e90be0ff984114725ab4a7027716">ConnectionObjectFixedVariable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7789474ea0807d66db46000487051e9d">GetConnectionObjectTargetToOriginatorFixedOrVariableConnectionSize</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const RESTRICT <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c">ForwardOpenConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#abe98e638bb3ac01dc06d7d944a1f30bf">GetConnectionType</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> network_connection_parameter)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the connection type of the supplied network connection parameter  <a href="#abe98e638bb3ac01dc06d7d944a1f30bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685">ForwardOpenPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a3483de0add18746a97785ed4f21ad2b1">GetPriorityForQos</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> network_connection_parameter)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7a07ae8e40025b1ed31cb09e84d172c0">GetProductionInhibitTime</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#affddff21539d9aca8230015a12ebd6e6">ProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ac0268f2d6ccda7e8cad9c2c37715510e">GetProductionTrigger</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a0943ab7d9dfedcfda9b11513080d47b5">GetTargetToOriginatorRequestedPackedInterval</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a0e746d9ec9d580b522cfae83910831cd">GetTargetToOriginatorRequestedPackedInterval</a> (const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const RESTRICT <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a2ca3eb3dc7fe805b410d849612720b4c">IsConnectedOutputAssembly</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> instance_number)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aef50a0eee3ff5df3320b49f872a7f3c4">RemoveFromActiveConnections</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
@@ -345,7 +352,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00173">173</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00195">195</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +381,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00164">164</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00186">186</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -403,9 +410,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00165">165</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00187">187</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00309">HandleReceivedConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00310">HandleReceivedConnectedData()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +443,9 @@ Functions</h2></td></tr>
 
 <p>similar macros for comparing 16 bit sequence numbers  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69" title="similar macros for comparing 16 bit sequence numbers  SEQ_LEQ16(a, b) Checks if sequence number a is ...">SEQ_LEQ16(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a7f3f2e74e4e7686acc09cbd38acdb3d8">SEQ_GEQ16(a, b)</a> Checks if sequence number a is greater or equal than b </p>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00172">172</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00194">194</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00846">HandleReceivedIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00855">HandleReceivedIoConnectionData()</a>.</p>
 
 </div>
 </div>
@@ -469,7 +476,7 @@ Functions</h2></td></tr>
 
 <p>macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681" title="macros for comparing sequence numbers according to CIP spec vol 2 3-4.2 for int type variables  SEQ_L...">SEQ_LEQ32(a, b)</a> Checks if sequence number a is less or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#adb0806a9e513fd203c29dab7e850efcf">SEQ_GEQ32(a, b)</a> Checks if sequence number a is greater or equal than b  <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c">SEQ_GT32(a, b)</a> Checks if sequence number a is greater than b </p>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00163">163</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00185">185</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -593,7 +600,7 @@ Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize" ref="a2c7b6cc102450d2b993391113bd2b759a3607b492711350b9d9979df218f0949d" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidOToTConnectionSize</em>&nbsp;</td><td>
 <p>The size of the consuming object declared in the Forward_Open request and available on the target does not match the size declared in the O-&gt;T Network Connection Parameter. Two additional status words shall follow, the error code plus the max size in words </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759aefc42a340a39ea5b87a1131c4f98f69d"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidToOConnectionSize" ref="a2c7b6cc102450d2b993391113bd2b759aefc42a340a39ea5b87a1131c4f98f69d" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidToOConnectionSize</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize" ref="a2c7b6cc102450d2b993391113bd2b759adc76a9410b4fab054d9b4e17d0c5b067" args="" -->kConnectionManagerExtendedStatusCodeErrorInvalidTToOConnectionSize</em>&nbsp;</td><td>
 <p>The size of the consuming object declared in the Forward_Open request and available on the target does not match the size declared in the T-&gt;O Network Connection Parameter. Two additional status words shall follow, the error code plus the max size in words </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90"></a><!-- doxytag: member="kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath" ref="a2c7b6cc102450d2b993391113bd2b759a27cf9777eb05383c79d0a8064f00db90" args="" -->kConnectionManagerExtendedStatusCodeInvalidConfigurationApplicationPath</em>&nbsp;</td><td>
@@ -689,7 +696,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00040">40</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00047">47</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +735,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00028">28</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00035">35</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +758,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00194">194</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00216">216</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +795,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00176">176</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00198">198</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +822,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00142">142</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00149">149</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +851,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00187">187</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00209">209</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -883,6 +890,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8e5a1c3d3ba5bd653a6e7f3bad03f685"></a><!-- doxytag: member="cipconnectionmanager.h::ForwardOpenPriority" ref="a8e5a1c3d3ba5bd653a6e7f3bad03f685" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685">ForwardOpenPriority</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a8e5a1c3d3ba5bd653a6e7f3bad03f685a7f22f4108bd972e238a08b64280c0d37"></a><!-- doxytag: member="kForwardOpenPriorityLow" ref="a8e5a1c3d3ba5bd653a6e7f3bad03f685a7f22f4108bd972e238a08b64280c0d37" args="" -->kForwardOpenPriorityLow</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8e5a1c3d3ba5bd653a6e7f3bad03f685a0cfa4d2eb98785498035101dfc9b4550"></a><!-- doxytag: member="kForwardOpenPriorityHigh" ref="a8e5a1c3d3ba5bd653a6e7f3bad03f685a0cfa4d2eb98785498035101dfc9b4550" args="" -->kForwardOpenPriorityHigh</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8e5a1c3d3ba5bd653a6e7f3bad03f685af0a302f72a66651c9fb1363d1b8a3c64"></a><!-- doxytag: member="kForwardOpenPriorityScheduled" ref="a8e5a1c3d3ba5bd653a6e7f3bad03f685af0a302f72a66651c9fb1363d1b8a3c64" args="" -->kForwardOpenPriorityScheduled</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8e5a1c3d3ba5bd653a6e7f3bad03f685a01ba2bec7fabaf958e7a5380b7b9d44b"></a><!-- doxytag: member="kForwardOpenPriorityUrgent" ref="a8e5a1c3d3ba5bd653a6e7f3bad03f685a01ba2bec7fabaf958e7a5380b7b9d44b" args="" -->kForwardOpenPriorityUrgent</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00028">28</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="affddff21539d9aca8230015a12ebd6e6"></a><!-- doxytag: member="cipconnectionmanager.h::ProductionTrigger" ref="affddff21539d9aca8230015a12ebd6e6" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -906,7 +940,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00149">149</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00156">156</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +973,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00200">200</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00222">222</a> of file <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>.</p>
 
 </div>
 </div>
@@ -968,9 +1002,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01557">1557</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01572">1572</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00325">connection_object::first_connection_object</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00131">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00180">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00324">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00231">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00347">connection_object::first_connection_object</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00132">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00202">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00253">connection_object::state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>.</p>
 
@@ -1008,9 +1042,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01535">1535</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01550">1550</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00238">IApp_CloseSocket_udp()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00177">kConnectionStateNonExistent</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01567">RemoveFromActiveConnections()</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00239">IApp_CloseSocket_udp()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00199">kConnectionStateNonExistent</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01582">RemoveFromActiveConnections()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00372">CloseAllConnections()</a>.</p>
 
@@ -1056,11 +1090,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>kEipStatusOk if successful, otherwise kEipStatusError </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00273">273</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00274">274</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01600">AddConnectableObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00176">CreateCipClass()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00767">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00636">ForwardOpen()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00137">g_incarnation_id</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00672">GetAttributeAll()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00375">GetAttributeSingle()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00828">GetConnectionOwner()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00249">InitializeConnectionManager()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01658">InitializeConnectionManagerData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00330">InsertService()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00093">kForwardClose</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00092">kForwardOpen</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00067">kGetAttributeAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00078">kGetAttributeSingle</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00095">kGetConnectionOwner</a>.</p>
+<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01615">AddConnectableObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00182">CreateCipClass()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00782">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00651">ForwardOpen()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00138">g_incarnation_id</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00688">GetAttributeAll()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00387">GetAttributeSingle()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00843">GetConnectionOwner()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00250">InitializeConnectionManager()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01673">InitializeConnectionManagerData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00340">InsertService()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00093">kForwardClose</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00092">kForwardOpen</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00067">kGetAttributeAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00078">kGetAttributeSingle</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00095">kGetConnectionOwner</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00033">CipStackInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00034">CipStackInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1114,7 +1148,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01551">1551</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01566">1566</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00127">GetIoConnectionForConnectionData()</a>.</p>
 
@@ -1151,9 +1185,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00700">700</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00715">715</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00246">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00245">connection_object::cip_produced_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00257">connection_object::connection_timeout_multiplier</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00241">connection_object::consumed_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00289">connection_object::eip_level_sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00284">connection_object::eip_level_sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00242">connection_object::expected_packet_rate</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00243">GetConnectionId()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00301">connection_object::inactivity_watchdog_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00023">kForwardOpenConnectionTypePointToPointConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00202">kWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00269">connection_object::o_to_t_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00268">connection_object::o_to_t_requested_packet_interval</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00240">connection_object::produced_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00256">connection_object::production_inhibit_time</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00308">connection_object::production_inhibit_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00297">connection_object::sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00295">connection_object::sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00271">connection_object::t_to_o_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00300">connection_object::transmission_trigger_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00233">connection_object::transport_type_class_trigger</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00248">connection_object::watchdog_timeout_action</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00268">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00267">connection_object::cip_produced_connection_id</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00279">connection_object::connection_timeout_multiplier</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00263">connection_object::consumed_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00311">connection_object::eip_level_sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::eip_level_sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00264">connection_object::expected_packet_rate</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00244">GetConnectionId()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00323">connection_object::inactivity_watchdog_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00023">kForwardOpenConnectionTypePointToPointConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00224">kWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00291">connection_object::o_to_t_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00290">connection_object::o_to_t_requested_packet_interval</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00262">connection_object::produced_connection_size</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00278">connection_object::production_inhibit_time</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00330">connection_object::production_inhibit_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00319">connection_object::sequence_count_consuming</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00317">connection_object::sequence_count_producing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00293">connection_object::t_to_o_network_connection_parameter</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00322">connection_object::transmission_trigger_timer</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00255">connection_object::transport_type_class_trigger</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00270">connection_object::watchdog_timeout_action</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>.</p>
 
@@ -1190,11 +1224,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01102">1102</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01117">1117</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00246">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00131">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00180">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00324">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00231">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00268">connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00132">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00202">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00253">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00309">HandleReceivedConnectedData()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00066">NotifyConnectedCommonPacketFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00310">HandleReceivedConnectedData()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00066">NotifyConnectedCommonPacketFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1229,9 +1263,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>pointer to connected Object 0 .. connection not present in device </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01119">1119</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01134">1134</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00275">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00131">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00180">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00324">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00231">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00297">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00132">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00202">kConnectionStateEstablished</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00253">connection_object::state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00169">GetExclusiveOwnerConnection()</a>.</p>
 
@@ -1260,9 +1294,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00106">106</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00107">107</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00195">kConnectionObjectFixedConnectionSize</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00196">kConnectionObjectVariableConnectionSize</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00217">kConnectionObjectFixedConnectionSize</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00218">kConnectionObjectVariableConnectionSize</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00199">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
@@ -1293,16 +1327,55 @@ Here is the caller graph for this function:</div>
 
 <p>returns the connection type of the supplied network connection parameter </p>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00439">439</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00440">440</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00636">ForwardOpen()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00882">OpenCommunicationChannels()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01237">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00285">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00651">ForwardOpen()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00891">OpenCommunicationChannels()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01252">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_abe98e638bb3ac01dc06d7d944a1f30bf_icgraph.svg" width="100%" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3483de0add18746a97785ed4f21ad2b1"></a><!-- doxytag: member="cipconnectionmanager.h::GetPriorityForQos" ref="a3483de0add18746a97785ed4f21ad2b1" args="(EipUint16 network_connection_parameter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a8e5a1c3d3ba5bd653a6e7f3bad03f685">ForwardOpenPriority</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a3483de0add18746a97785ed4f21ad2b1">GetPriorityForQos</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a>&#160;</td>
+          <td class="paramname"><em>network_connection_parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00454">454</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+
+<p>References <a class="el" href="../../dd/d34/cipqos_8c_source.html#l00089">GetPriorityForSocket()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00378">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00530">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00424">OpenProducingPointToPointConnection()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a3483de0add18746a97785ed4f21ad2b1_cgraph.svg" width="331" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/da3/cipconnectionmanager_8h_a3483de0add18746a97785ed4f21ad2b1_icgraph.svg" width="100%" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1324,9 +1397,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00089">89</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00090">90</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00256">connection_object::production_inhibit_time</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00278">connection_object::production_inhibit_time</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00097">ProcessProductionInhibitTime()</a>.</p>
 
@@ -1355,9 +1428,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00052">52</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00053">53</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00153">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00152">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00151">kProductionTriggerCyclic</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00150">kProductionTriggerInvalid</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00233">connection_object::transport_type_class_trigger</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00160">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00159">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00158">kProductionTriggerCyclic</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00157">kProductionTriggerInvalid</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00255">connection_object::transport_type_class_trigger</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00097">ProcessProductionInhibitTime()</a>.</p>
 
@@ -1368,6 +1441,23 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0943ab7d9dfedcfda9b11513080d47b5"></a><!-- doxytag: member="cipconnectionmanager.h::GetTargetToOriginatorRequestedPackedInterval" ref="a0943ab7d9dfedcfda9b11513080d47b5" args="(const ConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a0e746d9ec9d580b522cfae83910831cd">GetTargetToOriginatorRequestedPackedInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1386,7 +1476,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00100">100</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00101">101</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00097">ProcessProductionInhibitTime()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00199">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
@@ -1415,9 +1505,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01585">1585</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01600">1600</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00275">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00131">g_active_connection_list</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00324">connection_object::next_connection_object</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00297">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00163">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00132">g_active_connection_list</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::next_connection_object</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00123">SetAssemblyAttributeSingle()</a>.</p>
 
@@ -1454,11 +1544,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01567">1567</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01582">1582</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00325">connection_object::first_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00177">kConnectionStateNonExistent</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00324">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00231">connection_object::state</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00347">connection_object::first_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00199">kConnectionStateNonExistent</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::next_connection_object</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00253">connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00943">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01535">CloseConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00952">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01550">CloseConnection()</a>, and <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">EstablishClass3Connection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1495,9 +1585,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00094">94</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00095">95</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00256">connection_object::production_inhibit_time</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00278">connection_object::production_inhibit_time</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00097">ProcessProductionInhibitTime()</a>.</p>
 
@@ -1537,9 +1627,9 @@ Here is the caller graph for this function:</div>
 <div class="memdoc">
 <p>&lt; Invalid value </p>
 
-<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00069">69</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00070">70</a> of file <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html">cipconnectionmanager.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00153">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00152">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00151">kProductionTriggerCyclic</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00233">connection_object::transport_type_class_trigger</a>.</p>
+<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00160">kProductionTriggerApplicationObjectTriggered</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00159">kProductionTriggerChangeOfState</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00158">kProductionTriggerCyclic</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00255">connection_object::transport_type_class_trigger</a>.</p>
 
 </div>
 </div>
@@ -1563,7 +1653,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html">cipconnectionmanager.h</a>      </li>
 
-    <li class="footer">Generated on Mon Oct 2 2017 13:40:02 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Oct 2 2017 15:38:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

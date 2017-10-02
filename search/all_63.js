@@ -77,6 +77,9 @@ var searchData=
   ['cipmessagerouterrequest',['CipMessageRouterRequest',['../dc/d16/structCipMessageRouterRequest.html',1,'']]],
   ['cipmessagerouterresponse',['CipMessageRouterResponse',['../d0/d1f/structCipMessageRouterResponse.html',1,'']]],
   ['cipoctet',['CipOctet',['../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1',1,'typedefs.h']]],
+  ['cipqos_2ec',['cipqos.c',['../dd/d34/cipqos_8c.html',1,'']]],
+  ['cipqos_2eh',['cipqos.h',['../d0/d3c/cipqos_8h.html',1,'']]],
+  ['cipqosinit',['CipQoSInit',['../dd/d34/cipqos_8c.html#a2260436cbdaebb25c39005aca7781ac7',1,'CipQoSInit():&#160;cipqos.c'],['../d0/d3c/cipqos_8h.html#ab9a656060dcf03c3f51dbd967dff3f52',1,'CipQoSInit(void):&#160;cipqos.c']]],
   ['cipreal',['CipReal',['../d7/d69/typedefs_8h.html#a73d94f1cd7e186b06d50a068d17ba942',1,'typedefs.h']]],
   ['ciprevision',['CipRevision',['../d0/d46/structCipRevision.html',1,'']]],
   ['ciproutepath',['CipRoutePath',['../d4/d41/structCipRoutePath.html',1,'']]],
@@ -166,7 +169,7 @@ var searchData=
   ['createcommonpacketformatstructure',['CreateCommonPacketFormatStructure',['../d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606',1,'CreateCommonPacketFormatStructure(const EipUint8 *data, int data_length, CipCommonPacketFormatData *common_packet_format_data):&#160;cpf.c'],['../d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606',1,'CreateCommonPacketFormatStructure(const EipUint8 *data, int data_length, CipCommonPacketFormatData *common_packet_format_data):&#160;cpf.c']]],
   ['createencapsulationstructure',['CreateEncapsulationStructure',['../d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7',1,'encap.c']]],
   ['createmessagerouterrequeststructure',['CreateMessageRouterRequestStructure',['../d9/d7d/cipmessagerouter_8c.html#acce609c2d88a22c290a00cd03991f78f',1,'cipmessagerouter.c']]],
-  ['createudpsocket',['CreateUdpSocket',['../d5/dc5/group__CIP__CALLBACK__API.html#gadae462526ab01253d39e4a54346f56ca',1,'CreateUdpSocket(UdpCommuncationDirection communication_direction, struct sockaddr_in *socket_data):&#160;generic_networkhandler.c'],['../d5/dc5/group__CIP__CALLBACK__API.html#gadae462526ab01253d39e4a54346f56ca',1,'CreateUdpSocket(UdpCommuncationDirection communication_direction, struct sockaddr_in *socket_data):&#160;generic_networkhandler.c']]],
+  ['createudpsocket',['CreateUdpSocket',['../d5/dc5/group__CIP__CALLBACK__API.html#ga5807bcc51621775c9aedbf58d3a7a6d3',1,'CreateUdpSocket(UdpCommuncationDirection communication_direction, struct sockaddr_in *socket_data, CipUsint qos_for_socket):&#160;generic_networkhandler.c'],['../d5/dc5/group__CIP__CALLBACK__API.html#ga5807bcc51621775c9aedbf58d3a7a6d3',1,'CreateUdpSocket(UdpCommuncationDirection communication_direction, struct sockaddr_in *socket_data, CipUsint qos_for_socket):&#160;generic_networkhandler.c']]],
   ['current_5fcommunication_5fbuffer_5fposition',['current_communication_buffer_position',['../d9/d42/structencapsulation__data.html#aea1f797ee9ab44d96af2ed76c65c7e5b',1,'encapsulation_data']]],
   ['current_5fseed_5fvalue',['current_seed_value',['../d9/d46/structRandom.html#ae213ba247901459f5aa0bdafc76b2765',1,'Random']]]
 ];

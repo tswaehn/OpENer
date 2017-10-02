@@ -24,6 +24,7 @@ var cipconnectionmanager_8c =
     [ "GetConnectionOwner", "d5/d35/cipconnectionmanager_8c.html#ae16e9a87ff707c95f370ba715a824d2a", null ],
     [ "GetConnectionType", "d5/d35/cipconnectionmanager_8c.html#abe98e638bb3ac01dc06d7d944a1f30bf", null ],
     [ "GetPaddedLogicalPath", "d5/d35/cipconnectionmanager_8c.html#ab83f6b364a19bd484d9cc4c6e6342057", null ],
+    [ "GetPriorityForQos", "d5/d35/cipconnectionmanager_8c.html#a3483de0add18746a97785ed4f21ad2b1", null ],
     [ "GetProductionInhibitTime", "d5/d35/cipconnectionmanager_8c.html#a7a07ae8e40025b1ed31cb09e84d172c0", null ],
     [ "GetProductionTrigger", "d5/d35/cipconnectionmanager_8c.html#ac0268f2d6ccda7e8cad9c2c37715510e", null ],
     [ "GetTargetToOriginatorRequestedPackedInterval", "d5/d35/cipconnectionmanager_8c.html#a0e746d9ec9d580b522cfae83910831cd", null ],

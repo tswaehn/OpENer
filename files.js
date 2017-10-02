@@ -26,6 +26,8 @@ var files =
     [ "src/cip/cipioconnection.h", "de/d45/cipioconnection_8h.html", "de/d45/cipioconnection_8h" ],
     [ "src/cip/cipmessagerouter.c", "d9/d7d/cipmessagerouter_8c.html", "d9/d7d/cipmessagerouter_8c" ],
     [ "src/cip/cipmessagerouter.h", "d2/d75/cipmessagerouter_8h.html", "d2/d75/cipmessagerouter_8h" ],
+    [ "src/cip/cipqos.c", "dd/d34/cipqos_8c.html", "dd/d34/cipqos_8c" ],
+    [ "src/cip/cipqos.h", "d0/d3c/cipqos_8h.html", "d0/d3c/cipqos_8h" ],
     [ "src/cip/ciptcpipinterface.c", "dd/d20/ciptcpipinterface_8c.html", "dd/d20/ciptcpipinterface_8c" ],
     [ "src/cip/ciptcpipinterface.h", "d1/dad/ciptcpipinterface_8h.html", "d1/dad/ciptcpipinterface_8h" ],
     [ "src/cip/ciptypes.h", "df/d28/ciptypes_8h.html", "df/d28/ciptypes_8h" ],

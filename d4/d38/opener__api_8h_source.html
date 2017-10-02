@@ -279,8 +279,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00650"></a>00650 
 <a name="l00658"></a>00658 <span class="keywordtype">void</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator.">RunIdleChanged</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> run_idle_value);
 <a name="l00659"></a>00659 
-<a name="l00676"></a>00676 <span class="keywordtype">int</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gadae462526ab01253d39e4a54346f56ca" title="create a producing or consuming UDP socket">CreateUdpSocket</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42" title="Communication direction of an UDP socket; consuming is receiver, producing is sender.">UdpCommuncationDirection</a> communication_direction,
-<a name="l00677"></a>00677                     <span class="keyword">struct</span> sockaddr_in *socket_data);
+<a name="l00676"></a>00676 <span class="keywordtype">int</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga5807bcc51621775c9aedbf58d3a7a6d3" title="create a producing or consuming UDP socket">CreateUdpSocket</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42" title="Communication direction of an UDP socket; consuming is receiver, producing is sender.">UdpCommuncationDirection</a> communication_direction,
+<a name="l00677"></a>00677                     <span class="keyword">struct</span> sockaddr_in *socket_data, <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> qos_for_socket);
 <a name="l00678"></a>00678 
 <a name="l00688"></a>00688 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a>
 <a name="l00689"></a>00689 <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518" title="create a producing or consuming UDP socket">SendUdpData</a>(<span class="keyword">struct</span> sockaddr_in *socket_data,
@@ -311,7 +311,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d4/d38/opener__api_8h.html">opener_api.h</a>      </li>
 
-    <li class="footer">Generated on Mon Oct 2 2017 13:40:02 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Oct 2 2017 15:38:08 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

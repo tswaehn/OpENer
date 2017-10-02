@@ -108,6 +108,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;winsock2.h&gt;</code><br/>
 <code>#include &lt;windows.h&gt;</code><br/>
 <code>#include &lt;Ws2tcpip.h&gt;</code><br/>
+<code>#include &lt;winsock.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="../../dd/dc7/WIN32_2networkhandler_8h_source.html">networkhandler.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html">generic_networkhandler.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/df9/encap_8h_source.html">encap.h</a>&quot;</code><br/>
@@ -129,6 +130,7 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function shall return the current time in milliseconds relative to epoch, and shall be implemented in a port specific networkhandler.  <a href="#a2d91de751b888e7b5a5c2e2692fd4492"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c.html#a443a5019c1bb91b2490f96b0d0158e04">NetworkHandlerInitializePlatform</a> (void)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes platform dependent network handler initialization code.  <a href="#a443a5019c1bb91b2490f96b0d0158e04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c.html#a0db6c2ead1606d25fb6d9151e5c08d09">SetQosOnSocket</a> (int socket, <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> qos_value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c.html#a4af2b184144f7d807e8157ee8b474ecf">SetSocketToNonBlocking</a> (int socket_handle)</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
@@ -155,7 +157,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00044">44</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00045">45</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
 </div>
 </div>
@@ -173,9 +175,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00019">19</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00020">20</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00030">GetMilliSeconds()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00031">GetMilliSeconds()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -205,9 +207,9 @@ Here is the caller graph for this function:</div>
 <p>This function shall return the current time in milliseconds relative to epoch, and shall be implemented in a port specific networkhandler. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Current time relative to epoch as MilliSeconds </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00030">30</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00031">31</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00016">GetMicroSeconds()</a>, and <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00019">getMicroSeconds()</a>.</p>
+<p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00016">GetMicroSeconds()</a>, and <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00020">getMicroSeconds()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -237,9 +239,38 @@ Here is the call graph for this function:</div>
 <p>Executes platform dependent network handler initialization code. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>EipStatusOk if initialization was successful, otherwise EipStatusError </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00034">34</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00035">35</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
 <p>References <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0db6c2ead1606d25fb6d9151e5c08d09"></a><!-- doxytag: member="networkhandler.c::SetQosOnSocket" ref="a0db6c2ead1606d25fb6d9151e5c08d09" args="(int socket, CipUsint qos_value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a0db6c2ead1606d25fb6d9151e5c08d09">SetQosOnSocket</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
+          <td class="paramname"><em>qos_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00054">54</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
 </div>
 </div>
@@ -258,7 +289,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00048">48</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html#l00049">49</a> of file <a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c_source.html">networkhandler.c</a>.</p>
 
 </div>
 </div>
@@ -282,7 +313,7 @@ Here is the call graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d8/d6c/WIN32_2networkhandler_8c.html">networkhandler.c</a>      </li>
 
-    <li class="footer">Generated on Mon Oct 2 2017 13:40:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Oct 2 2017 15:38:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

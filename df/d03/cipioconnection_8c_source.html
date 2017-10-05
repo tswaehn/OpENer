@@ -789,245 +789,244 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00726"></a>00726 }
 <a name="l00727"></a>00727 
 <a name="l00728"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#a043e7b682698cb5a50ced76b6ce10293">00728</a> <span class="keywordtype">void</span> <a class="code" href="../../df/d03/cipioconnection_8c.html#a043e7b682698cb5a50ced76b6ce10293">HandleIoConnectionTimeOut</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00729"></a>00729   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *next_non_control_master_connection;
-<a name="l00730"></a>00730   <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection.">CheckIoConnectionEvent</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0],
-<a name="l00731"></a>00731                          connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
-<a name="l00732"></a>00732                          <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2a91f5cbaf05e3e1e95b9c262a851ae931">kIoConnectionEventTimedOut</a>);
-<a name="l00733"></a>00733 
-<a name="l00734"></a>00734   <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>
-<a name="l00735"></a>00735        == (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ccf723e8dce62eb578a046fd35a774f">t_to_o_network_connection_parameter</a>
-<a name="l00736"></a>00736            &amp; <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>) ) {
-<a name="l00737"></a>00737     <span class="keywordflow">switch</span> (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ada63f5853b16b3fa0d3c49b894157540">instance_type</a>) {
-<a name="l00738"></a>00738       <span class="keywordflow">case</span> <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa49da9a89c43c187253492f976225db82">kConnectionTypeIoExclusiveOwner</a>:
-<a name="l00739"></a>00739         <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
-<a name="l00740"></a>00740           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
-<a name="l00741"></a>00741           <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa1d880893638e59b11e4a2874c20ff5c3">kConnectionTypeIoInputOnly</a>);
-<a name="l00742"></a>00742         <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
-<a name="l00743"></a>00743           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
-<a name="l00744"></a>00744           <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fae26e447506c01160477cb3de20a1e438">kConnectionTypeIoListenOnly</a>);
-<a name="l00745"></a>00745         <span class="keywordflow">break</span>;
-<a name="l00746"></a>00746       <span class="keywordflow">case</span> <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa1d880893638e59b11e4a2874c20ff5c3">kConnectionTypeIoInputOnly</a>:
-<a name="l00747"></a>00747         <span class="keywordflow">if</span> (kEipInvalidSocket
-<a name="l00748"></a>00748             != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) { <span class="comment">/* we are the controlling input only connection find a new controller*/</span>
-<a name="l00749"></a>00749           next_non_control_master_connection =
-<a name="l00750"></a>00750             <a class="code" href="../../d1/dbc/appcontype_8c.html#a1cbf4348c1bb5f1949d7ed38c58b2f27" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr...">GetNextNonControlMasterConnection</a>(
-<a name="l00751"></a>00751               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1]);
-<a name="l00752"></a>00752           <span class="keywordflow">if</span> (NULL != next_non_control_master_connection) {
-<a name="l00753"></a>00753             next_non_control_master_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[
-<a name="l00754"></a>00754               <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
-<a name="l00755"></a>00755               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>];
-<a name="l00756"></a>00756             connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
-<a name="l00757"></a>00757               kEipInvalidSocket;
-<a name="l00758"></a>00758             next_non_control_master_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a> =
-<a name="l00759"></a>00759               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a>;
-<a name="l00760"></a>00760           } <span class="keywordflow">else</span> { <span class="comment">/* this was the last master connection close all listen only connections listening on the port */</span>
-<a name="l00761"></a>00761             <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
-<a name="l00762"></a>00762               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
-<a name="l00763"></a>00763               <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fae26e447506c01160477cb3de20a1e438">kConnectionTypeIoListenOnly</a>);
-<a name="l00764"></a>00764           }
-<a name="l00765"></a>00765         }
-<a name="l00766"></a>00766         <span class="keywordflow">break</span>;
-<a name="l00767"></a>00767       <span class="keywordflow">default</span>:
-<a name="l00768"></a>00768         <span class="keywordflow">break</span>;
-<a name="l00769"></a>00769     }
-<a name="l00770"></a>00770   }
-<a name="l00771"></a>00771 
-<a name="l00772"></a>00772   <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">OPENER_ASSERT</a>(NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a51af396f09a2874cecd1d463c85e2a34">connection_close_function</a>);
-<a name="l00773"></a>00773   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a51af396f09a2874cecd1d463c85e2a34">connection_close_function</a>(connection_object);
-<a name="l00774"></a>00774 }
-<a name="l00775"></a>00775 
-<a name="l00776"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#a41f8d71772b5defa587ac0da6124cc47">00776</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#a41f8d71772b5defa587ac0da6124cc47" title="Send the data from the produced CIP Object of the connection via the socket of the connection object ...">SendConnectedData</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00777"></a>00777 
-<a name="l00778"></a>00778   <span class="comment">/* TODO think of adding an own send buffer to each connection object in order to preset up the whole message on connection opening and just change the variable data items e.g., sequence number */</span>
-<a name="l00779"></a>00779 
-<a name="l00780"></a>00780   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data =
-<a name="l00781"></a>00781     &amp;<a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;                                                      <span class="comment">/* TODO think on adding a CPF data item to the S_CIP_ConnectionObject in order to remove the code here or even better allocate memory in the connection object for storing the message to send and just change the application data*/</span>
-<a name="l00782"></a>00782 
-<a name="l00783"></a>00783   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa31634b17dcfdd7d98ad8b4219558dbf">eip_level_sequence_count_producing</a>++;
-<a name="l00784"></a>00784 
-<a name="l00785"></a>00785   <span class="comment">/* assembleCPFData */</span>
-<a name="l00786"></a>00786   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">item_count</a> = 2;
-<a name="l00787"></a>00787   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) != 0 ) { <span class="comment">/* use Sequenced Address Items if not Connection Class 0 */</span>
-<a name="l00788"></a>00788     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a9b3cf54385b7e3db0c41d4d394c2d465">type_id</a> =
-<a name="l00789"></a>00789       <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a21abefabf9f64dba055671507015f2b1">kCipItemIdSequencedAddressItem</a>;
-<a name="l00790"></a>00790     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a8651f8610143cd0ef830abdc1fcf00b2">length</a> = 8;
-<a name="l00791"></a>00791     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#ae405cdded64b36b5bbad607ea251865a">data</a>.<a class="code" href="../../d9/da2/structAddressData.html#a41d4480ab2d89c04cd9211586be88ba5">sequence_number</a> =
-<a name="l00792"></a>00792       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa31634b17dcfdd7d98ad8b4219558dbf">eip_level_sequence_count_producing</a>;
-<a name="l00793"></a>00793   } <span class="keywordflow">else</span> {
-<a name="l00794"></a>00794     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a9b3cf54385b7e3db0c41d4d394c2d465">type_id</a> =
-<a name="l00795"></a>00795       <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a0adf8007a319941f3aaa7d9624025c0f">kCipItemIdConnectionAddress</a>;
-<a name="l00796"></a>00796     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a8651f8610143cd0ef830abdc1fcf00b2">length</a> = 4;
-<a name="l00797"></a>00797 
-<a name="l00798"></a>00798   }
-<a name="l00799"></a>00799   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#ae405cdded64b36b5bbad607ea251865a">data</a>.<a class="code" href="../../d9/da2/structAddressData.html#a955e0fc2a462a58b78f0da83df66a307">connection_identifier</a> =
-<a name="l00800"></a>00800     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa15e909827e498435ce848d6e98bf51e">cip_produced_connection_id</a>;
-<a name="l00801"></a>00801 
-<a name="l00802"></a>00802   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#acf4b53bdfe8766830d313e9c7e1cf5dc">type_id</a> = <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a8761662aa0838fb723f8696e9ea4e217">kCipItemIdConnectedDataItem</a>;
-<a name="l00803"></a>00803 
-<a name="l00804"></a>00804   <a class="code" href="../../de/dd7/structCipByteArray.html" title="CIP Byte Array.">CipByteArray</a> *producing_instance_attributes =
-<a name="l00805"></a>00805     (<a class="code" href="../../de/dd7/structCipByteArray.html" title="CIP Byte Array.">CipByteArray</a> *) connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ab486fb828cb85f57c53abea69ad9faff">producing_instance</a>-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#ada5c4109b95cb6635f4aa32a2e6d74bf">attributes</a>-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>;
-<a name="l00806"></a>00806   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> = 0;
-<a name="l00807"></a>00807 
-<a name="l00808"></a>00808   <span class="comment">/* notify the application that data will be sent immediately after the call */</span>
-<a name="l00809"></a>00809   if ( <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent.">BeforeAssemblyDataSend</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ab486fb828cb85f57c53abea69ad9faff">producing_instance</a>) ) {
-<a name="l00810"></a>00810     <span class="comment">/* the data has changed increase sequence counter */</span>
-<a name="l00811"></a>00811     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59">sequence_count_producing</a>++;
-<a name="l00812"></a>00812   }
-<a name="l00813"></a>00813 
-<a name="l00814"></a>00814   <span class="comment">/* set AddressInfo Items to invalid Type */</span>
-<a name="l00815"></a>00815   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">address_info_item</a>[0].<a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a> = 0;
-<a name="l00816"></a>00816   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">address_info_item</a>[1].<a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a> = 0;
-<a name="l00817"></a>00817 
-<a name="l00818"></a>00818   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> reply_length = <a class="code" href="../../d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4">AssembleIOMessage</a>(common_packet_format_data,
-<a name="l00819"></a>00819                                              &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[0]);
-<a name="l00820"></a>00820 
-<a name="l00821"></a>00821   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message_data_reply_buffer =
-<a name="l00822"></a>00822     &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[reply_length - 2];
-<a name="l00823"></a>00823   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> = producing_instance_attributes
-<a name="l00824"></a>00824                                                 -&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#a2fc468bacd1d1300da4286bb838b7f7b">length</a>;
-<a name="l00825"></a>00825   <span class="keywordflow">if</span> (kOpenerProducedDataHasRunIdleHeader) {
-<a name="l00826"></a>00826     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> += 4;
-<a name="l00827"></a>00827   }
-<a name="l00828"></a>00828 
-<a name="l00829"></a>00829   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) == 1 ) {
-<a name="l00830"></a>00830     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> += 2;
-<a name="l00831"></a>00831     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>,
-<a name="l00832"></a>00832                     &amp;message_data_reply_buffer);
-<a name="l00833"></a>00833     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59">sequence_count_producing</a>,
-<a name="l00834"></a>00834                     &amp;message_data_reply_buffer);
-<a name="l00835"></a>00835   } <span class="keywordflow">else</span> {
-<a name="l00836"></a>00836     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>,
-<a name="l00837"></a>00837                     &amp;message_data_reply_buffer);
-<a name="l00838"></a>00838   }
-<a name="l00839"></a>00839 
-<a name="l00840"></a>00840   <span class="keywordflow">if</span> (kOpenerProducedDataHasRunIdleHeader) {
-<a name="l00841"></a>00841     <a class="code" href="../../d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer.">AddDintToMessage</a>( <a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a>, &amp;(message_data_reply_buffer) );
-<a name="l00842"></a>00842   }
-<a name="l00843"></a>00843 
-<a name="l00844"></a>00844   memcpy(message_data_reply_buffer, producing_instance_attributes-&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#ad1f95b3da0adfd2aeafd5db1d415a6b9">data</a>,
-<a name="l00845"></a>00845          producing_instance_attributes-&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#a2fc468bacd1d1300da4286bb838b7f7b">length</a>);
-<a name="l00846"></a>00846 
-<a name="l00847"></a>00847   reply_length += common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>;
-<a name="l00848"></a>00848 
-<a name="l00849"></a>00849   <span class="keywordflow">return</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518" title="create a producing or consuming UDP socket">SendUdpData</a>(
-<a name="l00850"></a>00850            &amp;connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a32b8fe01a538f765d0cce564f705c2ea">remote_address</a>,
-<a name="l00851"></a>00851            connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>],
-<a name="l00852"></a>00852            &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[0], reply_length);
-<a name="l00853"></a>00853 }
-<a name="l00854"></a>00854 
-<a name="l00855"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f">00855</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f">HandleReceivedIoConnectionData</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>,
-<a name="l00856"></a>00856                                          <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data,
-<a name="l00857"></a>00857                                          <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> data_length)
-<a name="l00858"></a>00858 {
-<a name="l00859"></a>00859 
-<a name="l00860"></a>00860   <span class="comment">/* check class 1 sequence number*/</span>
-<a name="l00861"></a>00861   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) == 1 ) {
-<a name="l00862"></a>00862     <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> sequence_buffer = <a class="code" href="../../d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302" title="Reads EIP_UINT16 from *buffer and converts little endian to host.">GetIntFromMessage</a>( &amp;(data) );
-<a name="l00863"></a>00863     <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69" title="similar macros for comparing 16 bit sequence numbers  SEQ_LEQ16(a, b) Checks if sequence number a is ...">SEQ_LEQ16</a>(sequence_buffer,
-<a name="l00864"></a>00864                    connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ad6c06f4b33c7bea685145806c86d2c3f">sequence_count_consuming</a>) ) {
-<a name="l00865"></a>00865       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>; <span class="comment">/* no new data for the assembly */</span>
-<a name="l00866"></a>00866     }
-<a name="l00867"></a>00867     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ad6c06f4b33c7bea685145806c86d2c3f">sequence_count_consuming</a> = sequence_buffer;
-<a name="l00868"></a>00868     data_length -= 2;
-<a name="l00869"></a>00869   }
-<a name="l00870"></a>00870 
-<a name="l00871"></a>00871   <span class="keywordflow">if</span> (data_length &gt; 0) {
-<a name="l00872"></a>00872     <span class="comment">/* we have no heartbeat connection */</span>
-<a name="l00873"></a>00873     <span class="keywordflow">if</span> (kOpenerConsumedDataHasRunIdleHeader) {
-<a name="l00874"></a>00874       <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> nRunIdleBuf = <a class="code" href="../../d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host.">GetDintFromMessage</a>( &amp;(data) );
-<a name="l00875"></a>00875       <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a> != nRunIdleBuf) {
-<a name="l00876"></a>00876         <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator.">RunIdleChanged</a>(nRunIdleBuf);
-<a name="l00877"></a>00877       }
-<a name="l00878"></a>00878       <a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a> = nRunIdleBuf;
-<a name="l00879"></a>00879       data_length -= 4;
-<a name="l00880"></a>00880     }
-<a name="l00881"></a>00881 
-<a name="l00882"></a>00882     <span class="keywordflow">if</span> (<a class="code" href="../../df/d2e/cipassembly_8c.html#a5dc25129faf75858c0aeaa88ea8d9490" title="notify an Assembly object that data has been received for it.">NotifyAssemblyConnectedDataReceived</a>(
-<a name="l00883"></a>00883           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aef7f726017a6d89235c9ee8c0ef98d71">consuming_instance</a>, (<a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *<span class="keyword">const</span>)data,
-<a name="l00884"></a>00884           data_length) != 0) {
-<a name="l00885"></a>00885       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
-<a name="l00886"></a>00886     }
-<a name="l00887"></a>00887   }
-<a name="l00888"></a>00888   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00889"></a>00889 }
-<a name="l00890"></a>00890 
-<a name="l00891"></a><a class="code" href="../../de/d45/cipioconnection_8h.html#adbb39670c736df4ef89589a3b4e4df4e">00891</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#adbb39670c736df4ef89589a3b4e4df4e" title="Take the data given in the connection object structure and open the necessary communication channels...">OpenCommunicationChannels</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00892"></a>00892 
-<a name="l00893"></a>00893   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00894"></a>00894   <span class="comment">/*get pointer to the CPF data, currently we have just one global instance of the struct. This may change in the future*/</span>
-<a name="l00895"></a>00895   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data =
-<a name="l00896"></a>00896     &amp;<a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;
-<a name="l00897"></a>00897 
-<a name="l00898"></a>00898   <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c" title="Connection Type constants of the Forward Open service request Indicates either a.">ForwardOpenConnectionType</a> originator_to_target_connection_type =
-<a name="l00899"></a>00899     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abe98e638bb3ac01dc06d7d944a1f30bf" title="returns the connection type of the supplied network connection parameter">GetConnectionType</a>(connection_object
-<a name="l00900"></a>00900                       -&gt;
-<a name="l00901"></a>00901                       o_to_t_network_connection_parameter);
-<a name="l00902"></a>00902 
-<a name="l00903"></a>00903   <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c" title="Connection Type constants of the Forward Open service request Indicates either a.">ForwardOpenConnectionType</a> target_to_originator_connection_type =
-<a name="l00904"></a>00904     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abe98e638bb3ac01dc06d7d944a1f30bf" title="returns the connection type of the supplied network connection parameter">GetConnectionType</a>(connection_object
-<a name="l00905"></a>00905                       -&gt;
-<a name="l00906"></a>00906                       t_to_o_network_connection_parameter);
-<a name="l00907"></a>00907 
-<a name="l00908"></a>00908   <span class="comment">/* open a connection &quot;point to point&quot; or &quot;multicast&quot; based on the ConnectionParameter */</span>
-<a name="l00909"></a>00909   <span class="keywordflow">if</span> (originator_to_target_connection_type ==
-<a name="l00910"></a>00910       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>)                                         <span class="comment">/* Multicast consuming */</span>
-<a name="l00911"></a>00911   {
-<a name="l00912"></a>00912     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a9937b2aeb5fd393c7861e25f04c9f1c1">OpenMulticastConnection</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>,
-<a name="l00913"></a>00913                                 connection_object, common_packet_format_data)
-<a name="l00914"></a>00914         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
-<a name="l00915"></a>00915       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in OpenMulticast Connection\n&quot;</span>);
-<a name="l00916"></a>00916       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
-<a name="l00917"></a>00917     }
-<a name="l00918"></a>00918   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (originator_to_target_connection_type ==
-<a name="l00919"></a>00919              <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3">kForwardOpenConnectionTypePointToPointConnection</a>)                                         <span class="comment">/* Point to Point consuming */</span>
-<a name="l00920"></a>00920   {
-<a name="l00921"></a>00921     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a36b4eefe81166b26625074031ba87234" title="Open a Point2Point connection dependent on pa_direction.">OpenConsumingPointToPointConnection</a>(connection_object,
-<a name="l00922"></a>00922                                             common_packet_format_data)
-<a name="l00923"></a>00923         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
-<a name="l00924"></a>00924       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in PointToPoint consuming connection\n&quot;</span>);
-<a name="l00925"></a>00925       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
-<a name="l00926"></a>00926     }
-<a name="l00927"></a>00927   }
-<a name="l00928"></a>00928 
-<a name="l00929"></a>00929   <span class="keywordflow">if</span> (target_to_originator_connection_type ==
-<a name="l00930"></a>00930       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>)                                         <span class="comment">/* Multicast producing */</span>
-<a name="l00931"></a>00931   {
-<a name="l00932"></a>00932     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a281f0a261db50e297593dd3383093fb0">OpenProducingMulticastConnection</a>(connection_object,
-<a name="l00933"></a>00933                                          common_packet_format_data)
-<a name="l00934"></a>00934         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
-<a name="l00935"></a>00935       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in OpenMulticast Connection\n&quot;</span>);
-<a name="l00936"></a>00936       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
-<a name="l00937"></a>00937     }
-<a name="l00938"></a>00938   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target_to_originator_connection_type ==
-<a name="l00939"></a>00939              <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3">kForwardOpenConnectionTypePointToPointConnection</a>)                                         <span class="comment">/* Point to Point producing */</span>
-<a name="l00940"></a>00940   {
-<a name="l00941"></a>00941 
-<a name="l00942"></a>00942     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#ab5ba6f9cb3103c1db76c2bf7ae3cce8d">OpenProducingPointToPointConnection</a>(connection_object,
-<a name="l00943"></a>00943                                             common_packet_format_data)
-<a name="l00944"></a>00944         != <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>) {
-<a name="l00945"></a>00945       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in PointToPoint producing connection\n&quot;</span>);
-<a name="l00946"></a>00946       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
-<a name="l00947"></a>00947     }
-<a name="l00948"></a>00948   }
-<a name="l00949"></a>00949   <span class="keywordflow">return</span> eip_status;
-<a name="l00950"></a>00950 }
-<a name="l00951"></a>00951 
-<a name="l00952"></a><a class="code" href="../../de/d45/cipioconnection_8h.html#ab63a9cebd7f44ee474ac1fd446d5bc66">00952</a> <span class="keywordtype">void</span> <a class="code" href="../../df/d03/cipioconnection_8c.html#ab63a9cebd7f44ee474ac1fd446d5bc66" title="close the communication channels of the given connection and remove it from the active connections li...">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a>(
-<a name="l00953"></a>00953   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00954"></a>00954   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
-<a name="l00955"></a>00955     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>]);
-<a name="l00956"></a>00956 
-<a name="l00957"></a>00957   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>] =
-<a name="l00958"></a>00958     kEipInvalidSocket;
-<a name="l00959"></a>00959 
-<a name="l00960"></a>00960   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
-<a name="l00961"></a>00961     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]);
-<a name="l00962"></a>00962 
-<a name="l00963"></a>00963   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
-<a name="l00964"></a>00964     kEipInvalidSocket;
-<a name="l00965"></a>00965 
-<a name="l00966"></a>00966   <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef50a0eee3ff5df3320b49f872a7f3c4" title="Removes connection from the list of active connections.">RemoveFromActiveConnections</a>(connection_object);
-<a name="l00967"></a>00967 }
+<a name="l00729"></a>00729   <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection.">CheckIoConnectionEvent</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[0],
+<a name="l00730"></a>00730                          connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
+<a name="l00731"></a>00731                          <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2a91f5cbaf05e3e1e95b9c262a851ae931">kIoConnectionEventTimedOut</a>);
+<a name="l00732"></a>00732 
+<a name="l00733"></a>00733   <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>
+<a name="l00734"></a>00734        == (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ccf723e8dce62eb578a046fd35a774f">t_to_o_network_connection_parameter</a>
+<a name="l00735"></a>00735            &amp; <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>) ) {
+<a name="l00736"></a>00736     <span class="keywordflow">switch</span> (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ada63f5853b16b3fa0d3c49b894157540">instance_type</a>) {
+<a name="l00737"></a>00737       <span class="keywordflow">case</span> <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa49da9a89c43c187253492f976225db82">kConnectionTypeIoExclusiveOwner</a>:
+<a name="l00738"></a>00738         <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
+<a name="l00739"></a>00739           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
+<a name="l00740"></a>00740           <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa1d880893638e59b11e4a2874c20ff5c3">kConnectionTypeIoInputOnly</a>);
+<a name="l00741"></a>00741         <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
+<a name="l00742"></a>00742           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
+<a name="l00743"></a>00743           <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fae26e447506c01160477cb3de20a1e438">kConnectionTypeIoListenOnly</a>);
+<a name="l00744"></a>00744         <span class="keywordflow">break</span>;
+<a name="l00745"></a>00745       <span class="keywordflow">case</span> <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa1d880893638e59b11e4a2874c20ff5c3">kConnectionTypeIoInputOnly</a>:
+<a name="l00746"></a>00746         <span class="keywordflow">if</span> (kEipInvalidSocket
+<a name="l00747"></a>00747             != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) { <span class="comment">/* we are the controlling input only connection find a new controller*/</span>
+<a name="l00748"></a>00748           <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *next_non_control_master_connection =
+<a name="l00749"></a>00749             <a class="code" href="../../d1/dbc/appcontype_8c.html#a1cbf4348c1bb5f1949d7ed38c58b2f27" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr...">GetNextNonControlMasterConnection</a>(
+<a name="l00750"></a>00750               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1]);
+<a name="l00751"></a>00751           <span class="keywordflow">if</span> (NULL != next_non_control_master_connection) {
+<a name="l00752"></a>00752             next_non_control_master_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[
+<a name="l00753"></a>00753               <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
+<a name="l00754"></a>00754               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>];
+<a name="l00755"></a>00755             connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
+<a name="l00756"></a>00756               kEipInvalidSocket;
+<a name="l00757"></a>00757             next_non_control_master_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a> =
+<a name="l00758"></a>00758               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b">transmission_trigger_timer</a>;
+<a name="l00759"></a>00759           } <span class="keywordflow">else</span> { <span class="comment">/* this was the last master connection close all listen only connections listening on the port */</span>
+<a name="l00760"></a>00760             <a class="code" href="../../d1/dbc/appcontype_8c.html#a67233ebfb6ba7952669a197a4cf21126" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
+<a name="l00761"></a>00761               connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a7ea92b8fc46bb305035ed3547516e0a7">connection_path</a>.<a class="code" href="../../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4">connection_point</a>[1],
+<a name="l00762"></a>00762               <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fae26e447506c01160477cb3de20a1e438">kConnectionTypeIoListenOnly</a>);
+<a name="l00763"></a>00763           }
+<a name="l00764"></a>00764         }
+<a name="l00765"></a>00765         <span class="keywordflow">break</span>;
+<a name="l00766"></a>00766       <span class="keywordflow">default</span>:
+<a name="l00767"></a>00767         <span class="keywordflow">break</span>;
+<a name="l00768"></a>00768     }
+<a name="l00769"></a>00769   }
+<a name="l00770"></a>00770 
+<a name="l00771"></a>00771   <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">OPENER_ASSERT</a>(NULL != connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a51af396f09a2874cecd1d463c85e2a34">connection_close_function</a>);
+<a name="l00772"></a>00772   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a51af396f09a2874cecd1d463c85e2a34">connection_close_function</a>(connection_object);
+<a name="l00773"></a>00773 }
+<a name="l00774"></a>00774 
+<a name="l00775"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#a41f8d71772b5defa587ac0da6124cc47">00775</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#a41f8d71772b5defa587ac0da6124cc47" title="Send the data from the produced CIP Object of the connection via the socket of the connection object ...">SendConnectedData</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00776"></a>00776 
+<a name="l00777"></a>00777   <span class="comment">/* TODO think of adding an own send buffer to each connection object in order to preset up the whole message on connection opening and just change the variable data items e.g., sequence number */</span>
+<a name="l00778"></a>00778 
+<a name="l00779"></a>00779   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data =
+<a name="l00780"></a>00780     &amp;<a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;                                                      <span class="comment">/* TODO think on adding a CPF data item to the S_CIP_ConnectionObject in order to remove the code here or even better allocate memory in the connection object for storing the message to send and just change the application data*/</span>
+<a name="l00781"></a>00781 
+<a name="l00782"></a>00782   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa31634b17dcfdd7d98ad8b4219558dbf">eip_level_sequence_count_producing</a>++;
+<a name="l00783"></a>00783 
+<a name="l00784"></a>00784   <span class="comment">/* assembleCPFData */</span>
+<a name="l00785"></a>00785   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b">item_count</a> = 2;
+<a name="l00786"></a>00786   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) != 0 ) { <span class="comment">/* use Sequenced Address Items if not Connection Class 0 */</span>
+<a name="l00787"></a>00787     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a9b3cf54385b7e3db0c41d4d394c2d465">type_id</a> =
+<a name="l00788"></a>00788       <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a21abefabf9f64dba055671507015f2b1">kCipItemIdSequencedAddressItem</a>;
+<a name="l00789"></a>00789     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a8651f8610143cd0ef830abdc1fcf00b2">length</a> = 8;
+<a name="l00790"></a>00790     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#ae405cdded64b36b5bbad607ea251865a">data</a>.<a class="code" href="../../d9/da2/structAddressData.html#a41d4480ab2d89c04cd9211586be88ba5">sequence_number</a> =
+<a name="l00791"></a>00791       connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa31634b17dcfdd7d98ad8b4219558dbf">eip_level_sequence_count_producing</a>;
+<a name="l00792"></a>00792   } <span class="keywordflow">else</span> {
+<a name="l00793"></a>00793     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a9b3cf54385b7e3db0c41d4d394c2d465">type_id</a> =
+<a name="l00794"></a>00794       <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a0adf8007a319941f3aaa7d9624025c0f">kCipItemIdConnectionAddress</a>;
+<a name="l00795"></a>00795     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#a8651f8610143cd0ef830abdc1fcf00b2">length</a> = 4;
+<a name="l00796"></a>00796 
+<a name="l00797"></a>00797   }
+<a name="l00798"></a>00798   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a6f7f7299bfdc600609c9b9f8fc55ac5b">address_item</a>.<a class="code" href="../../d3/d56/structAddressItem.html#ae405cdded64b36b5bbad607ea251865a">data</a>.<a class="code" href="../../d9/da2/structAddressData.html#a955e0fc2a462a58b78f0da83df66a307">connection_identifier</a> =
+<a name="l00799"></a>00799     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa15e909827e498435ce848d6e98bf51e">cip_produced_connection_id</a>;
+<a name="l00800"></a>00800 
+<a name="l00801"></a>00801   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#acf4b53bdfe8766830d313e9c7e1cf5dc">type_id</a> = <a class="code" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a8761662aa0838fb723f8696e9ea4e217">kCipItemIdConnectedDataItem</a>;
+<a name="l00802"></a>00802 
+<a name="l00803"></a>00803   <a class="code" href="../../de/dd7/structCipByteArray.html" title="CIP Byte Array.">CipByteArray</a> *producing_instance_attributes =
+<a name="l00804"></a>00804     (<a class="code" href="../../de/dd7/structCipByteArray.html" title="CIP Byte Array.">CipByteArray</a> *) connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ab486fb828cb85f57c53abea69ad9faff">producing_instance</a>-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#ada5c4109b95cb6635f4aa32a2e6d74bf">attributes</a>-&gt;<a class="code" href="../../d4/d62/structCipAttributeStruct.html#a859d8bdd91ff42b1ce0ff5f8053d2b40">data</a>;
+<a name="l00805"></a>00805   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> = 0;
+<a name="l00806"></a>00806 
+<a name="l00807"></a>00807   <span class="comment">/* notify the application that data will be sent immediately after the call */</span>
+<a name="l00808"></a>00808   if ( <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent.">BeforeAssemblyDataSend</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ab486fb828cb85f57c53abea69ad9faff">producing_instance</a>) ) {
+<a name="l00809"></a>00809     <span class="comment">/* the data has changed increase sequence counter */</span>
+<a name="l00810"></a>00810     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59">sequence_count_producing</a>++;
+<a name="l00811"></a>00811   }
+<a name="l00812"></a>00812 
+<a name="l00813"></a>00813   <span class="comment">/* set AddressInfo Items to invalid Type */</span>
+<a name="l00814"></a>00814   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">address_info_item</a>[0].<a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a> = 0;
+<a name="l00815"></a>00815   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#afc2883222efe7445cb7836d5da872f54">address_info_item</a>[1].<a class="code" href="../../dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2">type_id</a> = 0;
+<a name="l00816"></a>00816 
+<a name="l00817"></a>00817   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> reply_length = <a class="code" href="../../d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4">AssembleIOMessage</a>(common_packet_format_data,
+<a name="l00818"></a>00818                                              &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[0]);
+<a name="l00819"></a>00819 
+<a name="l00820"></a>00820   <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *message_data_reply_buffer =
+<a name="l00821"></a>00821     &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[reply_length - 2];
+<a name="l00822"></a>00822   common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> = producing_instance_attributes
+<a name="l00823"></a>00823                                                 -&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#a2fc468bacd1d1300da4286bb838b7f7b">length</a>;
+<a name="l00824"></a>00824   <span class="keywordflow">if</span> (kOpenerProducedDataHasRunIdleHeader) {
+<a name="l00825"></a>00825     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> += 4;
+<a name="l00826"></a>00826   }
+<a name="l00827"></a>00827 
+<a name="l00828"></a>00828   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) == 1 ) {
+<a name="l00829"></a>00829     common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a> += 2;
+<a name="l00830"></a>00830     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>,
+<a name="l00831"></a>00831                     &amp;message_data_reply_buffer);
+<a name="l00832"></a>00832     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59">sequence_count_producing</a>,
+<a name="l00833"></a>00833                     &amp;message_data_reply_buffer);
+<a name="l00834"></a>00834   } <span class="keywordflow">else</span> {
+<a name="l00835"></a>00835     <a class="code" href="../../d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer.">AddIntToMessage</a>(common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>,
+<a name="l00836"></a>00836                     &amp;message_data_reply_buffer);
+<a name="l00837"></a>00837   }
+<a name="l00838"></a>00838 
+<a name="l00839"></a>00839   <span class="keywordflow">if</span> (kOpenerProducedDataHasRunIdleHeader) {
+<a name="l00840"></a>00840     <a class="code" href="../../d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer.">AddDintToMessage</a>( <a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a>, &amp;(message_data_reply_buffer) );
+<a name="l00841"></a>00841   }
+<a name="l00842"></a>00842 
+<a name="l00843"></a>00843   memcpy(message_data_reply_buffer, producing_instance_attributes-&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#ad1f95b3da0adfd2aeafd5db1d415a6b9">data</a>,
+<a name="l00844"></a>00844          producing_instance_attributes-&gt;<a class="code" href="../../de/dd7/structCipByteArray.html#a2fc468bacd1d1300da4286bb838b7f7b">length</a>);
+<a name="l00845"></a>00845 
+<a name="l00846"></a>00846   reply_length += common_packet_format_data-&gt;<a class="code" href="../../db/d80/structCipCommonPacketFormatData.html#a054b7138d1a6837b9ade41b17635bc96">data_item</a>.<a class="code" href="../../de/d71/structDataItem.html#a70de504e7692ab2c73be4c96911c9b05">length</a>;
+<a name="l00847"></a>00847 
+<a name="l00848"></a>00848   <span class="keywordflow">return</span> <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518" title="create a producing or consuming UDP socket">SendUdpData</a>(
+<a name="l00849"></a>00849            &amp;connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a32b8fe01a538f765d0cce564f705c2ea">remote_address</a>,
+<a name="l00850"></a>00850            connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>],
+<a name="l00851"></a>00851            &amp;<a class="code" href="../../d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48">g_message_data_reply_buffer</a>[0], reply_length);
+<a name="l00852"></a>00852 }
+<a name="l00853"></a>00853 
+<a name="l00854"></a><a class="code" href="../../df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f">00854</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f">HandleReceivedIoConnectionData</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>,
+<a name="l00855"></a>00855                                          <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data,
+<a name="l00856"></a>00856                                          <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> data_length)
+<a name="l00857"></a>00857 {
+<a name="l00858"></a>00858 
+<a name="l00859"></a>00859   <span class="comment">/* check class 1 sequence number*/</span>
+<a name="l00860"></a>00860   <span class="keywordflow">if</span> ( (connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254">transport_type_class_trigger</a> &amp; 0x0F) == 1 ) {
+<a name="l00861"></a>00861     <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> sequence_buffer = <a class="code" href="../../d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302" title="Reads EIP_UINT16 from *buffer and converts little endian to host.">GetIntFromMessage</a>( &amp;(data) );
+<a name="l00862"></a>00862     <span class="keywordflow">if</span> ( <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69" title="similar macros for comparing 16 bit sequence numbers  SEQ_LEQ16(a, b) Checks if sequence number a is ...">SEQ_LEQ16</a>(sequence_buffer,
+<a name="l00863"></a>00863                    connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ad6c06f4b33c7bea685145806c86d2c3f">sequence_count_consuming</a>) ) {
+<a name="l00864"></a>00864       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>; <span class="comment">/* no new data for the assembly */</span>
+<a name="l00865"></a>00865     }
+<a name="l00866"></a>00866     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ad6c06f4b33c7bea685145806c86d2c3f">sequence_count_consuming</a> = sequence_buffer;
+<a name="l00867"></a>00867     data_length -= 2;
+<a name="l00868"></a>00868   }
+<a name="l00869"></a>00869 
+<a name="l00870"></a>00870   <span class="keywordflow">if</span> (data_length &gt; 0) {
+<a name="l00871"></a>00871     <span class="comment">/* we have no heartbeat connection */</span>
+<a name="l00872"></a>00872     <span class="keywordflow">if</span> (kOpenerConsumedDataHasRunIdleHeader) {
+<a name="l00873"></a>00873       <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> nRunIdleBuf = <a class="code" href="../../d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host.">GetDintFromMessage</a>( &amp;(data) );
+<a name="l00874"></a>00874       <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a> != nRunIdleBuf) {
+<a name="l00875"></a>00875         <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator.">RunIdleChanged</a>(nRunIdleBuf);
+<a name="l00876"></a>00876       }
+<a name="l00877"></a>00877       <a class="code" href="../../df/d03/cipioconnection_8c.html#a4901ec04ad1ac886626e556c60f12196">g_run_idle_state</a> = nRunIdleBuf;
+<a name="l00878"></a>00878       data_length -= 4;
+<a name="l00879"></a>00879     }
+<a name="l00880"></a>00880 
+<a name="l00881"></a>00881     <span class="keywordflow">if</span> (<a class="code" href="../../df/d2e/cipassembly_8c.html#a5dc25129faf75858c0aeaa88ea8d9490" title="notify an Assembly object that data has been received for it.">NotifyAssemblyConnectedDataReceived</a>(
+<a name="l00882"></a>00882           connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aef7f726017a6d89235c9ee8c0ef98d71">consuming_instance</a>, (<a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *<span class="keyword">const</span>)data,
+<a name="l00883"></a>00883           data_length) != 0) {
+<a name="l00884"></a>00884       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00885"></a>00885     }
+<a name="l00886"></a>00886   }
+<a name="l00887"></a>00887   <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00888"></a>00888 }
+<a name="l00889"></a>00889 
+<a name="l00890"></a><a class="code" href="../../de/d45/cipioconnection_8h.html#adbb39670c736df4ef89589a3b4e4df4e">00890</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../df/d03/cipioconnection_8c.html#adbb39670c736df4ef89589a3b4e4df4e" title="Take the data given in the connection object structure and open the necessary communication channels...">OpenCommunicationChannels</a>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00891"></a>00891 
+<a name="l00892"></a>00892   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00893"></a>00893   <span class="comment">/*get pointer to the CPF data, currently we have just one global instance of the struct. This may change in the future*/</span>
+<a name="l00894"></a>00894   <a class="code" href="../../db/d80/structCipCommonPacketFormatData.html" title="A variant of a CPF packet, including item count, one address item, one data item, and two Sockaddr In...">CipCommonPacketFormatData</a> *common_packet_format_data =
+<a name="l00895"></a>00895     &amp;<a class="code" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0" title="Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time...">g_common_packet_format_data_item</a>;
+<a name="l00896"></a>00896 
+<a name="l00897"></a>00897   <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c" title="Connection Type constants of the Forward Open service request Indicates either a.">ForwardOpenConnectionType</a> originator_to_target_connection_type =
+<a name="l00898"></a>00898     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abe98e638bb3ac01dc06d7d944a1f30bf" title="returns the connection type of the supplied network connection parameter">GetConnectionType</a>(connection_object
+<a name="l00899"></a>00899                       -&gt;
+<a name="l00900"></a>00900                       o_to_t_network_connection_parameter);
+<a name="l00901"></a>00901 
+<a name="l00902"></a>00902   <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4c" title="Connection Type constants of the Forward Open service request Indicates either a.">ForwardOpenConnectionType</a> target_to_originator_connection_type =
+<a name="l00903"></a>00903     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#abe98e638bb3ac01dc06d7d944a1f30bf" title="returns the connection type of the supplied network connection parameter">GetConnectionType</a>(connection_object
+<a name="l00904"></a>00904                       -&gt;
+<a name="l00905"></a>00905                       t_to_o_network_connection_parameter);
+<a name="l00906"></a>00906 
+<a name="l00907"></a>00907   <span class="comment">/* open a connection &quot;point to point&quot; or &quot;multicast&quot; based on the ConnectionParameter */</span>
+<a name="l00908"></a>00908   <span class="keywordflow">if</span> (originator_to_target_connection_type ==
+<a name="l00909"></a>00909       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>)                                         <span class="comment">/* Multicast consuming */</span>
+<a name="l00910"></a>00910   {
+<a name="l00911"></a>00911     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a9937b2aeb5fd393c7861e25f04c9f1c1">OpenMulticastConnection</a>(<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>,
+<a name="l00912"></a>00912                                 connection_object, common_packet_format_data)
+<a name="l00913"></a>00913         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
+<a name="l00914"></a>00914       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in OpenMulticast Connection\n&quot;</span>);
+<a name="l00915"></a>00915       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
+<a name="l00916"></a>00916     }
+<a name="l00917"></a>00917   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (originator_to_target_connection_type ==
+<a name="l00918"></a>00918              <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3">kForwardOpenConnectionTypePointToPointConnection</a>)                                         <span class="comment">/* Point to Point consuming */</span>
+<a name="l00919"></a>00919   {
+<a name="l00920"></a>00920     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a36b4eefe81166b26625074031ba87234" title="Open a Point2Point connection dependent on pa_direction.">OpenConsumingPointToPointConnection</a>(connection_object,
+<a name="l00921"></a>00921                                             common_packet_format_data)
+<a name="l00922"></a>00922         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
+<a name="l00923"></a>00923       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in PointToPoint consuming connection\n&quot;</span>);
+<a name="l00924"></a>00924       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
+<a name="l00925"></a>00925     }
+<a name="l00926"></a>00926   }
+<a name="l00927"></a>00927 
+<a name="l00928"></a>00928   <span class="keywordflow">if</span> (target_to_originator_connection_type ==
+<a name="l00929"></a>00929       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4ca8ee5c4f2e59cc457d3981e241811c6c7">kForwardOpenConnectionTypeMulticastConnection</a>)                                         <span class="comment">/* Multicast producing */</span>
+<a name="l00930"></a>00930   {
+<a name="l00931"></a>00931     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#a281f0a261db50e297593dd3383093fb0">OpenProducingMulticastConnection</a>(connection_object,
+<a name="l00932"></a>00932                                          common_packet_format_data)
+<a name="l00933"></a>00933         == <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>) {
+<a name="l00934"></a>00934       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in OpenMulticast Connection\n&quot;</span>);
+<a name="l00935"></a>00935       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
+<a name="l00936"></a>00936     }
+<a name="l00937"></a>00937   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target_to_originator_connection_type ==
+<a name="l00938"></a>00938              <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#ab22bbae42458677f47f6024cfb96ac4cafd1fb241e217db9124e88db0271040d3">kForwardOpenConnectionTypePointToPointConnection</a>)                                         <span class="comment">/* Point to Point producing */</span>
+<a name="l00939"></a>00939   {
+<a name="l00940"></a>00940 
+<a name="l00941"></a>00941     <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/cipioconnection_8c.html#ab5ba6f9cb3103c1db76c2bf7ae3cce8d">OpenProducingPointToPointConnection</a>(connection_object,
+<a name="l00942"></a>00942                                             common_packet_format_data)
+<a name="l00943"></a>00943         != <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>) {
+<a name="l00944"></a>00944       <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(<span class="stringliteral">&quot;error in PointToPoint producing connection\n&quot;</span>);
+<a name="l00945"></a>00945       <span class="keywordflow">return</span> <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
+<a name="l00946"></a>00946     }
+<a name="l00947"></a>00947   }
+<a name="l00948"></a>00948   <span class="keywordflow">return</span> eip_status;
+<a name="l00949"></a>00949 }
+<a name="l00950"></a>00950 
+<a name="l00951"></a><a class="code" href="../../de/d45/cipioconnection_8h.html#ab63a9cebd7f44ee474ac1fd446d5bc66">00951</a> <span class="keywordtype">void</span> <a class="code" href="../../df/d03/cipioconnection_8c.html#ab63a9cebd7f44ee474ac1fd446d5bc66" title="close the communication channels of the given connection and remove it from the active connections li...">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a>(
+<a name="l00952"></a>00952   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00953"></a>00953   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
+<a name="l00954"></a>00954     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>]);
+<a name="l00955"></a>00955 
+<a name="l00956"></a>00956   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>] =
+<a name="l00957"></a>00957     kEipInvalidSocket;
+<a name="l00958"></a>00958 
+<a name="l00959"></a>00959   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
+<a name="l00960"></a>00960     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]);
+<a name="l00961"></a>00961 
+<a name="l00962"></a>00962   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
+<a name="l00963"></a>00963     kEipInvalidSocket;
+<a name="l00964"></a>00964 
+<a name="l00965"></a>00965   <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef50a0eee3ff5df3320b49f872a7f3c4" title="Removes connection from the list of active connections.">RemoveFromActiveConnections</a>(connection_object);
+<a name="l00966"></a>00966 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -1048,7 +1047,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../df/d03/cipioconnection_8c.html">cipioconnection.c</a>      </li>
 
-    <li class="footer">Generated on Tue Oct 3 2017 12:49:13 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Thu Oct 5 2017 11:34:48 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

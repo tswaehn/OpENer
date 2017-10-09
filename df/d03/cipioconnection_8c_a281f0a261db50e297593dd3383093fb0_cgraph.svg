@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 712;
+var viewWidth = 782;
 var viewHeight = 230;
 var sectionId = 'dynsection-20';
 </script>
@@ -72,98 +72,98 @@ var sectionId = 'dynsection-20';
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
 <a xlink:href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga5807bcc51621775c9aedbf58d3a7a6d3" target="_top" xlink:title="create a producing or consuming UDP socket">
-<polygon fill="none" stroke="black" points="442.5,-100.5 442.5,-121.5 537.5,-121.5 537.5,-100.5 442.5,-100.5"/>
-<text text-anchor="middle" x="490" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">CreateUdpSocket</text>
+<polygon fill="none" stroke="black" points="477.5,-100.5 477.5,-121.5 572.5,-121.5 572.5,-100.5 477.5,-100.5"/>
+<text text-anchor="middle" x="525" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">CreateUdpSocket</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M371.91,-91.5347C391.532,-94.769 413.002,-98.3081 432.191,-101.471"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="431.856,-104.963 442.292,-103.136 432.995,-98.0562 431.856,-104.963"/>
+<path fill="none" stroke="midnightblue" d="M372.52,-89.9198C402.582,-94.0759 438.067,-98.9816 467.237,-103.014"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="466.887,-106.499 477.273,-104.402 467.846,-99.5652 466.887,-106.499"/>
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a3483de0add18746a97785ed4f21ad2b1" target="_top" xlink:title="GetPriorityForQos">
-<polygon fill="none" stroke="black" points="442.5,-40.5 442.5,-61.5 537.5,-61.5 537.5,-40.5 442.5,-40.5"/>
-<text text-anchor="middle" x="490" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForQos</text>
+<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a1eaac64a12417ebe7d29d38da9183793" target="_top" xlink:title="GetConnectionObjectTToOPriority">
+<polygon fill="none" stroke="black" points="442,-40.5 442,-61.5 608,-61.5 608,-40.5 442,-40.5"/>
+<text text-anchor="middle" x="525" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectionObjectTToOPriority</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node10 -->
 <g id="edge18" class="edge"><title>Node3&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M371.91,-70.4653C391.532,-67.231 413.002,-63.6919 432.191,-60.5289"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="432.995,-63.9438 442.292,-58.8639 431.856,-57.037 432.995,-63.9438"/>
+<path fill="none" stroke="midnightblue" d="M372.52,-72.0802C393.321,-69.2045 416.718,-65.9698 438.824,-62.9138"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="439.449,-66.3607 448.875,-61.5242 438.49,-59.4267 439.449,-66.3607"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
 <a xlink:href="../../df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24" target="_top" xlink:title="Gets the error number or equivalent.">
-<polygon fill="none" stroke="black" points="579.5,-200.5 579.5,-221.5 698.5,-221.5 698.5,-200.5 579.5,-200.5"/>
-<text text-anchor="middle" x="639" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetSocketErrorNumber</text>
+<polygon fill="none" stroke="black" points="649.5,-200.5 649.5,-221.5 768.5,-221.5 768.5,-200.5 649.5,-200.5"/>
+<text text-anchor="middle" x="709" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetSocketErrorNumber</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M498.381,-121.703C512.299,-138.778 541.85,-172.173 574,-191 577.611,-193.114 581.467,-195.026 585.432,-196.752"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="584.23,-200.04 594.817,-200.447 586.794,-193.527 584.23,-200.04"/>
+<path fill="none" stroke="midnightblue" d="M538.134,-121.744C559.27,-138.577 602.659,-171.275 644,-191 648.61,-193.2 653.519,-195.227 658.493,-197.078"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="657.484,-200.433 668.079,-200.417 659.787,-193.822 657.484,-200.433"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
 <a xlink:href="../../df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae" target="_top" xlink:title="Returns a human readable message for the given error number.">
-<polygon fill="none" stroke="black" points="592.5,-160.5 592.5,-181.5 685.5,-181.5 685.5,-160.5 592.5,-160.5"/>
-<text text-anchor="middle" x="639" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetErrorMessage</text>
+<polygon fill="none" stroke="black" points="662.5,-160.5 662.5,-181.5 755.5,-181.5 755.5,-160.5 662.5,-160.5"/>
+<text text-anchor="middle" x="709" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetErrorMessage</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M510.004,-121.544C526.798,-130.147 551.574,-142.264 574,-151 579.568,-153.169 585.475,-155.262 591.369,-157.224"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="590.622,-160.661 601.214,-160.394 592.768,-153.998 590.622,-160.661"/>
+<path fill="none" stroke="midnightblue" d="M555.749,-121.578C579.735,-129.771 613.916,-141.317 644,-151 650.57,-153.114 657.528,-155.306 664.355,-157.429"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="663.615,-160.864 674.203,-160.474 665.683,-154.176 663.615,-160.864"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
 <a xlink:href="../../df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20" target="_top" xlink:title="Frees the space of the error message generated by GetErrorMessage(int)">
-<polygon fill="none" stroke="black" points="590.5,-120.5 590.5,-141.5 687.5,-141.5 687.5,-120.5 590.5,-120.5"/>
-<text text-anchor="middle" x="639" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">FreeErrorMessage</text>
+<polygon fill="none" stroke="black" points="660.5,-120.5 660.5,-141.5 757.5,-141.5 757.5,-120.5 660.5,-120.5"/>
+<text text-anchor="middle" x="709" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">FreeErrorMessage</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M537.554,-117.383C551.124,-119.205 566.072,-121.211 580.226,-123.111"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="579.985,-126.61 590.362,-124.471 580.916,-119.672 579.985,-126.61"/>
+<path fill="none" stroke="midnightblue" d="M572.864,-116.203C596.541,-118.776 625.33,-121.905 650.325,-124.622"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="650.097,-128.118 660.416,-125.719 650.853,-121.159 650.097,-128.118"/>
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
 <a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a4af2b184144f7d807e8157ee8b474ecf" target="_top" xlink:title="SetSocketToNonBlocking">
-<polygon fill="none" stroke="black" points="574.5,-80.5 574.5,-101.5 703.5,-101.5 703.5,-80.5 574.5,-80.5"/>
-<text text-anchor="middle" x="639" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetSocketToNonBlocking</text>
+<polygon fill="none" stroke="black" points="644.5,-80.5 644.5,-101.5 773.5,-101.5 773.5,-80.5 644.5,-80.5"/>
+<text text-anchor="middle" x="709" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetSocketToNonBlocking</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node8 -->
 <g id="edge14" class="edge"><title>Node4&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M537.554,-104.617C546.032,-103.479 555.047,-102.269 564.071,-101.058"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="564.789,-104.493 574.235,-99.6933 563.858,-97.5549 564.789,-104.493"/>
+<path fill="none" stroke="midnightblue" d="M572.864,-105.797C591.622,-103.758 613.59,-101.371 634.337,-99.1155"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="634.841,-102.581 644.404,-98.0213 634.085,-95.6224 634.841,-102.581"/>
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
 <a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a0db6c2ead1606d25fb6d9151e5c08d09" target="_top" xlink:title="SetQosOnSocket">
-<polygon fill="none" stroke="black" points="592.5,-40.5 592.5,-61.5 685.5,-61.5 685.5,-40.5 592.5,-40.5"/>
-<text text-anchor="middle" x="639" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetQosOnSocket</text>
+<polygon fill="none" stroke="black" points="662.5,-40.5 662.5,-61.5 755.5,-61.5 755.5,-40.5 662.5,-40.5"/>
+<text text-anchor="middle" x="709" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetQosOnSocket</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
 <g id="edge16" class="edge"><title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M510.004,-100.456C526.798,-91.8529 551.574,-79.7357 574,-71 579.568,-68.8311 585.475,-66.7381 591.369,-64.7757"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="592.768,-68.0024 601.214,-61.6063 590.622,-61.3391 592.768,-68.0024"/>
+<path fill="none" stroke="midnightblue" d="M555.749,-100.422C579.735,-92.2293 613.916,-80.6826 644,-71 650.57,-68.8856 657.528,-66.694 664.355,-64.5708"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="665.683,-67.8237 674.203,-61.5258 663.615,-61.1361 665.683,-67.8237"/>
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
 <a xlink:href="../../dd/d34/cipqos_8c.html#a55b61b74431c08421a73941bda44702f" target="_top" xlink:title="Initializing the data structures of the TCP/IP interface object.">
-<polygon fill="none" stroke="black" points="585,-0.5 585,-21.5 693,-21.5 693,-0.5 585,-0.5"/>
-<text text-anchor="middle" x="639" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
+<polygon fill="none" stroke="black" points="655,-0.5 655,-21.5 763,-21.5 763,-0.5 655,-0.5"/>
+<text text-anchor="middle" x="709" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
 </a>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge20" class="edge"><title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M529.148,-40.4905C547.81,-35.4807 570.324,-29.4366 590.099,-24.1279"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="591.105,-27.4819 599.855,-21.5087 589.29,-20.7212 591.105,-27.4819"/>
+<path fill="none" stroke="midnightblue" d="M573.344,-40.4905C597.02,-35.3434 625.719,-29.1046 650.611,-23.6933"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="651.632,-27.0532 660.66,-21.5087 650.145,-20.213 651.632,-27.0532"/>
 </g>
 </g>
 </svg>

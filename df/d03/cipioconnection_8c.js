@@ -5,7 +5,7 @@ var cipioconnection_8c =
     [ "CloseCommunicationChannelsAndRemoveFromActiveConnectionsList", "df/d03/cipioconnection_8c.html#ab63a9cebd7f44ee474ac1fd446d5bc66", null ],
     [ "CloseIoConnection", "df/d03/cipioconnection_8c.html#adb77dcdc1545600764cd212783f5c4e2", null ],
     [ "EstablishIoConnection", "df/d03/cipioconnection_8c.html#a699fccd3dabdfec1b77560f22268c1e8", null ],
-    [ "GetConnectionTransportClass", "df/d03/cipioconnection_8c.html#a6faba387e4d023277fa1e8ca014d9c03", null ],
+    [ "GetConnectionObjectTransportClass", "df/d03/cipioconnection_8c.html#a7c1f79ec41068b2d3a21c0adfbc6a33c", null ],
     [ "HandleConfigData", "df/d03/cipioconnection_8c.html#a092519d4bb79e85405f3bae92391ab71", null ],
     [ "HandleIoConnectionTimeOut", "df/d03/cipioconnection_8c.html#a043e7b682698cb5a50ced76b6ce10293", null ],
     [ "HandleReceivedIoConnectionData", "df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f", null ],

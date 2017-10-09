@@ -95,27 +95,27 @@ var sectionId = 'dynsection-32';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a1eaac64a12417ebe7d29d38da9183793" target="_top" xlink:title="GetConnectionObjectTToOPriority">
-<polygon fill="none" stroke="black" points="372,-80.5 372,-101.5 538,-101.5 538,-80.5 372,-80.5"/>
-<text text-anchor="middle" x="455" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectionObjectTToOPriority</text>
+<a xlink:href="../../df/d03/cipioconnection_8c.html#a7c1f79ec41068b2d3a21c0adfbc6a33c" target="_top" xlink:title="GetConnectionObjectTransportClass">
+<polygon fill="none" stroke="black" points="366.5,-80.5 366.5,-101.5 543.5,-101.5 543.5,-80.5 366.5,-80.5"/>
+<text text-anchor="middle" x="455" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectionObjectTransportClass</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M212.439,-120.493C237.437,-117.425 264.812,-114.072 290,-111 313.308,-108.157 338.471,-105.101 361.953,-102.254"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="362.398,-105.726 371.904,-101.048 361.555,-98.7769 362.398,-105.726"/>
+<path fill="none" stroke="midnightblue" d="M212.439,-120.493C237.437,-117.425 264.812,-114.072 290,-111 311.983,-108.319 335.614,-105.448 357.93,-102.742"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="358.574,-106.19 368.08,-101.512 357.732,-99.2405 358.574,-106.19"/>
 </g>
-<!-- Node9 -->
-<g id="node17" class="node"><title>Node9</title>
-<a xlink:href="../../df/d03/cipioconnection_8c.html#a6faba387e4d023277fa1e8ca014d9c03" target="_top" xlink:title="GetConnectionTransportClass">
-<polygon fill="none" stroke="black" points="380.5,-40.5 380.5,-61.5 529.5,-61.5 529.5,-40.5 380.5,-40.5"/>
-<text text-anchor="middle" x="455" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectionTransportClass</text>
+<!-- Node8 -->
+<g id="node15" class="node"><title>Node8</title>
+<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a1eaac64a12417ebe7d29d38da9183793" target="_top" xlink:title="GetConnectionObjectTToOPriority">
+<polygon fill="none" stroke="black" points="372,-40.5 372,-61.5 538,-61.5 538,-40.5 372,-40.5"/>
+<text text-anchor="middle" x="455" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectionObjectTToOPriority</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge16" class="edge"><title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M150.221,-120.497C181.367,-106.868 238.7,-83.3728 290,-71 315.754,-64.7884 344.259,-60.4598 370.228,-57.4625"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="370.867,-60.9133 380.423,-56.338 370.099,-53.9555 370.867,-60.9133"/>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge14" class="edge"><title>Node1&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M150.221,-120.497C181.367,-106.868 238.7,-83.3728 290,-71 312.949,-65.465 338.082,-61.4251 361.659,-58.49"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="362.141,-61.9573 371.657,-57.2986 361.313,-55.0065 362.141,-61.9573"/>
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
@@ -141,17 +141,17 @@ var sectionId = 'dynsection-32';
 <path fill="none" stroke="midnightblue" d="M491.535,-211C531.649,-211 596.828,-211 645.57,-211"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="645.707,-214.5 655.706,-211 645.706,-207.5 645.707,-214.5"/>
 </g>
-<!-- Node8 -->
-<g id="node15" class="node"><title>Node8</title>
+<!-- Node9 -->
+<g id="node17" class="node"><title>Node9</title>
 <a xlink:href="../../dd/d34/cipqos_8c.html#a55b61b74431c08421a73941bda44702f" target="_top" xlink:title="Initializing the data structures of the TCP/IP interface object.">
-<polygon fill="none" stroke="black" points="656,-80.5 656,-101.5 764,-101.5 764,-80.5 656,-80.5"/>
-<text text-anchor="middle" x="710" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
+<polygon fill="none" stroke="black" points="656,-40.5 656,-61.5 764,-61.5 764,-40.5 656,-40.5"/>
+<text text-anchor="middle" x="710" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
 </a>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge14" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M538.144,-91C573.029,-91 612.975,-91 645.57,-91"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="645.878,-94.5001 655.878,-91 645.878,-87.5001 645.878,-94.5001"/>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge16" class="edge"><title>Node8&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M538.144,-51C573.029,-51 612.975,-51 645.57,-51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="645.878,-54.5001 655.878,-51 645.878,-47.5001 645.878,-54.5001"/>
 </g>
 </g>
 </svg>

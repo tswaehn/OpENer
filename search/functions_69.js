@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['iapp_5fclosesocket_5ftcp',['IApp_CloseSocket_tcp',['../db/d4f/generic__networkhandler_8c.html#aac0abfde6f2872cae33998b90683cf78',1,'IApp_CloseSocket_tcp(int socket_handle):&#160;generic_networkhandler.c'],['../da/dc2/generic__networkhandler_8h.html#aac0abfde6f2872cae33998b90683cf78',1,'IApp_CloseSocket_tcp(int socket_handle):&#160;generic_networkhandler.c']]],
-  ['iapp_5fclosesocket_5fudp',['IApp_CloseSocket_udp',['../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5',1,'IApp_CloseSocket_udp(int socket_handle):&#160;generic_networkhandler.c'],['../da/dc2/generic__networkhandler_8h.html#a37e718bdfa6e3b780b5135330b9cb5e5',1,'IApp_CloseSocket_udp(int socket_handle):&#160;generic_networkhandler.c']]],
   ['initializecipidentiy',['InitializeCipIdentiy',['../dd/dc4/cipidentity_8c.html#a5fc7e7b16b1a6f9c8c02a2700e77feb5',1,'cipidentity.c']]],
   ['initializecipmessagerouterclass',['InitializeCipMessageRouterClass',['../d9/d7d/cipmessagerouter_8c.html#aa48077419a6045debf033e81946ee40c',1,'cipmessagerouter.c']]],
   ['initializecipqos',['InitializeCipQos',['../dd/d34/cipqos_8c.html#ac274d150c9f82c615c75f681a30e0b38',1,'cipqos.c']]],

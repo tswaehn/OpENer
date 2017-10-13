@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 764;
+var viewWidth = 736;
 var viewHeight = 110;
 var sectionId = 'dynsection-25';
 </script>
@@ -47,75 +47,75 @@ var sectionId = 'dynsection-25';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="../../db/d4f/generic__networkhandler_8c.html#aac0abfde6f2872cae33998b90683cf78" target="_top" xlink:title="IApp_CloseSocket_tcp">
-<polygon fill="none" stroke="black" points="250.5,-20.5 250.5,-41.5 367.5,-41.5 367.5,-20.5 250.5,-20.5"/>
-<text text-anchor="middle" x="309" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">IApp_CloseSocket_tcp</text>
+<a xlink:href="../../db/d4f/generic__networkhandler_8c.html#a1bfa5ef8e4802716459a56567ee16592" target="_top" xlink:title="CloseTcpSocket">
+<polygon fill="none" stroke="black" points="250.5,-20.5 250.5,-41.5 339.5,-41.5 339.5,-20.5 250.5,-20.5"/>
+<text text-anchor="middle" x="295" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseTcpSocket</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M214.21,-31C223.072,-31 231.869,-31 240.329,-31"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="240.461,-34.5001 250.461,-31 240.461,-27.5001 240.461,-34.5001"/>
+<path fill="none" stroke="midnightblue" d="M214.18,-31C223.109,-31 231.876,-31 240.15,-31"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="240.342,-34.5001 250.342,-31 240.342,-27.5001 240.342,-34.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
 <a xlink:href="../../db/d4f/generic__networkhandler_8c.html#aea539a75995234e379a1c25019ba378f" target="_top" xlink:title="RemoveSocketTimerFromList">
-<polygon fill="none" stroke="black" points="404.5,-40.5 404.5,-61.5 551.5,-61.5 551.5,-40.5 404.5,-40.5"/>
-<text text-anchor="middle" x="478" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">RemoveSocketTimerFromList</text>
+<polygon fill="none" stroke="black" points="376.5,-40.5 376.5,-61.5 523.5,-61.5 523.5,-40.5 376.5,-40.5"/>
+<text text-anchor="middle" x="450" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">RemoveSocketTimerFromList</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M367.634,-37.9389C376.223,-38.9554 385.206,-40.0185 394.18,-41.0804"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="393.943,-44.5768 404.285,-42.2763 394.766,-37.6253 393.943,-44.5768"/>
+<path fill="none" stroke="midnightblue" d="M339.832,-36.7848C348.237,-37.8693 357.269,-39.0347 366.414,-40.2147"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="365.993,-43.6893 376.358,-41.4979 366.889,-36.7468 365.993,-43.6893"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
 <a xlink:href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" target="_top" xlink:title="Close the given socket and clean up the stack.">
-<polygon fill="none" stroke="black" points="441.5,-0.5 441.5,-21.5 514.5,-21.5 514.5,-0.5 441.5,-0.5"/>
-<text text-anchor="middle" x="478" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
+<polygon fill="none" stroke="black" points="413.5,-0.5 413.5,-21.5 486.5,-21.5 486.5,-0.5 413.5,-0.5"/>
+<text text-anchor="middle" x="450" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M367.634,-24.0611C388.498,-21.592 411.69,-18.8473 431.409,-16.5138"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="431.853,-19.9857 441.373,-15.3346 431.031,-13.0342 431.853,-19.9857"/>
+<path fill="none" stroke="midnightblue" d="M339.832,-25.2152C359.704,-22.6511 383.084,-19.6344 403.18,-17.0412"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="403.885,-20.4795 413.355,-15.7284 402.989,-13.537 403.885,-20.4795"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
 <a xlink:href="../../d4/df6/socket__timer_8c.html#abe7542fdec4d4e4893a8c712192529ca" target="_top" xlink:title="Get the Socket Timer entry with the spezified socket value.">
-<polygon fill="none" stroke="black" points="588.5,-80.5 588.5,-101.5 755.5,-101.5 755.5,-80.5 588.5,-80.5"/>
-<text text-anchor="middle" x="672" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">SocketTimerArrayGetSocketTimer</text>
+<polygon fill="none" stroke="black" points="560.5,-80.5 560.5,-101.5 727.5,-101.5 727.5,-80.5 560.5,-80.5"/>
+<text text-anchor="middle" x="644" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">SocketTimerArrayGetSocketTimer</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M528.971,-61.5095C554.156,-66.7023 584.731,-73.0064 611.137,-78.4508"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="610.532,-81.8997 621.033,-80.4913 611.946,-75.0439 610.532,-81.8997"/>
+<path fill="none" stroke="midnightblue" d="M500.971,-61.5095C526.156,-66.7023 556.731,-73.0064 583.137,-78.4508"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="582.532,-81.8997 593.033,-80.4913 583.946,-75.0439 582.532,-81.8997"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
 <a xlink:href="../../d4/df6/socket__timer_8c.html#a6130830815ae46fe4e6d45cf89bc3506" target="_top" xlink:title="Clears a Socket Timer entry.">
-<polygon fill="none" stroke="black" points="624.5,-40.5 624.5,-61.5 719.5,-61.5 719.5,-40.5 624.5,-40.5"/>
-<text text-anchor="middle" x="672" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">SocketTimerClear</text>
+<polygon fill="none" stroke="black" points="596.5,-40.5 596.5,-61.5 691.5,-61.5 691.5,-40.5 596.5,-40.5"/>
+<text text-anchor="middle" x="644" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">SocketTimerClear</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M551.62,-51C572.34,-51 594.574,-51 614.225,-51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="614.244,-54.5001 624.244,-51 614.244,-47.5001 614.244,-54.5001"/>
+<path fill="none" stroke="midnightblue" d="M523.62,-51C544.34,-51 566.574,-51 586.225,-51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="586.244,-54.5001 596.244,-51 586.244,-47.5001 586.244,-54.5001"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
 <a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" target="_top" xlink:title="Platform dependent code to close a socket.">
-<polygon fill="none" stroke="black" points="617,-0.5 617,-21.5 727,-21.5 727,-0.5 617,-0.5"/>
-<text text-anchor="middle" x="672" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
+<polygon fill="none" stroke="black" points="589,-0.5 589,-21.5 699,-21.5 699,-0.5 589,-0.5"/>
+<text text-anchor="middle" x="644" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
 </a>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M514.947,-11C540.825,-11 576.104,-11 606.67,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="606.835,-14.5001 616.835,-11 606.835,-7.5001 606.835,-14.5001"/>
+<path fill="none" stroke="midnightblue" d="M486.947,-11C512.825,-11 548.104,-11 578.67,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="578.835,-14.5001 588.835,-11 578.835,-7.5001 578.835,-14.5001"/>
 </g>
 </g>
 </svg>

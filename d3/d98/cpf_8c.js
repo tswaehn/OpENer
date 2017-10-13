@@ -2,7 +2,7 @@ var cpf_8c =
 [
     [ "AssembleIOMessage", "d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4", null ],
     [ "AssembleLinearMessage", "d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392", null ],
-    [ "CreateCommonPacketFormatStructure", "d4/d91/group__ENCAP.html#ga5fd76bfeb985480d68d6fd4d97129606", null ],
+    [ "CreateCommonPacketFormatStructure", "d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec", null ],
     [ "EncodeConnectedAddressItem", "d3/d98/cpf_8c.html#a53303213aba7d1f7b5cbd3183570b11a", null ],
     [ "EncodeConnectedDataItemLength", "d3/d98/cpf_8c.html#a689a9410bc228cecdbf75e7360f643dd", null ],
     [ "EncodeDataItemData", "d3/d98/cpf_8c.html#a0abf0f8ed39e52fbd224c555dd23a0ac", null ],

@@ -1036,13 +1036,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00973"></a>00973 
 <a name="l00974"></a><a class="code" href="../../de/d45/cipioconnection_8h.html#ab63a9cebd7f44ee474ac1fd446d5bc66">00974</a> <span class="keywordtype">void</span> <a class="code" href="../../df/d03/cipioconnection_8c.html#ab63a9cebd7f44ee474ac1fd446d5bc66" title="close the communication channels of the given connection and remove it from the active connections li...">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a>(
 <a name="l00975"></a>00975   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00976"></a>00976   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
+<a name="l00976"></a>00976   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9">CloseUdpSocket</a>(
 <a name="l00977"></a>00977     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>]);
 <a name="l00978"></a>00978 
 <a name="l00979"></a>00979   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7">kUdpCommuncationDirectionConsuming</a>] =
 <a name="l00980"></a>00980     kEipInvalidSocket;
 <a name="l00981"></a>00981 
-<a name="l00982"></a>00982   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#a37e718bdfa6e3b780b5135330b9cb5e5">IApp_CloseSocket_udp</a>(
+<a name="l00982"></a>00982   <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9">CloseUdpSocket</a>(
 <a name="l00983"></a>00983     connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]);
 <a name="l00984"></a>00984 
 <a name="l00985"></a>00985   connection_object-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
@@ -1070,7 +1070,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../df/d03/cipioconnection_8c.html">cipioconnection.c</a>      </li>
 
-    <li class="footer">Generated on Fri Oct 13 2017 09:15:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Fri Oct 13 2017 19:15:44 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -158,6 +158,7 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the encapsulation layer.  <a href="../../d4/d91/group__ENCAP.html#ga1261bd2441f744c38d7a3f8d8c16c391"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac">ManageEncapsulationMessages</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> elapsed_time)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle delayed encapsulation message responses.  <a href="../../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/encap_8h.html#a86c98c2665f4c058e9c5afb60690a81b">RemoveSession</a> (const int socket)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This file contains the public interface of the encapsulation layer. </p>
@@ -177,7 +178,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/df9/encap_8h_source.html#l00021">21</a> of file <a class="el" href="../../d7/df9/encap_8h_source.html">encap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00632">CreateEncapsulationStructure()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00311">EncapsulateData()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00540">HandleDataOnTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00357">HandleReceivedListIdentityCommandUdp()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00574">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00533">HandleReceivedSendUnitDataCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00642">CreateEncapsulationStructure()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00312">EncapsulateData()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00546">HandleDataOnTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00358">HandleReceivedListIdentityCommandUdp()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00580">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00536">HandleReceivedSendUnitDataCommand()</a>.</p>
 
 </div>
 </div>
@@ -244,6 +245,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a86c98c2665f4c058e9c5afb60690a81b"></a><!-- doxytag: member="encap.h::RemoveSession" ref="a86c98c2665f4c058e9c5afb60690a81b" args="(const int socket)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d7/df9/encap_8h.html#a86c98c2665f4c058e9c5afb60690a81b">RemoveSession</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00688">688</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00909">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00546">HandleDataOnTcpSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00322">NetworkHandlerProcessOnce()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a86c98c2665f4c058e9c5afb60690a81b_icgraph.svg" width="100%" height="148"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -264,7 +297,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../d7/df9/encap_8h.html">encap.h</a>      </li>
 
-    <li class="footer">Generated on Thu Oct 12 2017 10:54:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Fri Oct 13 2017 09:15:50 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

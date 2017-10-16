@@ -20,6 +20,8 @@ var cipconnectionmanager_8c =
     [ "GetConnectedOutputAssembly", "d5/d35/cipconnectionmanager_8c.html#a431e253a508cf136edbba337b91e0060", null ],
     [ "GetConnectionId", "d5/d35/cipconnectionmanager_8c.html#acd79f5979ea6356666f19e6bb53e989a", null ],
     [ "GetConnectionManagementEntry", "d5/d35/cipconnectionmanager_8c.html#abd5ec846f4be69da9c0f566dbc38dea3", null ],
+    [ "GetConnectionObjectInactivityWatchdogTimerValue", "d5/d35/cipconnectionmanager_8c.html#a10828cf15f3a7bd0c9d6401acefec616", null ],
+    [ "GetConnectionObjectInitialInactivityWatchdogTimerValue", "d5/d35/cipconnectionmanager_8c.html#a7112ad2b44c1a5a6fd6c4bc1552de20f", null ],
     [ "GetConnectionObjectTargetToOriginatorFixedOrVariableConnectionSize", "d5/d35/cipconnectionmanager_8c.html#a7789474ea0807d66db46000487051e9d", null ],
     [ "GetConnectionObjectTToOPriority", "d5/d35/cipconnectionmanager_8c.html#a1eaac64a12417ebe7d29d38da9183793", null ],
     [ "GetConnectionOwner", "d5/d35/cipconnectionmanager_8c.html#ae16e9a87ff707c95f370ba715a824d2a", null ],

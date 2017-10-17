@@ -8,6 +8,8 @@ var searchData=
   ['cipcommon_2eh',['cipcommon.h',['../db/d14/cipcommon_8h.html',1,'']]],
   ['cipconnectionmanager_2ec',['cipconnectionmanager.c',['../d5/d35/cipconnectionmanager_8c.html',1,'']]],
   ['cipconnectionmanager_2eh',['cipconnectionmanager.h',['../d2/da3/cipconnectionmanager_8h.html',1,'']]],
+  ['cipconnectionobject_2ec',['cipconnectionobject.c',['../df/d91/cipconnectionobject_8c.html',1,'']]],
+  ['cipconnectionobject_2eh',['cipconnectionobject.h',['../d1/d6c/cipconnectionobject_8h.html',1,'']]],
   ['cipelectronickey_2ec',['cipelectronickey.c',['../d3/dfe/cipelectronickey_8c.html',1,'']]],
   ['cipelectronickey_2eh',['cipelectronickey.h',['../d0/d23/cipelectronickey_8h.html',1,'']]],
   ['cipepath_2ec',['cipepath.c',['../de/ddc/cipepath_8c.html',1,'']]],

@@ -1,13 +1,25 @@
 var cipconnectionobject_8c =
 [
+    [ "CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED", "df/d91/cipconnectionobject_8c.html#ac634be2b36f217e00524f60195ad32b1", null ],
+    [ "CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING", "df/d91/cipconnectionobject_8c.html#a0f9d20ddb6460cd5fac2386283334baf", null ],
+    [ "CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO", "df/d91/cipconnectionobject_8c.html#a1fdd9cac091c858d2bea3a9c7b606ffc", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_CLOSING", "df/d91/cipconnectionobject_8c.html#adb23dffe782d0a1c944faa8294a1f126", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_CONFIGURING", "df/d91/cipconnectionobject_8c.html#a4c343c20f49236c2b1acbe6fcbc4d57c", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE", "df/d91/cipconnectionobject_8c.html#a74b571a7863c01a88f90fd1c36e998e0", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_ESTABLISHED", "df/d91/cipconnectionobject_8c.html#ab37f2dbc1d6a181fdd1d58040ea8e454", null ],
-    [ "CIP_CONNECTION_OBJECT_STATE_NON_EXISTANT", "df/d91/cipconnectionobject_8c.html#a74b037203eeba3042988e01356e19faf", null ],
+    [ "CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT", "df/d91/cipconnectionobject_8c.html#aae7528b2e7d52e688fef7e8379f98407", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_TIMEOUT", "df/d91/cipconnectionobject_8c.html#aefdc5ef4836980230562a1758e596f58", null ],
     [ "CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID", "df/d91/cipconnectionobject_8c.html#a7de4ee68ffdfc831307ff3649aecdf17", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT", "df/d91/cipconnectionobject_8c.html#ab764d2bac26789beef2cbfd43687769f", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE", "df/d91/cipconnectionobject_8c.html#a608c8d70cc925b2a5fbf36a19eb8e997", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC", "df/d91/cipconnectionobject_8c.html#a88cc4218b11b36145d9ef71911c40a41", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0", "df/d91/cipconnectionobject_8c.html#aa5028937a4c26c7786d3200c010065cf", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1", "df/d91/cipconnectionobject_8c.html#a74f2dc41bce1ef214afcdc492a2d7714", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2", "df/d91/cipconnectionobject_8c.html#a59b53d9ccec065ae661c27b3bf494479", null ],
+    [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3", "df/d91/cipconnectionobject_8c.html#a387ede74ac43a1349eeabf3268d158d2", null ],
     [ "GetConnectionObjectInstanceType", "df/d91/cipconnectionobject_8c.html#af0cdc3d85d08bc6e3df602d416e000cc", null ],
     [ "GetConnectionObjectState", "df/d91/cipconnectionobject_8c.html#a275a42f309440d6ae706c9104638c9d0", null ],
-    [ "GetConnectionObjectTransportClassTriggerDirection", "df/d91/cipconnectionobject_8c.html#aa673c315115bdf600c58ba38d667c47c", null ]
+    [ "GetConnectionObjectTransportClassTriggerDirection", "df/d91/cipconnectionobject_8c.html#aa673c315115bdf600c58ba38d667c47c", null ],
+    [ "GetConnectionObjectTransportClassTriggerProductionTrigger", "df/d91/cipconnectionobject_8c.html#ab38a04aadc9468453b2bd36277e40083", null ],
+    [ "GetConnectionObjectTransportClassTriggerTransportClass", "df/d91/cipconnectionobject_8c.html#a927aff017244be359579d714280a920d", null ]
 ];

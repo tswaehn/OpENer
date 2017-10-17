@@ -106,10 +106,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d69/typedefs_8h_source.html">typedefs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cipconnectionobject.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/da6/cipconnectionobject_8h__incl.svg" width="280" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/da6/cipconnectionobject_8h__incl.svg" width="332" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -133,13 +134,14 @@ Typedefs</h2></td></tr>
 <a class="el" href="../../d2/da8/structcip__connection__object.html">cip_connection_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069">kConnectionObjectInstanceTypeExplicitMessaging</a> =  0, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abae8b5cb741483e2c83ac0354e14e9bef8">kConnectionObjectInstanceTypeInvalid</a> =  -1, 
+<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069">kConnectionObjectInstanceTypeExplicitMessaging</a> =  0, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba2e436dfcd485c4d4c90c5fd5d2c1ee43">kConnectionObjectInstanceTypeIO</a>, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abad34146a750227c04619f0cb5931a4a35">kConnectionObjectInstanceTypeCipBridged</a>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> { <br/>
 &#160;&#160;<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f">kConnectionObjectStateInvalid</a> =  -1, 
-<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae5d2e78d32b4d729ea2ece954753d8bf">kConnectionObjectStateNonExistant</a> =  0, 
+<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530">kConnectionObjectStateNonExistent</a> =  0, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1">kConnectionObjectStateConfiguring</a>, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a324b103174c66445f627b4a6b80cbe47">kConnectionObjectStateWaitingForConnectionID</a>, 
 <br/>
@@ -152,20 +154,27 @@ Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6ae5c45e8191ad02abb0adc6339a32ced4">kConnectionObjectTransportClassTriggerDirectionClient</a> =  0, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6abf0dd6f3c0bf2060d04bdfe9e7e89e9b">kConnectionObjectTransportClassTriggerDirectionServer</a>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a> =  0, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a42fa5cdd449e82c9555804cd44db8ed8">kConnectionObjectTransportClassTriggerProductionTriggerInvalid</a> =  -1, 
+<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a> =  0, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0ad91b01db6a0963070bbce9ca5483aecc">kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</a>, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0afc5a3b2421cadeb4c8448ff3b2bb391d">kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject</a>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a> { <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0">kConnectionObjectTransportClassTriggerTransportClass0</a> =  0, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a> { <br/>
+&#160;&#160;<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fadb99f06aef1c95a88c6e682e25966a44">kConnectionObjectTransportClassTriggerTransportClassInvalid</a> =  -1, 
+<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0">kConnectionObjectTransportClassTriggerTransportClass0</a> =  0, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa3985efbf81d9660d0969a318d03fe3f6">kConnectionObjectTransportClassTriggerTransportClass1</a>, 
 <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa70cdb97f8af6924f5a9ba47e8c44898a">kConnectionObjectTransportClassTriggerTransportClass2</a>, 
-<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fad1cc7f6e66b0708abc0fa70ca8120d90">kConnectionObjectTransportClassTriggerTransportClass3</a>
+<br/>
+&#160;&#160;<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fad1cc7f6e66b0708abc0fa70ca8120d90">kConnectionObjectTransportClassTriggerTransportClass3</a>
+<br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#af0cdc3d85d08bc6e3df602d416e000cc">GetConnectionObjectInstanceType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a275a42f309440d6ae706c9104638c9d0">GetConnectionObjectState</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aa673c315115bdf600c58ba38d667c47c">GetConnectionObjectTransportClassTriggerDirection</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ab38a04aadc9468453b2bd36277e40083">GetConnectionObjectTransportClassTriggerProductionTrigger</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a927aff017244be359579d714280a920d">GetConnectionObjectTransportClassTriggerTransportClass</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="afb2ba0230a759374bb331ee258ccec51"></a><!-- doxytag: member="cipconnectionobject.h::CIP_CONNECTION_OBJECT_CODE" ref="afb2ba0230a759374bb331ee258ccec51" args="" -->
@@ -179,7 +188,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00012">12</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00013">13</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -209,6 +218,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a8fbd6c5533dcc176e91ae9292524d5abae8b5cb741483e2c83ac0354e14e9bef8"></a><!-- doxytag: member="kConnectionObjectInstanceTypeInvalid" ref="a8fbd6c5533dcc176e91ae9292524d5abae8b5cb741483e2c83ac0354e14e9bef8" args="" -->kConnectionObjectInstanceTypeInvalid</em>&nbsp;</td><td>
+</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069"></a><!-- doxytag: member="kConnectionObjectInstanceTypeExplicitMessaging" ref="a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069" args="" -->kConnectionObjectInstanceTypeExplicitMessaging</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8fbd6c5533dcc176e91ae9292524d5aba2e436dfcd485c4d4c90c5fd5d2c1ee43"></a><!-- doxytag: member="kConnectionObjectInstanceTypeIO" ref="a8fbd6c5533dcc176e91ae9292524d5aba2e436dfcd485c4d4c90c5fd5d2c1ee43" args="" -->kConnectionObjectInstanceTypeIO</em>&nbsp;</td><td>
@@ -219,7 +230,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00025">25</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00026">26</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +247,7 @@ Functions</h2></td></tr>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f"></a><!-- doxytag: member="kConnectionObjectStateInvalid" ref="a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f" args="" -->kConnectionObjectStateInvalid</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a07601b1d58bee031fad7dc056fb89117ae5d2e78d32b4d729ea2ece954753d8bf"></a><!-- doxytag: member="kConnectionObjectStateNonExistant" ref="a07601b1d58bee031fad7dc056fb89117ae5d2e78d32b4d729ea2ece954753d8bf" args="" -->kConnectionObjectStateNonExistant</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530"></a><!-- doxytag: member="kConnectionObjectStateNonExistent" ref="a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530" args="" -->kConnectionObjectStateNonExistent</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1"></a><!-- doxytag: member="kConnectionObjectStateConfiguring" ref="a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1" args="" -->kConnectionObjectStateConfiguring</em>&nbsp;</td><td>
 </td></tr>
@@ -254,7 +265,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00014">14</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00015">15</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +288,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00031">31</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00033">33</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -292,6 +303,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a40e6630a28ca2e52e3f57b010035cbc0a42fa5cdd449e82c9555804cd44db8ed8"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerProductionTriggerInvalid" ref="a40e6630a28ca2e52e3f57b010035cbc0a42fa5cdd449e82c9555804cd44db8ed8" args="" -->kConnectionObjectTransportClassTriggerProductionTriggerInvalid</em>&nbsp;</td><td>
+</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerProductionTriggerCyclic" ref="a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645" args="" -->kConnectionObjectTransportClassTriggerProductionTriggerCyclic</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a40e6630a28ca2e52e3f57b010035cbc0ad91b01db6a0963070bbce9ca5483aecc"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState" ref="a40e6630a28ca2e52e3f57b010035cbc0ad91b01db6a0963070bbce9ca5483aecc" args="" -->kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</em>&nbsp;</td><td>
@@ -302,7 +315,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00036">36</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00038">38</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -317,6 +330,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a7d9579ba2ab49ebf08a1e8b124f7c68fadb99f06aef1c95a88c6e682e25966a44"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerTransportClassInvalid" ref="a7d9579ba2ab49ebf08a1e8b124f7c68fadb99f06aef1c95a88c6e682e25966a44" args="" -->kConnectionObjectTransportClassTriggerTransportClassInvalid</em>&nbsp;</td><td>
+</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerTransportClass0" ref="a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0" args="" -->kConnectionObjectTransportClassTriggerTransportClass0</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7d9579ba2ab49ebf08a1e8b124f7c68fa3985efbf81d9660d0969a318d03fe3f6"></a><!-- doxytag: member="kConnectionObjectTransportClassTriggerTransportClass1" ref="a7d9579ba2ab49ebf08a1e8b124f7c68fa3985efbf81d9660d0969a318d03fe3f6" args="" -->kConnectionObjectTransportClassTriggerTransportClass1</em>&nbsp;</td><td>
@@ -329,7 +344,7 @@ Functions</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00042">42</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00045">45</a> of file <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +364,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00038">38</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00056">56</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00018">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00055">cip_connection_object::instance_type</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00030">kConnectionObjectInstanceTypeCipBridged</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00028">kConnectionObjectInstanceTypeExplicitMessaging</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00027">kConnectionObjectInstanceTypeInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00029">kConnectionObjectInstanceTypeIO</a>.</p>
 
 </div>
 </div>
@@ -368,9 +385,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">17</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00035">35</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00010">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00012">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00009">CIP_CONNECTION_OBJECT_STATE_NON_EXISTANT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00011">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00015">kConnectionObjectStateInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00016">kConnectionObjectStateNonExistant</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateWaitingForConnectionID</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00213">kConnectionStateDeferredDelete</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00050">cip_connection_object::state</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00010">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00012">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00009">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00011">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00016">kConnectionObjectStateInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateWaitingForConnectionID</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00054">cip_connection_object::state</a>.</p>
 
 </div>
 </div>
@@ -389,9 +406,51 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00044">44</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00070">70</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00032">kConnectionObjectTransportClassTriggerDirectionClient</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00033">kConnectionObjectTransportClassTriggerDirectionServer</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00052">cip_connection_object::transport_class_trigger</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00034">kConnectionObjectTransportClassTriggerDirectionClient</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00035">kConnectionObjectTransportClassTriggerDirectionServer</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">cip_connection_object::transport_class_trigger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab38a04aadc9468453b2bd36277e40083"></a><!-- doxytag: member="cipconnectionobject.h::GetConnectionObjectTransportClassTriggerProductionTrigger" ref="ab38a04aadc9468453b2bd36277e40083" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ab38a04aadc9468453b2bd36277e40083">GetConnectionObjectTransportClassTriggerProductionTrigger</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">81</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00027">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00024">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00021">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00042">kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00041">kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00040">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00039">kConnectionObjectTransportClassTriggerProductionTriggerInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">cip_connection_object::transport_class_trigger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a927aff017244be359579d714280a920d"></a><!-- doxytag: member="cipconnectionobject.h::GetConnectionObjectTransportClassTriggerTransportClass" ref="a927aff017244be359579d714280a920d" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a927aff017244be359579d714280a920d">GetConnectionObjectTransportClassTriggerTransportClass</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00106">106</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00030">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00031">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00032">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00033">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00047">kConnectionObjectTransportClassTriggerTransportClass0</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00048">kConnectionObjectTransportClassTriggerTransportClass1</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00049">kConnectionObjectTransportClassTriggerTransportClass2</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00050">kConnectionObjectTransportClassTriggerTransportClass3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00046">kConnectionObjectTransportClassTriggerTransportClassInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">cip_connection_object::transport_class_trigger</a>.</p>
 
 </div>
 </div>
@@ -415,7 +474,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html">cipconnectionobject.h</a>      </li>
 
-    <li class="footer">Generated on Tue Oct 17 2017 16:10:53 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Oct 17 2017 20:36:57 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

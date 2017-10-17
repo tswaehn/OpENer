@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00006"></a>00006 
 <a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/d6c/cipconnectionobject_8h.html">cipconnectionobject.h</a>&quot;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74b037203eeba3042988e01356e19faf">00009</a> <span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_NON_EXISTANT 0U</span>
+<a name="l00009"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#aae7528b2e7d52e688fef7e8379f98407">00009</a> <span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT 0U</span>
 <a name="l00010"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c343c20f49236c2b1acbe6fcbc4d57c">00010</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_CONFIGURING 1U</span>
 <a name="l00011"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a7de4ee68ffdfc831307ff3649aecdf17">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID 2U</span>
 <a name="l00012"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab37f2dbc1d6a181fdd1d58040ea8e454">00012</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_ESTABLISHED 3U</span>
@@ -115,42 +115,111 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00014"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74b571a7863c01a88f90fd1c36e998e0">00014</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE 5U</span>
 <a name="l00015"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#adb23dffe782d0a1c944faa8294a1f126">00015</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_STATE_CLOSING 6U</span>
 <a name="l00016"></a>00016 <span class="preprocessor"></span>
-<a name="l00017"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a275a42f309440d6ae706c9104638c9d0">00017</a> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a275a42f309440d6ae706c9104638c9d0">GetConnectionObjectState</a>(
-<a name="l00018"></a>00018   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00019"></a>00019   <span class="keywordflow">switch</span>(connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acbe573abee2756c4189d57c091bcda71">state</a>) {
-<a name="l00020"></a>00020     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74b037203eeba3042988e01356e19faf">CIP_CONNECTION_OBJECT_STATE_NON_EXISTANT</a>: <span class="keywordflow">return</span>
-<a name="l00021"></a>00021         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae5d2e78d32b4d729ea2ece954753d8bf">kConnectionObjectStateNonExistant</a>; <span class="keywordflow">break</span>;
-<a name="l00022"></a>00022     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c343c20f49236c2b1acbe6fcbc4d57c">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>: <span class="keywordflow">return</span>
-<a name="l00023"></a>00023         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1">kConnectionObjectStateConfiguring</a>; <span class="keywordflow">break</span>;
-<a name="l00024"></a>00024     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a7de4ee68ffdfc831307ff3649aecdf17">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>: <span class="keywordflow">return</span>
-<a name="l00025"></a>00025         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a324b103174c66445f627b4a6b80cbe47">kConnectionObjectStateWaitingForConnectionID</a>; <span class="keywordflow">break</span>;
-<a name="l00026"></a>00026     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab37f2dbc1d6a181fdd1d58040ea8e454">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>: <span class="keywordflow">return</span>
-<a name="l00027"></a>00027         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e">kConnectionObjectStateEstablished</a>; <span class="keywordflow">break</span>;
-<a name="l00028"></a>00028     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aefdc5ef4836980230562a1758e596f58">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>: <span class="keywordflow">return</span>
-<a name="l00029"></a>00029         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a43eb1272dcbc2027a0d4bb64ab8d8d0d">kConnectionObjectStateTimedOut</a>; <span class="keywordflow">break</span>;
-<a name="l00030"></a>00030     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74b571a7863c01a88f90fd1c36e998e0">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>: <span class="keywordflow">return</span>
-<a name="l00031"></a>00031         <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9ba45bbf1c8adb91f27172f0e5a0fa2bdec">kConnectionStateDeferredDelete</a>; <span class="keywordflow">break</span>;
-<a name="l00032"></a>00032     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#adb23dffe782d0a1c944faa8294a1f126">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>: <span class="keywordflow">return</span>
-<a name="l00033"></a>00033         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae1307d0ad425964318e4f7a73538a719">kConnectionObjectStateClosing</a>; <span class="keywordflow">break</span>;
-<a name="l00034"></a>00034     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f">kConnectionObjectStateInvalid</a>;
-<a name="l00035"></a>00035   }
-<a name="l00036"></a>00036 }
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#af0cdc3d85d08bc6e3df602d416e000cc">00038</a> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#af0cdc3d85d08bc6e3df602d416e000cc">GetConnectionObjectInstanceType</a>(
-<a name="l00039"></a>00039   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 }
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a>
-<a name="l00044"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#aa673c315115bdf600c58ba38d667c47c">00044</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aa673c315115bdf600c58ba38d667c47c">GetConnectionObjectTransportClassTriggerDirection</a>(
-<a name="l00045"></a>00045   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
-<a name="l00046"></a>00046   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> TransportClassTriggerDirectionMask = 0x80;
-<a name="l00047"></a>00047   <span class="keywordflow">return</span> (connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117">transport_class_trigger</a> &amp;
-<a name="l00048"></a>00048           TransportClassTriggerDirectionMask) ==
-<a name="l00049"></a>00049          TransportClassTriggerDirectionMask ?
-<a name="l00050"></a>00050          <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6abf0dd6f3c0bf2060d04bdfe9e7e89e9b">kConnectionObjectTransportClassTriggerDirectionServer</a>
-<a name="l00051"></a>00051          : <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6ae5c45e8191ad02abb0adc6339a32ced4">kConnectionObjectTransportClassTriggerDirectionClient</a>;
-<a name="l00052"></a>00052 }
+<a name="l00017"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a0f9d20ddb6460cd5fac2386283334baf">00017</a> <span class="preprocessor">#define CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING 0</span>
+<a name="l00018"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a1fdd9cac091c858d2bea3a9c7b606ffc">00018</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO 1</span>
+<a name="l00019"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#ac634be2b36f217e00524f60195ad32b1">00019</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED 2</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a88cc4218b11b36145d9ef71911c40a41">00021</a> <span class="preprocessor">#define CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC ( \</span>
+<a name="l00022"></a>00022 <span class="preprocessor">    0 &lt;&lt; 4)</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define \</span>
+<a name="l00024"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a608c8d70cc925b2a5fbf36a19eb8e997">00024</a> <span class="preprocessor">  CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE ( \</span>
+<a name="l00025"></a>00025 <span class="preprocessor">    1 &lt;&lt; 4)</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span><span class="preprocessor">#define \</span>
+<a name="l00027"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab764d2bac26789beef2cbfd43687769f">00027</a> <span class="preprocessor">  CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT ( \</span>
+<a name="l00028"></a>00028 <span class="preprocessor">    2 &lt;&lt; 4)</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span>
+<a name="l00030"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#aa5028937a4c26c7786d3200c010065cf">00030</a> <span class="preprocessor">#define CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0 0</span>
+<a name="l00031"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74f2dc41bce1ef214afcdc492a2d7714">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1 1</span>
+<a name="l00032"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a59b53d9ccec065ae661c27b3bf494479">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2 2</span>
+<a name="l00033"></a><a class="code" href="../../df/d91/cipconnectionobject_8c.html#a387ede74ac43a1349eeabf3268d158d2">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3 3</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span>
+<a name="l00035"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a275a42f309440d6ae706c9104638c9d0">00035</a> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a275a42f309440d6ae706c9104638c9d0">GetConnectionObjectState</a>(
+<a name="l00036"></a>00036   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00037"></a>00037   <span class="keywordflow">switch</span>(connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acbe573abee2756c4189d57c091bcda71">state</a>) {
+<a name="l00038"></a>00038     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aae7528b2e7d52e688fef7e8379f98407">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>: <span class="keywordflow">return</span>
+<a name="l00039"></a>00039         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530">kConnectionObjectStateNonExistent</a>; <span class="keywordflow">break</span>;
+<a name="l00040"></a>00040     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c343c20f49236c2b1acbe6fcbc4d57c">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>: <span class="keywordflow">return</span>
+<a name="l00041"></a>00041         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1">kConnectionObjectStateConfiguring</a>; <span class="keywordflow">break</span>;
+<a name="l00042"></a>00042     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a7de4ee68ffdfc831307ff3649aecdf17">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>: <span class="keywordflow">return</span>
+<a name="l00043"></a>00043         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a324b103174c66445f627b4a6b80cbe47">kConnectionObjectStateWaitingForConnectionID</a>; <span class="keywordflow">break</span>;
+<a name="l00044"></a>00044     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab37f2dbc1d6a181fdd1d58040ea8e454">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>: <span class="keywordflow">return</span>
+<a name="l00045"></a>00045         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e">kConnectionObjectStateEstablished</a>; <span class="keywordflow">break</span>;
+<a name="l00046"></a>00046     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aefdc5ef4836980230562a1758e596f58">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>: <span class="keywordflow">return</span>
+<a name="l00047"></a>00047         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a43eb1272dcbc2027a0d4bb64ab8d8d0d">kConnectionObjectStateTimedOut</a>; <span class="keywordflow">break</span>;
+<a name="l00048"></a>00048     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74b571a7863c01a88f90fd1c36e998e0">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>: <span class="keywordflow">return</span>
+<a name="l00049"></a>00049         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae274b70c9785a2c19ccafa7926ecae72">kConnectionObjectStateDeferredDelete</a>; <span class="keywordflow">break</span>;
+<a name="l00050"></a>00050     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#adb23dffe782d0a1c944faa8294a1f126">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>: <span class="keywordflow">return</span>
+<a name="l00051"></a>00051         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae1307d0ad425964318e4f7a73538a719">kConnectionObjectStateClosing</a>; <span class="keywordflow">break</span>;
+<a name="l00052"></a>00052     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f">kConnectionObjectStateInvalid</a>;
+<a name="l00053"></a>00053   }
+<a name="l00054"></a>00054 }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#af0cdc3d85d08bc6e3df602d416e000cc">00056</a> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#af0cdc3d85d08bc6e3df602d416e000cc">GetConnectionObjectInstanceType</a>(
+<a name="l00057"></a>00057   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00058"></a>00058   <span class="keywordflow">switch</span>(connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca">instance_type</a>) {
+<a name="l00059"></a>00059     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a0f9d20ddb6460cd5fac2386283334baf">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING</a>: <span class="keywordflow">return</span>
+<a name="l00060"></a>00060         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069">kConnectionObjectInstanceTypeExplicitMessaging</a>; <span class="keywordflow">break</span>;
+<a name="l00061"></a>00061     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a1fdd9cac091c858d2bea3a9c7b606ffc">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO</a>: <span class="keywordflow">return</span>
+<a name="l00062"></a>00062         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba2e436dfcd485c4d4c90c5fd5d2c1ee43">kConnectionObjectInstanceTypeIO</a>; <span class="keywordflow">break</span>;
+<a name="l00063"></a>00063     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ac634be2b36f217e00524f60195ad32b1">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED</a>: <span class="keywordflow">return</span>
+<a name="l00064"></a>00064         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abad34146a750227c04619f0cb5931a4a35">kConnectionObjectInstanceTypeCipBridged</a>; <span class="keywordflow">break</span>;
+<a name="l00065"></a>00065     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abae8b5cb741483e2c83ac0354e14e9bef8">kConnectionObjectInstanceTypeInvalid</a>;
+<a name="l00066"></a>00066   }
+<a name="l00067"></a>00067 }
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a>
+<a name="l00070"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#aa673c315115bdf600c58ba38d667c47c">00070</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aa673c315115bdf600c58ba38d667c47c">GetConnectionObjectTransportClassTriggerDirection</a>(
+<a name="l00071"></a>00071   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00072"></a>00072   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> TransportClassTriggerDirectionMask = 0x80;
+<a name="l00073"></a>00073   <span class="keywordflow">return</span> (connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117">transport_class_trigger</a> &amp;
+<a name="l00074"></a>00074           TransportClassTriggerDirectionMask) ==
+<a name="l00075"></a>00075          TransportClassTriggerDirectionMask ?
+<a name="l00076"></a>00076          <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6abf0dd6f3c0bf2060d04bdfe9e7e89e9b">kConnectionObjectTransportClassTriggerDirectionServer</a>
+<a name="l00077"></a>00077          : <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6ae5c45e8191ad02abb0adc6339a32ced4">kConnectionObjectTransportClassTriggerDirectionClient</a>;
+<a name="l00078"></a>00078 }
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a>
+<a name="l00081"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ab38a04aadc9468453b2bd36277e40083">00081</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab38a04aadc9468453b2bd36277e40083">GetConnectionObjectTransportClassTriggerProductionTrigger</a>(
+<a name="l00082"></a>00082   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00083"></a>00083   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kTransportClassTriggerProductionTriggerMask = 0x70;
+<a name="l00084"></a>00084   <span class="keywordflow">switch</span>( (connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117">transport_class_trigger</a>) &amp;
+<a name="l00085"></a>00085           kTransportClassTriggerProductionTriggerMask ) {
+<a name="l00086"></a>00086     <span class="keywordflow">case</span>
+<a name="l00087"></a>00087       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a88cc4218b11b36145d9ef71911c40a41">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC</a>:
+<a name="l00088"></a>00088       <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a>;
+<a name="l00089"></a>00089       <span class="keywordflow">break</span>;
+<a name="l00090"></a>00090     <span class="keywordflow">case</span>
+<a name="l00091"></a>00091       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a608c8d70cc925b2a5fbf36a19eb8e997">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE</a>
+<a name="l00092"></a>00092       : <span class="keywordflow">return</span>
+<a name="l00093"></a>00093         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0ad91b01db6a0963070bbce9ca5483aecc">kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</a>;
+<a name="l00094"></a>00094       <span class="keywordflow">break</span>;
+<a name="l00095"></a>00095     <span class="keywordflow">case</span>
+<a name="l00096"></a>00096       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ab764d2bac26789beef2cbfd43687769f">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT</a>
+<a name="l00097"></a>00097       : <span class="keywordflow">return</span>
+<a name="l00098"></a>00098         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0afc5a3b2421cadeb4c8448ff3b2bb391d">kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject</a>;
+<a name="l00099"></a>00099       <span class="keywordflow">break</span>;
+<a name="l00100"></a>00100     <span class="keywordflow">default</span>: <span class="keywordflow">return</span>
+<a name="l00101"></a>00101         <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a42fa5cdd449e82c9555804cd44db8ed8">kConnectionObjectTransportClassTriggerProductionTriggerInvalid</a>;
+<a name="l00102"></a>00102   }
+<a name="l00103"></a>00103 }
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a>
+<a name="l00106"></a><a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a927aff017244be359579d714280a920d">00106</a> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a927aff017244be359579d714280a920d">GetConnectionObjectTransportClassTriggerTransportClass</a>(
+<a name="l00107"></a>00107   <span class="keyword">const</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>) {
+<a name="l00108"></a>00108   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kTransportClassTriggerTransportClassMask = 0x0F;
+<a name="l00109"></a>00109   <span class="keywordflow">switch</span>( (connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117">transport_class_trigger</a>) &amp;
+<a name="l00110"></a>00110           kTransportClassTriggerTransportClassMask ) {
+<a name="l00111"></a>00111     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#aa5028937a4c26c7786d3200c010065cf">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0</a>:
+<a name="l00112"></a>00112       <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0">kConnectionObjectTransportClassTriggerTransportClass0</a>; <span class="keywordflow">break</span>;
+<a name="l00113"></a>00113     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a74f2dc41bce1ef214afcdc492a2d7714">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1</a>:
+<a name="l00114"></a>00114       <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa3985efbf81d9660d0969a318d03fe3f6">kConnectionObjectTransportClassTriggerTransportClass1</a>; <span class="keywordflow">break</span>;
+<a name="l00115"></a>00115     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a59b53d9ccec065ae661c27b3bf494479">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2</a>:
+<a name="l00116"></a>00116       <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa70cdb97f8af6924f5a9ba47e8c44898a">kConnectionObjectTransportClassTriggerTransportClass2</a>; <span class="keywordflow">break</span>;
+<a name="l00117"></a>00117     <span class="keywordflow">case</span> <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a387ede74ac43a1349eeabf3268d158d2">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3</a>:
+<a name="l00118"></a>00118       <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fad1cc7f6e66b0708abc0fa70ca8120d90">kConnectionObjectTransportClassTriggerTransportClass3</a>; <span class="keywordflow">break</span>;
+<a name="l00119"></a>00119     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fadb99f06aef1c95a88c6e682e25966a44">kConnectionObjectTransportClassTriggerTransportClassInvalid</a>;
+<a name="l00120"></a>00120   }
+<a name="l00121"></a>00121 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -171,7 +240,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../df/d91/cipconnectionobject_8c.html">cipconnectionobject.c</a>      </li>
 
-    <li class="footer">Generated on Tue Oct 17 2017 16:10:53 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Oct 17 2017 20:36:57 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

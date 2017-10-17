@@ -9,5 +9,7 @@ var cipconnectionobject_8h =
     [ "ConnectionObjectTransportClassTriggerTransportClass", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f", null ],
     [ "GetConnectionObjectInstanceType", "d1/d6c/cipconnectionobject_8h.html#af0cdc3d85d08bc6e3df602d416e000cc", null ],
     [ "GetConnectionObjectState", "d1/d6c/cipconnectionobject_8h.html#a275a42f309440d6ae706c9104638c9d0", null ],
-    [ "GetConnectionObjectTransportClassTriggerDirection", "d1/d6c/cipconnectionobject_8h.html#aa673c315115bdf600c58ba38d667c47c", null ]
+    [ "GetConnectionObjectTransportClassTriggerDirection", "d1/d6c/cipconnectionobject_8h.html#aa673c315115bdf600c58ba38d667c47c", null ],
+    [ "GetConnectionObjectTransportClassTriggerProductionTrigger", "d1/d6c/cipconnectionobject_8h.html#ab38a04aadc9468453b2bd36277e40083", null ],
+    [ "GetConnectionObjectTransportClassTriggerTransportClass", "d1/d6c/cipconnectionobject_8h.html#a927aff017244be359579d714280a920d", null ]
 ];

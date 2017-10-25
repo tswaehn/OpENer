@@ -19,5 +19,9 @@ var searchData=
   ['cip_5fconnection_5fobject_5ftransport_5fclass_5ftrigger_5ftransport_5fclass_5f1',['CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1',['../df/d91/cipconnectionobject_8c.html#a74f2dc41bce1ef214afcdc492a2d7714',1,'cipconnectionobject.c']]],
   ['cip_5fconnection_5fobject_5ftransport_5fclass_5ftrigger_5ftransport_5fclass_5f2',['CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2',['../df/d91/cipconnectionobject_8c.html#a59b53d9ccec065ae661c27b3bf494479',1,'cipconnectionobject.c']]],
   ['cip_5fconnection_5fobject_5ftransport_5fclass_5ftrigger_5ftransport_5fclass_5f3',['CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3',['../df/d91/cipconnectionobject_8c.html#a387ede74ac43a1349eeabf3268d158d2',1,'cipconnectionobject.c']]],
+  ['cip_5fconnection_5fobject_5fwatchdog_5ftimeout_5faction_5fauto_5fdelete',['CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_DELETE',['../df/d91/cipconnectionobject_8c.html#a0420223d5b590173b2e4bcb4eae05543',1,'cipconnectionobject.c']]],
+  ['cip_5fconnection_5fobject_5fwatchdog_5ftimeout_5faction_5fauto_5freset',['CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_RESET',['../df/d91/cipconnectionobject_8c.html#a51c4628f30dd71b67e44dd98de814ae7',1,'cipconnectionobject.c']]],
+  ['cip_5fconnection_5fobject_5fwatchdog_5ftimeout_5faction_5fdeferred_5fdelete',['CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_DEFERRED_DELETE',['../df/d91/cipconnectionobject_8c.html#a8a7aa97bd3724951dafe5c0cceda27d1',1,'cipconnectionobject.c']]],
+  ['cip_5fconnection_5fobject_5fwatchdog_5ftimeout_5faction_5ftransition_5fto_5ftimed_5fout',['CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT',['../df/d91/cipconnectionobject_8c.html#a4eb209f5b4c48e10c3bf1730967e215e',1,'cipconnectionobject.c']]],
   ['cip_5fethernetlink_5fclass_5fcode',['CIP_ETHERNETLINK_CLASS_CODE',['../dd/d4d/cipethernetlink_8h.html#a5e127ce81b8e9b960b8831b27e7c9fa1',1,'cipethernetlink.h']]]
 ];

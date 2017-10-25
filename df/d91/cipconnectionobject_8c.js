@@ -17,9 +17,17 @@ var cipconnectionobject_8c =
     [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1", "df/d91/cipconnectionobject_8c.html#a74f2dc41bce1ef214afcdc492a2d7714", null ],
     [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2", "df/d91/cipconnectionobject_8c.html#a59b53d9ccec065ae661c27b3bf494479", null ],
     [ "CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3", "df/d91/cipconnectionobject_8c.html#a387ede74ac43a1349eeabf3268d158d2", null ],
-    [ "GetConnectionObjectInstanceType", "df/d91/cipconnectionobject_8c.html#af0cdc3d85d08bc6e3df602d416e000cc", null ],
-    [ "GetConnectionObjectState", "df/d91/cipconnectionobject_8c.html#a275a42f309440d6ae706c9104638c9d0", null ],
-    [ "GetConnectionObjectTransportClassTriggerDirection", "df/d91/cipconnectionobject_8c.html#aa673c315115bdf600c58ba38d667c47c", null ],
-    [ "GetConnectionObjectTransportClassTriggerProductionTrigger", "df/d91/cipconnectionobject_8c.html#ab38a04aadc9468453b2bd36277e40083", null ],
-    [ "GetConnectionObjectTransportClassTriggerTransportClass", "df/d91/cipconnectionobject_8c.html#a927aff017244be359579d714280a920d", null ]
+    [ "ConnectionObjectGetCipConsumedConnectionID", "df/d91/cipconnectionobject_8c.html#a4fe52f7965046f62390fb5ce5cc46065", null ],
+    [ "ConnectionObjectGetCipProducedConnectionID", "df/d91/cipconnectionobject_8c.html#a0f5d7ebde0d007af172a5d753b950d6a", null ],
+    [ "ConnectionObjectGetConsumedConnectionSize", "df/d91/cipconnectionobject_8c.html#a2789808307180013da55f229263de3f4", null ],
+    [ "ConnectionObjectGetInstanceType", "df/d91/cipconnectionobject_8c.html#a64d3a78bd3f520b632b04697bd0b2767", null ],
+    [ "ConnectionObjectGetProducedConnectionSize", "df/d91/cipconnectionobject_8c.html#a9f4d03d6a91cc147ef23c178d1e809e9", null ],
+    [ "ConnectionObjectGetState", "df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b", null ],
+    [ "ConnectionObjectGetTransportClassTriggerDirection", "df/d91/cipconnectionobject_8c.html#a04e33a9f06482278df128b0d7d28a763", null ],
+    [ "ConnectionObjectGetTransportClassTriggerProductionTrigger", "df/d91/cipconnectionobject_8c.html#ad29970b643c2677739c3f0e0a7a58f37", null ],
+    [ "ConnectionObjectGetTransportClassTriggerTransportClass", "df/d91/cipconnectionobject_8c.html#a0f3d8e6f21712dbef3fb2e1da42f35ba", null ],
+    [ "ConnectionObjectSetCipConsumedConnectionID", "df/d91/cipconnectionobject_8c.html#ac3ccaa3dc2b635564c622af574f70dc4", null ],
+    [ "ConnectionObjectSetCipProducedConnectionID", "df/d91/cipconnectionobject_8c.html#af7cb76f073d6f32b45e37c06109770b7", null ],
+    [ "ConnectionObjectSetConsumedConnectionSize", "df/d91/cipconnectionobject_8c.html#abe3215cd657af979d2cf3895effad3e4", null ],
+    [ "ConnectionObjectSetProducedConnectionSize", "df/d91/cipconnectionobject_8c.html#a83ac64db3a2815d15ca83ac1519e41e8", null ]
 ];

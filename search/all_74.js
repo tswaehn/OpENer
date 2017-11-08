@@ -8,7 +8,6 @@ var searchData=
   ['timeout_5fticks',['timeout_ticks',['../d1/d48/structconnection__object.html#a525118f58c4165d5abd9abc834096ab0',1,'connection_object::timeout_ticks()'],['../de/dcb/structCipUnconnectedSendParameter.html#a832826bc7300063845b5170ee0abe486',1,'CipUnconnectedSendParameter::timeout_ticks()']]],
   ['trace_2eh',['trace.h',['../d1/d1b/trace_8h.html',1,'']]],
   ['transmission_5ftrigger_5ftimer',['transmission_trigger_timer',['../d1/d48/structconnection__object.html#a8ff49ae39efff1f6e82d66bca01f995b',1,'connection_object']]],
-  ['transport_5fclass_5ftrigger',['transport_class_trigger',['../d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117',1,'cip_connection_object']]],
   ['transport_5ftype_5fclass_5ftrigger',['transport_type_class_trigger',['../d1/d48/structconnection__object.html#aee393bffe6bd92fb313db48832665254',1,'connection_object']]],
   ['triggerconnections',['TriggerConnections',['../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf',1,'TriggerConnections(unsigned int output_assembly, unsigned int input_assembly):&#160;cipconnectionmanager.c'],['../d2/dc9/group__CIP__API.html#ga286de29d4e88bd1fec0611e75c288faf',1,'TriggerConnections(unsigned int output_assembly_id, unsigned int input_assembly_id):&#160;cipconnectionmanager.c']]],
   ['type',['type',['../d4/d62/structCipAttributeStruct.html#a5882627a9fc1b118b1c34bf4da8a66cd',1,'CipAttributeStruct']]],

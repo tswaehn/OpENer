@@ -18,11 +18,16 @@ var searchData=
   ['sin_5faddr',['sin_addr',['../dc/d3c/structSocketAddressInfoItem.html#a46921af5bef9ee04546194f8d19d3163',1,'SocketAddressInfoItem']]],
   ['sin_5ffamily',['sin_family',['../dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a',1,'SocketAddressInfoItem']]],
   ['sin_5fport',['sin_port',['../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146',1,'SocketAddressInfoItem']]],
+  ['size',['size',['../d9/d72/structCipStringN.html#a254e69a332346dc910549d25d08319b4',1,'CipStringN']]],
   ['size_5fof_5fadditional_5fstatus',['size_of_additional_status',['../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a',1,'CipMessageRouterResponse']]],
   ['socket',['socket',['../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4',1,'connection_object::socket()'],['../d4/da1/structDelayedEncapsulationMessage.html#af616a8ae48b9bc51c1117985acc8c37f',1,'DelayedEncapsulationMessage::socket()'],['../de/d22/structsocket__timer.html#ab5046e867e49b1431dbf175de9ca778f',1,'socket_timer::socket()']]],
+  ['speed_5fduplex_5farray',['speed_duplex_array',['../d5/df0/structspeed__duplex__options.html#ae22e2ae845156d92d6fb6525df959008',1,'speed_duplex_options']]],
+  ['speed_5fduplex_5farray_5fcount',['speed_duplex_array_count',['../d5/df0/structspeed__duplex__options.html#a89a984fd725dc467ea51f7347a510958',1,'speed_duplex_options']]],
+  ['speed_5fduplex_5fobject',['speed_duplex_object',['../d7/d65/cipethernetlink_8c.html#a6ceaa572281cae8d240354c44569802a',1,'cipethernetlink.c']]],
+  ['speed_5fduplex_5foptions',['speed_duplex_options',['../dd/dc6/structCipEthernetLinkInterfaceCapability.html#a07ebb75587cbd73d4fc62e3f76912269',1,'CipEthernetLinkInterfaceCapability']]],
   ['starting_5fmulticast_5faddress',['starting_multicast_address',['../db/dd7/structmulticast__address__configuration.html#a983b98b7087072214bc4fc803b938df3',1,'multicast_address_configuration']]],
-  ['state',['state',['../dd/dd5/structLinkConsumer.html#af52c503fb4992d7057fc4280ff638392',1,'LinkConsumer::state()'],['../de/deb/structLinkProducer.html#a9d403e823d0d94b5134f65e114df5412',1,'LinkProducer::state()'],['../d1/d48/structconnection__object.html#a07b0290442443753728fe18cc6a756a4',1,'connection_object::state()'],['../d2/da8/structcip__connection__object.html#acbe573abee2756c4189d57c091bcda71',1,'cip_connection_object::state()']]],
+  ['state',['state',['../dd/dd5/structLinkConsumer.html#af52c503fb4992d7057fc4280ff638392',1,'LinkConsumer::state()'],['../de/deb/structLinkProducer.html#a9d403e823d0d94b5134f65e114df5412',1,'LinkProducer::state()'],['../d1/d48/structconnection__object.html#a07b0290442443753728fe18cc6a756a4',1,'connection_object::state()']]],
   ['status',['status',['../d9/d42/structencapsulation__data.html#ae9d36e698eb09d2248f8856da0281f5c',1,'encapsulation_data']]],
   ['status_5f',['status_',['../dd/dc4/cipidentity_8c.html#a2a0af8d10d864070ee666c64f1be3fa0',1,'status_():&#160;cipidentity.c'],['../d2/dbd/encap_8c.html#a2a0af8d10d864070ee666c64f1be3fa0',1,'status_():&#160;cipidentity.c']]],
-  ['string',['string',['../d4/def/structCipShortString.html#a4a9780b559b58e74f6203f6d82cfd88d',1,'CipShortString::string()'],['../df/d66/structCipString.html#a5e952aabbdf886a82f194f9e8a3908b1',1,'CipString::string()']]]
+  ['string',['string',['../d4/def/structCipShortString.html#a4a9780b559b58e74f6203f6d82cfd88d',1,'CipShortString::string()'],['../df/d66/structCipString.html#a5e952aabbdf886a82f194f9e8a3908b1',1,'CipString::string()'],['../d9/d72/structCipStringN.html#adb98cd4bcf549f1d5ce899281a02b7e6',1,'CipStringN::string()']]]
 ];

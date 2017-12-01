@@ -3,6 +3,7 @@ var searchData=
   ['cipbool',['CipBool',['../d7/d69/typedefs_8h.html#a2d0809c586fe02ba2eaf068e0fc359c4',1,'typedefs.h']]],
   ['cipbyte',['CipByte',['../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a',1,'typedefs.h']]],
   ['cipclass',['CipClass',['../df/d28/ciptypes_8h.html#a175191808b8fac50b47d9bbc9edc6051',1,'ciptypes.h']]],
+  ['cipconnectionobject',['CipConnectionObject',['../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e',1,'cipconnectionobject.h']]],
   ['cipdatatype',['CipDataType',['../df/d28/ciptypes_8h.html#a22530082e67e6b7c97b74ebaecde3f61',1,'ciptypes.h']]],
   ['cipdint',['CipDint',['../d7/d69/typedefs_8h.html#a1bd794c042ab4d4c94d030ddbb1408dd',1,'typedefs.h']]],
   ['cipdword',['CipDword',['../d7/d69/typedefs_8h.html#ac169b512f1c9d1ccf75af3eb09025452',1,'typedefs.h']]],

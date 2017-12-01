@@ -5,5 +5,5 @@ var searchData=
   ['elapsed_5ftime',['elapsed_time',['../df/d80/structNetworkStatus.html#a5b55928301fed3505a4cf80548d82e4a',1,'NetworkStatus']]],
   ['electronic_5fkey',['electronic_key',['../d1/d48/structconnection__object.html#abe23c92282c8d23c2218f3a5a73a9b5d',1,'connection_object']]],
   ['encapsulation_5fprotocol_5fversion',['encapsulation_protocol_version',['../d0/d6e/structencapsulation__interface__information.html#a8c202a5bccd134008359a0d9549bd072',1,'encapsulation_interface_information']]],
-  ['expected_5fpacket_5frate',['expected_packet_rate',['../d1/d48/structconnection__object.html#ae6744745719b245f03208fc6549e42b4',1,'connection_object']]]
+  ['expected_5fpacket_5frate',['expected_packet_rate',['../d1/d48/structconnection__object.html#ae6744745719b245f03208fc6549e42b4',1,'connection_object::expected_packet_rate()'],['../d2/da8/structcip__connection__object.html#a762abe933d6c8b98b4382a569e10ccb0',1,'cip_connection_object::expected_packet_rate()']]]
 ];

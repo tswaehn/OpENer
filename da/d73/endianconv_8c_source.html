@@ -301,7 +301,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00251"></a>00251   <span class="keywordflow">return</span> <a class="code" href="../../da/d73/endianconv_8c.html#a474ff19cc3d26eef2448d77f787e0df7">g_opener_platform_endianess</a>;
 <a name="l00252"></a>00252 }
 <a name="l00253"></a>00253 
-<a name="l00254"></a><a class="code" href="../../d0/dec/endianconv_8h.html#a21d3780305569399be95e50531127591">00254</a> <span class="keywordtype">void</span> <a class="code" href="../../da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d">MoveMessageNOctets</a>(<span class="keywordtype">int</span> amount_of_bytes_moved, <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1" title="Data types as defined in the CIP Specification Vol 1 Appendix C.">CipOctet</a> **message_runner) {
+<a name="l00254"></a><a class="code" href="../../d0/dec/endianconv_8h.html#a488b7965f389b1faa972fae6643bfb4a">00254</a> <span class="keywordtype">void</span> <a class="code" href="../../da/d73/endianconv_8c.html#aaae1b23e05f0902b5080163e855cbe81">MoveMessageNOctets</a>(<span class="keywordtype">int</span> amount_of_bytes_moved, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1" title="Data types as defined in the CIP Specification Vol 1 Appendix C.">CipOctet</a> **message_runner) {
 <a name="l00255"></a>00255   (*message_runner) += amount_of_bytes_moved;
 <a name="l00256"></a>00256 }
 <a name="l00257"></a>00257 
@@ -316,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00266"></a>00266                                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> amount_of_filled_bytes,
 <a name="l00267"></a>00267                                                          <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1" title="Data types as defined in the CIP Specification Vol 1 Appendix C.">CipOctet</a> **message) {
 <a name="l00268"></a>00268   <a class="code" href="../../da/d73/endianconv_8c.html#ae391d0308d5eebd8221d3fde59872b7c">FillNextNMessageOctetsWith</a>(value, amount_of_filled_bytes, message);
-<a name="l00269"></a>00269   <a class="code" href="../../da/d73/endianconv_8c.html#acf9215562e7f33994170721bbed9fa4d">MoveMessageNOctets</a>(amount_of_filled_bytes, message);
+<a name="l00269"></a>00269   <a class="code" href="../../da/d73/endianconv_8c.html#aaae1b23e05f0902b5080163e855cbe81">MoveMessageNOctets</a>(amount_of_filled_bytes, (<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1" title="Data types as defined in the CIP Specification Vol 1 Appendix C.">CipOctet</a>**)message);
 <a name="l00270"></a>00270   <span class="keywordflow">return</span> amount_of_filled_bytes;
 <a name="l00271"></a>00271 }
 <a name="l00272"></a>00272 
@@ -340,7 +340,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../da/d73/endianconv_8c.html">endianconv.c</a>      </li>
 
-    <li class="footer">Generated on Fri Dec 1 2017 10:11:56 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Dec 11 2017 15:49:28 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -104,10 +104,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>&quot;</code><br/>
 <code>#include &quot;opener_user_conf.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d0/dec/endianconv_8h_source.html">endianconv.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/d1b/trace_8h_source.html">trace.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cipconnectionobject.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d8a/cipconnectionobject_8c__incl.svg" width="419" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d8a/cipconnectionobject_8c__incl.svg" width="468" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -115,9 +117,16 @@ Include dependency graph for cipconnectionobject.c:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aa6235a80885893fb05bb38babb7f74dc">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_MULTICAST</a>&#160;&#160;&#160;(1 &lt;&lt; 13)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a1acf824bd38191f0b75a4c770188aaf6">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_NULL</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a297fc9d064e3e0cbd3606e4dde98c905">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_POINT_TO_POINT</a>&#160;&#160;&#160;(1 &lt;&lt; 14)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ac634be2b36f217e00524f60195ad32b1">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED</a>&#160;&#160;&#160;2</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f9d20ddb6460cd5fac2386283334baf">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING</a>&#160;&#160;&#160;0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a1fdd9cac091c858d2bea3a9c7b606ffc">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a7d07720b19ea22e5c9a076564f90faf2">CIP_CONNECTION_OBJECT_PRIORITY_HIGH</a>&#160;&#160;&#160;(1 &lt;&lt; 13)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a343d38fba45a617c109e39890a42a748">CIP_CONNECTION_OBJECT_PRIORITY_LOW</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad7de87187392db0423fb6055f3efa363">CIP_CONNECTION_OBJECT_PRIORITY_SCHEDULED</a>&#160;&#160;&#160;(1 &lt;&lt; 14)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0ed6f666229f9134d882c2c3e346c468">CIP_CONNECTION_OBJECT_PRIORITY_URGENT</a>&#160;&#160;&#160;(3 &lt;&lt; 13)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#adb23dffe782d0a1c944faa8294a1f126">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>&#160;&#160;&#160;6U</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a4c343c20f49236c2b1acbe6fcbc4d57c">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>&#160;&#160;&#160;1U</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a74b571a7863c01a88f90fd1c36e998e0">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>&#160;&#160;&#160;5U</td></tr>
@@ -138,34 +147,115 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a4eb209f5b4c48e10c3bf1730967e215e">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT</a>&#160;&#160;&#160;0</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a84ea6861bff00130331e774f5ff9e77f">CipConnectionObjectCreate</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a84ea6861bff00130331e774f5ff9e77f">CipConnectionObjectCreate</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *message)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Array allocator.  <a href="#a84ea6861bff00130331e774f5ff9e77f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a4fe52f7965046f62390fb5ce5cc46065">ConnectionObjectGetCipConsumedConnectionID</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f5d7ebde0d007af172a5d753b950d6a">ConnectionObjectGetCipProducedConnectionID</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a5bb97cf3331408fd2829fca58d027b5c">ConnectionObjectGetConsumedConnectionPathLength</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a2789808307180013da55f229263de3f4">ConnectionObjectGetConsumedConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a165366ba831829b9944cb1b980e3e487">ConnectionObjectGetExpectedPacketRate</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a64d3a78bd3f520b632b04697bd0b2767">ConnectionObjectGetInstanceType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a682da7d2e97b2a4aca645b630cf039a5">ConnectionObjectGetProducedConnectionPathLength</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a9f4d03d6a91cc147ef23c178d1e809e9">ConnectionObjectGetProducedConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a04e33a9f06482278df128b0d7d28a763">ConnectionObjectGetTransportClassTriggerDirection</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad29970b643c2677739c3f0e0a7a58f37">ConnectionObjectGetTransportClassTriggerProductionTrigger</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f3d8e6f21712dbef3fb2e1da42f35ba">ConnectionObjectGetTransportClassTriggerTransportClass</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20">ConnectionObjectWatchdogTimeoutAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a6d4642a4883a004e68b0aca9a7b3bb87">ConnectionObjectGetWatchdogTimeoutAction</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549">ConnectionObjectInitializeEmpty</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ac3ccaa3dc2b635564c622af574f70dc4">ConnectionObjectSetCipConsumedConnectionID</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> cip_consumed_connection_id)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#af7cb76f073d6f32b45e37c06109770b7">ConnectionObjectSetCipProducedConnectionID</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> cip_produced_connection_id)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#acef0a7d9d8a04e78acb72b5528cd9385">ConnectionObjectSetConsumedConnectionPathLength</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> consumed_connection_path_length)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#abe3215cd657af979d2cf3895effad3e4">ConnectionObjectSetConsumedConnectionSize</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> consumed_connection_size)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a24752a6dd667ae5044308090eb5c5144">ConnectionObjectSetExpectedPacketRate</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> expected_packet_rate)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab9fd3596debf72d6f90fc25c3d867763">ConnectionObjectCalculateRegularInactivityWatchdogTimerValue</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a4fe52f7965046f62390fb5ce5cc46065">ConnectionObjectGetCipConsumedConnectionID</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f5d7ebde0d007af172a5d753b950d6a">ConnectionObjectGetCipProducedConnectionID</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aa8037b1209b1bbf301594894327a5714">ConnectionObjectGetConnectionSerialNumber</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aed3dd75101c6e6e93d7ab682b6f26d85">ConnectionObjectGetConnectionSize</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a> connection_parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0e743d9eb9ed5197efacda331a57a7c3">ConnectionObjectGetConnectionSizeType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a> connection_parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a51bc796f150c53a6ea3d63a59ff139b1">ConnectionObjectGetConnectionTimeoutMultiplier</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0da85deed56477da3ec500cec51aa46e">ConnectionObjectGetConnectionType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a> connection_parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a5bb97cf3331408fd2829fca58d027b5c">ConnectionObjectGetConsumedConnectionPathLength</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a2789808307180013da55f229263de3f4">ConnectionObjectGetConsumedConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a165366ba831829b9944cb1b980e3e487">ConnectionObjectGetExpectedPacketRate</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a64d3a78bd3f520b632b04697bd0b2767">ConnectionObjectGetInstanceType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ae3c7131cddcd844857c2b48a96d6f253">ConnectionObjectGetOriginatorSerialNumber</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a16bba4539515fe16a4c2f8715b429d2d">ConnectionObjectGetOriginatorVendorId</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ac8eec747e3eb538b8208f84bb1cd876c">ConnectionObjectGetOToTConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a1517213d7c0fd7399eaf954734acf869">ConnectionObjectGetOToTConnectionSizeType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aa896ebb7d03c6e75027402b3e0d6dc6e">ConnectionObjectGetOToTConnectionType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad8a9f7586c7ada6cab29a202ca8f9c27">ConnectionObjectGetOToTPriority</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ac21930e13f44a25d63cdc34de527e566">ConnectionObjectGetOToTRequestedPacketInterval</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a54694d088a9b468aa4531a1801bbc490">ConnectionObjectGetPriority</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a> connection_parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a682da7d2e97b2a4aca645b630cf039a5">ConnectionObjectGetProducedConnectionPathLength</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a9f4d03d6a91cc147ef23c178d1e809e9">ConnectionObjectGetProducedConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a04e33a9f06482278df128b0d7d28a763">ConnectionObjectGetTransportClassTriggerDirection</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad29970b643c2677739c3f0e0a7a58f37">ConnectionObjectGetTransportClassTriggerProductionTrigger</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f3d8e6f21712dbef3fb2e1da42f35ba">ConnectionObjectGetTransportClassTriggerTransportClass</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ae90368c85cedeaa7a56fb0eae81eeef2">ConnectionObjectGetTToOConnectionSize</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a3eb72e7befca17493e2cec4ebfda8552">ConnectionObjectGetTToOConnectionSizeType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aeee7026822ffa05ebabab57a0eed1665">ConnectionObjectGetTToOPriority</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a5a8dca52f318b4aca92f10de1c1072fc">ConnectionObjectGetTToORequestedPacketInterval</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20">ConnectionObjectWatchdogTimeoutAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a6d4642a4883a004e68b0aca9a7b3bb87">ConnectionObjectGetWatchdogTimeoutAction</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549">ConnectionObjectInitializeEmpty</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ae749b42a4af3686272ffa6fb24fd3860">ConnectionObjectInitializeFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *message, <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a8da29f08ac77d450bb7602728bbad2b2">ConnectionObjectIsOToTRedundantOwner</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#afe3f0055827380760319b30452a4a849">ConnectionObjectIsTToORedundantOwner</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a1a249bd20f91d8bb584e02aa13182c2b">ConnectionObjectResetInactivityWatchdogTimerValue</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ac3ccaa3dc2b635564c622af574f70dc4">ConnectionObjectSetCipConsumedConnectionID</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> cip_consumed_connection_id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#af7cb76f073d6f32b45e37c06109770b7">ConnectionObjectSetCipProducedConnectionID</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> cip_produced_connection_id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ae147f70246bfb10d8cb22386e91b5698">ConnectionObjectSetConnectionSerialNumber</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> connection_serial_number)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a968ebe3ecb4cbf77c78c6a5549dc5ed2">ConnectionObjectSetConnectionTimeoutMultiplier</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> connection_timeout_multiplier)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#acef0a7d9d8a04e78acb72b5528cd9385">ConnectionObjectSetConsumedConnectionPathLength</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> consumed_connection_path_length)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#abe3215cd657af979d2cf3895effad3e4">ConnectionObjectSetConsumedConnectionSize</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> consumed_connection_size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a24752a6dd667ae5044308090eb5c5144">ConnectionObjectSetExpectedPacketRate</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> expected_packet_rate)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the expected packet rate according to the rules of the CIP specification.  <a href="#a24752a6dd667ae5044308090eb5c5144"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aad3a169ab08fa40ae4d7464a4224a47d">ConnectionObjectSetProducedConnectionPathLength</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> produced_connection_path_length)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a83ac64db3a2815d15ca83ac1519e41e8">ConnectionObjectSetProducedConnectionSize</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> produced_connection_size)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> state)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#adf7d5e9faae2551a1c925d746dec2ea5">ConnectionObjectSetWatchdofTimeoutAction</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> watchdog_timeout_action)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab996ea8a892ef4757ae04cec79bd0dd1">ConnectionObjectSetInitialInactivityWatchdogTimerValue</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a785834d5d1e4886cded28cca3cd35682">ConnectionObjectSetOriginatorSerialNumber</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> originator_serial_number)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab8a0632e6a31e8f91c35c9ec3c319ca1">ConnectionObjectSetOriginatorVendorId</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> vendor_id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0f944880ccf09ecd7e2d3d5ffcde345e">ConnectionObjectSetOToTRequestedPacketInterval</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> requested_packet_interval)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#aad3a169ab08fa40ae4d7464a4224a47d">ConnectionObjectSetProducedConnectionPathLength</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> produced_connection_path_length)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a83ac64db3a2815d15ca83ac1519e41e8">ConnectionObjectSetProducedConnectionSize</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> produced_connection_size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a7883293f84213277eb8c63e558f12a6c">ConnectionObjectSetTToORequestedPacketInterval</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> requested_packet_interval)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a9bf4e569cc43263943c0c8c8b138f5c4">ConnectionObjectSetWatchdogTimeoutAction</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> watchdog_timeout_action)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
+<a class="anchor" id="aa6235a80885893fb05bb38babb7f74dc"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_CONNECTION_TYPE_MULTICAST" ref="aa6235a80885893fb05bb38babb7f74dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#aa6235a80885893fb05bb38babb7f74dc">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_MULTICAST</a>&#160;&#160;&#160;(1 &lt;&lt; 13)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00045">45</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">ConnectionObjectGetConnectionType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1acf824bd38191f0b75a4c770188aaf6"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_CONNECTION_TYPE_NULL" ref="a1acf824bd38191f0b75a4c770188aaf6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a1acf824bd38191f0b75a4c770188aaf6">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_NULL</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00044">44</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">ConnectionObjectGetConnectionType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a297fc9d064e3e0cbd3606e4dde98c905"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_CONNECTION_TYPE_POINT_TO_POINT" ref="a297fc9d064e3e0cbd3606e4dde98c905" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a297fc9d064e3e0cbd3606e4dde98c905">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_POINT_TO_POINT</a>&#160;&#160;&#160;(1 &lt;&lt; 14)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00046">46</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">ConnectionObjectGetConnectionType()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac634be2b36f217e00524f60195ad32b1"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED" ref="ac634be2b36f217e00524f60195ad32b1" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -177,9 +267,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00021">21</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00023">23</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00102">ConnectionObjectGetInstanceType()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00196">ConnectionObjectGetInstanceType()</a>.</p>
 
 </div>
 </div>
@@ -194,9 +284,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">19</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00021">21</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00102">ConnectionObjectGetInstanceType()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00196">ConnectionObjectGetInstanceType()</a>.</p>
 
 </div>
 </div>
@@ -211,9 +301,77 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00020">20</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00022">22</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00102">ConnectionObjectGetInstanceType()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00196">ConnectionObjectGetInstanceType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d07720b19ea22e5c9a076564f90faf2"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_PRIORITY_HIGH" ref="a7d07720b19ea22e5c9a076564f90faf2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a7d07720b19ea22e5c9a076564f90faf2">CIP_CONNECTION_OBJECT_PRIORITY_HIGH</a>&#160;&#160;&#160;(1 &lt;&lt; 13)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00049">49</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a343d38fba45a617c109e39890a42a748"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_PRIORITY_LOW" ref="a343d38fba45a617c109e39890a42a748" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a343d38fba45a617c109e39890a42a748">CIP_CONNECTION_OBJECT_PRIORITY_LOW</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00048">48</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7de87187392db0423fb6055f3efa363"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_PRIORITY_SCHEDULED" ref="ad7de87187392db0423fb6055f3efa363" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#ad7de87187392db0423fb6055f3efa363">CIP_CONNECTION_OBJECT_PRIORITY_SCHEDULED</a>&#160;&#160;&#160;(1 &lt;&lt; 14)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00050">50</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ed6f666229f9134d882c2c3e346c468"></a><!-- doxytag: member="cipconnectionobject.c::CIP_CONNECTION_OBJECT_PRIORITY_URGENT" ref="a0ed6f666229f9134d882c2c3e346c468" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0ed6f666229f9134d882c2c3e346c468">CIP_CONNECTION_OBJECT_PRIORITY_URGENT</a>&#160;&#160;&#160;(3 &lt;&lt; 13)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00051">51</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>.</p>
 
 </div>
 </div>
@@ -228,9 +386,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">17</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">19</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -245,9 +403,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00012">12</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">14</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -262,9 +420,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">16</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00018">18</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -279,9 +437,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">14</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">16</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +454,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00011">11</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">13</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -313,9 +471,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">15</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">17</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +488,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">13</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">15</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">ConnectionObjectSetState()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">ConnectionObjectGetState()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>.</p>
 
 </div>
 </div>
@@ -349,9 +507,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">( \
     2 &lt;&lt; 4)
 </pre></div>
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00029">29</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00031">31</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00127">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00225">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +526,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">( \
     1 &lt;&lt; 4)
 </pre></div>
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00026">26</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00028">28</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00127">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00225">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
 
 </div>
 </div>
@@ -387,9 +545,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">( \
     0 &lt;&lt; 4)
 </pre></div>
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00023">23</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00025">25</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00127">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00225">ConnectionObjectGetTransportClassTriggerProductionTrigger()</a>.</p>
 
 </div>
 </div>
@@ -404,9 +562,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00032">32</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00034">34</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00152">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00252">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
 
 </div>
 </div>
@@ -421,9 +579,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00033">33</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00035">35</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00152">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00252">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
 
 </div>
 </div>
@@ -438,9 +596,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00034">34</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00036">36</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00152">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00252">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
 
 </div>
 </div>
@@ -455,9 +613,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00035">35</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00037">37</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00152">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00252">ConnectionObjectGetTransportClassTriggerTransportClass()</a>.</p>
 
 </div>
 </div>
@@ -472,9 +630,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00038">38</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">40</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00235">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00250">ConnectionObjectSetWatchdofTimeoutAction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00341">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00362">ConnectionObjectSetWatchdogTimeoutAction()</a>.</p>
 
 </div>
 </div>
@@ -489,9 +647,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">39</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00041">41</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00235">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00250">ConnectionObjectSetWatchdofTimeoutAction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00341">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00362">ConnectionObjectSetWatchdogTimeoutAction()</a>.</p>
 
 </div>
 </div>
@@ -506,9 +664,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">40</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00042">42</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00235">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00250">ConnectionObjectSetWatchdofTimeoutAction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00341">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00362">ConnectionObjectSetWatchdogTimeoutAction()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +681,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00037">37</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">39</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00235">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00250">ConnectionObjectSetWatchdofTimeoutAction()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00341">ConnectionObjectGetWatchdogTimeoutAction()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00362">ConnectionObjectSetWatchdogTimeoutAction()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +693,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a>* <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a84ea6861bff00130331e774f5ff9e77f">CipConnectionObjectCreate</a> </td>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a>* <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a84ea6861bff00130331e774f5ff9e77f">CipConnectionObjectCreate</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -547,7 +705,38 @@ Functions</h2></td></tr>
 
 <p>Array allocator. </p>
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00056">56</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00072">72</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9fd3596debf72d6f90fc25c3d867763"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectCalculateRegularInactivityWatchdogTimerValue" ref="ab9fd3596debf72d6f90fc25c3d867763" args="(const CipConnectionObject *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab9fd3596debf72d6f90fc25c3d867763">ConnectionObjectCalculateRegularInactivityWatchdogTimerValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00434">434</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00101">cip_connection_object::connection_timeout_multiplier</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00117">cip_connection_object::o_to_t_requested_packet_interval</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00427">ConnectionObjectResetInactivityWatchdogTimerValue()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00416">ConnectionObjectSetInitialInactivityWatchdogTimerValue()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ab9fd3596debf72d6f90fc25c3d867763_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -558,7 +747,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4fe52f7965046f62390fb5ce5cc46065">ConnectionObjectGetCipConsumedConnectionID</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -566,9 +755,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00223">223</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00329">329</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00071">cip_connection_object::cip_consumed_connection_id</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00094">cip_connection_object::cip_consumed_connection_id</a>.</p>
 
 </div>
 </div>
@@ -579,7 +768,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a0f5d7ebde0d007af172a5d753b950d6a">ConnectionObjectGetCipProducedConnectionID</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -587,9 +776,142 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00211">211</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00317">317</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00070">cip_connection_object::cip_produced_connection_id</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00093">cip_connection_object::cip_produced_connection_id</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8037b1209b1bbf301594894327a5714"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetConnectionSerialNumber" ref="aa8037b1209b1bbf301594894327a5714" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aa8037b1209b1bbf301594894327a5714">ConnectionObjectGetConnectionSerialNumber</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00440">440</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00113">cip_connection_object::connection_serial_number</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed3dd75101c6e6e93d7ab682b6f26d85"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetConnectionSize" ref="aed3dd75101c6e6e93d7ab682b6f26d85" args="(const CipWord connection_parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../df/d91/cipconnectionobject_8c.html#aed3dd75101c6e6e93d7ab682b6f26d85">ConnectionObjectGetConnectionSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td>
+          <td class="paramname"><em>connection_parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00561">561</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00566">ConnectionObjectGetOToTConnectionSize()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00570">ConnectionObjectGetTToOConnectionSize()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_aed3dd75101c6e6e93d7ab682b6f26d85_icgraph.svg" width="571" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e743d9eb9ed5197efacda331a57a7c3"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetConnectionSizeType" ref="a0e743d9eb9ed5197efacda331a57a7c3" args="(const CipWord connection_parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a> <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0e743d9eb9ed5197efacda331a57a7c3">ConnectionObjectGetConnectionSizeType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td>
+          <td class="paramname"><em>connection_parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00544">544</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00077">kConnectionObjectConnectionSizeTypeFixed</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00078">kConnectionObjectConnectionSizeTypeVariable</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00553">ConnectionObjectGetOToTConnectionSizeType()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00557">ConnectionObjectGetTToOConnectionSizeType()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a0e743d9eb9ed5197efacda331a57a7c3_icgraph.svg" width="630" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a51bc796f150c53a6ea3d63a59ff139b1"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetConnectionTimeoutMultiplier" ref="a51bc796f150c53a6ea3d63a59ff139b1" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a51bc796f150c53a6ea3d63a59ff139b1">ConnectionObjectGetConnectionTimeoutMultiplier</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00470">470</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00101">cip_connection_object::connection_timeout_multiplier</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0da85deed56477da3ec500cec51aa46e"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetConnectionType" ref="a0da85deed56477da3ec500cec51aa46e" args="(const CipWord connection_parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a0da85deed56477da3ec500cec51aa46e">ConnectionObjectGetConnectionType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td>
+          <td class="paramname"><em>connection_parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">506</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00045">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_MULTICAST</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00044">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_NULL</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00046">CIP_CONNECTION_OBJECT_CONNECTION_TYPE_POINT_TO_POINT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00063">kConnectionObjectConnectionTypeInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00065">kConnectionObjectConnectionTypeMulticast</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00064">kConnectionObjectConnectionTypeNull</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00066">kConnectionObjectConnectionTypePointToPoint</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00516">ConnectionObjectGetOToTConnectionType()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00520">ConnectionObjectGetTToOConnectionType()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a0da85deed56477da3ec500cec51aa46e_icgraph.svg" width="576" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -600,7 +922,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a5bb97cf3331408fd2829fca58d027b5c">ConnectionObjectGetConsumedConnectionPathLength</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -608,9 +930,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00285">285</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00403">403</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00075">cip_connection_object::consumed_connection_path_length</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00098">cip_connection_object::consumed_connection_path_length</a>.</p>
 
 </div>
 </div>
@@ -621,7 +943,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a2789808307180013da55f229263de3f4">ConnectionObjectGetConsumedConnectionSize</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -629,9 +951,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00181">181</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00286">286</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00068">cip_connection_object::consumed_connection_size</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00091">cip_connection_object::consumed_connection_size</a>.</p>
 
 </div>
 </div>
@@ -642,7 +964,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a165366ba831829b9944cb1b980e3e487">ConnectionObjectGetExpectedPacketRate</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -650,9 +972,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00193">193</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00298">298</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00069">cip_connection_object::expected_packet_rate</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00092">cip_connection_object::expected_packet_rate</a>.</p>
 
 </div>
 </div>
@@ -663,7 +985,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab">ConnectionObjectInstanceType</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a64d3a78bd3f520b632b04697bd0b2767">ConnectionObjectGetInstanceType</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -671,9 +993,219 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00102">102</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00196">196</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00021">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00020">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00064">cip_connection_object::instance_type</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00030">kConnectionObjectInstanceTypeCipBridged</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00028">kConnectionObjectInstanceTypeExplicitMessaging</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00027">kConnectionObjectInstanceTypeInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00029">kConnectionObjectInstanceTypeIO</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00023">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_CIP_BRIDGED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00021">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_EXPLICIT_MESSAGING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00022">CIP_CONNECTION_OBJECT_INSTANCE_TYPE_IO</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00087">cip_connection_object::instance_type</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00030">kConnectionObjectInstanceTypeCipBridged</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00028">kConnectionObjectInstanceTypeExplicitMessaging</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00027">kConnectionObjectInstanceTypeInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00029">kConnectionObjectInstanceTypeIO</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3c7131cddcd844857c2b48a96d6f253"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOriginatorSerialNumber" ref="ae3c7131cddcd844857c2b48a96d6f253" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ae3c7131cddcd844857c2b48a96d6f253">ConnectionObjectGetOriginatorSerialNumber</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00460">460</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::originator_serial_number</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16bba4539515fe16a4c2f8715b429d2d"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOriginatorVendorId" ref="a16bba4539515fe16a4c2f8715b429d2d" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a16bba4539515fe16a4c2f8715b429d2d">ConnectionObjectGetOriginatorVendorId</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00450">450</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00114">cip_connection_object::originator_vendor_id</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8eec747e3eb538b8208f84bb1cd876c"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOToTConnectionSize" ref="ac8eec747e3eb538b8208f84bb1cd876c" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ac8eec747e3eb538b8208f84bb1cd876c">ConnectionObjectGetOToTConnectionSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00566">566</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00561">ConnectionObjectGetConnectionSize()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ac8eec747e3eb538b8208f84bb1cd876c_cgraph.svg" width="571" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1517213d7c0fd7399eaf954734acf869"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOToTConnectionSizeType" ref="a1517213d7c0fd7399eaf954734acf869" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1517213d7c0fd7399eaf954734acf869">ConnectionObjectGetOToTConnectionSizeType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00553">553</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00544">ConnectionObjectGetConnectionSizeType()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a1517213d7c0fd7399eaf954734acf869_cgraph.svg" width="630" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa896ebb7d03c6e75027402b3e0d6dc6e"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOToTConnectionType" ref="aa896ebb7d03c6e75027402b3e0d6dc6e" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aa896ebb7d03c6e75027402b3e0d6dc6e">ConnectionObjectGetOToTConnectionType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00516">516</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">ConnectionObjectGetConnectionType()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_aa896ebb7d03c6e75027402b3e0d6dc6e_cgraph.svg" width="576" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8a9f7586c7ada6cab29a202ca8f9c27"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOToTPriority" ref="ad8a9f7586c7ada6cab29a202ca8f9c27" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad8a9f7586c7ada6cab29a202ca8f9c27">ConnectionObjectGetOToTPriority</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00535">535</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ad8a9f7586c7ada6cab29a202ca8f9c27_cgraph.svg" width="470" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac21930e13f44a25d63cdc34de527e566"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetOToTRequestedPacketInterval" ref="ac21930e13f44a25d63cdc34de527e566" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ac21930e13f44a25d63cdc34de527e566">ConnectionObjectGetOToTRequestedPacketInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00480">480</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00117">cip_connection_object::o_to_t_requested_packet_interval</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54694d088a9b468aa4531a1801bbc490"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetPriority" ref="a54694d088a9b468aa4531a1801bbc490" args="(const CipWord connection_parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a> <a class="el" href="../../df/d91/cipconnectionobject_8c.html#a54694d088a9b468aa4531a1801bbc490">ConnectionObjectGetPriority</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td>
+          <td class="paramname"><em>connection_parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">524</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00049">CIP_CONNECTION_OBJECT_PRIORITY_HIGH</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00048">CIP_CONNECTION_OBJECT_PRIORITY_LOW</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00050">CIP_CONNECTION_OBJECT_PRIORITY_SCHEDULED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00051">CIP_CONNECTION_OBJECT_PRIORITY_URGENT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00071">kConnectionObjectPriorityHigh</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00070">kConnectionObjectPriorityLow</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00072">kConnectionObjectPriorityScheduled</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00073">kConnectionObjectPriorityUrgent</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00535">ConnectionObjectGetOToTPriority()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00539">ConnectionObjectGetTToOPriority()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a54694d088a9b468aa4531a1801bbc490_icgraph.svg" width="470" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -684,7 +1216,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a682da7d2e97b2a4aca645b630cf039a5">ConnectionObjectGetProducedConnectionPathLength</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -692,9 +1224,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00272">272</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00390">390</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00073">cip_connection_object::produced_connection_path_length</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00096">cip_connection_object::produced_connection_path_length</a>.</p>
 
 </div>
 </div>
@@ -705,7 +1237,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a9f4d03d6a91cc147ef23c178d1e809e9">ConnectionObjectGetProducedConnectionSize</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -713,9 +1245,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00169">169</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00274">274</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00067">cip_connection_object::produced_connection_size</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00090">cip_connection_object::produced_connection_size</a>.</p>
 
 </div>
 </div>
@@ -726,7 +1258,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -734,9 +1266,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00060">60</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00131">131</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00012">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00011">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00016">kConnectionObjectStateInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateWaitingForConnectionID</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00063">cip_connection_object::state</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00018">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00016">kConnectionObjectStateInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateWaitingForConnectionID</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00086">cip_connection_object::state</a>.</p>
 
 </div>
 </div>
@@ -747,7 +1279,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6">ConnectionObjectTransportClassTriggerDirection</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a04e33a9f06482278df128b0d7d28a763">ConnectionObjectGetTransportClassTriggerDirection</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -755,9 +1287,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00116">116</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00214">214</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00034">kConnectionObjectTransportClassTriggerDirectionClient</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00035">kConnectionObjectTransportClassTriggerDirectionServer</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00065">cip_connection_object::transport_class_trigger</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00034">kConnectionObjectTransportClassTriggerDirectionClient</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00035">kConnectionObjectTransportClassTriggerDirectionServer</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00088">cip_connection_object::transport_class_trigger</a>.</p>
 
 </div>
 </div>
@@ -768,7 +1300,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0">ConnectionObjectTransportClassTriggerProductionTrigger</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad29970b643c2677739c3f0e0a7a58f37">ConnectionObjectGetTransportClassTriggerProductionTrigger</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -776,9 +1308,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00127">127</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00225">225</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00029">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00026">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00023">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00042">kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00041">kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00040">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00039">kConnectionObjectTransportClassTriggerProductionTriggerInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00065">cip_connection_object::transport_class_trigger</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00031">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_APPLICATION_OBJECT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00028">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CHANGE_OF_STATE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00025">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_PRODUCTION_TRIGGER_CYCLIC</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00042">kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00041">kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00040">kConnectionObjectTransportClassTriggerProductionTriggerCyclic</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00039">kConnectionObjectTransportClassTriggerProductionTriggerInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00088">cip_connection_object::transport_class_trigger</a>.</p>
 
 </div>
 </div>
@@ -789,7 +1321,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f">ConnectionObjectTransportClassTriggerTransportClass</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a0f3d8e6f21712dbef3fb2e1da42f35ba">ConnectionObjectGetTransportClassTriggerTransportClass</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -797,9 +1329,146 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00152">152</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00252">252</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00032">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00033">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00034">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00035">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00047">kConnectionObjectTransportClassTriggerTransportClass0</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00048">kConnectionObjectTransportClassTriggerTransportClass1</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00049">kConnectionObjectTransportClassTriggerTransportClass2</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00050">kConnectionObjectTransportClassTriggerTransportClass3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00046">kConnectionObjectTransportClassTriggerTransportClassInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00065">cip_connection_object::transport_class_trigger</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00034">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_0</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00035">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_1</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00036">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_2</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00037">CIP_CONNECTION_OBJECT_TRANSPORT_CLASS_TRIGGER_TRANSPORT_CLASS_3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00047">kConnectionObjectTransportClassTriggerTransportClass0</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00048">kConnectionObjectTransportClassTriggerTransportClass1</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00049">kConnectionObjectTransportClassTriggerTransportClass2</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00050">kConnectionObjectTransportClassTriggerTransportClass3</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00046">kConnectionObjectTransportClassTriggerTransportClassInvalid</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00088">cip_connection_object::transport_class_trigger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae90368c85cedeaa7a56fb0eae81eeef2"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetTToOConnectionSize" ref="ae90368c85cedeaa7a56fb0eae81eeef2" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ae90368c85cedeaa7a56fb0eae81eeef2">ConnectionObjectGetTToOConnectionSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00570">570</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00561">ConnectionObjectGetConnectionSize()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ae90368c85cedeaa7a56fb0eae81eeef2_cgraph.svg" width="571" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3eb72e7befca17493e2cec4ebfda8552"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetTToOConnectionSizeType" ref="a3eb72e7befca17493e2cec4ebfda8552" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c">ConnectionObjectConnectionSizeType</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3eb72e7befca17493e2cec4ebfda8552">ConnectionObjectGetTToOConnectionSizeType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00557">557</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00544">ConnectionObjectGetConnectionSizeType()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a3eb72e7befca17493e2cec4ebfda8552_cgraph.svg" width="630" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad61ad2b2c18480a141e5df346e32be02"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetTToOConnectionType" ref="ad61ad2b2c18480a141e5df346e32be02" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00520">520</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00506">ConnectionObjectGetConnectionType()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ad61ad2b2c18480a141e5df346e32be02_cgraph.svg" width="576" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeee7026822ffa05ebabab57a0eed1665"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetTToOPriority" ref="aeee7026822ffa05ebabab57a0eed1665" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08">ConnectionObjectPriority</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aeee7026822ffa05ebabab57a0eed1665">ConnectionObjectGetTToOPriority</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00539">539</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00524">ConnectionObjectGetPriority()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_aeee7026822ffa05ebabab57a0eed1665_cgraph.svg" width="470" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a8dca52f318b4aca92f10de1c1072fc"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectGetTToORequestedPacketInterval" ref="a5a8dca52f318b4aca92f10de1c1072fc" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a5a8dca52f318b4aca92f10de1c1072fc">ConnectionObjectGetTToORequestedPacketInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00488">488</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00120">cip_connection_object::t_to_o_requested_packet_interval</a>.</p>
 
 </div>
 </div>
@@ -810,7 +1479,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20">ConnectionObjectWatchdogTimeoutAction</a> <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a6d4642a4883a004e68b0aca9a7b3bb87">ConnectionObjectGetWatchdogTimeoutAction</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -818,9 +1487,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00235">235</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00341">341</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00038">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_RESET</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00037">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00057">kConnectionObjectWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectWatchdogTimeoutActionAutoReset</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00059">kConnectionObjectWatchdogTimeoutActionDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00055">kConnectionObjectWatchdogTimeoutActionInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">kConnectionObjectWatchdogTimeoutActionTransitionToTimedOut</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00072">cip_connection_object::watchdog_timeout_action</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00041">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_RESET</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00042">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00057">kConnectionObjectWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectWatchdogTimeoutActionAutoReset</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00059">kConnectionObjectWatchdogTimeoutActionDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00055">kConnectionObjectWatchdogTimeoutActionInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">kConnectionObjectWatchdogTimeoutActionTransitionToTimedOut</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00095">cip_connection_object::watchdog_timeout_action</a>.</p>
 
 </div>
 </div>
@@ -831,7 +1500,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8f507fa4e57499d8b96c8adb2ad8a549">ConnectionObjectInitializeEmpty</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -839,7 +1508,137 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00051">51</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00067">67</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00074">CipClass3ConnectionObjectStateEstablishedHandler()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a8f507fa4e57499d8b96c8adb2ad8a549_icgraph.svg" width="603" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae749b42a4af3686272ffa6fb24fd3860"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectInitializeFromMessage" ref="ae749b42a4af3686272ffa6fb24fd3860" args="(const CipOctet *message, CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ae749b42a4af3686272ffa6fb24fd3860">ConnectionObjectInitializeFromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">76</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00094">cip_connection_object::cip_consumed_connection_id</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00093">cip_connection_object::cip_produced_connection_id</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00113">cip_connection_object::connection_serial_number</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00427">ConnectionObjectResetInactivityWatchdogTimerValue()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00334">ConnectionObjectSetCipConsumedConnectionID()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00322">ConnectionObjectSetCipProducedConnectionID()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00445">ConnectionObjectSetConnectionSerialNumber()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00475">ConnectionObjectSetConnectionTimeoutMultiplier()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00303">ConnectionObjectSetExpectedPacketRate()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00465">ConnectionObjectSetOriginatorSerialNumber()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00455">ConnectionObjectSetOriginatorVendorId()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00484">ConnectionObjectSetOToTRequestedPacketInterval()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00123">cip_connection_object::sequence_count_producing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00120">cip_connection_object::t_to_o_requested_packet_interval</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00088">cip_connection_object::transport_class_trigger</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ae749b42a4af3686272ffa6fb24fd3860_cgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8da29f08ac77d450bb7602728bbad2b2"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectIsOToTRedundantOwner" ref="a8da29f08ac77d450bb7602728bbad2b2" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a8da29f08ac77d450bb7602728bbad2b2">ConnectionObjectIsOToTRedundantOwner</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00496">496</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::o_to_t_network_connection_parameters</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe3f0055827380760319b30452a4a849"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectIsTToORedundantOwner" ref="afe3f0055827380760319b30452a4a849" args="(const CipConnectionObject *const connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#afe3f0055827380760319b30452a4a849">ConnectionObjectIsTToORedundantOwner</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00501">501</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00121">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a249bd20f91d8bb584e02aa13182c2b"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectResetInactivityWatchdogTimerValue" ref="a1a249bd20f91d8bb584e02aa13182c2b" args="(CipConnectionObject *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1a249bd20f91d8bb584e02aa13182c2b">ConnectionObjectResetInactivityWatchdogTimerValue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00427">427</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00434">ConnectionObjectCalculateRegularInactivityWatchdogTimerValue()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00110">cip_connection_object::inactivity_watchdog_timer</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a1a249bd20f91d8bb584e02aa13182c2b_cgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a1a249bd20f91d8bb584e02aa13182c2b_icgraph.svg" width="656" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -850,7 +1649,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ac3ccaa3dc2b635564c622af574f70dc4">ConnectionObjectSetCipConsumedConnectionID</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -868,9 +1667,19 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00228">228</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00334">334</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00071">cip_connection_object::cip_consumed_connection_id</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00094">cip_connection_object::cip_consumed_connection_id</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ac3ccaa3dc2b635564c622af574f70dc4_icgraph.svg" width="627" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -881,7 +1690,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#af7cb76f073d6f32b45e37c06109770b7">ConnectionObjectSetCipProducedConnectionID</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -899,9 +1708,101 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00216">216</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00322">322</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00070">cip_connection_object::cip_produced_connection_id</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00093">cip_connection_object::cip_produced_connection_id</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_af7cb76f073d6f32b45e37c06109770b7_icgraph.svg" width="619" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae147f70246bfb10d8cb22386e91b5698"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetConnectionSerialNumber" ref="ae147f70246bfb10d8cb22386e91b5698" args="(CipConnectionObject *connection_object, const CipUint connection_serial_number)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ae147f70246bfb10d8cb22386e91b5698">ConnectionObjectSetConnectionSerialNumber</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>connection_serial_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00445">445</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00113">cip_connection_object::connection_serial_number</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ae147f70246bfb10d8cb22386e91b5698_icgraph.svg" width="608" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a968ebe3ecb4cbf77c78c6a5549dc5ed2"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetConnectionTimeoutMultiplier" ref="a968ebe3ecb4cbf77c78c6a5549dc5ed2" args="(CipConnectionObject *connection_object, CipUsint connection_timeout_multiplier)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aa040403dc93a58a4bcf513a1fc55986d">ConnectionObjectSetConnectionTimeoutMultiplier</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
+          <td class="paramname"><em>connection_timeout_multiplier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00475">475</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00101">cip_connection_object::connection_timeout_multiplier</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a968ebe3ecb4cbf77c78c6a5549dc5ed2_icgraph.svg" width="630" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -912,7 +1813,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#acef0a7d9d8a04e78acb72b5528cd9385">ConnectionObjectSetConsumedConnectionPathLength</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -930,9 +1831,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00290">290</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00408">408</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00075">cip_connection_object::consumed_connection_path_length</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00098">cip_connection_object::consumed_connection_path_length</a>.</p>
 
 </div>
 </div>
@@ -943,7 +1844,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#abe3215cd657af979d2cf3895effad3e4">ConnectionObjectSetConsumedConnectionSize</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -961,9 +1862,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00186">186</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00291">291</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00068">cip_connection_object::consumed_connection_size</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00091">cip_connection_object::consumed_connection_size</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1875,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a24752a6dd667ae5044308090eb5c5144">ConnectionObjectSetExpectedPacketRate</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -995,9 +1896,171 @@ Functions</h2></td></tr>
 <p>Sets the expected packet rate according to the rules of the CIP specification. </p>
 <p>As this function sets the expected packet rate according to the rules of the CIP specification, it is not always the exact value entered, but rounded up to the next serviceable increment, relative to the timer resolution </p>
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00198">198</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00303">303</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00069">cip_connection_object::expected_packet_rate</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00092">cip_connection_object::expected_packet_rate</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a24752a6dd667ae5044308090eb5c5144_icgraph.svg" width="590" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab996ea8a892ef4757ae04cec79bd0dd1"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetInitialInactivityWatchdogTimerValue" ref="ab996ea8a892ef4757ae04cec79bd0dd1" args="(CipConnectionObject *connection_object)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab996ea8a892ef4757ae04cec79bd0dd1">ConnectionObjectSetInitialInactivityWatchdogTimerValue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00416">416</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00434">ConnectionObjectCalculateRegularInactivityWatchdogTimerValue()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00110">cip_connection_object::inactivity_watchdog_timer</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ab996ea8a892ef4757ae04cec79bd0dd1_cgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a785834d5d1e4886cded28cca3cd35682"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetOriginatorSerialNumber" ref="a785834d5d1e4886cded28cca3cd35682" args="(CipConnectionObject *connection_object, CipUdint originator_serial_number)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a785834d5d1e4886cded28cca3cd35682">ConnectionObjectSetOriginatorSerialNumber</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td>
+          <td class="paramname"><em>originator_serial_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00465">465</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::originator_serial_number</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a785834d5d1e4886cded28cca3cd35682_icgraph.svg" width="600" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8a0632e6a31e8f91c35c9ec3c319ca1"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetOriginatorVendorId" ref="ab8a0632e6a31e8f91c35c9ec3c319ca1" args="(CipConnectionObject *connection_object, const CipUint vendor_id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ab8a0632e6a31e8f91c35c9ec3c319ca1">ConnectionObjectSetOriginatorVendorId</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>vendor_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00455">455</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00114">cip_connection_object::originator_vendor_id</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ab8a0632e6a31e8f91c35c9ec3c319ca1_icgraph.svg" width="574" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f944880ccf09ecd7e2d3d5ffcde345e"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetOToTRequestedPacketInterval" ref="a0f944880ccf09ecd7e2d3d5ffcde345e" args="(CipConnectionObject *connection_object, const CipUdint requested_packet_interval)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a0f944880ccf09ecd7e2d3d5ffcde345e">ConnectionObjectSetOToTRequestedPacketInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td>
+          <td class="paramname"><em>requested_packet_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00484">484</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00117">cip_connection_object::o_to_t_requested_packet_interval</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a0f944880ccf09ecd7e2d3d5ffcde345e_icgraph.svg" width="646" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1008,7 +2071,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#aad3a169ab08fa40ae4d7464a4224a47d">ConnectionObjectSetProducedConnectionPathLength</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -1026,9 +2089,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00277">277</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00395">395</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00073">cip_connection_object::produced_connection_path_length</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00096">cip_connection_object::produced_connection_path_length</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +2102,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a83ac64db3a2815d15ca83ac1519e41e8">ConnectionObjectSetProducedConnectionSize</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -1057,9 +2120,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00174">174</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00279">279</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00067">cip_connection_object::produced_connection_size</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00090">cip_connection_object::produced_connection_size</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +2133,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -1088,20 +2151,61 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00081">81</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">160</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00012">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00011">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateWaitingForConnectionID</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00063">cip_connection_object::state</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00018">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00018">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00019">kConnectionObjectStateWaitingForConnectionID</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00086">cip_connection_object::state</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00074">CipClass3ConnectionObjectStateEstablishedHandler()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00084">CipClass3ConnectionObjectStateNonExistentHandler()</a>, and <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00076">ConnectionObjectInitializeFromMessage()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_ace0a978d1b7fe59261b1024b5ba1cd15_icgraph.svg" width="574" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="adf7d5e9faae2551a1c925d746dec2ea5"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetWatchdofTimeoutAction" ref="adf7d5e9faae2551a1c925d746dec2ea5" args="(CipConnectionObject *const connection_object, const CipUsint watchdog_timeout_action)" -->
+<a class="anchor" id="a7883293f84213277eb8c63e558f12a6c"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetTToORequestedPacketInterval" ref="a7883293f84213277eb8c63e558f12a6c" args="(CipConnectionObject *connection_object, const CipUdint requested_packet_interval)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#adf7d5e9faae2551a1c925d746dec2ea5">ConnectionObjectSetWatchdofTimeoutAction</a> </td>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a7883293f84213277eb8c63e558f12a6c">ConnectionObjectSetTToORequestedPacketInterval</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a1208871b2c6393595a4644ca8343e89e">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa6230aff6a173bcb6dc949ac85c2e7f1">CipUdint</a>&#160;</td>
+          <td class="paramname"><em>requested_packet_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00492">492</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00120">cip_connection_object::t_to_o_requested_packet_interval</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bf4e569cc43263943c0c8c8b138f5c4"></a><!-- doxytag: member="cipconnectionobject.c::ConnectionObjectSetWatchdogTimeoutAction" ref="a9bf4e569cc43263943c0c8c8b138f5c4" args="(CipConnectionObject *const connection_object, const CipUsint watchdog_timeout_action)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a9bf4e569cc43263943c0c8c8b138f5c4">ConnectionObjectSetWatchdogTimeoutAction</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -1119,9 +2223,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00250">250</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00362">362</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00038">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_RESET</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00037">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00057">kConnectionObjectWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectWatchdogTimeoutActionAutoReset</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00059">kConnectionObjectWatchdogTimeoutActionDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00055">kConnectionObjectWatchdogTimeoutActionInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">kConnectionObjectWatchdogTimeoutActionTransitionToTimedOut</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00072">cip_connection_object::watchdog_timeout_action</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00040">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00041">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_AUTO_RESET</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00042">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00039">CIP_CONNECTION_OBJECT_WATCHDOG_TIMEOUT_ACTION_TRANSITION_TO_TIMED_OUT</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00057">kConnectionObjectWatchdogTimeoutActionAutoDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectWatchdogTimeoutActionAutoReset</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00059">kConnectionObjectWatchdogTimeoutActionDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00055">kConnectionObjectWatchdogTimeoutActionInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00056">kConnectionObjectWatchdogTimeoutActionTransitionToTimedOut</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00095">cip_connection_object::watchdog_timeout_action</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +2249,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../df/d91/cipconnectionobject_8c.html">cipconnectionobject.c</a>      </li>
 
-    <li class="footer">Generated on Fri Dec 1 2017 10:11:56 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Dec 11 2017 15:49:29 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

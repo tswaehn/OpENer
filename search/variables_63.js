@@ -23,7 +23,7 @@ var searchData=
   ['connection_5fpoint',['connection_point',['../dd/d06/structCipConnectionPath.html#a449b31ee6e9f52fe770e50085899c3a4',1,'CipConnectionPath']]],
   ['connection_5freceive_5fdata_5ffunction',['connection_receive_data_function',['../d1/d48/structconnection__object.html#af885b8e00c36002715d9cbb32b56f3a2',1,'connection_object']]],
   ['connection_5fsend_5fdata_5ffunction',['connection_send_data_function',['../d1/d48/structconnection__object.html#ab54770913f007d4ca02e10835352649d',1,'connection_object']]],
-  ['connection_5fserial_5fnumber',['connection_serial_number',['../d1/d48/structconnection__object.html#ad769130c9d4e6725c5be513a3d54e1fe',1,'connection_object']]],
+  ['connection_5fserial_5fnumber',['connection_serial_number',['../d1/d48/structconnection__object.html#ad769130c9d4e6725c5be513a3d54e1fe',1,'connection_object::connection_serial_number()'],['../d2/da8/structcip__connection__object.html#a6feb10648d54c8a72ed64f7824eb20e2',1,'cip_connection_object::connection_serial_number()']]],
   ['connection_5ftimeout_5ffunction',['connection_timeout_function',['../d1/d48/structconnection__object.html#a1188e39b93ec13c5dca2c1c56d6ab07e',1,'connection_object']]],
   ['connection_5ftimeout_5fmultiplier',['connection_timeout_multiplier',['../d1/d48/structconnection__object.html#abc7006673b2cb7a9139d1bf209293773',1,'connection_object::connection_timeout_multiplier()'],['../d2/da8/structcip__connection__object.html#a0d46bc8f04e773d2644db40246eb7014',1,'cip_connection_object::connection_timeout_multiplier()']]],
   ['consumed_5fconnection_5fpath',['consumed_connection_path',['../d1/d48/structconnection__object.html#ab3ad0cdf7a707fb8554f0c2705999122',1,'connection_object::consumed_connection_path()'],['../d2/da8/structcip__connection__object.html#ae1c9ad9fb0bc9a1eb733869b7af589af',1,'cip_connection_object::consumed_connection_path()']]],
@@ -35,5 +35,6 @@ var searchData=
   ['correct_5foriginator_5fto_5ftarget_5fsize',['correct_originator_to_target_size',['../d1/d48/structconnection__object.html#a5d14bc0c2fbc0b5b80a9d6fdefb4d95e',1,'connection_object']]],
   ['correct_5ftarget_5fto_5foriginator_5fsize',['correct_target_to_originator_size',['../d1/d48/structconnection__object.html#a35971ed504cab3b06d633738fd48273d',1,'connection_object']]],
   ['current_5fcommunication_5fbuffer_5fposition',['current_communication_buffer_position',['../d9/d42/structencapsulation__data.html#aea1f797ee9ab44d96af2ed76c65c7e5b',1,'encapsulation_data']]],
-  ['current_5fseed_5fvalue',['current_seed_value',['../d9/d46/structRandom.html#ae213ba247901459f5aa0bdafc76b2765',1,'Random']]]
+  ['current_5fseed_5fvalue',['current_seed_value',['../d9/d46/structRandom.html#ae213ba247901459f5aa0bdafc76b2765',1,'Random']]],
+  ['current_5fstate_5fhandler',['current_state_handler',['../d2/da8/structcip__connection__object.html#af745e7ecd9dc7549f0935f7c9a5167ab',1,'cip_connection_object']]]
 ];

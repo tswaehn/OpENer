@@ -1,37 +1,38 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec" title="Creates Common Packet Format structure out of data." alt="" coords="873,232,1121,262"/>
-<area shape="rect" id="node15" href="$d2/dbd/encap_8c.html#a638a3760c5969c8cd91977f1ac30058a" title="Call UCMM or Message Router if UCMM not implemented." alt="" coords="1525,258,1869,287"/>
-<area shape="rect" id="node19" href="$db/d4f/generic__networkhandler_8c.html#aca5593b7dd39d7a7b437999a367102d6" title="Handles data on an established TCP connection, processed connection is given by socket." alt="" coords="2287,183,2457,212"/>
-<area shape="rect" id="node22" href="$d4/d91/group__ENCAP.html#ga94ca28af85239d7dd63b3b044201fe51" title="NotifyConnectedCommonPacketFormat" alt="" coords="1213,336,1467,366"/>
-<area shape="rect" id="node24" href="$d2/dbd/encap_8c.html#a2a5e809a74a56268ad9f51638796fb3d" title="Call Connection Manager." alt="" coords="1568,336,1827,366"/>
-<area shape="rect" id="node27" href="$d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7" title="copy data from pa_buf in little endian to host in structure." alt="" coords="1600,76,1795,106"/>
-<area shape="rect" id="node38" href="$d2/dc9/group__CIP__API.html#ga23ef471671180123d441d30895159a3c" title="Retrieve the given data according to CIP encoding from the message buffer." alt="" coords="295,702,388,731"/>
-<area shape="rect" id="node40" href="$db/d14/cipcommon_8h.html#accd84b7a7c79cb043932549a16c2ef61" title="Decodes padded EPath." alt="" coords="268,286,415,315"/>
-<area shape="rect" id="node48" href="$d2/dbd/encap_8c.html#ad676b132a3d05d3ee62a9bb5d1236e4f" title="DetermineDelayTime" alt="" coords="592,23,736,52"/>
-<area shape="rect" id="node53" href="$d5/d35/cipconnectionmanager_8c.html#a13291325387721d246cbd42ccaf9774f" title="ForwardClose" alt="" coords="947,596,1048,626"/>
-<area shape="rect" id="node60" href="$d1/d02/cipepath_8h.html#ae7344c52d0c796ecd8ec98d3b1b87791" title="Gets the data for an Electronic Key of format 4 from the EPath message." alt="" coords="196,755,487,784"/>
-<area shape="rect" id="node67" href="$df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f" title="HandleReceivedIoConnectionData" alt="" coords="231,648,452,678"/>
-<area shape="rect" id="node74" href="$d2/dbd/encap_8c.html#a1374db97cd12ac4307731a112a869c22" title="HandleReceivedRegisterSessionCommand" alt="" coords="1203,440,1477,470"/>
-<area shape="rect" id="node80" href="$d5/d35/cipconnectionmanager_8c.html#a681b2726132e3b050bc94af5d5e7e054" title="ReadOutConnectionObjectFromMessage" alt="" coords="211,544,472,574"/>
-<area shape="rect" id="node85" href="$dd/d20/ciptcpipinterface_8c.html#a811091b5f21066159f7a168504106f80" title="SetAttributeSingleTcp" alt="" coords="267,491,416,520"/>
-<area shape="rect" id="node5" href="$d2/dc9/group__CIP__API.html#ga34f1582ed424a2c875b8a317d828e181" title="Notify the connection manager that data for a connection has been received." alt="" coords="1236,179,1444,208"/>
-<area shape="rect" id="node13" href="$d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03" title="NotifyCommonPacketFormat" alt="" coords="1244,283,1436,312"/>
-<area shape="rect" id="node7" href="$db/d4f/generic__networkhandler_8c.html#af0c95ade149818d252c292b489cfe190" title="check if on one of the UDP consuming sockets data has been received and if yes handle it correctly..." alt="" coords="1919,180,2180,210"/>
-<area shape="rect" id="node9" href="$da/dc2/generic__networkhandler_8h.html#a2f01af81d3e5018d9980e2bc28c9078a" title="NetworkHandlerProcessOnce" alt="" coords="2563,183,2757,212"/>
-<area shape="rect" id="node11" href="$d9/dfb/POSIX_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207" title="main" alt="" coords="2805,247,2856,276"/>
-<area shape="rect" id="node17" href="$d2/dc9/group__CIP__API.html#gadeace7aa415ce7da686b522c85d131d1" title="Notify the encapsulation layer that an explicit message has been received via TCP." alt="" coords="1945,258,2153,287"/>
-<area shape="rect" id="node30" href="$d2/dc9/group__CIP__API.html#gaa341c4592653ac350721e07a99915315" title="Notify the encapsulation layer that an explicit message has been received via UDP." alt="" coords="1944,76,2155,106"/>
-<area shape="rect" id="node32" href="$db/d4f/generic__networkhandler_8c.html#a5cae623dd720f3072dabdb78aa134262" title="Checks and handles incoming messages via UDP broadcast." alt="" coords="2229,130,2515,159"/>
-<area shape="rect" id="node35" href="$db/d4f/generic__networkhandler_8c.html#ace1d8f3907ead0c43c1b5853132d5eb1" title="Checks and processes request received via the UDP unicast socket, currently the implementation is por..." alt="" coords="2255,76,2489,106"/>
-<area shape="rect" id="node42" href="$d9/d7d/cipmessagerouter_8c.html#acce609c2d88a22c290a00cd03991f78f" title="Create Message Router Request structure out of the received data." alt="" coords="537,286,791,315"/>
-<area shape="rect" id="node44" href="$d2/d75/cipmessagerouter_8h.html#aa7cf9dbb40843c4c9f7b379fb3570111" title="Notify the MessageRouter that an explicit message (connected or unconnected) has been received..." alt="" coords="923,286,1072,315"/>
-<area shape="rect" id="node50" href="$d2/dbd/encap_8c.html#a69765df985168c78fd59928c8bd4b2b8" title="HandleReceivedListIdentityCommandUdp" alt="" coords="1564,23,1831,52"/>
-<area shape="rect" id="node55" href="$d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212" title="Initialize the data of the connection manager object." alt="" coords="1263,570,1417,599"/>
-<area shape="rect" id="node57" href="$d2/dc9/group__CIP__API.html#ga5d4979945d124e28668b264c3823db1c" title="Initialize and setup the CIP&#45;stack." alt="" coords="1651,492,1744,522"/>
-<area shape="rect" id="node62" href="$d5/d35/cipconnectionmanager_8c.html#a96ebb3d0e93c8d4ee4a7d6529061ee68" title="Parse the connection path of a forward open request." alt="" coords="589,755,739,784"/>
-<area shape="rect" id="node64" href="$d5/d35/cipconnectionmanager_8c.html#ab0532e3b6d153312d4cf60746586058e" title="Handles a Non Null Non Matching Forward Open Request." alt="" coords="840,755,1155,784"/>
-<area shape="rect" id="node69" href="$df/d03/cipioconnection_8c.html#ac788741792b008fa0699c7cfbe0979bc" title="SetIoConnectionCallbacks" alt="" coords="576,650,752,679"/>
-<area shape="rect" id="node71" href="$de/d45/cipioconnection_8h.html#a699fccd3dabdfec1b77560f22268c1e8" title="Setup all data in order to establish an IO connection." alt="" coords="921,650,1073,679"/>
-<area shape="rect" id="node82" href="$d5/d35/cipconnectionmanager_8c.html#aa7b5f5390e3872191f824a666d50ef80" title="Check if resources for new connection available, generate ForwardOpen Reply message." alt="" coords="615,544,713,574"/>
-<area shape="rect" id="node87" href="$d1/dad/ciptcpipinterface_8h.html#a4c1f49654e48c5581513d990840933b0" title="Initializing the data structures of the TCP/IP interface object." alt="" coords="592,491,736,520"/>
+<area shape="rect" id="node3" href="$d1/d6c/cipconnectionobject_8h.html#ae749b42a4af3686272ffa6fb24fd3860" title="ConnectionObjectInitializeFromMessage" alt="" coords="213,5,469,35"/>
+<area shape="rect" id="node5" href="$d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec" title="Creates Common Packet Format structure out of data." alt="" coords="873,264,1121,293"/>
+<area shape="rect" id="node17" href="$d2/dbd/encap_8c.html#a638a3760c5969c8cd91977f1ac30058a" title="Call UCMM or Message Router if UCMM not implemented." alt="" coords="1525,289,1869,319"/>
+<area shape="rect" id="node21" href="$db/d4f/generic__networkhandler_8c.html#aca5593b7dd39d7a7b437999a367102d6" title="Handles data on an established TCP connection, processed connection is given by socket." alt="" coords="2287,215,2457,244"/>
+<area shape="rect" id="node24" href="$d4/d91/group__ENCAP.html#ga94ca28af85239d7dd63b3b044201fe51" title="NotifyConnectedCommonPacketFormat" alt="" coords="1213,368,1467,397"/>
+<area shape="rect" id="node26" href="$d2/dbd/encap_8c.html#a2a5e809a74a56268ad9f51638796fb3d" title="Call Connection Manager." alt="" coords="1568,368,1827,397"/>
+<area shape="rect" id="node29" href="$d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7" title="copy data from pa_buf in little endian to host in structure." alt="" coords="1600,108,1795,137"/>
+<area shape="rect" id="node40" href="$d2/dc9/group__CIP__API.html#ga23ef471671180123d441d30895159a3c" title="Retrieve the given data according to CIP encoding from the message buffer." alt="" coords="295,733,388,763"/>
+<area shape="rect" id="node42" href="$db/d14/cipcommon_8h.html#accd84b7a7c79cb043932549a16c2ef61" title="Decodes padded EPath." alt="" coords="268,317,415,347"/>
+<area shape="rect" id="node50" href="$d2/dbd/encap_8c.html#ad676b132a3d05d3ee62a9bb5d1236e4f" title="DetermineDelayTime" alt="" coords="592,55,736,84"/>
+<area shape="rect" id="node55" href="$d5/d35/cipconnectionmanager_8c.html#a13291325387721d246cbd42ccaf9774f" title="ForwardClose" alt="" coords="947,628,1048,657"/>
+<area shape="rect" id="node62" href="$d1/d02/cipepath_8h.html#ae7344c52d0c796ecd8ec98d3b1b87791" title="Gets the data for an Electronic Key of format 4 from the EPath message." alt="" coords="196,787,487,816"/>
+<area shape="rect" id="node69" href="$df/d03/cipioconnection_8c.html#aca3c7cb7fc5d8d3f86698cb4c31f108f" title="HandleReceivedIoConnectionData" alt="" coords="231,680,452,709"/>
+<area shape="rect" id="node76" href="$d2/dbd/encap_8c.html#a1374db97cd12ac4307731a112a869c22" title="HandleReceivedRegisterSessionCommand" alt="" coords="1203,472,1477,501"/>
+<area shape="rect" id="node82" href="$d5/d35/cipconnectionmanager_8c.html#a681b2726132e3b050bc94af5d5e7e054" title="ReadOutConnectionObjectFromMessage" alt="" coords="211,576,472,605"/>
+<area shape="rect" id="node87" href="$dd/d20/ciptcpipinterface_8c.html#a811091b5f21066159f7a168504106f80" title="SetAttributeSingleTcp" alt="" coords="267,523,416,552"/>
+<area shape="rect" id="node7" href="$d2/dc9/group__CIP__API.html#ga34f1582ed424a2c875b8a317d828e181" title="Notify the connection manager that data for a connection has been received." alt="" coords="1236,211,1444,240"/>
+<area shape="rect" id="node15" href="$d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03" title="NotifyCommonPacketFormat" alt="" coords="1244,315,1436,344"/>
+<area shape="rect" id="node9" href="$db/d4f/generic__networkhandler_8c.html#af0c95ade149818d252c292b489cfe190" title="check if on one of the UDP consuming sockets data has been received and if yes handle it correctly..." alt="" coords="1919,212,2180,241"/>
+<area shape="rect" id="node11" href="$da/dc2/generic__networkhandler_8h.html#a2f01af81d3e5018d9980e2bc28c9078a" title="NetworkHandlerProcessOnce" alt="" coords="2563,215,2757,244"/>
+<area shape="rect" id="node13" href="$d9/dfb/POSIX_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207" title="main" alt="" coords="2805,279,2856,308"/>
+<area shape="rect" id="node19" href="$d2/dc9/group__CIP__API.html#gadeace7aa415ce7da686b522c85d131d1" title="Notify the encapsulation layer that an explicit message has been received via TCP." alt="" coords="1945,289,2153,319"/>
+<area shape="rect" id="node32" href="$d2/dc9/group__CIP__API.html#gaa341c4592653ac350721e07a99915315" title="Notify the encapsulation layer that an explicit message has been received via UDP." alt="" coords="1944,108,2155,137"/>
+<area shape="rect" id="node34" href="$db/d4f/generic__networkhandler_8c.html#a5cae623dd720f3072dabdb78aa134262" title="Checks and handles incoming messages via UDP broadcast." alt="" coords="2229,161,2515,191"/>
+<area shape="rect" id="node37" href="$db/d4f/generic__networkhandler_8c.html#ace1d8f3907ead0c43c1b5853132d5eb1" title="Checks and processes request received via the UDP unicast socket, currently the implementation is por..." alt="" coords="2255,108,2489,137"/>
+<area shape="rect" id="node44" href="$d9/d7d/cipmessagerouter_8c.html#acce609c2d88a22c290a00cd03991f78f" title="Create Message Router Request structure out of the received data." alt="" coords="537,317,791,347"/>
+<area shape="rect" id="node46" href="$d2/d75/cipmessagerouter_8h.html#aa7cf9dbb40843c4c9f7b379fb3570111" title="Notify the MessageRouter that an explicit message (connected or unconnected) has been received..." alt="" coords="923,317,1072,347"/>
+<area shape="rect" id="node52" href="$d2/dbd/encap_8c.html#a69765df985168c78fd59928c8bd4b2b8" title="HandleReceivedListIdentityCommandUdp" alt="" coords="1564,55,1831,84"/>
+<area shape="rect" id="node57" href="$d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212" title="Initialize the data of the connection manager object." alt="" coords="1263,601,1417,631"/>
+<area shape="rect" id="node59" href="$d2/dc9/group__CIP__API.html#ga5d4979945d124e28668b264c3823db1c" title="Initialize and setup the CIP&#45;stack." alt="" coords="1651,524,1744,553"/>
+<area shape="rect" id="node64" href="$d5/d35/cipconnectionmanager_8c.html#a96ebb3d0e93c8d4ee4a7d6529061ee68" title="Parse the connection path of a forward open request." alt="" coords="589,787,739,816"/>
+<area shape="rect" id="node66" href="$d5/d35/cipconnectionmanager_8c.html#ab0532e3b6d153312d4cf60746586058e" title="Handles a Non Null Non Matching Forward Open Request." alt="" coords="840,787,1155,816"/>
+<area shape="rect" id="node71" href="$df/d03/cipioconnection_8c.html#ac788741792b008fa0699c7cfbe0979bc" title="SetIoConnectionCallbacks" alt="" coords="576,680,752,709"/>
+<area shape="rect" id="node73" href="$de/d45/cipioconnection_8h.html#a699fccd3dabdfec1b77560f22268c1e8" title="Setup all data in order to establish an IO connection." alt="" coords="921,681,1073,711"/>
+<area shape="rect" id="node84" href="$d5/d35/cipconnectionmanager_8c.html#aa7b5f5390e3872191f824a666d50ef80" title="Check if resources for new connection available, generate ForwardOpen Reply message." alt="" coords="615,576,713,605"/>
+<area shape="rect" id="node89" href="$d1/dad/ciptcpipinterface_8h.html#a4c1f49654e48c5581513d990840933b0" title="Initializing the data structures of the TCP/IP interface object." alt="" coords="592,523,736,552"/>
 </map>

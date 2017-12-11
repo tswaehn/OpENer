@@ -4,7 +4,7 @@ var searchData=
   ['segment_5ftype',['segment_type',['../d9/da7/structCipElectronicKey.html#ab97c41c46f877d65e5e2b2aa2428b5c5',1,'CipElectronicKey']]],
   ['sender_5fcontext',['sender_context',['../d9/d42/structencapsulation__data.html#a8eb70ef3d00610457050d85ad1b13b75',1,'encapsulation_data']]],
   ['sequence_5fcount_5fconsuming',['sequence_count_consuming',['../d1/d48/structconnection__object.html#ad6c06f4b33c7bea685145806c86d2c3f',1,'connection_object']]],
-  ['sequence_5fcount_5fproducing',['sequence_count_producing',['../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59',1,'connection_object']]],
+  ['sequence_5fcount_5fproducing',['sequence_count_producing',['../d1/d48/structconnection__object.html#a3bdc60cec812eb1fa09d731971c28c59',1,'connection_object::sequence_count_producing()'],['../d2/da8/structcip__connection__object.html#adb77c52191a28697c2b7063a8f630522',1,'cip_connection_object::sequence_count_producing()']]],
   ['sequence_5fnumber',['sequence_number',['../d9/da2/structAddressData.html#a41d4480ab2d89c04cd9211586be88ba5',1,'AddressData']]],
   ['sequenced_5faddress_5fitem_5flength',['sequenced_address_item_length',['../d3/d98/cpf_8c.html#a7ed674cd41a5778b7774494844c68aef',1,'cpf.c']]],
   ['serial_5fnumber_5f',['serial_number_',['../dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9',1,'serial_number_():&#160;cipidentity.c'],['../d2/dbd/encap_8c.html#a02dada89b9eeffaab163c70d99ade6a9',1,'serial_number_():&#160;cipidentity.c']]],

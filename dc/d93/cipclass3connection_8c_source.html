@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00006"></a>00006 
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;string.h&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d11/cipclass3connection_8h.html" title="CIP Class 3 connection.">cipclass3connection.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d11/cipclass3connection_8h.html" title="CIP Class 3 connection * Explicit Connection Object State Transition Diagram.">cipclass3connection.h</a>&quot;</span>
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>(<span class="keywordtype">void</span>);
 <a name="l00012"></a>00012 
@@ -166,6 +166,25 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00070"></a>00070   memset( g_explicit_connections, 0,
 <a name="l00071"></a>00071           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a>) );
 <a name="l00072"></a>00072 }
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a6e10acd1e553be5c7c6e614580a25303">00074</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state) {
+<a name="l00075"></a>00075   <span class="keywordflow">switch</span>(new_state) {
+<a name="l00076"></a>00076     <span class="keywordflow">case</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530">kConnectionObjectStateNonExistent</a>:
+<a name="l00077"></a>00077       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549">ConnectionObjectInitializeEmpty</a>(connection_object);
+<a name="l00078"></a>00078       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a>(connection_object, new_state);
+<a name="l00079"></a>00079       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00080"></a>00080     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00081"></a>00081   }
+<a name="l00082"></a>00082 }
+<a name="l00083"></a>00083 
+<a name="l00084"></a><a class="code" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">00084</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">CipClass3ConnectionObjectStateNonExistentHandler</a>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state) {
+<a name="l00085"></a>00085   <span class="keywordflow">switch</span>(new_state) {
+<a name="l00086"></a>00086     <span class="keywordflow">case</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e">kConnectionObjectStateEstablished</a>:
+<a name="l00087"></a>00087       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a>(connection_object, new_state);
+<a name="l00088"></a>00088       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00089"></a>00089     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00090"></a>00090   }
+<a name="l00091"></a>00091 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -186,7 +205,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../dc/d93/cipclass3connection_8c.html">cipclass3connection.c</a>      </li>
 
-    <li class="footer">Generated on Fri Dec 1 2017 10:11:56 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Dec 11 2017 15:49:28 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['cip_5fclass',['cip_class',['../da/d8e/structcip__class.html',1,'']]],
-  ['cip_5fconnection_5fobject',['cip_connection_object',['../d2/da8/structcip__connection__object.html',1,'']]],
   ['cip_5finstance',['cip_instance',['../d5/dc5/structcip__instance.html',1,'']]],
   ['cip_5fmessage_5frouter_5fobject',['cip_message_router_object',['../d2/d6d/structcip__message__router__object.html',1,'']]],
   ['cip_5fservice_5fstruct',['cip_service_struct',['../d8/de2/structcip__service__struct.html',1,'']]],

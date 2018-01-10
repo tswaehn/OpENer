@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cipclass3connection.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d67/cipclass3connection_8c__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d67/cipclass3connection_8c__incl.svg" width="550" height="504"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -115,8 +115,6 @@ Include dependency graph for cipclass3connection.c:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d93/cipclass3connection_8c.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">CipClass3ConnectionObjectStateNonExistentHandler</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d93/cipclass3connection_8c.html#a520d2812de0a09b517b1275d88fde150">EstablishClass3Connection</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *RESTRICT const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *const extended_error)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if Class3 connection is available and if yes setup all data.  <a href="#a520d2812de0a09b517b1275d88fde150"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44">GetFreeExplicitConnection</a> (void)</td></tr>
@@ -129,84 +127,6 @@ Variables</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of the available explicit connections.  <a href="#a7fc971e201c74115c897ee6732587ec8"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a6e10acd1e553be5c7c6e614580a25303"></a><!-- doxytag: member="cipclass3connection.c::CipClass3ConnectionObjectStateEstablishedHandler" ref="a6e10acd1e553be5c7c6e614580a25303" args="(CipConnectionObject *RESTRICT const connection_object, ConnectionObjectState new_state)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../d2/d11/cipclass3connection_8h.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const&#160;</td>
-          <td class="paramname"><em>connection_object</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a>&#160;</td>
-          <td class="paramname"><em>new_state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00074">74</a> of file <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html">cipclass3connection.c</a>.</p>
-
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00067">ConnectionObjectInitializeEmpty()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00017">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d93/cipclass3connection_8c_a6e10acd1e553be5c7c6e614580a25303_cgraph.svg" width="603" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a40f39633557a00f8f05c47d070b03a1d"></a><!-- doxytag: member="cipclass3connection.c::CipClass3ConnectionObjectStateNonExistentHandler" ref="a40f39633557a00f8f05c47d070b03a1d" args="(CipConnectionObject *RESTRICT const connection_object, ConnectionObjectState new_state)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">CipClass3ConnectionObjectStateNonExistentHandler</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const&#160;</td>
-          <td class="paramname"><em>connection_object</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a>&#160;</td>
-          <td class="paramname"><em>new_state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00084">84</a> of file <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html">cipclass3connection.c</a>.</p>
-
-<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00160">ConnectionObjectSetState()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00020">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d93/cipclass3connection_8c_a40f39633557a00f8f05c47d070b03a1d_cgraph.svg" width="574" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a520d2812de0a09b517b1275d88fde150"></a><!-- doxytag: member="cipclass3connection.c::EstablishClass3Connection" ref="a520d2812de0a09b517b1275d88fde150" args="(ConnectionObject *RESTRICT const connection_object, EipUint16 *const extended_error)" -->
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +297,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../dc/d93/cipclass3connection_8c.html">cipclass3connection.c</a>      </li>
 
-    <li class="footer">Generated on Mon Dec 11 2017 15:49:29 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -737,8 +737,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00669"></a>00669         <a class="code" href="../../db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9">CloseUdpSocket</a>(connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]);
 <a name="l00670"></a>00670         connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
 <a name="l00671"></a>00671           kEipInvalidSocket;
-<a name="l00672"></a>00672         next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acd1b8367fe302c1023ab4b6e384654f3">transmission_trigger_timer</a> =
-<a name="l00673"></a>00673           connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acd1b8367fe302c1023ab4b6e384654f3">transmission_trigger_timer</a>;
+<a name="l00672"></a>00672         next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#ac4b956f5790d2a6e6a825be1c85e378d">transmission_trigger_timer</a> =
+<a name="l00673"></a>00673           connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#ac4b956f5790d2a6e6a825be1c85e378d">transmission_trigger_timer</a>;
 <a name="l00674"></a>00674       } <span class="keywordflow">else</span> { <span class="comment">/* this was the last master connection close all listen only connections listening on the port */</span>
 <a name="l00675"></a>00675         <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
 <a name="l00676"></a>00676           connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
@@ -779,8 +779,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00711"></a>00711               connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>];
 <a name="l00712"></a>00712             connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[<a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>] =
 <a name="l00713"></a>00713               kEipInvalidSocket;
-<a name="l00714"></a>00714             next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acd1b8367fe302c1023ab4b6e384654f3">transmission_trigger_timer</a> =
-<a name="l00715"></a>00715               connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#acd1b8367fe302c1023ab4b6e384654f3">transmission_trigger_timer</a>;
+<a name="l00714"></a>00714             next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#ac4b956f5790d2a6e6a825be1c85e378d">transmission_trigger_timer</a> =
+<a name="l00715"></a>00715               connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#ac4b956f5790d2a6e6a825be1c85e378d">transmission_trigger_timer</a>;
 <a name="l00716"></a>00716           } <span class="keywordflow">else</span> { <span class="comment">/* this was the last master connection close all listen only connections listening on the port */</span>
 <a name="l00717"></a>00717             <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(
 <a name="l00718"></a>00718               connection_object-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
@@ -1009,7 +1009,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../df/d03/cipioconnection_8c.html">cipioconnection.c</a>      </li>
 
-    <li class="footer">Generated on Mon Jan 15 2018 14:54:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 16:32:19 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

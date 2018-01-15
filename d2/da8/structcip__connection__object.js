@@ -44,7 +44,7 @@ var structcip__connection__object =
     [ "state", "d2/da8/structcip__connection__object.html#acbe573abee2756c4189d57c091bcda71", null ],
     [ "t_to_o_network_connection_parameters", "d2/da8/structcip__connection__object.html#afb85e96dbc1c4f50f1c977f77eb0e46b", null ],
     [ "t_to_o_requested_packet_interval", "d2/da8/structcip__connection__object.html#ad7d40a058803286a6c5c61285ca8b37c", null ],
-    [ "transmission_trigger_timer", "d2/da8/structcip__connection__object.html#acd1b8367fe302c1023ab4b6e384654f3", null ],
+    [ "transmission_trigger_timer", "d2/da8/structcip__connection__object.html#ac4b956f5790d2a6e6a825be1c85e378d", null ],
     [ "transport_class_trigger", "d2/da8/structcip__connection__object.html#a98bb53e120fc9e000d9b13c639dcf117", null ],
     [ "watchdog_timeout_action", "d2/da8/structcip__connection__object.html#a20a402b5d04ac9e81c374824d0df90cc", null ]
 ];

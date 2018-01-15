@@ -7,7 +7,6 @@ var generic__networkhandler_8h =
     [ "NetworkHandlerFinish", "da/dc2/generic__networkhandler_8h.html#aace33c0e7aa348969492ede822183bd5", null ],
     [ "NetworkHandlerInitialize", "da/dc2/generic__networkhandler_8h.html#aa49065f73f4d0f0ab04fb0b35d791e5d", null ],
     [ "NetworkHandlerProcessOnce", "da/dc2/generic__networkhandler_8h.html#a2f01af81d3e5018d9980e2bc28c9078a", null ],
-    [ "g_active_connection_list", "da/dc2/generic__networkhandler_8h.html#a1fb6f4a00ea5c96694050b5be4e2501c", null ],
     [ "g_actual_time", "da/dc2/generic__networkhandler_8h.html#adeb5e45d46d5a71c4080a2a7c624143c", null ],
     [ "g_current_active_tcp_socket", "da/dc2/generic__networkhandler_8h.html#a8ddad8eafa2554c06804586f3453d3b6", null ],
     [ "g_ethernet_communication_buffer", "da/dc2/generic__networkhandler_8h.html#a0439e8e9acf4fe976e0d27b1c35fb30b", null ],

@@ -107,65 +107,80 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00006"></a>00006 
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;string.h&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d11/cipclass3connection_8h.html" title="CIP Class 3 connection.">cipclass3connection.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d11/cipclass3connection_8h.html" title="CIP Class 3 connection * Explicit Connection Object State Transition Diagram.">cipclass3connection.h</a>&quot;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>(<span class="keywordtype">void</span>);
-<a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="comment">/**** Global variables ****/</span>
+<a name="l00011"></a>00011 <span class="comment">/**** Global variables ****/</span>
+<a name="l00012"></a>00012 <span class="keyword">extern</span> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#ae21a6efe9518ad83e4c7db9b837a2b81" title="Array of the available explicit connections.">explicit_connection_object_pool</a>[
+<a name="l00013"></a>00013   <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a>];
 <a name="l00014"></a>00014 
-<a name="l00016"></a><a class="code" href="../../dc/d93/cipclass3connection_8c.html#a7fc971e201c74115c897ee6732587ec8">00016</a> <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a7fc971e201c74115c897ee6732587ec8" title="Array of the available explicit connections.">g_explicit_connections</a>[<a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a>];
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018 <span class="comment">/**** Implementation ****/</span>
-<a name="l00019"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a520d2812de0a09b517b1275d88fde150">00019</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a520d2812de0a09b517b1275d88fde150" title="Check if Class3 connection is available and if yes setup all data.">EstablishClass3Connection</a>(
-<a name="l00020"></a>00020   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *RESTRICT <span class="keyword">const</span> <a class="code" href="../../d1/d48/structconnection__object.html">connection_object</a>,
-<a name="l00021"></a>00021   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *<span class="keyword">const</span> extended_error) {
-<a name="l00022"></a>00022   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024   <span class="comment">/*TODO add check for transport type trigger */</span>
-<a name="l00025"></a>00025   <span class="comment">/* if (0x03 == (g_stDummyConnectionObject.TransportTypeClassTrigger &amp; 0x03)) */</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027   <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *explicit_connection = <a class="code" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>();
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <span class="keywordflow">if</span> (NULL == explicit_connection) {
-<a name="l00030"></a>00030     eip_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
-<a name="l00031"></a>00031     *extended_error =
-<a name="l00032"></a>00032       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ae5ce9e5e8cbbcd580f9bcbc1e3ad8750">kConnectionManagerExtendedStatusCodeErrorNoMoreConnectionsAvailable</a>;
-<a name="l00033"></a>00033   } <span class="keywordflow">else</span> {
-<a name="l00034"></a>00034     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a5b446bd74c93f6faf3d836ffe3dac510" title="Copy the given connection data from source to destination.">CopyConnectionData</a>(explicit_connection, connection_object);
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036     <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> produced_connection_id_buffer =
-<a name="l00037"></a>00037       explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa15e909827e498435ce848d6e98bf51e">cip_produced_connection_id</a>;
-<a name="l00038"></a>00038     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a58ea5ad416416102edd225bc918bd6bd" title="Generate the ConnectionIDs and set the general configuration parameter in the given connection object...">GeneralConnectionConfiguration</a>(explicit_connection);
-<a name="l00039"></a>00039     explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#aa15e909827e498435ce848d6e98bf51e">cip_produced_connection_id</a> =
-<a name="l00040"></a>00040       produced_connection_id_buffer;
-<a name="l00041"></a>00041     explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#ada63f5853b16b3fa0d3c49b894157540">instance_type</a> = <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81fa444f79c22d744e8a11671b988920089f">kConnectionTypeExplicit</a>;
-<a name="l00042"></a>00042     explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[0] = explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#af79cffac5d391cb48b836dca8b893fe4">socket</a>[1] =
-<a name="l00043"></a>00043                                        kEipInvalidSocket;
-<a name="l00044"></a>00044     <span class="comment">/* set the connection call backs */</span>
-<a name="l00045"></a>00045     explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a51af396f09a2874cecd1d463c85e2a34">connection_close_function</a> =
-<a name="l00046"></a>00046       <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef50a0eee3ff5df3320b49f872a7f3c4" title="Removes connection from the list of active connections.">RemoveFromActiveConnections</a>;
-<a name="l00047"></a>00047     <span class="comment">/* explicit connection have to be closed on time out*/</span>
-<a name="l00048"></a>00048     explicit_connection-&gt;<a class="code" href="../../d1/d48/structconnection__object.html#a1188e39b93ec13c5dca2c1c56d6ab07e">connection_timeout_function</a> =
-<a name="l00049"></a>00049       <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aef50a0eee3ff5df3320b49f872a7f3c4" title="Removes connection from the list of active connections.">RemoveFromActiveConnections</a>;
+<a name="l00015"></a>00015 <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<a class="code" href="../../dc/d93/cipclass3connection_8c.html#a5557c2c7143958acb9d125e2e11296f3" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>(<span class="keywordtype">void</span>);
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="comment">/**** Implementation ****/</span>
+<a name="l00018"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a45bd741b44137164c07a6ce09a7a9a9d">00018</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a45bd741b44137164c07a6ce09a7a9a9d" title="Check if Class3 connection is available and if yes setup all data.">EstablishClass3Connection</a>(
+<a name="l00019"></a>00019   <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object,
+<a name="l00020"></a>00020   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *<span class="keyword">const</span> extended_error) {
+<a name="l00021"></a>00021   <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> eip_status = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023   <span class="comment">/*TODO add check for transport type trigger */</span>
+<a name="l00024"></a>00024   <span class="comment">/* if (0x03 == (g_stDummyConnectionObject.TransportTypeClassTrigger &amp; 0x03)) */</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026   <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *explicit_connection = <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a5557c2c7143958acb9d125e2e11296f3" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>();
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028   <span class="keywordflow">if</span> (NULL == explicit_connection) {
+<a name="l00029"></a>00029     eip_status = <a class="code" href="../../d6/d52/ciperror_8h.html#a01a2d66a1bdaea7c81e29d4d2530d218a8db04c3335e9735af7d59cf4b7cbdc4b">kCipErrorConnectionFailure</a>;
+<a name="l00030"></a>00030     *extended_error =
+<a name="l00031"></a>00031       <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759ae5ce9e5e8cbbcd580f9bcbc1e3ad8750">kConnectionManagerExtendedStatusCodeErrorNoMoreConnectionsAvailable</a>;
+<a name="l00032"></a>00032   } <span class="keywordflow">else</span> {
+<a name="l00033"></a>00033     <a class="code" href="../../df/d91/cipconnectionobject_8c.html#afaa08a457cbae921463403f0f00dd38e" title="Copy the given connection data from source to destination.">ConnectionObjectDeepCopy</a>(explicit_connection, connection_object);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035     <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a65b85bb4b72c902af06e054e24d6292c" title="Generate the ConnectionIDs and set the general configuration parameter in the given connection object...">ConnectionObjectGeneralConfiguration</a>(explicit_connection);
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037     <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a49bbc4004eb23be25b6d3620ece5a7a7">ConnectionObjectSetInstanceType</a>(explicit_connection, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069">kConnectionObjectInstanceTypeExplicitMessaging</a>);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039     <span class="comment">/* set the connection call backs */</span>
+<a name="l00040"></a>00040     explicit_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a> =
+<a name="l00041"></a>00041                 <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a9367d6d6edfd5bd276ead18619f4d74e" title="Close the given connection.">CloseConnection</a>;
+<a name="l00042"></a>00042     <span class="comment">/* explicit connection have to be closed on time out*/</span>
+<a name="l00043"></a>00043     explicit_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a5f34750287366fbfefb19e5e9c5433ff">connection_timeout_function</a> =
+<a name="l00044"></a>00044                 <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a9367d6d6edfd5bd276ead18619f4d74e" title="Close the given connection.">CloseConnection</a>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#aac2c0397cf54cb8356126c0d71d744ff" title="Insert the given connection object to the list of currently active and managed connections.">AddNewActiveConnection</a>(explicit_connection);
+<a name="l00047"></a>00047   }
+<a name="l00048"></a>00048   <span class="keywordflow">return</span> eip_status;
+<a name="l00049"></a>00049 }
 <a name="l00050"></a>00050 
-<a name="l00051"></a>00051     <a class="code" href="../../d5/d35/cipconnectionmanager_8c.html#a9414ca20f400db7e4d219dddd953a004" title="Insert the given connection object to the list of currently active and managed connections.">AddNewActiveConnection</a>(explicit_connection);
-<a name="l00052"></a>00052   }
-<a name="l00053"></a>00053   <span class="keywordflow">return</span> eip_status;
-<a name="l00054"></a>00054 }
-<a name="l00055"></a>00055 
-<a name="l00060"></a><a class="code" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44">00060</a> <a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a> *<a class="code" href="../../dc/d93/cipclass3connection_8c.html#aa781f36e8e274839c67e0a24414c5a44" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>(<span class="keywordtype">void</span>) {
-<a name="l00061"></a>00061   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a>; i++) {
-<a name="l00062"></a>00062     <span class="keywordflow">if</span> (g_explicit_connections[i].state == <a class="code" href="../../d2/da3/cipconnectionmanager_8h.html#acdd867d72142510ce53521a63a062f9baba24869a3517f7ec2a180d65e5fbe7bc">kConnectionStateNonExistent</a>) {
-<a name="l00063"></a>00063       <span class="keywordflow">return</span> &amp;(g_explicit_connections[i]);
-<a name="l00064"></a>00064     }
-<a name="l00065"></a>00065   }
-<a name="l00066"></a>00066   <span class="keywordflow">return</span> NULL;
+<a name="l00055"></a><a class="code" href="../../dc/d93/cipclass3connection_8c.html#a5557c2c7143958acb9d125e2e11296f3">00055</a> <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<a class="code" href="../../dc/d93/cipclass3connection_8c.html#a5557c2c7143958acb9d125e2e11296f3" title="Searches and returns a free explicit connection slot.">GetFreeExplicitConnection</a>(<span class="keywordtype">void</span>) {
+<a name="l00056"></a>00056   <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a>; ++i) {
+<a name="l00057"></a>00057     <span class="keywordflow">if</span> (<a class="code" href="../../df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a>(&amp;(explicit_connection_object_pool[i])) == <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530">kConnectionObjectStateNonExistent</a>) {
+<a name="l00058"></a>00058       <span class="keywordflow">return</span> &amp;(explicit_connection_object_pool[i]);
+<a name="l00059"></a>00059     }
+<a name="l00060"></a>00060   }
+<a name="l00061"></a>00061   <span class="keywordflow">return</span> NULL;
+<a name="l00062"></a>00062 }
+<a name="l00063"></a>00063 
+<a name="l00064"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a2afaf72caf177920d6b99c503d7fc133">00064</a> <span class="keywordtype">void</span> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>(<span class="keywordtype">void</span>) {
+<a name="l00065"></a>00065   memset( explicit_connection_object_pool, 0,
+<a name="l00066"></a>00066           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a>) );
 <a name="l00067"></a>00067 }
 <a name="l00068"></a>00068 
-<a name="l00069"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a2afaf72caf177920d6b99c503d7fc133">00069</a> <span class="keywordtype">void</span> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>(<span class="keywordtype">void</span>) {
-<a name="l00070"></a>00070   memset( g_explicit_connections, 0,
-<a name="l00071"></a>00071           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649" title="Define the number of supported explicit connections. According to ODVA&#39;s PUB 70 this number should be...">OPENER_CIP_NUM_EXPLICIT_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d1/d48/structconnection__object.html">ConnectionObject</a>) );
-<a name="l00072"></a>00072 }
+<a name="l00069"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a6e10acd1e553be5c7c6e614580a25303">00069</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state) {
+<a name="l00070"></a>00070   <span class="keywordflow">switch</span>(new_state) {
+<a name="l00071"></a>00071     <span class="keywordflow">case</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530">kConnectionObjectStateNonExistent</a>:
+<a name="l00072"></a>00072       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549">ConnectionObjectInitializeEmpty</a>(connection_object);
+<a name="l00073"></a>00073       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a>(connection_object, new_state);
+<a name="l00074"></a>00074       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00075"></a>00075     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00076"></a>00076   }
+<a name="l00077"></a>00077 }
+<a name="l00078"></a>00078 
+<a name="l00079"></a><a class="code" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">00079</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a40f39633557a00f8f05c47d070b03a1d">CipClass3ConnectionObjectStateNonExistentHandler</a>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state) {
+<a name="l00080"></a>00080   <span class="keywordflow">switch</span>(new_state) {
+<a name="l00081"></a>00081     <span class="keywordflow">case</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e">kConnectionObjectStateEstablished</a>:
+<a name="l00082"></a>00082       <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15">ConnectionObjectSetState</a>(connection_object, new_state);
+<a name="l00083"></a>00083       <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a">kEipStatusOk</a>;
+<a name="l00084"></a>00084     <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;
+<a name="l00085"></a>00085   }
+<a name="l00086"></a>00086 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -186,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../dc/d93/cipclass3connection_8c.html">cipclass3connection.c</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

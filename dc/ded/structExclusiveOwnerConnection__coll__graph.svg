@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 782;
+var viewWidth = 575;
 var viewHeight = 314;
 var sectionId = 'dynsection-0';
 </script>
@@ -42,196 +42,131 @@ var sectionId = 'dynsection-0';
 <title>G</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="177.5,-0.5 177.5,-21.5 314.5,-21.5 314.5,-0.5 177.5,-0.5"/>
-<text text-anchor="middle" x="246" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExclusiveOwnerConnection</text>
+<polygon fill="#bfbfbf" stroke="black" points="276.812,-0.5 276.812,-21.5 413.812,-21.5 413.812,-0.5 276.812,-0.5"/>
+<text text-anchor="middle" x="345.312" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExclusiveOwnerConnection</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="../../d1/d48/structconnection__object.html" target="_top" xlink:title="connection_object">
-<polygon fill="none" stroke="black" points="198.5,-100.5 198.5,-121.5 293.5,-121.5 293.5,-100.5 198.5,-100.5"/>
-<text text-anchor="middle" x="246" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">connection_object</text>
+<a xlink:href="../../d2/da8/structcip__connection__object.html" target="_top" xlink:title="cip_connection_object">
+<polygon fill="none" stroke="black" points="288.812,-93.5 288.812,-114.5 401.812,-114.5 401.812,-93.5 288.812,-93.5"/>
+<text text-anchor="middle" x="345.312" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_connection_object</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M246,-90.189C246,-69.2803 246,-37.8923 246,-21.6248"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="242.5,-90.2982 246,-100.298 249.5,-90.2983 242.5,-90.2982"/>
-<text text-anchor="middle" x="283.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00"> connection_data</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M345.312,-83.2042C345.312,-64.0703 345.312,-36.47 345.312,-21.5439"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="341.813,-83.3317 345.312,-93.3317 348.813,-83.3318 341.813,-83.3317"/>
+<text text-anchor="middle" x="382.812" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00"> connection_data</text>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge4" class="edge"><title>Node2&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M281.678,-122.829C297.429,-123.897 311,-119.954 311,-111 311,-100.188 291.211,-96.6819 271.692,-100.483"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="282.062,-119.35 271.692,-121.517 281.15,-126.29 282.062,-119.35"/>
-<text text-anchor="middle" x="385" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00"> next_connection_object</text>
-<text text-anchor="middle" x="385" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">connection_timeout_function</text>
-<text text-anchor="middle" x="385" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00">connection_send_data_function</text>
-<text text-anchor="middle" x="385" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">first_connection_object</text>
-<text text-anchor="middle" x="385" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">connection_receive_data_function</text>
-<text text-anchor="middle" x="385" y="-76" font-family="Helvetica,sans-Serif" font-size="10.00">connection_close_function</text>
+<g id="edge22" class="edge"><title>Node2&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M411.995,-111.591C416.546,-109.846 419.312,-107.315 419.312,-104 419.312,-98.6953 412.23,-95.4006 402.09,-94.1159"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="411.043,-108.219 402.09,-113.884 412.621,-115.038 411.043,-108.219"/>
+<text text-anchor="middle" x="493.312" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00"> connection_timeout_function</text>
+<text text-anchor="middle" x="493.312" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">connection_send_data_function</text>
+<text text-anchor="middle" x="493.312" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">current_state_handler</text>
+<text text-anchor="middle" x="493.312" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">connection_receive_data_function</text>
+<text text-anchor="middle" x="493.312" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">connection_close_function</text>
 </g>
 <!-- Node3 -->
-<g id="node5" class="node"><title>Node3</title>
-<a xlink:href="../../d5/dd2/structCipEpath.html" target="_top" xlink:title="Struct for padded EPATHs.">
-<polygon fill="none" stroke="black" points="-0.5,-212.5 -0.5,-233.5 56.5,-233.5 56.5,-212.5 -0.5,-212.5"/>
-<text text-anchor="middle" x="28" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipEpath</text>
+<g id="node4" class="node"><title>Node3</title>
+<a xlink:href="../../d9/de3/structconnection__path__epath.html" target="_top" xlink:title="connection_path_epath">
+<polygon fill="none" stroke="black" points="286.812,-212.5 286.812,-233.5 403.812,-233.5 403.812,-212.5 286.812,-212.5"/>
+<text text-anchor="middle" x="345.312" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">connection_path_epath</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge6" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M29.6684,-202.019C31.6445,-190.542 35.8979,-176.891 45,-168 66.7306,-146.773 146.074,-128.922 198.335,-119.116"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="26.172,-201.77 28.3875,-212.13 33.1165,-202.649 26.172,-201.77"/>
-<text text-anchor="middle" x="106" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00"> produced_connection_path</text>
-<text text-anchor="middle" x="106" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">consumed_connection_path</text>
+<g id="edge4" class="edge"><title>Node3&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M345.312,-202.36C345.312,-176.863 345.312,-134.443 345.312,-114.708"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="341.813,-202.44 345.312,-212.44 348.813,-202.44 341.813,-202.44"/>
+<text text-anchor="middle" x="386.812" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00"> configuration_path</text>
+<text text-anchor="middle" x="386.812" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">consumed_path</text>
+<text text-anchor="middle" x="386.812" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">produced_path</text>
 </g>
 <!-- Node4 -->
-<g id="node7" class="node"><title>Node4</title>
-<a xlink:href="../../d7/d2d/structLinkObject.html" target="_top" xlink:title="LinkObject">
-<polygon fill="none" stroke="black" points="115.5,-212.5 115.5,-233.5 178.5,-233.5 178.5,-212.5 115.5,-212.5"/>
-<text text-anchor="middle" x="147" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">LinkObject</text>
+<g id="node6" class="node"><title>Node4</title>
+<a xlink:href="../../d5/dc5/structcip__instance.html" target="_top" xlink:title="cip_instance">
+<polygon fill="none" stroke="black" points="114.812,-212.5 114.812,-233.5 185.812,-233.5 185.812,-212.5 114.812,-212.5"/>
+<text text-anchor="middle" x="150.312" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_instance</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
-<g id="edge8" class="edge"><title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M161.707,-204.345C170.343,-193.564 181.577,-179.835 192,-168 206.595,-151.428 224.343,-133.004 235.408,-121.708"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="158.891,-202.262 155.403,-212.266 164.369,-206.621 158.891,-202.262"/>
-<text text-anchor="middle" x="217" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> link_object</text>
+<g id="edge6" class="edge"><title>Node4&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M184.135,-207.918C192.013,-203.835 200.177,-199.114 207.312,-194 228.005,-179.17 227.66,-168.885 248.312,-154 270.906,-137.716 299.536,-123.647 319.82,-114.618"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="182.499,-204.823 175.098,-212.404 185.612,-211.093 182.499,-204.823"/>
+<text text-anchor="middle" x="294.812" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00"> consuming_instance</text>
+<text text-anchor="middle" x="294.812" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00">producing_instance</text>
+</g>
+<!-- Node4&#45;&gt;Node4 -->
+<g id="edge18" class="edge"><title>Node4&#45;&gt;Node4</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M196.124,-228.454C200.525,-227.346 203.312,-225.528 203.312,-223 203.312,-218.852 195.805,-216.615 185.982,-216.291"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="195.476,-225.007 185.982,-229.709 196.336,-231.954 195.476,-225.007"/>
+<text text-anchor="middle" x="214.312" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00"> next</text>
 </g>
 <!-- Node5 -->
-<g id="node9" class="node"><title>Node5</title>
-<a xlink:href="../../de/deb/structLinkProducer.html" target="_top" xlink:title="LinkProducer">
-<polygon fill="none" stroke="black" points="62,-284.5 62,-305.5 136,-305.5 136,-284.5 62,-284.5"/>
-<text text-anchor="middle" x="99" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">LinkProducer</text>
+<g id="node8" class="node"><title>Node5</title>
+<a xlink:href="../../da/d8e/structcip__class.html" target="_top" xlink:title="Class is a subclass of Instance.">
+<polygon fill="none" stroke="black" points="83.3125,-0.5 83.3125,-21.5 141.312,-21.5 141.312,-0.5 83.3125,-0.5"/>
+<text text-anchor="middle" x="112.312" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_class</text>
 </a>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge10" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M108.395,-275.267C112.262,-267.767 117.005,-259.281 122,-252 126.437,-245.532 132.096,-238.865 136.907,-233.557"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="105.185,-273.862 103.869,-284.374 111.454,-276.977 105.185,-273.862"/>
-<text text-anchor="middle" x="142.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> producer</text>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge14" class="edge"><title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M174.458,-205.48C177.646,-202.052 180.45,-198.2 182.312,-194 193.242,-169.346 171.88,-81.223 169.312,-72 165.195,-57.2115 166.048,-51.869 156.312,-40 150.278,-32.6434 141.885,-26.478 134.046,-21.7499"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="172.06,-202.93 167.08,-212.282 176.804,-208.077 172.06,-202.93"/>
+<text text-anchor="middle" x="216.812" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00"> class_instance</text>
+<text text-anchor="middle" x="216.812" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">instances</text>
 </g>
 <!-- Node6 -->
-<g id="node11" class="node"><title>Node6</title>
-<a xlink:href="../../dd/dd5/structLinkConsumer.html" target="_top" xlink:title="LinkConsumer">
-<polygon fill="none" stroke="black" points="154,-284.5 154,-305.5 234,-305.5 234,-284.5 154,-284.5"/>
-<text text-anchor="middle" x="194" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">LinkConsumer</text>
+<g id="node10" class="node"><title>Node6</title>
+<a xlink:href="../../d8/de2/structcip__service__struct.html" target="_top" xlink:title="Service descriptor. These are stored in an array.">
+<polygon fill="none" stroke="black" points="64.3125,-93.5 64.3125,-114.5 160.312,-114.5 160.312,-93.5 64.3125,-93.5"/>
+<text text-anchor="middle" x="112.312" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_service_struct</text>
 </a>
 </g>
-<!-- Node6&#45;&gt;Node4 -->
-<g id="edge12" class="edge"><title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M181.473,-275.81C172.661,-262.311 161.195,-244.745 153.963,-233.667"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="178.668,-277.916 187.065,-284.376 184.53,-274.089 178.668,-277.916"/>
-<text text-anchor="middle" x="198" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> consumer</text>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge12" class="edge"><title>Node4&#45;&gt;Node6</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M117.693,-206.371C113.524,-202.859 109.837,-198.748 107.312,-194 93.6466,-168.3 102.478,-132.435 108.33,-114.743"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="115.956,-209.432 126.127,-212.399 120.026,-203.737 115.956,-209.432"/>
+<text text-anchor="middle" x="144.812" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00"> service_function</text>
+</g>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge8" class="edge"><title>Node5&#45;&gt;Node4</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M73.6751,-23.1821C50.8529,-32.5971 23.8506,-48.1293 10.3125,-72 -3.7199,-96.7422 -3.04214,-110.885 10.3125,-136 31.7419,-176.3 80.8145,-200.155 114.766,-212.412"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="75.0863,-26.389 83.1487,-19.5152 72.5595,-19.861 75.0863,-26.389"/>
+<text text-anchor="middle" x="32.8125" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cip_class</text>
+</g>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge10" class="edge"><title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M112.312,-83.2042C112.312,-64.0703 112.312,-36.47 112.312,-21.5439"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="108.813,-83.3317 112.312,-93.3317 115.813,-83.3318 108.813,-83.3317"/>
+<text text-anchor="middle" x="132.312" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00"> services</text>
 </g>
 <!-- Node7 -->
-<g id="node13" class="node"><title>Node7</title>
-<a xlink:href="../../d5/dc5/structcip__instance.html" target="_top" xlink:title="cip_instance">
-<polygon fill="none" stroke="black" points="559.5,-212.5 559.5,-233.5 630.5,-233.5 630.5,-212.5 559.5,-212.5"/>
-<text text-anchor="middle" x="595" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_instance</text>
+<g id="node14" class="node"><title>Node7</title>
+<a xlink:href="../../d4/d62/structCipAttributeStruct.html" target="_top" xlink:title="CipAttributeStruct">
+<polygon fill="none" stroke="black" points="102.812,-284.5 102.812,-305.5 197.812,-305.5 197.812,-284.5 102.812,-284.5"/>
+<text text-anchor="middle" x="150.312" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipAttributeStruct</text>
 </a>
 </g>
-<!-- Node7&#45;&gt;Node2 -->
-<g id="edge14" class="edge"><title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M549.079,-219.309C519.023,-215.63 479.454,-208.346 447,-194 429.276,-186.166 429.145,-177.031 412,-168 371.965,-146.911 322.52,-131.108 288.053,-121.556"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="548.956,-222.817 559.286,-220.465 549.744,-215.861 548.956,-222.817"/>
-<text text-anchor="middle" x="493.5" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00"> consuming_instance</text>
-<text text-anchor="middle" x="493.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">producing_instance</text>
-</g>
-<!-- Node7&#45;&gt;Node7 -->
-<g id="edge26" class="edge"><title>Node7&#45;&gt;Node7</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M640.812,-228.454C645.212,-227.346 648,-225.528 648,-223 648,-218.852 640.493,-216.615 630.669,-216.291"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="640.164,-225.007 630.669,-229.709 641.023,-231.954 640.164,-225.007"/>
-<text text-anchor="middle" x="659" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00"> next</text>
+<!-- Node7&#45;&gt;Node4 -->
+<g id="edge16" class="edge"><title>Node7&#45;&gt;Node4</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M150.312,-274.235C150.312,-260.969 150.312,-244.319 150.312,-233.667"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="146.813,-274.376 150.312,-284.376 153.813,-274.376 146.813,-274.376"/>
+<text text-anchor="middle" x="172.312" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> attributes</text>
 </g>
 <!-- Node8 -->
-<g id="node15" class="node"><title>Node8</title>
-<a xlink:href="../../da/d8e/structcip__class.html" target="_top" xlink:title="Class is a subclass of Instance.">
-<polygon fill="none" stroke="black" points="611,-0.5 611,-21.5 669,-21.5 669,-0.5 611,-0.5"/>
-<text text-anchor="middle" x="640" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_class</text>
-</a>
-</g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge22" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M631.286,-207.955C654.559,-196.072 682.65,-176.967 695,-150 709.435,-118.482 707.434,-104.36 695,-72 686.868,-50.8362 667.621,-32.4306 654.202,-21.5211"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="629.467,-204.947 621.994,-212.458 632.519,-211.247 629.467,-204.947"/>
-<text text-anchor="middle" x="739.5" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00"> class_instance</text>
-<text text-anchor="middle" x="739.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">instances</text>
-</g>
-<!-- Node9 -->
-<g id="node17" class="node"><title>Node9</title>
-<a xlink:href="../../d8/de2/structcip__service__struct.html" target="_top" xlink:title="Service descriptor. These are stored in an array.">
-<polygon fill="none" stroke="black" points="505,-100.5 505,-121.5 601,-121.5 601,-100.5 505,-100.5"/>
-<text text-anchor="middle" x="553" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">cip_service_struct</text>
-</a>
-</g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge20" class="edge"><title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M561.374,-206.265C557.213,-202.785 553.538,-198.712 551,-194 538.492,-170.777 544.889,-138.342 549.554,-121.733"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="559.62,-209.311 569.802,-212.238 563.667,-203.6 559.62,-209.311"/>
-<text text-anchor="middle" x="588.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> service_function</text>
-</g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge16" class="edge"><title>Node8&#45;&gt;Node7</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M643.07,-31.6208C647.337,-66.8611 651.88,-140.086 626,-194 622.556,-201.175 616.5,-207.458 610.65,-212.324"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="646.523,-31.0367 641.733,-21.5865 639.584,-31.9612 646.523,-31.0367"/>
-<text text-anchor="middle" x="668.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cip_class</text>
-</g>
-<!-- Node9&#45;&gt;Node8 -->
-<g id="edge18" class="edge"><title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M558.556,-90.7541C563.628,-75.3336 572.431,-54.3765 586,-40 593.304,-32.2613 603.142,-26.1434 612.419,-21.5609"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="555.185,-89.8108 555.628,-100.396 561.883,-91.845 555.185,-89.8108"/>
-<text text-anchor="middle" x="606" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00"> services</text>
-</g>
-<!-- Node10 -->
-<g id="node21" class="node"><title>Node10</title>
-<a xlink:href="../../d4/d62/structCipAttributeStruct.html" target="_top" xlink:title="CipAttributeStruct">
-<polygon fill="none" stroke="black" points="547.5,-284.5 547.5,-305.5 642.5,-305.5 642.5,-284.5 547.5,-284.5"/>
-<text text-anchor="middle" x="595" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipAttributeStruct</text>
-</a>
-</g>
-<!-- Node10&#45;&gt;Node7 -->
-<g id="edge24" class="edge"><title>Node10&#45;&gt;Node7</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M595,-274.235C595,-260.969 595,-244.319 595,-233.667"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="591.5,-274.376 595,-284.376 598.5,-274.376 591.5,-274.376"/>
-<text text-anchor="middle" x="617" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> attributes</text>
-</g>
-<!-- Node11 -->
-<g id="node24" class="node"><title>Node11</title>
-<a xlink:href="../../dd/d06/structCipConnectionPath.html" target="_top" xlink:title="CIP Connection Path.">
-<polygon fill="none" stroke="black" points="195.5,-212.5 195.5,-233.5 296.5,-233.5 296.5,-212.5 195.5,-212.5"/>
-<text text-anchor="middle" x="246" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipConnectionPath</text>
-</a>
-</g>
-<!-- Node11&#45;&gt;Node2 -->
-<g id="edge28" class="edge"><title>Node11&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M246,-202.108C246,-178.184 246,-139.931 246,-121.543"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="242.5,-202.261 246,-212.261 249.5,-202.261 242.5,-202.261"/>
-<text text-anchor="middle" x="283.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> connection_path</text>
-</g>
-<!-- Node12 -->
-<g id="node26" class="node"><title>Node12</title>
+<g id="node17" class="node"><title>Node8</title>
 <a xlink:href="../../d9/da7/structCipElectronicKey.html" target="_top" xlink:title="CIP Electronic Key Segment struct.">
-<polygon fill="none" stroke="black" points="314,-212.5 314,-233.5 406,-233.5 406,-212.5 314,-212.5"/>
-<text text-anchor="middle" x="360" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipElectronicKey</text>
+<polygon fill="none" stroke="black" points="421.312,-212.5 421.312,-233.5 513.312,-233.5 513.312,-212.5 421.312,-212.5"/>
+<text text-anchor="middle" x="467.312" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipElectronicKey</text>
 </a>
 </g>
-<!-- Node12&#45;&gt;Node2 -->
-<g id="edge30" class="edge"><title>Node12&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M348.535,-203.229C341.627,-192.209 332.205,-178.61 322,-168 304.05,-149.337 279.532,-132.127 263.253,-121.607"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="345.741,-205.372 353.917,-212.111 351.728,-201.744 345.741,-205.372"/>
-<text text-anchor="middle" x="375.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> electronic_key</text>
-</g>
-<!-- Node13 -->
-<g id="node28" class="node"><title>Node13</title>
-<a xlink:href="../../df/d55/structCipKeyData.html" target="_top" xlink:title="Struct representing the key data format of the electronic key segment.">
-<polygon fill="none" stroke="black" points="325,-284.5 325,-305.5 395,-305.5 395,-284.5 325,-284.5"/>
-<text text-anchor="middle" x="360" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">CipKeyData</text>
-</a>
-</g>
-<!-- Node13&#45;&gt;Node12 -->
-<g id="edge32" class="edge"><title>Node13&#45;&gt;Node12</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M360,-274.235C360,-260.969 360,-244.319 360,-233.667"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="356.5,-274.376 360,-284.376 363.5,-274.376 356.5,-274.376"/>
-<text text-anchor="middle" x="381.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key_data</text>
+<!-- Node8&#45;&gt;Node2 -->
+<g id="edge20" class="edge"><title>Node8&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M460.438,-202.25C454.726,-187.447 445.408,-167.798 432.312,-154 415.523,-136.31 391.077,-123.015 372.371,-114.598"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="457.277,-203.801 463.963,-212.02 463.862,-201.426 457.277,-203.801"/>
+<text text-anchor="middle" x="489.812" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00"> electronic_key</text>
 </g>
 </g>
 </svg>

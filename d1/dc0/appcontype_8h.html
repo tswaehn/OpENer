@@ -96,7 +96,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">src/cip/appcontype.h File Reference</div>  </div>
 </div><!--header-->
@@ -105,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for appcontype.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d71/appcontype_8h__incl.svg" width="592" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d71/appcontype_8h__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -120,17 +121,20 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a67233ebfb6ba7952669a197a4cf21126">CloseAllConnectionsForInputWithSameType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point, const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81f">ConnectionType</a> instance_type)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all connection producing the same input and have the same type (i.e., listen only or input only).  <a href="#a67233ebfb6ba7952669a197a4cf21126"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#aea7e180dc280ec82f06282864f84097a">ConnectionWithSameConfigPointExists</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is an established connection that uses the same config point.  <a href="#aea7e180dc280ec82f06282864f84097a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a7b838b128170044eb0d81371c9f0bb49">GetExistingProducerMulticastConnection</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there exists already an exclusive owner or listen only connection which produces the input assembly.  <a href="#a7b838b128170044eb0d81371c9f0bb49"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a078777f6becb5dd5b858811b546dc523">GetIoConnectionForConnectionData</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const RESTRICT <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *const extended_error)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">check if for the given connection data received in a forward_open request a suitable connection is available.  <a href="#a078777f6becb5dd5b858811b546dc523"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a1cbf4348c1bb5f1949d7ed38c58b2f27">GetNextNonControlMasterConnection</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">check if there exists an producing multicast exclusive owner or listen only connection that should produce the same input but is not in charge of the connection.  <a href="#a1cbf4348c1bb5f1949d7ed38c58b2f27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a1181149fe4f853e43552e0b50e2f4d23">CloseAllConnectionsForInputWithSameType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point, const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> instance_type)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all connection producing the same input and have the same type (i.e., listen only or input only).  <a href="#a1181149fe4f853e43552e0b50e2f4d23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#ac869fbefb1f616eaa666fe659c224fe3">ConnectionWithSameConfigPointExists</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is an established connection that uses the same config point.  <a href="#ac869fbefb1f616eaa666fe659c224fe3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#ac568876f2c5ba2da91a0e62e17e27432">GetExistingProducerMulticastConnection</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there exists already an exclusive owner or listen only connection which produces the input assembly.  <a href="#ac568876f2c5ba2da91a0e62e17e27432"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#ab3a019a2217375c098345317da123323">GetIoConnectionForConnectionData</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const RESTRICT connection_object, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *const extended_error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">check if for the given connection data received in a forward_open request a suitable connection is available.  <a href="#ab3a019a2217375c098345317da123323"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#acda34462cc2d60ebb7b48a633bfe3c49">GetNextNonControlMasterConnection</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">check if there exists an producing multicast exclusive owner or listen only connection that should produce the same input but is not in charge of the connection.  <a href="#acda34462cc2d60ebb7b48a633bfe3c49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#a89ebedc457f26c4e845f60f3e6fb8155">InitializeIoConnectionData</a> (void)</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a18d2a32030faf1d5e3d48e610b1c4fe7"></a><!-- doxytag: member="appcontype.h::CloseAllConnections" ref="a18d2a32030faf1d5e3d48e610b1c4fe7" args="(void)" -->
@@ -150,19 +154,11 @@ Functions</h2></td></tr>
 <p>@ brief close all open connections.</p>
 <p>For I/O connections the sockets will be freed. The sockets for explicit connections are handled by the encapsulation layer, and freed there. </p>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00372">372</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">362</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01582">CloseConnection()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00349">connection_object::connection_close_function</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00134">g_active_connection_list</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::connection_close_function</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::data</a>, and <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00029">DoublyLinkedList::first</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00122">ResetDevice()</a>, and <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00060">ShutdownCipStack()</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a18d2a32030faf1d5e3d48e610b1c4fe7_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00124">ResetDevice()</a>, and <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00060">ShutdownCipStack()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -174,12 +170,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a67233ebfb6ba7952669a197a4cf21126"></a><!-- doxytag: member="appcontype.h::CloseAllConnectionsForInputWithSameType" ref="a67233ebfb6ba7952669a197a4cf21126" args="(const EipUint32 input_point, const ConnectionType instance_type)" -->
+<a class="anchor" id="a1181149fe4f853e43552e0b50e2f4d23"></a><!-- doxytag: member="appcontype.h::CloseAllConnectionsForInputWithSameType" ref="a1181149fe4f853e43552e0b50e2f4d23" args="(const EipUint32 input_point, const ConnectionObjectConnectionType instance_type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/dc0/appcontype_8h.html#a67233ebfb6ba7952669a197a4cf21126">CloseAllConnectionsForInputWithSameType</a> </td>
+          <td class="memname">void <a class="el" href="../../d1/dc0/appcontype_8h.html#a1181149fe4f853e43552e0b50e2f4d23">CloseAllConnectionsForInputWithSameType</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a>&#160;</td>
           <td class="paramname"><em>input_point</em>, </td>
@@ -187,7 +183,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#aa1f0e2efd52935fd01bfece0fbead81f">ConnectionType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a>&#160;</td>
           <td class="paramname"><em>instance_type</em>&#160;</td>
         </tr>
         <tr>
@@ -208,16 +204,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00349">349</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00336">336</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00071">CheckIoConnectionEvent()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00349">connection_object::connection_close_function</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00169">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00134">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00263">connection_object::instance_type</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00113">kIoConnectionEventClosed</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00355">connection_object::next_connection_object</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00073">CheckIoConnectionEvent()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::connection_close_function</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::consumed_path</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00029">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00104">cip_connection_object::instance_type</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00114">kIoConnectionEventClosed</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00024">doubly_linked_list_node::next</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::produced_path</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00701">CloseIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00750">HandleIoConnectionTimeOut()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00641">CloseIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00686">HandleIoConnectionTimeOut()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a67233ebfb6ba7952669a197a4cf21126_cgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a1181149fe4f853e43552e0b50e2f4d23_cgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -225,19 +221,19 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a67233ebfb6ba7952669a197a4cf21126_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a1181149fe4f853e43552e0b50e2f4d23_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aea7e180dc280ec82f06282864f84097a"></a><!-- doxytag: member="appcontype.h::ConnectionWithSameConfigPointExists" ref="aea7e180dc280ec82f06282864f84097a" args="(const EipUint32 config_point)" -->
+<a class="anchor" id="ac869fbefb1f616eaa666fe659c224fe3"></a><!-- doxytag: member="appcontype.h::ConnectionWithSameConfigPointExists" ref="ac869fbefb1f616eaa666fe659c224fe3" args="(const EipUint32 config_point)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6967e091c10c240b250db768e78bc">EipBool8</a> <a class="el" href="../../d1/dc0/appcontype_8h.html#aea7e180dc280ec82f06282864f84097a">ConnectionWithSameConfigPointExists</a> </td>
+          <td class="memname">bool <a class="el" href="../../d1/dc0/appcontype_8h.html#ac869fbefb1f616eaa666fe659c224fe3">ConnectionWithSameConfigPointExists</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a>&#160;</td>
           <td class="paramname"><em>config_point</em></td><td>)</td>
@@ -256,28 +252,28 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if connection was found, otherwise false </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00385">385</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00376">376</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00169">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00134">g_active_connection_list</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00355">connection_object::next_connection_object</a>.</p>
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00127">cip_connection_object::configuration_path</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00029">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, and <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00024">doubly_linked_list_node::next</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00654">HandleConfigData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00598">HandleConfigData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_aea7e180dc280ec82f06282864f84097a_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_ac869fbefb1f616eaa666fe659c224fe3_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7b838b128170044eb0d81371c9f0bb49"></a><!-- doxytag: member="appcontype.h::GetExistingProducerMulticastConnection" ref="a7b838b128170044eb0d81371c9f0bb49" args="(const EipUint32 input_point)" -->
+<a class="anchor" id="ac568876f2c5ba2da91a0e62e17e27432"></a><!-- doxytag: member="appcontype.h::GetExistingProducerMulticastConnection" ref="ac568876f2c5ba2da91a0e62e17e27432" args="(const EipUint32 input_point)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#a7b838b128170044eb0d81371c9f0bb49">GetExistingProducerMulticastConnection</a> </td>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#ac568876f2c5ba2da91a0e62e17e27432">GetExistingProducerMulticastConnection</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a>&#160;</td>
           <td class="paramname"><em>input_point</em></td><td>)</td>
@@ -296,30 +292,38 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>if a connection could be found a pointer to this connection if not NULL </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00286">286</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00284">284</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00169">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00134">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00263">connection_object::instance_type</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00220">kConnectionTypeIoExclusiveOwner</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00221">kConnectionTypeIoInputOnly</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00355">connection_object::next_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::socket</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00302">connection_object::t_to_o_network_connection_parameter</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00589">ConnectionObjectGetTToOConnectionType()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00260">ConnectionObjectIsTypeIOConnection()</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00029">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00076">kConnectionObjectConnectionTypeMulticast</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00024">doubly_linked_list_node::next</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::produced_path</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00169">cip_connection_object::socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00483">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00427">OpenProducingMulticastConnection()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_ac568876f2c5ba2da91a0e62e17e27432_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a7b838b128170044eb0d81371c9f0bb49_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_ac568876f2c5ba2da91a0e62e17e27432_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a078777f6becb5dd5b858811b546dc523"></a><!-- doxytag: member="appcontype.h::GetIoConnectionForConnectionData" ref="a078777f6becb5dd5b858811b546dc523" args="(ConnectionObject *const RESTRICT connection_object, EipUint16 *const extended_error)" -->
+<a class="anchor" id="ab3a019a2217375c098345317da123323"></a><!-- doxytag: member="appcontype.h::GetIoConnectionForConnectionData" ref="ab3a019a2217375c098345317da123323" args="(CipConnectionObject *const RESTRICT connection_object, EipUint16 *const extended_error)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#a078777f6becb5dd5b858811b546dc523">GetIoConnectionForConnectionData</a> </td>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#ab3a019a2217375c098345317da123323">GetIoConnectionForConnectionData</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *const RESTRICT&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const RESTRICT&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -341,27 +345,27 @@ Here is the caller graph for this function:</div>
 <p>If a suitable connection is found the connection data is transfered the application connection type is set (i.e., EConnType). </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a></td><td>connection data to be used </td></tr>
+    <tr><td class="paramname">connection_object</td><td>connection data to be used </td></tr>
     <tr><td class="paramname">extended_error</td><td>pointer to the extended_error variable, if an error occurred this value has the according error code for the response </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><ul>
-<li>on success: A pointer to the connection object already containing the connection data given in <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>.</li>
+<li>on success: A pointer to the connection object already containing the connection data given in connection_object.</li>
 <li>on error: NULL </li>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00127">127</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00125">125</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01598">CopyConnectionData()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00169">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00199">GetInputOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00093">kConnectionManagerExtendedStatusCodeInconsistentApplicationPathCombo</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00220">kConnectionTypeIoExclusiveOwner</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00221">kConnectionTypeIoInputOnly</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00222">kConnectionTypeIoListenOnly</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00645">ConnectionObjectDeepCopy()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00233">ConnectionObjectSetInstanceType()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00172">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00200">GetInputOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00234">GetListenOnlyConnection()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00081">kConnectionManagerExtendedStatusCodeInconsistentApplicationPathCombo</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00035">kConnectionObjectInstanceTypeIOExclusiveOwner</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00036">kConnectionObjectInstanceTypeIOInputOnly</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00037">kConnectionObjectInstanceTypeIOListenOnly</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00310">EstablishIoConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a078777f6becb5dd5b858811b546dc523_cgraph.svg" width="100%" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_ab3a019a2217375c098345317da123323_cgraph.svg" width="100%" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -369,19 +373,19 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a078777f6becb5dd5b858811b546dc523_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_ab3a019a2217375c098345317da123323_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a1cbf4348c1bb5f1949d7ed38c58b2f27"></a><!-- doxytag: member="appcontype.h::GetNextNonControlMasterConnection" ref="a1cbf4348c1bb5f1949d7ed38c58b2f27" args="(const EipUint32 input_point)" -->
+<a class="anchor" id="acda34462cc2d60ebb7b48a633bfe3c49"></a><!-- doxytag: member="appcontype.h::GetNextNonControlMasterConnection" ref="acda34462cc2d60ebb7b48a633bfe3c49" args="(const EipUint32 input_point)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#a1cbf4348c1bb5f1949d7ed38c58b2f27">GetNextNonControlMasterConnection</a> </td>
+          <td class="memname"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a>* <a class="el" href="../../d1/dc0/appcontype_8h.html#acda34462cc2d60ebb7b48a633bfe3c49">GetNextNonControlMasterConnection</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a>&#160;</td>
           <td class="paramname"><em>input_point</em></td><td>)</td>
@@ -400,16 +404,24 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>if a connection could be found the pointer to this connection otherwise NULL. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00317">317</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00309">309</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00169">CipConnectionPath::connection_point</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00134">g_active_connection_list</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00263">connection_object::instance_type</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00220">kConnectionTypeIoExclusiveOwner</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00221">kConnectionTypeIoInputOnly</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00355">connection_object::next_connection_object</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::socket</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00302">connection_object::t_to_o_network_connection_parameter</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00589">ConnectionObjectGetTToOConnectionType()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00260">ConnectionObjectIsTypeIOConnection()</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00029">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00076">kConnectionObjectConnectionTypeMulticast</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00024">doubly_linked_list_node::next</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::produced_path</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00169">cip_connection_object::socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00701">CloseIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00750">HandleIoConnectionTimeOut()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00641">CloseIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00686">HandleIoConnectionTimeOut()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_acda34462cc2d60ebb7b48a633bfe3c49_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_a1cbf4348c1bb5f1949d7ed38c58b2f27_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dc0/appcontype_8h_acda34462cc2d60ebb7b48a633bfe3c49_icgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -431,11 +443,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00397">397</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00389">389</a> of file <a class="el" href="../../d1/dbc/appcontype_8c_source.html">appcontype.c</a>.</p>
 
 <p>References <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00059">OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00066">OPENER_CIP_NUM_INPUT_ONLY_CONNS</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00077">OPENER_CIP_NUM_LISTEN_ONLY_CONNS</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01708">InitializeConnectionManagerData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01433">InitializeConnectionManagerData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -444,6 +456,24 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="ab314e92264a974f6b8aef1327e546e2e"></a><!-- doxytag: member="appcontype.h::connection_list" ref="ab314e92264a974f6b8aef1327e546e2e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> <a class="el" href="../../df/d91/cipconnectionobject_8c.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">53</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00824">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">CloseAllConnections()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00336">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00376">ConnectionWithSameConfigPointExists()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00284">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00309">GetNextNonControlMasterConnection()</a>, <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00030">main()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00156">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
 </div>
 </div>
@@ -467,7 +497,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d1/dc0/appcontype_8h.html">appcontype.h</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -106,40 +106,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>CIP Electronic Key Segment struct.  
  <a href="../../d9/da7/structCipElectronicKey.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for CipElectronicKey:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/db4/structCipElectronicKey__coll__graph.svg" width="134" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<p><code>#include &lt;<a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d55/structCipKeyData.html">CipKeyData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da7/structCipElectronicKey.html#a8ff4fd3c53360adf303a1a798c4c4f3f">key_data</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da7/structCipElectronicKey.html#a046176dcf27fb99e7fd204925bf3b6df">key_data</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da7/structCipElectronicKey.html#ad82a56c49cc3fe01d397a247fedc5e8e">key_format</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da7/structCipElectronicKey.html#ab97c41c46f877d65e5e2b2aa2428b5c5">segment_type</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>CIP Electronic Key Segment struct. </p>
 
-<p>Definition at line <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00195">195</a> of file <a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00017">17</a> of file <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>.</p>
 </div><hr/><h2>Field Documentation</h2>
-<a class="anchor" id="a8ff4fd3c53360adf303a1a798c4c4f3f"></a><!-- doxytag: member="CipElectronicKey::key_data" ref="a8ff4fd3c53360adf303a1a798c4c4f3f" args="" -->
+<a class="anchor" id="a046176dcf27fb99e7fd204925bf3b6df"></a><!-- doxytag: member="CipElectronicKey::key_data" ref="a046176dcf27fb99e7fd204925bf3b6df" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d55/structCipKeyData.html">CipKeyData</a> <a class="el" href="../../d9/da7/structCipElectronicKey.html#a8ff4fd3c53360adf303a1a798c4c4f3f">CipElectronicKey::key_data</a></td>
+          <td class="memname">void* <a class="el" href="../../d9/da7/structCipElectronicKey.html#a046176dcf27fb99e7fd204925bf3b6df">CipElectronicKey::key_data</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Depends on key format used, usually Key Format 4 as specified in CIP Specification, Volume 1 </p>
 
-<p>Definition at line <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00199">199</a> of file <a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00020">20</a> of file <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00023">ElectronicKeyGetKeyData()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00019">ElectronicKeySetKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 </div>
 </div>
@@ -155,32 +148,14 @@ Data Fields</h2></td></tr>
 <div class="memdoc">
 <p>Key Format 0-3 reserved, 4 = see Key Format Table, 5-255 = Reserved </p>
 
-<p>Definition at line <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00197">197</a> of file <a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00018">18</a> of file <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab97c41c46f877d65e5e2b2aa2428b5c5"></a><!-- doxytag: member="CipElectronicKey::segment_type" ref="ab97c41c46f877d65e5e2b2aa2428b5c5" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="el" href="../../d9/da7/structCipElectronicKey.html#ab97c41c46f877d65e5e2b2aa2428b5c5">CipElectronicKey::segment_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Specifies the Segment Type </p>
-
-<p>Definition at line <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00196">196</a> of file <a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00015">ElectronicKeyGetKeyFormat()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00011">ElectronicKeySetKeyFormat()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/cip/<a class="el" href="../../df/d28/ciptypes_8h_source.html">ciptypes.h</a></li>
+<li>src/cip/<a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a></li>
 </ul>
 </div><!-- contents -->
 </div>
@@ -202,7 +177,7 @@ Data Fields</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:18 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

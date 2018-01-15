@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cip_5fclass',['cip_class',['../da/d8e/structcip__class.html',1,'']]],
+  ['cip_5fconnection_5fobject',['cip_connection_object',['../d2/da8/structcip__connection__object.html',1,'']]],
   ['cip_5finstance',['cip_instance',['../d5/dc5/structcip__instance.html',1,'']]],
   ['cip_5fmessage_5frouter_5fobject',['cip_message_router_object',['../d2/d6d/structcip__message__router__object.html',1,'']]],
   ['cip_5fservice_5fstruct',['cip_service_struct',['../d8/de2/structcip__service__struct.html',1,'']]],
@@ -14,7 +15,6 @@ var searchData=
   ['cipethernetlinkinterfacecapability',['CipEthernetLinkInterfaceCapability',['../dd/dc6/structCipEthernetLinkInterfaceCapability.html',1,'']]],
   ['cipethernetlinkinterfacecontrol',['CipEthernetLinkInterfaceControl',['../d3/d25/structCipEthernetLinkInterfaceControl.html',1,'']]],
   ['cipethernetlinkobject',['CipEthernetLinkObject',['../d8/d13/structCipEthernetLinkObject.html',1,'']]],
-  ['cipkeydata',['CipKeyData',['../df/d55/structCipKeyData.html',1,'']]],
   ['cipmessagerouterrequest',['CipMessageRouterRequest',['../dc/d16/structCipMessageRouterRequest.html',1,'']]],
   ['cipmessagerouterresponse',['CipMessageRouterResponse',['../d0/d1f/structCipMessageRouterResponse.html',1,'']]],
   ['ciprevision',['CipRevision',['../d0/d46/structCipRevision.html',1,'']]],
@@ -24,6 +24,6 @@ var searchData=
   ['cipstringn',['CipStringN',['../d9/d72/structCipStringN.html',1,'']]],
   ['ciptcpipnetworkinterfaceconfiguration',['CipTcpIpNetworkInterfaceConfiguration',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html',1,'']]],
   ['cipunconnectedsendparameter',['CipUnconnectedSendParameter',['../de/dcb/structCipUnconnectedSendParameter.html',1,'']]],
-  ['connection_5fobject',['connection_object',['../d1/d48/structconnection__object.html',1,'']]],
+  ['connection_5fpath_5fepath',['connection_path_epath',['../d9/de3/structconnection__path__epath.html',1,'']]],
   ['connectionmanagementhandling',['ConnectionManagementHandling',['../d1/d46/structConnectionManagementHandling.html',1,'']]]
 ];

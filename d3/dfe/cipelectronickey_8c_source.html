@@ -109,89 +109,99 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d23/cipelectronickey_8h.html">cipelectronickey.h</a>&quot;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">00011</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">electronic_key_format_4</a> {
-<a name="l00012"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">00012</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a>;
-<a name="l00013"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">00013</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a>;
-<a name="l00014"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">00014</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a>;
-<a name="l00015"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">00015</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a>;
-<a name="l00016"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">00016</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a>;
-<a name="l00017"></a>00017 } <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a>;
+<a name="l00011"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a3270009c0d91146b727af56b537358c0">00011</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a3270009c0d91146b727af56b537358c0">ElectronicKeySetKeyFormat</a>(<a class="code" href="../../d9/da7/structCipElectronicKey.html" title="CIP Electronic Key Segment struct.">CipElectronicKey</a> *<span class="keyword">const</span> electronic_key, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> key_format) {
+<a name="l00012"></a>00012   electronic_key-&gt;<a class="code" href="../../d9/da7/structCipElectronicKey.html#ad82a56c49cc3fe01d397a247fedc5e8e">key_format</a> = key_format;
+<a name="l00013"></a>00013 }
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a99aaf700fd359aec1dd2bf782014f121">00015</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a99aaf700fd359aec1dd2bf782014f121">ElectronicKeyGetKeyFormat</a>(<span class="keyword">const</span> <a class="code" href="../../d9/da7/structCipElectronicKey.html" title="CIP Electronic Key Segment struct.">CipElectronicKey</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00016"></a>00016   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/da7/structCipElectronicKey.html#ad82a56c49cc3fe01d397a247fedc5e8e">key_format</a>;
+<a name="l00017"></a>00017 }
 <a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ac8c0e6bc7be47729fc64d4ad3fa66bb0">00019</a> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ac8c0e6bc7be47729fc64d4ad3fa66bb0">kElectronicKeyFormat4Size</a> = <span class="keyword">sizeof</span>(<a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a>);
-<a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ab1c62d1eca42444b24da4e61ee273ef3">00021</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab1c62d1eca42444b24da4e61ee273ef3" title="Constructor for the electroic key format 4 class.">ElectronicKeyFormat4New</a>() {
-<a name="l00022"></a>00022   <span class="keywordflow">return</span> (<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *)calloc( 1, <span class="keyword">sizeof</span>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a>) );
-<a name="l00023"></a>00023 }
-<a name="l00024"></a>00024 
-<a name="l00025"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a9fa7805c9496e42b8ccfff62112202f6">00025</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a9fa7805c9496e42b8ccfff62112202f6" title="Destructor for the electroic key format 4 class.">ElectronicKeyFormat4Delete</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> **electronic_key) {
-<a name="l00026"></a>00026   free(*electronic_key);
-<a name="l00027"></a>00027   *electronic_key = NULL;
-<a name="l00028"></a>00028 }
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a7b91a4a7fbbcea6e1616e60046de9b21">00030</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a7b91a4a7fbbcea6e1616e60046de9b21" title="Sets vendor ID in the electronic key.">ElectronicKeyFormat4SetVendorId</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> vendor_id,
-<a name="l00031"></a>00031                                      <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key)
-<a name="l00032"></a>00032 {
-<a name="l00033"></a>00033   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a> = vendor_id;
-<a name="l00034"></a>00034 }
-<a name="l00035"></a>00035 
-<a name="l00036"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a08b515351383f3ccdcd99d80ad9a3cd1">00036</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a08b515351383f3ccdcd99d80ad9a3cd1" title="Gets the vendor ID form the electronic key.">ElectronicKeyFormat4GetVendorId</a>(
-<a name="l00037"></a>00037   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00038"></a>00038   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a>;
+<a name="l00019"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#af49b7cfcc0ca0aacd39fb7ef3871405f">00019</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#af49b7cfcc0ca0aacd39fb7ef3871405f">ElectronicKeySetKeyData</a>(<a class="code" href="../../d9/da7/structCipElectronicKey.html" title="CIP Electronic Key Segment struct.">CipElectronicKey</a> *<span class="keyword">const</span> electronic_key, <span class="keywordtype">void</span> *key_data) {
+<a name="l00020"></a>00020   electronic_key-&gt;<a class="code" href="../../d9/da7/structCipElectronicKey.html#a046176dcf27fb99e7fd204925bf3b6df">key_data</a> = key_data;
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a80c591d0ec1d15ee718f6fc6b4c98fbe">00023</a> <span class="keywordtype">void</span> *<a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a80c591d0ec1d15ee718f6fc6b4c98fbe">ElectronicKeyGetKeyData</a>(<span class="keyword">const</span> <a class="code" href="../../d9/da7/structCipElectronicKey.html" title="CIP Electronic Key Segment struct.">CipElectronicKey</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00024"></a>00024   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/da7/structCipElectronicKey.html#a046176dcf27fb99e7fd204925bf3b6df">key_data</a>;
+<a name="l00025"></a>00025 }
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">00027</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">electronic_key_format_4</a> {
+<a name="l00028"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">00028</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a>;
+<a name="l00029"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">00029</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a>;
+<a name="l00030"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">00030</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a>;
+<a name="l00031"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">00031</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a>;
+<a name="l00032"></a><a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">00032</a>   <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a>;
+<a name="l00033"></a>00033 } <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ac8c0e6bc7be47729fc64d4ad3fa66bb0">00035</a> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ac8c0e6bc7be47729fc64d4ad3fa66bb0">kElectronicKeyFormat4Size</a> = <span class="keyword">sizeof</span>(<a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a>);
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ab1c62d1eca42444b24da4e61ee273ef3">00037</a> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ab1c62d1eca42444b24da4e61ee273ef3" title="Constructor for the electroic key format 4 class.">ElectronicKeyFormat4New</a>() {
+<a name="l00038"></a>00038   <span class="keywordflow">return</span> (<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *)calloc( 1, <span class="keyword">sizeof</span>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a>) );
 <a name="l00039"></a>00039 }
 <a name="l00040"></a>00040 
-<a name="l00041"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#abbde02813367d3358d52b4d1834365a1">00041</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#abbde02813367d3358d52b4d1834365a1" title="Sets the device type in the electronic key.">ElectronicKeyFormat4SetDeviceType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> device_type,
-<a name="l00042"></a>00042                                        <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key)
-<a name="l00043"></a>00043 {
-<a name="l00044"></a>00044   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a> = device_type;
-<a name="l00045"></a>00045 }
-<a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#aed74dbd485f78aed3c0e3899b8bcc527">00047</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#aed74dbd485f78aed3c0e3899b8bcc527" title="Gets the device type from a format 4 electronic key.">ElectronicKeyFormat4GetDeviceType</a>(
-<a name="l00048"></a>00048   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00049"></a>00049   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a>;
-<a name="l00050"></a>00050 }
-<a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#aab37ab3ef4b3c1722b43e9c53bf9aa29">00052</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#aab37ab3ef4b3c1722b43e9c53bf9aa29" title="Set product code in the electronic key.">ElectronicKeyFormat4SetProductCode</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> product_code,
-<a name="l00053"></a>00053                                         <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key)
-<a name="l00054"></a>00054 {
-<a name="l00055"></a>00055   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a> = product_code;
-<a name="l00056"></a>00056 }
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a8669b86649f54117218db3fcf6d99e52">00058</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a8669b86649f54117218db3fcf6d99e52" title="Gets the product code from an format 4 electronic key.">ElectronicKeyFormat4GetProductCode</a>(
-<a name="l00059"></a>00059   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00060"></a>00060   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a>;
-<a name="l00061"></a>00061 }
-<a name="l00062"></a>00062 
-<a name="l00063"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#aeef92af1525065849e2cbab7ed8ae057">00063</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#aeef92af1525065849e2cbab7ed8ae057" title="Sets the major revision byte including the compatibility flag.">ElectronicKeyFormat4SetMajorRevisionCompatibility</a>(
-<a name="l00064"></a>00064   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> major_revision_compatibility,
-<a name="l00065"></a>00065   <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00066"></a>00066   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> = major_revision_compatibility;
+<a name="l00041"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a9fa7805c9496e42b8ccfff62112202f6">00041</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a9fa7805c9496e42b8ccfff62112202f6" title="Destructor for the electroic key format 4 class.">ElectronicKeyFormat4Delete</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> **electronic_key) {
+<a name="l00042"></a>00042   free(*electronic_key);
+<a name="l00043"></a>00043   *electronic_key = NULL;
+<a name="l00044"></a>00044 }
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a780d9a63ab443146b8fdd2e75f411c1b">00046</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a780d9a63ab443146b8fdd2e75f411c1b" title="Sets vendor ID in the electronic key.">ElectronicKeyFormat4SetVendorId</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> vendor_id) {
+<a name="l00047"></a>00047   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a> = vendor_id;
+<a name="l00048"></a>00048 }
+<a name="l00049"></a>00049 
+<a name="l00050"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a08b515351383f3ccdcd99d80ad9a3cd1">00050</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a08b515351383f3ccdcd99d80ad9a3cd1" title="Gets the vendor ID form the electronic key.">ElectronicKeyFormat4GetVendorId</a>(
+<a name="l00051"></a>00051   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00052"></a>00052   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a10319c8879d05c918ecb40be16f3356a">vendor_id</a>;
+<a name="l00053"></a>00053 }
+<a name="l00054"></a>00054 
+<a name="l00055"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#add2bfb728aa3034ebc338ddf4577b137">00055</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#add2bfb728aa3034ebc338ddf4577b137" title="Sets the device type in the electronic key.">ElectronicKeyFormat4SetDeviceType</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> device_type) {
+<a name="l00056"></a>00056   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a> = device_type;
+<a name="l00057"></a>00057 }
+<a name="l00058"></a>00058 
+<a name="l00059"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#aed74dbd485f78aed3c0e3899b8bcc527">00059</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#aed74dbd485f78aed3c0e3899b8bcc527" title="Gets the device type from a format 4 electronic key.">ElectronicKeyFormat4GetDeviceType</a>(
+<a name="l00060"></a>00060   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00061"></a>00061   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a0315f0330d43de7687e1ca024d2f7ec7">device_type</a>;
+<a name="l00062"></a>00062 }
+<a name="l00063"></a>00063 
+<a name="l00064"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#adf0067da84231546724ff4686a2be2e5">00064</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#adf0067da84231546724ff4686a2be2e5" title="Set product code in the electronic key.">ElectronicKeyFormat4SetProductCode</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> product_code)
+<a name="l00065"></a>00065 {
+<a name="l00066"></a>00066   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a> = product_code;
 <a name="l00067"></a>00067 }
 <a name="l00068"></a>00068 
-<a name="l00069"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a7e2d34446282a304baa88999819826be">00069</a> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a7e2d34446282a304baa88999819826be" title="Gets the major revision from an format 4 electronic key.">ElectronicKeyFormat4GetMajorRevision</a>(
+<a name="l00069"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a8669b86649f54117218db3fcf6d99e52">00069</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a8669b86649f54117218db3fcf6d99e52" title="Gets the product code from an format 4 electronic key.">ElectronicKeyFormat4GetProductCode</a>(
 <a name="l00070"></a>00070   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00071"></a>00071   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kMajorRevisionMask = 0x7F;
-<a name="l00072"></a>00072   <span class="keywordflow">return</span> (electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> &amp; kMajorRevisionMask);
-<a name="l00073"></a>00073 }
-<a name="l00074"></a>00074 
-<a name="l00075"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ae9592a58f49bf82f502445bfb674f3f9">00075</a> <span class="keywordtype">bool</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ae9592a58f49bf82f502445bfb674f3f9" title="Gets the Compatibility flag from the format 4 electronic key.">ElectronicKeyFormat4GetMajorRevisionCompatibility</a>(
-<a name="l00076"></a>00076   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00077"></a>00077   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kCompatibilityMask = 0x80;
-<a name="l00078"></a>00078   <span class="keywordflow">if</span>( kCompatibilityMask ==
-<a name="l00079"></a>00079       (electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> &amp; kCompatibilityMask) ) {
-<a name="l00080"></a>00080     <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00081"></a>00081   }
-<a name="l00082"></a>00082   <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00083"></a>00083 }
-<a name="l00084"></a>00084 
-<a name="l00085"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a95f29f728627f94cfee3e3bce342d78f">00085</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a95f29f728627f94cfee3e3bce342d78f" title="Sets the devices minor revision in an format 4 electronic key.">ElectronicKeyFormat4SetMinorRevision</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> minor_revision,
-<a name="l00086"></a>00086                                           <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key)
-<a name="l00087"></a>00087 {
-<a name="l00088"></a>00088   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a> = minor_revision;
-<a name="l00089"></a>00089 }
-<a name="l00090"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a8b6d76d23689701cc6e573e4a89e1206">00090</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a8b6d76d23689701cc6e573e4a89e1206" title="Gets the minor revision from an format 4 electronic key.">ElectronicKeyFormat4GetMinorRevision</a>(
-<a name="l00091"></a>00091   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
-<a name="l00092"></a>00092   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a>;
-<a name="l00093"></a>00093 }
+<a name="l00071"></a>00071   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a38119d2360acaca8b7f44b59cabdcedf">product_code</a>;
+<a name="l00072"></a>00072 }
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a71ffc2b7bbd7544dd0188e0235d9d4c9">00074</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a71ffc2b7bbd7544dd0188e0235d9d4c9" title="Sets the major revision byte including the compatibility flag.">ElectronicKeyFormat4SetMajorRevisionCompatibility</a>(
+<a name="l00075"></a>00075     <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key,
+<a name="l00076"></a>00076     <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> major_revision_compatibility) {
+<a name="l00077"></a>00077   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> = major_revision_compatibility;
+<a name="l00078"></a>00078 }
+<a name="l00079"></a>00079 
+<a name="l00080"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a7e2d34446282a304baa88999819826be">00080</a> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a7e2d34446282a304baa88999819826be" title="Gets the major revision from an format 4 electronic key.">ElectronicKeyFormat4GetMajorRevision</a>(
+<a name="l00081"></a>00081   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00082"></a>00082   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kMajorRevisionMask = 0x7F;
+<a name="l00083"></a>00083   <span class="keywordflow">return</span> (electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> &amp; kMajorRevisionMask);
+<a name="l00084"></a>00084 }
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#ae9592a58f49bf82f502445bfb674f3f9">00086</a> <span class="keywordtype">bool</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#ae9592a58f49bf82f502445bfb674f3f9" title="Gets the Compatibility flag from the format 4 electronic key.">ElectronicKeyFormat4GetMajorRevisionCompatibility</a>(
+<a name="l00087"></a>00087   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00088"></a>00088   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> kCompatibilityMask = 0x80;
+<a name="l00089"></a>00089   <span class="keywordflow">if</span>( kCompatibilityMask ==
+<a name="l00090"></a>00090       (electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb">major_revision_compatibility</a> &amp; kCompatibilityMask) ) {
+<a name="l00091"></a>00091     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00092"></a>00092   }
+<a name="l00093"></a>00093   <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00094"></a>00094 }
+<a name="l00095"></a>00095 
+<a name="l00096"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#aff602fc99dcb0bb60d7add9506d5c65c">00096</a> <span class="keywordtype">void</span> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#aff602fc99dcb0bb60d7add9506d5c65c" title="Sets the devices minor revision in an format 4 electronic key.">ElectronicKeyFormat4SetMinorRevision</a>(<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key, <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> minor_revision) {
+<a name="l00097"></a>00097   electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a> = minor_revision;
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a><a class="code" href="../../d0/d23/cipelectronickey_8h.html#a8b6d76d23689701cc6e573e4a89e1206">00100</a> <a class="code" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="code" href="../../d3/dfe/cipelectronickey_8c.html#a8b6d76d23689701cc6e573e4a89e1206" title="Gets the minor revision from an format 4 electronic key.">ElectronicKeyFormat4GetMinorRevision</a>(
+<a name="l00101"></a>00101   <span class="keyword">const</span> <a class="code" href="../../d9/d3a/structelectronic__key__format__4.html">ElectronicKeyFormat4</a> *<span class="keyword">const</span> electronic_key) {
+<a name="l00102"></a>00102   <span class="keywordflow">return</span> electronic_key-&gt;<a class="code" href="../../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5">minor_revision</a>;
+<a name="l00103"></a>00103 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -212,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html">cipelectronickey.c</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

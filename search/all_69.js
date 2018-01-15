@@ -1,7 +1,7 @@
 var searchData=
 [
   ['in_5fport_5ft',['in_port_t',['../db/d9c/WIN32_2sample__application_2opener__user__conf_8h.html#adc5174418a78989eb51ef56f622db6e3',1,'opener_user_conf.h']]],
-  ['inactivity_5fwatchdog_5ftimer',['inactivity_watchdog_timer',['../d1/d48/structconnection__object.html#a64859c26af1c754ea88feee0a7e77325',1,'connection_object']]],
+  ['inactivity_5fwatchdog_5ftimer',['inactivity_watchdog_timer',['../d2/da8/structcip__connection__object.html#a12980d27282dccff87df1b3255bc39fd',1,'cip_connection_object']]],
   ['initializecipidentiy',['InitializeCipIdentiy',['../dd/dc4/cipidentity_8c.html#a5fc7e7b16b1a6f9c8c02a2700e77feb5',1,'cipidentity.c']]],
   ['initializecipmessagerouterclass',['InitializeCipMessageRouterClass',['../d9/d7d/cipmessagerouter_8c.html#aa48077419a6045debf033e81946ee40c',1,'cipmessagerouter.c']]],
   ['initializecipqos',['InitializeCipQos',['../dd/d34/cipqos_8c.html#ac274d150c9f82c615c75f681a30e0b38',1,'cipqos.c']]],
@@ -13,8 +13,9 @@ var searchData=
   ['inputonlyconnection',['InputOnlyConnection',['../d7/dd8/structInputOnlyConnection.html',1,'']]],
   ['insertattribute',['InsertAttribute',['../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618',1,'InsertAttribute(CipInstance *const instance, const EipUint16 attribute_number, const EipUint8 cip_type, void *const data, const EipByte cip_flags):&#160;cipcommon.c'],['../d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618',1,'InsertAttribute(CipInstance *const cip_instance, const EipUint16 attribute_number, const EipUint8 cip_data_type, void *const cip_data, const EipByte cip_flags):&#160;cipcommon.c']]],
   ['insertservice',['InsertService',['../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307',1,'InsertService(const CipClass *const class, const EipUint8 service_number, const CipServiceFunction service_function, char *const service_name):&#160;cipcommon.c'],['../d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307',1,'InsertService(const CipClass *const cip_class_to_add_service, const EipUint8 service_code, const CipServiceFunction service_function, char *const service_name):&#160;cipcommon.c']]],
+  ['instance_5fid',['instance_id',['../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038',1,'connection_path_epath']]],
   ['instance_5fnumber',['instance_number',['../d5/dd2/structCipEpath.html#a206c078bbda5b614b96cd61fd18d1cab',1,'CipEpath::instance_number()'],['../d5/dc5/structcip__instance.html#ae434a2726f036914d874e3b3b4521221',1,'cip_instance::instance_number()']]],
-  ['instance_5ftype',['instance_type',['../d1/d48/structconnection__object.html#ada63f5853b16b3fa0d3c49b894157540',1,'connection_object']]],
+  ['instance_5ftype',['instance_type',['../d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca',1,'cip_connection_object']]],
   ['instances',['instances',['../da/d8e/structcip__class.html#a4f6020c15afd9d9947a998a27edcf288',1,'cip_class']]],
   ['interface_5fcapability',['interface_capability',['../d7/d65/cipethernetlink_8c.html#a8631ab43b33b480a3c9ea673e1cdc0a5',1,'cipethernetlink.c']]],
   ['interface_5fconfiguration_5f',['interface_configuration_',['../dd/d20/ciptcpipinterface_8c.html#a635643a0d47842550c4d3cb5f4959cee',1,'interface_configuration_():&#160;ciptcpipinterface.c'],['../d1/dad/ciptcpipinterface_8h.html#a635643a0d47842550c4d3cb5f4959cee',1,'interface_configuration_():&#160;ciptcpipinterface.c'],['../d2/dbd/encap_8c.html#a635643a0d47842550c4d3cb5f4959cee',1,'interface_configuration_():&#160;ciptcpipinterface.c']]],
@@ -22,7 +23,7 @@ var searchData=
   ['interface_5fduplex_5fmode',['interface_duplex_mode',['../d3/d4d/structspeed__duplex__array__entry.html#a3254d43a5b7e25118353826aab4d2700',1,'speed_duplex_array_entry']]],
   ['interface_5fflags',['interface_flags',['../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a',1,'CipEthernetLinkObject']]],
   ['interface_5flabel',['interface_label',['../d7/d65/cipethernetlink_8c.html#a52791540f31fe4047b154760303536ff',1,'cipethernetlink.c']]],
-  ['interface_5fspeed',['interface_speed',['../d3/d4d/structspeed__duplex__array__entry.html#af5cf856ead42ea20b1483f2f11be6c9c',1,'speed_duplex_array_entry::interface_speed()'],['../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a',1,'CipEthernetLinkObject::interface_speed()']]],
+  ['interface_5fspeed',['interface_speed',['../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a',1,'CipEthernetLinkObject::interface_speed()'],['../d3/d4d/structspeed__duplex__array__entry.html#af5cf856ead42ea20b1483f2f11be6c9c',1,'speed_duplex_array_entry::interface_speed()']]],
   ['ioconnectionevent',['IoConnectionEvent',['../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2',1,'ciptypes.h']]],
   ['ip_5faddress',['ip_address',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a2c56d6d4982484316a97630d7f1a4c95',1,'CipTcpIpNetworkInterfaceConfiguration']]],
   ['isconnectedoutputassembly',['IsConnectedOutputAssembly',['../d5/d35/cipconnectionmanager_8c.html#a2ca3eb3dc7fe805b410d849612720b4c',1,'IsConnectedOutputAssembly(const EipUint32 instance_number):&#160;cipconnectionmanager.c'],['../d2/da3/cipconnectionmanager_8h.html#a2ca3eb3dc7fe805b410d849612720b4c',1,'IsConnectedOutputAssembly(const EipUint32 instance_number):&#160;cipconnectionmanager.c']]],

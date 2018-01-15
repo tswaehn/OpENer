@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Defines</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -116,12 +117,15 @@ Include dependency graph for cipepath.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d6e/cipepath_8h__dep__incl.svg" width="531" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/d6e/cipepath_8h__dep__incl.svg" width="100%" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
 <p><a href="../../d1/d02/cipepath_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de3/structconnection__path__epath.html">connection_path_epath</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a78c6bd1f4ab7fea31cb00f9da7d59f70">LOGICAL_SEGMENT_EXTENDED_TYPE_ARRAY_INDEX</a>&#160;&#160;&#160;0x01</td></tr>
@@ -159,6 +163,8 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a259109848d92ad5cff3b3180c0e205b3">SEGMENT_TYPE_SYMBOLIC_SEGMENT</a>&#160;&#160;&#160;0x60</td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="../../d9/de3/structconnection__path__epath.html">connection_path_epath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#acc22980f450df47deab84248be2ace17">CipConnectionPathEpath</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585">data_segment_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a751783de731e41dd7aac2934acec9032">DataSegmentSubtype</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Data segment sub types.  <a href="#a751783de731e41dd7aac2934acec9032"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
@@ -274,14 +280,18 @@ Enumerations</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbolic segment formats.  <a href="../../d1/d02/cipepath_8h.html#a22de99e37914c6c55645cce5f4feb064">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a22b9f76d4ea85ca54024f5c4f46efd12">CipEpathEncodeConnectionEpath</a> (const <a class="el" href="../../d1/d02/cipepath_8h.html#acc22980f450df47deab84248be2ace17">CipConnectionPathEpath</a> *const connection_epath, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **encoded_path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a455752d9d8b1d319e6f34c3724886348">CipEpathEqual</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const path1, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> path1_length, const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const path2, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> path2_length)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac169b512f1c9d1ccf75af3eb09025452">CipDword</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#aec3040041f35cce28dfb9127869e5f6e">CipEpathGetLogicalValue</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#aef54869630b890374586301bb0340df0">CipEpathSetLogicalValue</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ac169b512f1c9d1ccf75af3eb09025452">CipDword</a> logical_value, const <a class="el" href="../../d1/d02/cipepath_8h.html#ac6910dd6ceea8c9c19389952f73d717f">LogicalSegmentLogicalFormat</a> logical_format, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a8194b2888502980a0c2b3c15aee9722a">GetElectronicKeyFormat4FromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const cip_path, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *key)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data for an Electronic Key of format 4 from the EPath message.  <a href="#a8194b2888502980a0c2b3c15aee9722a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a27b1a3769281dfd32fe6db6d52d5173e">GetPathDataSegmentSimpleDataWordLength</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data word length of a Simple Data segment.  <a href="#a27b1a3769281dfd32fe6db6d52d5173e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#a751783de731e41dd7aac2934acec9032">DataSegmentSubtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a15193166e453f1f03cf20175c5264439">GetPathDataSegmentSubtype</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Data Segment subtype of a Data Segment EPath message.  <a href="#a15193166e453f1f03cf20175c5264439"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#a0b7328c1bddee0107c3141a4f8fa8227">ElectronicKeySegmentFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a47d5d40a1e8a862c875efbfe7d49d059">GetPathLogicalSegmentElectronicKeyFormat</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Electronic Key format of a Logical Segment Special Type EPath message.  <a href="#a47d5d40a1e8a862c875efbfe7d49d059"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#ae7344c52d0c796ecd8ec98d3b1b87791">GetPathLogicalSegmentElectronicKeyFormat4</a> (const unsigned char *const cip_path, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data for an Electronic Key of format 4 from the EPath message.  <a href="#ae7344c52d0c796ecd8ec98d3b1b87791"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#aa28d7b540f30607e3e32a1bd13bab9e2">LogicalSegmentExtendedLogicalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#aaa27d71c8b2695044596be034bfbf9b6">GetPathLogicalSegmentExtendedLogicalType</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Extended Logical Type of a Logical Segment EPath message.  <a href="#aaa27d71c8b2695044596be034bfbf9b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#ac6910dd6ceea8c9c19389952f73d717f">LogicalSegmentLogicalFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#adf48f3b41518803540b0414dcf5adb01">GetPathLogicalSegmentLogicalFormat</a> (const unsigned char *const cip_path)</td></tr>
@@ -304,16 +314,18 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only to be used on Port Segments. Gets the Link Address Size.  <a href="#a330047d3dad52318f2f4d66b78183844"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#ac6e66ab4f22749d2e736cec6c5fb97f4">GetPathPortSegmentPortIdentifier</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only to be used on Port Segments. Returns the Port Identifier.  <a href="#ac6e66ab4f22749d2e736cec6c5fb97f4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50">SegmentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a5f432a623c7d276956a3ddaca42e332e">GetPathSegmentType</a> (const unsigned char *const cip_path)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the basic segment type of a CIP EPath.  <a href="#a5f432a623c7d276956a3ddaca42e332e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50">SegmentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a7a8c1fe3015897c8552ec89e9ab3d39f">GetPathSegmentType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const cip_path)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the basic segment type of a CIP EPath.  <a href="#a7a8c1fe3015897c8552ec89e9ab3d39f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#a85a47ebb59a51a3c4210316276c3d72a">SymbolicSegmentExtendedFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a9ba09ee71090f214ffe092f6f4b3f00e">GetPathSymbolicSegmentExtendedFormat</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Extended Format subtype of a Symbolic Segment EPath message.  <a href="#a9ba09ee71090f214ffe092f6f4b3f00e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#a6407b4031c52775967765521857f4945">SymbolicSegmentFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a97c338a15877425de21ee197c7a66380">GetPathSymbolicSegmentFormat</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Symbolic Segment Format of the Symbolic Segment EPath message.  <a href="#a97c338a15877425de21ee197c7a66380"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d02/cipepath_8h.html#a85a47ebb59a51a3c4210316276c3d72a">SymbolicSegmentExtendedFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a0bf4032ef91090f46123905595cd43bb">GetPathSymbolicSegmentNumericType</a> (const unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Numeric subtype of a Symbolic Segment Extended Format EPath message.  <a href="#a0bf4032ef91090f46123905595cd43bb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a59413bc40ce4524eec0e1422394c9c84">SetPathPortSegmentExtendedPortIdentifier</a> (const unsigned int extended_port_identifier, unsigned char *const cip_path)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Extended Port Identifier in a EPath Port Segment message.  <a href="#a59413bc40ce4524eec0e1422394c9c84"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a57fd1c8eec1417d236293fecd5eeb76f">SetPathLogicalSegmentLogicalFormat</a> (<a class="el" href="../../d1/d02/cipepath_8h.html#ac6910dd6ceea8c9c19389952f73d717f">LogicalSegmentLogicalFormat</a> format, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const cip_path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a92013da4716b44a660f776539d3954e9">SetPathLogicalSegmentLogicalType</a> (<a class="el" href="../../d1/d02/cipepath_8h.html#a4f4ed916f51185fd6d442eb7109b34f1">LogicalSegmentLogicalType</a> logical_type, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const cip_path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a258a1edce08cf80958efde92625a34e6">SetPathPortSegmentExtendedPortIdentifier</a> (const unsigned int extended_port_identifier, <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const cip_path)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Extended Port Identifier in a EPath Port Segment message.  <a href="#a258a1edce08cf80958efde92625a34e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a6ae5431bf81a7ead16af4d49283aeabc">SetPathPortSegmentPortIdentifier</a> (const unsigned int port_identifier, unsigned char *const cip_path)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Port Identifier form an Port Segment EPath to be sent.  <a href="#a6ae5431bf81a7ead16af4d49283aeabc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d02/cipepath_8h.html#a4a1038d74a162dbbaa6c1a1a2892d573">SetPathSegmentType</a> (<a class="el" href="../../d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50">SegmentType</a> <a class="el" href="../../d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633">segment_type</a>, unsigned char *const cip_path)</td></tr>
@@ -849,6 +861,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="acc22980f450df47deab84248be2ace17"></a><!-- doxytag: member="cipepath.h::CipConnectionPathEpath" ref="acc22980f450df47deab84248be2ace17" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d9/de3/structconnection__path__epath.html">connection_path_epath</a>  <a class="el" href="../../d1/d02/cipepath_8h.html#acc22980f450df47deab84248be2ace17">CipConnectionPathEpath</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a751783de731e41dd7aac2934acec9032"></a><!-- doxytag: member="cipepath.h::DataSegmentSubtype" ref="a751783de731e41dd7aac2934acec9032" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1378,6 +1403,238 @@ Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a22b9f76d4ea85ca54024f5c4f46efd12"></a><!-- doxytag: member="cipepath.h::CipEpathEncodeConnectionEpath" ref="a22b9f76d4ea85ca54024f5c4f46efd12" args="(const CipConnectionPathEpath *const connection_epath, CipOctet **encoded_path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d1/d02/cipepath_8h.html#a22b9f76d4ea85ca54024f5c4f46efd12">CipEpathEncodeConnectionEpath</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d02/cipepath_8h.html#acc22980f450df47deab84248be2ace17">CipConnectionPathEpath</a> *const&#160;</td>
+          <td class="paramname"><em>connection_epath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **&#160;</td>
+          <td class="paramname"><em>encoded_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00621">621</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00166">connection_path_epath::attribute_id_or_connection_point</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00610">CipEpathGetNeededLogicalFormatForValue()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00348">CipEpathSetLogicalValue()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00164">connection_path_epath::class_id</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00078">kLogicalSegmentLogicalTypeClassId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00307">SetPathLogicalSegmentLogicalFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">SetPathLogicalSegmentLogicalType()</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00112">SetPathSegmentType()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a22b9f76d4ea85ca54024f5c4f46efd12_cgraph.svg" width="100%" height="308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a455752d9d8b1d319e6f34c3724886348"></a><!-- doxytag: member="cipepath.h::CipEpathEqual" ref="a455752d9d8b1d319e6f34c3724886348" args="(const CipOctet *const path1, const CipUint path1_length, const CipOctet *const path2, const CipUint path2_length)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/d02/cipepath_8h.html#a455752d9d8b1d319e6f34c3724886348">CipEpathEqual</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
+          <td class="paramname"><em>path1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>path1_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
+          <td class="paramname"><em>path2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>path2_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00656">656</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec3040041f35cce28dfb9127869e5f6e"></a><!-- doxytag: member="cipepath.h::CipEpathGetLogicalValue" ref="aec3040041f35cce28dfb9127869e5f6e" args="(const EipUint8 **message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac169b512f1c9d1ccf75af3eb09025452">CipDword</a> <a class="el" href="../../d1/d02/cipepath_8h.html#aec3040041f35cce28dfb9127869e5f6e">CipEpathGetLogicalValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00326">326</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00283">GetPathLogicalSegmentLogicalFormat()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00101">kLogicalSegmentLogicalFormatEightBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00102">kLogicalSegmentLogicalFormatSixteenBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00103">kLogicalSegmentLogicalFormatThirtyTwoBit</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_aec3040041f35cce28dfb9127869e5f6e_cgraph.svg" width="100%" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_aec3040041f35cce28dfb9127869e5f6e_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef54869630b890374586301bb0340df0"></a><!-- doxytag: member="cipepath.h::CipEpathSetLogicalValue" ref="aef54869630b890374586301bb0340df0" args="(const CipDword logical_value, const LogicalSegmentLogicalFormat logical_format, CipOctet **message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d1/d02/cipepath_8h.html#aef54869630b890374586301bb0340df0">CipEpathSetLogicalValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ac169b512f1c9d1ccf75af3eb09025452">CipDword</a>&#160;</td>
+          <td class="paramname"><em>logical_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/d02/cipepath_8h.html#ac6910dd6ceea8c9c19389952f73d717f">LogicalSegmentLogicalFormat</a>&#160;</td>
+          <td class="paramname"><em>logical_format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00348">348</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00130">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00116">AddIntToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00101">kLogicalSegmentLogicalFormatEightBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00102">kLogicalSegmentLogicalFormatSixteenBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00103">kLogicalSegmentLogicalFormatThirtyTwoBit</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00621">CipEpathEncodeConnectionEpath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_aef54869630b890374586301bb0340df0_cgraph.svg" width="387" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_aef54869630b890374586301bb0340df0_icgraph.svg" width="451" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8194b2888502980a0c2b3c15aee9722a"></a><!-- doxytag: member="cipepath.h::GetElectronicKeyFormat4FromMessage" ref="a8194b2888502980a0c2b3c15aee9722a" args="(const CipOctet **const cip_path, ElectronicKeyFormat4 *key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#a8194b2888502980a0c2b3c15aee9722a">GetElectronicKeyFormat4FromMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const&#160;</td>
+          <td class="paramname"><em>cip_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the data for an Electronic Key of format 4 from the EPath message. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cip_path</td><td>The start of the EPath message </td></tr>
+    <tr><td class="paramname">Writes</td><td>the data on the user provided data electronic key struct </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">421</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00055">ElectronicKeyFormat4SetDeviceType()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00074">ElectronicKeyFormat4SetMajorRevisionCompatibility()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00096">ElectronicKeyFormat4SetMinorRevision()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00064">ElectronicKeyFormat4SetProductCode()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00046">ElectronicKeyFormat4SetVendorId()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00406">GetPathLogicalSegmentElectronicKeyFormat()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00116">kElectronicKeySegmentFormatKeyFormat4</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00254">MoveMessageNOctets()</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a8194b2888502980a0c2b3c15aee9722a_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a8194b2888502980a0c2b3c15aee9722a_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a27b1a3769281dfd32fe6db6d52d5173e"></a><!-- doxytag: member="cipepath.h::GetPathDataSegmentSimpleDataWordLength" ref="a27b1a3769281dfd32fe6db6d52d5173e" args="(const unsigned char *const cip_path)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1410,9 +1667,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The amount of 16-bit words of data in the EPath </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00514">514</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00594">594</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00493">GetPathDataSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00138">kDataSegmentSubtypeSimpleData</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00573">GetPathDataSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00138">kDataSegmentSubtypeSimpleData</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1448,11 +1705,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Data Segment subtype </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00493">493</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00573">573</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
 <p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00070">DATA_SEGMENT_SUBTYPE_ANSI_EXTENDED_SYMBOL</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00069">DATA_SEGMENT_SUBTYPE_SIMPLE_DATA</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00139">kDataSegmentSubtypeANSIExtendedSymbol</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00137">kDataSegmentSubtypeReserved</a>, and <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00138">kDataSegmentSubtypeSimpleData</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00514">GetPathDataSegmentSimpleDataWordLength()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00594">GetPathDataSegmentSimpleDataWordLength()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1488,11 +1745,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Electronic Key Format used in the EPath </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00321">321</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00406">406</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00050">ELECTRONIC_KEY_SEGMENT_KEY_FORMAT_4</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00301">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00116">kElectronicKeySegmentFormatKeyFormat4</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00115">kElectronicKeySegmentFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00108">kLogicalSegmentSpecialTypeLogicalFormatElectronicKey</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00050">ELECTRONIC_KEY_SEGMENT_KEY_FORMAT_4</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00386">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00116">kElectronicKeySegmentFormatKeyFormat4</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00115">kElectronicKeySegmentFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00108">kLogicalSegmentSpecialTypeLogicalFormatElectronicKey</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1506,64 +1763,6 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a47d5d40a1e8a862c875efbfe7d49d059_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae7344c52d0c796ecd8ec98d3b1b87791"></a><!-- doxytag: member="cipepath.h::GetPathLogicalSegmentElectronicKeyFormat4" ref="ae7344c52d0c796ecd8ec98d3b1b87791" args="(const unsigned char *const cip_path, ElectronicKeyFormat4 *key)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#ae7344c52d0c796ecd8ec98d3b1b87791">GetPathLogicalSegmentElectronicKeyFormat4</a> </td>
-          <td>(</td>
-          <td class="paramtype">const unsigned char *const&#160;</td>
-          <td class="paramname"><em>cip_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gets the data for an Electronic Key of format 4 from the EPath message. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cip_path</td><td>The start of the EPath message </td></tr>
-    <tr><td class="paramname">Writes</td><td>the data on the user provided data electronic key struct </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">336</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
-
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00041">ElectronicKeyFormat4SetDeviceType()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00063">ElectronicKeyFormat4SetMajorRevisionCompatibility()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00085">ElectronicKeyFormat4SetMinorRevision()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00052">ElectronicKeyFormat4SetProductCode()</a>, <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00030">ElectronicKeyFormat4SetVendorId()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00321">GetPathLogicalSegmentElectronicKeyFormat()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00029">GetSintFromMessage()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00116">kElectronicKeySegmentFormatKeyFormat4</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_ae7344c52d0c796ecd8ec98d3b1b87791_cgraph.svg" width="100%" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_ae7344c52d0c796ecd8ec98d3b1b87791_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1594,9 +1793,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The extended logical type of the logical segment </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00273">273</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00358">358</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00090">kLogicalSegmentExtendedLogicalTypeArrayIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00092">kLogicalSegmentExtendedLogicalTypeBitIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00091">kLogicalSegmentExtendedLogicalTypeIndirectArrayIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00093">kLogicalSegmentExtendedLogicalTypeIndirectBitIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00089">kLogicalSegmentExtendedLogicalTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00095">kLogicalSegmentExtendedLogicalTypeStructureMemberHandle</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00094">kLogicalSegmentExtendedLogicalTypeStructureMemberNumber</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00085">kLogicalSegmentLogicalTypeExtendedLogical</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00042">LOGICAL_SEGMENT_EXTENDED_TYPE_ARRAY_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00044">LOGICAL_SEGMENT_EXTENDED_TYPE_BIT_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00043">LOGICAL_SEGMENT_EXTENDED_TYPE_INDIRECT_ARRAY_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00045">LOGICAL_SEGMENT_EXTENDED_TYPE_INDIRECT_BIT_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00047">LOGICAL_SEGMENT_EXTENDED_TYPE_STRUCTURE_MEMBER_HANDLE</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00046">LOGICAL_SEGMENT_EXTENDED_TYPE_STRUCTURE_MEMBER_NUMBER</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00090">kLogicalSegmentExtendedLogicalTypeArrayIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00092">kLogicalSegmentExtendedLogicalTypeBitIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00091">kLogicalSegmentExtendedLogicalTypeIndirectArrayIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00093">kLogicalSegmentExtendedLogicalTypeIndirectBitIndex</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00089">kLogicalSegmentExtendedLogicalTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00095">kLogicalSegmentExtendedLogicalTypeStructureMemberHandle</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00094">kLogicalSegmentExtendedLogicalTypeStructureMemberNumber</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00085">kLogicalSegmentLogicalTypeExtendedLogical</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00042">LOGICAL_SEGMENT_EXTENDED_TYPE_ARRAY_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00044">LOGICAL_SEGMENT_EXTENDED_TYPE_BIT_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00043">LOGICAL_SEGMENT_EXTENDED_TYPE_INDIRECT_ARRAY_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00045">LOGICAL_SEGMENT_EXTENDED_TYPE_INDIRECT_BIT_INDEX</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00047">LOGICAL_SEGMENT_EXTENDED_TYPE_STRUCTURE_MEMBER_HANDLE</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00046">LOGICAL_SEGMENT_EXTENDED_TYPE_STRUCTURE_MEMBER_NUMBER</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1632,14 +1831,24 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The logical format of the logical format </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">249</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00283">283</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00101">kLogicalSegmentLogicalFormatEightBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00102">kLogicalSegmentLogicalFormatSixteenBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00103">kLogicalSegmentLogicalFormatThirtyTwoBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00037">LOGICAL_SEGMENT_FORMAT_EIGHT_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00038">LOGICAL_SEGMENT_FORMAT_SIXTEEN_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00039">LOGICAL_SEGMENT_FORMAT_THIRTY_TWO_BIT</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00101">kLogicalSegmentLogicalFormatEightBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00102">kLogicalSegmentLogicalFormatSixteenBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00103">kLogicalSegmentLogicalFormatThirtyTwoBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00037">LOGICAL_SEGMENT_FORMAT_EIGHT_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00038">LOGICAL_SEGMENT_FORMAT_SIXTEEN_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00039">LOGICAL_SEGMENT_FORMAT_THIRTY_TWO_BIT</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00326">CipEpathGetLogicalValue()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_adf48f3b41518803540b0414dcf5adb01_cgraph.svg" width="456" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_adf48f3b41518803540b0414dcf5adb01_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1672,9 +1881,9 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">210</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00082">kLogicalSegmentLogicalTypeAttributeId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00078">kLogicalSegmentLogicalTypeClassId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00081">kLogicalSegmentLogicalTypeConnectionPoint</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00085">kLogicalSegmentLogicalTypeExtendedLogical</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00079">kLogicalSegmentLogicalTypeInstanceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00080">kLogicalSegmentLogicalTypeMemberId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00084">kLogicalSegmentLogicalTypeServiceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00083">kLogicalSegmentLogicalTypeSpecial</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00032">LOGICAL_SEGMENT_TYPE_ATTRIBUTE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00028">LOGICAL_SEGMENT_TYPE_CLASS_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00031">LOGICAL_SEGMENT_TYPE_CONNECTION_POINT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00035">LOGICAL_SEGMENT_TYPE_EXTENDED_LOGICAL</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00029">LOGICAL_SEGMENT_TYPE_INSTANCE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00030">LOGICAL_SEGMENT_TYPE_MEMBER_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00034">LOGICAL_SEGMENT_TYPE_SERVICE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00033">LOGICAL_SEGMENT_TYPE_SPECIAL</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00082">kLogicalSegmentLogicalTypeAttributeId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00078">kLogicalSegmentLogicalTypeClassId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00081">kLogicalSegmentLogicalTypeConnectionPoint</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00085">kLogicalSegmentLogicalTypeExtendedLogical</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00079">kLogicalSegmentLogicalTypeInstanceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00080">kLogicalSegmentLogicalTypeMemberId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00084">kLogicalSegmentLogicalTypeServiceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00083">kLogicalSegmentLogicalTypeSpecial</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00032">LOGICAL_SEGMENT_TYPE_ATTRIBUTE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00028">LOGICAL_SEGMENT_TYPE_CLASS_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00031">LOGICAL_SEGMENT_TYPE_CONNECTION_POINT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00035">LOGICAL_SEGMENT_TYPE_EXTENDED_LOGICAL</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00029">LOGICAL_SEGMENT_TYPE_INSTANCE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00030">LOGICAL_SEGMENT_TYPE_MEMBER_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00034">LOGICAL_SEGMENT_TYPE_SERVICE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00033">LOGICAL_SEGMENT_TYPE_SPECIAL</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00273">GetPathLogicalSegmentExtendedLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00301">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00358">GetPathLogicalSegmentExtendedLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00386">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1687,7 +1896,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a4ba7b528ebba012c609a29069030e54b_icgraph.svg" width="100%" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a4ba7b528ebba012c609a29069030e54b_icgraph.svg" width="100%" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1718,11 +1927,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Special Type Logical Format subtype of a Logical Segment EPath message </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00301">301</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00386">386</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00083">kLogicalSegmentLogicalTypeSpecial</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00108">kLogicalSegmentSpecialTypeLogicalFormatElectronicKey</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00107">kLogicalSegmentSpecialTypeLogicalFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00049">LOGICAL_SEGMENT_SPECIAL_TYPE_FORMAT_ELECTRONIC_KEY</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00083">kLogicalSegmentLogicalTypeSpecial</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00108">kLogicalSegmentSpecialTypeLogicalFormatElectronicKey</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00107">kLogicalSegmentSpecialTypeLogicalFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00049">LOGICAL_SEGMENT_SPECIAL_TYPE_FORMAT_ELECTRONIC_KEY</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00321">GetPathLogicalSegmentElectronicKeyFormat()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00406">GetPathLogicalSegmentElectronicKeyFormat()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1774,9 +1983,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the Production Inhibit Time in microseconds ranging from 0 to 4294967295 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00412">412</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00492">492</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00364">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00129">kNetworkSegmentSubtypeProductionInhibitTimeInMicroseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00444">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00129">kNetworkSegmentSubtypeProductionInhibitTimeInMicroseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1820,9 +2029,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>the Production Inhibit Time in milliseconds ranging from 0 to 255 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00395">395</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00475">475</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00364">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00127">kNetworkSegmentSubtypeProductionInhibitTimeInMilliseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00444">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00127">kNetworkSegmentSubtypeProductionInhibitTimeInMilliseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1866,11 +2075,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Network Segment subtype of the EPath </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00364">364</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00444">444</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00130">kNetworkSegmentSubtypeExtendedNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00126">kNetworkSegmentSubtypeFixedTagSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00129">kNetworkSegmentSubtypeProductionInhibitTimeInMicroseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00127">kNetworkSegmentSubtypeProductionInhibitTimeInMilliseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00124">kNetworkSegmentSubtypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00128">kNetworkSegmentSubtypeSafetySegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00125">kNetworkSegmentSubtypeScheduleSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00057">NETWORK_SEGMENT_EXTENDED_NETWORK</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00053">NETWORK_SEGMENT_FIXED_TAG</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00056">NETWORK_SEGMENT_PRODUCTION_INHIBIT_TIME_IN_MICROSECONDS</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00054">NETWORK_SEGMENT_PRODUCTION_INHIBIT_TIME_IN_MILLISECONDS</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00055">NETWORK_SEGMENT_SAFETY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00052">NETWORK_SEGMENT_SCHEDULE</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00130">kNetworkSegmentSubtypeExtendedNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00126">kNetworkSegmentSubtypeFixedTagSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00129">kNetworkSegmentSubtypeProductionInhibitTimeInMicroseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00127">kNetworkSegmentSubtypeProductionInhibitTimeInMilliseconds</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00124">kNetworkSegmentSubtypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00128">kNetworkSegmentSubtypeSafetySegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00125">kNetworkSegmentSubtypeScheduleSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00057">NETWORK_SEGMENT_EXTENDED_NETWORK</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00053">NETWORK_SEGMENT_FIXED_TAG</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00056">NETWORK_SEGMENT_PRODUCTION_INHIBIT_TIME_IN_MICROSECONDS</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00054">NETWORK_SEGMENT_PRODUCTION_INHIBIT_TIME_IN_MILLISECONDS</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00055">NETWORK_SEGMENT_SAFETY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00052">NETWORK_SEGMENT_SCHEDULE</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00412">GetPathNetworkSegmentProductionInhibitTimeInMicroseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00395">GetPathNetworkSegmentProductionInhibitTimeInMilliseconds()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00492">GetPathNetworkSegmentProductionInhibitTimeInMicroseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00475">GetPathNetworkSegmentProductionInhibitTimeInMilliseconds()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1954,7 +2163,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00184">184</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00146">GetPathPortSegmentExtendedLinkAddressSizeBit()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">GetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00016">kPortSegmentExtendedPort</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00146">GetPathPortSegmentExtendedLinkAddressSizeBit()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">GetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00016">kPortSegmentExtendedPort</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1992,7 +2201,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00175">175</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00146">GetPathPortSegmentExtendedLinkAddressSizeBit()</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00146">GetPathPortSegmentExtendedLinkAddressSizeBit()</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2030,7 +2239,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">156</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00184">GetPathPortSegmentExtendedPortNumber()</a>.</p>
 
@@ -2052,14 +2261,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5f432a623c7d276956a3ddaca42e332e"></a><!-- doxytag: member="cipepath.h::GetPathSegmentType" ref="a5f432a623c7d276956a3ddaca42e332e" args="(const unsigned char *const cip_path)" -->
+<a class="anchor" id="a7a8c1fe3015897c8552ec89e9ab3d39f"></a><!-- doxytag: member="cipepath.h::GetPathSegmentType" ref="a7a8c1fe3015897c8552ec89e9ab3d39f" args="(const CipOctet *const cip_path)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50">SegmentType</a> <a class="el" href="../../d1/d02/cipepath_8h.html#a5f432a623c7d276956a3ddaca42e332e">GetPathSegmentType</a> </td>
+          <td class="memname"><a class="el" href="../../d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50">SegmentType</a> <a class="el" href="../../d1/d02/cipepath_8h.html#a7a8c1fe3015897c8552ec89e9ab3d39f">GetPathSegmentType</a> </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
           <td class="paramname"><em>cip_path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2078,14 +2287,14 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">75</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00066">kSegmentTypeDataTypeConstructed</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00067">kSegmentTypeDataTypeElementary</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00068">kSegmentTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00023">SEGMENT_TYPE_DATA_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00024">SEGMENT_TYPE_DATA_TYPE_CONSTRUCTED</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00025">SEGMENT_TYPE_DATA_TYPE_ELEMENTARTY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00020">SEGMENT_TYPE_LOGICAL_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00021">SEGMENT_TYPE_NETWORK_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00019">SEGMENT_TYPE_PORT_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00026">SEGMENT_TYPE_SEGMENT_RESERVED</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00022">SEGMENT_TYPE_SYMBOLIC_SEGMENT</a>.</p>
+<p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00066">kSegmentTypeDataTypeConstructed</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00067">kSegmentTypeDataTypeElementary</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00068">kSegmentTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00023">SEGMENT_TYPE_DATA_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00024">SEGMENT_TYPE_DATA_TYPE_CONSTRUCTED</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00025">SEGMENT_TYPE_DATA_TYPE_ELEMENTARTY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00020">SEGMENT_TYPE_LOGICAL_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00021">SEGMENT_TYPE_NETWORK_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00019">SEGMENT_TYPE_PORT_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00026">SEGMENT_TYPE_SEGMENT_RESERVED</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00022">SEGMENT_TYPE_SYMBOLIC_SEGMENT</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00514">GetPathDataSegmentSimpleDataWordLength()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">GetPathLogicalSegmentLogicalFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00301">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00412">GetPathNetworkSegmentProductionInhibitTimeInMicroseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00395">GetPathNetworkSegmentProductionInhibitTimeInMilliseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00364">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">GetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00468">GetPathSymbolicSegmentExtendedFormat()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00594">GetPathDataSegmentSimpleDataWordLength()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00283">GetPathLogicalSegmentLogicalFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00210">GetPathLogicalSegmentLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00386">GetPathLogicalSegmentSpecialTypeLogicalType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00492">GetPathNetworkSegmentProductionInhibitTimeInMicroseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00475">GetPathNetworkSegmentProductionInhibitTimeInMilliseconds()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00444">GetPathNetworkSegmentSubtype()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00156">GetPathPortSegmentPortIdentifier()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00548">GetPathSymbolicSegmentExtendedFormat()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00307">SetPathLogicalSegmentLogicalFormat()</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">SetPathLogicalSegmentLogicalType()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a5f432a623c7d276956a3ddaca42e332e_icgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a7a8c1fe3015897c8552ec89e9ab3d39f_icgraph.svg" width="100%" height="541"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -2116,9 +2325,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Symbolic Segment Extended Format </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00468">468</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00548">548</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00432">GetPathSymbolicSegmentFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00450">GetPathSymbolicSegmentNumericType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00154">kSymbolicSegmentExtendedFormatDoubleByteChars</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00159">kSymbolicSegmentExtendedFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00155">kSymbolicSegmentExtendedFormatTripleByteChars</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00147">kSymbolicSegmentFormatExtendedString</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00061">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_DOUBLE_CHAR</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00063">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_NUMERIC</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00062">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_TRIPLE_CHAR</a>.</p>
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00512">GetPathSymbolicSegmentFormat()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00530">GetPathSymbolicSegmentNumericType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00154">kSymbolicSegmentExtendedFormatDoubleByteChars</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00159">kSymbolicSegmentExtendedFormatReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00155">kSymbolicSegmentExtendedFormatTripleByteChars</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00147">kSymbolicSegmentFormatExtendedString</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00061">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_DOUBLE_CHAR</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00063">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_NUMERIC</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00062">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_TRIPLE_CHAR</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2154,11 +2363,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Symbolic Segment Format </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00432">432</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00512">512</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00146">kSymbolicSegmentFormatASCII</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00147">kSymbolicSegmentFormatExtendedString</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00059">SYMBOLIC_SEGMENT_FORMAT_EXTENDED_STRING</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00468">GetPathSymbolicSegmentExtendedFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00548">GetPathSymbolicSegmentExtendedFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2194,11 +2403,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The Numeric Extended Format subtype </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00450">450</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00530">530</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00158">kSymbolicSegmentExtendedFormatNumericSymbolUDINT</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00157">kSymbolicSegmentExtendedFormatNumericSymbolUINT</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00156">kSymbolicSegmentExtendedFormatNumericSymbolUSINT</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00159">kSymbolicSegmentExtendedFormatReserved</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00067">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_NUMERIC_UDINT_TYPE</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00066">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_NUMERIC_UINT_TYPE</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00065">SYMBOLIC_SEGMENT_EXTENDED_FORMAT_NUMERIC_USINT_TYPE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00468">GetPathSymbolicSegmentExtendedFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00548">GetPathSymbolicSegmentExtendedFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2210,12 +2419,110 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a59413bc40ce4524eec0e1422394c9c84"></a><!-- doxytag: member="cipepath.h::SetPathPortSegmentExtendedPortIdentifier" ref="a59413bc40ce4524eec0e1422394c9c84" args="(const unsigned int extended_port_identifier, unsigned char *const cip_path)" -->
+<a class="anchor" id="a57fd1c8eec1417d236293fecd5eeb76f"></a><!-- doxytag: member="cipepath.h::SetPathLogicalSegmentLogicalFormat" ref="a57fd1c8eec1417d236293fecd5eeb76f" args="(LogicalSegmentLogicalFormat format, CipOctet *const cip_path)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#a59413bc40ce4524eec0e1422394c9c84">SetPathPortSegmentExtendedPortIdentifier</a> </td>
+          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#a57fd1c8eec1417d236293fecd5eeb76f">SetPathLogicalSegmentLogicalFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d02/cipepath_8h.html#ac6910dd6ceea8c9c19389952f73d717f">LogicalSegmentLogicalFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
+          <td class="paramname"><em>cip_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00307">307</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00101">kLogicalSegmentLogicalFormatEightBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00102">kLogicalSegmentLogicalFormatSixteenBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00103">kLogicalSegmentLogicalFormatThirtyTwoBit</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00037">LOGICAL_SEGMENT_FORMAT_EIGHT_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00038">LOGICAL_SEGMENT_FORMAT_SIXTEEN_BIT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00039">LOGICAL_SEGMENT_FORMAT_THIRTY_TWO_BIT</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00621">CipEpathEncodeConnectionEpath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a57fd1c8eec1417d236293fecd5eeb76f_cgraph.svg" width="456" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a57fd1c8eec1417d236293fecd5eeb76f_icgraph.svg" width="526" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a92013da4716b44a660f776539d3954e9"></a><!-- doxytag: member="cipepath.h::SetPathLogicalSegmentLogicalType" ref="a92013da4716b44a660f776539d3954e9" args="(LogicalSegmentLogicalType logical_type, CipOctet *const cip_path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#a92013da4716b44a660f776539d3954e9">SetPathLogicalSegmentLogicalType</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d02/cipepath_8h.html#a4f4ed916f51185fd6d442eb7109b34f1">LogicalSegmentLogicalType</a>&#160;</td>
+          <td class="paramname"><em>logical_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
+          <td class="paramname"><em>cip_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00249">249</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
+
+<p>References <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00075">GetPathSegmentType()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00082">kLogicalSegmentLogicalTypeAttributeId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00078">kLogicalSegmentLogicalTypeClassId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00081">kLogicalSegmentLogicalTypeConnectionPoint</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00085">kLogicalSegmentLogicalTypeExtendedLogical</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00079">kLogicalSegmentLogicalTypeInstanceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00080">kLogicalSegmentLogicalTypeMemberId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00084">kLogicalSegmentLogicalTypeServiceId</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00083">kLogicalSegmentLogicalTypeSpecial</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00032">LOGICAL_SEGMENT_TYPE_ATTRIBUTE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00028">LOGICAL_SEGMENT_TYPE_CLASS_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00031">LOGICAL_SEGMENT_TYPE_CONNECTION_POINT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00035">LOGICAL_SEGMENT_TYPE_EXTENDED_LOGICAL</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00029">LOGICAL_SEGMENT_TYPE_INSTANCE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00030">LOGICAL_SEGMENT_TYPE_MEMBER_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00034">LOGICAL_SEGMENT_TYPE_SERVICE_ID</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00033">LOGICAL_SEGMENT_TYPE_SPECIAL</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00621">CipEpathEncodeConnectionEpath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a92013da4716b44a660f776539d3954e9_cgraph.svg" width="443" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a92013da4716b44a660f776539d3954e9_icgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a258a1edce08cf80958efde92625a34e6"></a><!-- doxytag: member="cipepath.h::SetPathPortSegmentExtendedPortIdentifier" ref="a258a1edce08cf80958efde92625a34e6" args="(const unsigned int extended_port_identifier, CipOctet *const cip_path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d02/cipepath_8h.html#a258a1edce08cf80958efde92625a34e6">SetPathPortSegmentExtendedPortIdentifier</a> </td>
           <td>(</td>
           <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>extended_port_identifier</em>, </td>
@@ -2223,7 +2530,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned char *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> *const&#160;</td>
           <td class="paramname"><em>cip_path</em>&#160;</td>
         </tr>
         <tr>
@@ -2251,7 +2558,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a59413bc40ce4524eec0e1422394c9c84_cgraph.svg" width="648" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a258a1edce08cf80958efde92625a34e6_cgraph.svg" width="648" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -2294,7 +2601,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00166">166</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>.</p>
+<p>References <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00196">SetPathPortSegmentExtendedPortIdentifier()</a>.</p>
 
@@ -2344,7 +2651,17 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00112">112</a> of file <a class="el" href="../../de/ddc/cipepath_8c_source.html">cipepath.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00066">kSegmentTypeDataTypeConstructed</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00067">kSegmentTypeDataTypeElementary</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00068">kSegmentTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00023">SEGMENT_TYPE_DATA_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00024">SEGMENT_TYPE_DATA_TYPE_CONSTRUCTED</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00025">SEGMENT_TYPE_DATA_TYPE_ELEMENTARTY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00020">SEGMENT_TYPE_LOGICAL_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00021">SEGMENT_TYPE_NETWORK_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00019">SEGMENT_TYPE_PORT_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00026">SEGMENT_TYPE_SEGMENT_RESERVED</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00022">SEGMENT_TYPE_SYMBOLIC_SEGMENT</a>.</p>
+<p>References <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00065">kSegmentTypeDataSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00066">kSegmentTypeDataTypeConstructed</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00067">kSegmentTypeDataTypeElementary</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00062">kSegmentTypeLogicalSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00063">kSegmentTypeNetworkSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00061">kSegmentTypePortSegment</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00068">kSegmentTypeReserved</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00064">kSegmentTypeSymbolicSegment</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00023">SEGMENT_TYPE_DATA_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00024">SEGMENT_TYPE_DATA_TYPE_CONSTRUCTED</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00025">SEGMENT_TYPE_DATA_TYPE_ELEMENTARTY</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00020">SEGMENT_TYPE_LOGICAL_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00021">SEGMENT_TYPE_NETWORK_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00019">SEGMENT_TYPE_PORT_SEGMENT</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00026">SEGMENT_TYPE_SEGMENT_RESERVED</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00022">SEGMENT_TYPE_SYMBOLIC_SEGMENT</a>.</p>
+
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00621">CipEpathEncodeConnectionEpath()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d02/cipepath_8h_a4a1038d74a162dbbaa6c1a1a2892d573_icgraph.svg" width="432" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -2368,7 +2685,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d1/d02/cipepath_8h.html">cipepath.h</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:17 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

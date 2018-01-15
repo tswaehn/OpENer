@@ -2,7 +2,7 @@ var cipqos_8c =
 [
     [ "CipQoSInit", "dd/d34/cipqos_8c.html#a2260436cbdaebb25c39005aca7781ac7", null ],
     [ "GetAttributeSingleQoS", "dd/d34/cipqos_8c.html#aa58749a49dfadf249a11533f350ad420", null ],
-    [ "GetPriorityForSocket", "dd/d34/cipqos_8c.html#a55b61b74431c08421a73941bda44702f", null ],
+    [ "GetPriorityForSocket", "dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e", null ],
     [ "InitializeCipQos", "dd/d34/cipqos_8c.html#ac274d150c9f82c615c75f681a30e0b38", null ],
     [ "SetAttributeSingleQoS", "dd/d34/cipqos_8c.html#a80f8dddb46d6119f9a76c0642c2519aa", null ],
     [ "dscp_event", "dd/d34/cipqos_8c.html#a54e6e0e989ff121222cb0591ff09b5cc", null ],

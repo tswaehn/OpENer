@@ -104,10 +104,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d38/opener__api_8h_source.html">opener_api.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html">cipconnectionobject.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cipioconnection.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d1c/cipioconnection_8h__incl.svg" width="550" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d1c/cipioconnection_8h__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -121,12 +122,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#ab63a9cebd7f44ee474ac1fd446d5bc66">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">close the communication channels of the given connection and remove it from the active connections list.  <a href="#ab63a9cebd7f44ee474ac1fd446d5bc66"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#a699fccd3dabdfec1b77560f22268c1e8">EstablishIoConnection</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *RESTRICT const <a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *const extended_error)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup all data in order to establish an IO connection.  <a href="#a699fccd3dabdfec1b77560f22268c1e8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#adbb39670c736df4ef89589a3b4e4df4e">OpenCommunicationChannels</a> (<a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *<a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the data given in the connection object structure and open the necessary communication channels.  <a href="#adbb39670c736df4ef89589a3b4e4df4e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#a62fc61ed294b1d1543960582f0071b22">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *connection_object)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">close the communication channels of the given connection and remove it from the active connections list.  <a href="#a62fc61ed294b1d1543960582f0071b22"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#a43e270b3f9b9f6296b12285c320c95aa">EstablishIoConnection</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const connection_object, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *const extended_error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup all data in order to establish an IO connection.  <a href="#a43e270b3f9b9f6296b12285c320c95aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#a53b85bce88b582414fc282c95f5626f4">OpenCommunicationChannels</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *connection_object)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the data given in the connection object structure and open the necessary communication channels.  <a href="#a53b85bce88b582414fc282c95f5626f4"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d45/cipioconnection_8h.html#a534c0a24266039f7ced0d36b7c5496bc">g_config_data_buffer</a></td></tr>
@@ -136,18 +137,18 @@ Variables</h2></td></tr>
 <div class="textblock"><p>CIP I/O Connection implementation =================================</p>
 <p>I/O Connection Object State Transition Diagram ---------------------------------------------- </p>
 <div align="center">
-<iframe scrolling="no" frameborder="0" src="../../dot_inline_dotgraph_1.svg" width="878" height="675"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<iframe scrolling="no" frameborder="0" src="../../dot_inline_dotgraph_2.svg" width="878" height="675"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
  
 <p>Definition in file <a class="el" href="../../de/d45/cipioconnection_8h_source.html">cipioconnection.h</a>.</p>
 </div><hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ab63a9cebd7f44ee474ac1fd446d5bc66"></a><!-- doxytag: member="cipioconnection.h::CloseCommunicationChannelsAndRemoveFromActiveConnectionsList" ref="ab63a9cebd7f44ee474ac1fd446d5bc66" args="(ConnectionObject *connection_object)" -->
+<a class="anchor" id="a62fc61ed294b1d1543960582f0071b22"></a><!-- doxytag: member="cipioconnection.h::CloseCommunicationChannelsAndRemoveFromActiveConnectionsList" ref="a62fc61ed294b1d1543960582f0071b22" args="(CipConnectionObject *connection_object)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../de/d45/cipioconnection_8h.html#ab63a9cebd7f44ee474ac1fd446d5bc66">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a> </td>
+          <td class="memname">void <a class="el" href="../../de/d45/cipioconnection_8h.html#a62fc61ed294b1d1543960582f0071b22">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -158,21 +159,21 @@ Variables</h2></td></tr>
 <p>close the communication channels of the given connection and remove it from the active connections list. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a></td><td>pointer to the connection object data </td></tr>
+    <tr><td class="paramname">connection_object</td><td>pointer to the connection object data </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00974">974</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00908">908</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00241">CloseUdpSocket()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01615">RemoveFromActiveConnections()</a>, and <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00346">connection_object::socket</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00241">CloseUdpSocket()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01346">RemoveFromActiveConnections()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00169">cip_connection_object::socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00701">CloseIoConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00641">CloseIoConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_ab63a9cebd7f44ee474ac1fd446d5bc66_cgraph.svg" width="100%" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a62fc61ed294b1d1543960582f0071b22_cgraph.svg" width="100%" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -180,21 +181,21 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_ab63a9cebd7f44ee474ac1fd446d5bc66_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a62fc61ed294b1d1543960582f0071b22_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a699fccd3dabdfec1b77560f22268c1e8"></a><!-- doxytag: member="cipioconnection.h::EstablishIoConnection" ref="a699fccd3dabdfec1b77560f22268c1e8" args="(ConnectionObject *RESTRICT const connection_object, EipUint16 *const extended_error)" -->
+<a class="anchor" id="a43e270b3f9b9f6296b12285c320c95aa"></a><!-- doxytag: member="cipioconnection.h::EstablishIoConnection" ref="a43e270b3f9b9f6296b12285c320c95aa" args="(CipConnectionObject *RESTRICT const connection_object, EipUint16 *const extended_error)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../de/d45/cipioconnection_8h.html#a699fccd3dabdfec1b77560f22268c1e8">EstablishIoConnection</a> </td>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../de/d45/cipioconnection_8h.html#a43e270b3f9b9f6296b12285c320c95aa">EstablishIoConnection</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *RESTRICT const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const&#160;</td>
           <td class="paramname"><em>connection_object</em>, </td>
         </tr>
         <tr>
@@ -216,7 +217,7 @@ Here is the caller graph for this function:</div>
 <p>This function can be called after all data has been parsed from the forward open request </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a></td><td>pointer to the connection object structure holding the parsed data from the forward open request </td></tr>
+    <tr><td class="paramname">connection_object</td><td>pointer to the connection object structure holding the parsed data from the forward open request </td></tr>
     <tr><td class="paramname">extended_error</td><td>the extended error code in case an error happened </td></tr>
   </table>
   </dd>
@@ -230,7 +231,7 @@ Here is the caller graph for this function:</div>
 <p>This function needs the guarantee that no Null request will be passed to it. It will generate a new IO connection based on the data parsed in the Forward Open service</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a></td><td>pointer to the connection object structure holding the parsed data from the forward open request </td></tr>
+    <tr><td class="paramname">connection_object</td><td>pointer to the connection object structure holding the parsed data from the forward open request </td></tr>
     <tr><td class="paramname">extended_error</td><td>the extended error code in case an error happened </td></tr>
   </table>
   </dd>
@@ -242,16 +243,16 @@ Here is the caller graph for this function:</div>
 </dd></dl>
 <p>Already handled by forward open </p>
 
-<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00310">310</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">258</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
 
-<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01605">AddNewActiveConnection()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00071">CheckIoConnectionEvent()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00306">connection_object::connection_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00169">CipConnectionPath::connection_point</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00282">connection_object::consumed_connection_path_length</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00309">connection_object::consuming_instance</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00093">g_config_data_buffer</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00733">GeneralConnectionConfiguration()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00442">GetConnectionType()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00127">GetIoConnectionForConnectionData()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00654">HandleConfigData()</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00011">kCipErrorConnectionFailure</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00048">kConnectionManagerExtendedStatusCodeSuccess</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00022">kForwardOpenConnectionTypeNull</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00111">kIoConnectionEventOpened</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00913">OpenCommunicationChannels()</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00142">OPENER_ASSERT</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00098">ProcessProductionInhibitTime()</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00280">connection_object::produced_connection_path_length</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00312">connection_object::producing_instance</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00139">SetIoConnectionCallbacks()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00147">SetupIoConnectionOriginatorToTargetConnectionPoint()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00201">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
+<p>References <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01341">AddNewActiveConnection()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00073">CheckIoConnectionEvent()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00663">ConnectionObjectGeneralConfiguration()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00585">ConnectionObjectGetOToTConnectionType()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00589">ConnectionObjectGetTToOConnectionType()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00116">cip_connection_object::consumed_connection_path_length</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00118">cip_connection_object::consumed_path</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00130">cip_connection_object::consuming_instance</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00069">g_config_data_buffer</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00125">GetIoConnectionForConnectionData()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00598">HandleConfigData()</a>, <a class="el" href="../../d1/d02/cipepath_8h_source.html#l00165">connection_path_epath::instance_id</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00011">kCipErrorConnectionFailure</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00036">kConnectionManagerExtendedStatusCodeSuccess</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00075">kConnectionObjectConnectionTypeNull</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00112">kIoConnectionEventOpened</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00851">OpenCommunicationChannels()</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00141">OPENER_ASSERT</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00074">ProcessProductionInhibitTime()</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00113">cip_connection_object::produced_connection_path_length</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00115">cip_connection_object::produced_path</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00129">cip_connection_object::producing_instance</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00097">SetIoConnectionCallbacks()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00105">SetupIoConnectionOriginatorToTargetConnectionPoint()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00156">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00281">ConnectionManagerInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00203">ConnectionManagerInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a699fccd3dabdfec1b77560f22268c1e8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a43e270b3f9b9f6296b12285c320c95aa_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -259,21 +260,21 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a699fccd3dabdfec1b77560f22268c1e8_icgraph.svg" width="614" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a43e270b3f9b9f6296b12285c320c95aa_icgraph.svg" width="614" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="adbb39670c736df4ef89589a3b4e4df4e"></a><!-- doxytag: member="cipioconnection.h::OpenCommunicationChannels" ref="adbb39670c736df4ef89589a3b4e4df4e" args="(ConnectionObject *connection_object)" -->
+<a class="anchor" id="a53b85bce88b582414fc282c95f5626f4"></a><!-- doxytag: member="cipioconnection.h::OpenCommunicationChannels" ref="a53b85bce88b582414fc282c95f5626f4" args="(CipConnectionObject *connection_object)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../de/d45/cipioconnection_8h.html#adbb39670c736df4ef89589a3b4e4df4e">OpenCommunicationChannels</a> </td>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> <a class="el" href="../../de/d45/cipioconnection_8h.html#a53b85bce88b582414fc282c95f5626f4">OpenCommunicationChannels</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/da3/cipconnectionmanager_8h.html#a705e78f4613ecabcb6388951b73c4700">ConnectionObject</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *&#160;</td>
           <td class="paramname"><em>connection_object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -285,7 +286,7 @@ Here is the caller graph for this function:</div>
 <p>This function will use the g_stCPFDataItem! </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../d1/d48/structconnection__object.html">connection_object</a></td><td>pointer to the connection object data </td></tr>
+    <tr><td class="paramname">connection_object</td><td>pointer to the connection object data </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,16 +296,16 @@ Here is the caller graph for this function:</div>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00913">913</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00851">851</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/d98/cpf_8c_source.html#l00023">g_common_packet_format_data_item</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00442">GetConnectionType()</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00011">kCipErrorConnectionFailure</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00024">kForwardOpenConnectionTypeMulticastConnection</a>, <a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html#l00023">kForwardOpenConnectionTypePointToPointConnection</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00403">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00553">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00483">OpenProducingMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00448">OpenProducingPointToPointConnection()</a>.</p>
+<p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00585">ConnectionObjectGetOToTConnectionType()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00589">ConnectionObjectGetTToOConnectionType()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00023">g_common_packet_format_data_item</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00011">kCipErrorConnectionFailure</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00076">kConnectionObjectConnectionTypeMulticast</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00077">kConnectionObjectConnectionTypePointToPoint</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00347">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00497">OpenMulticastConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00427">OpenProducingMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00392">OpenProducingPointToPointConnection()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00310">EstablishIoConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_adbb39670c736df4ef89589a3b4e4df4e_cgraph.svg" width="100%" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a53b85bce88b582414fc282c95f5626f4_cgraph.svg" width="100%" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -312,7 +313,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_adbb39670c736df4ef89589a3b4e4df4e_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d45/cipioconnection_8h_a53b85bce88b582414fc282c95f5626f4_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -332,9 +333,9 @@ Here is the caller graph for this function:</div>
 <div class="memdoc">
 <p>buffers for the config data coming with a forward open request. </p>
 
-<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00093">93</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00069">69</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00310">EstablishIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00654">HandleConfigData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00258">EstablishIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00598">HandleConfigData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +351,9 @@ Here is the caller graph for this function:</div>
 <div class="memdoc">
 <p>length of g_config_data_buffer. Initialized with 0 </p>
 
-<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00094">94</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00070">70</a> of file <a class="el" href="../../df/d03/cipioconnection_8c_source.html">cipioconnection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00654">HandleConfigData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00598">HandleConfigData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 </div>
 </div>
@@ -376,7 +377,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../de/d45/cipioconnection_8h.html">cipioconnection.h</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:17 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

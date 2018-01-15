@@ -19,5 +19,6 @@ var POSIX_2sample__application_2sampleapplication_8c =
     [ "g_assembly_data064", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aaaf3df97aa3326c9c492690117b14ca1", null ],
     [ "g_assembly_data096", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#abf7666360d7e42983002dcd95cc28131", null ],
     [ "g_assembly_data097", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#a751fd09537dd79b39480224833d0f27c", null ],
-    [ "g_assembly_data09A", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7", null ]
+    [ "g_assembly_data09A", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#aa1f1605037b07fc8e8623b143ed8ccb7", null ],
+    [ "g_encapsulation_inactivity_timeout", "d2/daa/POSIX_2sample__application_2sampleapplication_8c.html#adf3de9d05025f4d3ce4f50120a63deec", null ]
 ];

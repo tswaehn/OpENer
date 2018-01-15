@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$df/d03/cipioconnection_8c.html#a730b410a0cdbc6a456973c0e51568968" title="CloseIoConnection" alt="" coords="277,246,411,275"/>
+<area shape="rect" id="node34" href="$df/d03/cipioconnection_8c.html#a7e4923f4b027d489d9933b52f6fd7007" title="HandleIoConnectionTimeOut" alt="" coords="249,90,439,119"/>
+<area shape="rect" id="node40" href="$df/d03/cipioconnection_8c.html#a73bfd5fa3bc96e11219d0b24d70b88c7" title="HandleReceivedIoConnectionData" alt="" coords="233,1276,455,1306"/>
+<area shape="rect" id="node54" href="$df/d03/cipioconnection_8c.html#a20f1bc1c4cc4470cf371f94d51814de2" title="Send the data from the produced CIP Object of the connection via the socket of the connection object ..." alt="" coords="273,1039,415,1068"/>
+<area shape="rect" id="node5" href="$d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection." alt="" coords="1039,90,1209,119"/>
+<area shape="rect" id="node7" href="$d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only..." alt="" coords="580,90,863,119"/>
+<area shape="rect" id="node10" href="$df/d03/cipioconnection_8c.html#a62fc61ed294b1d1543960582f0071b22" title="close the communication channels of the given connection and remove it from the active connections li..." alt="" coords="504,348,939,378"/>
+<area shape="rect" id="node12" href="$db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9" title="CloseUdpSocket" alt="" coords="1064,295,1184,324"/>
+<area shape="rect" id="node25" href="$df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02" title="ConnectionObjectGetTToOConnectionType" alt="" coords="987,219,1261,248"/>
+<area shape="rect" id="node29" href="$d1/dbc/appcontype_8c.html#acda34462cc2d60ebb7b48a633bfe3c49" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr..." alt="" coords="600,194,843,223"/>
+<area shape="rect" id="node18" href="$d5/d35/cipconnectionmanager_8c.html#a144782b4e2a5afc89ec32854511bbea7" title="Removes connection from the list of active connections." alt="" coords="1019,348,1229,378"/>
+<area shape="rect" id="node14" href="$d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" title="Close the given socket and clean up the stack." alt="" coords="1384,295,1480,324"/>
+<area shape="rect" id="node16" href="$d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" title="Platform dependent code to close a socket." alt="" coords="1603,295,1749,324"/>
+<area shape="rect" id="node20" href="$df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549" title="ConnectionObjectInitializeEmpty" alt="" coords="1327,348,1537,378"/>
+<area shape="rect" id="node22" href="$d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e" title="DoublyLinkedListRemoveNode" alt="" coords="1331,402,1533,431"/>
+<area shape="rect" id="node27" href="$df/d91/cipconnectionobject_8c.html#a0da85deed56477da3ec500cec51aa46e" title="ConnectionObjectGetConnectionType" alt="" coords="1311,219,1553,248"/>
+<area shape="rect" id="node32" href="$df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa" title="ConnectionObjectIsTypeIOConnection" alt="" coords="1001,166,1247,195"/>
+<area shape="rect" id="node42" href="$df/d91/cipconnectionobject_8c.html#a0f3d8e6f21712dbef3fb2e1da42f35ba" title="ConnectionObjectGetTransportClassTriggerTransportClass" alt="" coords="539,1196,904,1226"/>
+<area shape="rect" id="node44" href="$d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host." alt="" coords="647,1250,796,1279"/>
+<area shape="rect" id="node46" href="$d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302" title="Reads EIP_UINT16 from *buffer and converts little endian to host." alt="" coords="651,1303,792,1332"/>
+<area shape="rect" id="node48" href="$df/d2e/cipassembly_8c.html#a5dc25129faf75858c0aeaa88ea8d9490" title="notify an Assembly object that data has been received for it." alt="" coords="591,1356,852,1386"/>
+<area shape="rect" id="node52" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569" title="Inform the application that the Run/Idle State has been changed by the originator." alt="" coords="663,1410,780,1439"/>
+<area shape="rect" id="node50" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga5307d18b1bd79f151588391cb4ebf30a" title="Call back function to inform application on received data for an assembly object." alt="" coords="1029,1356,1219,1386"/>
+<area shape="rect" id="node56" href="$d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer." alt="" coords="1608,1490,1744,1519"/>
+<area shape="rect" id="node58" href="$d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer." alt="" coords="1612,1146,1740,1175"/>
+<area shape="rect" id="node60" href="$d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4" title="AssembleIOMessage" alt="" coords="648,1039,795,1068"/>
+<area shape="rect" id="node113" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent." alt="" coords="633,1143,809,1172"/>
+<area shape="rect" id="node116" href="$d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518" title="create a producing or consuming UDP socket" alt="" coords="669,482,773,511"/>
+<area shape="rect" id="node62" href="$d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392" title="Copy data from message_router_response struct and common_packet_format_data_item into linear memory i..." alt="" coords="1040,1039,1208,1068"/>
+<area shape="rect" id="node66" href="$d3/d98/cpf_8c.html#a4f113fab63952dbb60b61704f9fc219b" title="Adds the item count to the message frame." alt="" coords="1369,559,1495,588"/>
+<area shape="rect" id="node69" href="$d3/d98/cpf_8c.html#afef2fcf37b114a51eb2da2f4688659c8" title="Encodes a Null Address Item into the message frame." alt="" coords="1351,612,1513,642"/>
+<area shape="rect" id="node72" href="$d3/d98/cpf_8c.html#a53303213aba7d1f7b5cbd3183570b11a" title="EncodeConnectedAddressItem" alt="" coords="1331,1463,1533,1492"/>
+<area shape="rect" id="node76" href="$d3/d98/cpf_8c.html#a150b3b92a956a84c39b678834ea4d499" title="Encodes a sequenced address item into the message." alt="" coords="1329,1410,1535,1439"/>
+<area shape="rect" id="node80" href="$d3/d98/cpf_8c.html#aed97aa02e8801b5ea0310a133ae46a84" title="EncodeDataItemType" alt="" coords="1357,666,1507,695"/>
+<area shape="rect" id="node83" href="$d3/d98/cpf_8c.html#a689a9410bc228cecdbf75e7360f643dd" title="Encodes the Connected Data item length." alt="" coords="1321,719,1543,748"/>
+<area shape="rect" id="node86" href="$d3/d98/cpf_8c.html#a3b4c3d977b3fc23db65146cbefe4a495" title="Encodes a sequence number into the message." alt="" coords="1347,772,1517,802"/>
+<area shape="rect" id="node89" href="$d3/d98/cpf_8c.html#ad3aa7ce7e650ffeeba19cdad4c145f9c" title="Encode the data item length of the unconnected data segment." alt="" coords="1315,1146,1549,1175"/>
+<area shape="rect" id="node92" href="$d3/d98/cpf_8c.html#ad1bcc1bd973e6733b3d479927738124b" title="Encodes the reply service code for the requested service." alt="" coords="1360,826,1504,855"/>
+<area shape="rect" id="node94" href="$d3/d98/cpf_8c.html#a2fb3a4864353ff7263416c9b87e6338a" title="Encodes the reserved byte in the message router response." alt="" coords="1317,879,1547,908"/>
+<area shape="rect" id="node96" href="$d3/d98/cpf_8c.html#ab01dcb44f173a12fdd09ee7b83eb2e85" title="Encodes the general status of a Router Response." alt="" coords="1357,932,1507,962"/>
+<area shape="rect" id="node98" href="$d3/d98/cpf_8c.html#aa7a9b00cc1095849a4c29fe303178a25" title="Encodes the extended status (length and data) into the message." alt="" coords="1353,986,1511,1015"/>
+<area shape="rect" id="node100" href="$d3/d98/cpf_8c.html#aff58b2be77eedd55448923de7cb4da9f" title="Encodes the Message Router Response data." alt="" coords="1309,1039,1555,1068"/>
+<area shape="rect" id="node102" href="$d3/d98/cpf_8c.html#a2693eb487841495e4a69aeac60ea227d" title="EncodeDataItemLength" alt="" coords="1353,1199,1511,1228"/>
+<area shape="rect" id="node105" href="$d3/d98/cpf_8c.html#a0abf0f8ed39e52fbd224c555dd23a0ac" title="EncodeDataItemData" alt="" coords="1359,1092,1505,1122"/>
+<area shape="rect" id="node107" href="$d3/d98/cpf_8c.html#a9bf4ba9605c8a7be284d1c9fef4f4ea9" title="Encodes the sockaddr info type id into the message." alt="" coords="1328,1252,1536,1282"/>
+<area shape="rect" id="node110" href="$d3/d98/cpf_8c.html#a889305fba8f00ea5abce3860b1cba376" title="Encodes the sockaddr info length into the message." alt="" coords="1341,1306,1523,1335"/>
+<area shape="rect" id="node118" href="$df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24" title="Gets the error number or equivalent." alt="" coords="1045,402,1203,431"/>
+<area shape="rect" id="node120" href="$df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae" title="Returns a human readable message for the given error number." alt="" coords="1063,455,1185,484"/>
+<area shape="rect" id="node122" href="$df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20" title="Frees the space of the error message generated by GetErrorMessage(int)" alt="" coords="1060,508,1188,538"/>
+</map>

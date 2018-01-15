@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -114,12 +115,16 @@ Include dependency graph for cipelectronickey.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d8e/cipelectronickey_8h__dep__incl.svg" width="619" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d8e/cipelectronickey_8h__dep__incl.svg" width="100%" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
 <p><a href="../../d0/d23/cipelectronickey_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CIP Electronic Key Segment struct.  <a href="../../d9/da7/structCipElectronicKey.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
@@ -143,16 +148,22 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the vendor ID form the electronic key.  <a href="#a08b515351383f3ccdcd99d80ad9a3cd1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#ab1c62d1eca42444b24da4e61ee273ef3">ElectronicKeyFormat4New</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the electroic key format 4 class.  <a href="#ab1c62d1eca42444b24da4e61ee273ef3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#abbde02813367d3358d52b4d1834365a1">ElectronicKeyFormat4SetDeviceType</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> device_type, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the device type in the electronic key.  <a href="#abbde02813367d3358d52b4d1834365a1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#aeef92af1525065849e2cbab7ed8ae057">ElectronicKeyFormat4SetMajorRevisionCompatibility</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> major_revision_compatibility, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the major revision byte including the compatibility flag.  <a href="#aeef92af1525065849e2cbab7ed8ae057"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a95f29f728627f94cfee3e3bce342d78f">ElectronicKeyFormat4SetMinorRevision</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> minor_revision, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the devices minor revision in an format 4 electronic key.  <a href="#a95f29f728627f94cfee3e3bce342d78f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#aab37ab3ef4b3c1722b43e9c53bf9aa29">ElectronicKeyFormat4SetProductCode</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> product_code, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set product code in the electronic key.  <a href="#aab37ab3ef4b3c1722b43e9c53bf9aa29"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a7b91a4a7fbbcea6e1616e60046de9b21">ElectronicKeyFormat4SetVendorId</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> vendor_id, <a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets vendor ID in the electronic key.  <a href="#a7b91a4a7fbbcea6e1616e60046de9b21"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#add2bfb728aa3034ebc338ddf4577b137">ElectronicKeyFormat4SetDeviceType</a> (<a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> device_type)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the device type in the electronic key.  <a href="#add2bfb728aa3034ebc338ddf4577b137"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a71ffc2b7bbd7544dd0188e0235d9d4c9">ElectronicKeyFormat4SetMajorRevisionCompatibility</a> (<a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a> major_revision_compatibility)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the major revision byte including the compatibility flag.  <a href="#a71ffc2b7bbd7544dd0188e0235d9d4c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#aff602fc99dcb0bb60d7add9506d5c65c">ElectronicKeyFormat4SetMinorRevision</a> (<a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> minor_revision)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the devices minor revision in an format 4 electronic key.  <a href="#aff602fc99dcb0bb60d7add9506d5c65c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#adf0067da84231546724ff4686a2be2e5">ElectronicKeyFormat4SetProductCode</a> (<a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> product_code)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set product code in the electronic key.  <a href="#adf0067da84231546724ff4686a2be2e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a780d9a63ab443146b8fdd2e75f411c1b">ElectronicKeyFormat4SetVendorId</a> (<a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> vendor_id)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets vendor ID in the electronic key.  <a href="#a780d9a63ab443146b8fdd2e75f411c1b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a80c591d0ec1d15ee718f6fc6b4c98fbe">ElectronicKeyGetKeyData</a> (const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a99aaf700fd359aec1dd2bf782014f121">ElectronicKeyGetKeyFormat</a> (const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a6741c23e67767ee2677c92dba6643460">ElectronicKeyGetSegmentType</a> (const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#af49b7cfcc0ca0aacd39fb7ef3871405f">ElectronicKeySetKeyData</a> (<a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key, void *key_data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a3270009c0d91146b727af56b537358c0">ElectronicKeySetKeyFormat</a> (<a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> key_format)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#a1c00c3cf7c2d627913a7deb341d7c55e">ElectronicKeySetSegmentType</a> (<a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const electronic_key, const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="el" href="../../d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633">segment_type</a>)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d23/cipelectronickey_8h.html#ac8c0e6bc7be47729fc64d4ad3fa66bb0">kElectronicKeyFormat4Size</a></td></tr>
@@ -171,7 +182,7 @@ Variables</h2></td></tr>
 
 <p>Declaration of the electronic key format 4 data struct for the class. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00017">17</a> of file <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00039">39</a> of file <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html">cipelectronickey.h</a>.</p>
 
 </div>
 </div>
@@ -200,9 +211,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00025">25</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00041">41</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -238,11 +249,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The device type </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00047">47</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00059">59</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00013">electronic_key_format_4::device_type</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00029">electronic_key_format_4::device_type</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -278,11 +289,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The device's major revision </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00069">69</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00080">80</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00015">electronic_key_format_4::major_revision_compatibility</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00031">electronic_key_format_4::major_revision_compatibility</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -318,11 +329,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if compatibility bit is set, false if otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00075">75</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00086">86</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00015">electronic_key_format_4::major_revision_compatibility</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00031">electronic_key_format_4::major_revision_compatibility</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -358,11 +369,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The device's minor revision </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00090">90</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00100">100</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00016">electronic_key_format_4::minor_revision</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00032">electronic_key_format_4::minor_revision</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -398,11 +409,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The product code </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00058">58</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00069">69</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00014">electronic_key_format_4::product_code</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00030">electronic_key_format_4::product_code</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -438,11 +449,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The vendor ID </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00036">36</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00050">50</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00012">electronic_key_format_4::vendor_id</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00028">electronic_key_format_4::vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00946">CheckElectronicKeyData()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -471,9 +482,9 @@ Here is the caller graph for this function:</div>
 <p>Constructor for the electroic key format 4 class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A new unset electronic key </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00021">21</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00037">37</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01280">ParseConnectionPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01018">ParseConnectionPath()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -485,21 +496,21 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abbde02813367d3358d52b4d1834365a1"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetDeviceType" ref="abbde02813367d3358d52b4d1834365a1" args="(const CipUint device_type, ElectronicKeyFormat4 *const electronic_key)" -->
+<a class="anchor" id="add2bfb728aa3034ebc338ddf4577b137"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetDeviceType" ref="add2bfb728aa3034ebc338ddf4577b137" args="(ElectronicKeyFormat4 *const electronic_key, const CipUint device_type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#abbde02813367d3358d52b4d1834365a1">ElectronicKeyFormat4SetDeviceType</a> </td>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#add2bfb728aa3034ebc338ddf4577b137">ElectronicKeyFormat4SetDeviceType</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
-          <td class="paramname"><em>device_type</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
-          <td class="paramname"><em>electronic_key</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>device_type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -519,37 +530,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00041">41</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00055">55</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00013">electronic_key_format_4::device_type</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00029">electronic_key_format_4::device_type</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_abbde02813367d3358d52b4d1834365a1_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_add2bfb728aa3034ebc338ddf4577b137_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aeef92af1525065849e2cbab7ed8ae057"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetMajorRevisionCompatibility" ref="aeef92af1525065849e2cbab7ed8ae057" args="(const CipByte major_revision_compatibility, ElectronicKeyFormat4 *const electronic_key)" -->
+<a class="anchor" id="a71ffc2b7bbd7544dd0188e0235d9d4c9"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetMajorRevisionCompatibility" ref="a71ffc2b7bbd7544dd0188e0235d9d4c9" args="(ElectronicKeyFormat4 *const electronic_key, const CipByte major_revision_compatibility)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#aeef92af1525065849e2cbab7ed8ae057">ElectronicKeyFormat4SetMajorRevisionCompatibility</a> </td>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a71ffc2b7bbd7544dd0188e0235d9d4c9">ElectronicKeyFormat4SetMajorRevisionCompatibility</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a>&#160;</td>
-          <td class="paramname"><em>major_revision_compatibility</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
-          <td class="paramname"><em>electronic_key</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa8f68ab5a4077bda5c7bccf53ffe6f8a">CipByte</a>&#160;</td>
+          <td class="paramname"><em>major_revision_compatibility</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -569,37 +580,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00063">63</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00074">74</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00015">electronic_key_format_4::major_revision_compatibility</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00031">electronic_key_format_4::major_revision_compatibility</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_aeef92af1525065849e2cbab7ed8ae057_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_a71ffc2b7bbd7544dd0188e0235d9d4c9_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a95f29f728627f94cfee3e3bce342d78f"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetMinorRevision" ref="a95f29f728627f94cfee3e3bce342d78f" args="(const CipUsint minor_revision, ElectronicKeyFormat4 *const electronic_key)" -->
+<a class="anchor" id="aff602fc99dcb0bb60d7add9506d5c65c"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetMinorRevision" ref="aff602fc99dcb0bb60d7add9506d5c65c" args="(ElectronicKeyFormat4 *const electronic_key, const CipUsint minor_revision)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a95f29f728627f94cfee3e3bce342d78f">ElectronicKeyFormat4SetMinorRevision</a> </td>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#aff602fc99dcb0bb60d7add9506d5c65c">ElectronicKeyFormat4SetMinorRevision</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
-          <td class="paramname"><em>minor_revision</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
-          <td class="paramname"><em>electronic_key</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
+          <td class="paramname"><em>minor_revision</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -619,37 +630,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00085">85</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00096">96</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00016">electronic_key_format_4::minor_revision</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00032">electronic_key_format_4::minor_revision</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_a95f29f728627f94cfee3e3bce342d78f_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_aff602fc99dcb0bb60d7add9506d5c65c_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aab37ab3ef4b3c1722b43e9c53bf9aa29"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetProductCode" ref="aab37ab3ef4b3c1722b43e9c53bf9aa29" args="(const CipUint product_code, ElectronicKeyFormat4 *const electronic_key)" -->
+<a class="anchor" id="adf0067da84231546724ff4686a2be2e5"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetProductCode" ref="adf0067da84231546724ff4686a2be2e5" args="(ElectronicKeyFormat4 *const electronic_key, const CipUint product_code)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#aab37ab3ef4b3c1722b43e9c53bf9aa29">ElectronicKeyFormat4SetProductCode</a> </td>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#adf0067da84231546724ff4686a2be2e5">ElectronicKeyFormat4SetProductCode</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
-          <td class="paramname"><em>product_code</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
-          <td class="paramname"><em>electronic_key</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>product_code</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -669,37 +680,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00052">52</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00064">64</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00014">electronic_key_format_4::product_code</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00030">electronic_key_format_4::product_code</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_aab37ab3ef4b3c1722b43e9c53bf9aa29_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_adf0067da84231546724ff4686a2be2e5_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7b91a4a7fbbcea6e1616e60046de9b21"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetVendorId" ref="a7b91a4a7fbbcea6e1616e60046de9b21" args="(const CipUint vendor_id, ElectronicKeyFormat4 *const electronic_key)" -->
+<a class="anchor" id="a780d9a63ab443146b8fdd2e75f411c1b"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyFormat4SetVendorId" ref="a780d9a63ab443146b8fdd2e75f411c1b" args="(ElectronicKeyFormat4 *const electronic_key, const CipUint vendor_id)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a7b91a4a7fbbcea6e1616e60046de9b21">ElectronicKeyFormat4SetVendorId</a> </td>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a780d9a63ab443146b8fdd2e75f411c1b">ElectronicKeyFormat4SetVendorId</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
-          <td class="paramname"><em>vendor_id</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7">ElectronicKeyFormat4</a> *const&#160;</td>
-          <td class="paramname"><em>electronic_key</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>vendor_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -719,19 +730,167 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00030">30</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00046">46</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00012">electronic_key_format_4::vendor_id</a>.</p>
+<p>References <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00028">electronic_key_format_4::vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00336">GetPathLogicalSegmentElectronicKeyFormat4()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00421">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_a7b91a4a7fbbcea6e1616e60046de9b21_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d23/cipelectronickey_8h_a780d9a63ab443146b8fdd2e75f411c1b_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a80c591d0ec1d15ee718f6fc6b4c98fbe"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyGetKeyData" ref="a80c591d0ec1d15ee718f6fc6b4c98fbe" args="(const CipElectronicKey *const electronic_key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a80c591d0ec1d15ee718f6fc6b4c98fbe">ElectronicKeyGetKeyData</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00023">23</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00020">CipElectronicKey::key_data</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99aaf700fd359aec1dd2bf782014f121"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyGetKeyFormat" ref="a99aaf700fd359aec1dd2bf782014f121" args="(const CipElectronicKey *const electronic_key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a99aaf700fd359aec1dd2bf782014f121">ElectronicKeyGetKeyFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00015">15</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00018">CipElectronicKey::key_format</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6741c23e67767ee2677c92dba6643460"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeyGetSegmentType" ref="a6741c23e67767ee2677c92dba6643460" args="(const CipElectronicKey *const electronic_key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a6741c23e67767ee2677c92dba6643460">ElectronicKeyGetSegmentType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af49b7cfcc0ca0aacd39fb7ef3871405f"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeySetKeyData" ref="af49b7cfcc0ca0aacd39fb7ef3871405f" args="(CipElectronicKey *const electronic_key, void *key_data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#af49b7cfcc0ca0aacd39fb7ef3871405f">ElectronicKeySetKeyData</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00019">19</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00020">CipElectronicKey::key_data</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3270009c0d91146b727af56b537358c0"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeySetKeyFormat" ref="a3270009c0d91146b727af56b537358c0" args="(CipElectronicKey *const electronic_key, const CipUsint key_format)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a3270009c0d91146b727af56b537358c0">ElectronicKeySetKeyFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
+          <td class="paramname"><em>key_format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00011">11</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d23/cipelectronickey_8h_source.html#l00018">CipElectronicKey::key_format</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c00c3cf7c2d627913a7deb341d7c55e"></a><!-- doxytag: member="cipelectronickey.h::ElectronicKeySetSegmentType" ref="a1c00c3cf7c2d627913a7deb341d7c55e" args="(CipElectronicKey *const electronic_key, const CipUsint segment_type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d23/cipelectronickey_8h.html#a1c00c3cf7c2d627913a7deb341d7c55e">ElectronicKeySetSegmentType</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/da7/structCipElectronicKey.html">CipElectronicKey</a> *const&#160;</td>
+          <td class="paramname"><em>electronic_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a>&#160;</td>
+          <td class="paramname"><em>segment_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -747,7 +906,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00019">19</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html#l00035">35</a> of file <a class="el" href="../../d3/dfe/cipelectronickey_8c_source.html">cipelectronickey.c</a>.</p>
 
 </div>
 </div>
@@ -771,7 +930,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../d0/d23/cipelectronickey_8h.html">cipelectronickey.h</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 10 2018 21:51:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 15 2018 14:54:17 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

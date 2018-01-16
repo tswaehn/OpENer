@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 910;
+var viewWidth = 904;
 var viewHeight = 110;
 var sectionId = 'dynsection-2';
 </script>
@@ -42,92 +42,92 @@ var sectionId = 'dynsection-2';
 <title>G</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-60.5 0,-81.5 326,-81.5 326,-60.5 0,-60.5"/>
-<text text-anchor="middle" x="163" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-40.5 0,-61.5 326,-61.5 326,-40.5 0,-40.5"/>
+<text text-anchor="middle" x="163" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseCommunicationChannelsAndRemoveFromActiveConnectionsList</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
 <a xlink:href="../../db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9" target="_top" xlink:title="CloseUdpSocket">
-<polygon fill="none" stroke="black" points="395.5,-80.5 395.5,-101.5 486.5,-101.5 486.5,-80.5 395.5,-80.5"/>
-<text text-anchor="middle" x="441" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseUdpSocket</text>
+<polygon fill="none" stroke="black" points="396.5,-80.5 396.5,-101.5 487.5,-101.5 487.5,-80.5 396.5,-80.5"/>
+<text text-anchor="middle" x="442" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseUdpSocket</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M309.327,-81.5271C336.316,-83.4688 362.935,-85.3838 385.101,-86.9785"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="385.055,-90.4841 395.28,-87.7108 385.557,-83.5022 385.055,-90.4841"/>
+<path fill="none" stroke="midnightblue" d="M236.304,-61.5095C283.237,-68.2383 343.184,-76.8328 386.237,-83.0054"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="385.855,-86.4863 396.251,-84.441 386.849,-79.5572 385.855,-86.4863"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a144782b4e2a5afc89ec32854511bbea7" target="_top" xlink:title="Removes connection from the list of active connections.">
-<polygon fill="none" stroke="black" points="362,-40.5 362,-61.5 520,-61.5 520,-40.5 362,-40.5"/>
-<text text-anchor="middle" x="441" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">RemoveFromActiveConnections</text>
+<a xlink:href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549" target="_top" xlink:title="ConnectionObjectInitializeEmpty">
+<polygon fill="none" stroke="black" points="362.5,-40.5 362.5,-61.5 521.5,-61.5 521.5,-40.5 362.5,-40.5"/>
+<text text-anchor="middle" x="442" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectInitializeEmpty</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M309.327,-60.4729C323.712,-59.438 337.992,-58.4107 351.548,-57.4354"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="352.041,-60.9091 361.764,-56.7005 351.538,-53.9271 352.041,-60.9091"/>
+<path fill="none" stroke="midnightblue" d="M326.103,-51C335.004,-51 343.774,-51 352.261,-51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="352.463,-54.5001 362.463,-51 352.462,-47.5001 352.463,-54.5001"/>
+</g>
+<!-- Node6 -->
+<g id="node11" class="node"><title>Node6</title>
+<a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a144782b4e2a5afc89ec32854511bbea7" target="_top" xlink:title="Removes connection from the list of active connections.">
+<polygon fill="none" stroke="black" points="363,-0.5 363,-21.5 521,-21.5 521,-0.5 363,-0.5"/>
+<text text-anchor="middle" x="442" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">RemoveFromActiveConnections</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M236.304,-40.4905C273.8,-35.1146 319.603,-28.5479 358.462,-22.9768"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="359.3,-26.3926 368.702,-21.5087 358.306,-19.4634 359.3,-26.3926"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
 <a xlink:href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" target="_top" xlink:title="Close the given socket and clean up the stack.">
-<polygon fill="none" stroke="black" points="599.5,-80.5 599.5,-101.5 672.5,-101.5 672.5,-80.5 599.5,-80.5"/>
-<text text-anchor="middle" x="636" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
+<polygon fill="none" stroke="black" points="597.5,-80.5 597.5,-101.5 670.5,-101.5 670.5,-80.5 597.5,-80.5"/>
+<text text-anchor="middle" x="634" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M486.719,-91C517.566,-91 558.154,-91 589.221,-91"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="589.364,-94.5001 599.364,-91 589.364,-87.5001 589.364,-94.5001"/>
+<path fill="none" stroke="midnightblue" d="M487.501,-91C517.558,-91 556.847,-91 587.171,-91"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="587.493,-94.5001 597.493,-91 587.493,-87.5001 587.493,-94.5001"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
 <a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" target="_top" xlink:title="Platform dependent code to close a socket.">
-<polygon fill="none" stroke="black" points="772,-80.5 772,-101.5 882,-101.5 882,-80.5 772,-80.5"/>
-<text text-anchor="middle" x="827" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
+<polygon fill="none" stroke="black" points="766,-80.5 766,-101.5 876,-101.5 876,-80.5 766,-80.5"/>
+<text text-anchor="middle" x="821" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M672.827,-91C697.942,-91 731.896,-91 761.548,-91"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="761.835,-94.5001 771.835,-91 761.835,-87.5001 761.835,-94.5001"/>
-</g>
-<!-- Node6 -->
-<g id="node11" class="node"><title>Node6</title>
-<a xlink:href="../../df/d91/cipconnectionobject_8c.html#a8f507fa4e57499d8b96c8adb2ad8a549" target="_top" xlink:title="ConnectionObjectInitializeEmpty">
-<polygon fill="none" stroke="black" points="556.5,-40.5 556.5,-61.5 715.5,-61.5 715.5,-40.5 556.5,-40.5"/>
-<text text-anchor="middle" x="636" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectInitializeEmpty</text>
-</a>
-</g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M520.033,-51C528.607,-51 537.38,-51 546.071,-51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="546.221,-54.5001 556.221,-51 546.221,-47.5001 546.221,-54.5001"/>
+<path fill="none" stroke="midnightblue" d="M670.945,-91C695.024,-91 727.118,-91 755.445,-91"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="755.688,-94.5001 765.688,-91 755.688,-87.5001 755.688,-94.5001"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
 <a xlink:href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e" target="_top" xlink:title="DoublyLinkedListRemoveNode">
-<polygon fill="none" stroke="black" points="560,-0.5 560,-21.5 712,-21.5 712,-0.5 560,-0.5"/>
-<text text-anchor="middle" x="636" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListRemoveNode</text>
+<polygon fill="none" stroke="black" points="558,-0.5 558,-21.5 710,-21.5 710,-0.5 558,-0.5"/>
+<text text-anchor="middle" x="634" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListRemoveNode</text>
 </a>
 </g>
-<!-- Node5&#45;&gt;Node7 -->
-<g id="edge12" class="edge"><title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M492.234,-40.4905C517.549,-35.2977 548.281,-28.9936 574.823,-23.5492"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="575.677,-26.9468 584.77,-21.5087 574.271,-20.0896 575.677,-26.9468"/>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge12" class="edge"><title>Node6&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M521.202,-11C529.889,-11 538.765,-11 547.534,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="547.761,-14.5001 557.761,-11 547.761,-7.5001 547.761,-14.5001"/>
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
 <a xlink:href="../../d9/ddc/doublylinkedlist_8c.html#a87710acb9f42fba14822fb824814105c" target="_top" xlink:title="DoublyLinkedListNodeDestroy">
-<polygon fill="none" stroke="black" points="752.5,-0.5 752.5,-21.5 901.5,-21.5 901.5,-0.5 752.5,-0.5"/>
-<text text-anchor="middle" x="827" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListNodeDestroy</text>
+<polygon fill="none" stroke="black" points="746.5,-0.5 746.5,-21.5 895.5,-21.5 895.5,-0.5 746.5,-0.5"/>
+<text text-anchor="middle" x="821" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListNodeDestroy</text>
 </a>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge14" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M712.037,-11C722.024,-11 732.308,-11 742.425,-11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="742.471,-14.5001 752.471,-11 742.471,-7.5001 742.471,-14.5001"/>
+<path fill="none" stroke="midnightblue" d="M710.06,-11C718.636,-11 727.415,-11 736.094,-11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="736.219,-14.5001 746.219,-11 736.219,-7.5001 736.219,-14.5001"/>
 </g>
 </g>
 </svg>

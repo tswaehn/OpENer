@@ -38,6 +38,7 @@ var cipconnectionobject_8h =
     [ "ConnectionObjectGetProducedConnectionPathLength", "d1/d6c/cipconnectionobject_8h.html#a682da7d2e97b2a4aca645b630cf039a5", null ],
     [ "ConnectionObjectGetProducedConnectionSize", "d1/d6c/cipconnectionobject_8h.html#a9f4d03d6a91cc147ef23c178d1e809e9", null ],
     [ "ConnectionObjectGetProductionInhibitTime", "d1/d6c/cipconnectionobject_8h.html#a2d8f4835df1f11d188736b854d28e7d9", null ],
+    [ "ConnectionObjectGetRequestedPacketInterval", "d1/d6c/cipconnectionobject_8h.html#a2e9338ca3ac65ce70ec3eef94f8dc906", null ],
     [ "ConnectionObjectGetState", "d1/d6c/cipconnectionobject_8h.html#a9c381240583828bec2cda2d54dc94d3b", null ],
     [ "ConnectionObjectGetTransportClassTriggerDirection", "d1/d6c/cipconnectionobject_8h.html#a04e33a9f06482278df128b0d7d28a763", null ],
     [ "ConnectionObjectGetTransportClassTriggerProductionTrigger", "d1/d6c/cipconnectionobject_8h.html#ad29970b643c2677739c3f0e0a7a58f37", null ],

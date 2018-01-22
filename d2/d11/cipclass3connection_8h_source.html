@@ -112,17 +112,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00032"></a>00032 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/da3/cipconnectionmanager_8h.html">cipconnectionmanager.h</a>&quot;</span>
 <a name="l00033"></a>00033 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/d6c/cipconnectionobject_8h.html">cipconnectionobject.h</a>&quot;</span>
 <a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a54fac9132bc63fdce902025c0827b6cf">00035</a> <span class="keyword">typedef</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> (*<a class="code" href="../../d2/d11/cipclass3connection_8h.html#a54fac9132bc63fdce902025c0827b6cf">CipConnectionStateHandler</a>)(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state);
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a>(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object, <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state);
+<a name="l00035"></a><a class="code" href="../../d2/d11/cipclass3connection_8h.html#a54fac9132bc63fdce902025c0827b6cf">00035</a> <span class="keyword">typedef</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> (*<a class="code" href="../../d2/d11/cipclass3connection_8h.html#a54fac9132bc63fdce902025c0827b6cf">CipConnectionStateHandler</a>)(<a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT
+<a name="l00036"></a>00036                                                <span class="keyword">const</span> connection_object,
+<a name="l00037"></a>00037                                                <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state);
 <a name="l00038"></a>00038 
-<a name="l00048"></a>00048 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a45bd741b44137164c07a6ce09a7a9a9d" title="Check if Class3 connection is available and if yes setup all data.">EstablishClass3Connection</a>(
-<a name="l00049"></a>00049   <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object,
-<a name="l00050"></a>00050   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *<span class="keyword">const</span> extended_error);
-<a name="l00051"></a>00051 
-<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>(<span class="keywordtype">void</span>);
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_CIPCLASS3CONNECTION_H_ */</span>
+<a name="l00039"></a>00039 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a6e10acd1e553be5c7c6e614580a25303">CipClass3ConnectionObjectStateEstablishedHandler</a>(
+<a name="l00040"></a>00040   <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object,
+<a name="l00041"></a>00041   <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117">ConnectionObjectState</a> new_state);
+<a name="l00042"></a>00042 
+<a name="l00052"></a>00052 <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709" title="EIP stack status enum.">EipStatus</a> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a45bd741b44137164c07a6ce09a7a9a9d" title="Check if Class3 connection is available and if yes setup all data.">EstablishClass3Connection</a>(
+<a name="l00053"></a>00053   <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *RESTRICT <span class="keyword">const</span> connection_object,
+<a name="l00054"></a>00054   <a class="code" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> *<span class="keyword">const</span> extended_error);
+<a name="l00055"></a>00055 
+<a name="l00060"></a>00060 <span class="keywordtype">void</span> <a class="code" href="../../dc/d93/cipclass3connection_8c.html#a2afaf72caf177920d6b99c503d7fc133" title="Initializes the explicit connections mechanism.">InitializeClass3ConnectionData</a>(<span class="keywordtype">void</span>);
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_CIPCLASS3CONNECTION_H_ */</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -143,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d2/d11/cipclass3connection_8h.html">cipclass3connection.h</a>      </li>
 
-    <li class="footer">Generated on Sat Jan 20 2018 20:46:20 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 22 2018 21:11:37 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

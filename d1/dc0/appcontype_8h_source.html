@@ -120,16 +120,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00038"></a>00038 <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<a class="code" href="../../d1/dbc/appcontype_8c.html#ac568876f2c5ba2da91a0e62e17e27432" title="Check if there exists already an exclusive owner or listen only connection which produces the input a...">GetExistingProducerMulticastConnection</a>(
 <a name="l00039"></a>00039   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point);
 <a name="l00040"></a>00040 
-<a name="l00049"></a>00049 <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<a class="code" href="../../d1/dbc/appcontype_8c.html#acda34462cc2d60ebb7b48a633bfe3c49" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr...">GetNextNonControlMasterConnection</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point);
-<a name="l00050"></a>00050 
-<a name="l00057"></a>00057 <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point,
-<a name="l00058"></a>00058                                              <span class="keyword">const</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> instance_type);
-<a name="l00059"></a>00059 
-<a name="l00065"></a>00065 <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a>(<span class="keywordtype">void</span>);
-<a name="l00066"></a>00066 
-<a name="l00073"></a>00073 <span class="keywordtype">bool</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#ac869fbefb1f616eaa666fe659c224fe3" title="Check if there is an established connection that uses the same config point.">ConnectionWithSameConfigPointExists</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point);
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_APPCONTYPE_H_ */</span>
+<a name="l00049"></a>00049 <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *<a class="code" href="../../d1/dbc/appcontype_8c.html#acda34462cc2d60ebb7b48a633bfe3c49" title="check if there exists an producing multicast exclusive owner or listen only connection that should pr...">GetNextNonControlMasterConnection</a>(
+<a name="l00050"></a>00050   <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point);
+<a name="l00051"></a>00051 
+<a name="l00058"></a>00058 <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point,
+<a name="l00059"></a>00059                                              <span class="keyword">const</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> instance_type);
+<a name="l00060"></a>00060 
+<a name="l00066"></a>00066 <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a>(<span class="keywordtype">void</span>);
+<a name="l00067"></a>00067 
+<a name="l00074"></a>00074 <span class="keywordtype">bool</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#ac869fbefb1f616eaa666fe659c224fe3" title="Check if there is an established connection that uses the same config point.">ConnectionWithSameConfigPointExists</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point);
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 <span class="preprocessor">#endif </span><span class="comment">/* OPENER_APPCONTYPE_H_ */</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -150,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d1/dc0/appcontype_8h.html">appcontype.h</a>      </li>
 
-    <li class="footer">Generated on Sat Jan 20 2018 20:46:20 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 22 2018 21:11:37 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

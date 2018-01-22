@@ -110,55 +110,56 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00009"></a>00009 <span class="preprocessor"></span>
 <a name="l00016"></a><a class="code" href="../../d9/d31/doublylinkedlist_8h.html#add6ea5eb3f5590184f6e96622842e0d1">00016</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">doubly_linked_list_node</a> <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a>;
 <a name="l00017"></a>00017 
-<a name="l00018"></a><a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">00018</a> <span class="keyword">typedef</span> <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> * (*NodeMemoryAllocator)();
-<a name="l00019"></a>00019 
-<a name="l00020"></a><a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">00020</a> <span class="keyword">typedef</span> void (*<a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a>)(<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **node);
-<a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">00022</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">doubly_linked_list_node</a> {
-<a name="l00023"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#ab0999030e750e1ea43b6a7178d6290e9">00023</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#ab0999030e750e1ea43b6a7178d6290e9">previous</a>;
-<a name="l00024"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">00024</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
-<a name="l00025"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">00025</a>   <span class="keywordtype">void</span> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
-<a name="l00026"></a>00026 } <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#add6ea5eb3f5590184f6e96622842e0d1">DoublyLinkedListNode</a>;
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html">00028</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00029"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">00029</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
-<a name="l00030"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a3863c07c210edf26d74f2d80996c4e90">00030</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a3863c07c210edf26d74f2d80996c4e90">last</a>;
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#af3694f0151adfa8cf63a1d8806045aae">00032</a>   <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> <a class="code" href="../../dd/de5/structDoublyLinkedList.html#af3694f0151adfa8cf63a1d8806045aae">allocator</a>;
-<a name="l00033"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a9a0f7c63af318823c63283548aff9a32">00033</a>   <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a> <a class="code" href="../../dd/de5/structDoublyLinkedList.html#a9a0f7c63af318823c63283548aff9a32">deallocator</a>;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035 } <a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a>;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a4bc27e688b6d12284ba386e8a1072ed2">DoublyLinkedListInitialize</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *list,
-<a name="l00038"></a>00038                                 <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> allocator,
-<a name="l00039"></a>00039                                 <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a> deallocator);
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a86735cec2bd59496881165132356e342">DoublyLinkedListDestroy</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *list);
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a973d3b25eae020e7b5e5927c8785106c">DoublyLinkedListNodeCreate</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keyword">const</span> data,
-<a name="l00044"></a>00044                                                  <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> allocator);
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a87710acb9f42fba14822fb824814105c">DoublyLinkedListNodeDestroy</a>(<span class="keyword">const</span> <a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00047"></a>00047                                  <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **node);
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#abca57475d14f9dffff53bea22eaf7b2f">DoublyLinkedListInsertAtHead</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00050"></a>00050                                   <span class="keywordtype">void</span> *data);
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a65e11098b03916d8ab85e4b5150bd648">DoublyLinkedListInsertAtTail</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00053"></a>00053                                   <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keyword">const</span> data);
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#aae79c6935734100cad167ec6317fbe07">DoublyLinkedListInsertBeforeNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00056"></a>00056                                       <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node,
-<a name="l00057"></a>00057                                       <span class="keywordtype">void</span> *data);
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a9b218084463a6be3a945c2d9c06f7abe">DoublyLinkedListInsertAfterNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00060"></a>00060                                      <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node,
-<a name="l00061"></a>00061                                      <span class="keywordtype">void</span> *data);
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e">DoublyLinkedListRemoveNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
-<a name="l00064"></a>00064                                 <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **pointer_to_node_pointer);
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066 <span class="preprocessor">#endif </span><span class="comment">/* SRC_UTILS_DOUBLYLINKEDLIST_H_ */</span>
+<a name="l00018"></a><a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">00018</a> <span class="keyword">typedef</span> <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> * (*NodeMemoryAllocator)(
+<a name="l00019"></a>00019   );
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">00021</a> <span class="keyword">typedef</span> void (*<a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a>)(<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **node);
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">00023</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">doubly_linked_list_node</a> {
+<a name="l00024"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#ab0999030e750e1ea43b6a7178d6290e9">00024</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#ab0999030e750e1ea43b6a7178d6290e9">previous</a>;
+<a name="l00025"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">00025</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
+<a name="l00026"></a><a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">00026</a>   <span class="keywordtype">void</span> *<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
+<a name="l00027"></a>00027 } <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#add6ea5eb3f5590184f6e96622842e0d1">DoublyLinkedListNode</a>;
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html">00029</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00030"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">00030</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
+<a name="l00031"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a3863c07c210edf26d74f2d80996c4e90">00031</a>   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a3863c07c210edf26d74f2d80996c4e90">last</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#af3694f0151adfa8cf63a1d8806045aae">00033</a>   <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> <a class="code" href="../../dd/de5/structDoublyLinkedList.html#af3694f0151adfa8cf63a1d8806045aae">allocator</a>;
+<a name="l00034"></a><a class="code" href="../../dd/de5/structDoublyLinkedList.html#a9a0f7c63af318823c63283548aff9a32">00034</a>   <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a> <a class="code" href="../../dd/de5/structDoublyLinkedList.html#a9a0f7c63af318823c63283548aff9a32">deallocator</a>;
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 } <a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a>;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a4bc27e688b6d12284ba386e8a1072ed2">DoublyLinkedListInitialize</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *list,
+<a name="l00039"></a>00039                                 <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> allocator,
+<a name="l00040"></a>00040                                 <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d">NodeMemoryDeallocator</a> deallocator);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a86735cec2bd59496881165132356e342">DoublyLinkedListDestroy</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *list);
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *<a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a973d3b25eae020e7b5e5927c8785106c">DoublyLinkedListNodeCreate</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keyword">const</span> data,
+<a name="l00045"></a>00045                                                  <a class="code" href="../../d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2">NodeMemoryAllocator</a> allocator);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a87710acb9f42fba14822fb824814105c">DoublyLinkedListNodeDestroy</a>(<span class="keyword">const</span> <a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00048"></a>00048                                  <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **node);
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#abca57475d14f9dffff53bea22eaf7b2f">DoublyLinkedListInsertAtHead</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00051"></a>00051                                   <span class="keywordtype">void</span> *data);
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a65e11098b03916d8ab85e4b5150bd648">DoublyLinkedListInsertAtTail</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00054"></a>00054                                   <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keyword">const</span> data);
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#aae79c6935734100cad167ec6317fbe07">DoublyLinkedListInsertBeforeNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00057"></a>00057                                       <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node,
+<a name="l00058"></a>00058                                       <span class="keywordtype">void</span> *data);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a9b218084463a6be3a945c2d9c06f7abe">DoublyLinkedListInsertAfterNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00061"></a>00061                                      <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node,
+<a name="l00062"></a>00062                                      <span class="keywordtype">void</span> *data);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="keywordtype">void</span> <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e">DoublyLinkedListRemoveNode</a>(<a class="code" href="../../dd/de5/structDoublyLinkedList.html">DoublyLinkedList</a> *<span class="keyword">const</span> list,
+<a name="l00065"></a>00065                                 <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> **pointer_to_node_pointer);
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="preprocessor">#endif </span><span class="comment">/* SRC_UTILS_DOUBLYLINKEDLIST_H_ */</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -179,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d9/d31/doublylinkedlist_8h.html">doublylinkedlist.h</a>      </li>
 
-    <li class="footer">Generated on Sat Jan 20 2018 20:46:20 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Jan 22 2018 21:11:37 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

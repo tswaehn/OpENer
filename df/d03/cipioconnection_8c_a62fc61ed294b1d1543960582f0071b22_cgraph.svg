@@ -69,15 +69,15 @@ var sectionId = 'dynsection-1';
 <path fill="none" stroke="midnightblue" d="M326.103,-51C335.004,-51 343.774,-51 352.261,-51"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="352.463,-54.5001 362.463,-51 352.462,-47.5001 352.463,-54.5001"/>
 </g>
-<!-- Node6 -->
-<g id="node11" class="node"><title>Node6</title>
+<!-- Node7 -->
+<g id="node13" class="node"><title>Node7</title>
 <a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#a144782b4e2a5afc89ec32854511bbea7" target="_top" xlink:title="Removes connection from the list of active connections.">
 <polygon fill="none" stroke="black" points="363,-0.5 363,-21.5 521,-21.5 521,-0.5 363,-0.5"/>
 <text text-anchor="middle" x="442" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">RemoveFromActiveConnections</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M236.304,-40.4905C273.8,-35.1146 319.603,-28.5479 358.462,-22.9768"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="359.3,-26.3926 368.702,-21.5087 358.306,-19.4634 359.3,-26.3926"/>
 </g>
@@ -105,27 +105,39 @@ var sectionId = 'dynsection-1';
 <path fill="none" stroke="midnightblue" d="M670.945,-91C695.024,-91 727.118,-91 755.445,-91"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="755.688,-94.5001 765.688,-91 755.688,-87.5001 755.688,-94.5001"/>
 </g>
-<!-- Node7 -->
-<g id="node13" class="node"><title>Node7</title>
+<!-- Node6 -->
+<g id="node11" class="node"><title>Node6</title>
+<a xlink:href="../../df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15" target="_top" xlink:title="ConnectionObjectSetState">
+<polygon fill="none" stroke="black" points="567.5,-40.5 567.5,-61.5 700.5,-61.5 700.5,-40.5 567.5,-40.5"/>
+<text text-anchor="middle" x="634" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectSetState</text>
+</a>
+</g>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M521.757,-51C533.471,-51 545.518,-51 557.171,-51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="557.293,-54.5001 567.293,-51 557.293,-47.5001 557.293,-54.5001"/>
+</g>
+<!-- Node8 -->
+<g id="node15" class="node"><title>Node8</title>
 <a xlink:href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e" target="_top" xlink:title="DoublyLinkedListRemoveNode">
 <polygon fill="none" stroke="black" points="558,-0.5 558,-21.5 710,-21.5 710,-0.5 558,-0.5"/>
 <text text-anchor="middle" x="634" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListRemoveNode</text>
 </a>
 </g>
-<!-- Node6&#45;&gt;Node7 -->
-<g id="edge12" class="edge"><title>Node6&#45;&gt;Node7</title>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge14" class="edge"><title>Node7&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M521.202,-11C529.889,-11 538.765,-11 547.534,-11"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="547.761,-14.5001 557.761,-11 547.761,-7.5001 547.761,-14.5001"/>
 </g>
-<!-- Node8 -->
-<g id="node15" class="node"><title>Node8</title>
+<!-- Node9 -->
+<g id="node17" class="node"><title>Node9</title>
 <a xlink:href="../../d9/ddc/doublylinkedlist_8c.html#a87710acb9f42fba14822fb824814105c" target="_top" xlink:title="DoublyLinkedListNodeDestroy">
 <polygon fill="none" stroke="black" points="746.5,-0.5 746.5,-21.5 895.5,-21.5 895.5,-0.5 746.5,-0.5"/>
 <text text-anchor="middle" x="821" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkedListNodeDestroy</text>
 </a>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge14" class="edge"><title>Node7&#45;&gt;Node8</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge16" class="edge"><title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M710.06,-11C718.636,-11 727.415,-11 736.094,-11"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="736.219,-14.5001 746.219,-11 736.219,-7.5001 736.219,-14.5001"/>
 </g>

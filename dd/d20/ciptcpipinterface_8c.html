@@ -126,11 +126,6 @@ Include dependency graph for ciptcpipinterface.c:</div>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a30729bd683f7ee214bbb684de52456cd">CipTcpIpInterfaceInit</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializing the data structures of the TCP/IP interface object.  <a href="#a30729bd683f7ee214bbb684de52456cd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a0b2b502f5edf9117f7a8dae94fb6fd9e">ConfigureDomainName</a> (const char *domain_name)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc9/group__CIP__API.html#gab4a2d826ebe9be1b60c0206414a8f8ce">ConfigureHostName</a> (const char *const RESTRICT hostname)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the host name of the device.  <a href="../../d2/dc9/group__CIP__API.html#gab4a2d826ebe9be1b60c0206414a8f8ce"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc9/group__CIP__API.html#ga1f4f417cb95e75c439edabe7b8b91477">ConfigureNetworkInterface</a> (const char *ip_address, const char *subnet_mask, const char *gateway)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the data of the network interface of the device.  <a href="../../d2/dc9/group__CIP__API.html#ga1f4f417cb95e75c439edabe7b8b91477"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e">GetAttributeAllTcpIpInterface</a> (<a class="el" href="../../df/d28/ciptypes_8h.html#aea7976be629e5ece275c993982186188">CipInstance</a> *instance, <a class="el" href="../../dc/d16/structCipMessageRouterRequest.html">CipMessageRouterRequest</a> *message_router_request, <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *message_router_response, struct sockaddr *originator_address)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface</a> (<a class="el" href="../../df/d28/ciptypes_8h.html#aea7976be629e5ece275c993982186188">CipInstance</a> *instance, <a class="el" href="../../dc/d16/structCipMessageRouterRequest.html">CipMessageRouterRequest</a> *message_router_request, <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *message_router_response, struct sockaddr *originator_address)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a01cd6d59afe7613e1c690d8b21207ce6">GetAttributeSingleTcpIpInterface</a> (<a class="el" href="../../df/d28/ciptypes_8h.html#aea7976be629e5ece275c993982186188">CipInstance</a> *const RESTRICT instance, <a class="el" href="../../dc/d16/structCipMessageRouterRequest.html">CipMessageRouterRequest</a> *RESTRICT const message_router_request, <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *RESTRICT const message_router_response, struct sockaddr *originator_address)</td></tr>
@@ -173,9 +168,9 @@ Variables</h2></td></tr>
 <p>Initializing the data structures of the TCP/IP interface object. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>kEipStatusOk on success, otherwise kEipStatusError </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">217</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">162</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00021">configuration_capability_</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00022">configuration_control_</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00180">CreateCipClass()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00063">g_encapsulation_inactivity_timeout</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00046">g_time_to_live_value</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00381">GetAttributeAllTcpIpInterface()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00135">GetCipInstance()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00296">InsertAttribute()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00338">InsertService()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00015">kCipAny</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00034">kCipDword</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00044">kCipEpath</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00031">kCipString</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00050">kCipUdintUdintUdintUdintUdintString</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00022">kCipUint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00021">kCipUsint</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00108">kGetableSingleAndAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00068">kGetAttributeAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00079">kGetAttributeSingle</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00107">kSetAndGetAble</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00080">kSetAttributeSingle</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00133">SetAttributeSingleTcp()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00020">tcp_status_</a>.</p>
+<p>References <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00021">configuration_capability_</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00022">configuration_control_</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00180">CreateCipClass()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00063">g_encapsulation_inactivity_timeout</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00046">g_time_to_live_value</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00322">GetAttributeAllTcpIpInterface()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00135">GetCipInstance()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00296">InsertAttribute()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00337">InsertService()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00015">kCipAny</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00034">kCipDword</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00044">kCipEpath</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00031">kCipString</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00050">kCipUdintUdintUdintUdintUdintString</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00022">kCipUint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00021">kCipUsint</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00107">kGetableSingleAndAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00067">kGetAttributeAll</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00078">kGetAttributeSingle</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00106">kSetAndGetAble</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00079">kSetAttributeSingle</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00078">SetAttributeSingleTcp()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00020">tcp_status_</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00035">CipStackInit()</a>.</p>
 
@@ -191,45 +186,6 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d20/ciptcpipinterface_8c_a30729bd683f7ee214bbb684de52456cd_icgraph.svg" width="398" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0b2b502f5edf9117f7a8dae94fb6fd9e"></a><!-- doxytag: member="ciptcpipinterface.c::ConfigureDomainName" ref="a0b2b502f5edf9117f7a8dae94fb6fd9e" args="(const char *domain_name)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d2/dc9/group__CIP__API.html#ga388b872aa3290d7248bfbf4b61fc4f1e">ConfigureDomainName</a> </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>domain_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00099">99</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
-
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">CipCalloc()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00295">CipTcpIpNetworkInterfaceConfiguration::domain_name</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00137">CipString::length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00138">CipString::string</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00030">main()</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d20/ciptcpipinterface_8c_a0b2b502f5edf9117f7a8dae94fb6fd9e_cgraph.svg" width="299" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d20/ciptcpipinterface_8c_a0b2b502f5edf9117f7a8dae94fb6fd9e_icgraph.svg" width="270" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -273,11 +229,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00381">381</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00322">322</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00154">CipEpath::attribute_number</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00214">CipAttributeStruct::attribute_number</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00227">cip_instance::attributes</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00229">cip_instance::cip_class</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00209">CipMessageRouterResponse::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00208">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00242">cip_class::number_of_attributes</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00187">CipMessageRouterRequest::request_path</a>.</p>
+<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00153">CipEpath::attribute_number</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00213">CipAttributeStruct::attribute_number</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00226">cip_instance::attributes</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::cip_class</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00208">CipMessageRouterResponse::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00207">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f">GetAttributeSingleTcpIpInterface()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00241">cip_class::number_of_attributes</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00186">CipMessageRouterRequest::request_path</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -334,7 +290,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00381">GetAttributeAllTcpIpInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00322">GetAttributeAllTcpIpInterface()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -383,9 +339,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00281">281</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00225">225</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00025">multicast_address_configuration::alloc_control</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00110">BeforeAssemblyDataSend()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00879">CalculateIndex()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00219">CipAttributeStruct::data</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00443">EncodeData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00365">GetCipAttribute()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00054">kCipByteArray</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00030">kCipErrorAttributeNotSupported</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00010">kCipErrorSuccess</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00023">kCipUdint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00022">kCipUint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00021">kCipUsint</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00068">kGetAttributeAll</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00027">multicast_address_configuration::number_of_allocated_multicast_addresses</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00026">multicast_address_configuration::reserved_shall_be_zero</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::starting_multicast_address</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00215">CipAttributeStruct::type</a>.</p>
+<p>References <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00027">multicast_address_configuration::alloc_control</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00110">BeforeAssemblyDataSend()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00875">CalculateIndex()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00440">EncodeData()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00364">GetCipAttribute()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00054">kCipByteArray</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00030">kCipErrorAttributeNotSupported</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00010">kCipErrorSuccess</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00023">kCipUdint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00022">kCipUint</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00021">kCipUsint</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00067">kGetAttributeAll</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00029">multicast_address_configuration::number_of_allocated_multicast_addresses</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00028">multicast_address_configuration::reserved_shall_be_zero</a>, <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00030">multicast_address_configuration::starting_multicast_address</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00214">CipAttributeStruct::type</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -414,9 +370,9 @@ Here is the call graph for this function:</div>
 
 <p>Public Method to get Encapsulation Inactivity Timeout Value. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00438">438</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00379">379</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00219">CipAttributeStruct::data</a>, and <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00365">GetCipAttribute()</a>.</p>
+<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, and <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00364">GetCipAttribute()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -465,11 +421,11 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00133">133</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00078">78</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00154">CipEpath::attribute_number</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00879">CalculateIndex()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00229">cip_instance::cip_class</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00189">CipMessageRouterRequest::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00219">CipAttributeStruct::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00208">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00201">CipMessageRouterResponse::general_status</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00365">GetCipAttribute()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00024">kCipErrorAttributeNotSetable</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00030">kCipErrorAttributeNotSupported</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00019">kCipErrorInvalidAttributeValue</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00029">kCipErrorNotEnoughData</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00010">kCipErrorSuccess</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00198">CipMessageRouterResponse::reply_service</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00187">CipMessageRouterRequest::request_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00186">CipMessageRouterRequest::service</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00247">cip_class::set_bit_mask</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00203">CipMessageRouterResponse::size_of_additional_status</a>.</p>
+<p>References <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00153">CipEpath::attribute_number</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00875">CalculateIndex()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::cip_class</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00188">CipMessageRouterRequest::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00207">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00200">CipMessageRouterResponse::general_status</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00364">GetCipAttribute()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00024">kCipErrorAttributeNotSetable</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00030">kCipErrorAttributeNotSupported</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00019">kCipErrorInvalidAttributeValue</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00029">kCipErrorNotEnoughData</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00010">kCipErrorSuccess</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00197">CipMessageRouterResponse::reply_service</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00186">CipMessageRouterRequest::request_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00185">CipMessageRouterRequest::service</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00246">cip_class::set_bit_mask</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00202">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -507,9 +463,9 @@ Here is the caller graph for this function:</div>
 <p>Clean up the allocated data of the TCP/IP interface object. </p>
 <p>Currently this is the host name string and the domain name string. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00268">268</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00212">212</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00295">CipTcpIpNetworkInterfaceConfiguration::domain_name</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00138">CipString::string</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00294">CipTcpIpNetworkInterfaceConfiguration::domain_name</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00137">CipString::string</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00060">ShutdownCipStack()</a>.</p>
 
@@ -546,7 +502,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00021">21</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +520,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00022">22</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>.</p>
 
 </div>
 </div>
@@ -584,7 +540,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00063">63</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00917">CheckEncapsulationInactivity()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00130">ResetDeviceToInitialConfiguration()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00917">CheckEncapsulationInactivity()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00130">ResetDeviceToInitialConfiguration()</a>.</p>
 
 </div>
 </div>
@@ -609,7 +565,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00053">53</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00733">CreateUdpSocket()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00514">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00443">OpenProducingMulticastConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00047">ConfigureNetworkInterface()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00733">CreateUdpSocket()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00514">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00443">OpenProducingMulticastConnection()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +585,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00046">46</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00733">CreateUdpSocket()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00733">CreateUdpSocket()</a>.</p>
 
 </div>
 </div>
@@ -638,7 +594,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d66/structCipString.html">CipString</a> <a class="el" href="../../dd/d20/ciptcpipinterface_8c.html#a09c1accbdcd35ed421a0d2b27baff3de">hostname_</a></td>
+          <td class="memname"><a class="el" href="../../df/d66/structCipString.html">CipString</a> <a class="el" href="../../d1/dad/ciptcpipinterface_8h.html#a09c1accbdcd35ed421a0d2b27baff3de">hostname_</a></td>
         </tr>
       </table>
 </div>
@@ -648,6 +604,8 @@ Here is the caller graph for this function:</div>
 </pre></div><p>#6 Hostname </p>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00040">40</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00166">ConfigureHostName()</a>.</p>
 
 </div>
 </div>
@@ -674,7 +632,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00030">30</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00064">NetworkHandlerInitialize()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00110">ConfigureDomainName()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00047">ConfigureNetworkInterface()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00064">NetworkHandlerInitialize()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +672,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00020">20</a> of file <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html">ciptcpipinterface.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00217">CipTcpIpInterfaceInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00162">CipTcpIpInterfaceInit()</a>.</p>
 
 </div>
 </div>
@@ -738,7 +696,7 @@ Here is the caller graph for this function:</div>
     <ul>
       <li class="navelem"><a class="el" href="../../dd/d20/ciptcpipinterface_8c.html">ciptcpipinterface.c</a>      </li>
 
-    <li class="footer">Generated on Wed Jan 24 2018 09:13:22 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Jan 24 2018 10:07:36 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

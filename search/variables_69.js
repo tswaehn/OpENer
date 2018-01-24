@@ -12,7 +12,7 @@ var searchData=
   ['interface_5fduplex_5fmode',['interface_duplex_mode',['../d3/d4d/structspeed__duplex__array__entry.html#a3254d43a5b7e25118353826aab4d2700',1,'speed_duplex_array_entry']]],
   ['interface_5fflags',['interface_flags',['../d8/d13/structCipEthernetLinkObject.html#a353eee07bb6c92bcd5583e94122ef21a',1,'CipEthernetLinkObject']]],
   ['interface_5flabel',['interface_label',['../d7/d65/cipethernetlink_8c.html#a52791540f31fe4047b154760303536ff',1,'cipethernetlink.c']]],
-  ['interface_5fspeed',['interface_speed',['../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a',1,'CipEthernetLinkObject::interface_speed()'],['../d3/d4d/structspeed__duplex__array__entry.html#af5cf856ead42ea20b1483f2f11be6c9c',1,'speed_duplex_array_entry::interface_speed()']]],
+  ['interface_5fspeed',['interface_speed',['../d3/d4d/structspeed__duplex__array__entry.html#af5cf856ead42ea20b1483f2f11be6c9c',1,'speed_duplex_array_entry::interface_speed()'],['../d8/d13/structCipEthernetLinkObject.html#a786d0470c5139d906db04cf338e9e49a',1,'CipEthernetLinkObject::interface_speed()']]],
   ['ip_5faddress',['ip_address',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a2c56d6d4982484316a97630d7f1a4c95',1,'CipTcpIpNetworkInterfaceConfiguration']]],
   ['item_5fcount',['item_count',['../db/d80/structCipCommonPacketFormatData.html#a7ff1108c27f9ebe1d69305311c6b234b',1,'CipCommonPacketFormatData']]],
   ['item_5fcount_5ffield_5fsize',['item_count_field_size',['../d3/d98/cpf_8c.html#a7c2c8f4b82cd829b8ffde2a90c811f2b',1,'cpf.c']]],

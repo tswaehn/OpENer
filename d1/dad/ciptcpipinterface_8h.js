@@ -7,6 +7,7 @@ var ciptcpipinterface_8h =
     [ "g_encapsulation_inactivity_timeout", "d1/dad/ciptcpipinterface_8h.html#adf3de9d05025f4d3ce4f50120a63deec", null ],
     [ "g_multicast_configuration", "d1/dad/ciptcpipinterface_8h.html#a3b13a18a3f6efcb8f2e651676096f4e5", null ],
     [ "g_time_to_live_value", "d1/dad/ciptcpipinterface_8h.html#a893d4111b2549a2ecb907c037a776927", null ],
+    [ "hostname_", "d1/dad/ciptcpipinterface_8h.html#a09c1accbdcd35ed421a0d2b27baff3de", null ],
     [ "interface_configuration_", "d1/dad/ciptcpipinterface_8h.html#a635643a0d47842550c4d3cb5f4959cee", null ],
     [ "kCipTcpIpInterfaceClassCode", "d1/dad/ciptcpipinterface_8h.html#aba1ff9a28c6ff8570830611b2972edde", null ]
 ];

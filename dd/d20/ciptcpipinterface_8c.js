@@ -1,9 +1,6 @@
 var ciptcpipinterface_8c =
 [
     [ "CipTcpIpInterfaceInit", "dd/d20/ciptcpipinterface_8c.html#a30729bd683f7ee214bbb684de52456cd", null ],
-    [ "ConfigureDomainName", "dd/d20/ciptcpipinterface_8c.html#a0b2b502f5edf9117f7a8dae94fb6fd9e", null ],
-    [ "ConfigureHostName", "d2/dc9/group__CIP__API.html#gab4a2d826ebe9be1b60c0206414a8f8ce", null ],
-    [ "ConfigureNetworkInterface", "d2/dc9/group__CIP__API.html#ga1f4f417cb95e75c439edabe7b8b91477", null ],
     [ "GetAttributeAllTcpIpInterface", "dd/d20/ciptcpipinterface_8c.html#ac8e8bb2bf60fd22d322a9422f191b35e", null ],
     [ "GetAttributeSingleTcpIpInterface", "dd/d20/ciptcpipinterface_8c.html#a53467d0ad09ef542d7c0e8423134782f", null ],
     [ "GetAttributeSingleTcpIpInterface", "dd/d20/ciptcpipinterface_8c.html#a01cd6d59afe7613e1c690d8b21207ce6", null ],

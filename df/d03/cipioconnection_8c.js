@@ -1,5 +1,6 @@
 var cipioconnection_8c =
 [
+    [ "CheckForDeadConnectionsInActiveConnectionList", "df/d03/cipioconnection_8c.html#ae93b44443f59189ac1379d539b8e2a23", null ],
     [ "CloseCommunicationChannelsAndRemoveFromActiveConnectionsList", "df/d03/cipioconnection_8c.html#a62fc61ed294b1d1543960582f0071b22", null ],
     [ "CloseIoConnection", "df/d03/cipioconnection_8c.html#a730b410a0cdbc6a456973c0e51568968", null ],
     [ "EstablishIoConnection", "df/d03/cipioconnection_8c.html#a43e270b3f9b9f6296b12285c320c95aa", null ],

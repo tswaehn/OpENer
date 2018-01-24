@@ -72,5 +72,6 @@ var cipconnectionobject_8h =
     [ "ConnectionObjectSetProductionInhibitTime", "d1/d6c/cipconnectionobject_8h.html#a2e4314abc5d0e4684f16b1bc91088e7b", null ],
     [ "ConnectionObjectSetState", "d1/d6c/cipconnectionobject_8h.html#ace0a978d1b7fe59261b1024b5ba1cd15", null ],
     [ "ConnectionObjectSetTToORequestedPacketInterval", "d1/d6c/cipconnectionobject_8h.html#a7883293f84213277eb8c63e558f12a6c", null ],
-    [ "ConnectionObjectSetWatchdogTimeoutAction", "d1/d6c/cipconnectionobject_8h.html#a9bf4e569cc43263943c0c8c8b138f5c4", null ]
+    [ "ConnectionObjectSetWatchdogTimeoutAction", "d1/d6c/cipconnectionobject_8h.html#a9bf4e569cc43263943c0c8c8b138f5c4", null ],
+    [ "EqualConnectionTriad", "d1/d6c/cipconnectionobject_8h.html#a0283b66a8b3eeada9a6ff55ce32db1c8", null ]
 ];

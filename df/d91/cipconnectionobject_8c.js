@@ -94,6 +94,7 @@ var cipconnectionobject_8c =
     [ "ConnectionObjectSetState", "df/d91/cipconnectionobject_8c.html#ace0a978d1b7fe59261b1024b5ba1cd15", null ],
     [ "ConnectionObjectSetTToORequestedPacketInterval", "df/d91/cipconnectionobject_8c.html#a7883293f84213277eb8c63e558f12a6c", null ],
     [ "ConnectionObjectSetWatchdogTimeoutAction", "df/d91/cipconnectionobject_8c.html#a9bf4e569cc43263943c0c8c8b138f5c4", null ],
+    [ "EqualConnectionTriad", "df/d91/cipconnectionobject_8c.html#a0283b66a8b3eeada9a6ff55ce32db1c8", null ],
     [ "connection_list", "df/d91/cipconnectionobject_8c.html#ab314e92264a974f6b8aef1327e546e2e", null ],
     [ "explicit_connection_object_pool", "df/d91/cipconnectionobject_8c.html#ae21a6efe9518ad83e4c7db9b837a2b81", null ]
 ];

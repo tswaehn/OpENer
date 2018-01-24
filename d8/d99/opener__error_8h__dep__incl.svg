@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 520;
+var viewWidth = 704;
 var viewHeight = 88;
 var sectionId = 'dynsection-0';
 </script>
@@ -42,8 +42,8 @@ var sectionId = 'dynsection-0';
 <title>G</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="203,-58.5 203,-79.5 323,-79.5 323,-58.5 203,-58.5"/>
-<text text-anchor="middle" x="263" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/opener_error.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="298,-58.5 298,-79.5 418,-79.5 418,-58.5 298,-58.5"/>
+<text text-anchor="middle" x="358" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/opener_error.h</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
@@ -54,32 +54,44 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M221.067,-55.4127C189.13,-45.0646 145.804,-31.0258 116.476,-21.5231"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="219.992,-58.7437 230.584,-58.4966 222.15,-52.0845 219.992,-58.7437"/>
+<path fill="none" stroke="midnightblue" d="M298.497,-56.4045C249.236,-45.977 180.056,-31.333 133.712,-21.5231"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="297.873,-59.8498 308.381,-58.4966 299.322,-53.0015 297.873,-59.8498"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="../../db/dfa/POSIX_2opener__error_8c.html" target="_top" xlink:title="src/ports/POSIX/opener_error.c">
-<polygon fill="none" stroke="black" points="186,-0.5 186,-21.5 340,-21.5 340,-0.5 186,-0.5"/>
-<text text-anchor="middle" x="263" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/opener_error.c</text>
+<a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html" target="_top" xlink:title="src/ports/POSIX/networkhandler.c">
+<polygon fill="none" stroke="black" points="186,-0.5 186,-21.5 352,-21.5 352,-0.5 186,-0.5"/>
+<text text-anchor="middle" x="269" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/networkhandler.c</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M263,-48.1906C263,-39.1684 263,-28.9941 263,-21.5707"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.5,-48.3619 263,-58.3619 266.5,-48.3619 259.5,-48.3619"/>
+<path fill="none" stroke="midnightblue" d="M333.174,-52.8215C317.844,-42.8312 298.614,-30.2993 285.22,-21.5707"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="331.387,-55.8344 341.676,-58.3619 335.209,-49.9698 331.387,-55.8344"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="../../d4/d99/WIN32_2opener__error_8c.html" target="_top" xlink:title="src/ports/WIN32/opener_error.c">
-<polygon fill="none" stroke="black" points="358,-0.5 358,-21.5 512,-21.5 512,-0.5 358,-0.5"/>
-<text text-anchor="middle" x="435" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/WIN32/opener_error.c</text>
+<a xlink:href="../../db/dfa/POSIX_2opener__error_8c.html" target="_top" xlink:title="src/ports/POSIX/opener_error.c">
+<polygon fill="none" stroke="black" points="370,-0.5 370,-21.5 524,-21.5 524,-0.5 370,-0.5"/>
+<text text-anchor="middle" x="447" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/opener_error.c</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M303.691,-55.2787C334.339,-44.9437 375.735,-30.9849 403.794,-21.5231"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="302.505,-51.9847 294.148,-58.4966 304.742,-58.6178 302.505,-51.9847"/>
+<path fill="none" stroke="midnightblue" d="M382.826,-52.8215C398.156,-42.8312 417.386,-30.2993 430.78,-21.5707"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="380.791,-49.9698 374.324,-58.3619 384.613,-55.8344 380.791,-49.9698"/>
+</g>
+<!-- Node5 -->
+<g id="node9" class="node"><title>Node5</title>
+<a xlink:href="../../d4/d99/WIN32_2opener__error_8c.html" target="_top" xlink:title="src/ports/WIN32/opener_error.c">
+<polygon fill="none" stroke="black" points="542,-0.5 542,-21.5 696,-21.5 696,-0.5 542,-0.5"/>
+<text text-anchor="middle" x="619" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/WIN32/opener_error.c</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M415.269,-56.2737C462.153,-45.8548 527.686,-31.2921 571.646,-21.5231"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="414.268,-52.9106 405.265,-58.4966 415.786,-59.7439 414.268,-52.9106"/>
 </g>
 </g>
 </svg>

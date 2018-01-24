@@ -401,88 +401,87 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00327"></a>00327     <span class="keywordflow">if</span> ( <span class="keyword">true</span> ==
 <a name="l00328"></a>00328          <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa">ConnectionObjectIsTypeIOConnection</a>(next_non_control_master_connection)
 <a name="l00329"></a>00329          &amp;&amp; <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e">kConnectionObjectStateEstablished</a> ==
-<a name="l00330"></a>00330          <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a>(next_non_control_master_connection) ) {
-<a name="l00331"></a>00331       <span class="keywordflow">if</span> ( (input_point
-<a name="l00332"></a>00332             == next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>)
-<a name="l00333"></a>00333            &amp;&amp; ( <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa8f7d20eb5adeb31d45a0bfb62dbefe9b">kConnectionObjectConnectionTypeMulticast</a>
-<a name="l00334"></a>00334                 == <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a>(
-<a name="l00335"></a>00335                   next_non_control_master_connection) )
-<a name="l00336"></a>00336            &amp;&amp; (kEipInvalidSocket
-<a name="l00337"></a>00337                == next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[
-<a name="l00338"></a>00338                  <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) ) {
-<a name="l00339"></a>00339         <span class="comment">/* we have a connection that produces the same input assembly,</span>
-<a name="l00340"></a>00340 <span class="comment">         * is a multicast producer and does not manage the connection.</span>
-<a name="l00341"></a>00341 <span class="comment">         */</span>
-<a name="l00342"></a>00342         <span class="keywordflow">return</span> next_non_control_master_connection;
-<a name="l00343"></a>00343       }
-<a name="l00344"></a>00344     }
-<a name="l00345"></a>00345     node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
-<a name="l00346"></a>00346   }
-<a name="l00347"></a>00347   <span class="keywordflow">return</span> NULL;
-<a name="l00348"></a>00348 }
-<a name="l00349"></a>00349 
-<a name="l00350"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a1181149fe4f853e43552e0b50e2f4d23">00350</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point,
-<a name="l00351"></a>00351                                              <span class="keyword">const</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> instance_type)
-<a name="l00352"></a>00352 {
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
-<a name="l00355"></a>00355 
-<a name="l00356"></a>00356   <span class="keywordflow">while</span> (NULL != node) {
-<a name="l00357"></a>00357     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
-<a name="l00358"></a>00358     <span class="keywordflow">if</span> ( (instance_type == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca">instance_type</a>)
-<a name="l00359"></a>00359          &amp;&amp; (input_point == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>) ) {
-<a name="l00360"></a>00360       <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection_to_delete = connection;
-<a name="l00361"></a>00361       node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
-<a name="l00362"></a>00362       <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection.">CheckIoConnectionEvent</a>(
-<a name="l00363"></a>00363         connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a27028c320baa22cd19299de5580da173">consumed_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
-<a name="l00364"></a>00364         connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
-<a name="l00365"></a>00365         <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2aef7d80152c2d6e1a5e7f64bf51801374">kIoConnectionEventClosed</a>);
-<a name="l00366"></a>00366 
-<a name="l00367"></a>00367       assert(connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a> != NULL);
-<a name="l00368"></a>00368       connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a>(connection_to_delete);
-<a name="l00369"></a>00369     } <span class="keywordflow">else</span> {
-<a name="l00370"></a>00370       node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
-<a name="l00371"></a>00371     }
-<a name="l00372"></a>00372   }
-<a name="l00373"></a>00373 }
-<a name="l00374"></a>00374 
-<a name="l00375"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a18d2a32030faf1d5e3d48e610b1c4fe7">00375</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a>(<span class="keywordtype">void</span>) {
-<a name="l00376"></a>00376   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
-<a name="l00377"></a>00377   <span class="keywordflow">while</span> (NULL != node) {
-<a name="l00378"></a>00378     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
-<a name="l00379"></a>00379     assert(connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a> != NULL);
-<a name="l00380"></a>00380     connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a>(connection);
-<a name="l00381"></a>00381     <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e">DoublyLinkedListRemoveNode</a>(&amp;<a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>, &amp;node);
-<a name="l00382"></a>00382     <span class="comment">//CloseConnection(connection);</span>
-<a name="l00383"></a>00383     <span class="comment">/* Close connection will remove the connection from the list therefore we</span>
-<a name="l00384"></a>00384 <span class="comment">     * need to get again the start until there is no connection left</span>
-<a name="l00385"></a>00385 <span class="comment">     */</span>
-<a name="l00386"></a>00386     node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
-<a name="l00387"></a>00387   }
-<a name="l00388"></a>00388 }
-<a name="l00389"></a>00389 
-<a name="l00390"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#ac869fbefb1f616eaa666fe659c224fe3">00390</a> <span class="keywordtype">bool</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#ac869fbefb1f616eaa666fe659c224fe3" title="Check if there is an established connection that uses the same config point.">ConnectionWithSameConfigPointExists</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point) {
-<a name="l00391"></a>00391   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
-<a name="l00392"></a>00392 
-<a name="l00393"></a>00393   <span class="keywordflow">while</span> (NULL != node) {
-<a name="l00394"></a>00394     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
-<a name="l00395"></a>00395     <span class="keywordflow">if</span> (config_point == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#af1595add8f6d4e0f5bac19b7918c02ec">configuration_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>) {
-<a name="l00396"></a>00396       <span class="keywordflow">return</span> (NULL != connection);
-<a name="l00397"></a>00397     }
-<a name="l00398"></a>00398     node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
-<a name="l00399"></a>00399   }
-<a name="l00400"></a>00400   <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00401"></a>00401 }
-<a name="l00402"></a>00402 
-<a name="l00403"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a89ebedc457f26c4e845f60f3e6fb8155">00403</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a89ebedc457f26c4e845f60f3e6fb8155">InitializeIoConnectionData</a>(<span class="keywordtype">void</span>) {
-<a name="l00404"></a>00404   memset( g_exlusive_owner_connections, 0,
-<a name="l00405"></a>00405           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#adc6d3a58031ec407b84b09ec5643294a" title="Define the number of supported exclusive owner connections. Each of these connections has to be confi...">OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS</a> *
-<a name="l00406"></a>00406           <span class="keyword">sizeof</span>(<a class="code" href="../../d7/d95/structExclusiveOwnerConnection.html" title="Exclusive Owner connection data.">ExclusiveOwnerConnection</a>) );
-<a name="l00407"></a>00407   memset( g_input_only_connections, 0,
-<a name="l00408"></a>00408           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ae7106755b220189093132abc4da3857b" title="Define the number of supported input only connections. Each of these connections has to be configured...">OPENER_CIP_NUM_INPUT_ONLY_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d7/dd8/structInputOnlyConnection.html" title="Input Only connection data.">InputOnlyConnection</a>) );
-<a name="l00409"></a>00409   memset( g_listen_only_connections, 0,
-<a name="l00410"></a>00410           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7ae463e5cb0f1deb77060bb14eb8816a" title="Define the number of supported listen only connections. Each of these connections has to be configure...">OPENER_CIP_NUM_LISTEN_ONLY_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d3/d01/structListenOnlyConnection.html" title="Listen Only connection data.">ListenOnlyConnection</a>) );
-<a name="l00411"></a>00411 }
+<a name="l00330"></a>00330          <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a9c381240583828bec2cda2d54dc94d3b">ConnectionObjectGetState</a>(next_non_control_master_connection)
+<a name="l00331"></a>00331          &amp;&amp; input_point ==
+<a name="l00332"></a>00332          next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>
+<a name="l00333"></a>00333          &amp;&amp;  <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa8f7d20eb5adeb31d45a0bfb62dbefe9b">kConnectionObjectConnectionTypeMulticast</a> ==
+<a name="l00334"></a>00334          <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a>(
+<a name="l00335"></a>00335            next_non_control_master_connection)
+<a name="l00336"></a>00336          &amp;&amp; (kEipInvalidSocket
+<a name="l00337"></a>00337              == next_non_control_master_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[
+<a name="l00338"></a>00338                <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) ) {
+<a name="l00339"></a>00339       <span class="comment">/* we have a connection that produces the same input assembly,</span>
+<a name="l00340"></a>00340 <span class="comment">       * is a multicast producer and does not manage the connection.</span>
+<a name="l00341"></a>00341 <span class="comment">       */</span>
+<a name="l00342"></a>00342       <span class="keywordflow">return</span> next_non_control_master_connection;
+<a name="l00343"></a>00343     }
+<a name="l00344"></a>00344     node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
+<a name="l00345"></a>00345   }
+<a name="l00346"></a>00346   <span class="keywordflow">return</span> NULL;
+<a name="l00347"></a>00347 }
+<a name="l00348"></a>00348 
+<a name="l00349"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a1181149fe4f853e43552e0b50e2f4d23">00349</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23" title="Close all connection producing the same input and have the same type (i.e., listen only or input only...">CloseAllConnectionsForInputWithSameType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> input_point,
+<a name="l00350"></a>00350                                              <span class="keyword">const</span> <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a">ConnectionObjectConnectionType</a> instance_type)
+<a name="l00351"></a>00351 {
+<a name="l00352"></a>00352 
+<a name="l00353"></a>00353   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
+<a name="l00354"></a>00354 
+<a name="l00355"></a>00355   <span class="keywordflow">while</span> (NULL != node) {
+<a name="l00356"></a>00356     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
+<a name="l00357"></a>00357     <span class="keywordflow">if</span> ( (instance_type == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca">instance_type</a>)
+<a name="l00358"></a>00358          &amp;&amp; (input_point == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>) ) {
+<a name="l00359"></a>00359       <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection_to_delete = connection;
+<a name="l00360"></a>00360       node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
+<a name="l00361"></a>00361       <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gac9c9ad2c2254b783e7b447bd84eba8c0" title="Inform the application on changes occurred for a connection.">CheckIoConnectionEvent</a>(
+<a name="l00362"></a>00362         connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a27028c320baa22cd19299de5580da173">consumed_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
+<a name="l00363"></a>00363         connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>,
+<a name="l00364"></a>00364         <a class="code" href="../../df/d28/ciptypes_8h.html#a1a7498137431124c4dde66e95095c2d2aef7d80152c2d6e1a5e7f64bf51801374">kIoConnectionEventClosed</a>);
+<a name="l00365"></a>00365 
+<a name="l00366"></a>00366       assert(connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a> != NULL);
+<a name="l00367"></a>00367       connection_to_delete-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a>(connection_to_delete);
+<a name="l00368"></a>00368     } <span class="keywordflow">else</span> {
+<a name="l00369"></a>00369       node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
+<a name="l00370"></a>00370     }
+<a name="l00371"></a>00371   }
+<a name="l00372"></a>00372 }
+<a name="l00373"></a>00373 
+<a name="l00374"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a18d2a32030faf1d5e3d48e610b1c4fe7">00374</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7">CloseAllConnections</a>(<span class="keywordtype">void</span>) {
+<a name="l00375"></a>00375   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
+<a name="l00376"></a>00376   <span class="keywordflow">while</span> (NULL != node) {
+<a name="l00377"></a>00377     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
+<a name="l00378"></a>00378     assert(connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a> != NULL);
+<a name="l00379"></a>00379     connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4">connection_close_function</a>(connection);
+<a name="l00380"></a>00380     <a class="code" href="../../d9/ddc/doublylinkedlist_8c.html#a341e2f6faf7227650ed6e38e90cd047e">DoublyLinkedListRemoveNode</a>(&amp;<a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>, &amp;node);
+<a name="l00381"></a>00381     <span class="comment">//CloseConnection(connection);</span>
+<a name="l00382"></a>00382     <span class="comment">/* Close connection will remove the connection from the list therefore we</span>
+<a name="l00383"></a>00383 <span class="comment">     * need to get again the start until there is no connection left</span>
+<a name="l00384"></a>00384 <span class="comment">     */</span>
+<a name="l00385"></a>00385     node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
+<a name="l00386"></a>00386   }
+<a name="l00387"></a>00387 }
+<a name="l00388"></a>00388 
+<a name="l00389"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#ac869fbefb1f616eaa666fe659c224fe3">00389</a> <span class="keywordtype">bool</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#ac869fbefb1f616eaa666fe659c224fe3" title="Check if there is an established connection that uses the same config point.">ConnectionWithSameConfigPointExists</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> config_point) {
+<a name="l00390"></a>00390   <a class="code" href="../../df/d2f/structdoubly__linked__list__node.html">DoublyLinkedListNode</a> *node = <a class="code" href="../../d1/dc0/appcontype_8h.html#ab314e92264a974f6b8aef1327e546e2e">connection_list</a>.<a class="code" href="../../dd/de5/structDoublyLinkedList.html#a0c42f2f515a845457c2f8139136d77d0">first</a>;
+<a name="l00391"></a>00391 
+<a name="l00392"></a>00392   <span class="keywordflow">while</span> (NULL != node) {
+<a name="l00393"></a>00393     <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;
+<a name="l00394"></a>00394     <span class="keywordflow">if</span> (config_point == connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#af1595add8f6d4e0f5bac19b7918c02ec">configuration_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>) {
+<a name="l00395"></a>00395       <span class="keywordflow">return</span> (NULL != connection);
+<a name="l00396"></a>00396     }
+<a name="l00397"></a>00397     node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;
+<a name="l00398"></a>00398   }
+<a name="l00399"></a>00399   <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00400"></a>00400 }
+<a name="l00401"></a>00401 
+<a name="l00402"></a><a class="code" href="../../d1/dc0/appcontype_8h.html#a89ebedc457f26c4e845f60f3e6fb8155">00402</a> <span class="keywordtype">void</span> <a class="code" href="../../d1/dbc/appcontype_8c.html#a89ebedc457f26c4e845f60f3e6fb8155">InitializeIoConnectionData</a>(<span class="keywordtype">void</span>) {
+<a name="l00403"></a>00403   memset( g_exlusive_owner_connections, 0,
+<a name="l00404"></a>00404           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#adc6d3a58031ec407b84b09ec5643294a" title="Define the number of supported exclusive owner connections. Each of these connections has to be confi...">OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS</a> *
+<a name="l00405"></a>00405           <span class="keyword">sizeof</span>(<a class="code" href="../../d7/d95/structExclusiveOwnerConnection.html" title="Exclusive Owner connection data.">ExclusiveOwnerConnection</a>) );
+<a name="l00406"></a>00406   memset( g_input_only_connections, 0,
+<a name="l00407"></a>00407           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ae7106755b220189093132abc4da3857b" title="Define the number of supported input only connections. Each of these connections has to be configured...">OPENER_CIP_NUM_INPUT_ONLY_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d7/dd8/structInputOnlyConnection.html" title="Input Only connection data.">InputOnlyConnection</a>) );
+<a name="l00408"></a>00408   memset( g_listen_only_connections, 0,
+<a name="l00409"></a>00409           <a class="code" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7ae463e5cb0f1deb77060bb14eb8816a" title="Define the number of supported listen only connections. Each of these connections has to be configure...">OPENER_CIP_NUM_LISTEN_ONLY_CONNS</a> * <span class="keyword">sizeof</span>(<a class="code" href="../../d3/d01/structListenOnlyConnection.html" title="Listen Only connection data.">ListenOnlyConnection</a>) );
+<a name="l00410"></a>00410 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -503,7 +502,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="../../d1/dbc/appcontype_8c.html">appcontype.c</a>      </li>
 
-    <li class="footer">Generated on Mon Jan 22 2018 21:11:37 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Jan 24 2018 09:13:21 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

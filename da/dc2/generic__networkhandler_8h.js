@@ -1,5 +1,6 @@
 var generic__networkhandler_8h =
 [
+    [ "NetworkStatus", "df/d80/structNetworkStatus.html", "df/d80/structNetworkStatus" ],
     [ "CheckSocketSet", "da/dc2/generic__networkhandler_8h.html#acebcfe03d5528a69d288c446ff3048b1", null ],
     [ "CloseTcpSocket", "da/dc2/generic__networkhandler_8h.html#a1bfa5ef8e4802716459a56567ee16592", null ],
     [ "CloseUdpSocket", "da/dc2/generic__networkhandler_8h.html#aab6e6c554aa10d27efe297ebef3ac1c9", null ],

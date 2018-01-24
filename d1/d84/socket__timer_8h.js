@@ -1,5 +1,6 @@
 var socket__timer_8h =
 [
+    [ "socket_timer", "de/d22/structsocket__timer.html", "de/d22/structsocket__timer" ],
     [ "SocketTimer", "d1/d84/socket__timer_8h.html#a919b04fd222299461ba6b4e5f21d2c92", null ],
     [ "SocketTimerArrayGetEmptySocketTimer", "d1/d84/socket__timer_8h.html#a28bbdc758808db0e7f034aff98e5f6b3", null ],
     [ "SocketTimerArrayGetSocketTimer", "d1/d84/socket__timer_8h.html#abe7542fdec4d4e4893a8c712192529ca", null ],

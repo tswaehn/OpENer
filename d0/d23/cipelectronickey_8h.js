@@ -1,5 +1,6 @@
 var cipelectronickey_8h =
 [
+    [ "CipElectronicKey", "d9/da7/structCipElectronicKey.html", "d9/da7/structCipElectronicKey" ],
     [ "ElectronicKeyFormat4", "d0/d23/cipelectronickey_8h.html#a1f9cc053f09bb6bb338ea6197ce7b37e", null ],
     [ "ElectronicKeyFormat4Delete", "d0/d23/cipelectronickey_8h.html#a9fa7805c9496e42b8ccfff62112202f6", null ],
     [ "ElectronicKeyFormat4GetDeviceType", "d0/d23/cipelectronickey_8h.html#aed74dbd485f78aed3c0e3899b8bcc527", null ],

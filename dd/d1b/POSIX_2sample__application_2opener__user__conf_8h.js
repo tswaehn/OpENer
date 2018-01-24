@@ -16,8 +16,5 @@ var POSIX_2sample__application_2opener__user__conf_8h =
     [ "OPENER_DEVICE_VENDOR_ID", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a15a75feae90347583190ab0f07c4b356", null ],
     [ "OPENER_MESSAGE_DATA_REPLY_BUFFER", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3774576feaec4fbdf86d32044d38c89", null ],
     [ "OPENER_NUMBER_OF_SUPPORTED_SESSIONS", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8d73780f7a1f5d9977d7388ebfbe1f93", null ],
-    [ "PC_OPENER_ETHERNET_BUFFER_SIZE", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb", null ],
-    [ "kOpenerConsumedDataHasRunIdleHeader", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a13e3b546f7357486a3ffe31d24fc1a55", null ],
-    [ "kOpenerProducedDataHasRunIdleHeader", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a546c83a91f0214bae9d90871c15d68ae", null ],
-    [ "kOpenerTimerTickInMilliSeconds", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a646a8da99c8f1195945306e34990ece6", null ]
+    [ "PC_OPENER_ETHERNET_BUFFER_SIZE", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb", null ]
 ];

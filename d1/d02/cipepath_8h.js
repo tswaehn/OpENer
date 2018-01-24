@@ -1,5 +1,6 @@
 var cipepath_8h =
 [
+    [ "connection_path_epath", "d9/de3/structconnection__path__epath.html", "d9/de3/structconnection__path__epath" ],
     [ "LOGICAL_SEGMENT_EXTENDED_TYPE_ARRAY_INDEX", "d1/d02/cipepath_8h.html#a78c6bd1f4ab7fea31cb00f9da7d59f70", null ],
     [ "LOGICAL_SEGMENT_EXTENDED_TYPE_BIT_INDEX", "d1/d02/cipepath_8h.html#a8820a1c8f9f3a56457cafc34c56e8730", null ],
     [ "LOGICAL_SEGMENT_EXTENDED_TYPE_INDIRECT_ARRAY_INDEX", "d1/d02/cipepath_8h.html#a927619006c6fbbcc09184cc574c55297", null ],
@@ -45,17 +46,77 @@ var cipepath_8h =
     [ "SegmentType", "d1/d02/cipepath_8h.html#aa1d76cc748111cbd482afc0d1085ff50", null ],
     [ "SymbolicSegmentExtendedFormat", "d1/d02/cipepath_8h.html#a85a47ebb59a51a3c4210316276c3d72a", null ],
     [ "SymbolicSegmentFormat", "d1/d02/cipepath_8h.html#a6407b4031c52775967765521857f4945", null ],
-    [ "data_segment_subtype", "d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585", null ],
-    [ "electronic_key_segment_format", "d1/d02/cipepath_8h.html#acf1eae016bc37c7b45259a5e5fe061f6", null ],
-    [ "logical_segment_extended_logical_type", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1", null ],
-    [ "logical_segment_logical_format", "d1/d02/cipepath_8h.html#abd92751f6be30c77945e6552b46cf016", null ],
-    [ "logical_segment_special_type_logical_format", "d1/d02/cipepath_8h.html#a6d9b2cc31d0ea62f31ab6fe58cf645e4", null ],
-    [ "logical_segment_type", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5", null ],
-    [ "network_segment_subtype", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2", null ],
-    [ "port_segment_type", "d1/d02/cipepath_8h.html#a849e569ee93733e60d7ff87b92bc6056", null ],
-    [ "segment_type", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633", null ],
-    [ "symbolic_segment_extended_format", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aea", null ],
-    [ "symbolic_segment_format", "d1/d02/cipepath_8h.html#a22de99e37914c6c55645cce5f4feb064", null ],
+    [ "data_segment_subtype", "d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585", [
+      [ "kDataSegmentSubtypeReserved", "d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585a151aa4b82a9c7dc71294e164f1cea175", null ],
+      [ "kDataSegmentSubtypeSimpleData", "d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585a68bad9c142ca2a207607529633f0702f", null ],
+      [ "kDataSegmentSubtypeANSIExtendedSymbol", "d1/d02/cipepath_8h.html#a1a57a724204e39c6ef9233f3ab98b585a061a392fed5662f9eb187aa9445c4b87", null ]
+    ] ],
+    [ "electronic_key_segment_format", "d1/d02/cipepath_8h.html#acf1eae016bc37c7b45259a5e5fe061f6", [
+      [ "kElectronicKeySegmentFormatReserved", "d1/d02/cipepath_8h.html#acf1eae016bc37c7b45259a5e5fe061f6ae2d8429ad5b06c228ab26719a3bd2451", null ],
+      [ "kElectronicKeySegmentFormatKeyFormat4", "d1/d02/cipepath_8h.html#acf1eae016bc37c7b45259a5e5fe061f6ae75019d6ee46b314782d24017d36c1d7", null ]
+    ] ],
+    [ "logical_segment_extended_logical_type", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1", [
+      [ "kLogicalSegmentExtendedLogicalTypeReserved", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1a1baaac8efa3bd48d73cf12d792ade5a8", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeArrayIndex", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1a2c896ab4e73b107a2fe78238b2a75789", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeIndirectArrayIndex", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1ac118f943853f8efb37ac23b45ce73e9f", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeBitIndex", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1ad7560c087ab29655409618640a7f5dd0", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeIndirectBitIndex", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1a9b3cf7cafc4d515f7cf6ad3ae241f4e9", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeStructureMemberNumber", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1a67d8e6ec0dc13919b096f3173ea6ed9c", null ],
+      [ "kLogicalSegmentExtendedLogicalTypeStructureMemberHandle", "d1/d02/cipepath_8h.html#a1c22bd11a095840953e726e6cbf570a1ae15c8ca27d1fe622152d8f595b39c3f2", null ]
+    ] ],
+    [ "logical_segment_logical_format", "d1/d02/cipepath_8h.html#abd92751f6be30c77945e6552b46cf016", [
+      [ "kLogicalSegmentLogicalFormatEightBit", "d1/d02/cipepath_8h.html#abd92751f6be30c77945e6552b46cf016a74f3bbe03d0125d4fa4af710c6e51277", null ],
+      [ "kLogicalSegmentLogicalFormatSixteenBit", "d1/d02/cipepath_8h.html#abd92751f6be30c77945e6552b46cf016a08149be08712b06e74f92610a1ccd171", null ],
+      [ "kLogicalSegmentLogicalFormatThirtyTwoBit", "d1/d02/cipepath_8h.html#abd92751f6be30c77945e6552b46cf016a63a5ad5015037d41d5b8be3b88404a4a", null ]
+    ] ],
+    [ "logical_segment_special_type_logical_format", "d1/d02/cipepath_8h.html#a6d9b2cc31d0ea62f31ab6fe58cf645e4", [
+      [ "kLogicalSegmentSpecialTypeLogicalFormatReserved", "d1/d02/cipepath_8h.html#a6d9b2cc31d0ea62f31ab6fe58cf645e4a77bd099117ea11908ba6290e7dc7fbd3", null ],
+      [ "kLogicalSegmentSpecialTypeLogicalFormatElectronicKey", "d1/d02/cipepath_8h.html#a6d9b2cc31d0ea62f31ab6fe58cf645e4ae1bd8f35f044bf34268b03ff82e33499", null ]
+    ] ],
+    [ "logical_segment_type", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5", [
+      [ "kLogicalSegmentLogicalTypeClassId", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5abbe56401854fdc1e6b9a8c9253ecada1", null ],
+      [ "kLogicalSegmentLogicalTypeInstanceId", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a82918d2b1a5dd498857498989172eeb1", null ],
+      [ "kLogicalSegmentLogicalTypeMemberId", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a984812c6913553cdbe54d8ea16958b54", null ],
+      [ "kLogicalSegmentLogicalTypeConnectionPoint", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a259af3672821658d1ca9e95846ae1d81", null ],
+      [ "kLogicalSegmentLogicalTypeAttributeId", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a9b4a126272ea57b7276c9c93b3bde381", null ],
+      [ "kLogicalSegmentLogicalTypeSpecial", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5ad70ac17ea345f0e55c66d264385ea3da", null ],
+      [ "kLogicalSegmentLogicalTypeServiceId", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a7ed9733ffba636fdb25fd237e0ad7ba8", null ],
+      [ "kLogicalSegmentLogicalTypeExtendedLogical", "d1/d02/cipepath_8h.html#a0946191ce281a2f6011e88e09d78b3e5a2f6eeca2d56eb1772edf87c209af8f02", null ]
+    ] ],
+    [ "network_segment_subtype", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2", [
+      [ "kNetworkSegmentSubtypeReserved", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2ac36d634dc91d44bd71f5c678e5596292", null ],
+      [ "kNetworkSegmentSubtypeScheduleSegment", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2ac10ae9fcd90f46994544387c535dbde3", null ],
+      [ "kNetworkSegmentSubtypeFixedTagSegment", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2ad4cae3b35cbcc111b42cdb577b3acc1e", null ],
+      [ "kNetworkSegmentSubtypeProductionInhibitTimeInMilliseconds", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2a930a4c898e8e0013091e05c918edeb54", null ],
+      [ "kNetworkSegmentSubtypeSafetySegment", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2a5be5a77863821c4848ac10623807a168", null ],
+      [ "kNetworkSegmentSubtypeProductionInhibitTimeInMicroseconds", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2acbfbfc0aafe15e49ab16013189acb945", null ],
+      [ "kNetworkSegmentSubtypeExtendedNetworkSegment", "d1/d02/cipepath_8h.html#afbe2d229a75a162e88a42aef637448c2ad448cc5de640ba8a7e6f48e13c937a53", null ]
+    ] ],
+    [ "port_segment_type", "d1/d02/cipepath_8h.html#a849e569ee93733e60d7ff87b92bc6056", [
+      [ "kPortSegmentFlagExtendedLinkAddressSize", "d1/d02/cipepath_8h.html#a849e569ee93733e60d7ff87b92bc6056a60c428a0d09d26e2ad82175e7ac082a7", null ]
+    ] ],
+    [ "segment_type", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633", [
+      [ "kSegmentTypePortSegment", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633a539497ec9d379e4c91a33c7d46191fe6", null ],
+      [ "kSegmentTypeLogicalSegment", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633add77eee21f105f21c41492f1e51039a2", null ],
+      [ "kSegmentTypeNetworkSegment", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633ab45e61b95912a1c47536522c1aa88c42", null ],
+      [ "kSegmentTypeSymbolicSegment", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633ad00b0e4c9c38a15bcf474484103cfaf8", null ],
+      [ "kSegmentTypeDataSegment", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633a4e9d7549e27d1ee87033d512b8686232", null ],
+      [ "kSegmentTypeDataTypeConstructed", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633a13a9d396729e21d0254c0c5e92480e8a", null ],
+      [ "kSegmentTypeDataTypeElementary", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633a10eed7f11b11469f41049069e08c06a6", null ],
+      [ "kSegmentTypeReserved", "d1/d02/cipepath_8h.html#aeb754e9be5f33c45f3c3f0c1f3cee633ab3f1ef97b3c2e51a4e67fb14c31d62cd", null ]
+    ] ],
+    [ "symbolic_segment_extended_format", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aea", [
+      [ "kSymbolicSegmentExtendedFormatDoubleByteChars", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaaddbb8d9ed4b188bfc61b9fdfb09e04e1", null ],
+      [ "kSymbolicSegmentExtendedFormatTripleByteChars", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaa6bf4df36d55c6be167df8a0717100756", null ],
+      [ "kSymbolicSegmentExtendedFormatNumericSymbolUSINT", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaa95945769b00e2359637b64ae2888f77d", null ],
+      [ "kSymbolicSegmentExtendedFormatNumericSymbolUINT", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaa9044eb62738a0240b2c8e4745fcaea86", null ],
+      [ "kSymbolicSegmentExtendedFormatNumericSymbolUDINT", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaadd935925dd525783830df0fdb8d4d68d", null ],
+      [ "kSymbolicSegmentExtendedFormatReserved", "d1/d02/cipepath_8h.html#aa9160642c8cef1396b54acb330186aeaa313fe00e5a082458fdbdc0f48c107943", null ]
+    ] ],
+    [ "symbolic_segment_format", "d1/d02/cipepath_8h.html#a22de99e37914c6c55645cce5f4feb064", [
+      [ "kSymbolicSegmentFormatASCII", "d1/d02/cipepath_8h.html#a22de99e37914c6c55645cce5f4feb064a1e4f143db4eabcf2e484bff5c10e5545", null ],
+      [ "kSymbolicSegmentFormatExtendedString", "d1/d02/cipepath_8h.html#a22de99e37914c6c55645cce5f4feb064a4fd8e4f2c9a5ef331bafbf5d4ba21144", null ]
+    ] ],
     [ "CipEpathEncodeConnectionEpath", "d1/d02/cipepath_8h.html#a22b9f76d4ea85ca54024f5c4f46efd12", null ],
     [ "CipEpathEqual", "d1/d02/cipepath_8h.html#a455752d9d8b1d319e6f34c3724886348", null ],
     [ "CipEpathGetLogicalValue", "d1/d02/cipepath_8h.html#aec3040041f35cce28dfb9127869e5f6e", null ],

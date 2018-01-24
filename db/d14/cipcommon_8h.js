@@ -5,6 +5,5 @@ var cipcommon_8h =
     [ "GetAttributeSingle", "db/d14/cipcommon_8h.html#ab0ed210dcfa6219a238c5a9f7a72aad1", null ],
     [ "GetSizeOfAttribute", "db/d14/cipcommon_8h.html#ae750a4033fd5c18afa9a0862086eb71f", null ],
     [ "NotifyClass", "db/d14/cipcommon_8h.html#a42d7efcf381ce7e50bd132166e60da98", null ],
-    [ "g_message_data_reply_buffer", "db/d14/cipcommon_8h.html#aa55f071fcbd0613ff862c9389aa54000", null ],
-    [ "kCipUintZero", "db/d14/cipcommon_8h.html#a9af891490aec616cdbf62412d6bdee2f", null ]
+    [ "g_message_data_reply_buffer", "db/d14/cipcommon_8h.html#aa55f071fcbd0613ff862c9389aa54000", null ]
 ];

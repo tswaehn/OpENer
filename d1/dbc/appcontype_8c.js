@@ -1,10 +1,13 @@
 var appcontype_8c =
 [
+    [ "ExclusiveOwnerConnection", "d7/d95/structExclusiveOwnerConnection.html", "d7/d95/structExclusiveOwnerConnection" ],
+    [ "InputOnlyConnection", "d7/dd8/structInputOnlyConnection.html", "d7/dd8/structInputOnlyConnection" ],
+    [ "ListenOnlyConnection", "d3/d01/structListenOnlyConnection.html", "d3/d01/structListenOnlyConnection" ],
     [ "CloseAllConnections", "d1/dbc/appcontype_8c.html#a18d2a32030faf1d5e3d48e610b1c4fe7", null ],
     [ "CloseAllConnectionsForInputWithSameType", "d1/dbc/appcontype_8c.html#a1181149fe4f853e43552e0b50e2f4d23", null ],
-    [ "ConfigureExclusiveOwnerConnectionPoint", "d2/dc9/group__CIP__API.html#gad1826555a5a2c522bfd98496f31c7ab2", null ],
-    [ "ConfigureInputOnlyConnectionPoint", "d2/dc9/group__CIP__API.html#ga1f81ca8040f02503c8374288a1453f52", null ],
-    [ "ConfigureListenOnlyConnectionPoint", "d2/dc9/group__CIP__API.html#ga0ffe2fb2fa68e86bd2c0b3a94d7ad9bb", null ],
+    [ "ConfigureExclusiveOwnerConnectionPoint", "d1/dbc/appcontype_8c.html#gad1826555a5a2c522bfd98496f31c7ab2", null ],
+    [ "ConfigureInputOnlyConnectionPoint", "d1/dbc/appcontype_8c.html#ga1f81ca8040f02503c8374288a1453f52", null ],
+    [ "ConfigureListenOnlyConnectionPoint", "d1/dbc/appcontype_8c.html#ga0ffe2fb2fa68e86bd2c0b3a94d7ad9bb", null ],
     [ "ConnectionWithSameConfigPointExists", "d1/dbc/appcontype_8c.html#ac869fbefb1f616eaa666fe659c224fe3", null ],
     [ "GetExclusiveOwnerConnection", "d1/dbc/appcontype_8c.html#a0c46e6942d5dbb0cd7c9b1eb97e78aea", null ],
     [ "GetExistingProducerMulticastConnection", "d1/dbc/appcontype_8c.html#ac568876f2c5ba2da91a0e62e17e27432", null ],

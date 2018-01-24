@@ -1,18 +1,72 @@
 var cipconnectionobject_8h =
 [
+    [ "cip_connection_object", "d2/da8/structcip__connection__object.html", "d2/da8/structcip__connection__object" ],
     [ "CIP_CONNECTION_OBJECT_CODE", "d1/d6c/cipconnectionobject_8h.html#afb2ba0230a759374bb331ee258ccec51", null ],
     [ "CipConnectionObject", "d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716", null ],
     [ "CipConnectionStateHandler", "d1/d6c/cipconnectionobject_8h.html#a54fac9132bc63fdce902025c0827b6cf", null ],
-    [ "ConnectionObjectConnectionSizeType", "d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c", null ],
-    [ "ConnectionObjectConnectionType", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a", null ],
-    [ "ConnectionObjectInstanceType", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab", null ],
-    [ "ConnectionObjectPriority", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08", null ],
-    [ "ConnectionObjectSocketType", "d1/d6c/cipconnectionobject_8h.html#aac0c7050edd5eaaff323b25a7a73b351", null ],
-    [ "ConnectionObjectState", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117", null ],
-    [ "ConnectionObjectTransportClassTriggerDirection", "d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6", null ],
-    [ "ConnectionObjectTransportClassTriggerProductionTrigger", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0", null ],
-    [ "ConnectionObjectTransportClassTriggerTransportClass", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f", null ],
-    [ "ConnectionObjectWatchdogTimeoutAction", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20", null ],
+    [ "ConnectionObjectConnectionSizeType", "d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775c", [
+      [ "kConnectionObjectConnectionSizeTypeFixed", "d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775ca5a28dccfa51405f7ac35b5d6d3a509e8", null ],
+      [ "kConnectionObjectConnectionSizeTypeVariable", "d1/d6c/cipconnectionobject_8h.html#a80a4fddf099c758f6b992f4adc00775ca66e7a5f5674ed1d420cfbd49abd778e7", null ]
+    ] ],
+    [ "ConnectionObjectConnectionType", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091a", [
+      [ "kConnectionObjectConnectionTypeNull", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa489c722263e053ad7efbdb06f1ea7466", null ],
+      [ "kConnectionObjectConnectionTypeMulticast", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa8f7d20eb5adeb31d45a0bfb62dbefe9b", null ],
+      [ "kConnectionObjectConnectionTypePointToPoint", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aabc6d5acdbfa8d7cea87c20cd43e5ed56", null ],
+      [ "kConnectionObjectConnectionTypeInvalid", "d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aad67ce57aedd1e89d25684e0697cb3f11", null ]
+    ] ],
+    [ "ConnectionObjectInstanceType", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5ab", [
+      [ "kConnectionObjectInstanceTypeInvalid", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abae8b5cb741483e2c83ac0354e14e9bef8", null ],
+      [ "kConnectionObjectInstanceTypeExplicitMessaging", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba816cfc9dd5cf617b76a279fb4893f069", null ],
+      [ "kConnectionObjectInstanceTypeIO", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba2e436dfcd485c4d4c90c5fd5d2c1ee43", null ],
+      [ "kConnectionObjectInstanceTypeIOExclusiveOwner", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba868ab030f24ecf41724bed2fadfe4caa", null ],
+      [ "kConnectionObjectInstanceTypeIOInputOnly", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abab018e791efab5611f65151a46a40854c", null ],
+      [ "kConnectionObjectInstanceTypeIOListenOnly", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5aba798ef4c0d84ae03f5082185fb84f2eca", null ],
+      [ "kConnectionObjectInstanceTypeCipBridged", "d1/d6c/cipconnectionobject_8h.html#a8fbd6c5533dcc176e91ae9292524d5abad34146a750227c04619f0cb5931a4a35", null ]
+    ] ],
+    [ "ConnectionObjectPriority", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08", [
+      [ "kConnectionObjectPriorityLow", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08ad41dea40a8924c5c076f4a8f1365675a", null ],
+      [ "kConnectionObjectPriorityHigh", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08acff6d39dbfe5ef664b7501c9132edac7", null ],
+      [ "kConnectionObjectPriorityScheduled", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08ad843ae59c0006ddbe75bcb68e0ff648d", null ],
+      [ "kConnectionObjectPriorityUrgent", "d1/d6c/cipconnectionobject_8h.html#a3c465a6a4a65cfa8a06ba2ddc97eba08a9f3e88448365d3edd981dbe5c5b022e5", null ]
+    ] ],
+    [ "ConnectionObjectSocketType", "d1/d6c/cipconnectionobject_8h.html#aac0c7050edd5eaaff323b25a7a73b351", [
+      [ "kConnectionObjectSocketTypeProducing", "d1/d6c/cipconnectionobject_8h.html#aac0c7050edd5eaaff323b25a7a73b351a811c98896cbc81b7c40fb29176bb3f83", null ],
+      [ "kConnectionObjectSocketTypeConsuming", "d1/d6c/cipconnectionobject_8h.html#aac0c7050edd5eaaff323b25a7a73b351ad6b56e619ee55b8228c9c07d1f8eeea9", null ]
+    ] ],
+    [ "ConnectionObjectState", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117", [
+      [ "kConnectionObjectStateNonExistent", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a4ca5234dc674a3c71f6561c18ea3e530", null ],
+      [ "kConnectionObjectStateConfiguring", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1", null ],
+      [ "kConnectionObjectStateWaitingForConnectionID", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a324b103174c66445f627b4a6b80cbe47", null ],
+      [ "kConnectionObjectStateEstablished", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117aa24885ab984525f39d0b4ec99b47478e", null ],
+      [ "kConnectionObjectStateTimedOut", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a43eb1272dcbc2027a0d4bb64ab8d8d0d", null ],
+      [ "kConnectionObjectStateDeferredDelete", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae274b70c9785a2c19ccafa7926ecae72", null ],
+      [ "kConnectionObjectStateClosing", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117ae1307d0ad425964318e4f7a73538a719", null ],
+      [ "kConnectionObjectStateInvalid", "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a35ebb06ec7b93565737876931ea1200f", null ]
+    ] ],
+    [ "ConnectionObjectTransportClassTriggerDirection", "d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6", [
+      [ "kConnectionObjectTransportClassTriggerDirectionClient", "d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6ae5c45e8191ad02abb0adc6339a32ced4", null ],
+      [ "kConnectionObjectTransportClassTriggerDirectionServer", "d1/d6c/cipconnectionobject_8h.html#adc1fe3e756d8798334e4f9804a22bae6abf0dd6f3c0bf2060d04bdfe9e7e89e9b", null ]
+    ] ],
+    [ "ConnectionObjectTransportClassTriggerProductionTrigger", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0", [
+      [ "kConnectionObjectTransportClassTriggerProductionTriggerInvalid", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a42fa5cdd449e82c9555804cd44db8ed8", null ],
+      [ "kConnectionObjectTransportClassTriggerProductionTriggerCyclic", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0a66cd7ba622075121f11c67671a1d8645", null ],
+      [ "kConnectionObjectTransportClassTriggerProductionTriggerChangeOfState", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0ad91b01db6a0963070bbce9ca5483aecc", null ],
+      [ "kConnectionObjectTransportClassTriggerProductionTriggerApplicationObject", "d1/d6c/cipconnectionobject_8h.html#a40e6630a28ca2e52e3f57b010035cbc0afc5a3b2421cadeb4c8448ff3b2bb391d", null ]
+    ] ],
+    [ "ConnectionObjectTransportClassTriggerTransportClass", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68f", [
+      [ "kConnectionObjectTransportClassTriggerTransportClassInvalid", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fadb99f06aef1c95a88c6e682e25966a44", null ],
+      [ "kConnectionObjectTransportClassTriggerTransportClass0", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa848be73a997600d2bfdac37d0520dfc0", null ],
+      [ "kConnectionObjectTransportClassTriggerTransportClass1", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa3985efbf81d9660d0969a318d03fe3f6", null ],
+      [ "kConnectionObjectTransportClassTriggerTransportClass2", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fa70cdb97f8af6924f5a9ba47e8c44898a", null ],
+      [ "kConnectionObjectTransportClassTriggerTransportClass3", "d1/d6c/cipconnectionobject_8h.html#a7d9579ba2ab49ebf08a1e8b124f7c68fad1cc7f6e66b0708abc0fa70ca8120d90", null ]
+    ] ],
+    [ "ConnectionObjectWatchdogTimeoutAction", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20", [
+      [ "kConnectionObjectWatchdogTimeoutActionTransitionToTimedOut", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20a34b6ca1c239ea8a312b3273b3581f6f9", null ],
+      [ "kConnectionObjectWatchdogTimeoutActionAutoDelete", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20af72d56dda8fd35204f50bf4728b89dad", null ],
+      [ "kConnectionObjectWatchdogTimeoutActionAutoReset", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20a7e45cee5ec3a29d9d7503ff0ca4adfcc", null ],
+      [ "kConnectionObjectWatchdogTimeoutActionDeferredDelete", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20aac79aa732763c9903522bb8fd39c547a", null ],
+      [ "kConnectionObjectWatchdogTimeoutActionInvalid", "d1/d6c/cipconnectionobject_8h.html#a4e4fcf18f9654cc47e597483e09afe20a4223f13947fe66c5d01d2edc18e51c8e", null ]
+    ] ],
     [ "CipConnectionObjectCreate", "d1/d6c/cipconnectionobject_8h.html#a84ea6861bff00130331e774f5ff9e77f", null ],
     [ "CipConnectionObjectDelete", "d1/d6c/cipconnectionobject_8h.html#ad3d1f26352d877978eff995142818574", null ],
     [ "CipConnectionObjectListArrayAllocator", "d1/d6c/cipconnectionobject_8h.html#af53b7a7965eb70780371a38ed7aa89bc", null ],

@@ -1,5 +1,6 @@
 var cipelectronickey_8c =
 [
+    [ "electronic_key_format_4", "d9/d3a/structelectronic__key__format__4.html", "d9/d3a/structelectronic__key__format__4" ],
     [ "ElectronicKeyFormat4", "d3/dfe/cipelectronickey_8c.html#ab367a81242de034e0392cf24af17b6b7", null ],
     [ "ElectronicKeyFormat4Delete", "d3/dfe/cipelectronickey_8c.html#a9fa7805c9496e42b8ccfff62112202f6", null ],
     [ "ElectronicKeyFormat4GetDeviceType", "d3/dfe/cipelectronickey_8c.html#aed74dbd485f78aed3c0e3899b8bcc527", null ],

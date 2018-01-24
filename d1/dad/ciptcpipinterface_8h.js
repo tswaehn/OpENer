@@ -1,5 +1,6 @@
 var ciptcpipinterface_8h =
 [
+    [ "multicast_address_configuration", "db/dd7/structmulticast__address__configuration.html", "db/dd7/structmulticast__address__configuration" ],
     [ "MulticastAddressConfiguration", "d1/dad/ciptcpipinterface_8h.html#a588cf7cf0999441f3bb99fefbadf98dc", null ],
     [ "CipTcpIpInterfaceInit", "d1/dad/ciptcpipinterface_8h.html#a4c1f49654e48c5581513d990840933b0", null ],
     [ "GetEncapsulationInactivityTimeout", "d1/dad/ciptcpipinterface_8h.html#ab17a8c773efeaebc86149f9a4dade5e2", null ],
@@ -8,6 +9,5 @@ var ciptcpipinterface_8h =
     [ "g_multicast_configuration", "d1/dad/ciptcpipinterface_8h.html#a3b13a18a3f6efcb8f2e651676096f4e5", null ],
     [ "g_time_to_live_value", "d1/dad/ciptcpipinterface_8h.html#a893d4111b2549a2ecb907c037a776927", null ],
     [ "hostname_", "d1/dad/ciptcpipinterface_8h.html#a09c1accbdcd35ed421a0d2b27baff3de", null ],
-    [ "interface_configuration_", "d1/dad/ciptcpipinterface_8h.html#a635643a0d47842550c4d3cb5f4959cee", null ],
-    [ "kCipTcpIpInterfaceClassCode", "d1/dad/ciptcpipinterface_8h.html#aba1ff9a28c6ff8570830611b2972edde", null ]
+    [ "interface_configuration_", "d1/dad/ciptcpipinterface_8h.html#a635643a0d47842550c4d3cb5f4959cee", null ]
 ];

@@ -25,7 +25,13 @@ var typedefs_8h =
     [ "EipUint8", "d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e", null ],
     [ "MicroSeconds", "d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497", null ],
     [ "MilliSeconds", "d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a", null ],
-    [ "EipStatus", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709", null ],
-    [ "UdpCommuncationDirection", "d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42", null ],
-    [ "kEipInvalidSocket", "d7/d69/typedefs_8h.html#a1c09a45013e38e2cc7785c92d92ed9c5", null ]
+    [ "EipStatus", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709", [
+      [ "kEipStatusOk", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709af172c48a50748097201d49b469c75f7a", null ],
+      [ "kEipStatusOkSend", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a9ea2c533c8b841b9d763b56a85b19af6", null ],
+      [ "kEipStatusError", "d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184", null ]
+    ] ],
+    [ "UdpCommuncationDirection", "d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42", [
+      [ "kUdpCommuncationDirectionConsuming", "d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42a922e4c2f521c295287766f9917c9fea7", null ],
+      [ "kUdpCommuncationDirectionProducing", "d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec", null ]
+    ] ]
 ];

@@ -1,5 +1,7 @@
 var doublylinkedlist_8h =
 [
+    [ "doubly_linked_list_node", "df/d2f/structdoubly__linked__list__node.html", "df/d2f/structdoubly__linked__list__node" ],
+    [ "DoublyLinkedList", "dd/de5/structDoublyLinkedList.html", "dd/de5/structDoublyLinkedList" ],
     [ "DoublyLinkedListNode", "d9/d31/doublylinkedlist_8h.html#add6ea5eb3f5590184f6e96622842e0d1", null ],
     [ "NodeMemoryAllocator", "d9/d31/doublylinkedlist_8h.html#a7c9102a2ce28540d7a0b6734fac1a3e2", null ],
     [ "NodeMemoryDeallocator", "d9/d31/doublylinkedlist_8h.html#a63a377324094fa58c1d875bc30b4b44d", null ],

@@ -1,5 +1,9 @@
 var cipethernetlink_8c =
 [
+    [ "CipEthernetLinkInterfaceCapability", "dd/dc6/structCipEthernetLinkInterfaceCapability.html", "dd/dc6/structCipEthernetLinkInterfaceCapability" ],
+    [ "CipEthernetLinkInterfaceControl", "d3/d25/structCipEthernetLinkInterfaceControl.html", "d3/d25/structCipEthernetLinkInterfaceControl" ],
+    [ "speed_duplex_array_entry", "d3/d4d/structspeed__duplex__array__entry.html", "d3/d4d/structspeed__duplex__array__entry" ],
+    [ "speed_duplex_options", "d5/df0/structspeed__duplex__options.html", "d5/df0/structspeed__duplex__options" ],
     [ "CipEthernetLinkSpeedDuplexArrayEntry", "d7/d65/cipethernetlink_8c.html#a87c2ef8c1645036e57902410ae2532b4", null ],
     [ "CipEthernetLinkSpeedDuplexOptions", "d7/d65/cipethernetlink_8c.html#af8c124206bb89c3e9b8ef9813826b7da", null ],
     [ "CipEthernetLinkInit", "d7/d65/cipethernetlink_8c.html#ab1c2d006a08c187c70ab66bb0a777bd0", null ],

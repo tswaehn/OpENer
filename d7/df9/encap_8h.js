@@ -14,6 +14,7 @@ var encap_8h =
       [ "kEncapsulationProtocolInvalidLength", "d7/df9/encap_8h.html#ade64170fc04acea31424c748aa86a025ac60856e35581e49b212637d4f324f0f8", null ],
       [ "kEncapsulationProtocolUnsupportedProtocol", "d7/df9/encap_8h.html#ade64170fc04acea31424c748aa86a025a938715221d997ba23df530ade596b2a8", null ]
     ] ],
+    [ "CloseEncapsulationSessionBySockAddr", "d7/df9/encap_8h.html#a0101714be726ab1b21125b6a82ac7a56", null ],
     [ "EncapsulationInit", "d7/df9/encap_8h.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],
     [ "EncapsulationShutDown", "d7/df9/encap_8h.html#ga1261bd2441f744c38d7a3f8d8c16c391", null ],
     [ "ManageEncapsulationMessages", "d7/df9/encap_8h.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],

@@ -22,6 +22,7 @@ var encap_8c =
       [ "kSessionStatusValid", "d2/dbd/encap_8c.html#aa68bfc8983f200bfbae62a07dd04ebf0a20e998dae8e4ce10a835850f87a01afa", null ]
     ] ],
     [ "CheckRegisteredSessions", "d2/dbd/encap_8c.html#a611d3a708d6ccf3dbbee4edc743cffb3", null ],
+    [ "CloseEncapsulationSessionBySockAddr", "d2/dbd/encap_8c.html#a0101714be726ab1b21125b6a82ac7a56", null ],
     [ "CloseSession", "d2/dbd/encap_8c.html#gab9ff230d61fc6dedd90f8b95e9a27707", null ],
     [ "CreateEncapsulationStructure", "d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7", null ],
     [ "DetermineDelayTime", "d2/dbd/encap_8c.html#ad676b132a3d05d3ee62a9bb5d1236e4f", null ],

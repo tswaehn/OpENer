@@ -94,6 +94,7 @@ var cipconnectionmanager_8h =
       [ "kConnectionManagerGeneralStatusTooMuchData", "d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6ad3aeff45b22a5ebb88c3cd18a7334146", null ]
     ] ],
     [ "AddNewActiveConnection", "d2/da3/cipconnectionmanager_8h.html#aac2c0397cf54cb8356126c0d71d744ff", null ],
+    [ "CheckForTimedOutConnectionsAndCloseTCPConnections", "d2/da3/cipconnectionmanager_8h.html#a99d185d7534cefd1aadbe38c16de7e38", null ],
     [ "CloseConnection", "d2/da3/cipconnectionmanager_8h.html#a9367d6d6edfd5bd276ead18619f4d74e", null ],
     [ "ConnectionManagerInit", "d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212", null ],
     [ "GetConnectedObject", "d2/da3/cipconnectionmanager_8h.html#aa7df2f5886cbdc0d960c98ee6f61caa6", null ],

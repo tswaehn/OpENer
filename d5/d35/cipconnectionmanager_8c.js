@@ -9,6 +9,7 @@ var cipconnectionmanager_8c =
     [ "AssembleForwardOpenResponse", "d5/d35/cipconnectionmanager_8c.html#a949510af1a4c39a622b0fb7feb9b796a", null ],
     [ "CheckElectronicKeyData", "d5/d35/cipconnectionmanager_8c.html#a536c0dafefbe0ea14d8c13cc9d25e946", null ],
     [ "CheckForExistingConnection", "d5/d35/cipconnectionmanager_8c.html#a7f66b0e47fa80f863755d608b78b6f78", null ],
+    [ "CheckForTimedOutConnectionsAndCloseTCPConnections", "d5/d35/cipconnectionmanager_8c.html#a17f02ee599fad222d6c2a97da7020f1e", null ],
     [ "CloseConnection", "d5/d35/cipconnectionmanager_8c.html#a9367d6d6edfd5bd276ead18619f4d74e", null ],
     [ "ConnectionManagerInit", "d5/d35/cipconnectionmanager_8c.html#a5ab0de6894d23e8fe84a6b46797c2212", null ],
     [ "ForwardClose", "d5/d35/cipconnectionmanager_8c.html#a13291325387721d246cbd42ccaf9774f", null ],

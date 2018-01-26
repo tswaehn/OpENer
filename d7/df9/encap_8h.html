@@ -171,14 +171,20 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aef8228e92ac17473e762d8144daca74e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/encap_8h.html#aef8228e92ac17473e762d8144daca74e">CloseClass3ConnectionBasedOnSession</a> (size_t encapsulation_session_handle)</td></tr>
+<tr class="separator:aef8228e92ac17473e762d8144daca74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0101714be726ab1b21125b6a82ac7a56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/encap_8h.html#a0101714be726ab1b21125b6a82ac7a56">CloseEncapsulationSessionBySockAddr</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const connection_object)</td></tr>
 <tr class="separator:a0101714be726ab1b21125b6a82ac7a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad083888333d3ceec1576126a88eeaca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/encap_8h.html#ad083888333d3ceec1576126a88eeaca7">CloseSessionBySessionHandle</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const connection_object)</td></tr>
+<tr class="separator:ad083888333d3ceec1576126a88eeaca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a0dc2be6c485d9e6940d5b20a981022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga7a0dc2be6c485d9e6940d5b20a981022">EncapsulationInit</a> (void)</td></tr>
 <tr class="memdesc:ga7a0dc2be6c485d9e6940d5b20a981022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the encapsulation layer.  <a href="../../d4/d91/group__ENCAP.html#ga7a0dc2be6c485d9e6940d5b20a981022">More...</a><br/></td></tr>
 <tr class="separator:ga7a0dc2be6c485d9e6940d5b20a981022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1261bd2441f744c38d7a3f8d8c16c391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga1261bd2441f744c38d7a3f8d8c16c391">EncapsulationShutDown</a> (void)</td></tr>
 <tr class="memdesc:ga1261bd2441f744c38d7a3f8d8c16c391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the encapsulation layer.  <a href="../../d4/d91/group__ENCAP.html#ga1261bd2441f744c38d7a3f8d8c16c391">More...</a><br/></td></tr>
 <tr class="separator:ga1261bd2441f744c38d7a3f8d8c16c391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d77511dde21e6baa59d8d7cc7ef4ec"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/encap_8h.html#a53d77511dde21e6baa59d8d7cc7ef4ec">GetSessionFromSocket</a> (const int socket_handle)</td></tr>
+<tr class="separator:a53d77511dde21e6baa59d8d7cc7ef4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac">ManageEncapsulationMessages</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> elapsed_time)</td></tr>
 <tr class="memdesc:ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle delayed encapsulation message responses.  <a href="../../d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac">More...</a><br/></td></tr>
 <tr class="separator:ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +208,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/df9/encap_8h_source.html#l00022">22</a> of file <a class="el" href="../../d7/df9/encap_8h_source.html">encap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00645">CreateEncapsulationStructure()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00313">EncapsulateData()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00546">HandleDataOnTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00359">HandleReceivedListIdentityCommandUdp()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00584">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00541">HandleReceivedSendUnitDataCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00646">CreateEncapsulationStructure()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00313">EncapsulateData()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00546">HandleDataOnTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00359">HandleReceivedListIdentityCommandUdp()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00585">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00542">HandleReceivedSendUnitDataCommand()</a>.</p>
 
 </div>
 </div>
@@ -265,6 +271,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aef8228e92ac17473e762d8144daca74e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CloseClass3ConnectionBasedOnSession </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>encapsulation_session_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00768">768</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::associated_encapsulation_session</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00185">cip_connection_object::connection_close_function</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00335">ConnectionObjectGetTransportClassTriggerTransportClass()</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00026">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00030">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectTransportClassTriggerTransportClass3</a>, and <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::next</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00921">CheckEncapsulationInactivity()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00689">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00516">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00702">RemoveSession()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_aef8228e92ac17473e762d8144daca74e_cgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_aef8228e92ac17473e762d8144daca74e_icgraph.svg" width="100%" height="457"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a0101714be726ab1b21125b6a82ac7a56"></a>
 <div class="memitem">
 <div class="memproto">
@@ -279,16 +323,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00730">730</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00742">742</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00679">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00175">cip_connection_object::originator_address</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00689">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00175">cip_connection_object::originator_address</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01498">CheckForTimedOutConnectionsAndCloseTCPConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00711">HandleIoConnectionTimeOut()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a0101714be726ab1b21125b6a82ac7a56_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a0101714be726ab1b21125b6a82ac7a56_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -296,7 +340,75 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a0101714be726ab1b21125b6a82ac7a56_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a0101714be726ab1b21125b6a82ac7a56_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad083888333d3ceec1576126a88eeaca7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CloseSessionBySessionHandle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00680">680</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::associated_encapsulation_session</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00245">CloseTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00019">Class3ConnectionTimeoutHandler()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_ad083888333d3ceec1576126a88eeaca7_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_ad083888333d3ceec1576126a88eeaca7_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a53d77511dde21e6baa59d8d7cc7ef4ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t GetSessionFromSocket </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>socket_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00759">759</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00921">CheckEncapsulationInactivity()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a53d77511dde21e6baa59d8d7cc7ef4ec_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -317,11 +429,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00691">691</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00702">702</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00768">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00087">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00092">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00921">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00546">HandleDataOnTcpSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00322">NetworkHandlerProcessOnce()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/df9/encap_8h_a86c98c2665f4c058e9c5afb60690a81b_cgraph.svg" width="630" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -339,7 +459,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d7/df9/encap_8h.html">encap.h</a></li>
-    <li class="footer">Generated on Thu Jan 25 2018 20:19:06 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Fri Jan 26 2018 16:19:55 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -14,9 +14,12 @@ var encap_8h =
       [ "kEncapsulationProtocolInvalidLength", "d7/df9/encap_8h.html#ade64170fc04acea31424c748aa86a025ac60856e35581e49b212637d4f324f0f8", null ],
       [ "kEncapsulationProtocolUnsupportedProtocol", "d7/df9/encap_8h.html#ade64170fc04acea31424c748aa86a025a938715221d997ba23df530ade596b2a8", null ]
     ] ],
+    [ "CloseClass3ConnectionBasedOnSession", "d7/df9/encap_8h.html#aef8228e92ac17473e762d8144daca74e", null ],
     [ "CloseEncapsulationSessionBySockAddr", "d7/df9/encap_8h.html#a0101714be726ab1b21125b6a82ac7a56", null ],
+    [ "CloseSessionBySessionHandle", "d7/df9/encap_8h.html#ad083888333d3ceec1576126a88eeaca7", null ],
     [ "EncapsulationInit", "d7/df9/encap_8h.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],
     [ "EncapsulationShutDown", "d7/df9/encap_8h.html#ga1261bd2441f744c38d7a3f8d8c16c391", null ],
+    [ "GetSessionFromSocket", "d7/df9/encap_8h.html#a53d77511dde21e6baa59d8d7cc7ef4ec", null ],
     [ "ManageEncapsulationMessages", "d7/df9/encap_8h.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],
     [ "RemoveSession", "d7/df9/encap_8h.html#a86c98c2665f4c058e9c5afb60690a81b", null ]
 ];

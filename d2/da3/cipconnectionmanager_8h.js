@@ -5,6 +5,7 @@ var cipconnectionmanager_8h =
     [ "SEQ_GT32", "d2/da3/cipconnectionmanager_8h.html#ad36b53d05b61fcc3c6405c85b763a90c", null ],
     [ "SEQ_LEQ16", "d2/da3/cipconnectionmanager_8h.html#aa90301ce80009301ef74637f50a79e69", null ],
     [ "SEQ_LEQ32", "d2/da3/cipconnectionmanager_8h.html#ad640aadbc83eb8494f1752cbf1572681", null ],
+    [ "CloseSessionFunction", "d2/da3/cipconnectionmanager_8h.html#a850cea8a987d7459f37ea6c418043976", null ],
     [ "ConnectionManagerExtendedStatusCode", "d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759", [
       [ "kConnectionManagerExtendedStatusCodeSuccess", "d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a299259d157a6ac077f1c5c8904ceaef8", null ],
       [ "kConnectionManagerExtendedStatusCodeErrorConnectionInUseOrDuplicateForwardOpen", "d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a4d3041e68abdeaaaea9729442e421b03", null ],
@@ -94,7 +95,7 @@ var cipconnectionmanager_8h =
       [ "kConnectionManagerGeneralStatusTooMuchData", "d2/da3/cipconnectionmanager_8h.html#a83673de16e338e17cac4bde729de7fe6ad3aeff45b22a5ebb88c3cd18a7334146", null ]
     ] ],
     [ "AddNewActiveConnection", "d2/da3/cipconnectionmanager_8h.html#aac2c0397cf54cb8356126c0d71d744ff", null ],
-    [ "CheckForTimedOutConnectionsAndCloseTCPConnections", "d2/da3/cipconnectionmanager_8h.html#a99d185d7534cefd1aadbe38c16de7e38", null ],
+    [ "CheckForTimedOutConnectionsAndCloseTCPConnections", "d2/da3/cipconnectionmanager_8h.html#ac36c68122b200d1bc99fbe9fb35a3440", null ],
     [ "CloseConnection", "d2/da3/cipconnectionmanager_8h.html#a9367d6d6edfd5bd276ead18619f4d74e", null ],
     [ "ConnectionManagerInit", "d2/da3/cipconnectionmanager_8h.html#a5ab0de6894d23e8fe84a6b46797c2212", null ],
     [ "GetConnectedObject", "d2/da3/cipconnectionmanager_8h.html#aa7df2f5886cbdc0d960c98ee6f61caa6", null ],

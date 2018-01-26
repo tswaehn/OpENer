@@ -1,5 +1,6 @@
 var structcip__connection__object =
 [
+    [ "associated_encapsulation_session", "d2/da8/structcip__connection__object.html#a5bc330fb4524b576a4155d260c36180a", null ],
     [ "cip_consumed_connection_id", "d2/da8/structcip__connection__object.html#ae2bc4852486fec4e6dc3d4beedce9541", null ],
     [ "cip_produced_connection_id", "d2/da8/structcip__connection__object.html#ae52d0b09c72bf7ef7c3ec3909198b569", null ],
     [ "configuration_path", "d2/da8/structcip__connection__object.html#af1595add8f6d4e0f5bac19b7918c02ec", null ],

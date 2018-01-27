@@ -10,13 +10,13 @@ var cipcommon_8c =
     [ "DecodePaddedEPath", "d2/d3d/cipcommon_8c.html#ae7acee656656a60bf4e33f33369ac3a5", null ],
     [ "EncodeData", "d2/d3d/cipcommon_8c.html#gaece1b7dd2aeec306cb33b86b2ee21980", null ],
     [ "EncodeEPath", "d2/d3d/cipcommon_8c.html#a6eec1752e2cffbbab16bff95fa145bd3", null ],
-    [ "GetAttributeAll", "d2/d3d/cipcommon_8c.html#ab5e27f4fb889d26a7dcd993cf2d3ddfe", null ],
-    [ "GetAttributeSingle", "d2/d3d/cipcommon_8c.html#a4d2d00f2e1252b192ef73aa388898e7d", null ],
+    [ "GetAttributeAll", "d2/d3d/cipcommon_8c.html#ad1ca841f8ea512a497ce36acbc96a441", null ],
+    [ "GetAttributeSingle", "d2/d3d/cipcommon_8c.html#ab0ed210dcfa6219a238c5a9f7a72aad1", null ],
     [ "GetCipAttribute", "d2/d3d/cipcommon_8c.html#ga5a14c8d76acacb09312b709bb0a76265", null ],
     [ "GetSizeOfAttribute", "d2/d3d/cipcommon_8c.html#ae750a4033fd5c18afa9a0862086eb71f", null ],
     [ "InsertAttribute", "d2/d3d/cipcommon_8c.html#gac207feb53c1f98b45f3934bbea63d618", null ],
     [ "InsertService", "d2/d3d/cipcommon_8c.html#ga35f639b135ec3c3903f49fd65daed307", null ],
-    [ "NotifyClass", "d2/d3d/cipcommon_8c.html#af2bcefaee6264e0a195c4fbe1d63a43a", null ],
+    [ "NotifyClass", "d2/d3d/cipcommon_8c.html#a1e62d2d38aa21b09d3e98c3e820ce4da", null ],
     [ "ShutdownCipStack", "d2/d3d/cipcommon_8c.html#gaa57b527530adc2acda6febc500fd6831", null ],
     [ "g_message_data_reply_buffer", "d2/d3d/cipcommon_8c.html#a5bd888b31f309543df6dc57652d2ac48", null ]
 ];

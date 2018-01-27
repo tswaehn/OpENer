@@ -158,9 +158,9 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Returns kEipStatusOk if assembly object was successfully created, otherwise kEipStatusError</dd></dl>
 <p>Setup the Assembly object. </p>
 
-<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00058">58</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00057">57</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
 
-<p>References <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00033">CreateAssemblyClass()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00032">CreateAssemblyClass()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00035">CipStackInit()</a>.</p>
 
@@ -228,11 +228,11 @@ Here is the caller graph for this function:</div>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00106">106</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00105">105</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00083">AfterAssemblyDataReceived()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00226">cip_instance::attributes</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00121">CipByteArray::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00120">CipByteArray::length</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00615">HandleConfigData()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00845">HandleReceivedIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00615">HandleConfigData()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00841">HandleReceivedIoConnectionData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -269,9 +269,9 @@ Here is the caller graph for this function:</div>
 <p>clean up the data allocated in the assembly object instances </p>
 <p>Assembly object instances allocate per instance data to store attribute 3. This will be freed here. The assembly object data given by the application is not freed neither the assembly object instances. These are handled in the main shutdown function. </p>
 
-<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00062">62</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00061">61</a> of file <a class="el" href="../../df/d2e/cipassembly_8c_source.html">cipassembly.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00366">GetCipAttribute()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00125">GetCipClass()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00252">cip_class::instances</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00229">cip_instance::next</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00218">CipAttributeStruct::data</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00364">GetCipAttribute()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00125">GetCipClass()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00252">cip_class::instances</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00229">cip_instance::next</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00060">ShutdownCipStack()</a>.</p>
 
@@ -299,7 +299,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../de/df4/cipassembly_8h.html">cipassembly.h</a></li>
-    <li class="footer">Generated on Fri Jan 26 2018 16:25:22 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Sat Jan 27 2018 21:14:14 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

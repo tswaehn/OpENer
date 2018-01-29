@@ -45,12 +45,12 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1",
-"d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a6f912658085869a4e4b341c8ec13c16c",
-"d3/d98/cpf_8c.html#a150b3b92a956a84c39b678834ea4d499",
-"d5/df0/structspeed__duplex__options.html#ae22e2ae845156d92d6fb6525df959008",
-"da/d73/endianconv_8c.html#gae267a8684cc6ee1b3bd83df03260b7aa",
-"dd/dc7/WIN32_2networkhandler_8h.html#a0db6c2ead1606d25fb6d9151e5c08d09",
-"df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953"
+"d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a62cfd1f5a9792ba10291a6cb09a36ab3",
+"d3/d25/structCipEthernetLinkInterfaceControl.html#aab732ed5c408031958606e486579b128",
+"d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#gac9c9ad2c2254b783e7b447bd84eba8c0",
+"da/d73/endianconv_8c.html#a2e8bf172dd5ecba3cc0871278ab06538",
+"dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9",
+"df/d28/ciptypes_8h.html#ab97ef8cc5f7c9e2ab831d9d99e506725a0a4c91d34885eced47c01d48aceed41d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

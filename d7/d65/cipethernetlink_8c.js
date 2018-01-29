@@ -11,7 +11,7 @@ var cipethernetlink_8c =
     [ "EncodeInterfaceControl", "d7/d65/cipethernetlink_8c.html#afd1fc559145db95d7dfd4992ff38edd5", null ],
     [ "EncodeInterfaceCounters", "d7/d65/cipethernetlink_8c.html#a841bea27e0f777e8b8beaa35fbaa80c7", null ],
     [ "EncodeMediaCounters", "d7/d65/cipethernetlink_8c.html#ad7df5a954d504d818bf33ef2f2ae909d", null ],
-    [ "GetAttributeSingleEthernetLink", "d7/d65/cipethernetlink_8c.html#a5ee81769c23dd70944ab97cbdac25fec", null ],
+    [ "GetAttributeSingleEthernetLink", "d7/d65/cipethernetlink_8c.html#ab32c3ac78db693933538f44ed0b1fb42", null ],
     [ "dummy_attribute_udint", "d7/d65/cipethernetlink_8c.html#a16e9a4f9d56c6e12f9f3043a9b13380f", null ],
     [ "dummy_attribute_usint", "d7/d65/cipethernetlink_8c.html#ab4fa75c3598853c9e6ac8f7eeed98bb0", null ],
     [ "interface_capability", "d7/d65/cipethernetlink_8c.html#a8631ab43b33b480a3c9ea673e1cdc0a5", null ],

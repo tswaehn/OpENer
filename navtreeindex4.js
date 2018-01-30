@@ -13,7 +13,7 @@ var NAVTREEINDEX4 =
 "d5/df0/structspeed__duplex__options.html#a89a984fd725dc467ea51f7347a510958":[5,0,44,1],
 "d5/df0/structspeed__duplex__options.html#ae22e2ae845156d92d6fb6525df959008":[5,0,44,0],
 "d6/d33/POSIX_2networkhandler_8h.html":[6,0,0,2,0,5],
-"d6/d33/POSIX_2networkhandler_8h.html#a0db6c2ead1606d25fb6d9151e5c08d09":[6,0,0,2,0,5,5],
+"d6/d33/POSIX_2networkhandler_8h.html#a20a53fded2d3f1e17272dbc7185988fd":[6,0,0,2,0,5,5],
 "d6/d33/POSIX_2networkhandler_8h.html#a2812ba0ecd1fd9a5549fbca397d76e3e":[6,0,0,2,0,5,1],
 "d6/d33/POSIX_2networkhandler_8h.html#a2d91de751b888e7b5a5c2e2692fd4492":[6,0,0,2,0,5,3],
 "d6/d33/POSIX_2networkhandler_8h.html#a443a5019c1bb91b2490f96b0d0158e04":[6,0,0,2,0,5,4],

@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('df/def/POSIX_2networkconfig_8c_source.
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  fclose(file_handle);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (inet_pton(AF_INET, gateway_string, gateway) == 1) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (inet_pton(AF_INET, gateway_string, &amp;gateway) == 1) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (gateway != <a class="code" href="../../df/def/POSIX_2networkconfig_8c.html#a51337483be7fd187db3d87b5eca6dc96">LOOPBACK_BINARY</a>) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#a635643a0d47842550c4d3cb5f4959cee">interface_configuration_</a>.<a class="code" href="../../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a57d4e982c2b983e2b776316105a4b3a9">gateway</a> = gateway;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    } <span class="keywordflow">else</span> {</div>
@@ -336,7 +336,7 @@ $(document).ready(function(){initNavTree('df/def/POSIX_2networkconfig_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_efbcf68973d247bbf15f9eecae7f24e3.html">ports</a></li><li class="navelem"><a class="el" href="../../dir_c917a51cd5b3c267ef51fcd06123381d.html">POSIX</a></li><li class="navelem"><a class="el" href="../../df/def/POSIX_2networkconfig_8c.html">networkconfig.c</a></li>
-    <li class="footer">Generated on Mon Feb 5 2018 12:14:43 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Feb 5 2018 12:18:41 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

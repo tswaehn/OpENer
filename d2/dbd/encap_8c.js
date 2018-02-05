@@ -22,10 +22,7 @@ var encap_8c =
       [ "kSessionStatusValid", "d2/dbd/encap_8c.html#aa68bfc8983f200bfbae62a07dd04ebf0a20e998dae8e4ce10a835850f87a01afa", null ]
     ] ],
     [ "CheckRegisteredSessions", "d2/dbd/encap_8c.html#a611d3a708d6ccf3dbbee4edc743cffb3", null ],
-    [ "CloseClass3ConnectionBasedOnSession", "d2/dbd/encap_8c.html#aef8228e92ac17473e762d8144daca74e", null ],
-    [ "CloseEncapsulationSessionBySockAddr", "d2/dbd/encap_8c.html#a0101714be726ab1b21125b6a82ac7a56", null ],
     [ "CloseSession", "d2/dbd/encap_8c.html#gab9ff230d61fc6dedd90f8b95e9a27707", null ],
-    [ "CloseSessionBySessionHandle", "d2/dbd/encap_8c.html#ad083888333d3ceec1576126a88eeaca7", null ],
     [ "CreateEncapsulationStructure", "d2/dbd/encap_8c.html#a97aec4be1b9cb512937331c89bb289a7", null ],
     [ "DetermineDelayTime", "d2/dbd/encap_8c.html#ad676b132a3d05d3ee62a9bb5d1236e4f", null ],
     [ "EncapsulateData", "d2/dbd/encap_8c.html#a268183211c79c21c5b3ad550f27078e0", null ],
@@ -33,7 +30,6 @@ var encap_8c =
     [ "EncapsulationInit", "d2/dbd/encap_8c.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],
     [ "EncapsulationShutDown", "d2/dbd/encap_8c.html#ga1261bd2441f744c38d7a3f8d8c16c391", null ],
     [ "GetFreeSessionIndex", "d2/dbd/encap_8c.html#ad674cdd0452f59d824a0bebbf678cb6d", null ],
-    [ "GetSessionFromSocket", "d2/dbd/encap_8c.html#a53d77511dde21e6baa59d8d7cc7ef4ec", null ],
     [ "HandleReceivedExplictTcpData", "d2/dbd/encap_8c.html#gadeace7aa415ce7da686b522c85d131d1", null ],
     [ "HandleReceivedExplictUdpData", "d2/dbd/encap_8c.html#gaa341c4592653ac350721e07a99915315", null ],
     [ "HandleReceivedListIdentityCommandTcp", "d2/dbd/encap_8c.html#aa7708824f85c4eb678ab822220ae4991", null ],

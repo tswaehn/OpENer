@@ -250,55 +250,55 @@ var sectionId = 'dynsection-13';
 </g>
 <!-- Node13 -->
 <g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a20a53fded2d3f1e17272dbc7185988fd" target="_top" xlink:title="SetQosOnSocket">
-<polygon fill="none" stroke="black" points="896.5,-190.5 896.5,-209.5 989.5,-209.5 989.5,-190.5 896.5,-190.5"/>
-<text text-anchor="middle" x="943" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetQosOnSocket</text>
+<g id="a_node13"><a xlink:href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" target="_top" xlink:title="Close the given socket and clean up the stack. ">
+<polygon fill="none" stroke="black" points="906.5,-190.5 906.5,-209.5 979.5,-209.5 979.5,-190.5 906.5,-190.5"/>
+<text text-anchor="middle" x="943" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node13 -->
 <g id="edge13" class="edge"><title>Node8&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M760.689,-167.396C797.046,-173.934 847.633,-183.031 886.138,-189.955"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="885.691,-193.43 896.152,-191.755 886.93,-186.541 885.691,-193.43"/>
-</g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e" target="_top" xlink:title="Initializing the data structures of the TCP/IP interface object. ">
-<polygon fill="none" stroke="black" points="889,-152.5 889,-171.5 997,-171.5 997,-152.5 889,-152.5"/>
-<text text-anchor="middle" x="943" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
-</a>
-</g>
-</g>
-<!-- Node8&#45;&gt;Node14 -->
-<g id="edge14" class="edge"><title>Node8&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M760.689,-159.614C794.748,-160.062 841.295,-160.675 878.698,-161.167"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="878.942,-164.67 888.987,-161.302 879.034,-157.671 878.942,-164.67"/>
+<path fill="none" stroke="midnightblue" d="M760.689,-167.396C800.359,-174.53 856.972,-184.71 896.344,-191.79"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="895.75,-195.239 906.211,-193.564 896.989,-188.35 895.75,-195.239"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" target="_top" xlink:title="Close the given socket and clean up the stack. ">
-<polygon fill="none" stroke="black" points="906.5,-114.5 906.5,-133.5 979.5,-133.5 979.5,-114.5 906.5,-114.5"/>
-<text text-anchor="middle" x="943" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocket</text>
+<g id="a_node15"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a20a53fded2d3f1e17272dbc7185988fd" target="_top" xlink:title="SetQosOnSocket">
+<polygon fill="none" stroke="black" points="896.5,-152.5 896.5,-171.5 989.5,-171.5 989.5,-152.5 896.5,-152.5"/>
+<text text-anchor="middle" x="943" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetQosOnSocket</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node15 -->
 <g id="edge15" class="edge"><title>Node8&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M760.689,-151.833C800.275,-145.756 856.732,-137.089 896.093,-131.047"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="896.858,-134.471 906.211,-129.494 895.796,-127.552 896.858,-134.471"/>
+<path fill="none" stroke="midnightblue" d="M760.689,-159.614C797.046,-160.093 847.633,-160.758 886.138,-161.265"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="886.107,-164.765 896.152,-161.397 886.199,-157.765 886.107,-164.765"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" target="_top" xlink:title="Platform dependent code to close a socket. ">
-<polygon fill="none" stroke="black" points="1070,-114.5 1070,-133.5 1180,-133.5 1180,-114.5 1070,-114.5"/>
-<text text-anchor="middle" x="1125" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
+<g id="a_node16"><a xlink:href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e" target="_top" xlink:title="Initializing the data structures of the TCP/IP interface object. ">
+<polygon fill="none" stroke="black" points="889,-114.5 889,-133.5 997,-133.5 997,-114.5 889,-114.5"/>
+<text text-anchor="middle" x="943" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetPriorityForSocket</text>
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node16 -->
-<g id="edge16" class="edge"><title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M979.562,-124C1002.37,-124 1032.64,-124 1059.58,-124"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1059.71,-127.5 1069.71,-124 1059.71,-120.5 1059.71,-127.5"/>
+<!-- Node8&#45;&gt;Node16 -->
+<g id="edge16" class="edge"><title>Node8&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M760.689,-151.833C794.748,-146.604 841.295,-139.459 878.698,-133.717"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="879.634,-137.115 888.987,-132.138 878.571,-130.196 879.634,-137.115"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html#a2812ba0ecd1fd9a5549fbca397d76e3e" target="_top" xlink:title="Platform dependent code to close a socket. ">
+<polygon fill="none" stroke="black" points="1070,-190.5 1070,-209.5 1180,-209.5 1180,-190.5 1070,-190.5"/>
+<text text-anchor="middle" x="1125" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">CloseSocketPlatform</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge14" class="edge"><title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M979.562,-200C1002.37,-200 1032.64,-200 1059.58,-200"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1059.71,-203.5 1069.71,-200 1059.71,-196.5 1059.71,-203.5"/>
 </g>
 <!-- Node17&#45;&gt;Node6 -->
 <g id="edge18" class="edge"><title>Node17&#45;&gt;Node6</title>

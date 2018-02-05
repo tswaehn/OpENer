@@ -898,7 +898,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                       error_message);</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      <a class="code" href="../../df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20">FreeErrorMessage</a>(error_message);</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;      <a class="code" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36">CloseSocket</a>(new_socket);</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;      <span class="keywordflow">return</span> kEipInvalidSocket;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;      <span class="keywordflow">return</span> new_socket;</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    }</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <a class="code" href="../../d1/d1b/trace_8h.html#a9a8a4741005c175e598afc162f68982a">OPENER_TRACE_INFO</a>(<span class="stringliteral">&quot;networkhandler: bind UDP socket %d\n&quot;</span>, new_socket);</div>
@@ -916,7 +916,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <span class="stringliteral">&quot;networkhandler: could not set the TTL to: %d, error: %d - %s\n&quot;</span>,</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            <a class="code" href="../../dd/d20/ciptcpipinterface_8c.html#a80c0f3f25208a8befe2a112a78b15435">g_time_to_live_value</a>, error_code, error_message);</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;          <a class="code" href="../../df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20">FreeErrorMessage</a>(error_message);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;          <span class="keywordflow">return</span> kEipInvalidSocket;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;          <span class="keywordflow">return</span> new_socket;</div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        }</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;      }</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    }</div>
@@ -934,7 +934,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                       error_code,</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                       error_message);</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;      <a class="code" href="../../df/d94/opener__error_8h.html#a99f5295ad12a2b986bab4b89a24cfc20">FreeErrorMessage</a>(error_message);</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;      <span class="keywordflow">return</span> kEipInvalidSocket;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;      <span class="keywordflow">return</span> new_socket;</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    }</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="comment">/* store the originators address */</span></div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    socket_data-&gt;sin_addr.s_addr = peer_address.sin_addr.s_addr;</div>
@@ -1170,7 +1170,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_efbcf68973d247bbf15f9eecae7f24e3.html">ports</a></li><li class="navelem"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html">generic_networkhandler.c</a></li>
-    <li class="footer">Generated on Mon Feb 5 2018 12:18:41 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Feb 5 2018 16:14:52 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -49,8 +49,8 @@ var NAVTREEINDEX =
 "d3/d25/structCipEthernetLinkInterfaceControl.html#aab732ed5c408031958606e486579b128",
 "d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#gac9c9ad2c2254b783e7b447bd84eba8c0",
 "da/d73/endianconv_8c.html#a2e8bf172dd5ecba3cc0871278ab06538",
-"dd/dc4/cipidentity_8c.html#a02dada89b9eeffaab163c70d99ade6a9",
-"df/d28/ciptypes_8h.html#ab97ef8cc5f7c9e2ab831d9d99e506725a0a4c91d34885eced47c01d48aceed41d"
+"dd/dc6/structCipEthernetLinkInterfaceCapability.html",
+"df/d2e/cipassembly_8c.html#adcacd62b6a866c5c74c3cdda19598b98"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
   </td>
  </tr>
@@ -123,86 +123,80 @@ $(document).ready(function(){initNavTree('dd/d1b/POSIX_2sample__application_2ope
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d69/typedefs_8h.html">typedefs.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a15a75feae90347583190ab0f07c4b356">   34</a></span>&#160;<span class="preprocessor">#define OPENER_DEVICE_VENDOR_ID           1</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa760b71a038b6ba21238a9be1165c96b">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_DEVICE_TYPE               12</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a0202c58db20678a7d2532643de074f39">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_DEVICE_PRODUCT_CODE      65001</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8fadd41cbb435656743873e49ca89576">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_DEVICE_MAJOR_REVISION      1</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7f6ea0b15c8995ecaad60f608abf672c">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_DEVICE_MINOR_REVISION      2</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_DEVICE_NAME      (&quot;OpENer PC&quot;)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a79a5739ac401f5bbe9d34286c216f50f">   47</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_APPLICATION_SPECIFIC_CONNECTABLE_OBJECTS 1</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649">   52</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_EXPLICIT_CONNS 6</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#adc6d3a58031ec407b84b09ec5643294a">   59</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS 1</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ae7106755b220189093132abc4da3857b">   66</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_INPUT_ONLY_CONNS 1</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3664613466dea71c92c8599e8ff4d6e">   70</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_INPUT_ONLY_CONNS_PER_CON_PATH 3</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7ae463e5cb0f1deb77060bb14eb8816a">   77</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_LISTEN_ONLY_CONNS 1</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ab12e108ce020a5b3d2437475a2b0b96b">   81</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_LISTEN_ONLY_CONNS_PER_CON_PATH   3</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3774576feaec4fbdf86d32044d38c89">   88</a></span>&#160;<span class="preprocessor">#define OPENER_MESSAGE_DATA_REPLY_BUFFER 100</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8d73780f7a1f5d9977d7388ebfbe1f93">   92</a></span>&#160;<span class="preprocessor">#define OPENER_NUMBER_OF_SUPPORTED_SESSIONS 20</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> kOpenerTimerTickInMilliSeconds = 10;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> kOpenerConsumedDataHasRunIdleHeader = 1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;devicedata.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a79a5739ac401f5bbe9d34286c216f50f">   41</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_APPLICATION_SPECIFIC_CONNECTABLE_OBJECTS 1</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3118d5a2f19c9196849fe41a6b0e649">   46</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_EXPLICIT_CONNS 6</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#adc6d3a58031ec407b84b09ec5643294a">   53</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS 1</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ae7106755b220189093132abc4da3857b">   60</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_INPUT_ONLY_CONNS 1</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3664613466dea71c92c8599e8ff4d6e">   64</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_INPUT_ONLY_CONNS_PER_CON_PATH 3</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7ae463e5cb0f1deb77060bb14eb8816a">   71</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_LISTEN_ONLY_CONNS 1</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ab12e108ce020a5b3d2437475a2b0b96b">   75</a></span>&#160;<span class="preprocessor">#define OPENER_CIP_NUM_LISTEN_ONLY_CONNS_PER_CON_PATH   3</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3774576feaec4fbdf86d32044d38c89">   82</a></span>&#160;<span class="preprocessor">#define OPENER_MESSAGE_DATA_REPLY_BUFFER 100</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8d73780f7a1f5d9977d7388ebfbe1f93">   86</a></span>&#160;<span class="preprocessor">#define OPENER_NUMBER_OF_SUPPORTED_SESSIONS 20</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a> kOpenerTimerTickInMilliSeconds = 10;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> kOpenerConsumedDataHasRunIdleHeader = 1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> kOpenerProducedDataHasRunIdleHeader = 0;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> kOpenerProducedDataHasRunIdleHeader = 0;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifdef OPENER_WITH_TRACES</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span><span class="comment">/* If we have tracing enabled provide print tracing macro */</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#define LOG_TRACE(...)  fprintf(stderr,__VA_ARGS__)</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">/*#define PRINT_TRACE(args...)  fprintf(stderr,args);*/</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#ifdef IDLING_ASSERT</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_ASSERT(assertion) \</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">  do { \</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">    if( !(assertion) ) { \</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">      LOG_TRACE(&quot;Assertion \&quot;%s\&quot; failed: file \&quot;%s\&quot;, line %d\n&quot;, \</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">                # assertion, \</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">                __FILE__, \</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">                __LINE__); \</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">      while(1) {  } \</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">    } \</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">  } while(0)</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/* else use standard assert() */</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">//#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">/* for release builds remove assertion */</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">  141</a></span>&#160;<span class="preprocessor">#define OPENER_ASSERT(assertion)</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">/* if there are any strange timing issues, you can try the version below, where the assertion is performed but the assert</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * function is not used</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) (assertion)</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">/* else if you still want assertions to stop execution but without tracing, use the following */</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) do { if(!(assertion)) { while(1){;} } } while (0)</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">/* else use standard assert() */</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb">  163</a></span>&#160;<span class="preprocessor">#define PC_OPENER_ETHERNET_BUFFER_SIZE 512</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*OPENER_USER_CONF_H_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef OPENER_WITH_TRACES</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="comment">/* If we have tracing enabled provide print tracing macro */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define LOG_TRACE(...)  fprintf(stderr,__VA_ARGS__)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">/*#define PRINT_TRACE(args...)  fprintf(stderr,args);*/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifdef IDLING_ASSERT</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_ASSERT(assertion) \</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">  do { \</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">    if( !(assertion) ) { \</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">      LOG_TRACE(&quot;Assertion \&quot;%s\&quot; failed: file \&quot;%s\&quot;, line %d\n&quot;, \</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">                # assertion, \</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">                __FILE__, \</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">                __LINE__); \</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">      while(1) {  } \</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">    } \</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">/* else use standard assert() */</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">/* for release builds remove assertion */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7b5e7d71f666ba97788b35be1617c40a">  135</a></span>&#160;<span class="preprocessor">#define OPENER_ASSERT(assertion)</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">/* if there are any strange timing issues, you can try the version below, where the assertion is performed but the assert</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> * function is not used</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) (assertion)</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/* else if you still want assertions to stop execution but without tracing, use the following */</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) do { if(!(assertion)) { while(1){;} } } while (0)</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">/* else use standard assert() */</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">//#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">//#define OPENER_ASSERT(assertion) assert(assertion)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb">  157</a></span>&#160;<span class="preprocessor">#define PC_OPENER_ETHERNET_BUFFER_SIZE 512</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*OPENER_USER_CONF_H_*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="typedefs_8h_html_a2972c9424f18b12265ca35d0548da82a"><div class="ttname"><a href="../../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a">MilliSeconds</a></div><div class="ttdeci">unsigned long MilliSeconds</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d69/typedefs_8h_source.html#l00068">typedefs.h:68</a></div></div>
 <div class="ttc" id="typedefs_8h_html"><div class="ttname"><a href="../../d7/d69/typedefs_8h.html">typedefs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -211,7 +205,7 @@ $(document).ready(function(){initNavTree('dd/d1b/POSIX_2sample__application_2ope
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_efbcf68973d247bbf15f9eecae7f24e3.html">ports</a></li><li class="navelem"><a class="el" href="../../dir_c917a51cd5b3c267ef51fcd06123381d.html">POSIX</a></li><li class="navelem"><a class="el" href="../../dir_0fc0e068fa6fff81c46e78dce670dcb8.html">sample_application</a></li><li class="navelem"><a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html">opener_user_conf.h</a></li>
-    <li class="footer">Generated on Mon Feb 5 2018 20:42:07 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Feb 6 2018 12:58:29 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

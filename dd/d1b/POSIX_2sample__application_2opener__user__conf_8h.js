@@ -8,12 +8,6 @@ var POSIX_2sample__application_2opener__user__conf_8h =
     [ "OPENER_CIP_NUM_INPUT_ONLY_CONNS_PER_CON_PATH", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3664613466dea71c92c8599e8ff4d6e", null ],
     [ "OPENER_CIP_NUM_LISTEN_ONLY_CONNS", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7ae463e5cb0f1deb77060bb14eb8816a", null ],
     [ "OPENER_CIP_NUM_LISTEN_ONLY_CONNS_PER_CON_PATH", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ab12e108ce020a5b3d2437475a2b0b96b", null ],
-    [ "OPENER_DEVICE_MAJOR_REVISION", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8fadd41cbb435656743873e49ca89576", null ],
-    [ "OPENER_DEVICE_MINOR_REVISION", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a7f6ea0b15c8995ecaad60f608abf672c", null ],
-    [ "OPENER_DEVICE_NAME", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa8de555c432471ff7661d4cf71eadcac", null ],
-    [ "OPENER_DEVICE_PRODUCT_CODE", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a0202c58db20678a7d2532643de074f39", null ],
-    [ "OPENER_DEVICE_TYPE", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#aa760b71a038b6ba21238a9be1165c96b", null ],
-    [ "OPENER_DEVICE_VENDOR_ID", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a15a75feae90347583190ab0f07c4b356", null ],
     [ "OPENER_MESSAGE_DATA_REPLY_BUFFER", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3774576feaec4fbdf86d32044d38c89", null ],
     [ "OPENER_NUMBER_OF_SUPPORTED_SESSIONS", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#a8d73780f7a1f5d9977d7388ebfbe1f93", null ],
     [ "PC_OPENER_ETHERNET_BUFFER_SIZE", "dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb", null ]

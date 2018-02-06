@@ -15,7 +15,7 @@ var indexSectionsWithContent =
   5: "cdeghilmnops",
   6: "cdeilnopsu",
   7: "k",
-  8: "cdelmnops",
+  8: "cdelmnopsw",
   9: "co",
   10: "eop"
 };

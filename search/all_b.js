@@ -18,6 +18,7 @@ var searchData=
   ['master_5fsocket',['master_socket',['../da/dc2/generic__networkhandler_8h.html#a956dd8b348500bc6f305b327c21926ed',1,'generic_networkhandler.h']]],
   ['max_5fno_5fof_5ftcp_5fsockets',['MAX_NO_OF_TCP_SOCKETS',['../db/d4f/generic__networkhandler_8c.html#aef8c9066c39b53d472f7d235bb3d0001',1,'generic_networkhandler.c']]],
   ['max_5fsize_5fof_5fadd_5fstatus',['MAX_SIZE_OF_ADD_STATUS',['../df/d28/ciptypes_8h.html#a76032ec3319954c70deea1f039deeb19',1,'ciptypes.h']]],
+  ['max_5ftries',['MAX_TRIES',['../d2/d9c/WIN32_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e',1,'networkconfig.c']]],
   ['message',['message',['../d4/da1/structDelayedEncapsulationMessage.html#a8a7d84611a4b658a8c27919330bb4883',1,'DelayedEncapsulationMessage']]],
   ['message_5frequest',['message_request',['../de/dcb/structCipUnconnectedSendParameter.html#af5e4965a545d1c84217c325ab4d45a12',1,'CipUnconnectedSendParameter']]],
   ['message_5frequest_5fsize',['message_request_size',['../de/dcb/structCipUnconnectedSendParameter.html#a187cc1e87799f979450a4379eccfcfc6',1,'CipUnconnectedSendParameter']]],

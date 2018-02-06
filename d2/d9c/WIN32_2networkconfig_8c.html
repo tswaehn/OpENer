@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('d2/d9c/WIN32_2networkconfig_8c.html','
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">networkconfig.c File Reference</div>  </div>
@@ -116,6 +117,12 @@ $(document).ready(function(){initNavTree('d2/d9c/WIN32_2networkconfig_8c.html','
 <code>#include &quot;<a class="el" href="../../d4/d38/opener__api_8h_source.html">opener_api.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d1/d1b/trace_8h_source.html">trace.h</a>&quot;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;winsock2.h&gt;</code><br/>
+<code>#include &lt;windows.h&gt;</code><br/>
+<code>#include &lt;iphlpapi.h&gt;</code><br/>
+<code>#include &lt;Ws2tcpip.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for networkconfig.c:</div>
 <div class="dyncontent">
@@ -125,127 +132,163 @@ Include dependency graph for networkconfig.c:</div>
 </div>
 <p><a href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afd63d23830ad86d01b6fff2e6c615f7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e">MAX_TRIES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:afd63d23830ad86d01b6fff2e6c615f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">WIN32_LEAN_AND_MEAN</a></td></tr>
+<tr class="separator:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fb6f1b31b554063d0425a8227383c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a23fb6f1b31b554063d0425a8227383c6">WORKING_BUFFER_SIZE</a>&#160;&#160;&#160;15000</td></tr>
+<tr class="separator:a23fb6f1b31b554063d0425a8227383c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0b2b502f5edf9117f7a8dae94fb6fd9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a0b2b502f5edf9117f7a8dae94fb6fd9e">ConfigureDomainName</a> (const char *domain_name)</td></tr>
-<tr class="separator:a0b2b502f5edf9117f7a8dae94fb6fd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50a487e1d7b7640313f76c341db0ed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#aa50a487e1d7b7640313f76c341db0ed8">ConfigureHostName</a> (const char *const RESTRICT hostname)</td></tr>
-<tr class="separator:aa50a487e1d7b7640313f76c341db0ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c5edc60fb8c9b878647ae5e3c03bc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a33c5edc60fb8c9b878647ae5e3c03bc5">ConfigureMacAddress</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *const mac_address)</td></tr>
-<tr class="separator:a33c5edc60fb8c9b878647ae5e3c03bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ad5c06b4ea46498194de415a79cf16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a43ad5c06b4ea46498194de415a79cf16">ConfigureNetworkInterface</a> (const char *ip_address, const char *subnet_mask, const char *gateway)</td></tr>
-<tr class="separator:a43ad5c06b4ea46498194de415a79cf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad772fd494843d58f27a8585c006f151b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#ad772fd494843d58f27a8585c006f151b">ConfigureDomainName</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> interface_index)</td></tr>
+<tr class="separator:ad772fd494843d58f27a8585c006f151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14449a3494b42f6730625b54a109be10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a14449a3494b42f6730625b54a109be10">ConfigureHostName</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> interface_index)</td></tr>
+<tr class="separator:a14449a3494b42f6730625b54a109be10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2a196cbc23e7d81906e83798d27f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html#a5b2a196cbc23e7d81906e83798d27f15">ConfigureIpMacAddress</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a> interface_index)</td></tr>
+<tr class="separator:a5b2a196cbc23e7d81906e83798d27f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="afd63d23830ad86d01b6fff2e6c615f7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TRIES&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00023">23</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00085">ConfigureDomainName()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7bef5d85e3dcd73eef56ad39ffc84a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIN32_LEAN_AND_MEAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00006">6</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23fb6f1b31b554063d0425a8227383c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORKING_BUFFER_SIZE&#160;&#160;&#160;15000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00022">22</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00085">ConfigureDomainName()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a0b2b502f5edf9117f7a8dae94fb6fd9e"></a>
+<a class="anchor" id="ad772fd494843d58f27a8585c006f151b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ConfigureDomainName </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>domain_name</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>interface_index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00041">41</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00085">85</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">CipCalloc()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00295">CipTcpIpNetworkInterfaceConfiguration::domain_name</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00030">interface_configuration_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00136">CipString::length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00137">CipString::string</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">CipCalloc()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00295">CipTcpIpNetworkInterfaceConfiguration::domain_name</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00030">interface_configuration_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00136">CipString::length</a>, <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00023">MAX_TRIES</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00293">CipTcpIpNetworkInterfaceConfiguration::name_server</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00294">CipTcpIpNetworkInterfaceConfiguration::name_server_2</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00137">CipString::string</a>, and <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00022">WORKING_BUFFER_SIZE</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_a0b2b502f5edf9117f7a8dae94fb6fd9e_cgraph.svg" width="299" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_ad772fd494843d58f27a8585c006f151b_cgraph.svg" width="299" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa50a487e1d7b7640313f76c341db0ed8"></a>
+<a class="anchor" id="a14449a3494b42f6730625b54a109be10"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ConfigureHostName </td>
           <td>(</td>
-          <td class="paramtype">const char *const RESTRICT&#160;</td>
-          <td class="paramname"><em>hostname</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>interface_index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00058">58</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00198">198</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">CipCalloc()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00040">hostname_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00136">CipString::length</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00137">CipString::string</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_aa50a487e1d7b7640313f76c341db0ed8_cgraph.svg" width="280" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_a14449a3494b42f6730625b54a109be10_cgraph.svg" width="280" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a33c5edc60fb8c9b878647ae5e3c03bc5"></a>
+<a class="anchor" id="a5b2a196cbc23e7d81906e83798d27f15"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ConfigureMacAddress </td>
+          <td class="memname">void ConfigureIpMacAddress </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *const&#160;</td>
-          <td class="paramname"><em>mac_address</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d69/typedefs_8h.html#a72c0fba927c5681c44dbf59147578fc7">CipUint</a>&#160;</td>
+          <td class="paramname"><em>interface_index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00035">35</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00029">29</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
 
-<p>References <a class="el" href="../../dd/d4d/cipethernetlink_8h_source.html#l00045">g_ethernet_link</a>, and <a class="el" href="../../dd/d4d/cipethernetlink_8h_source.html#l00040">CipEthernetLinkObject::physical_address</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">CipCalloc()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">CipFree()</a>, <a class="el" href="../../dd/d4d/cipethernetlink_8h_source.html#l00045">g_ethernet_link</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00053">g_multicast_configuration</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00292">CipTcpIpNetworkInterfaceConfiguration::gateway</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00030">interface_configuration_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00290">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00291">CipTcpIpNetworkInterfaceConfiguration::network_mask</a>, <a class="el" href="../../dd/d4d/cipethernetlink_8h_source.html#l00040">CipEthernetLinkObject::physical_address</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00030">multicast_address_configuration::starting_multicast_address</a>.</p>
 
+<p>Referenced by <a class="el" href="../../dc/db2/WIN32_2main_8c_source.html#l00032">main()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_a5b2a196cbc23e7d81906e83798d27f15_cgraph.svg" width="302" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<a class="anchor" id="a43ad5c06b4ea46498194de415a79cf16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a> ConfigureNetworkInterface </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ip_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>subnet_mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>gateway</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+</p>
 
-<p>Definition at line <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00015">15</a> of file <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html">networkconfig.c</a>.</p>
-
-<p>References <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00053">g_multicast_configuration</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00292">CipTcpIpNetworkInterfaceConfiguration::gateway</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00030">interface_configuration_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00290">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00291">CipTcpIpNetworkInterfaceConfiguration::network_mask</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00030">multicast_address_configuration::starting_multicast_address</a>.</p>
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/WIN32_2networkconfig_8c_a5b2a196cbc23e7d81906e83798d27f15_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -255,7 +298,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_efbcf68973d247bbf15f9eecae7f24e3.html">ports</a></li><li class="navelem"><a class="el" href="../../dir_f22a9ded9bfe3c37a295ed0507a7aead.html">WIN32</a></li><li class="navelem"><a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c.html">networkconfig.c</a></li>
-    <li class="footer">Generated on Tue Feb 6 2018 13:13:39 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Feb 6 2018 14:47:54 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

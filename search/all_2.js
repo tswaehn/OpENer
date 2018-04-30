@@ -288,6 +288,7 @@ var searchData=
   ['consumed_5fpath',['consumed_path',['../d2/da8/structcip__connection__object.html#a27028c320baa22cd19299de5580da173',1,'cip_connection_object']]],
   ['consuming_5finstance',['consuming_instance',['../d2/da8/structcip__connection__object.html#adc233577b4d61f10079dad1640bf58b9',1,'cip_connection_object']]],
   ['control_5fbits',['control_bits',['../d3/d25/structCipEthernetLinkInterfaceControl.html#a2f6f44d5fd0eafcf7472febdda432d2e',1,'CipEthernetLinkInterfaceControl']]],
+  ['copysocketaddressinfoitem',['CopySocketAddressInfoItem',['../df/d03/cipioconnection_8c.html#aeacf5325126cf3c2f16bd7aa05a8e220',1,'cipioconnection.c']]],
   ['correct_5foriginator_5fto_5ftarget_5fsize',['correct_originator_to_target_size',['../d2/da8/structcip__connection__object.html#afab7f0d79a1d1e87ebf5daa7a62fab40',1,'cip_connection_object']]],
   ['correct_5ftarget_5fto_5foriginator_5fsize',['correct_target_to_originator_size',['../d2/da8/structcip__connection__object.html#a3ff5bd7b19cc1d924a547ec01ff9f436',1,'cip_connection_object']]],
   ['cpf_2ec',['cpf.c',['../d3/d98/cpf_8c.html',1,'']]],

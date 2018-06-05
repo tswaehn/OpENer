@@ -25,6 +25,7 @@ var structcip__connection__object =
     [ "inactivity_watchdog_timer", "d2/da8/structcip__connection__object.html#a12980d27282dccff87df1b3255bc39fd", null ],
     [ "instance_type", "d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca", null ],
     [ "last_package_watchdog_timer", "d2/da8/structcip__connection__object.html#a71642c8a395c63ebd056867df5f71327", null ],
+    [ "last_reply_sent", "d2/da8/structcip__connection__object.html#a82e958e9b945385c1bfc4c9cf7251621", null ],
     [ "o_to_t_network_connection_parameters", "d2/da8/structcip__connection__object.html#af5370d9add320a149f8d2e1fa9021924", null ],
     [ "o_to_t_requested_packet_interval", "d2/da8/structcip__connection__object.html#a6efcfaec3bdc89dcd4b30d7f8b58a0e4", null ],
     [ "originator_address", "d2/da8/structcip__connection__object.html#ae86f8f5b3ccc7aa691e24d404e051db8", null ],

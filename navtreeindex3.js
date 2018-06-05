@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d3/d01/structListenOnlyConnection.html#afedc3eb3f436950bb83b61078207909b":[5,0,37,3],
 "d3/d25/structCipEthernetLinkInterfaceControl.html":[5,0,15],
 "d3/d25/structCipEthernetLinkInterfaceControl.html#a2f6f44d5fd0eafcf7472febdda432d2e":[5,0,15,0],
 "d3/d25/structCipEthernetLinkInterfaceControl.html#aab732ed5c408031958606e486579b128":[5,0,15,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#affa9dff029b1c119cb2729c3d6b30472":[6,0,0,2,1,0,1,0],
 "d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ga098272a8ae10facf3086c5c82a0080db":[6,0,0,2,1,0,1,8],
 "d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ga5307d18b1bd79f151588391cb4ebf30a":[6,0,0,2,1,0,1,6],
-"d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ga63bf35df0c11815a8a59d8a68ac4b569":[6,0,0,2,1,0,1,15],
-"d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ga6d2ccae9a19ce418c77941dbe22b008d":[6,0,0,2,1,0,1,12]
+"d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#ga63bf35df0c11815a8a59d8a68ac4b569":[6,0,0,2,1,0,1,15]
 };

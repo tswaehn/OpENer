@@ -15,7 +15,7 @@ var group__ENCAP =
     [ "AddIntToMessage", "d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799", null ],
     [ "AddSintToMessage", "d4/d91/group__ENCAP.html#gae267a8684cc6ee1b3bd83df03260b7aa", null ],
     [ "AssembleIOMessage", "d4/d91/group__ENCAP.html#gad61fa4f84989cf27086d57557ad552c4", null ],
-    [ "AssembleLinearMessage", "d4/d91/group__ENCAP.html#gaa81c027561d86d2589b8002b36b88392", null ],
+    [ "AssembleLinearMessage", "d4/d91/group__ENCAP.html#ga928d72bf57f65ff512f102466edad450", null ],
     [ "CreateCommonPacketFormatStructure", "d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec", null ],
     [ "EncapsulationInit", "d4/d91/group__ENCAP.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],
     [ "EncapsulationShutDown", "d4/d91/group__ENCAP.html#ga1261bd2441f744c38d7a3f8d8c16c391", null ],
@@ -24,6 +24,6 @@ var group__ENCAP =
     [ "GetSintFromMessage", "d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c", null ],
     [ "ManageEncapsulationMessages", "d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],
     [ "NotifyCommonPacketFormat", "d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03", null ],
-    [ "NotifyConnectedCommonPacketFormat", "d4/d91/group__ENCAP.html#ga94ca28af85239d7dd63b3b044201fe51", null ],
+    [ "NotifyConnectedCommonPacketFormat", "d4/d91/group__ENCAP.html#ga281105f8545adbff4f0a900c80263b7b", null ],
     [ "g_common_packet_format_data_item", "d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0", null ]
 ];

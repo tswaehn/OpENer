@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"dd/d4d/cipethernetlink_8h.html#ad7df5a954d504d818bf33ef2f2ae909d":[6,0,0,0,18,6],
+"dd/d4d/cipethernetlink_8h.html#afd1fc559145db95d7dfd4992ff38edd5":[6,0,0,0,18,4],
 "dd/d4d/cipethernetlink_8h_source.html":[6,0,0,0,18],
 "dd/d6e/POSIX_2networkconfig_8h.html":[6,0,0,2,0,3],
 "dd/d6e/POSIX_2networkconfig_8h.html#ga0dd3f846b6b301647d2cb848184ce810":[6,0,0,2,0,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "df/d28/ciptypes_8h.html#a320130332b1a5062394fc0bd20723985afeadcb6a5d897d88decbda98c5e6557c":[6,0,0,0,29,32,13],
 "df/d28/ciptypes_8h.html#a492d4049146a88ced3a39d69b16e9cdb":[6,0,0,0,29,29],
 "df/d28/ciptypes_8h.html#a4c127984baf8f42fa1a4d6ff8eadaf39":[6,0,0,0,29,19],
-"df/d28/ciptypes_8h.html#a4c5f900200a311c5c384608d29569c86":[6,0,0,0,29,22],
-"df/d28/ciptypes_8h.html#a76032ec3319954c70deea1f039deeb19":[6,0,0,0,29,25],
-"df/d28/ciptypes_8h.html#a7850775dc0b4096b2e55939563b6b1d5":[6,0,0,0,29,18]
+"df/d28/ciptypes_8h.html#a4c5f900200a311c5c384608d29569c86":[6,0,0,0,29,22]
 };

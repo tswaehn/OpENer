@@ -135,9 +135,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a16364f408990e2a5725f2fd5375ef3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/cipmessagerouter_8h.html#a16364f408990e2a5725f2fd5375ef3df">DeleteAllClasses</a> (void)</td></tr>
 <tr class="memdesc:a16364f408990e2a5725f2fd5375ef3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all data allocated by the classes created in the CIP stack.  <a href="#a16364f408990e2a5725f2fd5375ef3df">More...</a><br/></td></tr>
 <tr class="separator:a16364f408990e2a5725f2fd5375ef3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6fb2e9cec077e117d56a95d2a6fb915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/cipmessagerouter_8h.html#ab6fb2e9cec077e117d56a95d2a6fb915">NotifyMessageRouter</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, int data_length, struct sockaddr *originator_address, const int encapsulation_session)</td></tr>
-<tr class="memdesc:ab6fb2e9cec077e117d56a95d2a6fb915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the MessageRouter that an explicit message (connected or unconnected) has been received. This function will be called from the encapsulation layer. The CPF structure is already parsed an can be accessed via the global variable: g_stCPFDataItem.  <a href="#ab6fb2e9cec077e117d56a95d2a6fb915">More...</a><br/></td></tr>
-<tr class="separator:ab6fb2e9cec077e117d56a95d2a6fb915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234c9436c4c2f2e9737b8bea98c4d83f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/cipmessagerouter_8h.html#a234c9436c4c2f2e9737b8bea98c4d83f">NotifyMessageRouter</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, int data_length, const struct sockaddr *const originator_address, const int encapsulation_session)</td></tr>
+<tr class="memdesc:a234c9436c4c2f2e9737b8bea98c4d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the MessageRouter that an explicit message (connected or unconnected) has been received. This function will be called from the encapsulation layer. The CPF structure is already parsed an can be accessed via the global variable: g_stCPFDataItem.  <a href="#a234c9436c4c2f2e9737b8bea98c4d83f">More...</a><br/></td></tr>
+<tr class="separator:a234c9436c4c2f2e9737b8bea98c4d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2dba07e2f3b4f4bac30d10e8b2ceeb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/cipmessagerouter_8h.html#ab2dba07e2f3b4f4bac30d10e8b2ceeb1">RegisterCipClass</a> (<a class="el" href="../../df/d28/ciptypes_8h.html#a175191808b8fac50b47d9bbc9edc6051">CipClass</a> *object)</td></tr>
 <tr class="memdesc:ab2dba07e2f3b4f4bac30d10e8b2ceeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an Class to the message router.  <a href="#ab2dba07e2f3b4f4bac30d10e8b2ceeb1">More...</a><br/></td></tr>
 <tr class="separator:ab2dba07e2f3b4f4bac30d10e8b2ceeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +230,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab6fb2e9cec077e117d56a95d2a6fb915"></a>
+<a class="anchor" id="a234c9436c4c2f2e9737b8bea98c4d83f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -249,7 +249,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramtype">const struct sockaddr *const&#160;</td>
           <td class="paramname"><em>originator_address</em>, </td>
         </tr>
         <tr>
@@ -285,7 +285,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d75/cipmessagerouter_8h_ab6fb2e9cec077e117d56a95d2a6fb915_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d75/cipmessagerouter_8h_a234c9436c4c2f2e9737b8bea98c4d83f_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -293,7 +293,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d75/cipmessagerouter_8h_ab6fb2e9cec077e117d56a95d2a6fb915_icgraph.svg" width="100%" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d75/cipmessagerouter_8h_a234c9436c4c2f2e9737b8bea98c4d83f_icgraph.svg" width="100%" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -381,7 +381,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../d2/d75/cipmessagerouter_8h.html">cipmessagerouter.h</a></li>
-    <li class="footer">Generated on Mon Jun 18 2018 15:31:55 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Jun 20 2018 08:03:28 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -24,6 +24,6 @@ var group__ENCAP =
     [ "GetSintFromMessage", "d4/d91/group__ENCAP.html#ga0a45608ad12bae48152cb1cfafef1a4c", null ],
     [ "ManageEncapsulationMessages", "d4/d91/group__ENCAP.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],
     [ "NotifyCommonPacketFormat", "d4/d91/group__ENCAP.html#ga86a32a262ea21cad9631fa02c81f1a03", null ],
-    [ "NotifyConnectedCommonPacketFormat", "d4/d91/group__ENCAP.html#ga281105f8545adbff4f0a900c80263b7b", null ],
+    [ "NotifyConnectedCommonPacketFormat", "d4/d91/group__ENCAP.html#ga93b23ccc67639937716a8f436a96c2b5", null ],
     [ "g_common_packet_format_data_item", "d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0", null ]
 ];

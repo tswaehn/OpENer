@@ -28,7 +28,6 @@ var encap_8c =
     [ "CloseSessionBySessionHandle", "d2/dbd/encap_8c.html#ad083888333d3ceec1576126a88eeaca7", null ],
     [ "CreateEncapsulationStructure", "d2/dbd/encap_8c.html#a86cfa03514f786d1315f7c4833cb2561", null ],
     [ "DetermineDelayTime", "d2/dbd/encap_8c.html#a1e89285abfb378b98cd946a040dd8f5d", null ],
-    [ "EncapsulateData", "d2/dbd/encap_8c.html#a268183211c79c21c5b3ad550f27078e0", null ],
     [ "EncapsulateListIdentityResponseMessage", "d2/dbd/encap_8c.html#ae8d8af733e9ac70ea728d6255aced4b6", null ],
     [ "EncapsulateRegisterSessionCommandResponseMessage", "d2/dbd/encap_8c.html#a82c9bd88dfd739419eb32c59dc42439c", null ],
     [ "EncapsulationInit", "d2/dbd/encap_8c.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],

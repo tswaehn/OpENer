@@ -22,10 +22,13 @@ var encap_8h =
     [ "EncapsulateListIdentityResponseMessage", "d7/df9/encap_8h.html#ae8d8af733e9ac70ea728d6255aced4b6", null ],
     [ "EncapsulationInit", "d7/df9/encap_8h.html#ga7a0dc2be6c485d9e6940d5b20a981022", null ],
     [ "EncapsulationShutDown", "d7/df9/encap_8h.html#ga1261bd2441f744c38d7a3f8d8c16c391", null ],
+    [ "GenerateEncapsulationHeader", "d7/df9/encap_8h.html#ad558c3aae69a6ab80034278c108802e9", null ],
     [ "GetSessionFromSocket", "d7/df9/encap_8h.html#a53d77511dde21e6baa59d8d7cc7ef4ec", null ],
     [ "HandleReceivedListInterfacesCommand", "d7/df9/encap_8h.html#a371a47e722a3aea264b6eb39cfc725aa", null ],
     [ "HandleReceivedListServicesCommand", "d7/df9/encap_8h.html#a85c97a897b8f95d2a05e6480480bba5d", null ],
     [ "HandleReceivedRegisterSessionCommand", "d7/df9/encap_8h.html#a6007bf2e4bd1e9b0447efc3d9937087b", null ],
+    [ "HandleReceivedSendRequestResponseDataCommand", "d7/df9/encap_8h.html#a51dd68441ec427052986aef5c5c076e4", null ],
     [ "ManageEncapsulationMessages", "d7/df9/encap_8h.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],
-    [ "RemoveSession", "d7/df9/encap_8h.html#a86c98c2665f4c058e9c5afb60690a81b", null ]
+    [ "RemoveSession", "d7/df9/encap_8h.html#a86c98c2665f4c058e9c5afb60690a81b", null ],
+    [ "SkipEncapsulationHeader", "d7/df9/encap_8h.html#ae7eff575a29a7798e86f8aa632b0e688", null ]
 ];

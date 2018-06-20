@@ -48,6 +48,7 @@ var encap_8c =
     [ "HandleReceivedUnregisterSessionCommand", "d2/dbd/encap_8c.html#a601cd19c88f03fd742f098a1bf5b9e85", null ],
     [ "ManageEncapsulationMessages", "d2/dbd/encap_8c.html#ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac", null ],
     [ "RemoveSession", "d2/dbd/encap_8c.html#a86c98c2665f4c058e9c5afb60690a81b", null ],
+    [ "SkipEncapsulationHeader", "d2/dbd/encap_8c.html#ae7eff575a29a7798e86f8aa632b0e688", null ],
     [ "device_type_", "d2/dbd/encap_8c.html#a4a26b0364996689eb8704fcde6090cbe", null ],
     [ "g_delayed_encapsulation_messages", "d2/dbd/encap_8c.html#a857b09ada00aa25fec7344448451abe5", null ],
     [ "g_interface_information", "d2/dbd/encap_8c.html#a0492d8757572c867a56e23cbbf11f1cf", null ],

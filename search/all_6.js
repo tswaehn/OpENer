@@ -36,7 +36,7 @@ var searchData=
   ['g_5ftimestamps',['g_timestamps',['../da/dc2/generic__networkhandler_8h.html#ae034c02af6a2380fb828523f9978b9e1',1,'generic_networkhandler.h']]],
   ['gateway',['gateway',['../d0/d4c/structCipTcpIpNetworkInterfaceConfiguration.html#a57d4e982c2b983e2b776316105a4b3a9',1,'CipTcpIpNetworkInterfaceConfiguration']]],
   ['general_5fstatus',['general_status',['../d0/d1f/structCipMessageRouterResponse.html#ac41c087aef657407542cb640cdb44414',1,'CipMessageRouterResponse']]],
-  ['generateencapsulationheader',['GenerateEncapsulationHeader',['../d2/dbd/encap_8c.html#ad558c3aae69a6ab80034278c108802e9',1,'encap.c']]],
+  ['generateencapsulationheader',['GenerateEncapsulationHeader',['../d2/dbd/encap_8c.html#ad558c3aae69a6ab80034278c108802e9',1,'GenerateEncapsulationHeader(const EncapsulationData *const receive_data, const size_t command_specific_data_length, const size_t session_handle, const EncapsulationProtocolErrorCode encapsulation_protocol_status, ENIPMessage *const outgoing_message):&#160;encap.c'],['../d7/df9/encap_8h.html#ad558c3aae69a6ab80034278c108802e9',1,'GenerateEncapsulationHeader(const EncapsulationData *const receive_data, const size_t command_specific_data_length, const size_t session_handle, const EncapsulationProtocolErrorCode encapsulation_protocol_status, ENIPMessage *const outgoing_message):&#160;encap.c']]],
   ['generic_5fnetworkhandler_2ec',['generic_networkhandler.c',['../db/d4f/generic__networkhandler_8c.html',1,'']]],
   ['generic_5fnetworkhandler_2eh',['generic_networkhandler.h',['../da/dc2/generic__networkhandler_8h.html',1,'']]],
   ['get_5fall_5fbit_5fmask',['get_all_bit_mask',['../da/d8e/structcip__class.html#a8a4204ed825dc9b04c6db70a3eb2704e',1,'cip_class']]],

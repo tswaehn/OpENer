@@ -59,6 +59,7 @@ var searchData=
   ['sin_5fport',['sin_port',['../dc/d3c/structSocketAddressInfoItem.html#a3f7a4600643a87742112758468b42146',1,'SocketAddressInfoItem']]],
   ['size',['size',['../d9/d72/structCipStringN.html#a254e69a332346dc910549d25d08319b4',1,'CipStringN']]],
   ['size_5fof_5fadditional_5fstatus',['size_of_additional_status',['../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a',1,'CipMessageRouterResponse']]],
+  ['skipencapsulationheader',['SkipEncapsulationHeader',['../d2/dbd/encap_8c.html#ae7eff575a29a7798e86f8aa632b0e688',1,'SkipEncapsulationHeader(ENIPMessage *const outgoing_message):&#160;encap.c'],['../d7/df9/encap_8h.html#ae7eff575a29a7798e86f8aa632b0e688',1,'SkipEncapsulationHeader(ENIPMessage *const outgoing_message):&#160;encap.c']]],
   ['socket',['socket',['../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd',1,'cip_connection_object::socket()'],['../d4/da1/structDelayedEncapsulationMessage.html#af616a8ae48b9bc51c1117985acc8c37f',1,'DelayedEncapsulationMessage::socket()'],['../de/d22/structsocket__timer.html#ab5046e867e49b1431dbf175de9ca778f',1,'socket_timer::socket()']]],
   ['socket_5ftimer',['socket_timer',['../de/d22/structsocket__timer.html',1,'']]],
   ['socket_5ftimer_2ec',['socket_timer.c',['../d4/df6/socket__timer_8c.html',1,'']]],

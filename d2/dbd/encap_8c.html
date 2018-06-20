@@ -244,6 +244,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga3b9c0d7d9d1413e4cd8ca5634b4bc9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86c98c2665f4c058e9c5afb60690a81b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbd/encap_8c.html#a86c98c2665f4c058e9c5afb60690a81b">RemoveSession</a> (const int socket)</td></tr>
 <tr class="separator:a86c98c2665f4c058e9c5afb60690a81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7eff575a29a7798e86f8aa632b0e688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbd/encap_8c.html#ae7eff575a29a7798e86f8aa632b0e688">SkipEncapsulationHeader</a> (<a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
+<tr class="separator:ae7eff575a29a7798e86f8aa632b0e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -313,7 +315,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00068">68</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00128">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00410">HandleReceivedListIdentityCommandUdp()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00858">ManageEncapsulationMessages()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00123">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00402">HandleReceivedListIdentityCommandUdp()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00850">ManageEncapsulationMessages()</a>.</p>
 
 </div>
 </div>
@@ -426,11 +428,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 .. Session registered kInvalidSession .. invalid session -&gt; return unsupported command received </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00801">801</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00793">793</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusInvalid</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusValid</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00698">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00654">HandleReceivedSendUnitDataCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00690">HandleReceivedSendRequestResponseDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00646">HandleReceivedSendUnitDataCommand()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -456,11 +458,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00907">907</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00899">899</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::associated_encapsulation_session</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00185">cip_connection_object::connection_close_function</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">connection_list</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00338">ConnectionObjectGetTransportClassTriggerTransportClass()</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00026">doubly_linked_list_node::data</a>, <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00030">DoublyLinkedList::first</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00058">kConnectionObjectTransportClassTriggerTransportClass3</a>, and <a class="el" href="../../d9/d31/doublylinkedlist_8h_source.html#l00025">doubly_linked_list_node::next</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l01001">CheckEncapsulationInactivity()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00823">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00626">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00836">RemoveSession()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l01001">CheckEncapsulationInactivity()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00815">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00618">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00828">RemoveSession()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -494,9 +496,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00875">875</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00867">867</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00823">CloseSession()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00175">cip_connection_object::originator_address</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00815">CloseSession()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00175">cip_connection_object::originator_address</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00723">HandleIoConnectionTimeOut()</a>.</p>
 
@@ -532,7 +534,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00814">814</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00806">806</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00180">cip_connection_object::associated_encapsulation_session</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00258">CloseTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
@@ -597,11 +599,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return difference between bytes in pa_buf an data_length 0 .. full package received &gt;0 .. more than one packet received &lt;0 .. only fragment of data portion received </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00775">775</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00767">767</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00042">encapsulation_data::command_code</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00048">encapsulation_data::communication_buffer_start</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00043">encapsulation_data::data_length</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00022">ENCAPSULATION_HEADER_LENGTH</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00049">kSenderContextSize</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00047">encapsulation_data::options</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00046">encapsulation_data::sender_context</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d7/df9/encap_8h_source.html#l00045">encapsulation_data::status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -645,11 +647,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00518">518</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00510">510</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00042">kListIdentityDefaultDelayTime</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00043">kListIdentityMinimumDelayTime</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00077">DelayedEncapsulationMessage::time_out</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00410">HandleReceivedListIdentityCommandUdp()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00402">HandleReceivedListIdentityCommandUdp()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -694,11 +696,11 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Array of USINT - length 8 shall be set to zero </p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">441</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">433</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00041">device_type_</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00197">EncapsulateIpAddress()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00293">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00036">kSupportedProtocolVersion</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00131">CipShortString::length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00180">CipRevision::major_revision</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00181">CipRevision::minor_revision</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00042">product_code_</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00046">serial_number_</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00045">status_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00132">CipShortString::string</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00040">vendor_id_</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00041">device_type_</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00197">EncapsulateIpAddress()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00293">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00036">kSupportedProtocolVersion</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00131">CipShortString::length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00180">CipRevision::major_revision</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00181">CipRevision::minor_revision</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00042">product_code_</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00046">serial_number_</a>, <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00045">status_</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00132">CipShortString::string</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00040">vendor_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00404">HandleReceivedListIdentityCommandTcp()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00410">HandleReceivedListIdentityCommandUdp()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00396">HandleReceivedListIdentityCommandTcp()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00402">HandleReceivedListIdentityCommandUdp()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -754,11 +756,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00534">534</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00526">526</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00561">HandleReceivedRegisterSessionCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00553">HandleReceivedRegisterSessionCommand()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -820,11 +822,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">323</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">315</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00042">encapsulation_data::command_code</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00049">kSenderContextSize</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00046">encapsulation_data::sender_context</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00534">EncapsulateRegisterSessionCommandResponseMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00737">HandleReceivedInvalidCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00386">HandleReceivedListInterfacesCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00350">HandleReceivedListServicesCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00698">HandleReceivedSendRequestResponseDataCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00654">HandleReceivedSendUnitDataCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00626">HandleReceivedUnregisterSessionCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00526">EncapsulateRegisterSessionCommandResponseMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00729">HandleReceivedInvalidCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00378">HandleReceivedListInterfacesCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00342">HandleReceivedListServicesCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00690">HandleReceivedSendRequestResponseDataCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00646">HandleReceivedSendUnitDataCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00618">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -861,11 +863,11 @@ Here is the caller graph for this function:</div>
 <p>search for available sessions an return index. </p>
 <dl class="section return"><dt>Returns</dt><dd>return index of free session in anRegisteredSessions. kInvalidSession .. no free session available </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00755">755</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00747">747</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusInvalid</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00561">HandleReceivedRegisterSessionCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00553">HandleReceivedRegisterSessionCommand()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -891,7 +893,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00898">898</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00890">890</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>.</p>
 
@@ -931,11 +933,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00737">737</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00729">729</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00032">kEncapsulationProtocolInvalidCommand</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00032">kEncapsulationProtocolInvalidCommand</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -979,11 +981,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00404">404</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00396">396</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1039,11 +1041,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00410">410</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00402">402</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00048">encapsulation_data::communication_buffer_start</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00518">DetermineDelayTime()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00068">ENCAP_NUMBER_OF_SUPPORTED_DELAYED_ENCAP_MESSAGES</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00022">ENCAPSULATION_HEADER_LENGTH</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00080">DelayedEncapsulationMessage::message</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00079">DelayedEncapsulationMessage::receiver</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00078">DelayedEncapsulationMessage::socket</a>.</p>
+<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00048">encapsulation_data::communication_buffer_start</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00510">DetermineDelayTime()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00068">ENCAP_NUMBER_OF_SUPPORTED_DELAYED_ENCAP_MESSAGES</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00022">ENCAPSULATION_HEADER_LENGTH</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00080">DelayedEncapsulationMessage::message</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00079">DelayedEncapsulationMessage::receiver</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00078">DelayedEncapsulationMessage::socket</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1087,11 +1089,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00386">386</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00378">378</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1143,11 +1145,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00350">350</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00342">342</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00056">encapsulation_interface_information::capability_flags</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00055">encapsulation_interface_information::encapsulation_protocol_version</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00054">encapsulation_interface_information::length</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00057">encapsulation_interface_information::name_of_service</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00053">encapsulation_interface_information::type_code</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00056">encapsulation_interface_information::capability_flags</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00055">encapsulation_interface_information::encapsulation_protocol_version</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00054">encapsulation_interface_information::length</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00057">encapsulation_interface_information::name_of_service</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00053">encapsulation_interface_information::type_code</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1197,11 +1199,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00561">561</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00553">553</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00534">EncapsulateRegisterSessionCommandResponseMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00046">g_actual_time</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00030">g_timestamps</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00755">GetFreeSessionIndex()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00033">kEncapsulationProtocolInsufficientMemory</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00032">kEncapsulationProtocolInvalidCommand</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00037">kEncapsulationProtocolUnsupportedProtocol</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusInvalid</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00036">kSupportedProtocolVersion</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00053">SocketTimerArrayGetEmptySocketTimer()</a>, <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00017">SocketTimerSetLastUpdate()</a>, and <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00011">SocketTimerSetSocket()</a>.</p>
+<p>References <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00526">EncapsulateRegisterSessionCommandResponseMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00046">g_actual_time</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00030">g_timestamps</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00747">GetFreeSessionIndex()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00033">kEncapsulationProtocolInsufficientMemory</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00032">kEncapsulationProtocolInvalidCommand</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00031">kEncapsulationProtocolSuccess</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00037">kEncapsulationProtocolUnsupportedProtocol</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusInvalid</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00036">kSupportedProtocolVersion</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00053">SocketTimerArrayGetEmptySocketTimer()</a>, <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00017">SocketTimerSetLastUpdate()</a>, and <a class="el" href="../../d4/df6/socket__timer_8c_source.html#l00011">SocketTimerSetSocket()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1260,11 +1262,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status 0 .. success. -1 .. error </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00698">698</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00690">690</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00801">CheckRegisteredSessions()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00043">encapsulation_data::data_length</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../da/de0/enipmessage_8c_source.html#l00010">InitializeENIPMessage()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusValid</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00025">NotifyCommonPacketFormat()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00793">CheckRegisteredSessions()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00043">encapsulation_data::data_length</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../da/de0/enipmessage_8c_source.html#l00010">InitializeENIPMessage()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusValid</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1322,11 +1324,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00654">654</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00646">646</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00801">CheckRegisteredSessions()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00043">encapsulation_data::data_length</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../da/de0/enipmessage_8c_source.html#l00010">InitializeENIPMessage()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusValid</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00067">NotifyConnectedCommonPacketFormat()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00793">CheckRegisteredSessions()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00049">encapsulation_data::current_communication_buffer_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00043">encapsulation_data::data_length</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00083">GetDintFromMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00057">GetIntFromMessage()</a>, <a class="el" href="../../da/de0/enipmessage_8c_source.html#l00010">InitializeENIPMessage()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00046">kSessionStatusValid</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00090">NotifyConnectedCommonPacketFormat()</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1370,11 +1372,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00626">626</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00618">618</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00907">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00258">CloseTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, and <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00899">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00258">CloseTcpSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00035">kEncapsulationProtocolInvalidSessionHandle</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, and <a class="el" href="../../d7/df9/encap_8h_source.html#l00044">encapsulation_data::session_handle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1408,9 +1410,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00836">836</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00828">828</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00907">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
+<p>References <a class="el" href="../../d2/dbd/encap_8c_source.html#l00899">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">g_registered_sessions</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00086">OPENER_NUMBER_OF_SUPPORTED_SESSIONS</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l01001">CheckEncapsulationInactivity()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00582">HandleDataOnTcpSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00344">NetworkHandlerProcessOnce()</a>.</p>
 
@@ -1432,6 +1434,44 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ae7eff575a29a7798e86f8aa632b0e688"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkipEncapsulationHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const&#160;</td>
+          <td class="paramname"><em>outgoing_message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00310">310</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
+
+<p>References <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d7/df9/encap_8h_source.html#l00022">ENCAPSULATION_HEADER_LENGTH</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dbd/encap_8c_ae7eff575a29a7798e86f8aa632b0e688_cgraph.svg" width="390" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/dbd/encap_8c_ae7eff575a29a7798e86f8aa632b0e688_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a4a26b0364996689eb8704fcde6090cbe"></a>
 <div class="memitem">
@@ -1446,7 +1486,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00041">41</a> of file <a class="el" href="../../dd/dc4/cipidentity_8c_source.html">cipidentity.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1516,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00084">84</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00128">EncapsulationInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00123">EncapsulationInit()</a>.</p>
 
 </div>
 </div>
@@ -1492,7 +1532,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00086">86</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00801">CheckRegisteredSessions()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00875">CloseEncapsulationSessionBySockAddr()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00823">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00814">CloseSessionBySessionHandle()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00128">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00848">EncapsulationShutDown()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00755">GetFreeSessionIndex()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00898">GetSessionFromSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00561">HandleReceivedRegisterSessionCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00626">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00836">RemoveSession()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00793">CheckRegisteredSessions()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00867">CloseEncapsulationSessionBySockAddr()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00815">CloseSession()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00806">CloseSessionBySessionHandle()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00123">EncapsulationInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00840">EncapsulationShutDown()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00747">GetFreeSessionIndex()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00890">GetSessionFromSocket()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00553">HandleReceivedRegisterSessionCommand()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00618">HandleReceivedUnregisterSessionCommand()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00828">RemoveSession()</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1566,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00038">38</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00156">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00248">HandleReceivedExplictUdpData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00151">HandleReceivedExplictTcpData()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00235">HandleReceivedExplictUdpData()</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1598,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00042">42</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00518">DetermineDelayTime()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00510">DetermineDelayTime()</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1615,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00043">43</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00518">DetermineDelayTime()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00510">DetermineDelayTime()</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1632,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00049">49</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00775">CreateEncapsulationStructure()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00323">GenerateEncapsulationHeader()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00767">CreateEncapsulationStructure()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00315">GenerateEncapsulationHeader()</a>.</p>
 
 </div>
 </div>
@@ -1609,7 +1649,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/dbd/encap_8c_source.html#l00036">36</a> of file <a class="el" href="../../d2/dbd/encap_8c_source.html">encap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00561">HandleReceivedRegisterSessionCommand()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00553">HandleReceivedRegisterSessionCommand()</a>.</p>
 
 </div>
 </div>
@@ -1626,7 +1666,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00042">42</a> of file <a class="el" href="../../dd/dc4/cipidentity_8c_source.html">cipidentity.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>.</p>
 
 </div>
 </div>
@@ -1673,7 +1713,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00046">46</a> of file <a class="el" href="../../dd/dc4/cipidentity_8c_source.html">cipidentity.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00053">SetDeviceSerialNumber()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00053">SetDeviceSerialNumber()</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1730,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00045">45</a> of file <a class="el" href="../../dd/dc4/cipidentity_8c_source.html">cipidentity.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00060">SetDeviceStatus()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, and <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00060">SetDeviceStatus()</a>.</p>
 
 </div>
 </div>
@@ -1707,7 +1747,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00040">40</a> of file <a class="el" href="../../dd/dc4/cipidentity_8c_source.html">cipidentity.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00441">EncapsulateListIdentityResponseMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dc4/cipidentity_8c_source.html#l00147">CipIdentityInit()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1757,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d2/dbd/encap_8c.html">encap.c</a></li>
-    <li class="footer">Generated on Wed Jun 20 2018 08:03:28 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Jun 20 2018 15:11:34 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

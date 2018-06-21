@@ -749,7 +749,7 @@ $(document).ready(function(){initNavTree('d2/dbd/encap_8c_source.html','../../')
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;      (<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **<span class="keyword">const</span> ) &amp;receive_data-&gt;<a class="code" href="../../d9/d42/structencapsulation__data.html#aa2693dc526d50543b911801c93dff34d">current_communication_buffer_position</a>);                            <span class="comment">/* skip over null interface handle*/</span></div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <a class="code" href="../../d4/d91/group__ENCAP.html#ga70322f970709ca9c9a1a1d474cfe2302">GetIntFromMessage</a>(</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;      (<span class="keyword">const</span> <a class="code" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> **<span class="keyword">const</span> ) &amp;receive_data-&gt;<a class="code" href="../../d9/d42/structencapsulation__data.html#aa2693dc526d50543b911801c93dff34d">current_communication_buffer_position</a>);                            <span class="comment">/* skip over unused timeout value*/</span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="comment">//receive_data-&gt;data_length -= 6;             /* the rest is in CPF format*/</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    ( (<a class="code" href="../../d9/d42/structencapsulation__data.html">EncapsulationData</a> *<span class="keyword">const</span>)receive_data )-&gt;data_length -= 6;             <span class="comment">/* the rest is in CPF format*/</span></div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/dbd/encap_8c.html#aa68bfc8983f200bfbae62a07dd04ebf0a20e998dae8e4ce10a835850f87a01afa">kSessionStatusValid</a> == <a class="code" href="../../d2/dbd/encap_8c.html#a4aebd689a5226c74a7b7a87bc7ef1d92">CheckRegisteredSessions</a>(receive_data) )            <span class="comment">/* see if the EIP session is registered*/</span></div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    {</div>
@@ -758,9 +758,9 @@ $(document).ready(function(){initNavTree('d2/dbd/encap_8c_source.html','../../')
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                                          originator_address,</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                                          outgoing_message);</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;      <span class="keywordflow">if</span> (0 &lt; send_size) {                   <span class="comment">/* need to send reply */</span></div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        outgoing_message-&gt;<a class="code" href="../../d3/d4a/structenip__message.html#a052268ce732b27838354e89e94343933">used_message_length</a> += send_size;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;      return_value = send_size;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;      <span class="keywordflow">if</span> (send_size &lt; 0) {                   <span class="comment">/* need to send reply */</span></div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        return_value = <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;      }</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    } <span class="keywordflow">else</span> {             <span class="comment">/* received a package with non registered session handle */</span></div>
@@ -1152,7 +1152,7 @@ $(document).ready(function(){initNavTree('d2/dbd/encap_8c_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d2/dbd/encap_8c.html">encap.c</a></li>
-    <li class="footer">Generated on Wed Jun 20 2018 15:34:46 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Thu Jun 21 2018 12:09:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

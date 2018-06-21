@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('d2/d3d/cipcommon_8c_source.html','../.
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d8/de2/structcip__service__struct.html">CipServiceStruct</a> *service = instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#a9871ebce8163c584f95d1a0c7f00e1f1">services</a>;             <span class="comment">/* get pointer to array of services */</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (NULL != service)             <span class="comment">/* if services are defined */</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#a4d33f12577046f545d90a1b8b764a885">number_of_services</a>; i++)                   <span class="comment">/* seach the services list */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; instance-&gt;<a class="code" href="../../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e">cip_class</a>-&gt;<a class="code" href="../../da/d8e/structcip__class.html#a4d33f12577046f545d90a1b8b764a885">number_of_services</a>; i++)                   <span class="comment">/* seach the services list */</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (message_router_request-&gt;<a class="code" href="../../dc/d16/structCipMessageRouterRequest.html#a73850f4495f33d0b2a9957a830b8b40f">service</a> == service-&gt;<a class="code" href="../../d8/de2/structcip__service__struct.html#a5dee19825bde9eba9ae121d7cd0cfbcd">service_number</a>)                         <span class="comment">/* if match is found */</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
@@ -259,7 +259,7 @@ $(document).ready(function(){initNavTree('d2/d3d/cipcommon_8c_source.html','../.
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  cip_class-&gt;number_of_instances += number_of_instances;       <span class="comment">/* add the number of instances just created to the total recorded by the class */</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; number_of_instances; i++)       <span class="comment">/* initialize all the new instances */</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; number_of_instances; i++)       <span class="comment">/* initialize all the new instances */</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    *next_instance = current_instance;             <span class="comment">/* link the previous pointer to this new node */</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
@@ -1355,7 +1355,7 @@ $(document).ready(function(){initNavTree('d2/d3d/cipcommon_8c_source.html','../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../d2/d3d/cipcommon_8c.html">cipcommon.c</a></li>
-    <li class="footer">Generated on Thu Jun 21 2018 15:23:18 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Thu Jun 21 2018 15:36:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

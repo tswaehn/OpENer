@@ -168,8 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3bb3ceb94a80c58ec4eef82e86ca25af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8cac292493ad6985ad6c68b362b4658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#ac937392ed530ac77084d95380bc66704">CipWord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/endianconv_8c.html#ad8cac292493ad6985ad6c68b362b4658">GetWordFromMessage</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **const buffer_address)</td></tr>
 <tr class="separator:ad8cac292493ad6985ad6c68b362b4658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e7ccbb21e333ad15028c531f0384c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/endianconv_8c.html#af4e7ccbb21e333ad15028c531f0384c6">MoveMessageNOctets</a> (const int amount_of_bytes_moved, const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message_runner)</td></tr>
-<tr class="separator:af4e7ccbb21e333ad15028c531f0384c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae1b23e05f0902b5080163e855cbe81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/endianconv_8c.html#aaae1b23e05f0902b5080163e855cbe81">MoveMessageNOctets</a> (int amount_of_bytes_moved, const <a class="el" href="../../d7/d69/typedefs_8h.html#ab1d6828b2df519496de8762b3ffd54b1">CipOctet</a> **message_runner)</td></tr>
+<tr class="separator:aaae1b23e05f0902b5080163e855cbe81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -198,7 +198,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>, <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00018">kOpENerEndianessBig</a>, and <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00017">kOpENerEndianessLittle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00123">EncapsulationInit()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00134">EncapsulationInit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -255,7 +255,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00020">g_opener_platform_endianess</a>, <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00018">kOpENerEndianessBig</a>, and <a class="el" href="../../d0/dec/endianconv_8h_source.html#l00017">kOpENerEndianessLittle</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00599">AssembleLinearMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00392">EncapsulateListIdentyResponseMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -305,9 +305,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00264">264</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00263">263</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d73/endianconv_8c_source.html#l00271">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d73/endianconv_8c_source.html#l00270">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -349,11 +349,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00271">271</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00270">270</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00264">FillNextNMessageOctetsWith()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>.</p>
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00263">FillNextNMessageOctetsWith()</a>, and <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">MoveMessageNOctets()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00599">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -487,14 +487,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af4e7ccbb21e333ad15028c531f0384c6"></a>
+<a class="anchor" id="aaae1b23e05f0902b5080163e855cbe81"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int MoveMessageNOctets </td>
+          <td class="memname">void MoveMessageNOctets </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>amount_of_bytes_moved</em>, </td>
         </tr>
         <tr>
@@ -513,12 +513,12 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../da/d73/endianconv_8c_source.html#l00258">258</a> of file <a class="el" href="../../da/d73/endianconv_8c_source.html">endianconv.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00643">CipEpathEncodeConnectionEpath()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00330">CipEpathGetLogicalValue()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00353">CipEpathSetLogicalValue()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00111">ConnectionObjectInitializeFromMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00510">DetermineDelayTime()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00433">EncapsulateListIdentityResponseMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00271">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00439">GetElectronicKeyFormat4FromMessage()</a>, and <a class="el" href="../../d2/dbd/encap_8c_source.html#l00310">SkipEncapsulationHeader()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00643">CipEpathEncodeConnectionEpath()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00330">CipEpathGetLogicalValue()</a>, <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00353">CipEpathSetLogicalValue()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00111">ConnectionObjectInitializeFromMessage()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00430">DetermineDelayTime()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00311">EncapsulateData()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00392">EncapsulateListIdentyResponseMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00270">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>, and <a class="el" href="../../de/ddc/cipepath_8c_source.html#l00439">GetElectronicKeyFormat4FromMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d73/endianconv_8c_af4e7ccbb21e333ad15028c531f0384c6_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d73/endianconv_8c_aaae1b23e05f0902b5080163e855cbe81_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -548,7 +548,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../da/d73/endianconv_8c.html">endianconv.c</a></li>
-    <li class="footer">Generated on Wed Jun 27 2018 12:44:36 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Fri Jul 20 2018 16:00:39 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -35,6 +35,7 @@ var annotated =
     [ "electronic_key_format_4", "d9/d3a/structelectronic__key__format__4.html", "d9/d3a/structelectronic__key__format__4" ],
     [ "encapsulation_data", "d9/d42/structencapsulation__data.html", "d9/d42/structencapsulation__data" ],
     [ "encapsulation_interface_information", "d0/d6e/structencapsulation__interface__information.html", "d0/d6e/structencapsulation__interface__information" ],
+    [ "enip_message", "d3/d4a/structenip__message.html", "d3/d4a/structenip__message" ],
     [ "ExclusiveOwnerConnection", "d7/d95/structExclusiveOwnerConnection.html", "d7/d95/structExclusiveOwnerConnection" ],
     [ "InputOnlyConnection", "d7/dd8/structInputOnlyConnection.html", "d7/dd8/structInputOnlyConnection" ],
     [ "ListenOnlyConnection", "d3/d01/structListenOnlyConnection.html", "d3/d01/structListenOnlyConnection" ],

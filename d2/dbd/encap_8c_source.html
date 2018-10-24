@@ -940,7 +940,7 @@ $(document).ready(function(){initNavTree('d2/dbd/encap_8c_source.html','../../')
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;      <span class="keyword">struct </span>sockaddr_in encapsulation_session_addr = { 0 };</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;      <a class="code" href="../../dd/dc7/WIN32_2networkhandler_8h.html#a269c892535714289fb93d7dad5be8f25">socklen_t</a> addrlength = <span class="keyword">sizeof</span>(encapsulation_session_addr);</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;      <span class="keywordflow">if</span> (getpeername(<a class="code" href="../../d2/dbd/encap_8c.html#a7b6dba11e298fc4aacafc47ed2d565df">g_registered_sessions</a>[i],</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                      &amp;encapsulation_session_addr, &amp;addrlength) &lt;= 0) {                   <span class="comment">/* got error */</span></div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                      &amp;encapsulation_session_addr, &amp;addrlength) &lt; 0) {                   <span class="comment">/* got error */</span></div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <span class="keywordtype">int</span> error_code = <a class="code" href="../../df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24">GetSocketErrorNumber</a>();</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <span class="keywordtype">char</span> *error_message = <a class="code" href="../../df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae">GetErrorMessage</a>(error_code);</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(</div>
@@ -1152,7 +1152,7 @@ $(document).ready(function(){initNavTree('d2/dbd/encap_8c_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d2/dbd/encap_8c.html">encap.c</a></li>
-    <li class="footer">Generated on Wed Oct 24 2018 11:20:16 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Oct 24 2018 11:25:17 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

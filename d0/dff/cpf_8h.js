@@ -16,10 +16,10 @@ var cpf_8h =
       [ "kCipItemIdSocketAddressInfoTargetToOriginator", "d0/dff/cpf_8h.html#ggafdcff621008b5e305165424c6ac4ea25aef2e6ffe3e7443b14842d173c7f1e75d", null ],
       [ "kCipItemIdSequencedAddressItem", "d0/dff/cpf_8h.html#ggafdcff621008b5e305165424c6ac4ea25a21abefabf9f64dba055671507015f2b1", null ]
     ] ],
-    [ "AssembleIOMessage", "d0/dff/cpf_8h.html#gad61fa4f84989cf27086d57557ad552c4", null ],
-    [ "AssembleLinearMessage", "d0/dff/cpf_8h.html#gaa81c027561d86d2589b8002b36b88392", null ],
+    [ "AssembleIOMessage", "d0/dff/cpf_8h.html#ga137d29fba9dd744ed2e9323bf75e0bba", null ],
+    [ "AssembleLinearMessage", "d0/dff/cpf_8h.html#gaa28ed48b18b92a64faf70093eb74d891", null ],
     [ "CreateCommonPacketFormatStructure", "d0/dff/cpf_8h.html#gab4525f090b67d97b3a3f7cce3ca441ec", null ],
-    [ "NotifyCommonPacketFormat", "d0/dff/cpf_8h.html#ga86a32a262ea21cad9631fa02c81f1a03", null ],
-    [ "NotifyConnectedCommonPacketFormat", "d0/dff/cpf_8h.html#ga94ca28af85239d7dd63b3b044201fe51", null ],
+    [ "NotifyCommonPacketFormat", "d0/dff/cpf_8h.html#ga75b2c48c742099adcf72364108be9847", null ],
+    [ "NotifyConnectedCommonPacketFormat", "d0/dff/cpf_8h.html#ga93b23ccc67639937716a8f436a96c2b5", null ],
     [ "g_common_packet_format_data_item", "d0/dff/cpf_8h.html#gafaae5be8de81c633ea4df46fa8b957e0", null ]
 ];

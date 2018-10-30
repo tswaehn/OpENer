@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a0af9b5a70611d0305b4a8c620ed6db36">SetQosOnSocket</a>( new_socket, <a class="code" href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e">GetPriorityForSocket</a>(0xFFF) ) != 0) { <span class="comment">/* got error */</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a0af9b5a70611d0305b4a8c620ed6db36">SetQosOnSocket</a>( new_socket, <a class="code" href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e">GetPriorityForSocket</a>(0xFFFF) ) != 0) { <span class="comment">/* got error */</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keywordtype">int</span> error_code = <a class="code" href="../../df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24">GetSocketErrorNumber</a>();</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordtype">char</span> *error_message = <a class="code" href="../../df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae">GetErrorMessage</a>(error_code);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(</div>
@@ -909,7 +909,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709a1ac5aa8c4de11fc51d52843b5d173184">kEipStatusError</a>;</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  }</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a0af9b5a70611d0305b4a8c620ed6db36">SetQosOnSocket</a>(new_socket, <a class="code" href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e">GetPriorityForSocket</a>(qos_for_socket) ) &lt;= 0) { <span class="comment">/* got error */</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5e/POSIX_2networkhandler_8c.html#a0af9b5a70611d0305b4a8c620ed6db36">SetQosOnSocket</a>(new_socket, <a class="code" href="../../dd/d34/cipqos_8c.html#a6fa85e635fcd14e9797254ec3a5bb95e">GetPriorityForSocket</a>(qos_for_socket) ) != 0) { <span class="comment">/* got error */</span></div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <span class="keywordtype">int</span> error_code = <a class="code" href="../../df/d94/opener__error_8h.html#afbc52bcd5256264e75ba063f2e361e24">GetSocketErrorNumber</a>();</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <span class="keywordtype">char</span> *error_message = <a class="code" href="../../df/d94/opener__error_8h.html#a0df2625909cb28076bc7df8e6c9cfcae">GetErrorMessage</a>(error_code);</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <a class="code" href="../../d1/d1b/trace_8h.html#a48f0d8056c030015f14cf5907315e6bb">OPENER_TRACE_ERR</a>(</div>
@@ -1237,7 +1237,7 @@ $(document).ready(function(){initNavTree('db/d4f/generic__networkhandler_8c_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_efbcf68973d247bbf15f9eecae7f24e3.html">ports</a></li><li class="navelem"><a class="el" href="../../db/d4f/generic__networkhandler_8c.html">generic_networkhandler.c</a></li>
-    <li class="footer">Generated on Tue Oct 30 2018 16:23:02 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Oct 30 2018 16:33:58 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

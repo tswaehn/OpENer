@@ -45,5 +45,6 @@ var annotated =
     [ "socket_timer", "de/d22/structsocket__timer.html", "de/d22/structsocket__timer" ],
     [ "SocketAddressInfoItem", "dc/d3c/structSocketAddressInfoItem.html", "dc/d3c/structSocketAddressInfoItem" ],
     [ "speed_duplex_array_entry", "d3/d4d/structspeed__duplex__array__entry.html", "d3/d4d/structspeed__duplex__array__entry" ],
-    [ "speed_duplex_options", "d5/df0/structspeed__duplex__options.html", "d5/df0/structspeed__duplex__options" ]
+    [ "speed_duplex_options", "d5/df0/structspeed__duplex__options.html", "d5/df0/structspeed__duplex__options" ],
+    [ "UDPHeader", "dd/db3/structUDPHeader.html", "dd/db3/structUDPHeader" ]
 ];

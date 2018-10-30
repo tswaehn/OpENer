@@ -2,6 +2,7 @@ var searchData=
 [
   ['capability_5fbits',['capability_bits',['../dd/dc6/structCipEthernetLinkInterfaceCapability.html#ad1ddbc75a554a3dc507af790a152b5d1',1,'CipEthernetLinkInterfaceCapability']]],
   ['capability_5fflags',['capability_flags',['../d0/d6e/structencapsulation__interface__information.html#a4b05e4dd9594531622245c89b28833a0',1,'encapsulation_interface_information']]],
+  ['checksum',['checksum',['../dd/db3/structUDPHeader.html#ad906672f6c381c5bb987b9ca20fa8e73',1,'UDPHeader']]],
   ['cip_5fclass',['cip_class',['../d2/d6d/structcip__message__router__object.html#a440815cdd66b94380266bbc5e1a9a459',1,'cip_message_router_object::cip_class()'],['../d5/dc5/structcip__instance.html#a62fb5c9eb145e33e6435b77734344f1e',1,'cip_instance::cip_class()']]],
   ['cip_5fconsumed_5fconnection_5fid',['cip_consumed_connection_id',['../d2/da8/structcip__connection__object.html#ad05de2776070ef95a4e8c359241ed8d1',1,'cip_connection_object']]],
   ['cip_5fproduced_5fconnection_5fid',['cip_produced_connection_id',['../d2/da8/structcip__connection__object.html#aa15c489fd122eb15edd5125c46b0430b',1,'cip_connection_object']]],

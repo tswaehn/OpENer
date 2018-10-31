@@ -192,6 +192,8 @@ Functions</h2></td></tr>
 <tr class="separator:af53b7a7965eb70780371a38ed7aa89bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade30018f5b81baa02d45c59edd8e7d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#ade30018f5b81baa02d45c59edd8e7d98">CipConnectionObjectListArrayFree</a> (<a class="el" href="../../d9/d31/doublylinkedlist_8h.html#add6ea5eb3f5590184f6e96622842e0d1">DoublyLinkedListNode</a> **node)</td></tr>
 <tr class="separator:ade30018f5b81baa02d45c59edd8e7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889a116a0e595b86bd4a5f1e4bb14eee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a889a116a0e595b86bd4a5f1e4bb14eee">CipConnectionObjectOriginatorHasSameIP</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const connection_object, const struct sockaddr *const originator_address)</td></tr>
+<tr class="separator:a889a116a0e595b86bd4a5f1e4bb14eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b64594fd1744d505b13484495d96d78"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#a8b64594fd1744d505b13484495d96d78">ConnectionObjectCalculateRegularInactivityWatchdogTimerValue</a> (const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const connection_object)</td></tr>
 <tr class="separator:a8b64594fd1744d505b13484495d96d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa08a457cbae921463403f0f00dd38e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/cipconnectionobject_8c.html#afaa08a457cbae921463403f0f00dd38e">ConnectionObjectDeepCopy</a> (<a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT destination, const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *RESTRICT const source)</td></tr>
@@ -829,7 +831,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00053">OPENER_CIP_NUM_EXLUSIVE_OWNER_CONNS</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00046">OPENER_CIP_NUM_EXPLICIT_CONNS</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00060">OPENER_CIP_NUM_INPUT_ONLY_CONNS</a>, and <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00071">OPENER_CIP_NUM_LISTEN_ONLY_CONNS</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00031">main()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00032">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -859,7 +861,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00031">main()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00032">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -868,6 +870,36 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a889a116a0e595b86bd4a5f1e4bb14eee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CipConnectionObjectOriginatorHasSameIP </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d6c/cipconnectionobject_8h.html#a4d3da7ab056cd808b359bad6c1ad8716">CipConnectionObject</a> *const&#160;</td>
+          <td class="paramname"><em>connection_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct sockaddr *const&#160;</td>
+          <td class="paramname"><em>originator_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00824">824</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
+
+<p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00175">cip_connection_object::originator_address</a>.</p>
 
 </div>
 </div>
@@ -976,12 +1008,12 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00144">cip_connection_object::originator_serial_number</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00143">cip_connection_object::originator_vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01504">CheckForTimedOutConnectionsAndCloseTCPConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01504">CheckForTimedOutConnectionsAndCloseTCPConnections()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00177">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00224">GetInputOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00276">GetListenOnlyConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a308afe67f0cfd50cc772ad276257d6f2_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a308afe67f0cfd50cc772ad276257d6f2_icgraph.svg" width="100%" height="453"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1672,7 +1704,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00019">CIP_CONNECTION_OBJECT_STATE_CLOSING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00014">CIP_CONNECTION_OBJECT_STATE_CONFIGURING</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00018">CIP_CONNECTION_OBJECT_STATE_DEFERRED_DELETE</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00016">CIP_CONNECTION_OBJECT_STATE_ESTABLISHED</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00013">CIP_CONNECTION_OBJECT_STATE_NON_EXISTENT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00017">CIP_CONNECTION_OBJECT_STATE_TIMEOUT</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00015">CIP_CONNECTION_OBJECT_STATE_WAITING_FOR_CONNECTION_ID</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00027">kConnectionObjectStateClosing</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00022">kConnectionObjectStateConfiguring</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00026">kConnectionObjectStateDeferredDelete</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00024">kConnectionObjectStateEstablished</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00028">kConnectionObjectStateInvalid</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00021">kConnectionObjectStateNonExistent</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00025">kConnectionObjectStateTimedOut</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00023">kConnectionObjectStateWaitingForConnectionID</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00105">cip_connection_object::state</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00952">CheckForExistingConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01504">CheckForTimedOutConnectionsAndCloseTCPConnections()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00558">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00918">GetConnectedObject()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00933">GetConnectedOutputAssembly()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00177">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00064">GetFreeExplicitConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00215">GetInputOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00267">GetListenOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">GetNextNonControlMasterConnection()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00648">ManageConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00952">CheckForExistingConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01504">CheckForTimedOutConnectionsAndCloseTCPConnections()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00558">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00918">GetConnectedObject()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00933">GetConnectedOutputAssembly()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00177">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../dc/d93/cipclass3connection_8c_source.html#l00064">GetFreeExplicitConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00224">GetInputOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00276">GetListenOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00371">GetNextNonControlMasterConnection()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00648">ManageConnections()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1868,7 +1900,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00649">ConnectionObjectGetConnectionType()</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00150">cip_connection_object::t_to_o_network_connection_parameters</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00672">CloseIoConnection()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00766">ConnectionObjectGeneralConfiguration()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00272">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00490">ForwardOpen()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00335">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00267">GetListenOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">GetNextNonControlMasterConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00723">HandleIoConnectionTimeOut()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00902">OpenCommunicationChannels()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01048">ParseConnectionPath()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00162">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00672">CloseIoConnection()</a>, <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00766">ConnectionObjectGeneralConfiguration()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00272">EstablishIoConnection()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00490">ForwardOpen()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00344">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00276">GetListenOnlyConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00371">GetNextNonControlMasterConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00723">HandleIoConnectionTimeOut()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00902">OpenCommunicationChannels()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01048">ParseConnectionPath()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00162">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2120,7 +2152,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00106">cip_connection_object::instance_type</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00034">kConnectionObjectInstanceTypeIO</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00035">kConnectionObjectInstanceTypeIOExclusiveOwner</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00036">kConnectionObjectInstanceTypeIOInputOnly</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00037">kConnectionObjectInstanceTypeIOListenOnly</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00335">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">GetNextNonControlMasterConnection()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01422">IsConnectedOutputAssembly()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00344">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00371">GetNextNonControlMasterConnection()</a>, and <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l01422">IsConnectedOutputAssembly()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2967,12 +2999,12 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00142">cip_connection_object::connection_serial_number</a>, <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00144">cip_connection_object::originator_serial_number</a>, and <a class="el" href="../../d1/d6c/cipconnectionobject_8h_source.html#l00143">cip_connection_object::originator_vendor_id</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00952">CheckForExistingConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00177">GetExclusiveOwnerConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00215">GetInputOnlyConnection()</a>, and <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00267">GetListenOnlyConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00952">CheckForExistingConnection()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a0283b66a8b3eeada9a6ff55ce32db1c8_icgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d91/cipconnectionobject_8c_a0283b66a8b3eeada9a6ff55ce32db1c8_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -2992,7 +3024,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html#l00053">53</a> of file <a class="el" href="../../df/d91/cipconnectionobject_8c_source.html">cipconnectionobject.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00925">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00416">CloseAllConnections()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00391">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00898">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00426">ConnectionWithSameConfigPointExists()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00335">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00362">GetNextNonControlMasterConnection()</a>, <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00031">main()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00162">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00925">CheckAndHandleConsumingUdpSockets()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00425">CloseAllConnections()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00400">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../d2/dbd/encap_8c_source.html#l00898">CloseClass3ConnectionBasedOnSession()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00435">ConnectionWithSameConfigPointExists()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00344">GetExistingProducerMulticastConnection()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00371">GetNextNonControlMasterConnection()</a>, <a class="el" href="../../d9/dfb/POSIX_2main_8c_source.html#l00032">main()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00162">SetupIoConnectionTargetToOriginatorConnectionPoint()</a>.</p>
 
 </div>
 </div>
@@ -3018,7 +3050,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../df/d91/cipconnectionobject_8c.html">cipconnectionobject.c</a></li>
-    <li class="footer">Generated on Tue Oct 30 2018 16:33:58 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Wed Oct 31 2018 14:33:19 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

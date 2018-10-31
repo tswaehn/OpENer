@@ -31,6 +31,7 @@ var cipconnectionobject_8c =
     [ "CipConnectionObjectCreate", "df/d91/cipconnectionobject_8c.html#a84ea6861bff00130331e774f5ff9e77f", null ],
     [ "CipConnectionObjectListArrayAllocator", "df/d91/cipconnectionobject_8c.html#af53b7a7965eb70780371a38ed7aa89bc", null ],
     [ "CipConnectionObjectListArrayFree", "df/d91/cipconnectionobject_8c.html#ade30018f5b81baa02d45c59edd8e7d98", null ],
+    [ "CipConnectionObjectOriginatorHasSameIP", "df/d91/cipconnectionobject_8c.html#a889a116a0e595b86bd4a5f1e4bb14eee", null ],
     [ "ConnectionObjectCalculateRegularInactivityWatchdogTimerValue", "df/d91/cipconnectionobject_8c.html#a8b64594fd1744d505b13484495d96d78", null ],
     [ "ConnectionObjectDeepCopy", "df/d91/cipconnectionobject_8c.html#afaa08a457cbae921463403f0f00dd38e", null ],
     [ "ConnectionObjectEqualOriginator", "df/d91/cipconnectionobject_8c.html#a308afe67f0cfd50cc772ad276257d6f2", null ],

@@ -71,6 +71,7 @@ var cipconnectionobject_8h =
     [ "CipConnectionObjectDelete", "d1/d6c/cipconnectionobject_8h.html#ad3d1f26352d877978eff995142818574", null ],
     [ "CipConnectionObjectListArrayAllocator", "d1/d6c/cipconnectionobject_8h.html#af53b7a7965eb70780371a38ed7aa89bc", null ],
     [ "CipConnectionObjectListArrayFree", "d1/d6c/cipconnectionobject_8h.html#ade30018f5b81baa02d45c59edd8e7d98", null ],
+    [ "CipConnectionObjectOriginatorHasSameIP", "d1/d6c/cipconnectionobject_8h.html#a889a116a0e595b86bd4a5f1e4bb14eee", null ],
     [ "ConnectionObjectDeepCopy", "d1/d6c/cipconnectionobject_8h.html#afaa08a457cbae921463403f0f00dd38e", null ],
     [ "ConnectionObjectEqualOriginator", "d1/d6c/cipconnectionobject_8h.html#a308afe67f0cfd50cc772ad276257d6f2", null ],
     [ "ConnectionObjectGeneralConfiguration", "d1/d6c/cipconnectionobject_8h.html#a65b85bb4b72c902af06e054e24d6292c", null ],

@@ -106,8 +106,7 @@ $(document).ready(function(){initNavTree('d0/dff/cpf_8h.html','../../');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cpf.h File Reference</div>  </div>
 </div><!--header-->
@@ -161,29 +160,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d4/d91/group__ENCAP.html#ggafdcff621008b5e305165424c6ac4ea25a21abefabf9f64dba055671507015f2b1">kCipItemIdSequencedAddressItem</a> = 0x8002
 <br/>
  }</td></tr>
-<tr class="memdesc:gafdcff621008b5e305165424c6ac4ea25"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPF is Common Packet Format CPF packet := &lt;number of="" items&gt;=""&gt; {&lt;items&gt;} item := &lt;TypeID&gt; &lt;Length&gt; &lt;data&gt; &lt;number of="" items&gt;=""&gt; := two bytes &lt;TypeID&gt; := two bytes &lt;Length&gt; := two bytes &lt;data&gt; := &lt;the number="" of="" bytes="" specified="" by="" length&gt;=""&gt;  <a href="../../d4/d91/group__ENCAP.html#gafdcff621008b5e305165424c6ac4ea25">More...</a><br/></td></tr>
+<tr class="memdesc:gafdcff621008b5e305165424c6ac4ea25"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPF is Common Packet Format CPF packet := &lt;number of items&gt; {&lt;items&gt;} item := &lt;TypeID&gt; &lt;Length&gt; &lt;data&gt; &lt;number of items&gt; := two bytes &lt;TypeID&gt; := two bytes &lt;Length&gt; := two bytes &lt;data&gt; := &lt;the number of bytes specified by Length&gt;  <a href="../../d4/d91/group__ENCAP.html#gafdcff621008b5e305165424c6ac4ea25">More...</a><br/></td></tr>
 <tr class="separator:gafdcff621008b5e305165424c6ac4ea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga137d29fba9dd744ed2e9323bf75e0bba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga137d29fba9dd744ed2e9323bf75e0bba">AssembleIOMessage</a> (const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const common_packet_format_data_item, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const message)</td></tr>
 <tr class="separator:ga137d29fba9dd744ed2e9323bf75e0bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa28ed48b18b92a64faf70093eb74d891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gaa28ed48b18b92a64faf70093eb74d891">AssembleLinearMessage</a> (const <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *const message_router_response, const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const common_packet_format_data_item, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
-<tr class="memdesc:gaa28ed48b18b92a64faf70093eb74d891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy data from message_router_response struct and common_packet_format_data_item into linear memory in pa_msg for transmission over in encapsulation.  <a href="../../d4/d91/group__ENCAP.html#gaa28ed48b18b92a64faf70093eb74d891">More...</a><br/></td></tr>
-<tr class="separator:gaa28ed48b18b92a64faf70093eb74d891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec">CreateCommonPacketFormatStructure</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, size_t data_length, <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *common_packet_format_data)</td></tr>
 <tr class="memdesc:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates Common Packet Format structure out of data.  <a href="../../d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec">More...</a><br/></td></tr>
 <tr class="separator:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75b2c48c742099adcf72364108be9847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga75b2c48c742099adcf72364108be9847">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const receive_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
-<tr class="separator:ga75b2c48c742099adcf72364108be9847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18376333d90074460a180facd602c3d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga18376333d90074460a180facd602c3d9">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const received_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
+<tr class="separator:ga18376333d90074460a180facd602c3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93b23ccc67639937716a8f436a96c2b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga93b23ccc67639937716a8f436a96c2b5">NotifyConnectedCommonPacketFormat</a> (const <a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const received_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
 <tr class="separator:ga93b23ccc67639937716a8f436a96c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:gafaae5be8de81c633ea4df46fa8b957e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0">g_common_packet_format_data_item</a></td></tr>
-<tr class="memdesc:gafaae5be8de81c633ea4df46fa8b957e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time. For future extensions towards multithreading maybe more CPF data items may be necessary.  <a href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0">More...</a><br/></td></tr>
-<tr class="separator:gafaae5be8de81c633ea4df46fa8b957e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -191,7 +181,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d0/dff/cpf_8h.html">cpf.h</a></li>
-    <li class="footer">Generated on Mon Nov 5 2018 20:16:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Nov 5 2018 21:54:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

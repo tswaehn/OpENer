@@ -7,7 +7,7 @@ var generic__networkhandler_8c =
     [ "CheckAndHandleUdpUnicastSocket", "db/d4f/generic__networkhandler_8c.html#ace1d8f3907ead0c43c1b5853132d5eb1", null ],
     [ "CheckEncapsulationInactivity", "db/d4f/generic__networkhandler_8c.html#ab561fc66fe48a0cf95be3d152b297dd9", null ],
     [ "CheckSocketSet", "db/d4f/generic__networkhandler_8c.html#acebcfe03d5528a69d288c446ff3048b1", null ],
-    [ "CloseSocket", "db/d4f/generic__networkhandler_8c.html#gaf4d26c1bca26c2e6e73481d57762df36", null ],
+    [ "CloseSocket", "db/d4f/generic__networkhandler_8c.html#gae04e2a3e9937e910cbcdbff0b8d6ad2b", null ],
     [ "CloseTcpSocket", "db/d4f/generic__networkhandler_8c.html#a1bfa5ef8e4802716459a56567ee16592", null ],
     [ "CloseUdpSocket", "db/d4f/generic__networkhandler_8c.html#aab6e6c554aa10d27efe297ebef3ac1c9", null ],
     [ "CreateUdpSocket", "db/d4f/generic__networkhandler_8c.html#ga5807bcc51621775c9aedbf58d3a7a6d3", null ],
@@ -17,6 +17,6 @@ var generic__networkhandler_8c =
     [ "NetworkHandlerInitialize", "db/d4f/generic__networkhandler_8c.html#aa49065f73f4d0f0ab04fb0b35d791e5d", null ],
     [ "NetworkHandlerProcessOnce", "db/d4f/generic__networkhandler_8c.html#a2f01af81d3e5018d9980e2bc28c9078a", null ],
     [ "RemoveSocketTimerFromList", "db/d4f/generic__networkhandler_8c.html#aea539a75995234e379a1c25019ba378f", null ],
-    [ "SendUdpData", "db/d4f/generic__networkhandler_8c.html#gad1d5f56b277bf8b4ffc431e5b0523518", null ],
+    [ "SendUdpData", "db/d4f/generic__networkhandler_8c.html#gad0abf9de45d75f3548e1eecfa3eac96b", null ],
     [ "interface_configuration_", "db/d4f/generic__networkhandler_8c.html#a635643a0d47842550c4d3cb5f4959cee", null ]
 ];

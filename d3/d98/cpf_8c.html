@@ -112,14 +112,6 @@ $(document).ready(function(){initNavTree('d3/d98/cpf_8c.html','../../');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;string.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="../../d0/dff/cpf_8h_source.html">cpf.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d4/d38/opener__api_8h_source.html">opener_api.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/d14/cipcommon_8h_source.html">cipcommon.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d2/d75/cipmessagerouter_8h_source.html">cipmessagerouter.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d0/dec/endianconv_8h_source.html">endianconv.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d6/d52/ciperror_8h_source.html">ciperror.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d2/da3/cipconnectionmanager_8h_source.html">cipconnectionmanager.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d1/d1b/trace_8h_source.html">trace.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/df9/encap_8h_source.html">encap.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cpf.c:</div>
 <div class="dyncontent">
@@ -133,9 +125,8 @@ Include dependency graph for cpf.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ga137d29fba9dd744ed2e9323bf75e0bba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga137d29fba9dd744ed2e9323bf75e0bba">AssembleIOMessage</a> (const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const common_packet_format_data_item, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
 <tr class="separator:ga137d29fba9dd744ed2e9323bf75e0bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa28ed48b18b92a64faf70093eb74d891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gaa28ed48b18b92a64faf70093eb74d891">AssembleLinearMessage</a> (const <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *const message_router_response, const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const common_packet_format_data_item, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
-<tr class="memdesc:gaa28ed48b18b92a64faf70093eb74d891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy data from message_router_response struct and common_packet_format_data_item into linear memory in pa_msg for transmission over in encapsulation.  <a href="../../d4/d91/group__ENCAP.html#gaa28ed48b18b92a64faf70093eb74d891">More...</a><br/></td></tr>
-<tr class="separator:gaa28ed48b18b92a64faf70093eb74d891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28ed48b18b92a64faf70093eb74d891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#aa28ed48b18b92a64faf70093eb74d891">AssembleLinearMessage</a> (const <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *const message_router_response, const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const common_packet_format_data_item, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
+<tr class="separator:aa28ed48b18b92a64faf70093eb74d891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec">CreateCommonPacketFormatStructure</a> (const <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, size_t data_length, <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *common_packet_format_data)</td></tr>
 <tr class="memdesc:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates Common Packet Format structure out of data.  <a href="../../d4/d91/group__ENCAP.html#gab4525f090b67d97b3a3f7cce3ca441ec">More...</a><br/></td></tr>
 <tr class="separator:gab4525f090b67d97b3a3f7cce3ca441ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,16 +183,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a16da8f0222f5610c9f2bf1e1ce90a09b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#a16da8f0222f5610c9f2bf1e1ce90a09b">EncodeUnconnectedDataItemLength</a> (const <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *const message_router_response, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
 <tr class="memdesc:a16da8f0222f5610c9f2bf1e1ce90a09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the data item length of the unconnected data segment.  <a href="#a16da8f0222f5610c9f2bf1e1ce90a09b">More...</a><br/></td></tr>
 <tr class="separator:a16da8f0222f5610c9f2bf1e1ce90a09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75b2c48c742099adcf72364108be9847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga75b2c48c742099adcf72364108be9847">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const receive_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
-<tr class="separator:ga75b2c48c742099adcf72364108be9847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18376333d90074460a180facd602c3d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga18376333d90074460a180facd602c3d9">NotifyCommonPacketFormat</a> (<a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const received_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
+<tr class="separator:ga18376333d90074460a180facd602c3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93b23ccc67639937716a8f436a96c2b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#ga93b23ccc67639937716a8f436a96c2b5">NotifyConnectedCommonPacketFormat</a> (const <a class="el" href="../../d7/df9/encap_8h.html#ac4bf15574436ce32c449e9f41b69c994">EncapsulationData</a> *const received_data, const struct sockaddr *const originator_address, <a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const outgoing_message)</td></tr>
 <tr class="separator:ga93b23ccc67639937716a8f436a96c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gafaae5be8de81c633ea4df46fa8b957e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0">g_common_packet_format_data_item</a></td></tr>
-<tr class="memdesc:gafaae5be8de81c633ea4df46fa8b957e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data storage for the any CPF data Currently we are single threaded and need only one CPF at the time. For future extensions towards multithreading maybe more CPF data items may be necessary.  <a href="../../d4/d91/group__ENCAP.html#gafaae5be8de81c633ea4df46fa8b957e0">More...</a><br/></td></tr>
-<tr class="separator:gafaae5be8de81c633ea4df46fa8b957e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaae5be8de81c633ea4df46fa8b957e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#afaae5be8de81c633ea4df46fa8b957e0">g_common_packet_format_data_item</a></td></tr>
+<tr class="separator:afaae5be8de81c633ea4df46fa8b957e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c2c8f4b82cd829b8ffde2a90c811f2b"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#a7c2c8f4b82cd829b8ffde2a90c811f2b">item_count_field_size</a> = 2</td></tr>
 <tr class="separator:a7c2c8f4b82cd829b8ffde2a90c811f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f15f62762b0536f3a0a69455c8e1160"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/cpf_8c.html#a5f15f62762b0536f3a0a69455c8e1160">item_data_type_id_field_length</a> = 2</td></tr>
@@ -210,6 +200,60 @@ Variables</h2></td></tr>
 <tr class="separator:a7ed674cd41a5778b7774494844c68aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa28ed48b18b92a64faf70093eb74d891"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AssembleLinearMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d1f/structCipMessageRouterResponse.html">CipMessageRouterResponse</a> *const&#160;</td>
+          <td class="paramname"><em>message_router_response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> *const&#160;</td>
+          <td class="paramname"><em>common_packet_format_data_item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df9/encap_8h.html#ab0c67d4ca4c7c65f0c381dc9683b95a7">ENIPMessage</a> *const&#160;</td>
+          <td class="paramname"><em>outgoing_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">651</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00071">CipCommonPacketFormatData::address_info_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00197">EncapsulateIpAddress()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00314">EncodeConnectedAddressItem()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00436">EncodeConnectedDataItemLength()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00415">EncodeDataItemData()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00398">EncodeDataItemLength()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00381">EncodeDataItemType()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00567">EncodeExtendedStatus()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00507">EncodeGeneralStatus()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00364">EncodeItemCount()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00600">EncodeMessageRouterResponseData()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00297">EncodeNullAddressItem()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00473">EncodeReplyService()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00490">EncodeReservedFieldOfLengthByte()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00337">EncodeSequencedAddressItem()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00455">EncodeSequenceNumber()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00620">EncodeSockaddrInfoItemTypeId()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00641">EncodeSockaddrInfoLength()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00584">EncodeUnconnectedDataItemLength()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00271">FillNextNMessageOctetsWithValueAndMoveToNextPosition()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00028">kCipItemIdConnectedDataItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00027">kCipItemIdConnectionAddress</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00025">kCipItemIdNullAddress</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00033">kCipItemIdSequencedAddressItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00031">kCipItemIdSocketAddressInfoOriginatorToTarget</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00032">kCipItemIdSocketAddressInfoTargetToOriginator</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00029">kCipItemIdUnconnectedDataItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00061">SocketAddressInfoItem::sin_addr</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00060">SocketAddressInfoItem::sin_port</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00042">AddressItem::type_id</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00048">DataItem::type_id</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00057">SocketAddressInfoItem::type_id</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00757">AssembleIOMessage()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00091">NotifyConnectedCommonPacketFormat()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d98/cpf_8c_aa28ed48b18b92a64faf70093eb74d891_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d98/cpf_8c_aa28ed48b18b92a64faf70093eb74d891_icgraph.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a490520a060d04d7c2d3edd6516d416f6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -236,19 +280,18 @@ Variables</h2></td></tr>
 <p>Encodes a Connected Address Item into the message frame </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The message frame </td></tr>
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00315">315</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00314">314</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00027">kCipItemIdConnectionAddress</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -296,18 +339,17 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_router_response</td><td>The Router Response message which shall be answered </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">size</td><td>Current size of the message buffer</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00443">443</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00436">436</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00205">CipMessageRouterResponse::size_of_additional_status</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -354,18 +396,17 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00421">421</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00415">415</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00050">DataItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -412,18 +453,17 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>The message frame </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00403">403</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00398">398</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00049">DataItem::length</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -470,18 +510,17 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>The message frame </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00385">385</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00381">381</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00070">CipCommonPacketFormatData::data_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00048">DataItem::type_id</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -529,19 +568,18 @@ Here is the caller graph for this function:</div>
 <p>This function uses EncodeExtendedStatusLength and EncodeExtendedStatusDataItems to encode the complete extended status information into the message</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed</td></tr>
+    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00581">581</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00567">567</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>References <a class="el" href="../../d3/d98/cpf_8c_source.html#l00555">EncodeExtendedStatusDataItems()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00537">EncodeExtendedStatusLength()</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
+<p>References <a class="el" href="../../d3/d98/cpf_8c_source.html#l00542">EncodeExtendedStatusDataItems()</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00525">EncodeExtendedStatusLength()</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -588,19 +626,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes the extended status data items. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
     <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00555">555</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00542">542</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00207">CipMessageRouterResponse::additional_status</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00205">CipMessageRouterResponse::size_of_additional_status</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00581">EncodeExtendedStatus()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00567">EncodeExtendedStatus()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -647,19 +684,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes the length of the extended status data part. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed</td></tr>
+    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00537">537</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00525">525</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00205">CipMessageRouterResponse::size_of_additional_status</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00581">EncodeExtendedStatus()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00567">EncodeExtendedStatus()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -706,19 +742,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes the general status of a Router Response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed</td></tr>
+    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00518">518</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00507">507</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00203">CipMessageRouterResponse::general_status</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -766,18 +801,17 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>The message frame </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message frame after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00367">367</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00364">364</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00068">CipCommonPacketFormatData::item_count</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -824,18 +858,17 @@ Here is the caller graph for this function:</div>
 <p>Encodes the Message Router Response data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
     <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00616">616</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00600">600</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00211">CipMessageRouterResponse::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipMessageRouterResponse::data_length</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -872,8 +905,7 @@ Here is the caller graph for this function:</div>
 <p>Encodes a Null Address Item into the message frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The message frame </td></tr>
-    <tr><td class="paramname">size</td><td>The actual size of the message frame</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
@@ -883,7 +915,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00025">kCipItemIdNullAddress</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -930,19 +962,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes the reply service code for the requested service. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>The current size of the message buffer </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">message_rounter_response</td><td>The router response message data structure to be processed</td></tr>
+    <tr><td class="paramname">message_router_response</td><td>The router response message data structure to be processed </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00482">482</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00473">473</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00200">CipMessageRouterResponse::reply_service</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -989,19 +1020,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes the reserved byte in the message router response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added </td></tr>
-    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed</td></tr>
+    <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00500">500</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00490">490</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00103">AddSintToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00202">CipMessageRouterResponse::reserved</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1048,19 +1078,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes a sequenced address item into the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>Pointer to the message memory start </td></tr>
     <tr><td class="paramname">common_packet_format_data_item</td><td>Common Packet Format item which is used in the encoding </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the message at the start of the function</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New message size after encoding </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00339">339</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00337">337</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00132">AddDintToMessage()</a>, <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00037">AddressData::connection_identifier</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00033">kCipItemIdSequencedAddressItem</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>, <a class="el" href="../../d3/d98/cpf_8c_source.html#l00022">sequenced_address_item_length</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1107,19 +1136,18 @@ Here is the caller graph for this function:</div>
 <p>Encodes a sequence number into the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>The current size of the message buffer </td></tr>
     <tr><td class="paramname">common_packet_format_data_item</td><td></td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00463">463</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00455">455</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00069">CipCommonPacketFormatData::address_item</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00044">AddressItem::data</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00038">AddressData::sequence_number</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1172,20 +1200,19 @@ Here is the caller graph for this function:</div>
 <p>Encodes the sockaddr info type id into the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
     <tr><td class="paramname">item_type</td><td></td></tr>
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the encoded data is added</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00637">637</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00620">620</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00071">CipCommonPacketFormatData::address_info_item</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00135">OPENER_ASSERT</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00057">SocketAddressInfoItem::type_id</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1238,20 +1265,19 @@ Here is the caller graph for this function:</div>
 <p>Encodes the sockaddr info length into the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
     <tr><td class="paramname">item_type</td><td></td></tr>
     <tr><td class="paramname">common_packet_format_data_item</td><td>The Common Packet Format data structure from which the message is constructed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the encoded data is added</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00659">659</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00641">641</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00071">CipCommonPacketFormatData::address_info_item</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../d0/dff/cpf_8h_source.html#l00058">SocketAddressInfoItem::length</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1298,19 +1324,18 @@ Here is the caller graph for this function:</div>
 <p>Encode the data item length of the unconnected data segment. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Current size of the message buffer </td></tr>
     <tr><td class="paramname">message_router_response</td><td>Router Response message to be processed </td></tr>
-    <tr><td class="paramname">message</td><td>Message frame to which the data is added</td></tr>
+    <tr><td class="paramname">outgoing_message</td><td>The outgoing message object</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New size of the message buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00599">599</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00584">584</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
 <p>References <a class="el" href="../../da/d73/endianconv_8c_source.html#l00117">AddIntToMessage()</a>, <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00013">enip_message::current_message_position</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00205">CipMessageRouterResponse::size_of_additional_status</a>, and <a class="el" href="../../d8/d2c/enipmessage_8h_source.html#l00014">enip_message::used_message_length</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00678">AssembleLinearMessage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00651">AssembleLinearMessage()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1331,6 +1356,23 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="afaae5be8de81c633ea4df46fa8b957e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d80/structCipCommonPacketFormatData.html">CipCommonPacketFormatData</a> g_common_packet_format_data_item</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CPF global data items </p>
+
+<p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00024">24</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00872">AssembleForwardCloseResponse()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00740">AssembleForwardOpenResponse()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00560">ForwardClose()</a>, <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00243">HandleReceivedConnectedData()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00900">OpenCommunicationChannels()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00443">OpenProducingMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00772">SendConnectedData()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7c2c8f4b82cd829b8ffde2a90c811f2b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1373,7 +1415,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d3/d98/cpf_8c_source.html#l00022">22</a> of file <a class="el" href="../../d3/d98/cpf_8c_source.html">cpf.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00339">EncodeSequencedAddressItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00337">EncodeSequencedAddressItem()</a>.</p>
 
 </div>
 </div>
@@ -1383,7 +1425,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e9add8f8d9ae9673501eada5427ffe52.html">enet_encap</a></li><li class="navelem"><a class="el" href="../../d3/d98/cpf_8c.html">cpf.c</a></li>
-    <li class="footer">Generated on Mon Nov 5 2018 20:16:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Nov 5 2018 21:54:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

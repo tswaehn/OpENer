@@ -17,9 +17,7 @@ var cpf_8h =
       [ "kCipItemIdSequencedAddressItem", "d0/dff/cpf_8h.html#ggafdcff621008b5e305165424c6ac4ea25a21abefabf9f64dba055671507015f2b1", null ]
     ] ],
     [ "AssembleIOMessage", "d0/dff/cpf_8h.html#ga137d29fba9dd744ed2e9323bf75e0bba", null ],
-    [ "AssembleLinearMessage", "d0/dff/cpf_8h.html#gaa28ed48b18b92a64faf70093eb74d891", null ],
     [ "CreateCommonPacketFormatStructure", "d0/dff/cpf_8h.html#gab4525f090b67d97b3a3f7cce3ca441ec", null ],
-    [ "NotifyCommonPacketFormat", "d0/dff/cpf_8h.html#ga75b2c48c742099adcf72364108be9847", null ],
-    [ "NotifyConnectedCommonPacketFormat", "d0/dff/cpf_8h.html#ga93b23ccc67639937716a8f436a96c2b5", null ],
-    [ "g_common_packet_format_data_item", "d0/dff/cpf_8h.html#gafaae5be8de81c633ea4df46fa8b957e0", null ]
+    [ "NotifyCommonPacketFormat", "d0/dff/cpf_8h.html#ga18376333d90074460a180facd602c3d9", null ],
+    [ "NotifyConnectedCommonPacketFormat", "d0/dff/cpf_8h.html#ga93b23ccc67639937716a8f436a96c2b5", null ]
 ];

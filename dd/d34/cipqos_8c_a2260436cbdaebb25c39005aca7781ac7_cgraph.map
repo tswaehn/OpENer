@@ -1,26 +1,26 @@
 <map id="CipQoSInit" name="CipQoSInit">
-<area shape="rect" id="node2" href="$d2/dc9/group__CIP__API.html#ga3dfa07bc40e59ba348d713272d1cbfdb" title="Allocate memory for new CIP Class and attributes. " alt="" coords="161,233,276,260"/>
-<area shape="rect" id="node10" href="$d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class. " alt="" coords="371,309,475,336"/>
-<area shape="rect" id="node11" href="$d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object. " alt="" coords="373,360,472,387"/>
-<area shape="rect" id="node21" href="$dd/d34/cipqos_8c.html#aa40ff7ab77fbd2634d671fb0a64d7f76" title="GetAttributeSingleQoS" alt="" coords="141,411,296,437"/>
-<area shape="rect" id="node22" href="$d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance. " alt="" coords="162,461,275,488"/>
-<area shape="rect" id="node23" href="$dd/d34/cipqos_8c.html#ac274d150c9f82c615c75f681a30e0b38" title="InitializeCipQos" alt="" coords="161,512,276,539"/>
-<area shape="rect" id="node24" href="$dd/d34/cipqos_8c.html#a698f45a084157feeb9d13e3dbd058a5c" title="SetAttributeSingleQoS" alt="" coords="346,499,499,525"/>
-<area shape="rect" id="node3" href="$d2/dc9/group__CIP__API.html#ga98bd609c80ece316406363575b4a89ea" title="Get a pointer to a CIP object with given class code. " alt="" coords="374,5,471,32"/>
-<area shape="rect" id="node5" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c" title="Allocate memory for the CIP stack. " alt="" coords="598,132,677,159"/>
-<area shape="rect" id="node6" href="$d2/dc9/group__CIP__API.html#ga39dafca98f844a12511af11b1273d0a8" title="Add a number of CIP instances to a given CIP class. " alt="" coords="361,56,484,83"/>
-<area shape="rect" id="node7" href="$d9/d7d/cipmessagerouter_8c.html#ae00f521e394d00fd5fd99271a6983116" title="Register an Class to the message router. " alt="" coords="360,107,485,133"/>
-<area shape="rect" id="node8" href="$d2/dc9/group__CIP__API.html#ga5ec1d2c432792c39f93c170943964302" title="Allocates Attribute bitmasks. " alt="" coords="344,208,501,235"/>
-<area shape="rect" id="node12" href="$d2/d3d/cipcommon_8c.html#ab5e27f4fb889d26a7dcd993cf2d3ddfe" title="Generic implementation of the GetAttributeAll CIP service. " alt="" coords="369,259,476,285"/>
-<area shape="rect" id="node13" href="$d2/d3d/cipcommon_8c.html#a4d2d00f2e1252b192ef73aa388898e7d" title="Generic implementation of the GetAttributeSingle CIP service. " alt="" coords="359,411,487,437"/>
-<area shape="rect" id="node4" href="$d9/d7d/cipmessagerouter_8c.html#a7a9f44f2d6f010b6f6ee922d378d9bb1" title="Get the registered MessageRouter object corresponding to ClassID. given a class ID, return a pointer to the registration node for that object. " alt="" coords="565,5,709,32"/>
-<area shape="rect" id="node9" href="$d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte&#45;Index of Attribute. " alt="" coords="583,297,692,324"/>
-<area shape="rect" id="node14" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent. " alt="" coords="549,348,725,375"/>
-<area shape="rect" id="node15" href="$d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer. " alt="" coords="590,423,685,449"/>
-<area shape="rect" id="node20" href="$d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute. " alt="" coords="581,473,693,500"/>
-<area shape="rect" id="node16" href="$d4/d91/group__ENCAP.html#gae267a8684cc6ee1b3bd83df03260b7aa" title="converts UINT8 data from host to little endian an writes it to buffer. " alt="" coords="775,347,911,373"/>
-<area shape="rect" id="node17" href="$d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer. " alt="" coords="960,448,1088,475"/>
-<area shape="rect" id="node18" href="$d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer. " alt="" coords="774,448,911,475"/>
-<area shape="rect" id="node19" href="$d2/d3d/cipcommon_8c.html#a6eec1752e2cffbbab16bff95fa145bd3" title="EncodeEPath" alt="" coords="791,499,894,525"/>
-<area shape="rect" id="node25" href="$d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host. " alt="" coords="562,524,713,551"/>
+<area shape="rect" id="node2" href="$d2/d3d/cipcommon_8c.html#a3dfa07bc40e59ba348d713272d1cbfdb" title="CreateCipClass" alt="" coords="161,233,276,260"/>
+<area shape="rect" id="node18" href="$d2/dc9/group__CIP__API.html#gac207feb53c1f98b45f3934bbea63d618" title="Insert an attribute in an instance of a CIP class. " alt="" coords="371,309,475,336"/>
+<area shape="rect" id="node19" href="$d2/dc9/group__CIP__API.html#ga35f639b135ec3c3903f49fd65daed307" title="Insert a service in an instance of a CIP object. " alt="" coords="373,411,472,437"/>
+<area shape="rect" id="node21" href="$dd/d34/cipqos_8c.html#aa40ff7ab77fbd2634d671fb0a64d7f76" title="GetAttributeSingleQoS" alt="" coords="141,360,296,387"/>
+<area shape="rect" id="node22" href="$d2/dc9/group__CIP__API.html#gaa50395aca91b378c297d6ad919df210e" title="Get a pointer to an instance. " alt="" coords="162,512,275,539"/>
+<area shape="rect" id="node23" href="$dd/d34/cipqos_8c.html#ac274d150c9f82c615c75f681a30e0b38" title="InitializeCipQos" alt="" coords="161,563,276,589"/>
+<area shape="rect" id="node24" href="$dd/d34/cipqos_8c.html#a698f45a084157feeb9d13e3dbd058a5c" title="SetAttributeSingleQoS" alt="" coords="346,461,499,488"/>
+<area shape="rect" id="node3" href="$d2/dc9/group__CIP__API.html#ga39dafca98f844a12511af11b1273d0a8" title="Add a number of CIP instances to a given CIP class. " alt="" coords="361,56,484,83"/>
+<area shape="rect" id="node4" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga70ee7034f390fd3759d42a50e60e1b1c" title="Allocate memory for the CIP stack. " alt="" coords="598,132,677,159"/>
+<area shape="rect" id="node5" href="$d2/dc9/group__CIP__API.html#ga5ec1d2c432792c39f93c170943964302" title="Allocates Attribute bitmasks. " alt="" coords="344,208,501,235"/>
+<area shape="rect" id="node7" href="$d2/d3d/cipcommon_8c.html#ab5e27f4fb889d26a7dcd993cf2d3ddfe" title="Generic implementation of the GetAttributeAll CIP service. " alt="" coords="369,259,476,285"/>
+<area shape="rect" id="node8" href="$d2/d3d/cipcommon_8c.html#a4d2d00f2e1252b192ef73aa388898e7d" title="Generic implementation of the GetAttributeSingle CIP service. " alt="" coords="359,360,487,387"/>
+<area shape="rect" id="node16" href="$d2/dc9/group__CIP__API.html#ga98bd609c80ece316406363575b4a89ea" title="Get a pointer to a CIP object with given class code. " alt="" coords="374,5,471,32"/>
+<area shape="rect" id="node20" href="$d9/d7d/cipmessagerouter_8c.html#ae00f521e394d00fd5fd99271a6983116" title="Register a CIP Class to the message router. " alt="" coords="360,107,485,133"/>
+<area shape="rect" id="node6" href="$d2/dc9/group__CIP__API.html#ga1eb3004bbf086b276500e1d6e7a2f677" title="Calculates Byte&#45;Index of Attribute. " alt="" coords="583,272,692,299"/>
+<area shape="rect" id="node9" href="$d5/dc5/group__CIP__CALLBACK__API.html#ga098272a8ae10facf3086c5c82a0080db" title="Inform the application that the data of an assembly object will be sent. " alt="" coords="549,397,725,424"/>
+<area shape="rect" id="node10" href="$d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980" title="Produce the data according to CIP encoding onto the message buffer. " alt="" coords="590,347,685,373"/>
+<area shape="rect" id="node15" href="$d2/dc9/group__CIP__API.html#ga5a14c8d76acacb09312b709bb0a76265" title="Get a pointer to an instance&#39;s attribute. " alt="" coords="581,448,693,475"/>
+<area shape="rect" id="node11" href="$d4/d91/group__ENCAP.html#gae267a8684cc6ee1b3bd83df03260b7aa" title="converts UINT8 data from host to little endian an writes it to buffer. " alt="" coords="775,271,911,297"/>
+<area shape="rect" id="node12" href="$d4/d91/group__ENCAP.html#gae689aac2a85bf49fb356ec94c8800799" title="converts UINT16 data from host to little endian an writes it to buffer. " alt="" coords="960,347,1088,373"/>
+<area shape="rect" id="node13" href="$d4/d91/group__ENCAP.html#gaafc3c9e3ff582c9b7e438ae2b1fdf822" title="Converts UINT32 data from host to little endian and writes it to buffer. " alt="" coords="774,423,911,449"/>
+<area shape="rect" id="node14" href="$d2/d3d/cipcommon_8c.html#a6eec1752e2cffbbab16bff95fa145bd3" title="EncodeEPath" alt="" coords="791,372,894,399"/>
+<area shape="rect" id="node17" href="$d9/d7d/cipmessagerouter_8c.html#a7a9f44f2d6f010b6f6ee922d378d9bb1" title="Get the registered MessageRouter object corresponding to ClassID. given a class ID, return a pointer to the registration node for that object. " alt="" coords="565,5,709,32"/>
+<area shape="rect" id="node25" href="$d4/d91/group__ENCAP.html#ga668f92389ee06510864585b97955f6f8" title="Reads EIP_UINT32 from *buffer and converts little endian to host. " alt="" coords="562,499,713,525"/>
 </map>

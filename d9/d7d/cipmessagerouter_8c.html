@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a234c9436c4c2f2e9737b8bea98c4d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the MessageRouter that an explicit message (connected or unconnected) has been received. This function will be called from the encapsulation layer. The CPF structure is already parsed an can be accessed via the global variable: g_stCPFDataItem.  <a href="#a234c9436c4c2f2e9737b8bea98c4d83f">More...</a><br/></td></tr>
 <tr class="separator:a234c9436c4c2f2e9737b8bea98c4d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00f521e394d00fd5fd99271a6983116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7d/cipmessagerouter_8c.html#ae00f521e394d00fd5fd99271a6983116">RegisterCipClass</a> (<a class="el" href="../../df/d28/ciptypes_8h.html#a175191808b8fac50b47d9bbc9edc6051">CipClass</a> *<a class="el" href="../../da/d8e/structcip__class.html">cip_class</a>)</td></tr>
-<tr class="memdesc:ae00f521e394d00fd5fd99271a6983116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an Class to the message router.  <a href="#ae00f521e394d00fd5fd99271a6983116">More...</a><br/></td></tr>
+<tr class="memdesc:ae00f521e394d00fd5fd99271a6983116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a CIP Class to the message router.  <a href="#ae00f521e394d00fd5fd99271a6983116">More...</a><br/></td></tr>
 <tr class="separator:ae00f521e394d00fd5fd99271a6983116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -462,16 +462,18 @@ Here is the caller graph for this function:</div>
   <table class="params">
     <tr><td class="paramname">data</td><td>pointer to the data buffer of the message directly at the beginning of the CIP part. </td></tr>
     <tr><td class="paramname">data_length</td><td>number of bytes in the data buffer </td></tr>
+    <tr><td class="paramname">originator_address</td><td>The address of the originator as received </td></tr>
+    <tr><td class="paramname">encapsulation_session</td><td>The associated encapsulation session of the explicit message </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>EIP_ERROR on fault EIP_OK on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>kEipStatusError on fault kEipStatusOk on success </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00173">173</a> of file <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html">cipmessagerouter.c</a>.</p>
 
 <p>References <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00025">cip_message_router_object::cip_class</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00154">CipEpath::class_id</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00257">cip_class::class_name</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00245">CreateMessageRouterRequestStructure()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00211">CipMessageRouterResponse::data</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00210">CipMessageRouterResponse::data_length</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00029">g_message_data_reply_buffer</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00203">CipMessageRouterResponse::general_status</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00111">GetRegisteredObject()</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00015">kCipErrorPathDestinationUnknown</a>, <a class="el" href="../../d6/d52/ciperror_8h_source.html#l00010">kCipErrorSuccess</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00095">kEipStatusOkSend</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00074">NotifyClass()</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00135">OPENER_ASSERT</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00200">CipMessageRouterResponse::reply_service</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00189">CipMessageRouterRequest::request_path</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00202">CipMessageRouterResponse::reserved</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00205">CipMessageRouterResponse::size_of_additional_status</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00090">NotifyConnectedCommonPacketFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00091">NotifyConnectedCommonPacketFormat()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -505,14 +507,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Register an Class to the message router. </p>
+<p>Register a CIP Class to the message router. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="../../da/d8e/structcip__class.html" title="Class is a subclass of Instance. ">cip_class</a></td><td>Pointer to a class object to be registered. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>status 0 .. success -1 .. error no memory available to register more objects </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>kEipStatusOk on success kEipStatusError on no memory available to register more objects </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00154">154</a> of file <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html">cipmessagerouter.c</a>.</p>
 
@@ -586,7 +588,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00014">14</a> of file <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html">cipmessagerouter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00090">NotifyConnectedCommonPacketFormat()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d98/cpf_8c_source.html#l00026">NotifyCommonPacketFormat()</a>, and <a class="el" href="../../d3/d98/cpf_8c_source.html#l00091">NotifyConnectedCommonPacketFormat()</a>.</p>
 
 </div>
 </div>
@@ -596,7 +598,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../d9/d7d/cipmessagerouter_8c.html">cipmessagerouter.c</a></li>
-    <li class="footer">Generated on Mon Nov 5 2018 20:16:03 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Nov 5 2018 21:54:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

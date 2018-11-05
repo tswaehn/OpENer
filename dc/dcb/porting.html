@@ -101,9 +101,20 @@ $(document).ready(function(){initNavTree('dc/dcb/porting.html','../../');});
 <div class="title">Porting OpENer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="gen_config_section"></a>
+<div class="textblock"><p>OpENer configuration setup.</p>
+<h1><a class="anchor" id="gen_config_section"></a>
 General Stack Configuration</h1>
-<p>The general stack properties have to be defined prior to building your production. This is done by providing a file called opener_user_conf.h. An example file can be found in the src/ports/platform-pc directory. The documentation of the example file for the necessary configuration options: opener_user_conf.h</p>
+<p>The general stack properties have to be defined prior to building your production. This is done by providing a file called opener_user_conf.h. An example file can be found in the src/ports/POSIX or src/ports/WIN32 directory. The documentation of the example file for the necessary configuration options: opener_user_conf.h</p>
+<p>This file contains the general application specific configuration for OpENer.</p>
+<p>Furthermore you have to specific platform specific network include files. OpENer needs definitions for the following data-types and functions:</p>
+<ul>
+<li>struct sockaddr_in</li>
+<li>AF_INET</li>
+<li>INADDR_ANY</li>
+<li>htons</li>
+<li>ntohl</li>
+<li>inet_addr</li>
+</ul>
 <h1><a class="anchor" id="startup_sec"></a>
 Startup Sequence</h1>
 <p>During startup of your EtherNet/IP(TM) device the following steps have to be performed:</p>
@@ -142,12 +153,12 @@ Normal Operation</h1>
 <li>Receive implicit connected data on a receiving UDP socket<br/>
  The received data has to be hand over to the Connection Manager Object with the function EIP_STATUS HandleReceivedConnectedData(EIP_UINT8 *data, int data_length)</li>
 <li>Close UDP and TCP sockets:<ol type="1">
-<li>Requested by OpENer through the call back function: void <a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36" title="Close the given socket and clean up the stack. ">CloseSocket(int socket_handle)</a></li>
-<li>For TCP connection when the peer closed the connection OpENer needs to be informed to clean up internal data structures. This is done with the function void <a class="el" href="../../d2/dc9/group__CIP__API.html#gab9ff230d61fc6dedd90f8b95e9a27707" title="Inform the encapsulation layer that the remote host has closed the connection. ">CloseSession(int socket_handle)</a>.</li>
+<li>Requested by OpENer through the call back function: void <a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gae04e2a3e9937e910cbcdbff0b8d6ad2b" title="Close the given socket and clean up the stack. ">CloseSocket(int socket_handle)</a></li>
+<li>For TCP connection when the peer closed the connection OpENer needs to be informed to clean up internal data structures. This is done with the function void <a class="el" href="../../d2/dc9/group__CIP__API.html#ga00a23c1c86472edf2ed679089ae8efc1" title="Inform the encapsulation layer that the remote host has closed the connection. ">CloseSession(int socket_handle)</a>.</li>
 </ol>
 </li>
 <li>Cyclically update the connection status:<br/>
- In order that OpENer can determine when to produce new data on connections or that a connection timed out every OPENER_TIMER_TICK milliseconds the function EIP_STATUS ManageConnections(void) has to be called.</li>
+ In order that OpENer can determine when to produce new data on connections or that a connection timed out every kOpenerTimerTickInMilliSeconds milliseconds the function EIP_STATUS ManageConnections(void) has to be called.</li>
 </ul>
 <h1><a class="anchor" id="callback_funcs_sec"></a>
 Callback Functions</h1>
@@ -157,7 +168,7 @@ Callback Functions</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 5 2018 20:16:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Nov 5 2018 21:54:49 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

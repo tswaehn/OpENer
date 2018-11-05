@@ -134,9 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga729165f94320800eb9537def5a0e6af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga729165f94320800eb9537def5a0e6af8">CipFree</a> (void *data)</td></tr>
 <tr class="memdesc:ga729165f94320800eb9537def5a0e6af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated by the OpENer.  <a href="#ga729165f94320800eb9537def5a0e6af8">More...</a><br/></td></tr>
 <tr class="separator:ga729165f94320800eb9537def5a0e6af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4d26c1bca26c2e6e73481d57762df36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gaf4d26c1bca26c2e6e73481d57762df36">CloseSocket</a> (const int socket)</td></tr>
-<tr class="memdesc:gaf4d26c1bca26c2e6e73481d57762df36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the given socket and clean up the stack.  <a href="#gaf4d26c1bca26c2e6e73481d57762df36">More...</a><br/></td></tr>
-<tr class="separator:gaf4d26c1bca26c2e6e73481d57762df36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae04e2a3e9937e910cbcdbff0b8d6ad2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gae04e2a3e9937e910cbcdbff0b8d6ad2b">CloseSocket</a> (const int socket_handle)</td></tr>
+<tr class="memdesc:gae04e2a3e9937e910cbcdbff0b8d6ad2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the given socket and clean up the stack.  <a href="#gae04e2a3e9937e910cbcdbff0b8d6ad2b">More...</a><br/></td></tr>
+<tr class="separator:gae04e2a3e9937e910cbcdbff0b8d6ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5807bcc51621775c9aedbf58d3a7a6d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga5807bcc51621775c9aedbf58d3a7a6d3">CreateUdpSocket</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42">UdpCommuncationDirection</a> communication_direction, struct sockaddr_in *socket_data, <a class="el" href="../../d7/d69/typedefs_8h.html#a378b726bef4c65cb2ec1c1cdf1205f52">CipUsint</a> qos_for_socket)</td></tr>
 <tr class="memdesc:ga5807bcc51621775c9aedbf58d3a7a6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a producing or consuming UDP socket  <a href="#ga5807bcc51621775c9aedbf58d3a7a6d3">More...</a><br/></td></tr>
 <tr class="separator:ga5807bcc51621775c9aedbf58d3a7a6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga63bf35df0c11815a8a59d8a68ac4b569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#ga63bf35df0c11815a8a59d8a68ac4b569">RunIdleChanged</a> (<a class="el" href="../../d7/d69/typedefs_8h.html#abf2dd49262551294eb990ef8746a2767">EipUint32</a> run_idle_value)</td></tr>
 <tr class="memdesc:ga63bf35df0c11815a8a59d8a68ac4b569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the application that the Run/Idle State has been changed by the originator.  <a href="#ga63bf35df0c11815a8a59d8a68ac4b569">More...</a><br/></td></tr>
 <tr class="separator:ga63bf35df0c11815a8a59d8a68ac4b569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1d5f56b277bf8b4ffc431e5b0523518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gad1d5f56b277bf8b4ffc431e5b0523518">SendUdpData</a> (struct sockaddr_in *socket_data, int socket, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> data_length)</td></tr>
-<tr class="memdesc:gad1d5f56b277bf8b4ffc431e5b0523518"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a producing or consuming UDP socket  <a href="#gad1d5f56b277bf8b4ffc431e5b0523518">More...</a><br/></td></tr>
-<tr class="separator:gad1d5f56b277bf8b4ffc431e5b0523518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0abf9de45d75f3548e1eecfa3eac96b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d69/typedefs_8h.html#a3dcc5f7837c120360f8cc88a76781709">EipStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc5/group__CIP__CALLBACK__API.html#gad0abf9de45d75f3548e1eecfa3eac96b">SendUdpData</a> (struct sockaddr_in *socket_data, int socket_handle, <a class="el" href="../../d7/d69/typedefs_8h.html#aa0c108ee762a27720919a4634643040e">EipUint8</a> *data, <a class="el" href="../../d7/d69/typedefs_8h.html#ac1b4cfa25b4f5def62f23b455dd395d8">EipUint16</a> data_length)</td></tr>
+<tr class="memdesc:gad0abf9de45d75f3548e1eecfa3eac96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a producing or consuming UDP socket.  <a href="#gad0abf9de45d75f3548e1eecfa3eac96b">More...</a><br/></td></tr>
+<tr class="separator:gad0abf9de45d75f3548e1eecfa3eac96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions have to implemented in order to give the OpENer a method to inform the application on certain state changes. </p>
@@ -278,7 +278,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::instance_number</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00390">GetAttributeSingle()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00228">GetAttributeSingleTcpIpInterface()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00774">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00390">GetAttributeSingle()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00228">GetAttributeSingleTcpIpInterface()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00772">SendConnectedData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -332,7 +332,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00073">73</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00400">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00672">CloseIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00272">EstablishIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00723">HandleIoConnectionTimeOut()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00400">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00670">CloseIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00272">EstablishIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00721">HandleIoConnectionTimeOut()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -430,7 +430,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gaf4d26c1bca26c2e6e73481d57762df36"></a>
+<a class="anchor" id="gae04e2a3e9937e910cbcdbff0b8d6ad2b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -438,7 +438,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void CloseSocket </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td class="paramname"><em>socket_handle</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -452,16 +452,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00989">989</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00998">998</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
 <p>References <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00037">CloseSocketPlatform()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">master_socket</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00261">CloseTcpSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00257">CloseUdpSocket()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00029">ConfigureMacAddress()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00048">ConfigureNetworkInterface()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00799">CreateUdpSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00419">NetworkHandlerFinish()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00261">CloseTcpSocket()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00257">CloseUdpSocket()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00029">ConfigureMacAddress()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00048">ConfigureNetworkInterface()</a>, <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00808">CreateUdpSocket()</a>, and <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00419">NetworkHandlerFinish()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gaf4d26c1bca26c2e6e73481d57762df36_cgraph.svg" width="304" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gae04e2a3e9937e910cbcdbff0b8d6ad2b_cgraph.svg" width="304" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -469,7 +469,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gaf4d26c1bca26c2e6e73481d57762df36_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gae04e2a3e9937e910cbcdbff0b8d6ad2b_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -509,8 +509,9 @@ Here is the caller graph for this function:</div>
 <p>create a producing or consuming UDP socket </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">communication_direction</td><td>PRODCUER or CONSUMER </td></tr>
+    <tr><td class="paramname">communication_direction</td><td>kUdpCommunicationDirectionProducing or kUdpCommunicationDirectionConsuming </td></tr>
     <tr><td class="paramname">socket_data</td><td>pointer to the address holding structure Attention: For producing point-to-point connection the *pa_pstAddr-&gt;sin_addr.s_addr member is set to 0 by OpENer. The network layer of the application has to set the correct address of the originator. Attention: For consuming connection the network layer has to set the pa_pstAddr-&gt;sin_addr.s_addr to the correct address of the originator. FIXME add an additional parameter that can be used by the CIP stack to request the originators sockaddr_in data. </td></tr>
+    <tr><td class="paramname">qos_for_socket</td><td>CIP QoS object parameter value </td></tr>
   </table>
   </dd>
 </dl>
@@ -518,16 +519,16 @@ Here is the caller graph for this function:</div>
 <p>create a producing or consuming UDP socket</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">communciation_direction</td><td>Consuming or producing port </td></tr>
+    <tr><td class="paramname">communication_direction</td><td>Consuming or producing port </td></tr>
     <tr><td class="paramname">socket_data</td><td>Data for socket creation</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the socket handle if successful, else kEipInvalidSocket </dd></dl>
 
-<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00799">799</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00808">808</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00989">CloseSocket()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00043">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00053">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00046">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../dd/d34/cipqos_8c_source.html#l00091">GetPriorityForSocket()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">master_socket</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00135">OPENER_ASSERT</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00056">SetQosOnSocket()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00050">SetSocketToNonBlocking()</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00030">multicast_address_configuration::starting_multicast_address</a>.</p>
+<p>References <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00998">CloseSocket()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00043">g_current_active_tcp_socket</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00053">g_multicast_configuration</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00046">g_time_to_live_value</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../dd/d34/cipqos_8c_source.html#l00091">GetPriorityForSocket()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00037">highest_socket_handle</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00105">kUdpCommuncationDirectionConsuming</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00106">kUdpCommuncationDirectionProducing</a>, <a class="el" href="../../da/dc2/generic__networkhandler_8h_source.html#l00034">master_socket</a>, <a class="el" href="../../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h_source.html#l00135">OPENER_ASSERT</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00056">SetQosOnSocket()</a>, <a class="el" href="../../d2/d5e/POSIX_2networkhandler_8c_source.html#l00050">SetSocketToNonBlocking()</a>, and <a class="el" href="../../d1/dad/ciptcpipinterface_8h_source.html#l00030">multicast_address_configuration::starting_multicast_address</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00363">OpenConsumingPointToPointConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00520">OpenMulticastConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00408">OpenProducingPointToPointConnection()</a>.</p>
 
@@ -568,7 +569,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00069">69</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00648">ManageConnections()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00650">ManageConnections()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -676,7 +677,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00148">148</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00863">HandleReceivedIoConnectionData()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00861">HandleReceivedIoConnectionData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -688,7 +689,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gad1d5f56b277bf8b4ffc431e5b0523518"></a>
+<a class="anchor" id="gad0abf9de45d75f3548e1eecfa3eac96b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -702,7 +703,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>socket</em>, </td>
+          <td class="paramname"><em>socket_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -724,28 +725,28 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>create a producing or consuming UDP socket </p>
+<p>Create a producing or consuming UDP socket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">socket_data</td><td>pointer to the "send to" address </td></tr>
-    <tr><td class="paramname">socket_handle</td><td>socket descriptor to send on </td></tr>
-    <tr><td class="paramname">data</td><td>pointer to the data to send </td></tr>
-    <tr><td class="paramname">data_length</td><td>length of the data to send </td></tr>
+    <tr><td class="paramname">socket_data</td><td>Pointer to the "send to" address </td></tr>
+    <tr><td class="paramname">socket_handle</td><td>Socket descriptor to send on </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the data to send </td></tr>
+    <tr><td class="paramname">data_length</td><td>Length of the data to send </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>EIP_SUCCESS on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>kEipStatusOk on success </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html#l00552">552</a> of file <a class="el" href="../../db/d4f/generic__networkhandler_8c_source.html">generic_networkhandler.c</a>.</p>
 
-<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00293">CipTcpIpNetworkInterfaceConfiguration::ip_address</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_WARN</a>, <a class="el" href="../../d6/ddb/udp__protocol_8h_source.html#l00030">UDPHeader::source_port</a>, <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00052">UDPHeaderCalculateChecksum()</a>, <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00041">UDPHeaderGenerate()</a>, and <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00033">UDPHeaderSetChecksum()</a>.</p>
+<p>References <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00032">FreeErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00026">GetErrorMessage()</a>, <a class="el" href="../../db/dfa/POSIX_2opener__error_8c_source.html#l00022">GetSocketErrorNumber()</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00096">kEipStatusError</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00086">OPENER_TRACE_ERR</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>, <a class="el" href="../../d1/d1b/trace_8h_source.html#l00087">OPENER_TRACE_WARN</a>, <a class="el" href="../../d6/ddb/udp__protocol_8h_source.html#l00030">UDPHeader::source_port</a>, <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00052">UDPHeaderCalculateChecksum()</a>, <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00041">UDPHeaderGenerate()</a>, and <a class="el" href="../../dc/dd3/udp__protocol_8c_source.html#l00033">UDPHeaderSetChecksum()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00849">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00774">SendConnectedData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dbd/encap_8c_source.html#l00855">ManageEncapsulationMessages()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00772">SendConnectedData()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad1d5f56b277bf8b4ffc431e5b0523518_cgraph.svg" width="627" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad0abf9de45d75f3548e1eecfa3eac96b_cgraph.svg" width="627" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -753,7 +754,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad1d5f56b277bf8b4ffc431e5b0523518_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/dc5/group__CIP__CALLBACK__API_gad0abf9de45d75f3548e1eecfa3eac96b_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -765,7 +766,7 @@ Here is the caller graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 5 2018 20:16:04 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Mon Nov 5 2018 21:54:50 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

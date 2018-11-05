@@ -1,10 +1,8 @@
 var NAVTREEINDEX8 =
 {
-"globals_defs.html":[6,1,6],
-"globals_e.html":[6,1,0,4],
 "globals_enum.html":[6,1,4],
-"globals_eval.html":[6,1,5],
 "globals_eval.html":[6,1,5,0],
+"globals_eval.html":[6,1,5],
 "globals_f.html":[6,1,0,5],
 "globals_func.html":[6,1,1,0],
 "globals_func.html":[6,1,1],

@@ -1,8 +1,8 @@
 var structcip__connection__object =
 [
     [ "associated_encapsulation_session", "d2/da8/structcip__connection__object.html#a5bc330fb4524b576a4155d260c36180a", null ],
-    [ "cip_consumed_connection_id", "d2/da8/structcip__connection__object.html#ae2bc4852486fec4e6dc3d4beedce9541", null ],
-    [ "cip_produced_connection_id", "d2/da8/structcip__connection__object.html#ae52d0b09c72bf7ef7c3ec3909198b569", null ],
+    [ "cip_consumed_connection_id", "d2/da8/structcip__connection__object.html#ad05de2776070ef95a4e8c359241ed8d1", null ],
+    [ "cip_produced_connection_id", "d2/da8/structcip__connection__object.html#aa15c489fd122eb15edd5125c46b0430b", null ],
     [ "configuration_path", "d2/da8/structcip__connection__object.html#af1595add8f6d4e0f5bac19b7918c02ec", null ],
     [ "connection_close_function", "d2/da8/structcip__connection__object.html#aa1cbdb9fe8b98c23e728f846a8b166a4", null ],
     [ "connection_receive_data_function", "d2/da8/structcip__connection__object.html#aa764f4fb83441826b615422f18f4c5a2", null ],
@@ -25,6 +25,7 @@ var structcip__connection__object =
     [ "inactivity_watchdog_timer", "d2/da8/structcip__connection__object.html#a12980d27282dccff87df1b3255bc39fd", null ],
     [ "instance_type", "d2/da8/structcip__connection__object.html#a772a8a668d0b49599ebf8e972443bbca", null ],
     [ "last_package_watchdog_timer", "d2/da8/structcip__connection__object.html#a71642c8a395c63ebd056867df5f71327", null ],
+    [ "last_reply_sent", "d2/da8/structcip__connection__object.html#a33ad29ea9aee3c48ad838b6503c6e3f6", null ],
     [ "o_to_t_network_connection_parameters", "d2/da8/structcip__connection__object.html#af5370d9add320a149f8d2e1fa9021924", null ],
     [ "o_to_t_requested_packet_interval", "d2/da8/structcip__connection__object.html#a6efcfaec3bdc89dcd4b30d7f8b58a0e4", null ],
     [ "originator_address", "d2/da8/structcip__connection__object.html#ae86f8f5b3ccc7aa691e24d404e051db8", null ],

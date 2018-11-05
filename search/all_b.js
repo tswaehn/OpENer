@@ -20,6 +20,7 @@ var searchData=
   ['max_5fsize_5fof_5fadd_5fstatus',['MAX_SIZE_OF_ADD_STATUS',['../df/d28/ciptypes_8h.html#a76032ec3319954c70deea1f039deeb19',1,'ciptypes.h']]],
   ['max_5ftries',['MAX_TRIES',['../d2/d9c/WIN32_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e',1,'networkconfig.c']]],
   ['message',['message',['../d4/da1/structDelayedEncapsulationMessage.html#a8a7d84611a4b658a8c27919330bb4883',1,'DelayedEncapsulationMessage']]],
+  ['message_5fbuffer',['message_buffer',['../d3/d4a/structenip__message.html#a02cbd19072eea296d7ed321a28c9dcf4',1,'enip_message']]],
   ['message_5frequest',['message_request',['../de/dcb/structCipUnconnectedSendParameter.html#af5e4965a545d1c84217c325ab4d45a12',1,'CipUnconnectedSendParameter']]],
   ['message_5frequest_5fsize',['message_request_size',['../de/dcb/structCipUnconnectedSendParameter.html#a187cc1e87799f979450a4379eccfcfc6',1,'CipUnconnectedSendParameter']]],
   ['message_5fresponse',['message_response',['../de/dcb/structCipUnconnectedSendParameter.html#a88947b0ab51ed0696ac39709c405e313',1,'CipUnconnectedSendParameter']]],
@@ -27,7 +28,7 @@ var searchData=
   ['microseconds',['MicroSeconds',['../d7/d69/typedefs_8h.html#ae0a1fa16166bc8184543ffab114f2497',1,'typedefs.h']]],
   ['milliseconds',['MilliSeconds',['../d7/d69/typedefs_8h.html#a2972c9424f18b12265ca35d0548da82a',1,'typedefs.h']]],
   ['minor_5frevision',['minor_revision',['../d9/d3a/structelectronic__key__format__4.html#a21bd249f568be05f3094e0c36cb3b9c5',1,'electronic_key_format_4::minor_revision()'],['../d0/d46/structCipRevision.html#a5be82fd0db42cdb2c1d91127173b075f',1,'CipRevision::minor_revision()']]],
-  ['movemessagenoctets',['MoveMessageNOctets',['../da/d73/endianconv_8c.html#aaae1b23e05f0902b5080163e855cbe81',1,'MoveMessageNOctets(int amount_of_bytes_moved, const CipOctet **message_runner):&#160;endianconv.c'],['../d0/dec/endianconv_8h.html#a488b7965f389b1faa972fae6643bfb4a',1,'MoveMessageNOctets(int n, const CipOctet **message_runner):&#160;endianconv.c']]],
+  ['movemessagenoctets',['MoveMessageNOctets',['../da/d73/endianconv_8c.html#af4e7ccbb21e333ad15028c531f0384c6',1,'MoveMessageNOctets(const int amount_of_bytes_moved, const CipOctet **message_runner):&#160;endianconv.c'],['../d0/dec/endianconv_8h.html#aed9cc403df30eea0c915d6d7c8a41b20',1,'MoveMessageNOctets(const int n, const CipOctet **message_runner):&#160;endianconv.c']]],
   ['multicast_5faddress_5fconfiguration',['multicast_address_configuration',['../db/dd7/structmulticast__address__configuration.html',1,'']]],
   ['multicastaddressconfiguration',['MulticastAddressConfiguration',['../d1/dad/ciptcpipinterface_8h.html#a588cf7cf0999441f3bb99fefbadf98dc',1,'ciptcpipinterface.h']]]
 ];

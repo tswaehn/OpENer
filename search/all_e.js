@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['packet_5flength',['packet_length',['../dd/db3/structUDPHeader.html#ae2c02df469caa8c74d27b4adcdae78a0',1,'UDPHeader']]],
   ['parseconnectionpath',['ParseConnectionPath',['../d5/d35/cipconnectionmanager_8c.html#ad7b34359aea58ef8d4e77008ea53098f',1,'cipconnectionmanager.c']]],
   ['path_5fsize',['path_size',['../d5/dd2/structCipEpath.html#af99160e384c9add3cd99fa48f1c83059',1,'CipEpath::path_size()'],['../dd/d06/structCipConnectionPath.html#a2647aaa699156b7ef9a0394f3abe27c2',1,'CipConnectionPath::path_size()'],['../d4/d41/structCipRoutePath.html#a4e5b2e40afee896e16498f88ebbb4525',1,'CipRoutePath::path_size()']]],
   ['pc_5fopener_5fethernet_5fbuffer_5fsize',['PC_OPENER_ETHERNET_BUFFER_SIZE',['../dd/d1b/POSIX_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb',1,'PC_OPENER_ETHERNET_BUFFER_SIZE():&#160;opener_user_conf.h'],['../db/d9c/WIN32_2sample__application_2opener__user__conf_8h.html#ac3d016d13cc9f60846bca76f41ced6eb',1,'PC_OPENER_ETHERNET_BUFFER_SIZE():&#160;opener_user_conf.h']]],

@@ -17,6 +17,5 @@ var generic__networkhandler_8c =
     [ "NetworkHandlerInitialize", "db/d4f/generic__networkhandler_8c.html#aa49065f73f4d0f0ab04fb0b35d791e5d", null ],
     [ "NetworkHandlerProcessOnce", "db/d4f/generic__networkhandler_8c.html#a2f01af81d3e5018d9980e2bc28c9078a", null ],
     [ "RemoveSocketTimerFromList", "db/d4f/generic__networkhandler_8c.html#aea539a75995234e379a1c25019ba378f", null ],
-    [ "SendUdpData", "db/d4f/generic__networkhandler_8c.html#gad1d5f56b277bf8b4ffc431e5b0523518", null ],
-    [ "interface_configuration_", "db/d4f/generic__networkhandler_8c.html#a635643a0d47842550c4d3cb5f4959cee", null ]
+    [ "SendUdpData", "db/d4f/generic__networkhandler_8c.html#gad1d5f56b277bf8b4ffc431e5b0523518", null ]
 ];

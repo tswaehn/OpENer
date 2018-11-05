@@ -20,7 +20,6 @@ var searchData=
   ['size',['size',['../d9/d72/structCipStringN.html#a254e69a332346dc910549d25d08319b4',1,'CipStringN']]],
   ['size_5fof_5fadditional_5fstatus',['size_of_additional_status',['../d0/d1f/structCipMessageRouterResponse.html#a1b89b9d5962ad72516fb1c413857993a',1,'CipMessageRouterResponse']]],
   ['socket',['socket',['../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd',1,'cip_connection_object::socket()'],['../d4/da1/structDelayedEncapsulationMessage.html#af616a8ae48b9bc51c1117985acc8c37f',1,'DelayedEncapsulationMessage::socket()'],['../de/d22/structsocket__timer.html#ab5046e867e49b1431dbf175de9ca778f',1,'socket_timer::socket()']]],
-  ['source_5fport',['source_port',['../dd/db3/structUDPHeader.html#aa16410696751e3f98ad7070fcf5e7fa5',1,'UDPHeader']]],
   ['speed_5fduplex_5farray',['speed_duplex_array',['../d5/df0/structspeed__duplex__options.html#ae22e2ae845156d92d6fb6525df959008',1,'speed_duplex_options']]],
   ['speed_5fduplex_5farray_5fcount',['speed_duplex_array_count',['../d5/df0/structspeed__duplex__options.html#a89a984fd725dc467ea51f7347a510958',1,'speed_duplex_options']]],
   ['speed_5fduplex_5fobject',['speed_duplex_object',['../d7/d65/cipethernetlink_8c.html#a6ceaa572281cae8d240354c44569802a',1,'cipethernetlink.c']]],

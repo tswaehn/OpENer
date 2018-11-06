@@ -188,9 +188,9 @@ Functions</h2></td></tr>
 </dd></dl>
 <p>Assembly Objects for Configuration Data: The CIP-stack uses this function to inform on received configuration data. The length of the data is already checked within the stack. Therefore the user only has to check if the data is valid. </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00083">83</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00084">84</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">g_assembly_data096</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::instance_number</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00017">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00027">g_assembly_data096</a>, <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::instance_number</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, and <a class="el" href="../../d1/d1b/trace_8h_source.html#l00089">OPENER_TRACE_INFO</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00106">NotifyAssemblyConnectedDataReceived()</a>, and <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00124">SetAssemblyAttributeSingle()</a>.</p>
 
@@ -222,9 +222,9 @@ Here is the caller graph for this function:</div>
 <p>This function will be called by the CIP stack after it has finished its initialization. In this function the user can setup all CIP objects she likes to have.</p>
 <p>This function is provided for convenience reasons. After the void CipStackInit(void) function has finished it is okay to also generate your CIP objects. return status EIP_ERROR .. error EIP_OK ... successful finish </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00030">30</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00031">31</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00085">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00100">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00113">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00077">CreateAssemblyObject()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00017">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00018">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00014">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00025">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">g_assembly_data096</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00027">g_assembly_data097</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">g_assembly_data09A</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
+<p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00085">ConfigureExclusiveOwnerConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00100">ConfigureInputOnlyConnectionPoint()</a>, <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00113">ConfigureListenOnlyConnectionPoint()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00077">CreateAssemblyObject()</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00017">DEMO_APP_CONFIG_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00018">DEMO_APP_HEARTBEAT_INPUT_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_HEARTBEAT_LISTEN_ONLY_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00015">DEMO_APP_INPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00016">DEMO_APP_OUTPUT_ASSEMBLY_NUM</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00026">g_assembly_data064</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00027">g_assembly_data096</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00028">g_assembly_data097</a>, <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00029">g_assembly_data09A</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00036">CipStackInit()</a>.</p>
 
@@ -274,9 +274,9 @@ Here is the caller graph for this function:</div>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00110">110</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00115">115</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00019">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::instance_number</a>.</p>
+<p>References <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00020">DEMO_APP_EXPLICT_ASSEMBLY_NUM</a>, and <a class="el" href="../../df/d28/ciptypes_8h_source.html#l00228">cip_instance::instance_number</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00390">GetAttributeSingle()</a>, <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00228">GetAttributeSingleTcpIpInterface()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00772">SendConnectedData()</a>.</p>
 
@@ -330,7 +330,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00073">73</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00074">74</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00400">CloseAllConnectionsForInputWithSameType()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00670">CloseIoConnection()</a>, <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00272">EstablishIoConnection()</a>, and <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00721">HandleIoConnectionTimeOut()</a>.</p>
 
@@ -379,7 +379,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the allocated memory, 0 on error </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00139">139</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">144</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00131">AddCipInstances()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00893">AllocateAttributeMasks()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00139">ConfigureDomainName()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00209">ConfigureHostName()</a>, <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00029">ConfigureIpMacAddress()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00077">CreateAssemblyObject()</a>, <a class="el" href="../../d2/d3d/cipcommon_8c_source.html#l00188">CreateCipClass()</a>, and <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00154">RegisterCipClass()</a>.</p>
 
@@ -416,7 +416,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00144">144</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00149">149</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00139">ConfigureDomainName()</a>, <a class="el" href="../../df/def/POSIX_2networkconfig_8c_source.html#l00209">ConfigureHostName()</a>, <a class="el" href="../../d2/d9c/WIN32_2networkconfig_8c_source.html#l00029">ConfigureIpMacAddress()</a>, <a class="el" href="../../d9/d7d/cipmessagerouter_8c_source.html#l00271">DeleteAllClasses()</a>, <a class="el" href="../../df/d2e/cipassembly_8c_source.html#l00062">ShutdownAssemblies()</a>, and <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00215">ShutdownTcpIpInterface()</a>.</p>
 
@@ -567,7 +567,7 @@ Here is the caller graph for this function:</div>
 <p>Allow the device specific application to perform its execution. </p>
 <p>This function will be executed by the stack at the beginning of each execution of EIP_STATUS ManageConnections(void). It allows to implement device specific application functions. Execution within this function should be short. </p>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00069">69</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00070">70</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d5/d35/cipconnectionmanager_8c_source.html#l00650">ManageConnections()</a>.</p>
 
@@ -598,11 +598,11 @@ Here is the caller graph for this function:</div>
 <p>Emulate as close a possible a power cycle of the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>if the service is supported the function will not return. EIP_ERROR if this service is not supported </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00124">124</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00129">129</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>References <a class="el" href="../../d1/dbc/appcontype_8c_source.html#l00425">CloseAllConnections()</a>, and <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00130">ResetDeviceToInitialConfiguration()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00135">ResetDeviceToInitialConfiguration()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -639,9 +639,9 @@ Here is the caller graph for this function:</div>
 <p>Reset the device to the initial configuration and emulate as close as possible a power cycle of the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>if the service is supported the function will not return. EIP_ERROR if this service is not supported </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00130">130</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00135">135</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
-<p>References <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00063">g_encapsulation_inactivity_timeout</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00124">ResetDevice()</a>.</p>
+<p>References <a class="el" href="../../dd/d20/ciptcpipinterface_8c_source.html#l00063">g_encapsulation_inactivity_timeout</a>, <a class="el" href="../../d7/d69/typedefs_8h_source.html#l00094">kEipStatusOk</a>, and <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00129">ResetDevice()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -675,7 +675,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00148">148</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html#l00153">153</a> of file <a class="el" href="../../d2/daa/POSIX_2sample__application_2sampleapplication_8c_source.html">sampleapplication.c</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d03/cipioconnection_8c_source.html#l00861">HandleReceivedIoConnectionData()</a>.</p>
 
@@ -766,7 +766,7 @@ Here is the caller graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 6 2018 14:42:09 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Tue Nov 6 2018 14:51:25 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -430,20 +430,20 @@ $(document).ready(function(){initNavTree('d1/dbc/appcontype_8c_source.html','../
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">while</span> (NULL != node) {</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="../../d2/da8/structcip__connection__object.html">CipConnectionObject</a> *producer_multicast_connection = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#a2e39fa639f2c160c7ba295cb583ca953">data</a>;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">true</span> ==</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;         <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa">ConnectionObjectIsTypeIOConnection</a>(producer_multicast_connection) ) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="keywordflow">if</span> ( (input_point</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            == producer_multicast_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>)</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;           &amp;&amp; ( <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa8f7d20eb5adeb31d45a0bfb62dbefe9b">kConnectionObjectConnectionTypeMulticast</a></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                == <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a>(</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                  producer_multicast_connection) )</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;           &amp;&amp; (kEipInvalidSocket</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;               != producer_multicast_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                 <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) ) {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">/* we have a connection that produces the same input assembly,</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">         * is a multicast producer and manages the connection.</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">return</span> producer_multicast_connection;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;         <a class="code" href="../../df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa">ConnectionObjectIsTypeIOConnection</a>(producer_multicast_connection) &amp;&amp;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;         (input_point ==</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;          producer_multicast_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#a8d8986dcd044a68134f9e52f856718ce">produced_path</a>.<a class="code" href="../../d9/de3/structconnection__path__epath.html#ac5361794a9129b86407bc843e8749038">instance_id</a>) &amp;&amp;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;         ( <a class="code" href="../../d1/d6c/cipconnectionobject_8h.html#ad6b37311125336c0525f037c107e091aa8f7d20eb5adeb31d45a0bfb62dbefe9b">kConnectionObjectConnectionTypeMulticast</a> ==</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;           <a class="code" href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02">ConnectionObjectGetTToOConnectionType</a>(producer_multicast_connection) )</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;         &amp;&amp;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;         (kEipInvalidSocket !=</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;          producer_multicast_connection-&gt;<a class="code" href="../../d2/da8/structcip__connection__object.html#aa12a45d71134370c0f3882863840c7cd">socket</a>[</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="../../d7/d69/typedefs_8h.html#a354b9a030f385814dac5d61a8eec2e42aeb4cf2b383958e411d35e88ae386c5ec">kUdpCommuncationDirectionProducing</a>]) )</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="comment">/* we have a connection that produces the same input assembly,</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">       * is a multicast producer and manages the connection.</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <span class="keywordflow">return</span> producer_multicast_connection;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    node = node-&gt;<a class="code" href="../../df/d2f/structdoubly__linked__list__node.html#aff605e502e98b61844dc494a0103b462">next</a>;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
@@ -626,7 +626,7 @@ $(document).ready(function(){initNavTree('d1/dbc/appcontype_8c_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_527d9ccdfcaa9588043fa6eaabe08755.html">cip</a></li><li class="navelem"><a class="el" href="../../d1/dbc/appcontype_8c.html">appcontype.c</a></li>
-    <li class="footer">Generated on Thu Nov 8 2018 14:53:02 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
+    <li class="footer">Generated on Thu Nov 8 2018 15:56:26 for OpENer - Open Source EtherNet/IP(TM)  I/O Target Stack by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

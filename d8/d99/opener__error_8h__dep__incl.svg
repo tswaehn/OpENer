@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 778;
+var viewWidth = 922;
 var viewHeight = 96;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,8 +56,8 @@ var sectionId = 'dynsection-0';
 <title>src/ports/opener_error.h</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="349,-68.5 349,-87.5 469,-87.5 469,-68.5 349,-68.5"/>
-<text text-anchor="middle" x="409" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/opener_error.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="411,-68.5 411,-87.5 531,-87.5 531,-68.5 411,-68.5"/>
+<text text-anchor="middle" x="471" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/opener_error.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
@@ -69,8 +69,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M340.171,-67.0116C283.38,-58.5128 200.767,-45.5573 129,-32 118.761,-30.0658 107.714,-27.7623 97.5254,-25.5481"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="339.706,-70.4809 350.113,-68.4934 340.738,-63.5574 339.706,-70.4809"/>
+<path fill="none" stroke="midnightblue" d="M400.485,-69.4582C331.153,-61.6346 222.436,-48.2741 129,-32 118.372,-30.1489 106.898,-27.798 96.4143,-25.5096"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="400.516,-72.9835 410.844,-70.619 401.296,-66.0271 400.516,-72.9835"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
@@ -82,49 +82,63 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M372.677,-65.283C336.523,-53.6204 281.897,-35.999 249.6,-25.5806"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="371.759,-68.6643 382.351,-68.4035 373.908,-62.0024 371.759,-68.6643"/>
+<path fill="none" stroke="midnightblue" d="M425.871,-66.0818C377.63,-54.4105 302.16,-36.1517 258.147,-25.5034"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="425.188,-69.5175 435.731,-68.4672 426.834,-62.7137 425.188,-69.5175"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html" target="_top" xlink:title="src/ports/POSIX/networkhandler.c">
-<polygon fill="none" stroke="black" points="326,-6.5 326,-25.5 492,-25.5 492,-6.5 326,-6.5"/>
-<text text-anchor="middle" x="409" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/networkhandler.c</text>
+<g id="a_node4"><a xlink:href="../../d8/d60/MINGW_2opener__error_8c.html" target="_top" xlink:title="src/ports/MINGW/opener\l_error.c">
+<polygon fill="none" stroke="black" points="326,-1 326,-31 452,-31 452,-1 326,-1"/>
+<text text-anchor="start" x="334" y="-19" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/MINGW/opener</text>
+<text text-anchor="middle" x="389" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">_error.c</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M409,-58.1595C409,-47.2482 409,-34.04 409,-25.5806"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="405.5,-58.4034 409,-68.4035 412.5,-58.4035 405.5,-58.4034"/>
+<path fill="none" stroke="midnightblue" d="M450.973,-62.3459C437.99,-52.8461 421.167,-40.5369 408.326,-31.1408"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="449.114,-65.3229 459.251,-68.4035 453.248,-59.6737 449.114,-65.3229"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../db/dfa/POSIX_2opener__error_8c.html" target="_top" xlink:title="This file includes the prototypes for error resolution functions like strerror or WSAGetLastError...">
-<polygon fill="none" stroke="black" points="510.5,-1 510.5,-31 631.5,-31 631.5,-1 510.5,-1"/>
-<text text-anchor="start" x="518.5" y="-19" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/opener</text>
-<text text-anchor="middle" x="571" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">_error.c</text>
+<g id="a_node5"><a xlink:href="../../d2/d5e/POSIX_2networkhandler_8c.html" target="_top" xlink:title="src/ports/POSIX/networkhandler.c">
+<polygon fill="none" stroke="black" points="470,-6.5 470,-25.5 636,-25.5 636,-6.5 470,-6.5"/>
+<text text-anchor="middle" x="553" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/networkhandler.c</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M441.773,-64.862C468.209,-55.0709 505.423,-41.2876 533.132,-31.0253"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="440.373,-61.6481 432.211,-68.4035 442.804,-68.2124 440.373,-61.6481"/>
+<path fill="none" stroke="midnightblue" d="M490.828,-62.4918C506.599,-50.952 528.13,-35.1976 541.273,-25.5806"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="488.752,-59.6737 482.749,-68.4035 492.886,-65.3229 488.752,-59.6737"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d4/d99/WIN32_2opener__error_8c.html" target="_top" xlink:title="This file includes the prototypes for error resolution functions like strerror or WSAGetLastError...">
-<polygon fill="none" stroke="black" points="649.5,-1 649.5,-31 770.5,-31 770.5,-1 649.5,-1"/>
-<text text-anchor="start" x="657.5" y="-19" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/WIN32/opener</text>
-<text text-anchor="middle" x="710" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">_error.c</text>
+<g id="a_node6"><a xlink:href="../../db/dfa/POSIX_2opener__error_8c.html" target="_top" xlink:title="This file includes the prototypes for error resolution functions like strerror or WSAGetLastError...">
+<polygon fill="none" stroke="black" points="654.5,-1 654.5,-31 775.5,-31 775.5,-1 654.5,-1"/>
+<text text-anchor="start" x="662.5" y="-19" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/POSIX/opener</text>
+<text text-anchor="middle" x="715" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">_error.c</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M464.138,-66.5591C510.974,-57.6184 579.958,-44.2801 640,-32 643.044,-31.3774 646.161,-30.7333 649.308,-30.078"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="463.366,-63.1431 454.198,-68.454 464.677,-70.0193 463.366,-63.1431"/>
+<path fill="none" stroke="midnightblue" d="M515.433,-66.0739C555.407,-56.2443 614.363,-41.7468 657.837,-31.0565"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.575,-62.6805 505.7,-68.4672 516.247,-69.478 514.575,-62.6805"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="../../d4/d99/WIN32_2opener__error_8c.html" target="_top" xlink:title="This file includes the prototypes for error resolution functions like strerror or WSAGetLastError...">
+<polygon fill="none" stroke="black" points="793.5,-1 793.5,-31 914.5,-31 914.5,-1 793.5,-1"/>
+<text text-anchor="start" x="801.5" y="-19" font-family="Helvetica,sans-Serif" font-size="10.00">src/ports/WIN32/opener</text>
+<text text-anchor="middle" x="854" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">_error.c</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M541.51,-68.2617C605.092,-60.0497 701.069,-46.8291 784,-32 787.059,-31.4531 790.187,-30.8699 793.344,-30.2628"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="540.672,-64.8404 531.2,-69.586 541.564,-71.7833 540.672,-64.8404"/>
 </g>
 </g>
 </svg>

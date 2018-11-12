@@ -1,5 +1,6 @@
 var dir_efbcf68973d247bbf15f9eecae7f24e3 =
 [
+    [ "MINGW", "dir_d101a259f33281eb53b0da5d803841c9.html", "dir_d101a259f33281eb53b0da5d803841c9" ],
     [ "POSIX", "dir_c917a51cd5b3c267ef51fcd06123381d.html", "dir_c917a51cd5b3c267ef51fcd06123381d" ],
     [ "WIN32", "dir_f22a9ded9bfe3c37a295ed0507a7aead.html", "dir_f22a9ded9bfe3c37a295ed0507a7aead" ],
     [ "devicedata.h", "da/da8/devicedata_8h.html", "da/da8/devicedata_8h" ],

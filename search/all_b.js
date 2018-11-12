@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['main',['main',['../d9/dfb/POSIX_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207',1,'main(int argc, char *arg[]):&#160;main.c'],['../dc/db2/WIN32_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207',1,'main(int argc, char *arg[]):&#160;main.c']]],
-  ['main_2ec',['main.c',['../d9/dfb/POSIX_2main_8c.html',1,'']]],
+  ['main',['main',['../d5/dcb/MINGW_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207',1,'main(int argc, char *arg[]):&#160;main.c'],['../d9/dfb/POSIX_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207',1,'main(int argc, char *arg[]):&#160;main.c'],['../dc/db2/WIN32_2main_8c.html#ad338a7dbc41dc40bcecd0479377ef207',1,'main(int argc, char *arg[]):&#160;main.c']]],
   ['main_2ec',['main.c',['../dc/db2/WIN32_2main_8c.html',1,'']]],
+  ['main_2ec',['main.c',['../d5/dcb/MINGW_2main_8c.html',1,'']]],
+  ['main_2ec',['main.c',['../d9/dfb/POSIX_2main_8c.html',1,'']]],
   ['major_5frevision',['major_revision',['../d0/d46/structCipRevision.html#af45bfc89ef4be631a0cf0a975bc596cc',1,'CipRevision']]],
   ['major_5frevision_5fcompatibility',['major_revision_compatibility',['../d9/d3a/structelectronic__key__format__4.html#af435bd9b230ad8e6ceaaf293782610bb',1,'electronic_key_format_4']]],
   ['manageconnections',['ManageConnections',['../d2/dc9/group__CIP__API.html#ga9f57b09260efb5bfb188b9d0ca0c6091',1,'ManageConnections(MilliSeconds elapsed_time):&#160;cipconnectionmanager.c'],['../d2/dc9/group__CIP__API.html#ga9f57b09260efb5bfb188b9d0ca0c6091',1,'ManageConnections(MilliSeconds elapsed_time):&#160;cipconnectionmanager.c']]],
@@ -18,7 +19,7 @@ var searchData=
   ['master_5fsocket',['master_socket',['../da/dc2/generic__networkhandler_8h.html#a956dd8b348500bc6f305b327c21926ed',1,'generic_networkhandler.h']]],
   ['max_5fno_5fof_5ftcp_5fsockets',['MAX_NO_OF_TCP_SOCKETS',['../db/d4f/generic__networkhandler_8c.html#aef8c9066c39b53d472f7d235bb3d0001',1,'generic_networkhandler.c']]],
   ['max_5fsize_5fof_5fadd_5fstatus',['MAX_SIZE_OF_ADD_STATUS',['../df/d28/ciptypes_8h.html#a76032ec3319954c70deea1f039deeb19',1,'ciptypes.h']]],
-  ['max_5ftries',['MAX_TRIES',['../d2/d9c/WIN32_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e',1,'networkconfig.c']]],
+  ['max_5ftries',['MAX_TRIES',['../dc/d2b/MINGW_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e',1,'MAX_TRIES():&#160;networkconfig.c'],['../d2/d9c/WIN32_2networkconfig_8c.html#afd63d23830ad86d01b6fff2e6c615f7e',1,'MAX_TRIES():&#160;networkconfig.c']]],
   ['message',['message',['../d4/da1/structDelayedEncapsulationMessage.html#a8a7d84611a4b658a8c27919330bb4883',1,'DelayedEncapsulationMessage']]],
   ['message_5fbuffer',['message_buffer',['../d3/d4a/structenip__message.html#a02cbd19072eea296d7ed321a28c9dcf4',1,'enip_message']]],
   ['message_5frequest',['message_request',['../de/dcb/structCipUnconnectedSendParameter.html#af5e4965a545d1c84217c325ab4d45a12',1,'CipUnconnectedSendParameter']]],

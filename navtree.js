@@ -45,13 +45,13 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d1/d6c/cipconnectionobject_8h.html#a07601b1d58bee031fad7dc056fb89117a51424d877fd5aaa2caa01c943730b6c1",
-"d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a5fc737f7ba770d54013fb630bcdd6774",
-"d2/dc9/group__CIP__API.html#gaece1b7dd2aeec306cb33b86b2ee21980",
-"d5/dc8/WIN32_2sample__application_2sampleapplication_8c.html#adf3de9d05025f4d3ce4f50120a63deec",
-"d9/d7d/cipmessagerouter_8c.html#ac41a8799d5a505cb5a23fe7ea87ce0ba",
-"dd/d20/ciptcpipinterface_8c.html",
-"df/d28/ciptypes_8h.html#a2942916684f16954a536c220cffa26efae7628dd5e8e2d509846317a381671c0a",
-"globals_c.html"
+"d2/da3/cipconnectionmanager_8h.html#a2c7b6cc102450d2b993391113bd2b759a58a2e96ed340cabe79dddbd083b2346c",
+"d2/dc9/group__CIP__API.html#gad1826555a5a2c522bfd98496f31c7ab2",
+"d5/daa/MINGW_2sample__application_2sampleapplication_8c.html#ga63bf35df0c11815a8a59d8a68ac4b569",
+"d8/de2/structcip__service__struct.html",
+"dc/d3c/structSocketAddressInfoItem.html#abaf556494b9fea3137c6c45522ab9bda",
+"de/ddc/cipepath_8c.html#add4e68500a8fdd92d40fbab551d7b6c9",
+"df/d91/cipconnectionobject_8c.html#aeee7026822ffa05ebabab57a0eed1665"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -9,7 +9,7 @@ var cpf_8c =
     [ "EncodeDataItemLength", "d3/d98/cpf_8c.html#a5683f275eb25d9190deb80991c41ff01", null ],
     [ "EncodeDataItemType", "d3/d98/cpf_8c.html#a074bebb59f6048e012947fbae235070c", null ],
     [ "EncodeExtendedStatus", "d3/d98/cpf_8c.html#a8161864641948a4eb95c269365fcce84", null ],
-    [ "EncodeExtendedStatusDataItems", "d3/d98/cpf_8c.html#a185603d74ab478bd2a7e8b1ae0e78372", null ],
+    [ "EncodeExtendedStatusDataItems", "d3/d98/cpf_8c.html#ae5dd5d670ff4b01d0aedd4e0a0c0314d", null ],
     [ "EncodeExtendedStatusLength", "d3/d98/cpf_8c.html#aff1bd1c766cfc5414aff3360d01eea46", null ],
     [ "EncodeGeneralStatus", "d3/d98/cpf_8c.html#a3ea2cccf028187c1b24319230d723a57", null ],
     [ "EncodeItemCount", "d3/d98/cpf_8c.html#a8269ea8acc0f12ca938ae5fa36277517", null ],

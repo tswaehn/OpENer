@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa":[5,0,43,0],
 "dc/d3c/structSocketAddressInfoItem.html#abaf556494b9fea3137c6c45522ab9bda":[5,0,43,1],
 "dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2":[5,0,43,5],
 "dc/d72/cipidentity_8h.html":[6,0,0,0,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "de/ddc/cipepath_8c.html#ac3e66b25c099a4f5a2d7e0278d627b97":[6,0,0,0,14,10],
 "de/ddc/cipepath_8c.html#ac5e40d305e9226f4e7720c86793a593a":[6,0,0,0,14,17],
 "de/ddc/cipepath_8c.html#ac6e66ab4f22749d2e736cec6c5fb97f4":[6,0,0,0,14,62],
-"de/ddc/cipepath_8c.html#ac8041ab277042a0d179d43da9f85c071":[6,0,0,0,14,36],
-"de/ddc/cipepath_8c.html#ad676678fba216e33cd2a889713de747e":[6,0,0,0,14,6]
+"de/ddc/cipepath_8c.html#ac8041ab277042a0d179d43da9f85c071":[6,0,0,0,14,36]
 };

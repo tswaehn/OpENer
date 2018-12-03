@@ -13,6 +13,7 @@ var cipcommon_8c =
     [ "GetAttributeAll", "d2/d3d/cipcommon_8c.html#ab5e27f4fb889d26a7dcd993cf2d3ddfe", null ],
     [ "GetAttributeSingle", "d2/d3d/cipcommon_8c.html#a4d2d00f2e1252b192ef73aa388898e7d", null ],
     [ "GetCipAttribute", "d2/d3d/cipcommon_8c.html#ga5a14c8d76acacb09312b709bb0a76265", null ],
+    [ "GetCipService", "d2/d3d/cipcommon_8c.html#a1150da559a1729bf2a1ccf1634f17ad2", null ],
     [ "GetSizeOfAttribute", "d2/d3d/cipcommon_8c.html#ae750a4033fd5c18afa9a0862086eb71f", null ],
     [ "InsertAttribute", "d2/d3d/cipcommon_8c.html#gac207feb53c1f98b45f3934bbea63d618", null ],
     [ "InsertService", "d2/d3d/cipcommon_8c.html#ga35f639b135ec3c3903f49fd65daed307", null ],

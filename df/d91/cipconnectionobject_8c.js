@@ -75,6 +75,7 @@ var cipconnectionobject_8c =
     [ "ConnectionObjectIsOToTRedundantOwner", "df/d91/cipconnectionobject_8c.html#a8da29f08ac77d450bb7602728bbad2b2", null ],
     [ "ConnectionObjectIsTToORedundantOwner", "df/d91/cipconnectionobject_8c.html#afe3f0055827380760319b30452a4a849", null ],
     [ "ConnectionObjectIsTypeIOConnection", "df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa", null ],
+    [ "ConnectionObjectIsTypeNonLOIOConnection", "df/d91/cipconnectionobject_8c.html#a73b6fcd755b28c09a7fe893ba573d934", null ],
     [ "ConnectionObjectResetInactivityWatchdogTimerValue", "df/d91/cipconnectionobject_8c.html#a162031cf48137e250c779ac086cb9dd8", null ],
     [ "ConnectionObjectResetLastPackageInactivityTimerValue", "df/d91/cipconnectionobject_8c.html#a0e5c72cf86425e7741266a04e72a9980", null ],
     [ "ConnectionObjectResetProductionInhibitTimer", "df/d91/cipconnectionobject_8c.html#a6636b4aeeb4208417d057d48ed87a490", null ],

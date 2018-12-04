@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"dc/d3c/structSocketAddressInfoItem.html#a6698e4b44eeaf0795025d0be524b8e8a":[5,0,43,3],
 "dc/d3c/structSocketAddressInfoItem.html#a8933e644c7191ea8f5a22401b2e6a6fa":[5,0,43,0],
 "dc/d3c/structSocketAddressInfoItem.html#abaf556494b9fea3137c6c45522ab9bda":[5,0,43,1],
 "dc/d3c/structSocketAddressInfoItem.html#ad71289b55ab0ff6a4382af44afaccca2":[5,0,43,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "de/ddc/cipepath_8c.html#abab2d9f3800e6b19897bf7922bada327":[6,0,0,0,14,25],
 "de/ddc/cipepath_8c.html#abfed6be598ea8419660436d9c7797d66":[6,0,0,0,14,48],
 "de/ddc/cipepath_8c.html#ac2a15e1d8686b598840d8df93271e9f6":[6,0,0,0,14,31],
-"de/ddc/cipepath_8c.html#ac3e66b25c099a4f5a2d7e0278d627b97":[6,0,0,0,14,10],
-"de/ddc/cipepath_8c.html#ac5e40d305e9226f4e7720c86793a593a":[6,0,0,0,14,17]
+"de/ddc/cipepath_8c.html#ac3e66b25c099a4f5a2d7e0278d627b97":[6,0,0,0,14,10]
 };

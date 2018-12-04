@@ -1,7 +1,7 @@
 var appcontype_8h =
 [
     [ "CloseAllConnections", "d1/dc0/appcontype_8h.html#a18d2a32030faf1d5e3d48e610b1c4fe7", null ],
-    [ "CloseAllConnectionsForInputWithSameType", "d1/dc0/appcontype_8h.html#a1181149fe4f853e43552e0b50e2f4d23", null ],
+    [ "CloseAllConnectionsForInputWithSameType", "d1/dc0/appcontype_8h.html#a333e40601eebad73b0ab423de6c0bd8c", null ],
     [ "ConnectionWithSameConfigPointExists", "d1/dc0/appcontype_8h.html#ac869fbefb1f616eaa666fe659c224fe3", null ],
     [ "GetExistingProducerMulticastConnection", "d1/dc0/appcontype_8h.html#ac568876f2c5ba2da91a0e62e17e27432", null ],
     [ "GetIoConnectionForConnectionData", "d1/dc0/appcontype_8h.html#ab3a019a2217375c098345317da123323", null ],

@@ -110,6 +110,7 @@ var cipconnectionobject_8h =
     [ "ConnectionObjectIsOToTRedundantOwner", "d1/d6c/cipconnectionobject_8h.html#a8da29f08ac77d450bb7602728bbad2b2", null ],
     [ "ConnectionObjectIsTToORedundantOwner", "d1/d6c/cipconnectionobject_8h.html#afe3f0055827380760319b30452a4a849", null ],
     [ "ConnectionObjectIsTypeIOConnection", "d1/d6c/cipconnectionobject_8h.html#a4c3d0e8258e857f80e5b7111519f7daa", null ],
+    [ "ConnectionObjectIsTypeNonLOIOConnection", "d1/d6c/cipconnectionobject_8h.html#a73b6fcd755b28c09a7fe893ba573d934", null ],
     [ "ConnectionObjectResetInactivityWatchdogTimerValue", "d1/d6c/cipconnectionobject_8h.html#a162031cf48137e250c779ac086cb9dd8", null ],
     [ "ConnectionObjectResetLastPackageInactivityTimerValue", "d1/d6c/cipconnectionobject_8h.html#a0e5c72cf86425e7741266a04e72a9980", null ],
     [ "ConnectionObjectResetProductionInhibitTimer", "d1/d6c/cipconnectionobject_8h.html#a6636b4aeeb4208417d057d48ed87a490", null ],

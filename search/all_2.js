@@ -116,6 +116,7 @@ var searchData=
   ['cipidentity_2eh',['cipidentity.h',['../dc/d72/cipidentity_8h.html',1,'']]],
   ['cipidentityextendedstatus',['CipIdentityExtendedStatus',['../dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afa',1,'cipidentity.h']]],
   ['cipidentityinit',['CipIdentityInit',['../dd/dc4/cipidentity_8c.html#a374cdadb1e6f8d07acb7044a176eb6b2',1,'CipIdentityInit():&#160;cipidentity.c'],['../dc/d72/cipidentity_8h.html#a5d5136e167300543aa046057b56ae813',1,'CipIdentityInit(void):&#160;cipidentity.c']]],
+  ['cipidentitysetextendeddevicestatus',['CipIdentitySetExtendedDeviceStatus',['../dd/dc4/cipidentity_8c.html#acbaf9efdda5235c28eae1b832444332d',1,'CipIdentitySetExtendedDeviceStatus(CipIdentityExtendedStatus extended_status):&#160;cipidentity.c'],['../dc/d72/cipidentity_8h.html#a968217bec0120298bf0dcad15357471d',1,'CipIdentitySetExtendedDeviceStatus(CipIdentityExtendedStatus extended_status):&#160;cipidentity.c']]],
   ['cipidentitystatus',['CipIdentityStatus',['../dc/d72/cipidentity_8h.html#a08346321a8b3e7c9129431bc53bec069',1,'cipidentity.h']]],
   ['cipinstance',['CipInstance',['../df/d28/ciptypes_8h.html#aea7976be629e5ece275c993982186188',1,'ciptypes.h']]],
   ['cipint',['CipInt',['../d7/d69/typedefs_8h.html#a1be1b4a809b73131a8674fcf96d17968',1,'typedefs.h']]],

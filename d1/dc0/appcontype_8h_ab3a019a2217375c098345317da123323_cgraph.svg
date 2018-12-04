@@ -98,29 +98,29 @@ var sectionId = 'dynsection-8';
 <path fill="none" stroke="midnightblue" d="M175.587,-190C186.953,-190 198.599,-190 209.956,-190"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="210.289,-193.5 220.289,-190 210.289,-186.5 210.289,-193.5"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d1/dbc/appcontype_8c.html#a06e551d0aff7ac41def5bbc39652f89a" target="_top" xlink:title="Takes an ConnectionObject and searches and returns an Input Only Connection based on the ConnectionOb...">
+<!-- Node9 -->
+<g id="node9" class="node"><title>Node9</title>
+<g id="a_node9"><a xlink:href="../../d1/dbc/appcontype_8c.html#a06e551d0aff7ac41def5bbc39652f89a" target="_top" xlink:title="Takes an ConnectionObject and searches and returns an Input Only Connection based on the ConnectionOb...">
 <polygon fill="none" stroke="black" points="235,-142.5 235,-161.5 359,-161.5 359,-142.5 235,-142.5"/>
 <text text-anchor="middle" x="297" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetInputOnlyConnection</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge8" class="edge"><title>Node1&#45;&gt;Node8</title>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge9" class="edge"><title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M140.968,-180.46C169.266,-175.265 204.464,-168.804 234.167,-163.351"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="234.807,-166.792 244.011,-161.544 233.543,-159.907 234.807,-166.792"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d1/dbc/appcontype_8c.html#ae76893528b0e064cf220f6eb19ac5bdf" target="_top" xlink:title="Takes an ConnectionObject and searches and returns an Listen Only Connection based on the ConnectionO...">
+<!-- Node10 -->
+<g id="node10" class="node"><title>Node10</title>
+<g id="a_node10"><a xlink:href="../../d1/dbc/appcontype_8c.html#ae76893528b0e064cf220f6eb19ac5bdf" target="_top" xlink:title="Takes an ConnectionObject and searches and returns an Listen Only Connection based on the ConnectionO...">
 <polygon fill="none" stroke="black" points="233,-85.5 233,-104.5 361,-104.5 361,-85.5 233,-85.5"/>
 <text text-anchor="middle" x="297" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetListenOnlyConnection</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge11" class="edge"><title>Node1&#45;&gt;Node9</title>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge12" class="edge"><title>Node1&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M109.431,-180.462C133.815,-169.096 175.836,-149.559 212,-133 229.596,-124.943 249.308,-116.021 265.212,-108.847"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="266.891,-111.929 274.57,-104.63 264.015,-105.548 266.891,-111.929"/>
 </g>
@@ -147,102 +147,115 @@ var sectionId = 'dynsection-8';
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M350.155,-199.553C360.84,-202.132 371.902,-205.268 382,-209 398.97,-215.272 400.439,-223.65 418,-228 487.888,-245.311 509.376,-242.011 580,-228 620.761,-219.913 664.588,-199.602 691.657,-185.548"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="693.636,-188.461 700.835,-180.687 690.359,-182.275 693.636,-188.461"/>
+<path fill="none" stroke="midnightblue" d="M373.502,-192.797C430.347,-194.225 510.153,-194.786 580,-190 603.434,-188.394 628.95,-185.272 651.596,-182.015"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="652.398,-185.435 661.781,-180.514 651.377,-178.51 652.398,-185.435"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d5/d35/cipconnectionmanager_8c.html#af9229054795bce595b5aa0385fede004" target="_top" xlink:title="GetConnectedOutputAssembly">
-<polygon fill="none" stroke="black" points="423,-199.5 423,-218.5 575,-218.5 575,-199.5 423,-199.5"/>
-<text text-anchor="middle" x="499" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectedOutputAssembly</text>
+<polygon fill="none" stroke="black" points="423,-237.5 423,-256.5 575,-256.5 575,-237.5 423,-237.5"/>
+<text text-anchor="middle" x="499" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetConnectedOutputAssembly</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M373.611,-197.183C386.355,-198.394 399.661,-199.658 412.632,-200.89"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="412.659,-204.408 422.945,-201.87 413.321,-197.44 412.659,-204.408"/>
+<path fill="none" stroke="midnightblue" d="M345.857,-199.534C357.756,-202.257 370.418,-205.46 382,-209 398.417,-214.019 401.766,-217.418 418,-223 429.677,-227.015 442.438,-231.015 454.269,-234.565"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="453.362,-237.946 463.944,-237.431 455.35,-231.235 453.362,-237.946"/>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M554.729,-199.46C584.661,-194.243 621.922,-187.747 653.288,-182.28"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="653.998,-185.709 663.248,-180.544 652.796,-178.813 653.998,-185.709"/>
+<g id="edge8" class="edge"><title>Node7&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M533.637,-237.469C547.994,-233.256 564.889,-228.107 580,-223 616.076,-210.808 656.814,-195.23 684.62,-184.316"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="686.227,-187.445 694.247,-180.521 683.66,-180.933 686.227,-187.445"/>
 </g>
-<!-- Node8&#45;&gt;Node5 -->
-<g id="edge9" class="edge"><title>Node8&#45;&gt;Node5</title>
+<!-- Node8 -->
+<g id="node8" class="node"><title>Node8</title>
+<g id="a_node8"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#a64d3a78bd3f520b632b04697bd0b2767" target="_top" xlink:title="ConnectionObjectGetInstanceType">
+<polygon fill="none" stroke="black" points="634,-237.5 634,-256.5 804,-256.5 804,-237.5 634,-237.5"/>
+<text text-anchor="middle" x="719" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectGetInstanceType</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M575.023,-247C590.73,-247 607.483,-247 623.787,-247"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="623.867,-250.5 633.867,-247 623.867,-243.5 623.867,-250.5"/>
+</g>
+<!-- Node9&#45;&gt;Node5 -->
+<g id="edge10" class="edge"><title>Node9&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M359.093,-157.804C374.6,-159.277 391.585,-160.891 408.191,-162.468"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="408.179,-165.983 418.465,-163.444 408.841,-159.014 408.179,-165.983"/>
 </g>
-<!-- Node8&#45;&gt;Node6 -->
-<g id="edge10" class="edge"><title>Node8&#45;&gt;Node6</title>
+<!-- Node9&#45;&gt;Node6 -->
+<g id="edge11" class="edge"><title>Node9&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M359.143,-149.594C416.319,-147.914 504.048,-146.796 580,-152 603.434,-153.606 628.95,-156.728 651.596,-159.985"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="651.377,-163.49 661.781,-161.486 652.398,-156.565 651.377,-163.49"/>
 </g>
-<!-- Node9&#45;&gt;Node5 -->
-<g id="edge12" class="edge"><title>Node9&#45;&gt;Node5</title>
+<!-- Node10&#45;&gt;Node5 -->
+<g id="edge13" class="edge"><title>Node10&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M323.33,-104.625C358.795,-118.102 423.373,-142.642 463.291,-157.811"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="462.284,-161.172 472.876,-161.453 464.771,-154.629 462.284,-161.172"/>
 </g>
-<!-- Node9&#45;&gt;Node6 -->
-<g id="edge13" class="edge"><title>Node9&#45;&gt;Node6</title>
+<!-- Node10&#45;&gt;Node6 -->
+<g id="edge14" class="edge"><title>Node10&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M354.777,-104.503C411.771,-114.127 502.059,-129.606 580,-144 606.48,-148.89 635.761,-154.579 660.513,-159.47"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="659.977,-162.932 670.466,-161.442 661.337,-156.065 659.977,-162.932"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02" target="_top" xlink:title="ConnectionObjectGetTToOConnectionType">
+<!-- Node11 -->
+<g id="node11" class="node"><title>Node11</title>
+<g id="a_node11"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#ad61ad2b2c18480a141e5df346e32be02" target="_top" xlink:title="ConnectionObjectGetTToOConnectionType">
 <polygon fill="none" stroke="black" points="616,-0.5 616,-19.5 822,-19.5 822,-0.5 616,-0.5"/>
 <text text-anchor="middle" x="719" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectGetTToOConnectionType</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge14" class="edge"><title>Node9&#45;&gt;Node10</title>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge15" class="edge"><title>Node10&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M310.062,-85.4419C330.739,-69.6879 374.906,-38.7454 418,-26 478.276,-8.17301 548.285,-3.58461 605.506,-3.72116"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="605.644,-7.22216 615.669,-3.79501 605.695,-0.222342 605.644,-7.22216"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d1/dbc/appcontype_8c.html#ac568876f2c5ba2da91a0e62e17e27432" target="_top" xlink:title="Check if there exists already an exclusive owner or listen only connection which produces the input a...">
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="../../d1/dbc/appcontype_8c.html#ac568876f2c5ba2da91a0e62e17e27432" target="_top" xlink:title="Check if there exists already an exclusive owner or listen only connection which produces the input a...">
 <polygon fill="none" stroke="black" points="426,-36 426,-66 572,-66 572,-36 426,-36"/>
 <text text-anchor="start" x="434" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">GetExistingProducerMulticast</text>
 <text text-anchor="middle" x="499" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00">Connection</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node12 -->
-<g id="edge16" class="edge"><title>Node9&#45;&gt;Node12</title>
+<!-- Node10&#45;&gt;Node13 -->
+<g id="edge17" class="edge"><title>Node10&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M341.397,-85.4527C364.216,-80.4324 392.899,-74.1223 419.461,-68.2785"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="420.507,-71.6323 429.521,-66.0654 419.003,-64.7958 420.507,-71.6323"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#a0da85deed56477da3ec500cec51aa46e" target="_top" xlink:title="ConnectionObjectGetConnectionType">
+<!-- Node12 -->
+<g id="node12" class="node"><title>Node12</title>
+<g id="a_node12"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#a0da85deed56477da3ec500cec51aa46e" target="_top" xlink:title="ConnectionObjectGetConnectionType">
 <polygon fill="none" stroke="black" points="858,-0.5 858,-19.5 1040,-19.5 1040,-0.5 858,-0.5"/>
 <text text-anchor="middle" x="949" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectGetConnectionType</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node11 -->
-<g id="edge15" class="edge"><title>Node10&#45;&gt;Node11</title>
+<!-- Node11&#45;&gt;Node12 -->
+<g id="edge16" class="edge"><title>Node11&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M822.329,-10C830.745,-10 839.247,-10 847.649,-10"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="847.835,-13.5001 857.835,-10 847.835,-6.5001 847.835,-13.5001"/>
 </g>
-<!-- Node12&#45;&gt;Node10 -->
-<g id="edge17" class="edge"><title>Node12&#45;&gt;Node10</title>
+<!-- Node13&#45;&gt;Node11 -->
+<g id="edge18" class="edge"><title>Node13&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M572.288,-37.4045C599.873,-32.2165 631.01,-26.3605 657.398,-21.3976"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="658.081,-24.8306 667.262,-19.5425 656.787,-17.9512 658.081,-24.8306"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa" target="_top" xlink:title="ConnectionObjectIsTypeIOConnection">
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="../../df/d91/cipconnectionobject_8c.html#a4c3d0e8258e857f80e5b7111519f7daa" target="_top" xlink:title="ConnectionObjectIsTypeIOConnection">
 <polygon fill="none" stroke="black" points="626.5,-41.5 626.5,-60.5 811.5,-60.5 811.5,-41.5 626.5,-41.5"/>
 <text text-anchor="middle" x="719" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ConnectionObjectIsTypeIOConnection</text>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node13 -->
-<g id="edge18" class="edge"><title>Node12&#45;&gt;Node13</title>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge19" class="edge"><title>Node13&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M572.288,-51C586.386,-51 601.412,-51 616.258,-51"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="616.493,-54.5001 626.493,-51 616.493,-47.5001 616.493,-54.5001"/>
 </g>

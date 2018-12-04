@@ -18,5 +18,6 @@ var cipidentity_8h =
       [ "kMajorRecoveralbeFault", "dc/d72/cipidentity_8h.html#a08346321a8b3e7c9129431bc53bec069a5ae9eced3f627f2e737100cbfcb999e4", null ],
       [ "kMajorUnrecoverableFault", "dc/d72/cipidentity_8h.html#a08346321a8b3e7c9129431bc53bec069a1cb3cf8f34067edd3890e6673191b6d5", null ]
     ] ],
-    [ "CipIdentityInit", "dc/d72/cipidentity_8h.html#a5d5136e167300543aa046057b56ae813", null ]
+    [ "CipIdentityInit", "dc/d72/cipidentity_8h.html#a5d5136e167300543aa046057b56ae813", null ],
+    [ "CipIdentitySetExtendedDeviceStatus", "dc/d72/cipidentity_8h.html#a968217bec0120298bf0dcad15357471d", null ]
 ];

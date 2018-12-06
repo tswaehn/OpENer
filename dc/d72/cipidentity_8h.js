@@ -7,7 +7,7 @@ var cipidentity_8h =
       [ "kNoIoConnectionsEstablished", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaaa999d374be78ae8d4cbab6552864e6e0", null ],
       [ "kNonVolatileConfigurationBad", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaad94e0e1bbdd17cadca7521a6b87c435a", null ],
       [ "kMajorFault", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaa041c212edc085841ef4d055091aac065", null ],
-      [ "kAtLeastOneIoConnectionInRuneMode", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaa92fc34a0d793e0f9007c4979d04748de", null ],
+      [ "kAtLeastOneIoConnectionInRunMode", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaa8beda8a969b0d79d8c69009da40bc7f4", null ],
       [ "kAtLeastOneIoConnectionEstablishedAllInIdleMode", "dc/d72/cipidentity_8h.html#a938420292805a3013f5bb3e8fc5b0afaaea233529de1067c45db8daa776cf326e", null ]
     ] ],
     [ "CipIdentityStatus", "dc/d72/cipidentity_8h.html#a08346321a8b3e7c9129431bc53bec069", [

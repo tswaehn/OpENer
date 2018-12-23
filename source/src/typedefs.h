@@ -9,6 +9,7 @@
 #include <inttypes.h>
 #include <stddef.h>
 #include <stdbool.h>
+#define RESTRICT
 
 /** @file typedefs.h
    Do not use interface types for internal variables, such as "int i;", which is
